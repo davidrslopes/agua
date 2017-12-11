@@ -2,5 +2,19 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
 // Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
 
+//FASTIO VARS
+/*
+	Azul Claro - R=0 G=174 B=239 A=38%
+	Azul - R=0 G=174 B=239
+	Azul Escuro - R=0 G=111 B=186
+	Amarelo - R=255 G=242 B=0
+*/
 
-$primary: #5aa9ce; // Thats a sample how you could change a BootStrap variable.
+$h20_light_blue = lighten($h20_azul,38%);
+$h20_blue = #00aeef; // rgb(0,174,239)
+$h20_dark_blue = #006fba; // rgb(0,111,186)
+$h20_yellow = #fff200; // rgb(255,242,0)
+
+$primary: $h20_blue;
+$secondary: $h20_yellow;
+$warning: $h20_yellow;
