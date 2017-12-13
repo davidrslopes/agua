@@ -1,6 +1,6 @@
 // Use this file to overwrite the basic Bootstrap variables and add your own variables
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
-// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// Just copy a variable from /sass/bootstrap/-variables.scss, paste it here and edit the value.
 
 //FASTIO VARS
 /*
@@ -10,11 +10,23 @@
 	Amarelo - R=255 G=242 B=0
 */
 
-$h20_light_blue = lighten($h20_azul,38%);
-$h20_blue = #00aeef; // rgb(0,174,239)
-$h20_dark_blue = #006fba; // rgb(0,111,186)
-$h20_yellow = #fff200; // rgb(255,242,0)
+//COLORS
+$h20-blue: #00aeef; // rgb(0,174,239)
+$h20-light-blue: lighten($h20-blue,38%);
+$h20-dark-blue: #006fba; // rgb(0,111,186)
+$h20-yellow: #fff200; // rgb(255,242,0)
 
-$primary: $h20_blue;
-$secondary: $h20_yellow;
-$warning: $h20_yellow;
+//TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css?family=Allerta');
+$allerta: "Allerta", sans-serif; // Titles, texts and navs
+
+/* #################### BOOTSTRAP OVERWRITES #################### */
+
+//COLORS
+$primary: $h20-blue;
+$secondary: $h20-yellow;
+$warning: $h20-yellow;
+
+//TYPOGRAPHY
+$font-family-sans-serif: $allerta;
+$font-family-base: $allerta;
