@@ -33,39 +33,53 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
 
-		<nav class="navbar fixed-top navbar-expand-md navbar-light bg-faded">
+		<nav class="navbar fixed-top navbar-expand-md navbar-light">
 
-			<?php if ( 'container' == $container ) : ?>
+		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
-			<?php endif; ?>
-				<!--<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+		<?php endif; ?>
+
+					<!-- Your site title as branding in the menu -->
+					<?php if ( ! has_custom_logo() ) { ?>
+
+						<?php if ( is_front_page() && is_home() ) : ?>
+
+							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+							
+						<?php else : ?>
+
+							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+						
+						<?php endif; ?>
+						
+					
+					<?php } else {
+						the_custom_logo();
+					} ?><!-- end custom logo -->
 				
-				-->
-				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						David: Menu
+				<div class="fastio-nav dropdown">
+					<button class="btn btn-link dropdown-toggle" type="button" id="fastioMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						MENU
 					</button>
-					<?php /*wp_nav_menu(
-						array(
-							'theme_location'  => 'primary',
-							'container_class' => 'collapse navbar-collapse',
-							'container_id'    => 'navbarNavDropdown',
-							'menu_class'      => 'navbar-nav',
-							'fallback_cb'     => '',
-							'menu_id'         => 'main-menu',
-							'walker'          => new WP_Bootstrap_Navwalker(),
-						)
-					); */?>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
-					</div>
+				<?php wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'container_class' => 'dropdown-menu',
+						'container_id'    => 'fastioMenuDropdown',
+						//'menu_class'      => 'dropdown-item',
+						'items_wrap'	  => '%3$s',
+						'fallback_cb'     => false,
+						'menu_id'         => '',
+						'walker'          => new fastio_Navwalker(),
+					)
+				); ?>
 				</div>
+				<!-- The WordPress Menu goes here -->
+				
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
-			
+
 		</nav><!-- .site-navigation -->
 
 	</div><!-- .wrapper-navbar end -->

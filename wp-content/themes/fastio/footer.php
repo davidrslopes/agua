@@ -47,6 +47,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
+
 							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
 							/* translators:*/
 							esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
@@ -70,6 +71,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- container end -->
 
 </div><!-- wrapper end -->
+
 <?php endif; ?>
 
 </div><!-- #page we need this extra closing tag here -->
