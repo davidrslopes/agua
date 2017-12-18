@@ -28,5 +28,12 @@ if ( ! function_exists( 'understrap_setup_theme_default_settings' ) ) :
 		if ( '' == $understrap_container_type ) {
 			set_theme_mod( 'understrap_container_type', 'container' );
 		}
+		
+		// Homepage Vídeo.
+		$fastio_home_video = get_theme_mod( 'fastio_home_video' );
+		if ( '' == $fastio_home_video ) {
+			set_theme_mod( 'fastio_home_video', get_stylesheet_directory_uri() . '/video/fastio.mp4' );
+		}
+		
 	}
 endif;

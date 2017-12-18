@@ -34,9 +34,9 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 
 		// Theme layout settings.
 		$wp_customize->add_section( 'understrap_theme_layout_options', array(
-			'title'       => __( 'Theme Layout Settings', 'understrap' ),
+			'title'       => __( 'Opções de layout', 'understrap' ),
 			'capability'  => 'edit_theme_options',
-			'description' => __( 'Container width and sidebar defaults', 'understrap' ),
+			'description' => __( 'Largura do container e barra lateral por defeito', 'understrap' ),
 			'priority'    => 160,
 		) );
 
@@ -80,6 +80,25 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 
 		$wp_customize->add_setting( 'understrap_sidebar_position', array(
 			'default'           => 'right',
+			'type'              => 'theme_mod',
+			'sanitize_callback' => 'sanitize_text_field',
+			'capability'        => 'edit_theme_options',
+		) );
+		
+		//Fastio Homepage Vídeo Control
+		$wp_customize->add_control( 
+			new WP_Customize_Upload_Control( 
+			$wp_customize, 
+			'fastio_home_video', 
+			array(
+				'label'      => __( 'Vídeo da Homepage', 'fastio' ),
+				'description' => __( 'Permite alterar o vídeo em formato MP4 que está incluído na Homepage', 'fastio' ),
+				'section'    => 'static_front_page',
+				'settings'   => 'fastio_home_video',
+			) ) 
+		);
+		$wp_customize->add_setting( 'fastio_home_video', array(
+			'default'           => get_template_directory() . '/video/fastio.mp4',
 			'type'              => 'theme_mod',
 			'sanitize_callback' => 'sanitize_text_field',
 			'capability'        => 'edit_theme_options',
