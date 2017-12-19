@@ -9550,7 +9550,35 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
-/* ############################## Home FullScreen Vídeo ##############################*/
+/* ############################## COMMON ############################## */
+.fastio-nav button.btn.dropdown-toggle {
+  font-weight: 400;
+  color: #00aeef;
+  background-color: transparent; }
+  .fastio-nav button.btn.dropdown-toggle.focus, .fastio-nav button.btn.dropdown-toggle:focus, .fastio-nav button.btn.dropdown-toggle.hover, .fastio-nav button.btn.dropdown-toggle:hover {
+    text-decoration: none;
+    border-color: transparent;
+    box-shadow: none; }
+    .fastio-nav button.btn.dropdown-toggle.focus::after, .fastio-nav button.btn.dropdown-toggle:focus::after, .fastio-nav button.btn.dropdown-toggle.hover::after, .fastio-nav button.btn.dropdown-toggle:hover::after {
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
+  .fastio-nav button.btn.dropdown-toggle::after {
+    transition: transform 200ms linear;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    border: 0;
+    vertical-align: 2px;
+    content: "|";
+    transform-origin: center center;
+    transform-style: preserve-3D; }
+
+/* ############################## HOMEPAGE ############################## */
 .fastio-video {
   position: fixed;
   top: 50%;

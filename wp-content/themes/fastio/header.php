@@ -58,7 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					} ?><!-- end custom logo -->
 				
 				<div class="fastio-nav dropdown">
-					<button class="btn btn-link dropdown-toggle" type="button" id="fastioMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<button class="btn dropdown-toggle" type="button" id="fastioMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						MENU
 					</button>
 				<?php wp_nav_menu(

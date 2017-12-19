@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="home-footer" id="colophon">
 					
-					HUGO: LANG | VIAJE PELA NATUREZA | SOCIAL
+					HUGO: LANG(WPML) | VIAJE PELA NATUREZA | SOCIAL
 					
 				</footer>
 	

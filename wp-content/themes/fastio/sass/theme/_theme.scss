@@ -1,4 +1,41 @@
-/* ############################## Home FullScreen Vídeo ##############################*/
+/* ############################## COMMON ############################## */
+// Navigation
+.fastio-nav{
+	button.btn.dropdown-toggle{
+		font-weight: 400;
+		color: $primary;
+		background-color: transparent;
+		&.focus, &:focus, &.hover, &:hover {
+			text-decoration: none;
+			border-color: transparent;
+			box-shadow: none;
+			&::after{
+				-webkit-transform: rotate(-90deg);
+				-moz-transform: rotate(-90deg);
+				-ms-transform: rotate(-90deg);
+				-o-transform: rotate(-90deg);
+				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+			}
+		}
+		&::after{
+			transition: transform 200ms linear;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+			border:0;
+			vertical-align: 2px;
+			content: "|";
+			transform-origin: center center;
+			transform-style: preserve-3D;
+		}
+	}
+}
+
+/* ############################## HOMEPAGE ############################## */
+
+// Home FullScreen Vídeo 
 .fastio-video {
     position: fixed;
     top: 50%;
@@ -12,6 +49,7 @@
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
 }
+// Wrapper Home TODO: JS to get nav height.
 .wrapper-home{
 	margin-top:	95px;
 }
