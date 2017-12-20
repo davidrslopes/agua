@@ -9,6 +9,9 @@
 
 $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
+$footer_text = get_theme_mod( 'text_setting' );
+$fb_link=get_theme_mod( 'understrap_footer_fb' );
+$instagr_link = get_theme_mod( 'understrap_footer_instag' );
 ?>
 
 <?php get_sidebar( 'footerfull' ); ?>
@@ -23,10 +26,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12">
 
 				<footer class="home-footer" id="colophon">
-					
-					HUGO: LANG(WPML) | VIAJE PELA NATUREZA | SOCIAL
-					
-				</footer>
+                                    <div class="col-lg-6 col-md-6">
+                                        <?php do_action('icl_language_selector'); ?>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                     <a href="<?php echo $fb_link; ?>" target="_blank"><i class="fa fa-facebook-square social"></i></a>
+                                     <a href="<?php echo $instagr_link; ?>" target="_blank"><i class="fa fa-instagram social"></i></a>
+                                    </div>
+                                </footer>
 	
 			</div><!--col end -->
 

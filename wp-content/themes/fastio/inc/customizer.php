@@ -141,3 +141,45 @@ if ( ! function_exists( 'understrap_customize_preview_js' ) ) {
 	}
 }
 add_action( 'customize_preview_init', 'understrap_customize_preview_js' );
+
+/*Customizer Code HERE*/
+add_action('customize_register', 'theme_footer_customizer');
+function theme_footer_customizer($wp_customize){
+ //adding section in wordpress customizer   
+$wp_customize->add_section('footer_settings_section', array(
+  'title'          => 'Rodapé '
+ ));
+//adding setting for footer text area
+$wp_customize->add_setting('text_setting', array(
+ 'default'        => 'Default Text For Footer Section',
+ ));
+$wp_customize->add_control('text_setting', array(
+ 'label'   => 'Footer Text Here',
+  'section' => 'footer_settings_section',
+ 'type'    => 'textarea',
+));
+
+$wp_customize->add_setting('understrap_footer_fb', array(
+ 'default'        => 'Default Url For Facebook',
+ ));
+$wp_customize->add_control('understrap_footer_fb', array(
+ 'label'   => 'Facebook Url',
+  'section' => 'footer_settings_section',
+ 'type'    => 'input',
+));
+
+
+$wp_customize->add_setting('understrap_footer_instag', array(
+ 'default'        => 'Default Url For Instagram',
+ ));
+$wp_customize->add_control('understrap_footer_instag', array(
+ 'label'   => 'Instagram Url',
+  'section' => 'footer_settings_section',
+ 'type'    => 'input',
+));
+
+
+
+}
+
+
