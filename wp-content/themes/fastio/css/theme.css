@@ -9635,8 +9635,8 @@ a.skip-link {
   margin-top: 95px; }
 
 /* ############################## HISTORIA FASTIO ############################## */
-body.page-template-historiafastio .historiafastio {
-  background: url(img/Fundo-aguarela.jpg) no-repeat center center fixed;
+body.page-template-historiafastio {
+  background: url(../img/Fundo-aguarela.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
