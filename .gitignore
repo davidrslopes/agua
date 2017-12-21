@@ -105,3 +105,4 @@ Thumbs.db
 !wp-content/plugins/example-plugin/
 !wp-content/themes/fastio/
 *.mp4
+wp-content/themes/fastio/package-lock.json
