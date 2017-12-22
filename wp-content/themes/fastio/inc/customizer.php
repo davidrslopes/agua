@@ -85,15 +85,20 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 			'capability'        => 'edit_theme_options',
 		) );
 		
-		//Fastio Homepage Vídeo Control
+		//Fastio Homepage Vídeo Control : TODO Not Working Yet
+		$wp_customize->add_section('custom_bg_video', array(
+			'title'    => __('Vídeo da Homepage', 'understrap'),
+			'description' => '',
+			'priority' => 120,	
+		) );
 		$wp_customize->add_control( 
 			new WP_Customize_Upload_Control( 
 			$wp_customize, 
 			'fastio_home_video', 
 			array(
-				'label'      => __( 'Vídeo da Homepage', 'fastio' ),
-				'description' => __( 'Permite alterar o vídeo em formato MP4 que está incluído na Homepage', 'fastio' ),
-				'section'    => 'static_front_page',
+				'label'      => __( 'Vídeo da Homepage', 'understrap' ),
+				'description' => __( 'Permite alterar o vídeo em formato MP4 que está incluído na Homepage', 'understrap' ),
+				'section'    => 'custom_bg_video',
 				'settings'   => 'fastio_home_video',
 			) ) 
 		);
