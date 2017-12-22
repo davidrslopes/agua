@@ -108,4 +108,5 @@ wp-content/themes/fastio/package-lock.json
 !wp-content/mu-plugins/example-mu-plugin/
 !wp-content/plugins/example-plugin/
 !wp-content/plugins/advanced-custom-fields-pro/
+!wp-content/plugins/limit-login-attempts-reloaded/
 !wp-content/themes/fastio/
