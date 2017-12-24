@@ -9617,6 +9617,48 @@ a.skip-link {
     .fastio-nav .dropdown-menu a:hover, .fastio-nav .dropdown-menu a:focus, .fastio-nav .dropdown-menu a.hover, .fastio-nav .dropdown-menu a.focus {
       color: #b2eaff; }
 
+.home-footer-wrapper {
+  position: absolute;
+  padding-top: 0;
+  padding-bottom: 0;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+  line-height: 30px; }
+  .home-footer-wrapper footer .wpml-ls {
+    padding: 0;
+    direction: rtl;
+    display: inline-block; }
+    .home-footer-wrapper footer .wpml-ls ul {
+      direction: rtl;
+      display: inline-block;
+      list-style: circle;
+      list-style-position: outside;
+      color: white; }
+      .home-footer-wrapper footer .wpml-ls ul li {
+        list-style-type: circle;
+        display: list-item; }
+        .home-footer-wrapper footer .wpml-ls ul li a {
+          display: initial;
+          padding: 0;
+          font-size: 90%;
+          color: white; }
+  .home-footer-wrapper footer .fastio-home-link {
+    font-size: 90%; }
+    .home-footer-wrapper footer .fastio-home-link i.fa {
+      display: block;
+      font-size: 250%;
+      line-height: 0px;
+      padding: 10px 0; }
+    .home-footer-wrapper footer .fastio-home-link:hover {
+      text-decoration: none; }
+  .home-footer-wrapper footer .fastio-home-social {
+    margin: 0;
+    padding: 0; }
+    .home-footer-wrapper footer .fastio-home-social li > a {
+      font-size: 150%;
+      color: white; }
+
 /* ############################## HOMEPAGE ############################## */
 .fastio-video {
   position: fixed;

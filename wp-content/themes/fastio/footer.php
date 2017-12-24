@@ -17,30 +17,23 @@ $instagr_link = get_theme_mod( 'understrap_footer_instag' );
 <?php get_sidebar( 'footerfull' ); ?>
 
 <?php if ( is_front_page() ) : ?>
-<div class="wrapper" id="wrapper-footer-home">
-
-	<div class="<?php echo esc_attr( $container ); ?>">
-
+<div class="wrapper home-footer-wrapper" id="wrapper-footer-home">
+	<footer class="home-footer <?php echo esc_attr( $container ); ?>" id="colophon">
 		<div class="row">
-
-			<div class="col-md-12">
-
-				<footer class="home-footer" id="colophon">
-                                    <div class="col-lg-6 col-md-6">
-                                        <?php do_action('icl_language_selector'); ?>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                     <a href="<?php echo $fb_link; ?>" target="_blank"><i class="fa fa-facebook-square social"></i></a>
-                                     <a href="<?php echo $instagr_link; ?>" target="_blank"><i class="fa fa-instagram social"></i></a>
-                                    </div>
-                                </footer>
-	
+			<div class="col-lg-4 col-md-4" dir="rtl">
+				<?php do_action('icl_language_selector'); ?>
+			</div>
+			<div class="col-lg-4 col-md-4 text-center">
+				<a class="btn btn-link fastio-home-link" href="/desde-1979">Viaje pela natureza <i class="fa fa-angle-down"></i></a>
+			</div>
+			<div class="col-lg-4 col-md-4 text-right">
+				<ul class="list-inline fastio-home-social">
+					<li class="list-inline-item"><a href="<?php echo $fb_link; ?>" target="_blank"><i class="fa fa-facebook-square social"></i></a></li>
+					<li class="list-inline-item"><a href="<?php echo $instagr_link; ?>" target="_blank"><i class="fa fa-instagram social"></i></a></li>
+				</ul>
 			</div><!--col end -->
-
 		</div><!-- row end -->
-
-	</div><!-- container end -->
-
+	</footer><!-- footer container end -->
 </div><!-- wrapper end -->
 <?php else: ?>
 <div class="wrapper" id="wrapper-footer">
