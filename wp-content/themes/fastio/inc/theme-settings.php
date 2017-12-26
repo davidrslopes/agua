@@ -30,9 +30,15 @@ if ( ! function_exists( 'understrap_setup_theme_default_settings' ) ) :
 		}
 		
 		// Homepage Vídeo.
-		$video_setting = get_theme_mod( 'video_setting' );
-		if ( '' == $video_setting ) {
-			set_theme_mod( 'video_setting', get_stylesheet_directory_uri() . '/video/fastio.mp4' );
+		$home_video = get_theme_mod( 'home_video' );
+		if ( '' == $home_video ) {
+			set_theme_mod( 'home_video', get_template_directory_uri() . '/video/fastio.mp4' );
+		}
+		
+		// Homepage Vídeo Fallback.
+		$home_video_fallback = get_theme_mod( 'home_video_fallback' );
+		if ( '' == $home_video ) {
+			set_theme_mod( 'home_video_fallback', get_template_directory_uri() . '/img/video-fallback.jpg' );
 		}
 		
 	}

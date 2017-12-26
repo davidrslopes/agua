@@ -139,18 +139,41 @@ function fastio_customizer($wp_customize){
 		'priority'    => 110,
 	));*/
 	
+	$wp_customize->add_setting('main_color', array(
+		'default'        => '#00aeef',
+	));
+	$wp_customize->add_control(new WP_Customize_Color_Control( $wp_customize, 'main_color', array(
+		'label'   =>  __( 'Cor principal', 'understrap' ),
+		'description' => __( 'Permite alterar a cor presente em todos os items principais', 'understrap' ),
+		'section' => 'colors',
+		'settings'    => 'main_color'
+	)));
+	
 	//OPÇÕES DA PÁGINA INICIAL
 	//Não é necessário adicionar secção, usa existente : static_front_page
-	//Vídeo
-	$wp_customize->add_setting('video_setting', array(
-		'default'           => get_template_directory() . '/video/fastio.mp4',
+	//Vídeo da Homepage
+	$wp_customize->add_setting('home_video', array(
+		'default'           => get_template_directory_uri() . '/video/fastio.mp4',
 	));
-	$wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'video_setting', 
+	$wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'home_video', 
 		array(
 			'label'      => __( 'Vídeo da Homepage', 'understrap' ),
 			'description' => __( 'Permite alterar o vídeo em formato MP4 que está incluído na Homepage', 'understrap' ),
 			'section'    => 'static_front_page',
+			'settings'    => 'home_video'
 	)));
+	//Fundo da Homepage (Fallback Vídeo)
+	$wp_customize->add_setting('home_video_fallback', array(
+		'default'           => get_template_directory_uri() . '/img/video-fallback.jpg',
+	));
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home_video_fallback', 
+		array(
+			'label'      => __( 'Fundo da Homepage', 'understrap' ),
+			'description' => __( 'A imagem que aparece em fallback do vídeo', 'understrap' ),
+			'section'    => 'static_front_page',
+			'settings'    => 'home_video_fallback'
+	)));
+	
 	
 	//OPÇÕES DE RODAPÉ
 	//Adicionar secção  
@@ -162,35 +185,40 @@ function fastio_customizer($wp_customize){
 	));
 	
 	//Texto de rodapé
-	$wp_customize->add_setting('text_setting', array(
+	$wp_customize->add_setting('footer_text', array(
 		'default'        => 'Viaje pela natureza',
 	));
-	$wp_customize->add_control('text_setting', array(
+	$wp_customize->add_control('footer_text', array(
 		'label'   =>  __( 'Texto de rodapé', 'understrap' ),
+		'description' => __( 'Texto situado a meio do rodapé', 'understrap' ),
 		'section' => 'footer_settings_section',
+		'settings'    => 'footer_text',
 		'type'    => 'textarea',
 	));
 
 	//Facebook Url
-	$wp_customize->add_setting('understrap_footer_fb', array(
+	$wp_customize->add_setting('footer_fb', array(
 		'default'        => 'https://www.facebook.com/aguadofastio/',
 	));
-	$wp_customize->add_control('understrap_footer_fb', array(
+	$wp_customize->add_control('footer_fb', array(
 		'label'   => __( 'Facebook Url', 'understrap' ),
+		'description' => __( 'Altera o destino do botão Facebook, se vazio não aparece.', 'understrap' ),
 		'section' => 'footer_settings_section',
+		'settings'    => 'footer_fb',
 		'type'    => 'input',
 	));
 
 	//Instagram Url
-	$wp_customize->add_setting('understrap_footer_instag', array(
+	$wp_customize->add_setting('footer_instag', array(
 	 'default'        => 'https://www.instagram.com/aguadofastio',
 	 ));
-	$wp_customize->add_control('understrap_footer_instag', array(
-	 'label'   => __( 'Instagram Url', 'understrap' ),
-	  'section' => 'footer_settings_section',
-	 'type'    => 'input',
+	$wp_customize->add_control('footer_instag', array(
+		'label'   => __( 'Instagram Url', 'understrap' ),
+		'description' => __( 'Altera o destino do botão Instagram, se vazio não aparece.', 'understrap' ),
+		'section' => 'footer_settings_section',
+		'settings'    => 'footer_instag',
+		'type'    => 'input',
 	));
-
 }
 
 

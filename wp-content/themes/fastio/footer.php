@@ -9,9 +9,9 @@
 
 $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
-$footer_text = get_theme_mod( 'text_setting' );
-$fb_link=get_theme_mod( 'understrap_footer_fb' );
-$instagr_link = get_theme_mod( 'understrap_footer_instag' );
+$footer_text = get_theme_mod( 'footer_text' );
+$fb_link=get_theme_mod( 'footer_fb' );
+$instagr_link = get_theme_mod( 'footer_instag' );
 ?>
 
 <?php get_sidebar( 'footerfull' ); ?>
