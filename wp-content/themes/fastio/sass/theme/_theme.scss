@@ -10,11 +10,7 @@
 		box-shadow: none;
 		padding: 0 10px;
 		&::after{
-			-webkit-transition: all 250ms ease-in;
-			-moz-transition: all 250ms ease-in;
-			-ms-transition: all 250ms ease-in;
-			-o-transition: all 250ms ease-in;
-			transition: all 250ms ease-in;
+			@include transition(all 250ms ease-in);
 			-webkit-transform: rotate(0deg);
 			-moz-transform: rotate(0deg);
 			-ms-transform: rotate(0deg);
@@ -48,11 +44,7 @@
 		}
 	}
 	.dropdown-menu{
-		-webkit-transition: all 250ms ease-in;
-		-moz-transition: all 250ms ease-in;
-		-ms-transition: all 250ms ease-in;
-		-o-transition: all 250ms ease-in;
-		transition: all 250ms ease-in;
+		@include transition(all 250ms ease-in);
 		background-color:transparent;
 		border: 0;
 		padding: 0;
@@ -101,6 +93,11 @@
 						padding: 0;
 						font-size:90%;
 						color:white;
+						@include transition(all 250ms ease-in);
+						&:hover,
+						&:focus{
+							color:$primary;
+						}
 					}
 				} 
 			}
@@ -108,6 +105,7 @@
 		//LINK
 		.fastio-home-link{
 			font-size:90%;
+			@include transition(all 250ms ease-in);
 			i.fa{
 				display: block;
 				font-size: 250%;
@@ -116,6 +114,7 @@
 			}
 			&:hover{
 				text-decoration: none;
+				color:white;
 			}
 		}
 		//SOCIAL
@@ -125,6 +124,11 @@
 			li > a{
 				font-size:150%;
 				color:white;
+				@include transition(all 250ms ease-in);
+				&:hover,
+				&:focus{
+					color:$primary;
+				}
 			}
 		}
 	}
