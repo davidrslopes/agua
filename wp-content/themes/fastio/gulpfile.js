@@ -201,11 +201,7 @@ gulp.task('scripts', function() {
         basePaths.dev + 'js/bootstrap4/bootstrap.js',
 
         // End - All BS4 stuff
-
-        basePaths.dev + 'js/skip-link-focus-fix.js',
-		
-		// Fastio JS Script
-		basePaths.dev + 'js/fastio.js'
+		basePaths.dev + 'js/skip-link-focus-fix.js'
     ];
   gulp.src(scripts)
     .pipe(concat('theme.min.js'))

@@ -1,5 +1,3 @@
-//ADD-IN PLUGINS
-
 /*!
 * jQuery ChainFade; version: 1.0
 * 2014 - Gonzalo Castillo
@@ -163,43 +161,3 @@
 
     };
 }(jQuery));
-
-/**
- * --------------------------------------------------------------------------
- * Fastio: fastio.js
- * Ficheiro onde o Javascript é adicionado para posteriormente ser comprimido
- * --------------------------------------------------------------------------
- */
-jQuery( function($) {
-	//On Dropdown
-	$('.fastio-nav').on('show.bs.dropdown', function () {
-		console.log('DROP!');
-		var items = $(this).find('a.dropdown-item');
-		items.chainFade({
-			startAt: 100,
-			distance: 15,
-			direction: 'forward', //'forward' or 'backward'
-			interval: 100,
-			speed: 150,
-			toThe: 'bottom', //toThe 'left', 'right', 'bottom' or 'top'
-			fixedHeight: false,
-			//after: callback()
-		});
-	}).on('hide.bs.dropdown', function () {
-		console.log('UP!');
-		/*var items = $(this).find('a.dropdown-item');
-		items.chainFade({
-			startAt: 100,
-			distance: 15,
-			direction: 'backward', //'forward' or 'backward'
-			interval: 100,
-			speed: 150,
-			toThe: 'top', //toThe 'left', 'right', 'bottom' or 'top'
-			fixedHeight: false,
-			//after: callback()
-		});*/
-	});
-	
-	//Log Copy Check
-	console.log('%c©2018 SAVAGE Agency | DavidRSLopes & Hugo Carvalho', 'background: #39ee7c; background: -moz-linear-gradient(left, #39ee7c 0%, #252525 100%); background: -webkit-linear-gradient(left, #39ee7c 0%,#252525 100%); background: linear-gradient(to right, #39ee7c 0%,#252525 100%); color: #241f20; line-height:60px; font-family: Allerta,sans-serif; font-size:12px; padding: 10px 25px 10px 10px; height:107px; letter-spacing:2px;' );
-});

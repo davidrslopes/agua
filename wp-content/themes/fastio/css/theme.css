@@ -9552,6 +9552,7 @@ a.skip-link {
 
 /* ############################## COMMON ############################## */
 .fastio-nav button.btn.dropdown-toggle {
+  cursor: pointer;
   font-weight: 400;
   color: #00aeef;
   background-color: transparent;
@@ -9592,7 +9593,6 @@ a.skip-link {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
 
 .fastio-nav .dropdown-menu {
-  transition: all 250ms ease-in;
   background-color: transparent;
   border: 0;
   padding: 0;
@@ -9608,6 +9608,35 @@ a.skip-link {
     text-transform: uppercase; }
     .fastio-nav .dropdown-menu a:hover, .fastio-nav .dropdown-menu a:focus, .fastio-nav .dropdown-menu a.hover, .fastio-nav .dropdown-menu a.focus {
       color: #b2eaff; }
+
+.fastio-nav.show > .dropdown-menu {
+  animation-name: slidenavAnimation;
+  animation-duration: 250ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: slidenavAnimation;
+  -webkit-animation-duration: 250ms;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slidenavAnimation;
+  -moz-animation-duration: 250ms;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-fill-mode: forwards; }
+
+@keyframes slidenavAnimation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes slidenavAnimation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .home-footer-wrapper {
   position: absolute;
