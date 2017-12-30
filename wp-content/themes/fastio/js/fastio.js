@@ -171,9 +171,10 @@
  * --------------------------------------------------------------------------
  */
 jQuery( function($) {
+	var debug = true; //Turn this of when in production.
 	//On Dropdown
 	$('.fastio-nav').on('show.bs.dropdown', function () {
-		console.log('DROP!');
+		if(debug){console.log('DROP!');}
 		var items = $(this).find('a.dropdown-item');
 		items.chainFade({
 			startAt: 100,
@@ -186,7 +187,7 @@ jQuery( function($) {
 			//after: callback()
 		});
 	}).on('hide.bs.dropdown', function () {
-		console.log('UP!');
+		if(debug){console.log('UP!');}
 		/*var items = $(this).find('a.dropdown-item');
 		items.chainFade({
 			startAt: 100,
