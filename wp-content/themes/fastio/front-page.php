@@ -16,7 +16,7 @@ $home_video_fallback = get_theme_mod( 'home_video_fallback' );
 </video>
 <!-- ******************* The Video Area End ******************* -->
 
-<!-- ******************* Content ******************* -->
+<!-- ******************* The Content ******************* -->
 <div class="wrapper wrapper-home" id="wrapper-home">
 	<div class="container">
 		<div class="col-xs-12" id="content" tabindex="-1">
@@ -24,6 +24,6 @@ $home_video_fallback = get_theme_mod( 'home_video_fallback' );
 		</div>
 	</div><!-- Container end -->
 </div><!-- Wrapper end -->
-<!-- ******************* Content End ******************* -->
+<!-- ******************* The Content End ******************* -->
 
 <?php get_footer(); ?>

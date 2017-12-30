@@ -100,7 +100,7 @@
 	}
 }
 
-//Footer
+//Home Footer
 .home-footer-wrapper{
 	position: absolute;
 	padding-top: 0;
@@ -168,6 +168,84 @@
 			}
 		}
 	}
+}
+//Main Footer
+.main-footer-wrapper{
+	height: 62px;
+	width: 100%;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 46px;
+	footer{
+		.fastio-footer-widget{
+			font-size:70%;
+		}
+		.fastio-footer-social{
+			margin: 0;
+			padding: 0;
+			li > a{
+				font-size:200%;
+				color:white;
+				@include transition(all 250ms ease-in);
+				padding:.5rem;
+				&:hover,
+				&:focus{
+					color:$primary;
+				}
+			}
+		}
+		.fastio-footer-lang{
+			//WPML
+			.wpml-ls{
+				padding:0;
+				direction: rtl;
+				display: inline-block;
+				ul{
+					direction: rtl;
+					display: inline-block;
+					list-style: circle;
+					list-style-position: outside;
+					color:inherit;
+					li{
+						list-style-type: circle;
+						display: list-item;
+						a{
+							display: initial;
+							padding: 0;
+							font-size:70%;
+							color:inherit;
+							@include transition(all 250ms ease-in);
+							&:hover,
+							&:focus{
+								color:$primary;
+							}
+						}
+					} 
+				}
+			}
+		}
+		.fastio-footer-nav{
+			ul > li > a{
+				font-size:70%;
+				color:inherit;
+				@include transition(all 250ms ease-in);
+				&:hover,
+				&:focus{
+					color:$primary;
+				}
+			}
+		}
+		.fastio-footer-copy{
+			font-size:60%;
+			line-height: 46px;
+		}
+	}
+}
+
+//Individual page footer styling
+body.page-a-nossa-agua .main-footer-wrapper{
+	background-color: $h20-light-blue;
+	color: white;
 }
 /* ############################## HOMEPAGE ############################## */
 

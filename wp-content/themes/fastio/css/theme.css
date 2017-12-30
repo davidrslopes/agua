@@ -9688,6 +9688,59 @@ a.skip-link {
       .home-footer-wrapper footer .fastio-home-social li > a:hover, .home-footer-wrapper footer .fastio-home-social li > a:focus {
         color: #00aeef; }
 
+.main-footer-wrapper {
+  height: 62px;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 46px; }
+  .main-footer-wrapper footer .fastio-footer-widget {
+    font-size: 70%; }
+  .main-footer-wrapper footer .fastio-footer-social {
+    margin: 0;
+    padding: 0; }
+    .main-footer-wrapper footer .fastio-footer-social li > a {
+      font-size: 200%;
+      color: white;
+      transition: all 250ms ease-in;
+      padding: .5rem; }
+      .main-footer-wrapper footer .fastio-footer-social li > a:hover, .main-footer-wrapper footer .fastio-footer-social li > a:focus {
+        color: #00aeef; }
+  .main-footer-wrapper footer .fastio-footer-lang .wpml-ls {
+    padding: 0;
+    direction: rtl;
+    display: inline-block; }
+    .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul {
+      direction: rtl;
+      display: inline-block;
+      list-style: circle;
+      list-style-position: outside;
+      color: inherit; }
+      .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li {
+        list-style-type: circle;
+        display: list-item; }
+        .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a {
+          display: initial;
+          padding: 0;
+          font-size: 70%;
+          color: inherit;
+          transition: all 250ms ease-in; }
+          .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a:hover, .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a:focus {
+            color: #00aeef; }
+  .main-footer-wrapper footer .fastio-footer-nav ul > li > a {
+    font-size: 70%;
+    color: inherit;
+    transition: all 250ms ease-in; }
+    .main-footer-wrapper footer .fastio-footer-nav ul > li > a:hover, .main-footer-wrapper footer .fastio-footer-nav ul > li > a:focus {
+      color: #00aeef; }
+  .main-footer-wrapper footer .fastio-footer-copy {
+    font-size: 60%;
+    line-height: 46px; }
+
+body.page-a-nossa-agua .main-footer-wrapper {
+  background-color: #b2eaff;
+  color: white; }
+
 /* ############################## HOMEPAGE ############################## */
 .fastio-video {
   position: fixed;
