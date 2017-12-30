@@ -6,6 +6,25 @@
  *
  * @package understrap
  */
+//
+
+/**
+	 * Adds a slug class to the array of body classes.
+	 *
+	 * @param array $classes Classes for the body element.
+	 *
+	 * @return array
+	 */
+if ( ! function_exists( 'understrap_body_classes' ) ) {
+	function add_slug_body_class( $classes ) {
+		global $post;
+		if ( isset( $post ) ) {
+			$classes[] = $post->post_type . '-' . $post->post_name;
+		}
+		return $classes;
+	}
+}
+add_filter( 'body_class', 'add_slug_body_class' );
 
 if ( ! function_exists( 'understrap_body_classes' ) ) {
 	/**
