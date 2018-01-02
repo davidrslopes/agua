@@ -66,6 +66,11 @@ require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
 require get_template_directory() . '/inc/woocommerce.php';
 
 /**
+ * Load ACF functions.
+ */
+require get_template_directory() . '/inc/acf.php';
+
+/**
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
