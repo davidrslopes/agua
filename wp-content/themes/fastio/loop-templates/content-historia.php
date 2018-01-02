@@ -7,11 +7,14 @@
 
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
+    <div class="col-md-3">
+         <span class="year"><?php the_field('ano'); ?></span>
+    </div>
+    <div class="col-md-9">
 	<header class="entry-header">
-            <span class="year"><?php the_field('ano'); ?></span>
+           
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 	</header><!-- .entry-header -->
 
@@ -29,11 +32,6 @@
 		?>
 
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-
-		<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
-
-	</footer><!-- .entry-footer -->
+        </div>
 
 </article><!-- #post-## -->
