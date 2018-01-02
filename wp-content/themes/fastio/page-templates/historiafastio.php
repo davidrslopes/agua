@@ -14,15 +14,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper historiafastio" id="full-width-page-wrapper">
 
     <section id="seccao1">
-    <?php $image = wp_get_attachment_image_src(get_field('seccao_1_imagem_esquerda'), 'full'); ?>
-    <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_esquerda')) ?>" class="img-responsive">  
-    <div class="<?php echo esc_attr( $container ); ?>" id="content">
-
-		<div class="row">
-
-			<div class="col-md-12 content-area" id="primary">
-
-				<main class="site-main" id="main" role="main">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                    <?php $image = wp_get_attachment_image_src(get_field('seccao_1_imagem_esquerda'), 'full'); ?>
+                    <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_esquerda')) ?>" class="img-responsive showcase-left">  
+            </div>
+            <div class="col-md-6 col-sm-6 content-area" id="primary">
+               	<main class="site-main" id="main" role="main">
                                     
                         <?php $args = array('post_type' => 'historia','p' => '115'); ?>
                         <?php $loop = new WP_Query($args); ?>
@@ -35,13 +33,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <h1>No posts here!</h1>
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>
-				</main><!-- #main -->
-
-			</div><!-- #primary -->
-
-		</div><!-- .row end -->
-
-	</div><!-- Container end -->
+		</main><!-- #main -->
+            </div>
+            
+        </div>
     </section>
     <section id="seccao2">
     <?php $image2 = wp_get_attachment_image_src(get_field('seccao_2_imagem_esquerda'), 'full'); ?>
@@ -88,6 +83,15 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </a>
                     </div>
         </div>
+    <div class="<?php echo esc_attr( $container ); ?>" id="content">
+
+		<div class="row">
+
+			
+
+		</div><!-- .row end -->
+
+	</div><!-- Container end -->
 
 </div><!-- Wrapper end -->
 
