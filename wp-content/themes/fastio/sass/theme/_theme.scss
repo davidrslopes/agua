@@ -171,6 +171,8 @@
 }
 //Main Footer
 .main-footer-wrapper{
+	background-color: $h20-light-blue;
+	color: white;
 	height: 62px;
 	width: 100%;
 	padding-top: 0;
@@ -243,8 +245,10 @@
 }
 
 //Individual page footer styling
-body.page-a-nossa-agua .main-footer-wrapper{
-	background-color: $h20-light-blue;
+body.page-desde-1979 .main-footer-wrapper, // Desde 1979
+body.page-go .main-footer-wrapper, // Fastio GO
+body.page-hotwheels-single .main-footer-wrapper // Hotwheels Car Pages {
+	background-color: $h20-blue;
 	color: white;
 }
 /* ############################## HOMEPAGE ############################## */
@@ -275,4 +279,26 @@ body.page-template-historiafastio{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+/* ############################## A NOSSA AGUA ############################## */
+.fastio-hero{
+	background-image: url(../img/ImagemAgua_1.jpg) no-repeat;
+	width:100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	height:100vh;
+	display: block;
+	header{
+		padding:50vh 0 0 0;
+		h1{
+			text-align: center;
+			color:white;
+		}
+	}
 }
