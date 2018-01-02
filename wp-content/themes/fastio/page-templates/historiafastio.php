@@ -184,7 +184,4 @@ $container = get_theme_mod( 'understrap_container_type' );
     
 
 </div><!-- Wrapper end -->
-<script>
-    AOS.init();
-</script>
 <?php get_footer(); ?>
