@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: A Nossa Agua
+ * Template Name: A Nossa Água
  *
  * Template for displaying a specific page
  *
@@ -8,15 +8,25 @@
  */
 
 get_header();
+//Section 1 : Hero 1
+$hero_1['title'] = get_the_title( '<h1 class="fastio-hero-title">', '</h1>' );
+$hero_1['bg_img'] = get_the_post_thumbnail_url( $post->ID, 'full' );
+//Section 2 : Product Section
+
+//Section 3 : Hero 2
+$hero_2['title'] = get_field('a-nossa-agua-section-3-title');
+$hero_2['bg_img'] = get_field('a-nossa-agua-section-3-bg-img');
+$hero_2['hashtag_svg'] = wp_get_attachment_image_src(get_field('a-nossa-agua-section-3-hastag-svg'), 'full');
+$hero_2['hashtag_svg_alt'] = get_the_title(get_field('a-nossa-agua-section-3-hastag-svg'));
 ?>
 
 <!-- ******************* The Hero Section ******************* -->
-<section class="fastio-hero" style="background-image:url('<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>');">
+<section class="fastio-hero" style="background-image:url('<?php echo $hero_1['bg_img']; ?>');">
 	<div class="container-fluid">
 		<div class="row">
 			<header class="fastio-hero-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<?php 
-					the_title( '<h1 class="fastio-hero-title">', '</h1>' );
+					echo $hero_1['title'];
 					//edit_post_link( '<i class="fa fa-pencil" title="'.__( 'Editar esta página', 'understrap' ).'"></i>', '<div class="edit-link text-center">', '</div>' );
 				?>
 			</header>
@@ -45,4 +55,16 @@ get_header();
 		</div>
 	</div>
 </section>
+
+<!-- ******************* The Hero II Section ******************* -->
+<section class="fastio-hero-2" style="background-image:url('<?php echo $hero_2['bg_img']; ?>');">
+	<div class="container-fluid">
+		<div class="row">
+			<header class="fastio-hero-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<?php if(!empty($hero_2['title'])): ?><h1><?php echo $hero_2['title']; ?></h1><?php endif; ?>
+				<?php if(!empty($hero_2['hashtag_svg'])): ?><img class="hero-hashtag" src="<?php echo $hero_2['hashtag_svg']; ?>" alt="<?php echo $hero_2['hashtag_svg_alt']; ?>"><?php endif; ?>
+			</header>
+		</div>
+	</div>
+</section><!-- .fastio-hero-2 -->
 <?php get_footer(); ?>
