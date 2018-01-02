@@ -10464,6 +10464,25 @@ body.page-template-a-nossa-agua .fastio-hero {
       text-align: center;
       color: white; }
 
+body.page-template-a-nossa-agua .fastio-hero-2 {
+  background-image: url("../img/ImagemAgua_2.jpg") no-repeat;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: block; }
+  body.page-template-a-nossa-agua .fastio-hero-2 header {
+    padding: 50vh 0 0 0; }
+    body.page-template-a-nossa-agua .fastio-hero-2 header h1 {
+      margin: -1.25rem 0 0 0;
+      text-align: center;
+      color: white; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

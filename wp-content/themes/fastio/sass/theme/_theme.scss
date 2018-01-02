@@ -315,4 +315,5 @@ body.page-template-historiafastio{
 /* ############################## A NOSSA AGUA ############################## */
 body.page-template-a-nossa-agua{
 	.fastio-hero{ @include fastio-hero('../img/ImagemAgua_1.jpg'); }
+	.fastio-hero-2{ @include fastio-hero('../img/ImagemAgua_2.jpg'); }
 }
