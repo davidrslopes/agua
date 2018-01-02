@@ -44,33 +44,28 @@ $container = get_theme_mod( 'understrap_container_type' );
                 
                 <div class="row">
                     <div class="col-xs-3">
-                        <?php
-                        if(get_field('imagem_1'))
-                        {
-                                echo '<p>' . get_field('imagem_1') . '</p>';
-                        }
-
-                        ?>
-                        <img src="<?php the_field('imagem_1'); ?>" alt="" />
                         <?php $image = wp_get_attachment_image_src(get_field('imagem_1'), 'full'); ?>
-                        <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('imagem_1')) ?>" />
-                        <a href="#" class="thumbnail">
-                             <img src="http://placehold.it/350x150" class="img-responsive">
+                        <a href="<?php the_field('link_imagem_1'); ?>" class="thumbnail">
+                             <?php $image = wp_get_attachment_image_src(get_field('imagem_1'), 'full'); ?>
+                             <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('imagem_1')) ?>" class="img-responsive">
                         </a>
                     </div>
                     <div class="col-xs-3">
-                       <a href="#" class="thumbnail">
-                            <img src="http://placehold.it/350x150" class="img-responsive">
+                       <a href="<?php the_field('link_imagem_2'); ?>" class="thumbnail">
+                            <?php $image2 = wp_get_attachment_image_src(get_field('imagem_2'), 'full'); ?>
+                           <img src="<?php echo $image2[0]; ?>" alt="<?php echo get_the_title(get_field('imagem_2')) ?>" class="img-responsive">
                        </a>
                    </div>
                     <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                             <img src="http://placehold.it/350x150" class="img-responsive">
+                        <a href="<?php the_field('link_imagem_3'); ?>" class="thumbnail">
+                            <?php $image3 = wp_get_attachment_image_src(get_field('imagem_3'), 'full'); ?>
+                               <img src="<?php echo $image3[0]; ?>" alt="<?php echo get_the_title(get_field('imagem_3')) ?>" class="img-responsive">
                         </a>
                     </div>
                     <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                             <img src="http://placehold.it/350x150" class="img-responsive">
+                        <a href="<?php the_field('link_imagem_4'); ?>" class="thumbnail">
+                                <?php $image4 = wp_get_attachment_image_src(get_field('imagem_4'), 'full'); ?>
+                               <img src="<?php echo $image4[0]; ?>" alt="<?php echo get_the_title(get_field('imagem_4')) ?>" class="img-responsive">
                         </a>
                     </div>
                 </div>
