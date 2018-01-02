@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <?php $loop = new WP_Query($args); ?>
                         <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-						<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+						<?php get_template_part( 'loop-templates/content', 'historia' ); ?>
 
 					<?php endwhile; // end of the loop. ?>
                         <?php else: ?>
