@@ -14,10 +14,11 @@ $hero_1['bg_img'] = get_the_post_thumbnail_url( $post->ID, 'full' );
 //Section 2 : Product Section
 
 //Section 3 : Hero 2
-$hero_2['title'] = get_field('a-nossa-agua-section-3-title');
-$hero_2['bg_img'] = get_field('a-nossa-agua-section-3-bg-img');
-$hero_2['hashtag_svg'] = wp_get_attachment_image_src(get_field('a-nossa-agua-section-3-hastag-svg'), 'full');
-$hero_2['hashtag_svg_alt'] = get_the_title(get_field('a-nossa-agua-section-3-hastag-svg'));
+$hero_2 = get_field('a-nossa-agua-section-3');
+//$hero_2['title'] = get_field('a-nossa-agua-section-3-title');
+//$hero_2['bg_img'] = get_field('a-nossa-agua-section-3-bg-img');
+//$hero_2['hashtag_svg'] = wp_get_attachment_image_src(get_field('a-nossa-agua-section-3-hastag-svg'), 'full');
+//$hero_2['hashtag_svg_alt'] = get_the_title(get_field('a-nossa-agua-section-3-hastag-svg'));
 ?>
 
 <!-- ******************* The Hero Section ******************* -->
@@ -62,7 +63,7 @@ $hero_2['hashtag_svg_alt'] = get_the_title(get_field('a-nossa-agua-section-3-has
 		<div class="row">
 			<header class="fastio-hero-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<?php if(!empty($hero_2['title'])): ?><h1><?php echo $hero_2['title']; ?></h1><?php endif; ?>
-				<?php if(!empty($hero_2['hashtag_svg'])): ?><img class="hero-hashtag" src="<?php echo $hero_2['hashtag_svg']; ?>" alt="<?php echo $hero_2['hashtag_svg_alt']; ?>"><?php endif; ?>
+				<?php if(!empty($hero_2['hashtag_svg'])): ?><img class="hero-hashtag" src="<?php echo $hero_2['hashtag_svg']; ?>" alt="<?php echo $hero_2['hashtag_svg']['title']; ?>"><?php endif; ?>
 			</header>
 		</div>
 	</div>
