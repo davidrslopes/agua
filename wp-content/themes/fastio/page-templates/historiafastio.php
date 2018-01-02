@@ -116,12 +116,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     </section>
     <section id="seccao5">
      <div class="<?php echo esc_attr( $container ); ?>" id="content">
-
-		<div class="row" id="primary">
-                <?php $image6 = wp_get_attachment_image_src(get_field('seccao_5_imagem_1'), 'full'); ?>
-                <img src="<?php echo $image6[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_1')) ?>" class="img-responsive">  
-		</div><!-- .row end -->
-                <main class="site-main" id="main" role="main">
+                <main class="site-main row" id="main" role="main">
                                     
                         <?php $args = array('post_type' => 'historia','posts_per_page' => 4, 'order'=> 'ASC', 'orderby' => 'title' ); ?>
                         <?php $loop = new WP_Query($args); ?>
@@ -134,7 +129,16 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <h1>No posts here!</h1>
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>
+                         <?php $image8 = wp_get_attachment_image_src(get_field('seccao_5_imagem_3'), 'full'); ?>
+                        <img src="<?php echo $image8[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_3')) ?>" class="img-responsive">  
+                   
 		</main><!-- #main -->
+                <div class="row" id="primary">
+                <?php $image6 = wp_get_attachment_image_src(get_field('seccao_5_imagem_1'), 'full'); ?>
+                <img src="<?php echo $image6[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_1')) ?>" class="img-responsive">  
+		<?php $image7 = wp_get_attachment_image_src(get_field('seccao_5_imagem_2'), 'full'); ?>
+                <img src="<?php echo $image7[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_2')) ?>" class="img-responsive">  
+                </div><!-- .row end -->
 	</div><!-- Container end -->
     </section>  
         <div class="row">
