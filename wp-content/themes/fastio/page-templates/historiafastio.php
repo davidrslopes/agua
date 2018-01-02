@@ -40,10 +40,6 @@ $container = get_theme_mod( 'understrap_container_type' );
     </section>
     <section id="seccao2">
         <div class="row">
-            <div class="col-md-6 col-sm-6">
-               <?php $image2 = wp_get_attachment_image_src(get_field('seccao_2_imagem_esquerda'), 'full'); ?>
-                <img src="<?php echo $image2[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_2_imagem_esquerda')) ?>" class="img-responsive">  
-            </div>
             <div class="col-md-6 col-sm-6 content-area" id="primary">
                	<main class="site-main" id="main" role="main">
                                     
@@ -60,7 +56,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <?php wp_reset_postdata(); ?>
 		</main><!-- #main -->
             </div>
-            
+            <div class="col-md-6 col-sm-6">
+               <?php $image2 = wp_get_attachment_image_src(get_field('seccao_2_imagem_esquerda'), 'full'); ?>
+                <img src="<?php echo $image2[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_2_imagem_esquerda')) ?>" class="img-responsive">  
+            </div>
         </div>
     </section>
     <section id="seccao3">
@@ -116,29 +115,27 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>  
     </section>
     <section id="seccao5">
-     <div class="row">
-            <div class="col-md-6 col-sm-6">
+     <div class="<?php echo esc_attr( $container ); ?>" id="content">
+
+		<div class="row" id="primary">
                 <?php $image6 = wp_get_attachment_image_src(get_field('seccao_5_imagem_1'), 'full'); ?>
                 <img src="<?php echo $image6[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_1')) ?>" class="img-responsive">  
-            </div>
-            <div class="col-md-6 col-sm-6 content-area" id="primary">
-               	<main class="site-main" id="main" role="main">
+		</div><!-- .row end -->
+                <main class="site-main" id="main" role="main">
                                     
-                        <?php $args = array('post_type' => 'historia','p' => '117'); ?>
+                        <?php $args = array('post_type' => 'historia','posts_per_page' => 4, 'order'=> 'ASC', 'orderby' => 'title' ); ?>
                         <?php $loop = new WP_Query($args); ?>
                         <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-						<?php get_template_part( 'loop-templates/content', 'historia' ); ?>
-
-					<?php endwhile; // end of the loop. ?>
+                        <div class="col-md-3">
+			<?php get_template_part( 'loop-templates/content', 'historia' ); ?>
+                        </div>
+			<?php endwhile; // end of the loop. ?>
                         <?php else: ?>
                             <h1>No posts here!</h1>
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>
 		</main><!-- #main -->
-            </div>
-            
-        </div>  
+	</div><!-- Container end -->
     </section>  
         <div class="row">
                     <div class="col-md-3">
@@ -166,15 +163,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </a>
                     </div>
         </div>
-    <div class="<?php echo esc_attr( $container ); ?>" id="content">
-
-		<div class="row">
-
-			
-
-		</div><!-- .row end -->
-
-	</div><!-- Container end -->
+    
 
 </div><!-- Wrapper end -->
 
