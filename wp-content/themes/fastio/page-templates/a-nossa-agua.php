@@ -58,12 +58,12 @@ $hero_2 = get_field('a-nossa-agua-section-3');
 </section>
 
 <!-- ******************* The Hero II Section ******************* -->
-<section class="fastio-hero-2" style="background-image:url('<?php echo $hero_2['bg_img']; ?>');">
+<section class="fastio-hero-2" style="background-image:url('<?php echo $hero_2['bg-img']; ?>');">
 	<div class="container-fluid">
 		<div class="row">
 			<header class="fastio-hero-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<?php if(!empty($hero_2['title'])): ?><h1><?php echo $hero_2['title']; ?></h1><?php endif; ?>
-				<?php if(!empty($hero_2['hashtag_svg'])): ?><img class="hero-hashtag" src="<?php echo $hero_2['hashtag_svg']; ?>" alt="<?php echo $hero_2['hashtag_svg']['title']; ?>"><?php endif; ?>
+				<?php if(!empty($hero_2['hashtag_svg'])): ?><img class="hero-hashtag" src="<?php echo $hero_2['hashtag-svg']; ?>" alt="<?php echo $hero_2['hashtag-svg']['title']; ?>"><?php endif; ?>
 			</header>
 		</div>
 	</div>
