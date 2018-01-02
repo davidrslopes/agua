@@ -69,11 +69,3 @@ require get_template_directory() . '/inc/woocommerce.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
-
-
-// Add scripts to wp_head()
-function child_theme_head_script() { ?>
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-<?php }
-add_action( 'wp_head', 'child_theme_head_script' );
