@@ -54,6 +54,10 @@ $container = get_theme_mod( 'understrap_container_type' );
     </section>
     <section id="seccao2">
         <div class="row">
+            <div data-aos="fade-right">
+               <?php $image2 = wp_get_attachment_image_src(get_field('seccao_2_imagem_esquerda'), 'full'); ?>
+                <img src="<?php echo $image2[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_2_imagem_esquerda')) ?>" class="img-responsive">  
+            </div>
             <div class="col-md-6 col-sm-6 content-area" id="primary">
                	<main class="site-main" id="main" role="main">
                                     
@@ -70,17 +74,24 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <?php wp_reset_postdata(); ?>
 		</main><!-- #main -->
             </div>
+            <div data-aos="fade-down">
+                <?php $imagesection2bottom = wp_get_attachment_image_src(get_field('seccao_2_imagem_2'), 'full'); ?>
+                <img src="<?php echo $imagesection2bottom[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_2_imagem_2')) ?>" class="img-responsive">  
+              
+            </div>
             <div class="col-md-6 col-sm-6">
-               <?php $image2 = wp_get_attachment_image_src(get_field('seccao_2_imagem_esquerda'), 'full'); ?>
-                <img src="<?php echo $image2[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_2_imagem_esquerda')) ?>" class="img-responsive">  
+               <?php $imagesection2right = wp_get_attachment_image_src(get_field('seccao_2_imagem_3'), 'full'); ?>
+                <img src="<?php echo $imagesection2right[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_2_imagem_3')) ?>" class="img-responsive">  
             </div>
         </div>
     </section>
     <section id="seccao3">
      <div class="row">
             <div class="col-md-6 col-sm-6">
+                <div data-aos="fade-right">
               <?php $image3 = wp_get_attachment_image_src(get_field('seccao_3_imagem_esquerda'), 'full'); ?>
               <img src="<?php echo $image3[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_3_imagem_esquerda')) ?>" class="img-responsive">  
+                </div>
             </div>
             <div class="col-md-6 col-sm-6 content-area" id="primary">
                	<main class="site-main" id="main" role="main">
@@ -89,16 +100,24 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <?php $loop = new WP_Query($args); ?>
                         <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-						<?php get_template_part( 'loop-templates/content', 'historia' ); ?>
+			<?php get_template_part( 'loop-templates/content', 'historia' ); ?>
 
-					<?php endwhile; // end of the loop. ?>
+			<?php endwhile; // end of the loop. ?>
                         <?php else: ?>
                             <h1>No posts here!</h1>
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>
 		</main><!-- #main -->
+                <div data-aos="fade-left">
+                    <?php $imagesection3right = wp_get_attachment_image_src(get_field('seccao_3_imagem_2'), 'full'); ?>
+                    <img src="<?php echo $imagesection3right[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_3_imagem_2')) ?>" class="img-responsive">  
+                
+                </div>
             </div>
-            
+         <div data-aos="fade-left">
+                <?php $imagesection3bottomright = wp_get_attachment_image_src(get_field('seccao_3_imagem_3'), 'full'); ?>
+                <img src="<?php echo $imagesection3bottomright[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_3_imagem_3')) ?>" class="img-responsive">    
+         </div>
         </div>
     </section>
     <section id="seccao4">
@@ -125,6 +144,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <?php wp_reset_postdata(); ?>
 		</main><!-- #main -->
             </div>
+            <div data-aos="fade-down-right">
+            <?php $imagesection4bottom = wp_get_attachment_image_src(get_field('seccao_4_imagem_3'), 'full'); ?>
+            <img src="<?php echo $imagesection4bottom[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_3')) ?>" class="img-responsive">  
+            </div>
             
         </div>  
     </section>
@@ -143,15 +166,21 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <h1>No posts here!</h1>
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>
-                         <?php $image8 = wp_get_attachment_image_src(get_field('seccao_5_imagem_3'), 'full'); ?>
-                        <img src="<?php echo $image8[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_3')) ?>" class="img-responsive">  
-                   
+                            <div data-aos="fade-up-left">
+                            <?php $image8 = wp_get_attachment_image_src(get_field('seccao_5_imagem_3'), 'full'); ?>
+                            <img src="<?php echo $image8[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_3')) ?>" class="img-responsive">  
+                            </div>
+
 		</main><!-- #main -->
                 <div class="row" id="primary">
-                <?php $image6 = wp_get_attachment_image_src(get_field('seccao_5_imagem_1'), 'full'); ?>
-                <img src="<?php echo $image6[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_1')) ?>" class="img-responsive">  
-		<?php $image7 = wp_get_attachment_image_src(get_field('seccao_5_imagem_2'), 'full'); ?>
-                <img src="<?php echo $image7[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_2')) ?>" class="img-responsive">  
+                    <div data-aos="fade-down-right">
+                    <?php $image6 = wp_get_attachment_image_src(get_field('seccao_5_imagem_1'), 'full'); ?>
+                    <img src="<?php echo $image6[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_1')) ?>" class="img-responsive">  
+                    </div>
+                    <div data-aos="fade-down-left">
+                        <?php $image7 = wp_get_attachment_image_src(get_field('seccao_5_imagem_2'), 'full'); ?>
+                        <img src="<?php echo $image7[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_2')) ?>" class="img-responsive">  
+                    </div>
                 </div><!-- .row end -->
 	</div><!-- Container end -->
     </section>  
