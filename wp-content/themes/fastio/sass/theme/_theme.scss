@@ -279,6 +279,14 @@ body.page-template-historiafastio{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+	#seccao5{
+		background-image: url(../img/Fundo_Seccao_Azul.svg);
+		background-size:100% 100%;
+		-o-background-size: 100% 100%;
+		-webkit-background-size: 100% 100%;
+		background-size:cover;
+
+	}
 }
 /* ############################## A NOSSA AGUA ############################## */
 .fastio-hero{
@@ -300,12 +308,4 @@ body.page-template-historiafastio{
 			color:white;
 		}
 	}
-
-body.page-template-historiafastio #seccao5{
-    background-image: url(../img/Fundo_Seccao_Azul.svg);
-    background-size:100% 100%;
-    -o-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    background-size:cover;
-
 }
