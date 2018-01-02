@@ -113,4 +113,5 @@ wp-content/themes/fastio/package-lock.json
 !wp-content/plugins/wpml-string-translation
 !wp-content/plugins/acfml
 !wp-content/plugins/sitepress-multilingual-cms
+!wp-content/plugins/scalable-vector-graphics-svg
 !wp-content/themes/fastio/
