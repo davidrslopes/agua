@@ -1,3 +1,27 @@
+/* ############################## MIXINS ############################## */
+//Fastio HERO
+@mixin fastio-hero($img_src){
+	background-image: url($img_src) no-repeat;
+	width:100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	height:100vh;
+	display: block;
+	header{
+		padding:50vh 0 0 0;
+		h1{
+			margin:-($h1-font-size/2) 0 0 0;
+			text-align: center;
+			color:white;
+		}
+	}
+}
+
 /* ############################## COMMON ############################## */
 // Navigation
 .fastio-nav{
@@ -245,9 +269,9 @@
 }
 
 //Individual page footer styling
-body.page-desde-1979 .main-footer-wrapper, // Desde 1979
-body.page-go .main-footer-wrapper, // Fastio GO
-body.page-hotwheels-single .main-footer-wrapper // Hotwheels Car Pages {
+body.page-template-historiafastio .main-footer-wrapper, // Desde 1979
+body.page-template-go .main-footer-wrapper, // Fastio GO
+body.page-template-hotwheels-single .main-footer-wrapper{ // Hotwheels Car Pages 
 	background-color: $h20-blue;
 	color: white;
 }
@@ -289,23 +313,6 @@ body.page-template-historiafastio{
 	}
 }
 /* ############################## A NOSSA AGUA ############################## */
-.fastio-hero{
-	background-image: url(../img/ImagemAgua_1.jpg) no-repeat;
-	width:100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-	height:100vh;
-	display: block;
-	header{
-		padding:50vh 0 0 0;
-		h1{
-			text-align: center;
-			color:white;
-		}
-	}
+body.page-template-a-nossa-agua{
+	.fastio-hero{ @include fastio-hero('../img/ImagemAgua_1.jpg'); }
 }
