@@ -13,6 +13,29 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper historiafastio" id="full-width-page-wrapper">
 
+    <section id="seccao1">
+    <?php $image = wp_get_attachment_image_src(get_field('seccao_1_imagem_esquerda'), 'full'); ?>
+    <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_esquerda')) ?>" class="img-responsive">  
+    </section>
+    <section id="seccao2">
+    <?php $image2 = wp_get_attachment_image_src(get_field('seccao_2_imagem_esquerda'), 'full'); ?>
+    <img src="<?php echo $image2[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_2_imagem_esquerda')) ?>" class="img-responsive">  
+    </section>
+    <section id="seccao3">
+    <?php $image3 = wp_get_attachment_image_src(get_field('seccao_3_imagem_esquerda'), 'full'); ?>
+    <img src="<?php echo $image3[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_3_imagem_esquerda')) ?>" class="img-responsive">  
+    </section>
+    <section id="seccao4">
+    <?php $image4 = wp_get_attachment_image_src(get_field('seccao_4_imagem_esquerda_1'), 'full'); ?>
+    <img src="<?php echo $image4[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_esquerda_1')) ?>" class="img-responsive">  
+    <?php $image5 = wp_get_attachment_image_src(get_field('seccao_4_imagem_esquerda_2'), 'full'); ?>
+    <img src="<?php echo $image5[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_esquerda_2')) ?>" class="img-responsive">  
+    
+    </section>
+    <section id="seccao5">
+    <?php $image6 = wp_get_attachment_image_src(get_field('seccao_5_imagem_1'), 'full'); ?>
+    <img src="<?php echo $image6[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_1')) ?>" class="img-responsive">  
+    </section>
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
 		<div class="row">
@@ -42,7 +65,6 @@ $container = get_theme_mod( 'understrap_container_type' );
         
         <div class="row">
                     <div class="col-md-3">
-                        <?php $image = wp_get_attachment_image_src(get_field('imagem_1'), 'full'); ?>
                         <a href="<?php the_field('link_imagem_1'); ?>" class="thumbnail">
                              <?php $image = wp_get_attachment_image_src(get_field('imagem_1'), 'full'); ?>
                              <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('imagem_1')) ?>" class="img-responsive">
