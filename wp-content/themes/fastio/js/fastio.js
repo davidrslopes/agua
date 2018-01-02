@@ -183,7 +183,7 @@
 jQuery( function($) {
 	var debug = true; //Turn this of when in production.
 	//AOS
-	if($(body).hasClass('page-template-historiafastio')){
+	if($('body').hasClass('page-template-historiafastio')){
 		AOS.init();
 	}
 	
