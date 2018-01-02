@@ -9737,6 +9737,10 @@ a.skip-link {
     font-size: 60%;
     line-height: 46px; }
 
+body.page-desde-1979 .main-footer-wrapper {
+  background-color: #00aeef;
+  color: white; }
+
 body.page-a-nossa-agua .main-footer-wrapper {
   background-color: #b2eaff;
   color: white; }
@@ -9766,12 +9770,33 @@ body.page-template-historiafastio {
   background-size: cover;
   -o-background-size: cover; }
 
+<<<<<<< HEAD
+/* ############################## A NOSSA AGUA ############################## */
+.fastio-hero {
+  background-image: url(../img/ImagemAgua_1.jpg) no-repeat;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: block; }
+  .fastio-hero header {
+    padding: 50vh 0 0 0; }
+    .fastio-hero header h1 {
+      text-align: center;
+      color: white; }
+=======
 body.page-template-historiafastio #seccao5 {
   background-image: url(../img/Fundo_Seccao_Azul.svg);
   background-size: 100% 100%;
   -o-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   background-size: cover; }
+>>>>>>> ddd1b6bc3e9a59001ef7af78d5dbbf3b36e6c460
 
 /*
 * Use existing Bootstrap 4 classes and
