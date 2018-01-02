@@ -16,6 +16,32 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="seccao1">
     <?php $image = wp_get_attachment_image_src(get_field('seccao_1_imagem_esquerda'), 'full'); ?>
     <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_esquerda')) ?>" class="img-responsive">  
+    <div class="<?php echo esc_attr( $container ); ?>" id="content">
+
+		<div class="row">
+
+			<div class="col-md-12 content-area" id="primary">
+
+				<main class="site-main" id="main" role="main">
+                                    
+                        <?php $args = array('post_type' => 'historia','p' => '115'); ?>
+                        <?php $loop = new WP_Query($args); ?>
+                        <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+						<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+
+					<?php endwhile; // end of the loop. ?>
+                        <?php else: ?>
+                            <h1>No posts here!</h1>
+                        <?php endif; ?>
+                        <?php wp_reset_postdata(); ?>
+				</main><!-- #main -->
+
+			</div><!-- #primary -->
+
+		</div><!-- .row end -->
+
+	</div><!-- Container end -->
     </section>
     <section id="seccao2">
     <?php $image2 = wp_get_attachment_image_src(get_field('seccao_2_imagem_esquerda'), 'full'); ?>
@@ -35,34 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="seccao5">
     <?php $image6 = wp_get_attachment_image_src(get_field('seccao_5_imagem_1'), 'full'); ?>
     <img src="<?php echo $image6[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_1')) ?>" class="img-responsive">  
-    </section>
-	<div class="<?php echo esc_attr( $container ); ?>" id="content">
-
-		<div class="row">
-
-			<div class="col-md-12 content-area" id="primary">
-
-				<main class="site-main" id="main" role="main">
-                                    
-                        <?php $args = array('post_type' => 'historia'); ?>
-                        <?php $loop = new WP_Query($args); ?>
-                        <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-						<?php get_template_part( 'loop-templates/content', 'page' ); ?>
-
-					<?php endwhile; // end of the loop. ?>
-                        <?php else: ?>
-                            <h1>No posts here!</h1>
-                        <?php endif; ?>
-                        <?php wp_reset_postdata(); ?>
-				</main><!-- #main -->
-
-			</div><!-- #primary -->
-
-		</div><!-- .row end -->
-
-	</div><!-- Container end -->
-        
+    </section>  
         <div class="row">
                     <div class="col-md-3">
                         <a href="<?php the_field('link_imagem_1'); ?>" class="thumbnail">
