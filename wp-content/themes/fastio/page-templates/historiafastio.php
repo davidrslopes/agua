@@ -118,7 +118,7 @@ $container = get_theme_mod( 'understrap_container_type' );
      <div class="<?php echo esc_attr( $container ); ?>" id="content">
                 <main class="site-main row" id="main" role="main">
                                     
-                        <?php $args = array('post_type' => 'historia','posts_per_page' => 4, 'order'=> 'ASC', 'orderby' => 'title' ); ?>
+                        <?php $args = array('post_type' => 'historia','posts_per_page' => 4, 'order'=> 'DESC', 'orderby' => 'date' ); ?>
                         <?php $loop = new WP_Query($args); ?>
                         <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
                         <div class="col-md-3">
