@@ -16,24 +16,38 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="seccao1">
         <div class="row">
             <div class="col-md-6 col-sm-6">
+                <div data-aos="fade-right">
                     <?php $image = wp_get_attachment_image_src(get_field('seccao_1_imagem_esquerda'), 'full'); ?>
                     <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_esquerda')) ?>" class="img-responsive showcase-left">  
+                </div>
+                <div data-aos="fade-right">
+                     <?php $imagesection1leftbottom = wp_get_attachment_image_src(get_field('seccao_1_imagem_4'), 'full'); ?>
+                    <img src="<?php echo $imagesection1leftbottom[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_4')) ?>" class="img-responsive showcase-left">  
+                </div>
             </div>
             <div class="col-md-6 col-sm-6 content-area" id="primary">
-               	<main class="site-main" id="main" role="main">
+                <div data-aos="fade-down">
+                    <?php $imagesection1top = wp_get_attachment_image_src(get_field('seccao_1_imagem_2'), 'full'); ?>
+                    <img src="<?php echo $imagesection1top[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_2')) ?>" class="img-responsive">  
+               	</div>
+                    <main class="site-main" id="main" role="main">
                                     
                         <?php $args = array('post_type' => 'historia','p' => '115'); ?>
                         <?php $loop = new WP_Query($args); ?>
                         <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-						<?php get_template_part( 'loop-templates/content', 'historia' ); ?>
+			<?php get_template_part( 'loop-templates/content', 'historia' ); ?>
 
-					<?php endwhile; // end of the loop. ?>
+			<?php endwhile; // end of the loop. ?>
                         <?php else: ?>
                             <h1>No posts here!</h1>
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>
 		</main><!-- #main -->
+                <div data-aos="fade-left">
+                <?php $imagesection1right = wp_get_attachment_image_src(get_field('seccao_1_imagem_3'), 'full'); ?>
+                <img src="<?php echo $imagesection1right[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_3')) ?>" class="img-responsive">  
+                </div>
             </div>
             
         </div>
@@ -170,5 +184,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     
 
 </div><!-- Wrapper end -->
-
+<script>
+    AOS.init();
+</script>
 <?php get_footer(); ?>
