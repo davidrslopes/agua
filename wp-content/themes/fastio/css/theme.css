@@ -9770,7 +9770,6 @@ body.page-template-historiafastio {
   background-size: cover;
   -o-background-size: cover; }
 
-<<<<<<< HEAD
 /* ############################## A NOSSA AGUA ############################## */
 .fastio-hero {
   background-image: url(../img/ImagemAgua_1.jpg) no-repeat;
@@ -9789,14 +9788,14 @@ body.page-template-historiafastio {
     .fastio-hero header h1 {
       text-align: center;
       color: white; }
-=======
+
 body.page-template-historiafastio #seccao5 {
   background-image: url(../img/Fundo_Seccao_Azul.svg);
   background-size: 100% 100%;
   -o-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   background-size: cover; }
->>>>>>> ddd1b6bc3e9a59001ef7af78d5dbbf3b36e6c460
+
 
 /*
 * Use existing Bootstrap 4 classes and
