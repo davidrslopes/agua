@@ -3,6 +3,66 @@
     "title": "A nossa água",
     "fields": [
         {
+            "key": "field_5a4c304b6e0c8",
+            "label": "Secção 1: Hero I",
+            "name": "a-nossa-agua-section-1",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5a4c3e99e946c",
+                    "label": "Titulo",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5a4c3eb6e946d",
+                    "label": "Imagem de fundo",
+                    "name": "bg-img",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        },
+        {
             "key": "field_5a4c07b9ce681",
             "label": "Secção 2: Produtos",
             "name": "a-nossa-agua-section-2",
@@ -16,7 +76,83 @@
                 "id": ""
             },
             "layout": "block",
-            "sub_fields": []
+            "sub_fields": [
+                {
+                    "key": "field_5a4c3f54fc0ba",
+                    "label": "Plástico",
+                    "name": "plastic",
+                    "type": "gallery",
+                    "instructions": "Lorem ipsum dolor sit amet, ex quod partem antiopam nec. Mea id nostrum menandri omittantur, duo in doming aeterno delenit. Sea esse quot scripserit id, ne purto blandit est. Eos ut tota erat gloriatur, has ne reque saperet, quo amet recusabo ut.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "min": "",
+                    "max": 8,
+                    "insert": "append",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5a4c4090fc0bc",
+                    "label": "Vidro",
+                    "name": "glass",
+                    "type": "gallery",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "min": "",
+                    "max": 8,
+                    "insert": "append",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "garrafa-de-plastico-1-litro",
+                    "label": "Packs",
+                    "name": "packs",
+                    "type": "gallery",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "min": "",
+                    "max": 8,
+                    "insert": "append",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
         },
         {
             "key": "field_5a4c010ace67d",
@@ -78,10 +214,10 @@
                 },
                 {
                     "key": "field_5a4c04eece680",
-                    "label": "Hashtag SVG",
-                    "name": "hashtag-svg",
+                    "label": "Hashtag",
+                    "name": "hashtag",
                     "type": "image",
-                    "instructions": "Não esquecer de preencher o campo título ao incluir o ficheiro svg neste campo.",
+                    "instructions": "Não esquecer de preencher o campo título ao incluir a imagem neste campo.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -98,15 +234,15 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": "svg"
+                    "mime_types": ""
                 }
             ]
         },
         {
-            "key": "field_5a4c07edce682",
-            "label": "Secção 4: Propriedades",
+            "key": "field_5a4c332226276",
+            "label": "Secção 4: Beneficios",
             "name": "a-nossa-agua-section-4",
-            "type": "group",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -115,8 +251,51 @@
                 "class": "",
                 "id": ""
             },
+            "collapsed": "",
+            "min": 0,
+            "max": 4,
             "layout": "block",
-            "sub_fields": []
+            "button_label": "Adicionar Benefício",
+            "sub_fields": [
+                {
+                    "key": "field_5a4c33a026277",
+                    "label": "Titulo",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5a4c33bb26278",
+                    "label": "Descrição",
+                    "name": "desc",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -149,5 +328,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1514935855
+    "modified": 1514947764
 }

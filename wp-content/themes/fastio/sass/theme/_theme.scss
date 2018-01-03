@@ -14,9 +14,7 @@
 	display: block;
 	header{
 		padding:50vh 0 0 0;
-		h1{
-			margin:-($h1-font-size/2) 0 0 0;
-			text-align: center;
+		h1,h2,h3,h4,h5,h6{
 			color:white;
 		}
 	}
@@ -309,11 +307,31 @@ body.page-template-historiafastio{
 		-o-background-size: 100% 100%;
 		-webkit-background-size: 100% 100%;
 		background-size:cover;
-
 	}
 }
 /* ############################## A NOSSA AGUA ############################## */
 body.page-template-a-nossa-agua{
 	.fastio-hero{ @include fastio-hero('../img/ImagemAgua_1.jpg'); }
+	.fastio-products{
+		background-color: $h20-light-blue;
+		color:white;
+		padding: 6rem 4rem;
+	}
 	.fastio-hero-2{ @include fastio-hero('../img/ImagemAgua_2.jpg'); }
+	.fastio-benefits{
+		padding-bottom: 6rem;
+		.container{
+			margin-top: -2rem;
+			background-color: $h20-light-blue;
+			color:white;
+			padding: 6rem 4rem;
+			article{
+				padding: 0 1rem;
+				p{
+					font-size: 70%;
+					margin: 0;
+				}
+			}
+		}
+	}
 }

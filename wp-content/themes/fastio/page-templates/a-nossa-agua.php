@@ -8,64 +8,123 @@
  */
 
 get_header();
-//Section 1 : Hero 1
-$hero_1['title'] = get_the_title( '<h1 class="fastio-hero-title">', '</h1>' );
-$hero_1['bg_img'] = get_the_post_thumbnail_url( $post->ID, 'full' );
-//Section 2 : Product Section
-
-//Section 3 : Hero 2
-$hero_2 = get_field('a-nossa-agua-section-3');
-//$hero_2['title'] = get_field('a-nossa-agua-section-3-title');
-//$hero_2['bg_img'] = get_field('a-nossa-agua-section-3-bg-img');
-//$hero_2['hashtag_svg'] = wp_get_attachment_image_src(get_field('a-nossa-agua-section-3-hastag-svg'), 'full');
-//$hero_2['hashtag_svg_alt'] = get_the_title(get_field('a-nossa-agua-section-3-hastag-svg'));
 ?>
 
+
+<?php 
+//Section 1 : Hero 1
+$hero_1 = get_field('a-nossa-agua-section-1');
+if(!empty($hero_1)):
+?>
 <!-- ******************* The Hero Section ******************* -->
-<section class="fastio-hero" style="background-image:url('<?php echo $hero_1['bg_img']; ?>');">
+<section class="fastio-hero" style="background-image:url('<?php echo $hero_1['bg-img']; ?>');">
+	<?php if(!empty($hero_1['title'])): ?>
 	<div class="container-fluid">
 		<div class="row">
-			<header class="fastio-hero-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<?php 
-					echo $hero_1['title'];
-					//edit_post_link( '<i class="fa fa-pencil" title="'.__( 'Editar esta página', 'understrap' ).'"></i>', '<div class="edit-link text-center">', '</div>' );
-				?>
+			<header class="fastio-hero-header col-12">
+				<h1 class="text-center"><?php echo $hero_1['title'];?></h1>
 			</header>
 		</div>
 	</div>
+	<?php endif; ?>
 </section><!-- .fastio-hero -->
+<?php endif; ?>
 
 <!-- ******************* The Products Section ******************* -->
+<?php 
+	$products = get_field('a-nossa-agua-section-2');
+	$gallery_options = 'size="full" columns="5" link="none"';
+	while( have_rows('a-nossa-agua-section-2') ): the_row(); 
+		if( get_sub_field('plastic',false) ):
+			$plastic_gallery = '[gallery ids="' . implode(',', get_sub_field('plastic',false)) . '" '.$gallery_options.' ]';
+		endif;
+		if( get_sub_field('glass',false) ):
+			$glass_gallery = '[gallery ids="' . implode(',', get_sub_field('glass',false)) . '" '.$gallery_options.' ]';
+		endif;
+		if( get_sub_field('packs',false) ):
+			$packs_gallery = '[gallery ids="' . implode(',', get_sub_field('packs',false)) . '" '.$gallery_options.' ]';
+		endif;
+	endwhile;
+	if(!empty($products)):
+?>
 <section class="fastio-products">
 	<div class="container">
 		<div class="row">
 			<div class="col-2">
 				<div class="list-group" id="list-tab" role="tablist">
-					<a class="list-group-item list-group-item-action active" id="nav-tab-plastico" data-toggle="list" href="#tab-plastico" role="tab" aria-controls="tab-plastico"><?php _e( 'Plástico', 'understrap' ); ?></a>
-					<a class="list-group-item list-group-item-action" id="nav-tab-vidro" data-toggle="list" href="#tab-vidro" role="tab" aria-controls="tab-vidro"><?php _e( 'Vidro', 'understrap' ); ?></a>
+					<a class="list-group-item list-group-item-action active" id="nav-tab-plastic" data-toggle="list" href="#tab-plastic" role="tab" aria-controls="tab-plastic"><?php _e( 'Plástico', 'understrap' ); ?></a>
+					<a class="list-group-item list-group-item-action" id="nav-tab-glass" data-toggle="list" href="#tab-glass" role="tab" aria-controls="tab-glass"><?php _e( 'Vidro', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-packs" data-toggle="list" href="#tab-packs" role="tab" aria-controls="tab-packs"><?php _e( 'Packs', 'understrap' ); ?></a>
 				</div>
 			</div>
 			<div class="col-10">
 				<div class="tab-content">
-					<div class="tab-pane fade show active" id="tab-plastico" role="tabpanel" aria-labelledby="tab-plastico"></div>
-					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"></div>
-					<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"></div>
+					<div class="tab-pane fade show active" id="tab-plastic" role="tabpanel" aria-labelledby="tab-plastic">
+						<?php echo do_shortcode( $plastic_gallery ); ?>
+						<footer>
+							<img src="<?php echo get_template_directory_uri()."/img/onda_branco.png" ?>" alt="onda">
+							<p>Image Description Goes Here</p>
+						</footer>
+					</div>
+					<div class="tab-pane fade" id="tab-glass" role="tabpanel" aria-labelledby="tab-glass">
+						<?php echo do_shortcode( $glass_gallery ); ?>
+						<footer>
+							<img src="<?php echo get_template_directory_uri()."/img/onda_branco.png" ?>" alt="onda">
+							<p>Image Description Goes Here</p>
+						</footer>
+					</div>
+					<div class="tab-pane fade" id="tab-packs" role="tabpanel" aria-labelledby="tab-packs">
+						<?php echo do_shortcode( $packs_gallery ); ?>
+						<footer>
+							<img src="<?php echo get_template_directory_uri()."/img/onda_branco.png" ?>" alt="onda">
+							<p>Image Description Goes Here</p>
+						</footer>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
+</section><!-- .fastio-products -->
+<?php endif; ?>
 
+<?php
+//Section 3 : Hero 2
+$hero_2 = get_field('a-nossa-agua-section-3');
+if(!empty($hero_2)):
+?>
 <!-- ******************* The Hero II Section ******************* -->
 <section class="fastio-hero-2" style="background-image:url('<?php echo $hero_2['bg-img']; ?>');">
 	<div class="container-fluid">
 		<div class="row">
-			<header class="fastio-hero-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<?php if(!empty($hero_2['title'])): ?><h1><?php echo $hero_2['title']; ?></h1><?php endif; ?>
-				<?php if(!empty($hero_2['hashtag_svg'])): ?><img class="hero-hashtag" src="<?php echo $hero_2['hashtag-svg']; ?>" alt="<?php echo $hero_2['hashtag-svg']['title']; ?>"><?php endif; ?>
+			<header class="fastio-hero-header offset-lg-7 col-lg-4 offset-md-8 col-md-4 offset-xs-6 col-xs-6">
+				<?php if(!empty($hero_2['title'])): ?><h3 class="text-primary"><?php echo $hero_2['title']; ?></h3><?php endif; ?>
+				<?php if(!empty($hero_2['hashtag'])): ?><img class="img-fluid" src="<?php echo $hero_2['hashtag']['url']; ?>" title="<?php echo $hero_2['hashtag']['title']; ?>" alt="<?php echo $hero_2['hashtag']['title']; ?>"><?php endif; ?>
 			</header>
 		</div>
 	</div>
 </section><!-- .fastio-hero-2 -->
+<?php endif; ?>
+
+<?php 
+	if( have_rows('a-nossa-agua-section-4') ): 
+		$benefit_count = count(get_field('a-nossa-agua-section-4'));
+		$benefit_col = ceil(12 / $benefit_count);
+ 		if($benefit_col<3) $benefit_col = 3;
+?>
+<!-- ******************* The Fastio Benefits Section ******************* -->
+<section class="fastio-benefits">
+	<div class="container">
+		<div class="row">
+			<?php while( have_rows('a-nossa-agua-section-4') ): the_row(); ?>
+			<div class="col-<?php echo $benefit_col; ?>">
+				<article>
+					<h5><?php the_sub_field('title'); ?></h5>
+					<p><?php the_sub_field('desc'); ?></p>
+				</article>
+			</div>
+			<?php endwhile; ?>
+		</div>
+	</div>
+</section>
+<?php endif; ?>
 <?php get_footer(); ?>
