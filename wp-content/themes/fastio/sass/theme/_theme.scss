@@ -316,6 +316,10 @@ body.page-template-a-nossa-agua{
 		background-color: $h20-light-blue;
 		color:white;
 		padding: 6rem 4rem;
+		footer > p{
+			margin: 0;
+			font-size: 70%;
+		}
 	}
 	.fastio-hero-2{ @include fastio-hero('../img/ImagemAgua_2.jpg'); }
 	.fastio-benefits{
