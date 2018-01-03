@@ -23,7 +23,7 @@
 	<div class="entry-content">
                 
 		<?php the_excerpt() ?>
-            <a href="#myModal-<?php the_ID(); ?>" data-id="<?php the_ID(); ?>" data-toggle="modal" id="clickme">
+            <a href="#myModal-<?php the_ID(); ?>" data-id="<?php the_ID(); ?>" data-toggle="modal" modal-click="<?php the_ID(); ?>">
             <?php  esc_html_e( 'ver', 'fastio' ); ?> <i class="fa fa-plus-circle" aria-hidden="true"></i>
             </a>
 
