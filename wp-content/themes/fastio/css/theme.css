@@ -10499,16 +10499,19 @@ body.page-template-a-nossa-agua .fastio-products {
     body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item {
       background: none;
       color: white;
+      font-size: 150%;
       border: 0;
       border-radius: 0;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
-      margin-left: -2px; }
+      margin-left: -2px;
+      padding: 5px 0 5px 30px; }
       body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item.active, body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item:hover, body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item.hover, body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item:focus, body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item.focus {
         color: #00aeef;
         border-left-style: solid;
         border-left-color: #00aeef;
-        border-left-width: 3px; }
+        border-left-width: 3px;
+        padding-left: 28px; }
   body.page-template-a-nossa-agua .fastio-products .gallery > .gallery-item {
     cursor: pointer; }
     body.page-template-a-nossa-agua .fastio-products .gallery > .gallery-item .wp-caption-text.gallery-caption {

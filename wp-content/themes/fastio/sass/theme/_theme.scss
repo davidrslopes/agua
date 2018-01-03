@@ -359,11 +359,13 @@ body.page-template-a-nossa-agua{
 			.list-group-item{
 				background: none;
 				color: white;
+				font-size:150%;
 				border: 0;
 				border-radius: 0;
 				border-top-left-radius: 0;
 				border-bottom-left-radius: 0;
 				margin-left: -2px;
+				padding: 5px 0 5px 30px;
 				&.active,
 				&:hover,
 				&.hover,
@@ -373,6 +375,7 @@ body.page-template-a-nossa-agua{
 					border-left-style: solid;
 					border-left-color:$primary;
 					border-left-width: 3px;
+					padding-left:28px;
 				}
 			}
 		}
