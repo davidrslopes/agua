@@ -113,6 +113,7 @@ if(!empty($hero_2)):
 ?>
 <!-- ******************* The Fastio Benefits Section ******************* -->
 <section class="fastio-benefits">
+	<img class="ondas left" src="<?php echo get_template_directory_uri()."/img/onda_azul-1.png" ?>" alt="onda azul">
 	<div class="container">
 		<div class="row">
 			<?php while( have_rows('a-nossa-agua-section-4') ): the_row(); ?>
@@ -125,6 +126,29 @@ if(!empty($hero_2)):
 			<?php endwhile; ?>
 		</div>
 	</div>
-</section>
+	<img class="ondas right" src="<?php echo get_template_directory_uri()."/img/onda_azul-2.png" ?>" alt="onda azul">
+</section><!-- .fastio-benefits -->
+<?php endif; ?>
+
+<?php
+	if( have_rows('a-nossa-agua-section-5') ): 
+		$links_count = count(get_field('a-nossa-agua-section-5'));
+		$links_col = ceil(12 / $links_count);
+ 		if($links_col<3) $links_col = 3;
+?>
+<!-- ******************* The Fastio Links Section ******************* -->
+<section class="fastio-img-links">
+	<div class="row no-gutters">
+		<?php while( have_rows('a-nossa-agua-section-5') ): the_row(); ?>
+		<div class="col-<?php echo $links_col; ?>">
+			<article style="background-image:url('<?php the_sub_field('img'); ?>');">
+				<a href="<?php the_sub_field('link'); ?>">
+					<h5 class="align-middle"><?php the_sub_field('title'); ?></h5>
+				</a>
+			</article>
+		</div>
+		<?php endwhile; ?>
+	</div>
+</section><!-- .fastio-img-links -->
 <?php endif; ?>
 <?php get_footer(); ?>

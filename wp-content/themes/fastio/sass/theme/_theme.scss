@@ -1,7 +1,7 @@
 /* ############################## MIXINS ############################## */
 //Fastio HERO
 @mixin fastio-hero($img_src){
-	background-image: url($img_src) no-repeat;
+	background-image: url($img_src);
 	width:100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -10,10 +10,10 @@
 	-o-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
-	height:100vh;
+	height:100vh; //check if this is responsive and Xbrowser
 	display: block;
 	header{
-		padding:50vh 0 0 0;
+		padding:50vh 0 0 0; //check if this is responsive and Xbrowser
 		h1,h2,h3,h4,h5,h6{
 			color:white;
 		}
@@ -273,6 +273,40 @@ body.page-template-hotwheels-single .main-footer-wrapper{ // Hotwheels Car Pages
 	background-color: $h20-blue;
 	color: white;
 }
+
+//Fastio bottom img links
+.fastio-img-links{
+	article{
+		display: block;
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 33vh; //check if this is responsive and Xbrowser
+		a{
+			display: table;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+			color:$h20-dark-blue;
+			@include transition(all 250ms ease-in);
+			&:hover,
+			&.hover,
+			&:focus,
+			&.focus{
+				color:white;
+			}
+			h5{
+				margin: 0;
+				padding: 0;
+				display: table-cell;
+				text-align: center;
+			}
+		}
+	}
+}
 /* ############################## HOMEPAGE ############################## */
 
 // Home FullScreen Vídeo 
@@ -323,7 +357,15 @@ body.page-template-a-nossa-agua{
 	}
 	.fastio-hero-2{ @include fastio-hero('../img/ImagemAgua_2.jpg'); }
 	.fastio-benefits{
+		position: relative;
 		padding-bottom: 6rem;
+		img.ondas{
+			position: absolute;
+			top: 0;
+			z-index: 9;
+			&.left{left:-20px;}
+			&.right{right:0px;}
+		}
 		.container{
 			margin-top: -2rem;
 			background-color: $h20-light-blue;

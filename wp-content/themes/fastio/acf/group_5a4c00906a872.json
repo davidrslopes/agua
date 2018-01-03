@@ -31,7 +31,7 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": "",
+                    "placeholder": "Apropriada para dietas",
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
@@ -197,7 +197,7 @@
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -221,7 +221,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -266,7 +266,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "30",
                         "class": "",
                         "id": ""
                     },
@@ -285,7 +285,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "70",
                         "class": "",
                         "id": ""
                     },
@@ -294,6 +294,91 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5a4cf55f6110b",
+            "label": "Secção 5: Links",
+            "name": "a-nossa-agua-section-5",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5a4cf55f6110c",
+            "min": 0,
+            "max": 4,
+            "layout": "block",
+            "button_label": "Adicionar Link",
+            "sub_fields": [
+                {
+                    "key": "field_5a4cf55f6110c",
+                    "label": "Titulo",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5a4d01fda82eb",
+                    "label": "Página de destino",
+                    "name": "link",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "allow_archives": 1,
+                    "multiple": 0
+                },
+                {
+                    "key": "field_5a4cf55f6110d",
+                    "label": "Imagem",
+                    "name": "img",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
         }
@@ -328,5 +413,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1514951919
+    "modified": 1514996920
 }
