@@ -181,12 +181,15 @@
  * --------------------------------------------------------------------------
  */
 jQuery( function($) {
+	//OPTIONS
 	var debug = true; //Turn this of when in production.
+	
 	//AOS
 	if($('body').hasClass('page-template-historiafastio')){
 		AOS.init();
 	}
 	
+	//MENU
 	//On Dropdown
 	$('.fastio-nav').on('show.bs.dropdown', function () {
 		if(debug){console.log('DROP!');}
@@ -215,6 +218,38 @@ jQuery( function($) {
 			//after: callback()
 		});*/
 	});
+	
+	//GALLERY
+	if($('body').hasClass('page-template-a-nossa-agua')){
+		//LOAD FIRST IMAGE CAPTION
+		$('.gallery').each(function(){
+			var first_caption_id = $(this).children('.gallery-item').first().find('img').attr('aria-describedby'),
+				gallery_caption = $(this).next('footer').children('p');
+			if(first_caption_id){
+				$('#'+first_caption_id).clone(true,true).appendTo(gallery_caption);
+				gallery_caption.fadeIn(250);
+			}else{
+				gallery_caption.hide();
+			}
+		});
+		
+		//GET IMAGE CLICKED AND SHOW CAPTION
+		$('.gallery-item').on( "click", function() {
+			var caption_id = $(this).find('img').attr('aria-describedby'),
+				gallery_caption = $(this).parent('.gallery').next('footer').children('p');
+			if(caption_id === undefined){
+				gallery_caption.fadeOut(250);
+			}else{
+				//Reset gallery caption content
+				gallery_caption.fadeOut(250,function(){
+					$(this).html('');
+					$('#'+caption_id).clone(true,true).appendTo($(this));
+					$(this).fadeIn(250);
+				});
+			}
+			if(debug){console.log('This image caption id is: '+caption_id);}
+		});
+	}
 	
 	//Log Copy Check
 	console.log('%c©2018 SAVAGE Agency | DavidRSLopes & Hugo Carvalho', 'background: #39ee7c; background: -moz-linear-gradient(left, #39ee7c 0%, #252525 100%); background: -webkit-linear-gradient(left, #39ee7c 0%,#252525 100%); background: linear-gradient(to right, #39ee7c 0%,#252525 100%); color: #241f20; line-height:60px; font-family: Allerta,sans-serif; font-size:12px; padding: 10px 25px 10px 10px; height:107px; letter-spacing:2px;' );

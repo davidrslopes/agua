@@ -61,23 +61,23 @@ if(!empty($hero_1)):
 				<div class="tab-content">
 					<div class="tab-pane fade show active" id="tab-plastic" role="tabpanel" aria-labelledby="tab-plastic">
 						<?php echo do_shortcode( $plastic_gallery ); ?>
-						<footer>
+						<footer class="gallery-caption">
 							<img src="<?php echo get_template_directory_uri()."/img/onda_branco.png" ?>" alt="onda">
-							<p>Image Description Goes Here</p>
+							<p></p>
 						</footer>
 					</div>
 					<div class="tab-pane fade" id="tab-glass" role="tabpanel" aria-labelledby="tab-glass">
 						<?php echo do_shortcode( $glass_gallery ); ?>
-						<footer>
+						<footer class="gallery-caption">
 							<img src="<?php echo get_template_directory_uri()."/img/onda_branco.png" ?>" alt="onda">
-							<p>Image Description Goes Here</p>
+							<p></p>
 						</footer>
 					</div>
 					<div class="tab-pane fade" id="tab-packs" role="tabpanel" aria-labelledby="tab-packs">
 						<?php echo do_shortcode( $packs_gallery ); ?>
-						<footer>
+						<footer class="gallery-caption">
 							<img src="<?php echo get_template_directory_uri()."/img/onda_branco.png" ?>" alt="onda">
-							<p>Image Description Goes Here</p>
+							<p></p>
 						</footer>
 					</div>
 				</div>
