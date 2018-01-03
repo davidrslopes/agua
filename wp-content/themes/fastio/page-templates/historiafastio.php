@@ -101,7 +101,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="col-md-4 col-sm-4 content-area" id="primary">
                	<main class="site-main" id="main" role="main">
                                     
-                        <?php $args = array('post_type' => 'historia','p' => '117'); ?>
+                        <?php $args = array('post_type' => 'historia','p' => '122'); ?>
                         <?php $loop = new WP_Query($args); ?>
                         <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
@@ -128,16 +128,16 @@ $container = get_theme_mod( 'understrap_container_type' );
     </section>
     <section id="seccao4">
         <div class="row">
-            <div class="col-md-4 col-sm-4">
-            <?php $image4 = wp_get_attachment_image_src(get_field('seccao_4_imagem_esquerda_1'), 'full'); ?>
-            <img src="<?php echo $image4[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_esquerda_1')) ?>" class="img-responsive">  
+            <div class="col-md-4 col-sm-4">  
             <?php $image5 = wp_get_attachment_image_src(get_field('seccao_4_imagem_esquerda_2'), 'full'); ?>
             <img src="<?php echo $image5[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_esquerda_2')) ?>" class="img-responsive">  
+            <?php $image4 = wp_get_attachment_image_src(get_field('seccao_4_imagem_esquerda_1'), 'full'); ?>
+            <img src="<?php echo $image4[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_esquerda_1')) ?>" class="img-responsive">
             </div>
             <div class="col-md-8 col-sm-8 content-area" id="primary">
                	<main class="site-main" id="main" role="main">
                                     
-                        <?php $args = array('post_type' => 'historia','p' => '117'); ?>
+                        <?php $args = array('post_type' => 'historia','p' => '123'); ?>
                         <?php $loop = new WP_Query($args); ?>
                         <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
@@ -222,6 +222,18 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
         </div>
     
-
+<div id="myModal-<? the_ID(); ?>" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <h3 id="myModalLabel">
+          <?php the_title();?>
+        </h3>
+        <p>
+          <?php the_content();?>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+    </div>
 </div><!-- Wrapper end -->
 <?php get_footer(); ?>

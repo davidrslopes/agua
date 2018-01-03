@@ -21,15 +21,11 @@
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
-
-		<?php the_content(); ?>
-
-		<?php
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-			'after'  => '</div>',
-		) );
-		?>
+                
+		<?php the_excerpt() ?>
+            <a href="#myModal-<?php the_ID(); ?>" data-id="<?php the_ID(); ?>" data-toggle="modal" id="clickme">
+            <?php  esc_html_e( 'ver', 'fastio' ); ?> <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </a>
 
 	</div><!-- .entry-content -->
         </div>
