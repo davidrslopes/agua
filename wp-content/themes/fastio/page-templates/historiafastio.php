@@ -128,11 +128,11 @@ $container = get_theme_mod( 'understrap_container_type' );
     </section>
     <section id="seccao4">
         <div class="row">
-            <div class="col-md-4 col-sm-4">
-            <?php $image4 = wp_get_attachment_image_src(get_field('seccao_4_imagem_esquerda_1'), 'full'); ?>
-            <img src="<?php echo $image4[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_esquerda_1')) ?>" class="img-responsive">  
+            <div class="col-md-4 col-sm-4">  
             <?php $image5 = wp_get_attachment_image_src(get_field('seccao_4_imagem_esquerda_2'), 'full'); ?>
             <img src="<?php echo $image5[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_esquerda_2')) ?>" class="img-responsive">  
+            <?php $image4 = wp_get_attachment_image_src(get_field('seccao_4_imagem_esquerda_1'), 'full'); ?>
+            <img src="<?php echo $image4[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_esquerda_1')) ?>" class="img-responsive">
             </div>
             <div class="col-md-8 col-sm-8 content-area" id="primary">
                	<main class="site-main" id="main" role="main">
