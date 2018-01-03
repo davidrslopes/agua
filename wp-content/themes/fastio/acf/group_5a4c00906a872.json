@@ -91,7 +91,7 @@
                         "id": ""
                     },
                     "min": "",
-                    "max": 8,
+                    "max": 10,
                     "insert": "append",
                     "library": "all",
                     "min_width": "",
@@ -116,7 +116,7 @@
                         "id": ""
                     },
                     "min": "",
-                    "max": 8,
+                    "max": 10,
                     "insert": "append",
                     "library": "all",
                     "min_width": "",
@@ -141,7 +141,7 @@
                         "id": ""
                     },
                     "min": "",
-                    "max": 8,
+                    "max": 10,
                     "insert": "append",
                     "library": "all",
                     "min_width": "",
@@ -328,5 +328,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1514947764
+    "modified": 1514951919
 }
