@@ -222,6 +222,18 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
         </div>
     
-
+<div id="myModal-<? the_ID(); ?>" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <h3 id="myModalLabel">
+          <?php the_title();?>
+        </h3>
+        <p>
+          <?php the_content();?>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+    </div>
 </div><!-- Wrapper end -->
 <?php get_footer(); ?>
