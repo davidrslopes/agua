@@ -10490,8 +10490,29 @@ body.page-template-a-nossa-agua .fastio-products {
   background-color: #b2eaff;
   color: white;
   padding: 6rem 4rem; }
-  body.page-template-a-nossa-agua .fastio-products .gallery > .gallery-item .wp-caption-text.gallery-caption {
-    display: none; }
+  body.page-template-a-nossa-agua .fastio-products .list-group {
+    border: 0;
+    border-radius: 0;
+    border-left-color: white;
+    border-left-width: 1px;
+    border-left-style: solid; }
+    body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item {
+      background: none;
+      color: white;
+      border: 0;
+      border-radius: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: -2px; }
+      body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item.active, body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item:hover, body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item.hover, body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item:focus, body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item.focus {
+        color: #00aeef;
+        border-left-style: solid;
+        border-left-color: #00aeef;
+        border-left-width: 3px; }
+  body.page-template-a-nossa-agua .fastio-products .gallery > .gallery-item {
+    cursor: pointer; }
+    body.page-template-a-nossa-agua .fastio-products .gallery > .gallery-item .wp-caption-text.gallery-caption {
+      display: none; }
   body.page-template-a-nossa-agua .fastio-products footer > p {
     margin: 0;
     font-size: 70%; }

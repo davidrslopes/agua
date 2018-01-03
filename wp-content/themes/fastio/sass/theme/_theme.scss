@@ -350,7 +350,34 @@ body.page-template-a-nossa-agua{
 		background-color: $h20-light-blue;
 		color:white;
 		padding: 6rem 4rem;
+		.list-group{
+			border: 0;
+			border-radius: 0;
+			border-left-color:white;
+			border-left-width: 1px;
+			border-left-style: solid;
+			.list-group-item{
+				background: none;
+				color: white;
+				border: 0;
+				border-radius: 0;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+				margin-left: -2px;
+				&.active,
+				&:hover,
+				&.hover,
+				&:focus,
+				&.focus{
+					color:$primary;
+					border-left-style: solid;
+					border-left-color:$primary;
+					border-left-width: 3px;
+				}
+			}
+		}
 		.gallery > .gallery-item{
+			cursor:pointer;
 			.wp-caption-text.gallery-caption{
 				display: none;
 			}
