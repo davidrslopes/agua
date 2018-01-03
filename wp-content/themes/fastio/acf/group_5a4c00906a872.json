@@ -67,7 +67,7 @@
             "label": "Secção 2: Produtos",
             "name": "a-nossa-agua-section-2",
             "type": "group",
-            "instructions": "",
+            "instructions": "O campo \"Legenda\" nas imagens deve ser preenchido para que o texto apareça na parte inferior da secção.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -82,7 +82,7 @@
                     "label": "Plástico",
                     "name": "plastic",
                     "type": "gallery",
-                    "instructions": "Lorem ipsum dolor sit amet, ex quod partem antiopam nec. Mea id nostrum menandri omittantur, duo in doming aeterno delenit. Sea esse quot scripserit id, ne purto blandit est. Eos ut tota erat gloriatur, has ne reque saperet, quo amet recusabo ut.",
+                    "instructions": "O campo \"Legenda\" nas imagens deve ser preenchido para que o texto apareça na parte inferior da secção.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -107,7 +107,7 @@
                     "label": "Vidro",
                     "name": "glass",
                     "type": "gallery",
-                    "instructions": "",
+                    "instructions": "O campo \"Legenda\" nas imagens deve ser preenchido para que o texto apareça na parte inferior da secção.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -132,7 +132,7 @@
                     "label": "Packs",
                     "name": "packs",
                     "type": "gallery",
-                    "instructions": "",
+                    "instructions": "O campo \"Legenda\" nas imagens deve ser preenchido para que o texto apareça na parte inferior da secção.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -394,5 +394,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1515000315
+    "modified": 1515001231
 }
