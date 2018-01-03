@@ -10490,6 +10490,8 @@ body.page-template-a-nossa-agua .fastio-products {
   background-color: #b2eaff;
   color: white;
   padding: 6rem 4rem; }
+  body.page-template-a-nossa-agua .fastio-products .gallery > .gallery-item .wp-caption-text.gallery-caption {
+    display: none; }
   body.page-template-a-nossa-agua .fastio-products footer > p {
     margin: 0;
     font-size: 70%; }

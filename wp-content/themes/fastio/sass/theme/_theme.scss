@@ -350,6 +350,11 @@ body.page-template-a-nossa-agua{
 		background-color: $h20-light-blue;
 		color:white;
 		padding: 6rem 4rem;
+		.gallery > .gallery-item{
+			.wp-caption-text.gallery-caption{
+				display: none;
+			}
+		}
 		footer > p{
 			margin: 0;
 			font-size: 70%;
