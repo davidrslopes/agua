@@ -139,11 +139,13 @@ if(!empty($hero_2)):
 <!-- ******************* The Fastio Links Section ******************* -->
 <section class="fastio-img-links">
 	<div class="row no-gutters">
-		<?php while( have_rows('a-nossa-agua-section-5') ): the_row(); ?>
+		<?php while( have_rows('a-nossa-agua-section-5') ): the_row(); 
+			$link_id = get_sub_field('link', false, false);
+		?>
 		<div class="col-<?php echo $links_col; ?>">
 			<article style="background-image:url('<?php the_sub_field('img'); ?>');">
-				<a href="<?php the_sub_field('link'); ?>">
-					<h5 class="align-middle"><?php the_sub_field('title'); ?></h5>
+				<a href="<?php echo get_the_permalink($link_id); ?>">
+					<h5 class="align-middle"><?php echo get_the_title($link_id); ?></h5>
 				</a>
 			</article>
 		</div>

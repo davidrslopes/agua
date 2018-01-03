@@ -317,25 +317,6 @@
             "button_label": "Adicionar Link",
             "sub_fields": [
                 {
-                    "key": "field_5a4cf55f6110c",
-                    "label": "Titulo",
-                    "name": "title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
                     "key": "field_5a4d01fda82eb",
                     "label": "Página de destino",
                     "name": "link",
@@ -344,7 +325,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
@@ -413,5 +394,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1514996920
+    "modified": 1515000315
 }
