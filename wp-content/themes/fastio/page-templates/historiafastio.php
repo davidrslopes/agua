@@ -101,7 +101,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="col-md-4 col-sm-4 content-area" id="primary">
                	<main class="site-main" id="main" role="main">
                                     
-                        <?php $args = array('post_type' => 'historia','p' => '117'); ?>
+                        <?php $args = array('post_type' => 'historia','p' => '122'); ?>
                         <?php $loop = new WP_Query($args); ?>
                         <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
@@ -137,7 +137,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="col-md-8 col-sm-8 content-area" id="primary">
                	<main class="site-main" id="main" role="main">
                                     
-                        <?php $args = array('post_type' => 'historia','p' => '117'); ?>
+                        <?php $args = array('post_type' => 'historia','p' => '123'); ?>
                         <?php $loop = new WP_Query($args); ?>
                         <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
