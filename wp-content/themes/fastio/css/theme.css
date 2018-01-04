@@ -10335,17 +10335,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           transition: all 250ms ease-in; }
           .home-footer-wrapper footer .wpml-ls ul li a:hover, .home-footer-wrapper footer .wpml-ls ul li a:focus {
             color: #00aeef; }
-  .home-footer-wrapper footer .fastio-home-link {
-    font-size: 90%;
-    transition: all 250ms ease-in; }
-    .home-footer-wrapper footer .fastio-home-link i.fa {
-      display: block;
-      font-size: 250%;
-      line-height: 0px;
-      padding: 10px 0; }
-    .home-footer-wrapper footer .fastio-home-link:hover {
-      text-decoration: none;
-      color: white; }
   .home-footer-wrapper footer .fastio-home-social {
     margin: 0;
     padding: 0; }
@@ -10436,6 +10425,19 @@ body.page-template-hotwheels-single .main-footer-wrapper {
       padding: 0;
       display: table-cell;
       text-align: center; }
+
+img.ondas {
+  position: absolute;
+  bottom: 0;
+  z-index: 9; }
+  img.ondas.top {
+    top: 0; }
+  img.ondas.bottom {
+    bottom: 0; }
+  img.ondas.left {
+    left: -20px; }
+  img.ondas.right {
+    right: 0px; }
 
 /* ############################## HOMEPAGE ############################## */
 .fastio-video {
@@ -10540,14 +10542,6 @@ body.page-template-a-nossa-agua .fastio-hero-2 {
 body.page-template-a-nossa-agua .fastio-benefits {
   position: relative;
   padding-bottom: 6rem; }
-  body.page-template-a-nossa-agua .fastio-benefits img.ondas {
-    position: absolute;
-    top: 0;
-    z-index: 9; }
-    body.page-template-a-nossa-agua .fastio-benefits img.ondas.left {
-      left: -20px; }
-    body.page-template-a-nossa-agua .fastio-benefits img.ondas.right {
-      right: 0px; }
   body.page-template-a-nossa-agua .fastio-benefits .container {
     margin-top: -2rem;
     background-color: #b2eaff;
@@ -10558,6 +10552,125 @@ body.page-template-a-nossa-agua .fastio-benefits {
       body.page-template-a-nossa-agua .fastio-benefits .container article p {
         font-size: 70%;
         margin: 0; }
+
+/* ############################## A FAMÍLIA ############################## */
+body.page-template-a-familia .fastio-video-hero {
+  position: relative;
+  background-image: url("../img/imagem_Momentos_1.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: block; }
+  body.page-template-a-familia .fastio-video-hero header {
+    padding: 50vh 0 0 0; }
+    body.page-template-a-familia .fastio-video-hero header h1, body.page-template-a-familia .fastio-video-hero header h2, body.page-template-a-familia .fastio-video-hero header h3, body.page-template-a-familia .fastio-video-hero header h4, body.page-template-a-familia .fastio-video-hero header h5, body.page-template-a-familia .fastio-video-hero header h6 {
+      color: white; }
+  body.page-template-a-familia .fastio-video-hero div.fastio-video-container {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    body.page-template-a-familia .fastio-video-hero div.fastio-video-container video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      background-size: cover;
+      border: 0; }
+  body.page-template-a-familia .fastio-video-hero button.fastio-btn-scroll-down {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    font-size: 90%;
+    text-decoration: none;
+    transition: all 250ms ease-in; }
+    body.page-template-a-familia .fastio-video-hero button.fastio-btn-scroll-down i.fa {
+      display: block;
+      font-size: 250%;
+      line-height: 0px;
+      padding: 10px 0;
+      text-decoration: none; }
+    body.page-template-a-familia .fastio-video-hero button.fastio-btn-scroll-down:hover {
+      text-decoration: none;
+      color: white; }
+
+body.page-template-a-familia .fastio-feature {
+  position: relative; }
+  body.page-template-a-familia .fastio-feature.mt {
+    margin-top: 6rem; }
+  body.page-template-a-familia .fastio-feature article {
+    padding: 8rem 6rem 8rem 4rem;
+    color: white;
+    position: absolute;
+    bottom: 0; }
+    body.page-template-a-familia .fastio-feature article.bg-warning {
+      color: #006fba; }
+    body.page-template-a-familia .fastio-feature article.left {
+      padding: 6rem 4rem 6rem 10rem; }
+  body.page-template-a-familia .fastio-feature img.ondas {
+    position: absolute;
+    bottom: 0;
+    z-index: 9; }
+    body.page-template-a-familia .fastio-feature img.ondas.left {
+      left: -20px; }
+    body.page-template-a-familia .fastio-feature img.ondas.right {
+      right: 0px; }
+
+body.page-template-a-familia .fastio-feature-2 {
+  position: relative; }
+  body.page-template-a-familia .fastio-feature-2.mt {
+    margin-top: 6rem; }
+  body.page-template-a-familia .fastio-feature-2 article {
+    padding: 8rem 6rem 8rem 4rem;
+    color: white;
+    position: absolute;
+    bottom: 0; }
+    body.page-template-a-familia .fastio-feature-2 article.bg-warning {
+      color: #006fba; }
+    body.page-template-a-familia .fastio-feature-2 article.left {
+      padding: 6rem 4rem 6rem 10rem; }
+  body.page-template-a-familia .fastio-feature-2 img.ondas {
+    position: absolute;
+    bottom: 0;
+    z-index: 9; }
+    body.page-template-a-familia .fastio-feature-2 img.ondas.left {
+      left: -20px; }
+    body.page-template-a-familia .fastio-feature-2 img.ondas.right {
+      right: 0px; }
+
+body.page-template-a-familia .fastio-hero-3 {
+  background-image: url("../img/ImagemAgua_2.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: block;
+  position: relative; }
+  body.page-template-a-familia .fastio-hero-3 header {
+    padding: 50vh 0 0 0; }
+    body.page-template-a-familia .fastio-hero-3 header h1, body.page-template-a-familia .fastio-hero-3 header h2, body.page-template-a-familia .fastio-hero-3 header h3, body.page-template-a-familia .fastio-hero-3 header h4, body.page-template-a-familia .fastio-hero-3 header h5, body.page-template-a-familia .fastio-hero-3 header h6 {
+      color: white; }
+  body.page-template-a-familia .fastio-hero-3 header {
+    padding: 0;
+    position: absolute;
+    bottom: 6rem; }
 
 /*
 * Use existing Bootstrap 4 classes and

@@ -19,6 +19,32 @@
 		}
 	}
 }
+//Fastio FEATURE
+@mixin fastio-feature(){
+	position: relative;
+	&.mt{
+		margin-top: 6rem;
+	}
+	article{
+		padding: 8rem 6rem 8rem 4rem;
+		color: white;
+		position: absolute;
+		bottom: 0;
+		&.bg-warning{
+			color:$h20-dark-blue;
+		}
+		&.left{
+			padding: 6rem 4rem 6rem 10rem;
+		}
+	}
+	img.ondas{
+		position: absolute;
+		bottom: 0;
+		z-index: 9;
+		&.left{left:-20px;}
+		&.right{right:0px;}
+	}
+}
 
 /* ############################## COMMON ############################## */
 // Navigation
@@ -160,21 +186,6 @@
 				} 
 			}
 		}
-		//LINK
-		.fastio-home-link{
-			font-size:90%;
-			@include transition(all 250ms ease-in);
-			i.fa{
-				display: block;
-				font-size: 250%;
-				line-height: 0px;
-				padding: 10px 0;
-			}
-			&:hover{
-				text-decoration: none;
-				color:white;
-			}
-		}
 		//SOCIAL
 		.fastio-home-social{
 			margin: 0;
@@ -307,6 +318,15 @@ body.page-template-hotwheels-single .main-footer-wrapper{ // Hotwheels Car Pages
 		}
 	}
 }
+img.ondas{
+	position: absolute;
+	bottom: 0;
+	z-index: 9;
+	&.top{top: 0;}
+	&.bottom{bottom: 0;}
+	&.left{left:-20px;}
+	&.right{right:0px;}
+}
 /* ############################## HOMEPAGE ############################## */
 
 // Home FullScreen Vídeo 
@@ -394,13 +414,6 @@ body.page-template-a-nossa-agua{
 	.fastio-benefits{
 		position: relative;
 		padding-bottom: 6rem;
-		img.ondas{
-			position: absolute;
-			top: 0;
-			z-index: 9;
-			&.left{left:-20px;}
-			&.right{right:0px;}
-		}
 		.container{
 			margin-top: -2rem;
 			background-color: $h20-light-blue;
@@ -413,6 +426,67 @@ body.page-template-a-nossa-agua{
 					margin: 0;
 				}
 			}
+		}
+	}
+}
+/* ############################## A FAMÍLIA ############################## */
+body.page-template-a-familia{
+	.fastio-video-hero{
+		position: relative;
+		@include fastio-hero('../img/imagem_Momentos_1.jpg');
+		div.fastio-video-container{
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			video{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+				background-size: cover;
+				border: 0;
+			}
+		}
+		button.fastio-btn-scroll-down{
+			position: absolute;
+			bottom: 0;
+			cursor: pointer;
+			font-size:90%;
+			text-decoration: none;
+			@include transition(all 250ms ease-in);
+			i.fa{
+				display: block;
+				font-size: 250%;
+				line-height: 0px;
+				padding: 10px 0;
+				text-decoration: none;
+			}
+			&:hover{
+				text-decoration: none;
+				color:white;
+			}
+		}
+	}
+	.fastio-feature{
+		@include fastio-feature();
+	}
+	.fastio-feature-2{
+		@include fastio-feature();
+	}
+	.fastio-hero-3{ 
+		@include fastio-hero('../img/ImagemAgua_2.jpg');
+		position: relative;
+		header{
+			padding:0;
+			position: absolute;
+			bottom:6rem;
 		}
 	}
 }

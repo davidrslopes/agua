@@ -113,7 +113,7 @@ if(!empty($hero_2)):
 ?>
 <!-- ******************* The Fastio Benefits Section ******************* -->
 <section class="fastio-benefits">
-	<img class="ondas left" src="<?php echo get_template_directory_uri()."/img/onda_azul-1.png" ?>" alt="onda azul">
+	<img class="ondas left" src="<?php echo get_template_directory_uri()."/img/onda_azul_a_nossa_agua-l.png" ?>" alt="onda azul l">
 	<div class="container">
 		<div class="row">
 			<?php while( have_rows('a-nossa-agua-section-4') ): the_row(); ?>
@@ -126,7 +126,7 @@ if(!empty($hero_2)):
 			<?php endwhile; ?>
 		</div>
 	</div>
-	<img class="ondas right" src="<?php echo get_template_directory_uri()."/img/onda_azul-2.png" ?>" alt="onda azul">
+	<img class="ondas right top" src="<?php echo get_template_directory_uri()."/img/onda_azul_a_nossa_agua-r.png" ?>" alt="onda azul r">
 </section><!-- .fastio-benefits -->
 <?php endif; ?>
 
