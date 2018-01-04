@@ -26,13 +26,10 @@ if ( is_front_page() ) : ?>
 <div class="wrapper home-footer-wrapper" id="wrapper-footer-home">
 	<footer class="home-footer <?php echo esc_attr( $container ); ?>" id="colophon">
 		<div class="row">
-			<div class="col-lg-4 col-md-4" dir="rtl">
+			<div class="col-6" dir="rtl">
 				<?php do_action('icl_language_selector'); ?>
 			</div>
-			<div class="col-lg-4 col-md-4 text-center">
-				<a class="btn btn-link fastio-home-link" href="/desde-1979">Viaje pela natureza <i class="fa fa-angle-down"></i></a>
-			</div>
-			<div class="col-lg-4 col-md-4 text-right">
+			<div class="col-6 text-right">
 				<ul class="list-inline fastio-home-social">
 					<li class="list-inline-item"><a href="<?php echo $fb_link; ?>" target="_blank"><i class="fa fa-facebook-square social"></i></a></li>
 					<li class="list-inline-item"><a href="<?php echo $instagr_link; ?>" target="_blank"><i class="fa fa-instagram social"></i></a></li>
@@ -47,26 +44,26 @@ elseif ( is_page() ) : ?>
 <div class="wrapper main-footer-wrapper" id="wrapper-footer-main">
 	<footer class="main-footer <?php echo esc_attr( $container ); ?>" id="colophon">
 		<div class="row">
-			<div class="col-lg-3 col-md-3">
+			<div class="col-3">
 				<!-- Footer Logos -->
 				<div class="fastio-footer-logos">
 					<a href="<?php echo $footer_logos_url;?>"><img src="<?php echo $footer_logos_src;?>" alt="<?php echo $footer_logos_alt;?>" title="<?php echo $footer_logos_title;?>"></a>
 				</div>
 			</div>
-			<div class="col-lg-2 col-md-2">
+			<div class="col-2">
 				<!-- Social -->
 				<ul class="fastio-footer-social nav">
 					<li class="nav-item"><a class="nav-link" href="<?php echo $fb_link; ?>" target="_blank"><i class="fa fa-facebook-square social"></i></a></li>
 					<li class="nav-item"><a class="nav-link" href="<?php echo $instagr_link; ?>" target="_blank"><i class="fa fa-instagram social"></i></a></li>
 				</ul>
 			</div>
-			<div class="col-lg-1 col-md-1">
+			<div class="col-1">
 				<!-- Language -->
 				<div class="fastio-footer-lang">
 					<?php do_action('icl_language_selector'); ?>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-4">
+			<div class="col-4">
 				<!-- Footer Menu -->
 				<?php wp_nav_menu(
 					array(
@@ -81,7 +78,7 @@ elseif ( is_page() ) : ?>
 					)
 				); ?>
 			</div>
-			<div class="col-lg-2 col-md-2">
+			<div class="col-2">
 				<div class="fastio-footer-copy text-right">
 				<?php 
 					if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
@@ -105,7 +102,7 @@ else: ?>
 
 		<div class="row">
 
-			<div class="col-md-12">
+			<div class="col-12">
 
 				<footer class="site-footer" id="colophon">
 
