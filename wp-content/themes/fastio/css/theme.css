@@ -10470,6 +10470,21 @@ body.page-template-historiafastio {
     -webkit-background-size: 100% 100%;
     background-size: cover; }
 
+.rightcolumnmodal {
+  background-color: #b2eaff; }
+
+.leftcolumnmodal {
+  padding: 30px; }
+
+.modal-header {
+  border: none !important; }
+
+.modal-body {
+  padding: 0 !important; }
+
+.modal-content {
+  border-radius: 0 !important; }
+
 /* ############################## A NOSSA AGUA ############################## */
 body.page-template-a-nossa-agua .fastio-hero {
   background-image: url("../img/ImagemAgua_1.jpg");

@@ -195,45 +195,28 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div><!-- .row end -->
 	</div><!-- Container end -->
     </section>  
-        <div class="row no-gutters">
-                    <div class="col">
-                        <a href="<?php the_field('link_imagem_1'); ?>" class="thumbnail">
-                             <?php $image = wp_get_attachment_image_src(get_field('imagem_1'), 'full'); ?>
-                             <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('imagem_1')) ?>" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col">
-                       <a href="<?php the_field('link_imagem_2'); ?>" class="thumbnail">
-                            <?php $image2 = wp_get_attachment_image_src(get_field('imagem_2'), 'full'); ?>
-                           <img src="<?php echo $image2[0]; ?>" alt="<?php echo get_the_title(get_field('imagem_2')) ?>" class="img-responsive">
-                       </a>
-                   </div>
-                    <div class="col">
-                        <a href="<?php the_field('link_imagem_3'); ?>" class="thumbnail">
-                            <?php $image3 = wp_get_attachment_image_src(get_field('imagem_3'), 'full'); ?>
-                               <img src="<?php echo $image3[0]; ?>" alt="<?php echo get_the_title(get_field('imagem_3')) ?>" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="<?php the_field('link_imagem_4'); ?>" class="thumbnail">
-                                <?php $image4 = wp_get_attachment_image_src(get_field('imagem_4'), 'full'); ?>
-                               <img src="<?php echo $image4[0]; ?>" alt="<?php echo get_the_title(get_field('imagem_4')) ?>" class="img-responsive">
-                        </a>
-                    </div>
-        </div>
-    
-<div id="myModal-<? the_ID(); ?>" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-header">
-        <h3 id="myModalLabel">
-          <?php the_title();?>
-        </h3>
-        <p>
-          <?php the_content();?>
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      </div>
-    </div>
+       <?php
+	if( have_rows('historia-section-6') ): 
+		$links_count = count(get_field('historia-section-6'));
+		$links_col = ceil(12 / $links_count);
+ 		if($links_col<3) $links_col = 3;
+?>
+<!-- ******************* The Fastio Links Section ******************* -->
+<section class="fastio-img-links">
+	<div class="row no-gutters">
+		<?php while( have_rows('historia-section-6') ): the_row(); 
+			$link_id = get_sub_field('link', false, false);
+		?>
+		<div class="col-<?php echo $links_col; ?>">
+			<article style="background-image:url('<?php the_sub_field('img'); ?>');">
+				<a href="<?php echo get_the_permalink($link_id); ?>">
+					<h5 class="align-middle"><?php echo get_the_title($link_id); ?></h5>
+				</a>
+			</article>
+		</div>
+		<?php endwhile; ?>
+	</div>
+</section><!-- .fastio-img-links -->
+<?php endif; ?>
 </div><!-- Wrapper end -->
 <?php get_footer(); ?>
