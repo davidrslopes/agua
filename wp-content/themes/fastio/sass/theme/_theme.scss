@@ -359,24 +359,6 @@ body.page-template-historiafastio{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-	.wrapper.historiafastio{
-		padding: 0;
-	}
-	.rightcolumnmodal{
-		background-color: $h2o-light-blue;
-	}
-	.leftcolumnmodal{
-		padding: 30px;
-	}
-	.modal-header{
-		border:none !important;
-	}
-	.modal-body{
-		padding:0 !important;
-	}
-	.modal-content{
-		border-radius: 0 !important;
-	}
 	#seccao5{
 		background-image: url(../img/Fundo_Seccao_Azul.svg);
 		background-size:100% 100%;
@@ -384,8 +366,25 @@ body.page-template-historiafastio{
 		-webkit-background-size: 100% 100%;
 		background-size:cover;
 	}
+	.wrapper.historiafastio{
+		padding: 0;
+	}
 }
-
+.rightcolumnmodal{
+	background-color: $h2o-light-blue;
+}
+.leftcolumnmodal{
+	padding: 30px;
+}
+.modal-header{
+	border:none !important;
+}
+.modal-body{
+	padding:0 !important;
+}
+.modal-content{
+	border-radius: 0 !important;
+}
 /* ############################## A NOSSA AGUA ############################## */
 body.page-template-a-nossa-agua{
 	.fastio-hero{ @include fastio-hero('../img/ImagemAgua_1.jpg'); }
