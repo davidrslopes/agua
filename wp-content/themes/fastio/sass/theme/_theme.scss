@@ -31,7 +31,7 @@
 		position: absolute;
 		bottom: 0;
 		&.bg-warning{
-			color:$h20-dark-blue;
+			color:$h2o-dark-blue;
 		}
 		&.left{
 			padding: 6rem 4rem 6rem 10rem;
@@ -58,6 +58,7 @@
 		border-color: transparent;
 		box-shadow: none;
 		padding: 0 10px;
+		text-shadow: $h2o-text-shadow;
 		&::after{
 			@include transition(all 250ms ease-in);
 			-webkit-transform: rotate(0deg);
@@ -78,6 +79,7 @@
 			padding: 0;
 			margin: 0;
 			margin-left: 7px;
+			box-shadow: $h2o-box-shadow;
 		}
 	}
 	&.show > button.btn.dropdown-toggle{
@@ -90,6 +92,7 @@
 			-ms-transform: rotate(-90deg);
 			-o-transform: rotate(-90deg);
 			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+			box-shadow: $h2o-box-shadow-after;
 		}
 	}
 	.dropdown-menu{
@@ -106,8 +109,9 @@
 			padding: 0;
 			margin: 0;
 			text-transform: uppercase;
+			text-shadow: $h2o-text-shadow;
 			&:hover, &:focus, &.hover, &.focus{
-				color: $h20-light-blue;
+				color: $h2o-light-blue;
 			}
 		}
 	}
@@ -204,7 +208,7 @@
 }
 //Main Footer
 .main-footer-wrapper{
-	background-color: $h20-light-blue;
+	background-color: $h2o-light-blue;
 	color: white;
 	height: 62px;
 	width: 100%;
@@ -281,7 +285,7 @@
 body.page-template-historiafastio .main-footer-wrapper, // Desde 1979
 body.page-template-go .main-footer-wrapper, // Fastio GO
 body.page-template-hotwheels-single .main-footer-wrapper{ // Hotwheels Car Pages 
-	background-color: $h20-blue;
+	background-color: $h2o-blue;
 	color: white;
 }
 
@@ -301,7 +305,7 @@ body.page-template-hotwheels-single .main-footer-wrapper{ // Hotwheels Car Pages
 			width: 100%;
 			height: 100%;
 			text-decoration: none;
-			color:$h20-dark-blue;
+			color:$h2o-dark-blue;
 			@include transition(all 250ms ease-in);
 			&:hover,
 			&.hover,
@@ -365,7 +369,7 @@ body.page-template-historiafastio{
 }
 
         .rightcolumnmodal{
-            background-color: $h20-light-blue;
+            background-color: $h2o-light-blue;
         }
         
         .leftcolumnmodal{
@@ -385,7 +389,7 @@ body.page-template-historiafastio{
 body.page-template-a-nossa-agua{
 	.fastio-hero{ @include fastio-hero('../img/ImagemAgua_1.jpg'); }
 	.fastio-products{
-		background-color: $h20-light-blue;
+		background-color: $h2o-light-blue;
 		color:white;
 		padding: 6rem 4rem;
 		.list-group{
@@ -434,7 +438,7 @@ body.page-template-a-nossa-agua{
 		padding-bottom: 6rem;
 		.container{
 			margin-top: -2rem;
-			background-color: $h20-light-blue;
+			background-color: $h2o-light-blue;
 			color:white;
 			padding: 6rem 4rem;
 			article{

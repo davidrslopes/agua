@@ -7,22 +7,28 @@
 */
 
 //COLORS
-$h20-blue: #00aeef; // rgb(0,174,239)
-$h20-light-blue: lighten($h20-blue,38%);
-$h20-dark-blue: #006fba; // rgb(0,111,186)
-$h20-yellow: #fff200; // rgb(255,242,0)
+$h2o-blue: #00aeef; // rgb(0,174,239)
+$h2o-light-blue: lighten($h2o-blue,38%);
+$h2o-dark-blue: #006fba; // rgb(0,111,186)
+$h2o-yellow: #fff200; // rgb(255,242,0)
 
 //TYPOGRAPHY
 @import url('https://fonts.googleapis.com/css?family=Allerta');
 $allerta: "Allerta", sans-serif; // Titles, texts and navs
 
+//SHADOWS
+$h2o-text-shadow: .0em .090em .090em rgba(83, 83, 83, .80);
+$h2o-box-shadow: .0em .090em .090em 0em rgba(83, 83, 83, .80);
+$h2o-box-shadow-after: -.090em 0em .090em 0em rgba(83, 83, 83, .80);
+
 /* #################### BOOTSTRAP OVERWRITES #################### */
 
 //COLORS
-$primary: $h20-blue;
-$secondary: $h20-yellow;
-$warning: $h20-yellow;
+$primary: $h2o-blue;
+$secondary: $h2o-yellow;
+$warning: $h2o-yellow;
 
 //TYPOGRAPHY
 $font-family-sans-serif: $allerta;
 $font-family-base: $allerta;
+
