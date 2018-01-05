@@ -10432,7 +10432,6 @@ body.page-template-hotwheels-single .main-footer-wrapper {
 
 img.ondas {
   position: absolute;
-  bottom: 0;
   z-index: 9; }
   img.ondas.top {
     top: 0; }
@@ -10640,14 +10639,6 @@ body.page-template-a-familia .fastio-feature {
       color: #006fba; }
     body.page-template-a-familia .fastio-feature article.left {
       padding: 6rem 4rem 6rem 10rem; }
-  body.page-template-a-familia .fastio-feature img.ondas {
-    position: absolute;
-    bottom: 0;
-    z-index: 9; }
-    body.page-template-a-familia .fastio-feature img.ondas.left {
-      left: -20px; }
-    body.page-template-a-familia .fastio-feature img.ondas.right {
-      right: 0px; }
 
 body.page-template-a-familia .fastio-feature-2 {
   position: relative; }
@@ -10662,14 +10653,6 @@ body.page-template-a-familia .fastio-feature-2 {
       color: #006fba; }
     body.page-template-a-familia .fastio-feature-2 article.left {
       padding: 6rem 4rem 6rem 10rem; }
-  body.page-template-a-familia .fastio-feature-2 img.ondas {
-    position: absolute;
-    bottom: 0;
-    z-index: 9; }
-    body.page-template-a-familia .fastio-feature-2 img.ondas.left {
-      left: -20px; }
-    body.page-template-a-familia .fastio-feature-2 img.ondas.right {
-      right: 0px; }
 
 body.page-template-a-familia .fastio-hero-3 {
   background-image: url("../img/ImagemAgua_2.jpg");

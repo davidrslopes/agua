@@ -37,13 +37,6 @@
 			padding: 6rem 4rem 6rem 10rem;
 		}
 	}
-	img.ondas{
-		position: absolute;
-		bottom: 0;
-		z-index: 9;
-		&.left{left:-20px;}
-		&.right{right:0px;}
-	}
 }
 
 /* ############################## COMMON ############################## */
@@ -324,7 +317,6 @@ body.page-template-hotwheels-single .main-footer-wrapper{ // Hotwheels Car Pages
 }
 img.ondas{
 	position: absolute;
-	bottom: 0;
 	z-index: 9;
 	&.top{top: 0;}
 	&.bottom{bottom: 0;}
