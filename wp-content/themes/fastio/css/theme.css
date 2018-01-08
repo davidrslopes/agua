@@ -10471,12 +10471,75 @@ body.page-template-historiafastio {
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
-    background-size: cover; }
+    background-size: cover;
+    overflow: hidden; }
+  body.page-template-historiafastio #seccao5 .media span.year,
+  body.page-template-historiafastio #seccao5 .media .entry-content,
+  body.page-template-historiafastio #seccao5 .media .entry-content a,
+  body.page-template-historiafastio #seccao5 .media .entry-title {
+    color: #9ee0f8; }
+  body.page-template-historiafastio #seccao5 .container {
+    max-width: 960px;
+    margin-top: 130px; }
+  body.page-template-historiafastio #seccao5 .media {
+    display: block; }
+  body.page-template-historiafastio #seccao5 .media .entry-content p {
+    font-size: 13px;
+    font-weight: normal; }
   body.page-template-historiafastio .wrapper.historiafastio {
     padding: 0; }
+  body.page-template-historiafastio #seccao1, body.page-template-historiafastio #seccao2, body.page-template-historiafastio #seccao3, body.page-template-historiafastio #seccao4 {
+    overflow: hidden; }
+  body.page-template-historiafastio #seccao1 {
+    padding-top: 100px; }
+  body.page-template-historiafastio #seccao2 {
+    padding-top: 80px; }
+  body.page-template-historiafastio span.year {
+    font-size: 45px;
+    color: #00aeef; }
+  body.page-template-historiafastio .media-left {
+    margin-right: 40px; }
+  body.page-template-historiafastio .media-body {
+    flex: 0.75; }
+  body.page-template-historiafastio .entry-content {
+    color: #00aeef; }
+  body.page-template-historiafastio .entry-content p {
+    font-size: 13px;
+    font-weight: normal; }
+  body.page-template-historiafastio .entry-title {
+    font-size: 23px;
+    color: #00aeef;
+    margin-top: 10px; }
+
+.modalfecharbtn {
+  padding-top: 18px !important;
+  color: #fff;
+  font-size: 13px;
+  opacity: 1;
+  font-weight: normal; }
+
+.modalfecharbtn span {
+  font-size: 24px;
+  position: relative;
+  top: 3px; }
 
 .rightcolumnmodal {
   background-color: #b2eaff; }
+
+.rightcolumnmodal span.year {
+  color: #fff !important;
+  font-size: 12px !important; }
+
+.rightcolumnmodal h4 {
+  color: #fff !important;
+  font-size: 12px !important; }
+
+.rightcolumnmodal .conteudo {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  margin-left: 30px;
+  margin-right: 10px; }
 
 .leftcolumnmodal {
   padding: 30px; }

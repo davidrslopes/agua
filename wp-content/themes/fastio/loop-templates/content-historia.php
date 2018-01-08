@@ -7,20 +7,13 @@
 
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-    <div class="col-md-3">
-         <span class="year"><?php the_field('ano'); ?></span>
-    </div>
-    <div class="col-md-9">
-	<header class="entry-header">
-           
-
-            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-	</header><!-- .entry-header -->
-
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-
-	<div class="entry-content">
+ <div class="media">
+  <div class="media-left media-middle">
+    <span class="year media-object"><?php the_field('ano'); ?></span>
+   </div>
+  <div class="media-body">
+    <?php the_title( '<h1 class="entry-title media-heading">', '</h1>' ); ?>
+    	<div class="entry-content">
                 
 	    <?php the_excerpt() ?>
             <?php
@@ -32,8 +25,8 @@
             </a>
             <?php endif; ?>
 	</div><!-- .entry-content -->
-        </div>
-
+  </div>
+</div>
 </article><!-- #post-## -->
 <!-- Modal -->
             <div class="modal fade" id="post<?php echo $post_id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -45,10 +38,11 @@
                               <?php the_content()?>
                           </div>
                           <div class="col-md-4 rightcolumnmodal">
-                          <button type="button" class="close modalfecharbtn" data-dismiss="modal" aria-hidden="true"><?php  esc_html_e( 'FECHAR', 'fastio' ); ?> X</button>
-                      
+                              <button type="button" class="close modalfecharbtn" data-dismiss="modal" aria-hidden="true"><?php  esc_html_e( 'FECHAR', 'fastio' ); ?> <span>X</span></button>
+                            <div class="conteudo">
                             <!-- Here showing the title of the post -->
                             <h4><span class="year"><?php the_field('ano'); ?></span> - <?php the_title();?></h4>
+                            </div>
                           </div>
                         </div>
                       </div>
