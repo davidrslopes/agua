@@ -10739,6 +10739,80 @@ body.page-template-a-familia .fastio-hero-3 {
     position: absolute;
     bottom: 6rem; }
 
+/* ############################## FASTIO GO! ############################## */
+body.page-template-fastio-go .fastio-video-hero {
+  position: relative;
+  background-image: url("../img/imagem_Momentos_1.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: block; }
+  body.page-template-fastio-go .fastio-video-hero header {
+    padding: 50vh 0 0 0; }
+    body.page-template-fastio-go .fastio-video-hero header h1, body.page-template-fastio-go .fastio-video-hero header h2, body.page-template-fastio-go .fastio-video-hero header h3, body.page-template-fastio-go .fastio-video-hero header h4, body.page-template-fastio-go .fastio-video-hero header h5, body.page-template-fastio-go .fastio-video-hero header h6 {
+      color: white; }
+  body.page-template-fastio-go .fastio-video-hero div.fastio-video-container {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    body.page-template-fastio-go .fastio-video-hero div.fastio-video-container video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      background-size: cover;
+      border: 0; }
+  body.page-template-fastio-go .fastio-video-hero button.fastio-btn-scroll-down {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    font-size: 90%;
+    text-decoration: none;
+    transition: all 250ms ease-in; }
+    body.page-template-fastio-go .fastio-video-hero button.fastio-btn-scroll-down i.fa {
+      display: block;
+      font-size: 250%;
+      line-height: 0px;
+      padding: 10px 0;
+      text-decoration: none; }
+    body.page-template-fastio-go .fastio-video-hero button.fastio-btn-scroll-down:hover {
+      text-decoration: none;
+      color: white; }
+
+body.page-template-fastio-go .fastio-go-bottle {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff200;
+  background-image: url("../img/fundo_amarelo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #006fba; }
+  body.page-template-fastio-go .fastio-go-bottle h2 {
+    font-weight: bold; }
+  body.page-template-fastio-go .fastio-go-bottle p {
+    font-size: 1.33rem; }
+  body.page-template-fastio-go .fastio-go-bottle .vertical-align {
+    padding-top: 33vh; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

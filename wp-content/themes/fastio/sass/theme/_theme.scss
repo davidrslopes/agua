@@ -598,3 +598,73 @@ body.page-template-a-familia{
 		}
 	}
 }
+/* ############################## FASTIO GO! ############################## */
+body.page-template-fastio-go{
+	.fastio-video-hero{
+		position: relative;
+		@include fastio-hero('../img/imagem_Momentos_1.jpg');
+		div.fastio-video-container{
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			video{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+				background-size: cover;
+				border: 0;
+			}
+		}
+		button.fastio-btn-scroll-down{
+			position: absolute;
+			bottom: 0;
+			cursor: pointer;
+			font-size:90%;
+			text-decoration: none;
+			@include transition(all 250ms ease-in);
+			i.fa{
+				display: block;
+				font-size: 250%;
+				line-height: 0px;
+				padding: 10px 0;
+				text-decoration: none;
+			}
+			&:hover{
+				text-decoration: none;
+				color:white;
+			}
+		}
+	}
+	.fastio-go-bottle{
+		display: block;
+		width:100%;
+		height:100vh; //check if this is responsive and Xbrowser
+		background-color: $warning;
+		background-image: url('../img/fundo_amarelo.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-attachment: fixed;
+		color: $h2o-dark-blue;
+		h2{
+			font-weight: bold;
+		}
+		p{
+			font-size: 1.33rem;
+		}
+		.vertical-align{
+			padding-top: 33vh; //check if this is responsive and Xbrowser
+		}
+	}
+}
