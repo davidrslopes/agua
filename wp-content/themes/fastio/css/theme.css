@@ -10830,6 +10830,24 @@ body.page-template-fastio-go .fastio-hero {
     body.page-template-fastio-go .fastio-hero header h1, body.page-template-fastio-go .fastio-hero header h2, body.page-template-fastio-go .fastio-hero header h3, body.page-template-fastio-go .fastio-hero header h4, body.page-template-fastio-go .fastio-hero header h5, body.page-template-fastio-go .fastio-hero header h6 {
       color: white; }
 
+body.page-template-fastio-go .fastio-go-workout {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: top center; }
+  body.page-template-fastio-go .fastio-go-workout .inner-hero {
+    padding-top: 18rem;
+    height: 34rem; }
+  body.page-template-fastio-go .fastio-go-workout .fastio-workout .img-thumbnail {
+    border-radius: 0;
+    border-color: #b2eaff; }
+  body.page-template-fastio-go .fastio-go-workout .fastio-workout a {
+    text-decoration: none; }
+  body.page-template-fastio-go .fastio-go-workout .fastio-workout h6, body.page-template-fastio-go .fastio-go-workout .fastio-workout i {
+    color: #006fba;
+    font-size: 0.8rem; }
+  body.page-template-fastio-go .fastio-go-workout .fastio-workout h6 {
+    margin: 1.5rem 0 0 0; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

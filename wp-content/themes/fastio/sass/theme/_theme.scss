@@ -668,4 +668,36 @@ body.page-template-fastio-go{
 		}
 	}
 	.fastio-hero{ @include fastio-hero('../img/imagemGO_2.jpg'); }
+	.fastio-go-workout{
+		display: block;
+		background-repeat: no-repeat;
+		background-position: top center;
+		.inner-hero{
+			padding-top:18rem;
+			height:34rem;
+		}
+		.mt{
+			//margin-top: -80px;
+		}
+		.fastio-workout{
+			.img-thumbnail{
+				border-radius:0;
+				border-color:$h2o-light-blue;
+			}
+			a{
+				text-decoration: none;
+			}
+			h6,i{
+				color:$h2o-dark-blue;
+				font-size: 0.8rem;
+				
+			}
+			h6{
+				margin: 1.5rem 0 0 0;
+			}
+		}
+	}
+	.fastio-go-social{
+			
+	}
 }

@@ -84,98 +84,114 @@ if(!empty($hero_1)):
 	<div class="container">
 		<div class="row">
 			<header class="fastio-hero-header col-3 text-center">
-				<?php if(!empty($hero_1['img'])): ?><img class="img-fluid" src="<?php echo $hero_1['img']['url']; ?>" title="<?php echo $hero_1['img']['title']; ?>" alt="<?php echo $hero_1['mg']['title']; ?>"><?php endif; ?>
+				<?php if(!empty($hero_1['img'])): ?><img class="img-fluid" src="<?php echo $hero_1['img']['url']; ?>" title="<?php echo $hero_1['img']['title']; ?>" alt="<?php echo $hero_1['img']['title']; ?>"><?php endif; ?>
 				<?php if(!empty($hero_1['title'])): ?><h1 class="text-warning"><?php echo $hero_1['title'];?></h1><?php endif; ?> 
 			</header>
 		</div>
 	</div>
 	<?php endif; ?>
 </section><!-- .fastio-hero -->
-<?php endif; ?>
+<?php endif;
 
-<?php 
-/*	
-$feature = get_field('fastio-go-section-2');
-	if(!empty($feature)):
+//Section 4 : Workout
+$workout = get_field('fastio-go-section-4');
+if(!empty($workout)):
 ?>
-<section class="fastio-feature mt">
+<!-- ******************* The Fastio GO Workout Section ******************* -->
+<section class="fastio-go-workout" style="background-image:url('<?php echo $workout['bg-img']; ?>');">
 	<div class="container">
-		<div class="row no-gutters">
-			<div class="col-7 text-right">
-				<?php if(!empty($feature['img'])): ?><img class="img-fluid" src="<?php echo $feature['img']['url']; ?>" title="<?php echo $feature['img']['title']; ?>" alt="<?php echo $feature['img']['title']; ?>"><?php endif; ?>
-			</div>
-			<div class="col-5 text-left pull-bottom">
-				<article class="bg-primary">
-					<?php if(!empty($feature['text'])){ echo '<h4>'.$feature['text'].'</h4>'; } ?>
-				</article>
-			</div>
-		</div>
-		<img class="ondas right bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-r-dark.png"; ?>" alt="onda azul r">
-	</div>
-</section><!-- .fastio-feature -->
-<?php endif;*/ ?>
-
-<?php
-//Section 3 : Hero
-/*
-$hero_3 = get_field('fastio-go-section-3');
-if(!empty($hero_3)):
-?>
-<!-- ******************* The Hero III Section ******************* -->
-<section class="fastio-hero-3" style="background-image:url('<?php echo $hero_3['bg-img']; ?>');">
-	<div class="container-fluid">
-		<img class="ondas left bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-l.png"; ?>" alt="onda azul l">
 		<div class="row">
-			<header class="fastio-hero-header offset-2 col-10">
-				<?php if(!empty($hero_3['title'])): ?><h3 class="text-primary"><?php echo $hero_3['title']; ?></h3><?php endif; ?>
-				<?php if(!empty($hero_3['hashtag'])): ?><img class="img-fluid" src="<?php echo $hero_3['hashtag']['url']; ?>" title="<?php echo $hero_3['hashtag']['title']; ?>" alt="<?php echo $hero_3['hashtag']['title']; ?>"><?php endif; ?>
-			</header>
-		</div>
-	</div>
-</section><!-- .fastio-hero-3 -->
-<?php endif;*/ ?>
-
-<!-- ******************* The Feature Image Section II ******************* -->
-<?php 
-/*	
-	$feature_2 = get_field('fastio-go-section-4');
-	if(!empty($feature_2)):
-?>
-<section class="fastio-feature">
-	<div class="container">
-		<div class="row no-gutters">
-			<div class="col-7 text-right">
-				<?php if(!empty($feature_2['img'])): ?><img class="img-fluid" src="<?php echo $feature_2['img']['url']; ?>" title="<?php echo $feature_2['img']['title']; ?>" alt="<?php echo $feature_2['img']['title']; ?>"><?php endif; ?>
-			</div>
-			<div class="col-5 text-left pull-bottom">
-				<article class="bg-warning">
-					<?php if(!empty($feature_2['text'])){ echo '<h4>'.$feature_2['text'].'</h4>'; } ?>
+			<div class="offset-1 col-10 hero">
+				<?php if(!empty($workout['img']) || !empty($workout['title']) || !empty($workout['desc'])): ?>
+				<article class="inner-hero">
+					<div class="row">
+						<?php if(!empty($workout['img'])): ?>
+						<div class="col-3">
+							<img class="img-fluid" src="<?php echo $workout['img']['url']; ?>" title="<?php echo $workout['img']['title']; ?>" alt="<?php echo $workout['img']['title']; ?>">
+						</div>
+						<?php endif; ?>
+						<div class="col-5">
+							<?php if(!empty($workout['title'])): ?><h4 class="text-warning"><?php echo $workout['title'];?></h4><?php endif; ?>
+							<?php if(!empty($workout['text'])): ?><p class="text-warning"><?php echo $workout['text'];?></p><?php endif; ?>
+						</div>
+					</div>
 				</article>
+				<?php endif; ?>
+				<?php if( have_rows('fastio-go-workouts') ):
+					$workout_count = count(get_field('fastio-go-workouts'));
+					$workout_col = ceil(12 / $workout_count);
+					if($workout_col<3) $workout_col = 3;
+				?>
+				<div class="row mt">
+					<?php while( have_rows('fastio-go-workouts') ): the_row();
+						$go_workout_img = get_sub_field('img');
+						$go_workout_file = get_sub_field('file');
+					?>
+					<div class="col-<?php echo $workout_col; ?>">
+						<article class="fastio-workout text-center">
+							<?php if(!empty($go_workout_img)): ?>
+							<img class="img-fluid img-thumbnail" src="<?php echo $go_workout_img['url']; ?>" title="<?php echo $go_workout_img['title']; ?>" alt="<?php echo $go_workout_img['title']; ?>">
+							<?php endif; ?>
+							<?php if(!empty($go_workout_file)): ?>
+							<a href="<?php echo $go_workout_file['url']; ?>" target="_blank">
+							<?php endif; ?>
+								<h6><?php the_sub_field('title'); ?></h6>
+								<i class="fa fa-download"></i>
+							<?php if(!empty($go_workout_file)): ?></a><?php endif; ?>
+						</article>
+					</div>
+					<?php endwhile; ?>
+				</div>
 			</div>
 		</div>
-		<img class="ondas right bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-r-dark.png"; ?>" alt="onda azul r">
+		<?php endif; ?>
 	</div>
-</section><!-- .fastio-feature -->
-<?php endif; */?>
+</section><!-- .fastio-go-workout -->
+<?php endif; 
 
-<!-- ******************* The Feature Image Section III ******************* -->
-<?php 
-	/*
-	$feature_3 = get_field('fastio-go-section-5');
-	if(!empty($feature_3)):
+$fastio_go_social = get_field('fastio-go-section-5');
+if(!empty($fastio_go_social)):
 ?>
-<section class="fastio-feature-2">
-	<img class="ondas left bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-l-dark.png"; ?>" alt="onda azul l">
+<section class="fastio-go-social">
 	<div class="row no-gutters">
-		<div class="col-5 text-right">
-			<article class="bg-warning left text-left">
-				<?php if(!empty($feature_3['text'])){ echo '<h4>'.$feature_3['text'].'</h4>';} ?>
-			</article>
+		<div class="col-5 bg-primary">
+			<?php if(!empty($fastio_go_social['img-big'])): ?>
+			<img class="img-fluid" src="<?php echo $fastio_go_social['img-big']['url']; ?>" title="<?php echo $fastio_go_social['img-big']['title']; ?>" alt="<?php echo $fastio_go_social['img-big']['title']; ?>">
+			<?php endif; ?>
 		</div>
-		<div class="col-7 text-left">
-			<?php if(!empty($feature_3['img'])): ?><img class="img-fluid" src="<?php echo $feature_3['img']['url']; ?>" title="<?php echo $feature_3['img']['title']; ?>" alt="<?php echo $feature_3['img']['title']; ?>"><?php endif; ?>
+		<div class="col-7">
+			<div class="row no-gutters">
+				<div class="col-4 bg-warning text-center vertical-center">
+					<?php if(!empty($fastio_go_social['tweet-1'])): ?><h5 class="text-primary"><?php echo $fastio_go_social['tweet-1'];?></h5><?php endif; ?>
+				</div>
+				<div class="col-4 bg-primary">
+					<?php if(!empty($fastio_go_social['img-1'])): ?>
+					<img class="img-fluid" src="<?php echo $fastio_go_social['img-1']['url']; ?>" title="<?php echo $fastio_go_social['img-1']['title']; ?>" alt="<?php echo $fastio_go_social['img-1']['title']; ?>">
+					<?php endif; ?>
+				</div>
+				<div class="col-4 bg-primary">
+					<?php if(!empty($fastio_go_social['img-2'])): ?>
+					<img class="img-fluid" src="<?php echo $fastio_go_social['img-2']['url']; ?>" title="<?php echo $fastio_go_social['img-2']['title']; ?>" alt="<?php echo $fastio_go_social['img-2']['title']; ?>">
+					<?php endif; ?>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-4 bg-primary">
+					<?php if(!empty($fastio_go_social['img-3'])): ?>
+					<img class="img-fluid" src="<?php echo $fastio_go_social['img-3']['url']; ?>" title="<?php echo $fastio_go_social['img-3']['title']; ?>" alt="<?php echo $fastio_go_social['img-3']['title']; ?>">
+					<?php endif; ?>
+				</div>
+				<div class="col-4 bg-primary">
+					<?php if(!empty($fastio_go_social['img-4'])): ?>
+					<img class="img-fluid" src="<?php echo $fastio_go_social['img-4']['url']; ?>" title="<?php echo $fastio_go_social['img-4']['title']; ?>" alt="<?php echo $fastio_go_social['img-4']['title']; ?>">
+					<?php endif; ?>
+				</div>
+				<div class="col-4 bg-warning text-center vertical-center">
+					<?php if(!empty($fastio_go_social['tweet-2'])): ?><h5 class="text-primary"><?php echo $fastio_go_social['tweet-2'];?></h5><?php endif; ?>
+				</div>
+			</div>
 		</div>
 	</div>
-</section><!-- .fastio-feature-2 -->
-<?php endif; */ ?>
+</section>
+<?php endif; ?>
 <?php get_footer(); ?>
