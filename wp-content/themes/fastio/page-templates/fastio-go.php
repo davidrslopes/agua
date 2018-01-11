@@ -72,7 +72,27 @@ if(!empty($hero_1)):
 	</div>
 </section><!-- .fastio-go-bottle -->
 
+<?php endif;
+
+//Section 3 : Hero 1
+$hero_1 = get_field('fastio-go-section-3');
+if(!empty($hero_1)):
+?>
+<!-- ******************* The Hero Section ******************* -->
+<section class="fastio-hero" style="background-image:url('<?php echo $hero_1['bg-img']; ?>');">
+	<?php if(!empty($hero_1['title'])): ?>
+	<div class="container">
+		<div class="row">
+			<header class="fastio-hero-header col-3 text-center">
+				<?php if(!empty($hero_1['img'])): ?><img class="img-fluid" src="<?php echo $hero_1['img']['url']; ?>" title="<?php echo $hero_1['img']['title']; ?>" alt="<?php echo $hero_1['mg']['title']; ?>"><?php endif; ?>
+				<?php if(!empty($hero_1['title'])): ?><h1 class="text-warning"><?php echo $hero_1['title'];?></h1><?php endif; ?> 
+			</header>
+		</div>
+	</div>
+	<?php endif; ?>
+</section><!-- .fastio-hero -->
 <?php endif; ?>
+
 <?php 
 /*	
 $feature = get_field('fastio-go-section-2');

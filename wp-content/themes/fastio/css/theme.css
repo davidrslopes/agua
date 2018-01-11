@@ -10401,7 +10401,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     line-height: 46px; }
 
 body.page-template-historiafastio .main-footer-wrapper,
-body.page-template-go .main-footer-wrapper,
+body.page-template-fastio-go .main-footer-wrapper,
 body.page-template-hotwheels-single .main-footer-wrapper {
   background-color: #00aeef;
   color: white; }
@@ -10812,6 +10812,23 @@ body.page-template-fastio-go .fastio-go-bottle {
     font-size: 1.33rem; }
   body.page-template-fastio-go .fastio-go-bottle .vertical-align {
     padding-top: 33vh; }
+
+body.page-template-fastio-go .fastio-hero {
+  background-image: url("../img/imagemGO_2.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: block; }
+  body.page-template-fastio-go .fastio-hero header {
+    padding: 50vh 0 0 0; }
+    body.page-template-fastio-go .fastio-hero header h1, body.page-template-fastio-go .fastio-hero header h2, body.page-template-fastio-go .fastio-hero header h3, body.page-template-fastio-go .fastio-hero header h4, body.page-template-fastio-go .fastio-hero header h5, body.page-template-fastio-go .fastio-hero header h6 {
+      color: white; }
 
 /*
 * Use existing Bootstrap 4 classes and

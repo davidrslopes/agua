@@ -276,7 +276,7 @@
 
 //Individual page footer styling
 body.page-template-historiafastio .main-footer-wrapper, // Desde 1979
-body.page-template-go .main-footer-wrapper, // Fastio GO
+body.page-template-fastio-go .main-footer-wrapper, // Fastio GO
 body.page-template-hotwheels-single .main-footer-wrapper{ // Hotwheels Car Pages 
 	background-color: $h2o-blue;
 	color: white;
@@ -667,4 +667,5 @@ body.page-template-fastio-go{
 			padding-top: 33vh; //check if this is responsive and Xbrowser
 		}
 	}
+	.fastio-hero{ @include fastio-hero('../img/imagemGO_2.jpg'); }
 }
