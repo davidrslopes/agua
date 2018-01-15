@@ -46,7 +46,7 @@ $side_image = get_field('seccao_2:_imagem_lateral');
 				<div class="list-group" id="list-tab" role="tablist">
 					<a class="list-group-item list-group-item-action active" id="nav-tab-politica" data-toggle="list" href="#tab-politica" role="tab" aria-controls="tab-politica"><?php _e( 'Política Cookies', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-avisolegal" data-toggle="list" href="#tab-avisolegal" role="tab" aria-controls="tab-avisolegal"><?php _e( 'Aviso Legal', 'understrap' ); ?></a>
-					<a class="list-group-item list-group-item-action" id="nav-tab-contato" data-toggle="list" href="#tab-contactos" role="tab" aria-controls="tab-contactos"><?php _e( 'Contato', 'understrap' ); ?></a>
+					<a class="list-group-item list-group-item-action" id="nav-tab-contato" data-toggle="list" href="#tab-contatos" role="tab" aria-controls="tab-contactos"><?php _e( 'Contato', 'understrap' ); ?></a>
 				</div>
 			</div>
 			<div class="col-6">
@@ -73,7 +73,7 @@ $side_image = get_field('seccao_2:_imagem_lateral');
 				<?php 
                                 $my_query2 = new WP_Query('page_id=188');
                                 while ($my_query2->have_posts()) : $my_query2->the_post();
-                                $do_not_duplicate = $post->ID;?>
+                                $do_not_duplicate2 = $post->ID;?>
                                 <?php if(is_page(icl_object_id(188, 'page'))) : ?>
 
 					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
@@ -83,14 +83,14 @@ $side_image = get_field('seccao_2:_imagem_lateral');
 
                                         </main><!-- #main -->
 					</div>
-					<div class="tab-pane fade" id="tab-contato" role="tabpanel" aria-labelledby="tab-contactos">
+					<div class="tab-pane fade" id="tab-contatos" role="tabpanel" aria-labelledby="tab-contactos">
 					
                                         <main class="site-main" id="main">
 
 				<?php 
                                 $my_query3 = new WP_Query('page_id=191');
                                 while ($my_query3->have_posts()) : $my_query3->the_post();
-                                $do_not_duplicate = $post->ID;?>
+                                $do_not_duplicate3 = $post->ID;?>
                                 <?php if(is_page(icl_object_id(191, 'page'))) : ?>
 
 					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
