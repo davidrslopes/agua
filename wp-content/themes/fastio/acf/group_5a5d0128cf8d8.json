@@ -68,7 +68,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "default"
+                "value": "page-templates\/explore-o-geres.php"
             }
         ]
     ],
@@ -93,5 +93,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1516045251
+    "modified": 1516050324
 }
