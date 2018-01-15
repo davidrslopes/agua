@@ -10860,11 +10860,21 @@ body.page-template-default .fastio-hero {
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
-  display: block; }
+  display: block;
+  max-height: 480px; }
   body.page-template-default .fastio-hero header {
     padding: 50vh 0 0 0; }
     body.page-template-default .fastio-hero header h1, body.page-template-default .fastio-hero header h2, body.page-template-default .fastio-hero header h3, body.page-template-default .fastio-hero header h4, body.page-template-default .fastio-hero header h5, body.page-template-default .fastio-hero header h6 {
       color: white; }
+
+body.page-template-default .fastio-common-pages .listnavigationitems {
+  padding: 50px; }
+
+body.page-template-default .fastio-common-pages .site-main {
+  padding: 50px; }
+
+body.page-template-default .fastio-common-pages .lateralimage {
+  padding-top: 50px; }
 
 body.page-template-default .list-group {
   border: 0;
