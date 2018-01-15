@@ -104,7 +104,7 @@ $side_image = get_field('seccao_2:_imagem_lateral');
 				</div>
 			</div>
                     <div class="col-3">
-                        <img src="<?php echo $side_image['bg-img']; ?>" class="img-responsive"/>
+                        <img src="<?php echo $side_image['bg-img']; ?>" class="img-responsive float-right img-fluid"/>
                     </div>
 		</div>
 	</div>
