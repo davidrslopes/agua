@@ -10866,6 +10866,29 @@ body.page-template-default .fastio-hero {
     body.page-template-default .fastio-hero header h1, body.page-template-default .fastio-hero header h2, body.page-template-default .fastio-hero header h3, body.page-template-default .fastio-hero header h4, body.page-template-default .fastio-hero header h5, body.page-template-default .fastio-hero header h6 {
       color: white; }
 
+body.page-template-default .list-group {
+  border: 0;
+  border-radius: 0;
+  border-left-color: #00aeef;
+  border-left-width: 1px;
+  border-left-style: solid; }
+  body.page-template-default .list-group .list-group-item {
+    background: none;
+    color: #b2eaff;
+    font-size: 150%;
+    border: 0;
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -2px;
+    padding: 5px 0 5px 30px; }
+    body.page-template-default .list-group .list-group-item.active, body.page-template-default .list-group .list-group-item:hover, body.page-template-default .list-group .list-group-item.hover, body.page-template-default .list-group .list-group-item:focus, body.page-template-default .list-group .list-group-item.focus {
+      color: #00aeef;
+      border-left-style: solid;
+      border-left-color: #00aeef;
+      border-left-width: 3px;
+      padding-left: 28px; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

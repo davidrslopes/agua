@@ -706,4 +706,33 @@ body.page-template-fastio-go{
 body.page-template-default{
 
     .fastio-hero{ @include fastio-hero('../img/hero-commonpages.png'); }
+    .list-group{
+			border: 0;
+			border-radius: 0;
+			border-left-color:$primary;
+			border-left-width: 1px;
+			border-left-style: solid;
+			.list-group-item{
+				background: none;
+				color: #b2eaff;
+				font-size:150%;
+				border: 0;
+				border-radius: 0;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+				margin-left: -2px;
+				padding: 5px 0 5px 30px;
+				&.active,
+				&:hover,
+				&.hover,
+				&:focus,
+				&.focus{
+					color:$primary;
+					border-left-style: solid;
+					border-left-color:$primary;
+					border-left-width: 3px;
+					padding-left:28px;
+				}
+			}
+		}
 }
