@@ -10848,7 +10848,25 @@ body.page-template-fastio-go .fastio-go-workout {
   body.page-template-fastio-go .fastio-go-workout .fastio-workout h6 {
     margin: 1.5rem 0 0 0; }
 
-/* ############################## FASTIO GO! ############################## */
+/* ############################## EXPLORE O GERÊS ############################## */
+body.page-template-explore-o-geres .fastio-hero {
+  background-image: url("../img/imagemGO_2.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: block; }
+  body.page-template-explore-o-geres .fastio-hero header {
+    padding: 50vh 0 0 0; }
+    body.page-template-explore-o-geres .fastio-hero header h1, body.page-template-explore-o-geres .fastio-hero header h2, body.page-template-explore-o-geres .fastio-hero header h3, body.page-template-explore-o-geres .fastio-hero header h4, body.page-template-explore-o-geres .fastio-hero header h5, body.page-template-explore-o-geres .fastio-hero header h6 {
+      color: white; }
+
+/* ############################## Default ############################## */
 body.page-template-default .fastio-hero {
   background-image: url("../img/hero-commonpages.png");
   width: 100%;
