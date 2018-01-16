@@ -744,3 +744,12 @@ body.page-template-default{
 			}
 		}
 }
+
+/* ############################## HOTWHEELS ############################## */
+body.page-template-hot-wheels{
+    background: url(../img/hotwheelsbackground.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}

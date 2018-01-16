@@ -10917,6 +10917,14 @@ body.page-template-default .list-group {
       border-left-width: 3px;
       padding-left: 28px; }
 
+/* ############################## HOTWHEELS ############################## */
+body.page-template-hot-wheels {
+  background: url(../img/hotwheelsbackground.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
