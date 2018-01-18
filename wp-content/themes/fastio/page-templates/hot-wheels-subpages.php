@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Hot Wheels
+ * Template Name: Hot Wheels SubPages
  *
  * Template for displaying a specific page
  *
@@ -54,31 +54,67 @@ if(!empty($hero_1)):
 
 <?php endif;?>
 
-//Section 3 : Subpages
+<?php 
+//Section 3 : Hero 3
+$hero_3 = get_field('hotwheels-section-3');
+if(!empty($hero_3)):
+?>
+<!-- ******************* Section 3 ******************* -->
+<section class="fastio-images-hero3">
+	
+	<?php if(!empty($hero_1['bg-img']) && !empty($hero_1['logo-img'])): ?>
+        <div class="container-fluid">
+           <div class="row">
+            <div class="col-6"><img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/></div>
+            <div class="col-6"><img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid float-right"/></div>
+           </div>
+        </div>
+	<?php endif; ?>
+	<button class="btn btn-link btn-block fastio-btn-scroll-down"><i class="fa fa-angle-down"></i></button>
+</section><!-- .fastio-images-hero -->
+<?php endif; ?>
+
+
+//Section 4 : Slider Subpages
 <?php
-	if( have_rows('hotwheels-section-3') ): 
-		$links_count = count(get_field('hotwheels-section-3'));
+	if( have_rows('hotwheels-section-4-1') ): 
+		$links_count = count(get_field('hotwheels-section-4-1'));
 		$links_col = ceil(12 / $links_count);
  		if($links_col<6) $links_col = 6;
 ?>
 <!-- ******************* The Fastio Links Section ******************* -->
 <section class="fastio-hotwheels-subpages">
         <div class="container">
+            <div class="row">
+                //Section 4 : Subpages
+                <?php
+                $hero_4 = get_field('hotwheels-section-4');
+                if(!empty($hero_4)):
+                ?>
+                <div class="col-6"><img src="<?php echo $hero_1['img1']; ?>" class="img-fluid float-right"/></div>
+                <div class="col-6"><img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid float-right"/></div>
+          
+                <?php endif; ?>
+            </div>
 	<div class="row">
-		<?php while( have_rows('hotwheels-section-3') ): the_row(); 
-			$link_id = get_sub_field('link', false, false);
-		?>
-		<div class="col-<?php echo $links_col; ?>">
-			<article style="background-image:url('<?php the_sub_field('img'); ?>');">
-				<a href="<?php echo get_the_permalink($link_id); ?>">
-					<h5 class="align-middle"><?php echo get_the_title($link_id); ?></h5>
-				</a>
-			</article>
-		</div>
-		<?php endwhile; ?>
+            //Section 4-1 : Subpages Slider
+       <div id="carousel" class="carousel slide page-slider" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+        <?php $i = 0; ?>
+        <?php while( have_rows('hotwheels-section-4-1') ) : the_row(); 
+        $link_id = get_sub_field('link', false, false);
+        ?>
+            <div class="item <?php echo $i==0 ? 'active' : ''; $i++; ?>">
+                <a href="<?php echo get_the_permalink($link_id); ?>">
+		<img src="<?php the_sub_field('img') ?>" alt="" />
+                </a>
+            </div>
+        <?php endwhile; ?>
+    </div>
+    </div>
 	</div>
         </div>
 </section><!-- .fastio-img-links -->
 <?php endif; ?>
 
-<?php get_footer(); ?>
+<?php get_footer();?>
