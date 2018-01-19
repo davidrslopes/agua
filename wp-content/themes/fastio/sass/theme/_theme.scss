@@ -836,4 +836,15 @@ body.page-template-hot-wheels{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    
+    .fastio-hotwheels-subpages article {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 33vh;
+    }
 }
