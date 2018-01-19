@@ -795,6 +795,9 @@ body.page-template-default{
         .site-main{padding:50px;}
         .lateralimage{padding-top:50px;}
     }
+    h1.entry-title{
+        color: #00aeef;
+    }
     .list-group{
 			border: 0;
 			border-radius: 0;
@@ -804,7 +807,7 @@ body.page-template-default{
 			.list-group-item{
 				background: none;
 				color: #b2eaff;
-				font-size:150%;
+				font-size:120%;
 				border: 0;
 				border-radius: 0;
 				border-top-left-radius: 0;

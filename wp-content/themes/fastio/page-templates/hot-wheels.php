@@ -54,8 +54,9 @@ if(!empty($hero_1)):
 
 <?php endif;?>
 
-//Section 3 : Subpages
+
 <?php
+//Section 3 : Subpages
 	if( have_rows('hotwheels-section-3') ): 
 		$links_count = count(get_field('hotwheels-section-3'));
 		$links_col = ceil(12 / $links_count);
