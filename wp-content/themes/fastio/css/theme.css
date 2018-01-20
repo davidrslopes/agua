@@ -10958,6 +10958,9 @@ body.page-template-default .fastio-common-pages .site-main {
 body.page-template-default .fastio-common-pages .lateralimage {
   padding-top: 50px; }
 
+body.page-template-default h1.entry-title {
+  color: #00aeef; }
+
 body.page-template-default .list-group {
   border: 0;
   border-radius: 0;
@@ -10967,7 +10970,7 @@ body.page-template-default .list-group {
   body.page-template-default .list-group .list-group-item {
     background: none;
     color: #b2eaff;
-    font-size: 150%;
+    font-size: 120%;
     border: 0;
     border-radius: 0;
     border-top-left-radius: 0;
@@ -10988,6 +10991,15 @@ body.page-template-hot-wheels {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
+  body.page-template-hot-wheels .fastio-hotwheels-subpages article {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 33vh; }
 
 /*
 * Use existing Bootstrap 4 classes and
