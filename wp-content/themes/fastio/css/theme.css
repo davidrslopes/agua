@@ -10991,6 +10991,11 @@ body.page-template-hot-wheels {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
+  body.page-template-hot-wheels .fastio-hotwheels-subpages .container {
+    max-width: 980px; }
+  body.page-template-hot-wheels .fastio-hotwheels-subpages .col-4 {
+    padding-right: 5px;
+    padding-left: 5px; }
   body.page-template-hot-wheels .fastio-hotwheels-subpages article {
     display: block;
     background-repeat: no-repeat;
@@ -10999,7 +11004,23 @@ body.page-template-hot-wheels {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 33vh; }
+    height: 33vh;
+    margin-bottom: 10px; }
+
+/* ############################## HOTWHEELS SUBPAGES############################## */
+body.page-template-hot-wheels-subpages {
+  background: url(../img/Fundo-Hotwheels-subpage.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section4 {
+    background-image: url(../img/Seccao_Azul.svg);
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: cover;
+    overflow: hidden; }
 
 /*
 * Use existing Bootstrap 4 classes and

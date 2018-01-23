@@ -18,72 +18,116 @@ if(!empty($hero_1)):
 /* Nota IMPORTANTE: Temos de verificar como deve ser o comportamento mobile desta area, apenas permitir a visualização do vídeo em WIFI era o ideal, em 3G este video não deve ser incluído, e deverá comprimir-se em vários formatos para que seja possivel a responsividade também em relação ao peso em mb do site. */
 ?>
 <!-- ******************* The Logo and Images Hero Section ******************* -->
-<section class="fastio-images-hero">
+<section class="fastio-images-hero fastio-hotwheels-subpages-1">
 	
-	<?php if(!empty($hero_1['bg-img']) && !empty($hero_1['logo-img'])): ?>
         <div class="container-fluid">
-           <div class="row">
-            <div class="col-6"><img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/></div>
-            <div class="col-6"><img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid float-right"/></div>
+           <div class="row">    
+            <div class="col-6">
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid float-right"/>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="3000">                
+                <div class="title">
+                    <?php echo $hero_1['texto']; ?>
+                </div></div>
+            </div>
+            <div class="col-6">           
+                <div data-aos="fade-up" data-aos-duration="3000">
+                 <img src="<?php echo $hero_1['img2']; ?>" class="img-fluid float-right"/>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="3000">
+                <img src="<?php echo $hero_1['img_hashtag']; ?>" class="img-fluid float-right"/>
+                </div>
+            </div>
            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-link btn-block fastio-btn-scroll-down"><i class="fa fa-angle-down"></i></button>
+                </div>
+                <div class="col-6">
+                    <div data-aos="fade-up" data-aos-duration="3000">
+                    <img src="<?php echo $hero_1['img1']; ?>" class="img-fluid float-right"/>
+                    </div>
+                </div>
+            </div>
         </div>
-	<?php endif; ?>
-	<button class="btn btn-link btn-block fastio-btn-scroll-down"><i class="fa fa-angle-down"></i></button>
 </section><!-- .fastio-images-hero -->
 <?php endif; ?>
-
-
-
-<!-- ******************* The Titles Feature Section ******************* -->
+<!-- ******************* The Section2 ******************* -->
 <?php 
-	$titles = get_field('hotwheels-section-2');
-	if(!empty($titles)):
+	$section2 = get_field('hotwheels-section-2');
+	if(!empty($section2)):
 ?>
-<section class="fastio-hotwheels-titles">
+<section class="fastio-hotwheels-subpages-section2">
 	<div class="container">
 		<div class="row">
-			<header class="fastio-hero-header col-12 text-center">
-                        <?php if(!empty($titles['titulo_1'])): ?><h1 class="text-warning"><?php echo $titles['titulo_1'];?></h1><?php endif; ?> 
-			<?php if(!empty($titles['titulo_2'])): ?><h1 class="text-warning"><?php echo $titles['titulo_2'];?></h1><?php endif; ?>
-                        <?php if(!empty($titles['titulo_3'])): ?><h1 class="text-warning"><?php echo $titles['titulo_3'];?></h1><?php endif; ?>
-                        <?php if(!empty($titles['subtitulo'])): ?><h3 class="text-warning"><?php echo $titles['subtitulo'];?></h3><?php endif; ?> 
-                        </header>
+                    <div class="col-12">
+                        <div data-aos="fade-up" data-aos-duration="3000">
+                            <img src="<?php echo $section2['img1']; ?>" class="img-fluid"/>
+                            <img src="<?php echo $section2['img2']; ?>" class="img-fluid"/>
+                        </div>
+                    </div>
 		</div>
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <div data-aos="fade-up" data-aos-duration="3000">
+                        <img src="<?php echo $section2['img_tituloImagem']; ?>" class="img-fluid"/>
+                        <div class="title">
+                            <?php echo $section2['subtituloTexto']; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
 	</div>
-</section><!-- .fastio-hotwheels-titles -->
+</section><!-- .fastio-hotwheels-section2 -->
 
 <?php endif;?>
 
 <?php 
 //Section 3 : Hero 3
-$hero_3 = get_field('hotwheels-section-3');
-if(!empty($hero_3)):
+$section_3 = get_field('hotwheels-section-3');
+if(!empty($section_3)):
 ?>
 <!-- ******************* Section 3 ******************* -->
-<section class="fastio-images-hero3">
-	
-	<?php if(!empty($hero_1['bg-img']) && !empty($hero_1['logo-img'])): ?>
+<section class="fastio-hotwheels-subpages-section3">
         <div class="container-fluid">
            <div class="row">
-            <div class="col-6"><img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/></div>
-            <div class="col-6"><img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid float-right"/></div>
+            <div class="col-6"></div>
+            <div class="col-6">
+                <div data-aos="fade-up"data-aos-duration="3000">
+                    <img src="<?php echo $section_3['img1']; ?>" class="img-fluid float-left"/>
+                </div>
+            </div>
            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div data-aos="fade-up" data-aos-duration="3000">
+                        <img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-left"/>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div data-aos="fade-up" data-aos-duration="3000">
+                        <img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-left"/>
+                        <div class="title">
+                            <?php echo $section_3['subtitulo']; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-	<?php endif; ?>
-	<button class="btn btn-link btn-block fastio-btn-scroll-down"><i class="fa fa-angle-down"></i></button>
-</section><!-- .fastio-images-hero -->
+</section><!-- .fastio-images-section3 -->
 <?php endif; ?>
-
+<?php
 
 //Section 4 : Slider Subpages
-<?php
 	if( have_rows('hotwheels-section-4-1') ): 
 		$links_count = count(get_field('hotwheels-section-4-1'));
 		$links_col = ceil(12 / $links_count);
  		if($links_col<6) $links_col = 6;
 ?>
 <!-- ******************* The Fastio Links Section ******************* -->
-<section class="fastio-hotwheels-subpages">
+<section class="fastio-hotwheels-subpages-section4">
         <div class="container">
             <div class="row">
                 //Section 4 : Subpages
@@ -91,8 +135,13 @@ if(!empty($hero_3)):
                 $hero_4 = get_field('hotwheels-section-4');
                 if(!empty($hero_4)):
                 ?>
-                <div class="col-6"><img src="<?php echo $hero_1['img1']; ?>" class="img-fluid float-right"/></div>
-                <div class="col-6"><img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid float-right"/></div>
+                <div class="col-3"></div>
+                <div class="col-9">
+                    <div data-aos="fade-up" data-aos-duration="3000">
+                        <img src="<?php echo $hero_4['img1']; ?>" class="img-fluid float-left"/>
+                        <img src="<?php echo $hero_4['img_titulo']; ?>" class="img-fluid float-right"/>
+                    </div>
+                </div>
           
                 <?php endif; ?>
             </div>
@@ -114,7 +163,7 @@ if(!empty($hero_3)):
     </div>
 	</div>
         </div>
-</section><!-- .fastio-img-links -->
+</section><!-- .fastio-hotwheels-subpages-section4 -->
 <?php endif; ?>
 
 <?php get_footer();?>
