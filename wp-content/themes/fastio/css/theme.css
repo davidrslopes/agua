@@ -10984,6 +10984,16 @@ body.page-template-default .list-group {
       border-left-width: 3px;
       padding-left: 28px; }
 
+body.page-template-default .wpcf7-form {
+  color: #00aeef; }
+
+body.page-template-default .wpcf7-form input {
+  border-color: #00aeef; }
+
+body.page-template-default .wpcf7-form .col-6 {
+  padding-left: 0px;
+  padding-right: 0px; }
+
 /* ############################## HOTWHEELS ############################## */
 body.page-template-hot-wheels {
   background: url(../img/hotwheelsbackground.png) no-repeat;
