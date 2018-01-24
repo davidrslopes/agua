@@ -146,7 +146,7 @@ if(!empty($section_3)):
             </div>
 	<div class="row">
             <!--Section 4-1 : Subpages Slider -->
-       <div id="carousel" class="carousel slide page-slider" data-ride="carousel">
+       <div id="subpagescarousel" class="carousel slide page-slider" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
         <?php $i = 0; ?>
         <?php while( have_rows('hotwheels-section-4-1') ) : the_row(); 
@@ -159,11 +159,11 @@ if(!empty($section_3)):
             </div>
         <?php endwhile; ?>
     </div>
-           <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+           <a class="carousel-control-prev" href="#subpagescarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#subpagescarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
