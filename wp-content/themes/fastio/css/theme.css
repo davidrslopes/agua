@@ -10943,20 +10943,40 @@ body.page-template-default .fastio-hero {
   background-attachment: fixed;
   height: 100vh;
   display: block;
-  max-height: 480px; }
+  max-height: 420px; }
   body.page-template-default .fastio-hero header {
     padding: 50vh 0 0 0; }
     body.page-template-default .fastio-hero header h1, body.page-template-default .fastio-hero header h2, body.page-template-default .fastio-hero header h3, body.page-template-default .fastio-hero header h4, body.page-template-default .fastio-hero header h5, body.page-template-default .fastio-hero header h6 {
       color: white; }
 
 body.page-template-default .fastio-common-pages .listnavigationitems {
-  padding: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 130px; }
 
 body.page-template-default .fastio-common-pages .site-main {
   padding: 50px; }
 
 body.page-template-default .fastio-common-pages .lateralimage {
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-right: 0px; }
+
+body.page-template-default .fastio-common-pages #tab-contatos h1.entry-title {
+  display: none; }
+
+body.page-template-default .fastio-common-pages #tab-contatos .entry-content {
+  padding-top: 5px; }
+
+body.page-template-default .fastio-common-pages #tab-contactos .contactos {
+  padding-top: 45px;
+  color: #b2eaff; }
+
+body.page-template-default .fastio-common-pages .entry-content h3 {
+  color: #00aeef;
+  font-size: 18px; }
+
+body.page-template-default .fastio-common-pages .entry-content p {
+  font-size: 13px; }
 
 body.page-template-default h1.entry-title {
   color: #00aeef; }
@@ -10987,12 +11007,17 @@ body.page-template-default .list-group {
 body.page-template-default .wpcf7-form {
   color: #00aeef; }
 
-body.page-template-default .wpcf7-form input {
-  border-color: #00aeef; }
+body.page-template-default .wpcf7-form input, body.page-template-default .wpcf7-form textarea {
+  border-color: #00aeef;
+  border-radius: .89rem; }
 
 body.page-template-default .wpcf7-form .col-6 {
   padding-left: 0px;
   padding-right: 0px; }
+
+body.page-template-default .wpcf7-form span.label_form_contact_page {
+  margin-bottom: 10px;
+  display: inline-block; }
 
 /* ############################## HOTWHEELS ############################## */
 body.page-template-hot-wheels {

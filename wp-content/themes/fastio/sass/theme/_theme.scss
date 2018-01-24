@@ -789,15 +789,29 @@ body.page-template-explore-o-geres{
 /* ############################## Default ############################## */
 body.page-template-default{
 
-    .fastio-hero{ @include fastio-hero('../img/hero-commonpages.png'); max-height:480px;}
+    .fastio-hero{ @include fastio-hero('../img/hero-commonpages.png'); max-height:420px;}
     .fastio-common-pages{
-        .listnavigationitems{padding:50px;}
+        .listnavigationitems{padding-top:50px;padding-bottom: 50px;padding-left: 130px;}
         .site-main{padding:50px;}
-        .lateralimage{padding-top:50px;}
+        .lateralimage{padding-top:50px;padding-right: 0px;}
+        #tab-contatos h1.entry-title{display:none;}
+        #tab-contatos .entry-content{padding-top:5px;}
+        #tab-contactos .contactos{padding-top:45px;color:#b2eaff;}
+        
+        .entry-content h3{
+            color: #00aeef;
+            font-size: 18px;
+        }
+        
+        .entry-content p{
+            font-size: 13px;
+        }
     }
     h1.entry-title{
         color: #00aeef;
     }
+    
+  
     .list-group{
 			border: 0;
 			border-radius: 0;
@@ -831,13 +845,19 @@ body.page-template-default{
                     color:#00aeef;
                 }
                 
-                .wpcf7-form input{
+                .wpcf7-form input , .wpcf7-form textarea{
                     border-color: #00aeef;
+                    border-radius: .89rem;
                 }
                 
                 .wpcf7-form .col-6{
                     padding-left: 0px;
                     padding-right: 0px;
+                }
+                
+                .wpcf7-form span.label_form_contact_page{
+                    margin-bottom: 10px;
+                    display: inline-block;
                 }
 }
 
