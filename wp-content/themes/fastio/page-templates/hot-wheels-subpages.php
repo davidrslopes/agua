@@ -33,10 +33,10 @@ if(!empty($hero_1)):
             </div>
             <div class="col-6">           
                 <div data-aos="fade-up" data-aos-duration="3000">
-                 <img src="<?php echo $hero_1['img2']; ?>" class="img-fluid float-right"/>
+                 <img src="<?php echo $hero_1['img2']; ?>" class="img-fluid bottleimg"/>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="3000">
-                <img src="<?php echo $hero_1['img_hashtag']; ?>" class="img-fluid float-right"/>
+                <img src="<?php echo $hero_1['img_hashtag']; ?>" class="img-fluid hashtagimg float-right"/>
                 </div>
             </div>
            </div>
@@ -130,15 +130,14 @@ if(!empty($section_3)):
 <section class="fastio-hotwheels-subpages-section4">
         <div class="container">
             <div class="row">
-                //Section 4 : Subpages
+                <!-- //Section 4 : Subpages -->
                 <?php
                 $hero_4 = get_field('hotwheels-section-4');
                 if(!empty($hero_4)):
                 ?>
                 <div class="col-3"></div>
-                <div class="col-9">
+                <div class="col-7">
                     <div data-aos="fade-up" data-aos-duration="3000">
-                        <img src="<?php echo $hero_4['img1']; ?>" class="img-fluid float-left"/>
                         <img src="<?php echo $hero_4['img_titulo']; ?>" class="img-fluid float-right"/>
                     </div>
                 </div>
@@ -146,7 +145,7 @@ if(!empty($section_3)):
                 <?php endif; ?>
             </div>
 	<div class="row">
-            //Section 4-1 : Subpages Slider
+            <!--Section 4-1 : Subpages Slider -->
        <div id="carousel" class="carousel slide page-slider" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
         <?php $i = 0; ?>

@@ -42,7 +42,7 @@ if(!empty($hero_1)):
 <section class="fastio-hotwheels-titles">
 	<div class="container">
 		<div class="row">
-			<header class="fastio-hero-header col-12 text-center">
+			<header class="fastio-hero-header col-12">
                         <?php if(!empty($titles['titulo_1'])): ?><h1 class="title"><?php echo $titles['titulo_1'];?></h1><?php endif; ?> 
 			<?php if(!empty($titles['titulo_2'])): ?><h1 class="title"><?php echo $titles['titulo_2'];?></h1><?php endif; ?>
                         <?php if(!empty($titles['titulo_3'])): ?><h1 class="title"><?php echo $titles['titulo_3'];?></h1><?php endif; ?>

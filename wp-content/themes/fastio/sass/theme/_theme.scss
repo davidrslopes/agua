@@ -953,6 +953,22 @@ body.page-template-hot-wheels-subpages{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover; 
+        
+    section.fastio-hotwheels-subpages-1{
+        padding-top: 135px;
+        
+        .title{
+            display: inline-block;
+            float:right;
+            padding-top: 10px;
+        }
+        
+        .bottleimg{
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    
     
     	.fastio-hotwheels-subpages-section4{
 		background-image: url(../img/Seccao_Azul.svg);

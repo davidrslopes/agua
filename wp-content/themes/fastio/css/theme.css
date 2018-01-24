@@ -11085,6 +11085,15 @@ body.page-template-hot-wheels-subpages {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
+  body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 {
+    padding-top: 135px; }
+    body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .title {
+      display: inline-block;
+      float: right;
+      padding-top: 10px; }
+    body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .bottleimg {
+      margin: 0 auto;
+      display: block; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section4 {
     background-image: url(../img/Seccao_Azul.svg);
     background-size: 100% 100%;
