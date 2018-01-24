@@ -10967,11 +10967,12 @@ body.page-template-default .fastio-common-pages #tab-contatos h1.entry-title {
 body.page-template-default .fastio-common-pages #tab-contatos .entry-content {
   padding-top: 5px; }
 
-body.page-template-default .fastio-common-pages #tab-contactos .contactos {
+body.page-template-default .fastio-common-pages #tab-contatos .contactos {
   padding-top: 45px;
-  color: #b2eaff; }
+  color: #b2eaff;
+  font-size: 14px; }
 
-body.page-template-default .fastio-common-pages .entry-content h3 {
+body.page-template-default .fastio-common-pages .entry-content h3, body.page-template-default .fastio-common-pages .entry-content h2 {
   color: #00aeef;
   font-size: 18px; }
 
@@ -11017,7 +11018,8 @@ body.page-template-default .wpcf7-form .col-6 {
 
 body.page-template-default .wpcf7-form span.label_form_contact_page {
   margin-bottom: 10px;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 14px; }
 
 /* ############################## HOTWHEELS ############################## */
 body.page-template-hot-wheels {
@@ -11026,21 +11028,47 @@ body.page-template-hot-wheels {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
-  body.page-template-hot-wheels .fastio-hotwheels-subpages .container {
-    max-width: 980px; }
-  body.page-template-hot-wheels .fastio-hotwheels-subpages .col-4 {
-    padding-right: 5px;
-    padding-left: 5px; }
-  body.page-template-hot-wheels .fastio-hotwheels-subpages article {
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 33vh;
-    margin-bottom: 10px; }
+  body.page-template-hot-wheels section.fastio-images-hero {
+    padding-top: 170px; }
+    body.page-template-hot-wheels section.fastio-images-hero .btn-link {
+      color: red;
+      margin-top: -70px; }
+    body.page-template-hot-wheels section.fastio-images-hero .btn-link i {
+      background-color: #Fff;
+      border: 1px solid #fff;
+      border-radius: 130px;
+      width: 3%;
+      height: 30px;
+      font-size: 30px; }
+  body.page-template-hot-wheels section.fastio-hotwheels-titles {
+    padding-top: 80px; }
+    body.page-template-hot-wheels section.fastio-hotwheels-titles .container {
+      max-width: 850px; }
+    body.page-template-hot-wheels section.fastio-hotwheels-titles h1.title {
+      color: #fff;
+      font-size: 30px; }
+    body.page-template-hot-wheels section.fastio-hotwheels-titles h3.subtitle {
+      color: #fff;
+      font-size: 20px; }
+  body.page-template-hot-wheels section.fastio-hotwheels-subpages {
+    padding-top: 60px; }
+    body.page-template-hot-wheels section.fastio-hotwheels-subpages .container {
+      max-width: 980px; }
+    body.page-template-hot-wheels section.fastio-hotwheels-subpages .col-4 {
+      padding-right: 5px;
+      padding-left: 5px; }
+    body.page-template-hot-wheels section.fastio-hotwheels-subpages article {
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 33vh;
+      margin-bottom: 10px; }
+  body.page-template-hot-wheels .main-footer-wrapper {
+    background: transparent !important; }
 
 /* ############################## HOTWHEELS SUBPAGES############################## */
 body.page-template-hot-wheels-subpages {
