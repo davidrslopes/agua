@@ -146,13 +146,14 @@ if(!empty($section_3)):
             </div>
 	<div class="row">
             <!--Section 4-1 : Subpages Slider -->
-       <div id="subpagescarousel" class="carousel slide page-slider" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
+       <div id="subpagescarousel" class="carousel slide" data-ride="carousel" data-interval="9000">
+        <div class="carousel-inner row w-80 mx-auto" role="listbox" >
         <?php $i = 0; ?>
         <?php while( have_rows('hotwheels-section-4-1') ) : the_row(); 
         $link_id = get_sub_field('link', false, false);
+        $i++;
         ?>
-            <div class="item <?php echo $i==0 ? 'active' : ''; $i++; ?>">
+            <div class="carousel-item col-md-3 <?php echo $i==0 ? 'active' : '';?>">
                 <a href="<?php echo get_the_permalink($link_id); ?>">
 		<img src="<?php the_sub_field('img') ?>" alt="" />
                 </a>
