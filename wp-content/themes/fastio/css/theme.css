@@ -11090,34 +11090,69 @@ body.page-template-hot-wheels-subpages {
   -o-background-size: cover;
   /* CUSTOMIZE THE CAROUSEL
             -------------------------------------------------- */
-  /* Carousel base class */
-  /* Declare heights because of positioning of img element */ }
+  /* Carousel base class */ }
   body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 {
     padding-top: 135px; }
     body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .title {
       display: inline-block;
       float: right;
-      padding-top: 10px; }
+      padding-top: 10px;
+      font-size: 14px;
+      color: #fff; }
     body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .bottleimg {
       margin: 0 auto;
       display: block; }
+    body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .hashtagimg {
+      margin-top: -315px;
+      margin-right: 190px; }
+    body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .passadeiraimg {
+      margin-top: -105px; }
+    body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .icon {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      margin-left: -20px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border: solid 2px #fff;
+      border-radius: 20px;
+      z-index: 3; }
+    body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .faa-float.animated, body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .faa-float.animated-hover:hover, body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .faa-parent.animated-hover:hover > .faa-float {
+      -webkit-animation: float 2s linear infinite;
+      animation: float 2s linear infinite; }
+  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 .imgcarrohotwheels {
+    z-index: 3;
+    position: relative;
+    top: 0;
+    left: 0; }
+  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 .metaimg {
+    position: absolute;
+    top: 265px;
+    left: -100px;
+    z-index: 2; }
+  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .imgbancada {
+    margin-left: -196px;
+    margin-bottom: -82px;
+    z-index: 2; }
+  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .titulo-subtitulo {
+    padding-top: 120px; }
+  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .title {
+    display: block;
+    width: 50%; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section4 {
     background-image: url(../img/Seccao_Azul.svg);
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     background-size: cover;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-top: 60px; }
   body.page-template-hot-wheels-subpages .carousel {
-    margin-bottom: 4rem; }
-  body.page-template-hot-wheels-subpages .item {
-    height: 10rem; }
-  body.page-template-hot-wheels-subpages .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 12rem; }
+    padding-top: 40px;
+    margin-bottom: 2rem; }
+  body.page-template-hot-wheels-subpages .carousel-item {
+    display: block; }
   body.page-template-hot-wheels-subpages .carousel, body.page-template-hot-wheels-subpages .item, body.page-template-hot-wheels-subpages .active {
     height: 100%; }
   body.page-template-hot-wheels-subpages .carousel-inner {

@@ -42,11 +42,12 @@ if(!empty($hero_1)):
            </div>
             <div class="row">
                 <div class="col-6">
-                    <button class="btn btn-link btn-block fastio-btn-scroll-down"><i class="fa fa-angle-down"></i></button>
+                    <div class="icon faa-float animated">
+                        <i class="fa fa-angle-down"></i></div>
                 </div>
                 <div class="col-6">
                     <div data-aos="fade-up" data-aos-duration="3000">
-                    <img src="<?php echo $hero_1['img1']; ?>" class="img-fluid float-right"/>
+                    <img src="<?php echo $hero_1['img1']; ?>" class="img-fluid float-right passadeiraimg"/>
                     </div>
                 </div>
             </div>
@@ -63,8 +64,8 @@ if(!empty($hero_1)):
 		<div class="row">
                     <div class="col-12">
                         <div data-aos="fade-up" data-aos-duration="3000">
-                            <img src="<?php echo $section2['img1']; ?>" class="img-fluid"/>
-                            <img src="<?php echo $section2['img2']; ?>" class="img-fluid"/>
+                            <img src="<?php echo $section2['img1']; ?>" class="img-fluid imgcarrohotwheels"/>
+                            <img src="<?php echo $section2['img2']; ?>" class="img-fluid metaimg"/>
                         </div>
                     </div>
 		</div>
@@ -72,9 +73,9 @@ if(!empty($hero_1)):
                 <div class="col-6"></div>
                 <div class="col-6">
                     <div data-aos="fade-up" data-aos-duration="3000">
-                        <img src="<?php echo $section2['img_tituloImagem']; ?>" class="img-fluid"/>
+                        <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid"/>
                         <div class="title">
-                            <?php echo $section2['subtituloTexto']; ?>
+                            <?php echo $section2['subtitulo']; ?>
                         </div>
                     </div>
                 </div>
@@ -93,8 +94,8 @@ if(!empty($section_3)):
 <section class="fastio-hotwheels-subpages-section3">
         <div class="container-fluid">
            <div class="row">
-            <div class="col-6"></div>
-            <div class="col-6">
+            <div class="col-3"></div>
+            <div class="col-9">
                 <div data-aos="fade-up"data-aos-duration="3000">
                     <img src="<?php echo $section_3['img1']; ?>" class="img-fluid float-left"/>
                 </div>
@@ -103,10 +104,10 @@ if(!empty($section_3)):
             <div class="row">
                 <div class="col-6">
                     <div data-aos="fade-up" data-aos-duration="3000">
-                        <img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-left"/>
+                        <img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-left imgbancada"/>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 titulo-subtitulo">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-left"/>
                         <div class="title">
@@ -128,7 +129,7 @@ if(!empty($section_3)):
 ?>
 <!-- ******************* The Fastio Links Section ******************* -->
 <section class="fastio-hotwheels-subpages-section4">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <!-- //Section 4 : Subpages -->
                 <?php
@@ -136,9 +137,9 @@ if(!empty($section_3)):
                 if(!empty($hero_4)):
                 ?>
                 <div class="col-3"></div>
-                <div class="col-7">
+                <div class="col-9">
                     <div data-aos="fade-up" data-aos-duration="3000">
-                        <img src="<?php echo $hero_4['img_titulo']; ?>" class="img-fluid float-right"/>
+                        <img src="<?php echo $hero_4['img_titulo']; ?>" class="img-fluid float-right escolhecarroimg"/>
                     </div>
                 </div>
           

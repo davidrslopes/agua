@@ -962,14 +962,74 @@ body.page-template-hot-wheels-subpages{
             display: inline-block;
             float:right;
             padding-top: 10px;
+            font-size: 14px;
+            color: #fff;
         }
         
         .bottleimg{
             margin: 0 auto;
             display: block;
         }
+        
+        .hashtagimg{
+            margin-top: -315px;
+            margin-right: 190px;
+        }
+        
+        .passadeiraimg{
+            margin-top: -105px;
+        }
+        
+        .icon {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            margin-left: -20px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border: solid 2px #fff;
+            border-radius: 20px;
+            z-index: 3;
+            }
+        
+            .faa-float.animated, .faa-float.animated-hover:hover, .faa-parent.animated-hover:hover>.faa-float{
+                -webkit-animation: float 2s linear infinite;
+                animation: float 2s linear infinite;
+            }
     }
     
+            .fastio-hotwheels-subpages-section2{
+                .imgcarrohotwheels{
+                    z-index: 3;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                }
+                .metaimg{
+                    position: absolute;
+                    top: 265px;
+                    left: -100px;
+                    z-index: 2;
+                }
+            }
+            
+            .fastio-hotwheels-subpages-section3{
+                .imgbancada{
+                    margin-left: -196px;
+                    margin-bottom: -82px;
+                    z-index: 2;
+                }
+                
+                .titulo-subtitulo{
+                    padding-top: 120px;
+                }
+                
+                .title{
+                    display: block;
+                    width: 50%;
+                }
+            }
     
     	.fastio-hotwheels-subpages-section4{
 		background-image: url(../img/Seccao_Azul.svg);
@@ -978,26 +1038,17 @@ body.page-template-hot-wheels-subpages{
 		-webkit-background-size: 100% 100%;
 		background-size:cover;
                 overflow: hidden;
-                
+                padding-top: 60px;
 	}
                 /* CUSTOMIZE THE CAROUSEL
             -------------------------------------------------- */
 
             /* Carousel base class */
             .carousel {
-              margin-bottom: 4rem;
+                padding-top: 40px;
+              margin-bottom: 2rem;
             }
-            /* Declare heights because of positioning of img element */
-            .item {
-              height: 10rem;
-            }
-            .item > img {
-              position: absolute;
-              top: 0;
-              left: 0;
-              min-width: 100%;
-              height: 12rem;
-            }
+            .carousel-item{display: block;}
             
             .carousel,.item,.active{height:100%;}
             .carousel-inner{height:100%;}
