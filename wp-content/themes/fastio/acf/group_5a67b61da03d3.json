@@ -63,9 +63,69 @@
             ]
         },
         {
-            "key": "field_5a67b968ed636",
-            "label": "Secção 1: Video Feature",
+            "key": "field_5a691b2099005",
+            "label": "Secção 1: Hero",
             "name": "explore-o-geres-subpage-section-1",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5a691b9f99008",
+                    "label": "Imagem de fundo",
+                    "name": "bg-img",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5a691b7799007",
+                    "label": "Título",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5a67b968ed636",
+            "label": "Secção 2: Local",
+            "name": "explore-o-geres-subpage-section-2",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -109,7 +169,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "url",
+                    "return_format": "array",
                     "preview_size": "full",
                     "library": "all",
                     "min_width": "",
@@ -138,6 +198,25 @@
                     "maxlength": "",
                     "rows": "",
                     "new_lines": ""
+                },
+                {
+                    "key": "field_5a691a9599004",
+                    "label": "Coordenadas",
+                    "name": "coordinates",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "ex: 41°52’28.1”N 8°15’46.4”W",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         }
@@ -174,5 +253,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1516749370
+    "modified": 1516837858
 }

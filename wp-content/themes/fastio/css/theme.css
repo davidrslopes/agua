@@ -10938,6 +10938,53 @@ body.page-template-explore-o-geres .fastio-map {
     display: block;
     visibility: visible; } }
 
+body.page-template-explore-o-geres-subpages .fastio-hero {
+  background-image: url("../img/ImagemSoajo_1.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: block; }
+  body.page-template-explore-o-geres-subpages .fastio-hero header {
+    padding: 50vh 0 0 0; }
+    body.page-template-explore-o-geres-subpages .fastio-hero header h1, body.page-template-explore-o-geres-subpages .fastio-hero header h2, body.page-template-explore-o-geres-subpages .fastio-hero header h3, body.page-template-explore-o-geres-subpages .fastio-hero header h4, body.page-template-explore-o-geres-subpages .fastio-hero header h5, body.page-template-explore-o-geres-subpages .fastio-hero header h6 {
+      color: white; }
+
+body.page-template-explore-o-geres-subpages .fastio-location {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+  body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-feature {
+    width: 80%; }
+  body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content {
+    position: relative; }
+    body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content article {
+      background-color: #b2eaff;
+      width: 20rem;
+      color: white;
+      padding: 3rem 2.5rem;
+      margin-top: 5rem;
+      position: absolute;
+      left: -10rem; }
+    body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content h1 {
+      font-size: 1.2rem; }
+    body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content p {
+      padding: 0;
+      font-size: 0.75rem; }
+    body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content .fastio-location-coordinates {
+      padding-top: 1.8rem;
+      font-size: 0.75rem; }
+      body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content .fastio-location-coordinates img {
+        height: 0.75rem;
+        width: 0.75rem; }
+      body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content .fastio-location-coordinates a {
+        color: white;
+        text-decoration: none; }
+
 /* ############################## Default ############################## */
 body.page-template-default .fastio-hero {
   background-image: url("../img/hero-commonpages.png");
