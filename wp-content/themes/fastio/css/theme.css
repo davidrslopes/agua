@@ -11170,8 +11170,30 @@ body.page-template-hot-wheels-subpages {
       font-size: 35px;
       background-color: #fff; }
     body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .faa-float.animated, body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .faa-float.animated-hover:hover, body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .faa-parent.animated-hover:hover > .faa-float {
-      -webkit-animation: float 2s linear infinite;
-      animation: float 2s linear infinite; }
+      -webkit-animation: pulse 2s infinite;
+      animation: pulse 2s infinite; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 {
     margin-top: -60px;
     padding-bottom: 60px; }

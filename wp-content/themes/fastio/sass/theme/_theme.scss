@@ -1041,9 +1041,32 @@ body.page-template-hot-wheels-subpages{
             }
         
             .faa-float.animated, .faa-float.animated-hover:hover, .faa-parent.animated-hover:hover>.faa-float{
-                -webkit-animation: float 2s linear infinite;
-                animation: float 2s linear infinite;
+                -webkit-animation: pulse 2s infinite;
+                animation: pulse 2s infinite;
             }
+            
+            @-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
     }
     
             .fastio-hotwheels-subpages-section2{
