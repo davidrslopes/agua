@@ -796,6 +796,49 @@ body.page-template-explore-o-geres{
     }
 
 }
+body.page-template-explore-o-geres-subpages{
+	.fastio-hero{ @include fastio-hero('../img/ImagemSoajo_1.jpg');}
+	.fastio-location{
+		padding-top:5rem;
+		padding-bottom: 5rem;
+		.fastio-location-feature{
+			width: 80%;
+			img{}
+			video{}
+		}
+		.fastio-location-content{
+			position: relative;
+			article{
+				background-color: $h2o-light-blue;
+				width: 20rem;
+				color:white;
+				padding: 3rem 2.5rem;
+				margin-top:5rem;
+				position: absolute;
+				left:-10rem;
+			}
+			h1{
+				font-size: 1.2rem;
+			}
+			p{
+				padding: 0;
+				font-size: 0.75rem;
+			}
+			.fastio-location-coordinates{
+				padding-top:1.8rem;
+				font-size: 0.75rem;
+				img{
+					height:0.75rem;
+					width:0.75rem;
+				}
+				a{
+					color:white;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}
 /* ############################## Default ############################## */
 body.page-template-default{
 
