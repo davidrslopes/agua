@@ -846,7 +846,8 @@ body.page-template-default{
     .fastio-common-pages{
         .listnavigationitems{padding-top:50px;padding-bottom: 50px;padding-left: 130px;}
         .site-main{padding:50px;}
-        .lateralimage{padding-top:50px;padding-right: 0px;}
+        .lateralimage{padding-top:40px;padding-right: 0px;}
+        .lateralimage img{height: 100%;}
         #tab-contatos h1.entry-title{display:none;}
         #tab-contatos .entry-content{padding-top:5px;}
         #tab-contatos .contactos{padding-top:45px;color:#b2eaff;font-size: 14px;}
@@ -1039,6 +1040,13 @@ body.page-template-hot-wheels-subpages{
               left: 0;
               min-width: 100%;
               height: 12rem;
+            }
+            
+            .carousel,.item,.active{height:100%;}
+            .carousel-inner{height:100%;}
+            
+            .main-footer-wrapper{
+                background: #006FB9 !important;
             }
 
 }
