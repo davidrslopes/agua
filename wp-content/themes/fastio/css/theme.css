@@ -11156,31 +11156,41 @@ body.page-template-hot-wheels-subpages {
       margin-top: -105px; }
     body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .icon {
       position: absolute;
-      bottom: 40px;
-      left: 50%;
+      bottom: 380px;
+      left: 60%;
       margin-left: -20px;
       width: 40px;
       height: 40px;
-      line-height: 40px;
+      line-height: 35px;
       border: solid 2px #fff;
       border-radius: 20px;
-      z-index: 3; }
+      z-index: 3;
+      color: #ED1C23;
+      text-align: center;
+      font-size: 35px;
+      background-color: #fff; }
     body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .faa-float.animated, body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .faa-float.animated-hover:hover, body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .faa-parent.animated-hover:hover > .faa-float {
       -webkit-animation: float 2s linear infinite;
       animation: float 2s linear infinite; }
-  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 .imgcarrohotwheels {
-    z-index: 3;
-    position: relative;
-    top: 0;
-    left: 0; }
-  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 .metaimg {
-    position: absolute;
-    top: 265px;
-    left: -100px;
-    z-index: 2; }
-  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 .title {
-    display: block;
-    width: 50%; }
+  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 {
+    margin-top: -60px;
+    padding-bottom: 60px; }
+    body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 .imgcarrohotwheels {
+      z-index: 3;
+      position: relative;
+      top: 0;
+      left: 0; }
+    body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 .metaimg {
+      position: absolute;
+      top: 265px;
+      left: -100px;
+      z-index: 2; }
+    body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 .title {
+      display: block;
+      width: 50%;
+      float: right;
+      font-size: 14px;
+      color: #fff; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .imgbancada {
     margin-left: -196px;
     margin-bottom: -82px;
@@ -11189,7 +11199,9 @@ body.page-template-hot-wheels-subpages {
     padding-top: 120px; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .title {
     display: block;
-    width: 50%; }
+    width: 50%;
+    font-size: 14px;
+    color: #fff; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section4 {
     background-image: url(../img/Seccao_Azul.svg);
     background-size: 100% 100%;
