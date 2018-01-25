@@ -11178,6 +11178,9 @@ body.page-template-hot-wheels-subpages {
     top: 265px;
     left: -100px;
     z-index: 2; }
+  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 .title {
+    display: block;
+    width: 50%; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .imgbancada {
     margin-left: -196px;
     margin-bottom: -82px;
