@@ -91,8 +91,65 @@ if( !empty( $subpages ) ): ?>
 		map = new google.maps.Map(document.getElementById('map'), {
 			zoom: 10,
 			center: new google.maps.LatLng(41.838648, -8.241580),
-			mapTypeId: 'terrain',
-			disableDefaultUI: true
+			//mapTypeId: 'terrain',
+			disableDefaultUI: true,
+			styles: 
+[
+    {
+        "featureType": "all",
+        "elementType": "all",
+        "stylers": [
+            {
+                "hue": "#008eff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": "0"
+            },
+            {
+                "lightness": "0"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "saturation": "-60"
+            },
+            {
+                "lightness": "-20"
+            }
+        ]
+    }
+]
 		});
 		setMarkers(map);
 	}
