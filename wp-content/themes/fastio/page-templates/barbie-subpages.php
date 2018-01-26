@@ -15,7 +15,6 @@ get_header();
 //Section 1 : Hero 1
 $hero_1 = get_field('barbiesubpages-section-1');
 if(!empty($hero_1)):
-/* Nota IMPORTANTE: Temos de verificar como deve ser o comportamento mobile desta area, apenas permitir a visualização do vídeo em WIFI era o ideal, em 3G este video não deve ser incluído, e deverá comprimir-se em vários formatos para que seja possivel a responsividade também em relação ao peso em mb do site. */
 ?>
 <!-- ******************* The Logo and Images Hero Section ******************* -->
 <section class="fastio-images-hero fastio-barbie-subpages-1">
@@ -35,7 +34,7 @@ if(!empty($hero_1)):
             </div>
             <div class="col-6">           
                 <div data-aos="fade-up" data-aos-duration="3000">
-                 <img src="<?php echo $hero_1['img2']; ?>" class="img-fluid bottleimg"/>
+                 <img src="<?php echo $hero_1['img1']; ?>" class="img-fluid bottleimg"/>
                 </div>
             </div>
            </div>
@@ -85,6 +84,9 @@ if(!empty($section_3)):
            <div class="row">
                <div class="col-3">
                   <img src="<?php echo $section3['img_titulo']; ?>" class="img-fluid float-right"/> 
+                  <div class="title">
+                            <?php echo $section_3['subtitulo']; ?>
+                  </div>
                </div>
                <div class="col-3">
                    <img src="<?php echo $section3['img_estrelas']; ?>" class="img-fluid float-right"/>
@@ -115,21 +117,27 @@ if(!empty($section_3)):
             </div>
                     <div class="row imagesgrid">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+            <img src="<?php echo $section_3['grelha_de_imagem_imagem1']; ?>" class="img-fluid"/>
             <img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+            <img src="<?php echo $section_3['grelha_de_imagem_imagem2']; ?>" class="img-fluid"/>
             <img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+            <img src="<?php echo $section_3['grelha_de_imagem_imagem3']; ?>" class="img-fluid"/>
             <img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+            <img src="<?php echo $section_3['grelha_de_imagem_imagem4']; ?>" class="img-fluid"/>
             <img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
         </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+            <img src="<?php echo $section_3['grelha_de_imagem_imagem5']; ?>" class="img-fluid"/>
             <img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
         </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+             <img src="<?php echo $section_3['grelha_de_imagem_imagem6']; ?>" class="img-fluid"/>
             <img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
         </div>
     </div>
