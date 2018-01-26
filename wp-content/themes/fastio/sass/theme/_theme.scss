@@ -1141,4 +1141,77 @@ body.page-template-hot-wheels-subpages{
             }
 
 }
+
+/* ############################## BARBIE ############################## */
+body.page-template-barbie{
+    background: url(../img/Fundo_Barbie_1.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    
+    section.fastio-images-hero{
+        padding-top: 170px;
+        
+        .btn-link{
+            color:red;
+            margin-top: -70px;
+        }
+        .btn-link i{
+            background-color: #Fff;
+            border: 1px solid #fff;
+            border-radius: 130px;
+            width: 3%;
+            height: 30px;
+            font-size: 30px;
+        }
+    }
+    
+    section.fastio-barbie-titles{
+            padding-top: 80px;
+            
+            .container{
+                max-width: 850px;
+            }        
+            h1.title{
+                color:#fff;
+                font-size: 30px;
+            }
+            
+            h3.subtitle{
+                color:#fff;
+                font-size: 20px;
+            }
+    }
+    
+    section.fastio-barbie-subpages{
+        padding-top: 60px;
+     
+        .container{
+        max-width: 980px;
+        }
+        
+        .col-4{
+        padding-right: 5px;
+        padding-left: 5px;
+        }
+        
+        article {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+         background-size: cover;
+         height: 33vh;
+          margin-bottom:10px;
+        }
+    }
+    
+    .main-footer-wrapper{
+        background:transparent !important;
+    }
+     
+}
     

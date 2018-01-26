@@ -11244,6 +11244,55 @@ body.page-template-hot-wheels-subpages {
   body.page-template-hot-wheels-subpages .main-footer-wrapper {
     background: #006FB9 !important; }
 
+/* ############################## BARBIE ############################## */
+body.page-template-barbie {
+  background: url(../img/Fundo_Barbie_1.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  body.page-template-barbie section.fastio-images-hero {
+    padding-top: 170px; }
+    body.page-template-barbie section.fastio-images-hero .btn-link {
+      color: red;
+      margin-top: -70px; }
+    body.page-template-barbie section.fastio-images-hero .btn-link i {
+      background-color: #Fff;
+      border: 1px solid #fff;
+      border-radius: 130px;
+      width: 3%;
+      height: 30px;
+      font-size: 30px; }
+  body.page-template-barbie section.fastio-barbie-titles {
+    padding-top: 80px; }
+    body.page-template-barbie section.fastio-barbie-titles .container {
+      max-width: 850px; }
+    body.page-template-barbie section.fastio-barbie-titles h1.title {
+      color: #fff;
+      font-size: 30px; }
+    body.page-template-barbie section.fastio-barbie-titles h3.subtitle {
+      color: #fff;
+      font-size: 20px; }
+  body.page-template-barbie section.fastio-barbie-subpages {
+    padding-top: 60px; }
+    body.page-template-barbie section.fastio-barbie-subpages .container {
+      max-width: 980px; }
+    body.page-template-barbie section.fastio-barbie-subpages .col-4 {
+      padding-right: 5px;
+      padding-left: 5px; }
+    body.page-template-barbie section.fastio-barbie-subpages article {
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 33vh;
+      margin-bottom: 10px; }
+  body.page-template-barbie .main-footer-wrapper {
+    background: transparent !important; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

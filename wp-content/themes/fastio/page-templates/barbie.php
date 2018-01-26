@@ -68,7 +68,7 @@ if(!empty($hero_1)):
 <section class="fastio-barbie-subpages">
         <div class="container">
 	<div class="row">
-		<?php while( have_rows('hotwheels-section-3') ): the_row(); 
+		<?php while( have_rows('barbie-section-3') ): the_row(); 
 			$link_id = get_sub_field('link', false, false);
 		?>
 		<div class="col-<?php echo $links_col; ?>">
