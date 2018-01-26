@@ -1214,4 +1214,144 @@ body.page-template-barbie{
     }
      
 }
+
+/* ############################## BARBIE SUBPAGES############################## */
+body.page-template-barbie-subpages{
+    background: url(../img/Fundo_Barbie_Criativa1.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+        
+    section.fastio-barbie-subpages-1{
+        padding-top: 135px;
+        
+        .title{
+            display: inline-block;
+            float:right;
+            padding-top: 10px;
+            font-size: 14px;
+            color: #fff;
+        }
+        
+        .bottleimg{
+            margin: 0 auto;
+            display: block;
+        }
+                
+        .icon {
+            position: absolute;
+            bottom: 380px;
+            left: 60%;
+            margin-left: -20px;
+            width: 40px;
+            height: 40px;
+            line-height: 35px;
+            border: solid 2px #fff;
+            border-radius: 20px;
+            z-index: 3;
+            color:#ED1C23;
+            text-align: center;
+            font-size: 35px;
+            background-color: #fff;
+            }
+        
+            .faa-float.animated, .faa-float.animated-hover:hover, .faa-parent.animated-hover:hover>.faa-float{
+                -webkit-animation: pulse 2s infinite;
+                animation: pulse 2s infinite;
+            }
+            
+            @-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+    }
+    
+            .fastio-hotwheels-subpages-section2{
+                margin-top: -60px;
+                padding-bottom: 60px;
+                
+                .imgcarrohotwheels{
+                    z-index: 3;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                }
+                .metaimg{
+                    position: absolute;
+                    top: 265px;
+                    left: -100px;
+                    z-index: 2;
+                }
+                
+                .title{
+                   display: block;
+                    width: 50%;
+                    float:right;
+                    font-size:14px;
+                    color:#fff;
+                }
+            }
+            
+            .fastio-hotwheels-subpages-section3{
+                background-image: url(../img/barbieSeccao_Azul-1.svg);
+		background-size:100% 100%;
+		-o-background-size: 100% 100%;
+		-webkit-background-size: 100% 100%;
+		background-size:cover;
+                overflow: hidden;
+                               
+                .titulo-subtitulo{
+                    padding-top: 120px;
+                }
+                
+                .title{
+                    display: block;
+                    width: 50%;
+                    font-size:14px;
+                    color:#fff;
+                }
+            }
+    
+    	.fastio-hotwheels-subpages-section4{
+		background-image: url(../img/barbieSeccao_Azul-2.svg);
+		background-size:100% 100%;
+		-o-background-size: 100% 100%;
+		-webkit-background-size: 100% 100%;
+		background-size:cover;
+                overflow: hidden;
+                padding-top: 60px;
+	}
+                /* CUSTOMIZE THE CAROUSEL
+            -------------------------------------------------- */
+
+            /* Carousel base class */
+            .carousel {
+                padding-top: 40px;
+              margin-bottom: 2rem;
+            }
+            .carousel-item{display: block;}
+            
+            .carousel,.item,.active{height:100%;}
+            .carousel-inner{height:100%;}
+            
+}
     
