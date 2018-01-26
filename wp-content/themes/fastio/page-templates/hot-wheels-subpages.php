@@ -15,7 +15,6 @@ get_header();
 //Section 1 : Hero 1
 $hero_1 = get_field('hotwheels-section-1');
 if(!empty($hero_1)):
-/* Nota IMPORTANTE: Temos de verificar como deve ser o comportamento mobile desta area, apenas permitir a visualização do vídeo em WIFI era o ideal, em 3G este video não deve ser incluído, e deverá comprimir-se em vários formatos para que seja possivel a responsividade também em relação ao peso em mb do site. */
 ?>
 <!-- ******************* The Logo and Images Hero Section ******************* -->
 <section class="fastio-images-hero fastio-hotwheels-subpages-1">

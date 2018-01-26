@@ -24,7 +24,9 @@ if(!empty($hero_1)):
            <div class="row">
             <div class="col-6" style="padding-right: 0px;">
                 <img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/>
-                <button class="btn btn-link btn-block fastio-btn-scroll-down"><i class="fa fa-angle-down"></i></button>
+                 <div class="icon faa-float animated">
+                        <i class="fa fa-angle-down"></i>
+                 </div>
             </div>
             <div class="col-6" style="padding-right: 0px;">
                 <img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid "/>
