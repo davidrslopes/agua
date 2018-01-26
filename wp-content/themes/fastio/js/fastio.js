@@ -185,7 +185,7 @@ jQuery( function($) {
 	var debug = true; //Turn this of when in production.
 	
 	//AOS
-	if($('body').hasClass('page-template-historiafastio') || $('body').hasClass('page-template-hot-wheels-subpages')){
+	if($('body').hasClass('page-template-historiafastio') || $('body').hasClass('page-template-hot-wheels-subpages') || $('body').hasClass('page-template-barbie-subpages')){
 		AOS.init();
 	}
 	
