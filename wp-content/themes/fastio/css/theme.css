@@ -10985,6 +10985,19 @@ body.page-template-explore-o-geres-subpages .fastio-location {
         color: white;
         text-decoration: none; }
 
+body.page-template-explore-o-geres-subpages .fastio-highlights {
+  background: url("../img/fundo_azul.svg") #00aeef;
+  color: white; }
+  body.page-template-explore-o-geres-subpages .fastio-highlights article {
+    margin-top: 8rem; }
+    body.page-template-explore-o-geres-subpages .fastio-highlights article h3 {
+      font-size: 1.1rem; }
+    body.page-template-explore-o-geres-subpages .fastio-highlights article p {
+      font-size: 0.75rem; }
+
+body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama {
+  height: 70vh; }
+
 /* ############################## Default ############################## */
 body.page-template-default .fastio-hero {
   background-image: url("../img/hero-commonpages.png");

@@ -65,4 +65,76 @@ if(!empty($location)):
 	</div>
 </section>
 <?php endif; ?>
+
+<!-- ******************* The Local Highlights Section ******************* -->
+<section class="fastio-highlights">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-2">
+				<img src="<?php echo get_template_directory_uri()."/img/ilustracao_milho-1.svg"; ?>" alt="" class="img-fluid">
+			</div>
+			<div class="col-3">
+				<article>
+					<h3>A apanha do milho</h3>
+					<p>Et as ma vollo conem. Ostrunt is reiusa debis qui tenditatae de accabor eiuntiument enihitatus autem. Itas et pa cum et faccum aut asi nectatumque et maxim facidis estiam litate doluptas endigendanda sinihil iquasincto occus, apeliquunt endae. Ernam in con nosa pedionet acea corem se peri ant latibusant enditi ommod que adia seditat.</p>
+				</article>
+			</div>
+			<div class="col-6 offset-1">
+				<img src="<?php echo get_template_directory_uri()."/img/ilustracao_milho-2.svg"; ?>" alt="" class="img-fluid">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<img src="<?php echo get_template_directory_uri()."/img/ilustracao_milho-3.svg"; ?>" alt="" class="img-fluid">
+				<article>
+					<div class="row">
+						<div class="col-5">
+							<img src="<?php echo get_template_directory_uri()."/img/onda_azul_subgeres.png"; ?>" alt="" class="img-fluid">
+						</div>
+						<div class="col-6">
+							<p>Et as ma vollo conem. Ostrunt is reiusa debis qui tenditatae de accabor eiuntiument enihitatus autem. Itas et pa cum et faccum aut asi nectatumque et maxim facidis estiam litate doluptas endigendanda sinihil iquasincto occus, apeliquunt endae.</p>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col-6">
+				<h1>“Exerumquatio quassed qui optium eatumqu aeculloribus.”</h1>
+				<img src="<?php echo get_template_directory_uri()."/img/ilustracao_espigueiro.svg"; ?>" alt="" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</section>
+<?php
+$fastio_360 = get_field('explore-o-geres-subpage-section-4');
+if(!empty($fastio_360)): ?>
+<!-- ******************* The 360 Foto Section ******************* -->
+<section class="fastio-360">
+	<div class="container-fluid">
+		<div class="row">
+			<?php if(!empty($fastio_360['fallback-img'])): ?>
+			<img src="<?php echo $fastio_360['fallback-img']['url']; ?>" alt="<?php echo $fastio_360['fallback-img']['title']; ?>" class="img-fluid">
+			<?php else: ?>
+			<!-- Pannellum -->
+			<!-- Latest compiled and minified JavaScript -->
+			<script src="https://cdn.pannellum.org/2.3/pannellum.js"></script>
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://cdn.pannellum.org/2.3/pannellum.css">
+			<div id="panorama" class="fastio-panorama"></div>
+			<script>
+			pannellum.viewer('panorama', {
+				"type": "equirectangular",
+				"compass": true,
+				"panorama": "<?php echo $fastio_360['panorama']; ?>",
+				<?php if(!empty($fastio_360['panorama-preview'])){echo '"preview": "'.$fastio_360['panorama-preview'].'",';} ?>
+				<?php if(!empty($fastio_360['panorama-auto-rotate'])){echo '"autoRotate": -2,';} ?>
+				<?php if(!empty($fastio_360['panorama-autoload'])){echo '"autoLoad": true';} ?>
+			});
+			</script>
+			<?php endif; ?>
+		</div>
+	</div>
+	<!--<img src=<?php echo get_template_directory_uri()."/img/milho_4.png"; ?>"" alt="">-->
+</section>
+<?php endif; ?>
+</section>
 <?php get_footer(); ?>

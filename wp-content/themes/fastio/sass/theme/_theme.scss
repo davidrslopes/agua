@@ -838,6 +838,24 @@ body.page-template-explore-o-geres-subpages{
 			}
 		}
 	}
+	.fastio-highlights{
+		background: url('../img/fundo_azul.svg') $h2o-blue;
+		color: white;
+		article{
+			margin-top: 8rem;
+			h3{
+				font-size: 1.1rem;
+			}
+			p{
+				font-size: 0.75rem;
+			}
+		}
+	}
+	.fastio-360{
+		.fastio-panorama{
+			height:70vh;
+		}
+	}
 }
 /* ############################## Default ############################## */
 body.page-template-default{
