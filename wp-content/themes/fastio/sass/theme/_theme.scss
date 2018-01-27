@@ -839,16 +839,34 @@ body.page-template-explore-o-geres-subpages{
 		}
 	}
 	.fastio-highlights{
-		background: url('../img/fundo_azul.svg') $h2o-blue;
+		background-color: $h2o-blue;
+		background-image: url('../img/fundo_azul.svg');
+		width:100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		display: block;
 		color: white;
+		padding: 5rem 0;
+		.row:first-of-type{
+			margin-bottom: 5rem;
+		}
 		article{
 			margin-top: 8rem;
-			h3{
-				font-size: 1.1rem;
-			}
-			p{
-				font-size: 0.75rem;
-			}
+		}
+		h3{
+			font-size: 1.1rem;
+		}
+		p{
+			font-size: 0.75rem;
+		}
+		h2{
+			font-style: italic;
+			margin-bottom: 5rem;
+			margin-top: 3rem;
 		}
 	}
 	.fastio-360{

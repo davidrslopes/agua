@@ -10986,14 +10986,30 @@ body.page-template-explore-o-geres-subpages .fastio-location {
         text-decoration: none; }
 
 body.page-template-explore-o-geres-subpages .fastio-highlights {
-  background: url("../img/fundo_azul.svg") #00aeef;
-  color: white; }
+  background-color: #00aeef;
+  background-image: url("../img/fundo_azul.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  color: white;
+  padding: 5rem 0; }
+  body.page-template-explore-o-geres-subpages .fastio-highlights .row:first-of-type {
+    margin-bottom: 5rem; }
   body.page-template-explore-o-geres-subpages .fastio-highlights article {
     margin-top: 8rem; }
-    body.page-template-explore-o-geres-subpages .fastio-highlights article h3 {
-      font-size: 1.1rem; }
-    body.page-template-explore-o-geres-subpages .fastio-highlights article p {
-      font-size: 0.75rem; }
+  body.page-template-explore-o-geres-subpages .fastio-highlights h3 {
+    font-size: 1.1rem; }
+  body.page-template-explore-o-geres-subpages .fastio-highlights p {
+    font-size: 0.75rem; }
+  body.page-template-explore-o-geres-subpages .fastio-highlights h2 {
+    font-style: italic;
+    margin-bottom: 5rem;
+    margin-top: 3rem; }
 
 body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama {
   height: 70vh; }
