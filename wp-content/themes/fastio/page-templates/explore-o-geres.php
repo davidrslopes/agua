@@ -160,34 +160,23 @@ if( !empty( $subpages ) ): ?>
 			foreach( $subpages as $page ):
 				$local_info = get_field('explore-o-geres-subpage-info', $page->ID); 
 				$i++;
-				echo "['".$page->post_title."', ".$local_info['coordenadas-google'].", ".$i."],";
+				echo "['".$page->post_title."', ".$local_info['coordenadas-google'].", ".$i.", '".$page->post_name."'],";
 			endforeach;
 		?>
 	];
-	
+	console.log(places);
 	function setMarkers(map) {
-		// Adds markers to the map.
-
-		// Marker sizes are expressed as a Size of X,Y where the origin of the image
-		// (0,0) is located in the top left of the image.
-
-		// Origins, anchor positions and coordinates of the marker increase in the X
-		// direction to the right and in the Y direction down.
 		var image = {
 			url: '<?php echo get_template_directory_uri()."/img/picker1_select.png"; ?>',
-			// This marker is 20 pixels wide by 32 pixels high.
-			size: new google.maps.Size(50, 50),
-			// The origin for this image is (0, 0).
+			size: new google.maps.Size(25, 25),
 			origin: new google.maps.Point(0, 0),
-			// The anchor for this image is the base of the flagpole at (0, 32).
-			anchor: new google.maps.Point(25, 50)
+			anchor: new google.maps.Point(12.5, 25)
 		};
-		// Shapes define the clickable region of the icon. The type defines an HTML
-		// <area> element 'poly' which traces out a polygon as a series of X,Y points.
-		// The final coordinate closes the poly by connecting to the first coordinate.
-		var shape = {
-			coords: [1, 1, 1, 20, 18, 20, 18, 1],
-			type: 'poly'
+		var image_hover = {
+			url: '<?php echo get_template_directory_uri()."/img/picker2_selected.png"; ?>',
+			size: new google.maps.Size(25, 25),
+			origin: new google.maps.Point(0, 0),
+			anchor: new google.maps.Point(12.5, 25)
 		};
 		for (var i = 0; i < places.length; i++) {
 			var place = places[i];
@@ -195,10 +184,26 @@ if( !empty( $subpages ) ): ?>
 				position: {lat: place[1], lng: place[2]},
 				map: map,
 				icon: image,
-				shape: shape,
 				title: place[0],
 				zIndex: place[3]
 			});
+			var content = '<div id="content">'+'<div id="siteNotice">'+'</div>'+'<a href="/'+place[4]+'">'+place[0]+'</a>'+'</div>';
+			var infowindow = new google.maps.InfoWindow();
+			google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+				return function() {
+					//TODO: close all open infowindows
+					marker.setIcon(image_hover);
+					infowindow.setContent(content);
+					infowindow.open(map,marker);
+					google.maps.event.addListener(map,'click', function(){ 
+						marker.setIcon(image);
+						infowindow.close();
+					});
+					google.maps.event.addListener(infowindow,'closeclick',function(){
+						marker.setIcon(image);
+					});
+				};
+			})(marker,content,infowindow));
 		}
 	}
 </script>
