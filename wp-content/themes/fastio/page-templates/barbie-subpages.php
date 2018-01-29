@@ -80,68 +80,70 @@ if(!empty($section_3)):
 ?>
 <!-- ******************* Section 3 ******************* -->
 <section class="fastio-barbie-subpages-section3">
-        <div class="container-fluid">
-           <div class="row">
-               <div class="col-3">
-                  <img src="<?php echo $section3['img_titulo']; ?>" class="img-fluid float-right"/> 
-                  <div class="title">
-                            <?php echo $section_3['subtitulo']; ?>
-                  </div>
-               </div>
-               <div class="col-3">
-                   <img src="<?php echo $section3['img_estrelas']; ?>" class="img-fluid float-right"/>
-               </div>
-            <div class="col-6">
-                <div data-aos="fade-up"data-aos-duration="3000">
-                    <img src="<?php echo $section_3['img1']; ?>" class="img-fluid float-right imgcamera"/>
-                </div>
-            </div>
-           </div>
-            <div class="row">
-                <div class="col-3">
-                    <div data-aos="fade-up" data-aos-duration="3000">
-                        <img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-right imgestrelasbarbiefotografa"/>
-                    </div>
-                </div>
-                <div class="col-9">
-                     <img src="<?php echo $section_3['img3']; ?>" class="img-fluid float-left imgbarbiefotografa"/>
-                </div>
-                <!--<div class="col-6 imagensgrelha">
-                    <div data-aos="fade-up" data-aos-duration="3000">
-                        <img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-left"/>
-                        <div class="title">
-                            <?php echo $section_3['subtitulo']; ?>
-                        </div>
-                    </div>
-                </div>-->
-            </div>
-                    <div class="row imagesgrid">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            <img src="<?php echo $section_3['grelha_de_imagem_imagem1']; ?>" class="img-fluid"/>
-            <img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            <img src="<?php echo $section_3['grelha_de_imagem_imagem2']; ?>" class="img-fluid"/>
-            <img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            <img src="<?php echo $section_3['grelha_de_imagem_imagem3']; ?>" class="img-fluid"/>
-            <img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            <img src="<?php echo $section_3['grelha_de_imagem_imagem4']; ?>" class="img-fluid"/>
-            <img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-        </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            <img src="<?php echo $section_3['grelha_de_imagem_imagem5']; ?>" class="img-fluid"/>
-            <img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-        </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-             <img src="<?php echo $section_3['grelha_de_imagem_imagem6']; ?>" class="img-fluid"/>
-            <img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-        </div>
-    </div>
-</div>
+	<div class="container-fluid">
+	   <div class="row">
+		   <div class="col-3">
+			  <img src="<?php echo $section3['img_titulo']; ?>" class="img-fluid float-right"/> 
+			  <div class="title">
+						<?php echo $section_3['subtitulo']; ?>
+			  </div>
+		   </div>
+		   <div class="col-3">
+			   <img src="<?php echo $section3['img_estrelas']; ?>" class="img-fluid float-right"/>
+		   </div>
+		<div class="col-6">
+			<div data-aos="fade-up"data-aos-duration="3000">
+				<img src="<?php echo $section_3['img1']; ?>" class="img-fluid float-right imgcamera"/>
+			</div>
+		</div>
+	   </div>
+		<div class="row">
+			<div class="col-3">
+				<div data-aos="fade-up" data-aos-duration="3000">
+					<img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-right imgestrelasbarbiefotografa"/>
+				</div>
+			</div>
+			<div class="col-3">
+				 <img src="<?php echo $section_3['img3']; ?>" class="img-fluid float-left imgbarbiefotografa"/>
+			</div>
+			<div class="col-6">
+				<div class="row imagesgrid">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+						<img src="<?php echo $section_3['grelha_de_imagem_imagem1']; ?>" class="img-fluid"/>
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+						<img src="<?php echo $section_3['grelha_de_imagem_imagem2']; ?>" class="img-fluid"/>
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+						<img src="<?php echo $section_3['grelha_de_imagem_imagem3']; ?>" class="img-fluid"/>
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+						<img src="<?php echo $section_3['grelha_de_imagem_imagem4']; ?>" class="img-fluid"/>
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+						<img src="<?php echo $section_3['grelha_de_imagem_imagem5']; ?>" class="img-fluid"/>
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+						<img src="<?php echo $section_3['grelha_de_imagem_imagem6']; ?>" class="img-fluid"/>
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+				</div>
+			</div>
+			<!--<div class="col-6 imagensgrelha">
+				<div data-aos="fade-up" data-aos-duration="3000">
+					<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-left"/>
+					<div class="title">
+						<?php echo $section_3['subtitulo']; ?>
+					</div>
+				</div>
+			</div>-->
+		</div>
+	</div>
 </section><!-- .fastio-images-section3 -->
 <?php endif; ?>
 <?php
