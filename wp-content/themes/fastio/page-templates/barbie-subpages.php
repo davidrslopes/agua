@@ -121,6 +121,8 @@ if(!empty($section_3)):
 					<img src="<?php echo $section_3['grelha_de_imagem_imagem3']; ?>" class="img-fluid"/>
 					<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
 				</div>
+			</div>
+			<div class="row no-gutters">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
 					<img src="<?php echo $section_3['grelha_de_imagem_imagem4']; ?>" class="img-fluid"/>
 					<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
