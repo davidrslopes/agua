@@ -11329,6 +11329,46 @@ body.page-template-barbie {
       margin-top: 4rem; }
   body.page-template-barbie .main-footer-wrapper {
     background: transparent !important; }
+  body.page-template-barbie .icon {
+    position: absolute;
+    bottom: 380px;
+    left: 60%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    border: solid 2px #fff;
+    border-radius: 20px;
+    z-index: 3;
+    color: #ED1C23;
+    text-align: center;
+    font-size: 35px;
+    background-color: #fff; }
+  body.page-template-barbie .faa-float.animated, body.page-template-barbie .faa-float.animated-hover:hover, body.page-template-barbie .faa-parent.animated-hover:hover > .faa-float {
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
 
 /* ############################## BARBIE SUBPAGES############################## */
 body.page-template-barbie-subpages {
