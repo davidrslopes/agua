@@ -1222,27 +1222,36 @@ body.page-template-barbie{
     
     section.fastio-barbie-subpages{
         padding-top: 60px;
-     
         .container{
-        max-width: 980px;
+        	max-width: 980px;
         }
         
         .col-4{
-        padding-right: 5px;
-        padding-left: 5px;
+			padding-right: 5px;
+			padding-left: 5px;
         }
         
         article {
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-         background-size: cover;
-         height: 33vh;
-          margin-bottom:10px;
+			display: block;
+			background-repeat: no-repeat;
+			background-position: center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			height: 33vh;
+			margin-bottom:10px;
         }
+		.imgbarbiefotografia{
+			position: absolute;
+			z-index: 1;
+			right: -150px;
+			width: 473px!important;
+			max-width: 473px!important;
+		}
+		.barbie-galeria{
+			margin-top: 4rem;
+		}
     }
     
     .main-footer-wrapper{

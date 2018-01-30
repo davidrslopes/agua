@@ -11319,6 +11319,14 @@ body.page-template-barbie {
       background-size: cover;
       height: 33vh;
       margin-bottom: 10px; }
+    body.page-template-barbie section.fastio-barbie-subpages .imgbarbiefotografia {
+      position: absolute;
+      z-index: 1;
+      right: -150px;
+      width: 473px !important;
+      max-width: 473px !important; }
+    body.page-template-barbie section.fastio-barbie-subpages .barbie-galeria {
+      margin-top: 4rem; }
   body.page-template-barbie .main-footer-wrapper {
     background: transparent !important; }
 
