@@ -116,34 +116,29 @@ if(!empty($section_3)):
 		</div>
 		<div class="col-6">
 			<div class="barbie-galeria">
+                            <?php
+//Section 3 : Galeria Fotos
+	if( have_rows('barbiesubpages-section-3-galeria') ): 
+		$links_count = count(get_field('barbiesubpages-section-3-galeria'));
+		$links_col = ceil(12 / $links_count);
+ 		if($links_col<6) $links_col = 6;
+?>
 				<div class="row no-gutters">
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<img src="<?php echo $section_3['grelha_de_imagem_imagem1']; ?>" class="img-fluid"/>
+                                    <?php while( have_rows('barbiesubpages-section-3-galeria') ): the_row(); ?>
+					<div class="col-<?php echo $links_col; ?>">
+                                            <div class="hovereffect">
+						<img src="<?php the_sub_field('fotografia'); ?>" class="img-fluid"/>
 						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+                                                <div class="overlay">
+                                                    <h2 class="name"><?php the_sub_field('nome'); ?></h2>
+                                                    <h2 class="years"><?php the_sub_field('idade'); ?></h2>
+                                                    <h2 class="location"><?php the_sub_field('localidade_-_pais'); ?></h2>
+                                                </div>
+                                            </div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<img src="<?php echo $section_3['grelha_de_imagem_imagem2']; ?>" class="img-fluid"/>
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<img src="<?php echo $section_3['grelha_de_imagem_imagem3']; ?>" class="img-fluid"/>
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-					</div>
+                                    <?php endwhile; ?>
 				</div>
-				<div class="row no-gutters">
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<img src="<?php echo $section_3['grelha_de_imagem_imagem4']; ?>" class="img-fluid"/>
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<img src="<?php echo $section_3['grelha_de_imagem_imagem5']; ?>" class="img-fluid"/>
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<img src="<?php echo $section_3['grelha_de_imagem_imagem6']; ?>" class="img-fluid"/>
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-					</div>
-				</div>
+                            <?php endif; ?>
 			</div>
 		</div>
 		<!--<div class="col-6 imagensgrelha">
