@@ -600,6 +600,30 @@
                     "mime_types": ""
                 }
             ]
+        },
+        {
+            "key": "field_5a6fb6be560c7",
+            "label": "Fundo da Pagina",
+            "name": "fundo_da_pagina",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -637,5 +661,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1516929250
+    "modified": 1517270760
 }

@@ -8,10 +8,17 @@
  */
 
 get_header();
+$fundo_da_pagina=get_field('fundo_da_pagina');
+if(!empty($fundo_da_pagina)): 
 ?>
+<style>
+    body.page-template-barbie-subpages{
+       background-image:url('<?php echo $fundo_da_pagina; ?>'); 
+    }
+</style>
+<?php endif; ?>
+<?php
 
-
-<?php 
 //Section 1 : Hero 1
 $hero_1 = get_field('barbiesubpages-section-1');
 if(!empty($hero_1)):
