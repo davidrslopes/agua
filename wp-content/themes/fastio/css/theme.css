@@ -11450,21 +11450,71 @@ body.page-template-barbie-subpages {
       float: right;
       font-size: 14px;
       color: #fff; }
-  body.page-template-barbie-subpages .fastio-hotwheels-subpages-section3 {
+  body.page-template-barbie-subpages .fastio-barbie-subpages-section3 {
     background-image: url(../img/barbieSeccao_Azul-1.svg);
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     background-size: cover;
     overflow: hidden; }
-    body.page-template-barbie-subpages .fastio-hotwheels-subpages-section3 .titulo-subtitulo {
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .titulo-subtitulo {
       padding-top: 120px; }
-    body.page-template-barbie-subpages .fastio-hotwheels-subpages-section3 .title {
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title {
       display: block;
       width: 50%;
       font-size: 14px;
       color: #fff; }
-  body.page-template-barbie-subpages .fastio-hotwheels-subpages-section4 {
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect {
+      width: 100%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      cursor: default; }
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transform: translate(460px, -100px) rotate(180deg);
+      -ms-transform: translate(460px, -100px) rotate(180deg);
+      transform: translate(460px, -100px) rotate(180deg);
+      -webkit-transition: all 0.2s 0.4s ease-in-out;
+      transition: all 0.2s 0.4s ease-in-out; }
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect img {
+      display: block;
+      position: relative;
+      -webkit-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect h2 {
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      font-size: 17px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.6); }
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect:hover .overlay {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      transform: translate(0px, 0px); }
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect:hover h2 {
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px);
+      -webkit-transition-delay: 0.5s;
+      transition-delay: 0.5s; }
+  body.page-template-barbie-subpages .fastio-barbie-subpages-section4 {
     background-image: url(../img/barbieSeccao_Azul-2.svg);
     background-size: 100% 100%;
     -o-background-size: 100% 100%;

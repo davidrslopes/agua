@@ -128,8 +128,7 @@ if(!empty($section_3)):
 					<div class="col-<?php echo $links_col; ?>">
                                             <div class="hovereffect">
 						<img src="<?php the_sub_field('fotografia'); ?>" class="img-fluid"/>
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-                                                <div class="overlay">
+						<div class="overlay">
                                                     <h2 class="name"><?php the_sub_field('nome'); ?></h2>
                                                     <h2 class="years"><?php the_sub_field('idade'); ?></h2>
                                                     <h2 class="location"><?php the_sub_field('localidade_-_pais'); ?></h2>
@@ -159,9 +158,11 @@ if(!empty($section_3)):
 		$links_count = count(get_field('barbiesubpages-section-4-1'));
 		$links_col = ceil(12 / $links_count);
  		if($links_col<6) $links_col = 6;
+                
+                $hero_4 = get_field('barbiesubpages-section-4');
 ?>
 <!-- ******************* The Fastio Links Section ******************* -->
-<section class="fastio-barbie-subpages-section4">
+<section class="fastio-barbie-subpages-section4" style="background-image:url('<?php echo $hero_4['background_image']; ?>');">
         <div class="container-fluid">
             <div class="row">
                 <!-- //Section 4 : Subpages -->
@@ -180,7 +181,7 @@ if(!empty($section_3)):
             </div>
 	<div class="row">
             <!--Section 4-1 : Subpages Slider -->
-       <div id="subpagescarousel" class="carousel slide" data-ride="carousel" data-interval="9000">
+       <div id="barbiesubpagescarousel" class="carousel slide" data-ride="carousel" data-interval="9000">
         <div class="carousel-inner row w-80 mx-auto" role="listbox" >
         <?php $i = 0; ?>
         <?php while( have_rows('barbiesubpages-section-4-1') ) : the_row(); 
@@ -194,11 +195,11 @@ if(!empty($section_3)):
             </div>
         <?php endwhile; ?>
     </div>
-           <a class="carousel-control-prev" href="#subpagescarousel" role="button" data-slide="prev">
+           <a class="carousel-control-prev" href="#barbiesubpagescarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#subpagescarousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#barbiesubpagescarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
