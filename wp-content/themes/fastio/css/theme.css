@@ -11509,6 +11509,8 @@ body.page-template-barbie-subpages {
       transform: translateY(0px);
       -webkit-transition-delay: 0.5s;
       transition-delay: 0.5s; }
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .imgcameracol {
+      padding-right: 0px !important; }
   body.page-template-barbie-subpages .fastio-barbie-subpages-section4 {
     background-image: url(../img/barbieSeccao_Azul-2.svg);
     background-size: 100% 100%;

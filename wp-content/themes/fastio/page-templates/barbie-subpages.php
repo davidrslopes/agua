@@ -90,15 +90,15 @@ if(!empty($section_3)):
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-3">
-				<img src="<?php echo $section3['img_titulo']; ?>" class="img-fluid float-right"/> 
+				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/> 
 				<div class="title">
 				<?php echo $section_3['subtitulo']; ?>
 				</div>
 			</div>
 			<div class="col-3">
-				<img src="<?php echo $section3['img_estrelas']; ?>" class="img-fluid float-right"/>
+				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-right"/>
 			</div>
-			<div class="col-6">
+			<div class="col-6 imgcameracol">
 				<div data-aos="fade-up"data-aos-duration="3000">
 					<img src="<?php echo $section_3['imgcamera']; ?>" class="img-fluid float-right imgcamera"/>
 				</div>
