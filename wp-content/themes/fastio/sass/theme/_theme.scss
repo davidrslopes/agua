@@ -1375,7 +1375,7 @@ body.page-template-barbie-subpages{
 
     }
     
-            .fastio-hotwheels-subpages-section2{
+            .fastio-barbie-subpages-section2{
                 margin-top: -60px;
                 padding-bottom: 60px;
                 
@@ -1438,12 +1438,9 @@ body.page-template-barbie-subpages{
                     overflow: hidden;
                     top: 0;
                     left: 0;
-                    background-color: rgba(0,0,0,0.6);
+                    background-color: rgba(157, 223, 248, 0.85);
                     opacity: 0;
                     filter: alpha(opacity=0);
-                    -webkit-transform: translate(460px, -100px) rotate(180deg);
-                    -ms-transform: translate(460px, -100px) rotate(180deg);
-                    transform: translate(460px, -100px) rotate(180deg);
                     -webkit-transition: all 0.2s 0.4s ease-in-out;
                     transition: all 0.2s 0.4s ease-in-out;
                   }
@@ -1456,13 +1453,11 @@ body.page-template-barbie-subpages{
                   }
 
                   .hovereffect h2 {
-                    text-transform: uppercase;
                     color: #fff;
                     text-align: center;
                     position: relative;
-                    font-size: 17px;
+                    font-size: 14px;
                     padding: 10px;
-                    background: rgba(0, 0, 0, 0.6);
                   }
 
                   .hovereffect:hover .overlay {

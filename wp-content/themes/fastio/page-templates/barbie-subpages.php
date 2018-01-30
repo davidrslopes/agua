@@ -100,7 +100,7 @@ if(!empty($section_3)):
 			</div>
 			<div class="col-6">
 				<div data-aos="fade-up"data-aos-duration="3000">
-					<img src="<?php echo $section_3['img1']; ?>" class="img-fluid float-right imgcamera"/>
+					<img src="<?php echo $section_3['imgcamera']; ?>" class="img-fluid float-right imgcamera"/>
 				</div>
 			</div>
 		</div>

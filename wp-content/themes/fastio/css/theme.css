@@ -11431,20 +11431,20 @@ body.page-template-barbie-subpages {
   100% {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); } }
-  body.page-template-barbie-subpages .fastio-hotwheels-subpages-section2 {
+  body.page-template-barbie-subpages .fastio-barbie-subpages-section2 {
     margin-top: -60px;
     padding-bottom: 60px; }
-    body.page-template-barbie-subpages .fastio-hotwheels-subpages-section2 .imgcarrohotwheels {
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section2 .imgcarrohotwheels {
       z-index: 3;
       position: relative;
       top: 0;
       left: 0; }
-    body.page-template-barbie-subpages .fastio-hotwheels-subpages-section2 .metaimg {
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section2 .metaimg {
       position: absolute;
       top: 265px;
       left: -100px;
       z-index: 2; }
-    body.page-template-barbie-subpages .fastio-hotwheels-subpages-section2 .title {
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section2 .title {
       display: block;
       width: 50%;
       float: right;
@@ -11479,12 +11479,9 @@ body.page-template-barbie-subpages {
       overflow: hidden;
       top: 0;
       left: 0;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(157, 223, 248, 0.85);
       opacity: 0;
       filter: alpha(opacity=0);
-      -webkit-transform: translate(460px, -100px) rotate(180deg);
-      -ms-transform: translate(460px, -100px) rotate(180deg);
-      transform: translate(460px, -100px) rotate(180deg);
       -webkit-transition: all 0.2s 0.4s ease-in-out;
       transition: all 0.2s 0.4s ease-in-out; }
     body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect img {
@@ -11493,13 +11490,11 @@ body.page-template-barbie-subpages {
       -webkit-transition: all 0.2s ease-in;
       transition: all 0.2s ease-in; }
     body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect h2 {
-      text-transform: uppercase;
       color: #fff;
       text-align: center;
       position: relative;
-      font-size: 17px;
-      padding: 10px;
-      background: rgba(0, 0, 0, 0.6); }
+      font-size: 14px;
+      padding: 10px; }
     body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect:hover .overlay {
       opacity: 1;
       filter: alpha(opacity=100);
