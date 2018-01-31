@@ -8,6 +8,15 @@
  */
 
 get_header();
+$fundo_da_pagina=get_field('fundo_da_pagina');
+if(!empty($fundo_da_pagina)): 
+?>
+<style>
+    body.page-template-barbie{
+       background-image:url('<?php echo $fundo_da_pagina; ?>'); 
+    }
+</style>
+<?php endif; ?>
 ?>
 
 

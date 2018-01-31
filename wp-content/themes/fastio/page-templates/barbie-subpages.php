@@ -86,7 +86,7 @@ $section_3 = get_field('barbiesubpages-section-3');
 if(!empty($section_3)):
 ?>
 <!-- ******************* Section 3 ******************* -->
-<section class="fastio-barbie-subpages-section3">
+<section class="fastio-barbie-subpages-section3" style="background-image:url('<?php echo $section_3['bg-img']; ?>');">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-3">
