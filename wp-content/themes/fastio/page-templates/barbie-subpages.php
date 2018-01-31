@@ -89,13 +89,13 @@ if(!empty($section_3)):
 <section class="fastio-barbie-subpages-section3" style="background-image:url('<?php echo $section_3['bg-img']; ?>');">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-3">
+			<div class="col-5 imgtitulocriatividade">
 				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/> 
 				<div class="title">
 				<?php echo $section_3['subtitulo']; ?>
 				</div>
 			</div>
-			<div class="col-3">
+			<div class="col-1 imgestrelas">
 				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-right"/>
 			</div>
 			<div class="col-6 imgcameracol">
@@ -121,11 +121,11 @@ if(!empty($section_3)):
 	if( have_rows('barbiesubpages-section-3-galeria') ): 
 		$links_count = count(get_field('barbiesubpages-section-3-galeria'));
 		$links_col = ceil(12 / $links_count);
- 		if($links_col<6) $links_col = 6;
+ 		if($links_col<6) $links_col = 4;
 ?>
 				<div class="row no-gutters">
                                     <?php while( have_rows('barbiesubpages-section-3-galeria') ): the_row(); ?>
-					<div class="col-<?php echo $links_col; ?>">
+					<div class="col-<?php echo $links_col; ?> col-md-4 col-sm-4 col-xs-6">
                                             <div class="hovereffect">
 						<img src="<?php the_sub_field('fotografia'); ?>" class="img-fluid"/>
 						<div class="overlay">
