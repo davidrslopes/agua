@@ -42,9 +42,11 @@
 /* ############################## COMMON ############################## */
 // Navigation
 .fastio-nav{
+	margin-bottom: 52px;
 	button.btn.dropdown-toggle{
 		cursor:pointer;
 		font-weight: 400;
+		font-size: 1.2rem;
 		color: $primary;
 		background-color: transparent;
 		text-decoration: none;
@@ -324,6 +326,14 @@ img.ondas{
 	&.right{right:0px;}
 }
 /* ############################## HOMEPAGE ############################## */
+//Navbar
+nav.navbar.fixed-top{
+	padding-top: 2.5rem;
+	padding-bottom: 0;
+	.container{
+		padding: 0;
+	}
+}
 
 // Home FullScreen Vídeo 
 .fastio-video {
@@ -341,7 +351,7 @@ img.ondas{
 }
 // Wrapper Home TODO: JS to get nav height.
 .wrapper-home{
-	margin-top:	95px;
+	margin-top:	116px;
 }
 
 /* ############################## HISTORIA FASTIO ############################## */

@@ -17,9 +17,9 @@ $h2o-yellow: #fff200; // rgb(255,242,0)
 $allerta: "Allerta", sans-serif; // Titles, texts and navs
 
 //SHADOWS
-$h2o-text-shadow: .0em .090em .090em rgba(83, 83, 83, .80);
-$h2o-box-shadow: .0em .090em .090em 0em rgba(83, 83, 83, .80);
-$h2o-box-shadow-after: -.090em 0em .090em 0em rgba(83, 83, 83, .80);
+$h2o-text-shadow: .0em .060em .060em rgba(83, 83, 83, .66);
+$h2o-box-shadow: .0em .060em .060em 0em rgba(83, 83, 83, .66);
+$h2o-box-shadow-after: -.060em 0em .060em 0em rgba(83, 83, 83, .66);
 
 /* #################### BOOTSTRAP OVERWRITES #################### */
 
@@ -32,3 +32,18 @@ $warning: $h2o-yellow;
 $font-family-sans-serif: $allerta;
 $font-family-base: $allerta;
 
+//GRID
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1200px,//992px
+  xl: 1279px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1140px,//960px
+  xl: 1240px
+);
