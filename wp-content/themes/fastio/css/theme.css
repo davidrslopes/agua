@@ -10446,8 +10446,6 @@ img.ondas {
 nav.navbar.fixed-top {
   padding-top: 2.5rem;
   padding-bottom: 0; }
-  nav.navbar.fixed-top .container {
-    padding: 0; }
 
 .fastio-video {
   position: fixed;
