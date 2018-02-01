@@ -173,7 +173,30 @@ function fastio_customizer($wp_customize){
 			'section'    => 'static_front_page',
 			'settings'    => 'home_video_fallback'
 	)));
-	
+	//Texto da Homepage
+	$wp_customize->add_setting( 'home_video_text', array(
+		'default' => 'Sentir Gerês'
+	) );
+
+	$wp_customize->add_control( 'home_video_text', array(
+		'type' => 'text',
+		'section' => 'static_front_page',
+		'label'      => __( 'Fundo da Homepage', 'understrap' ),
+		'description' => __( 'O texto que aparece em cima do vídeo', 'understrap' )
+	) );
+	//Cor do Texto da Homepage
+	$wp_customize->add_setting( 'home_video_text_color', array(
+		'default' => '#FFFFFF'
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control( 
+		$wp_customize, 
+		'home_video_text_color', 
+		array(
+			'label'      => __( 'A cor do texto que aparece em cima do vídeo', 'understrap' ),
+			'section'    => 'static_front_page',
+			'settings'   => 'home_video_text_color'
+		)
+	));
 	
 	//OPÇÕES DE RODAPÉ
 	//Adicionar secção  

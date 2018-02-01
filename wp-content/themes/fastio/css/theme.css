@@ -10461,8 +10461,14 @@ nav.navbar.fixed-top {
   transform: translateX(-50%) translateY(-50%);
   background-size: cover; }
 
-.wrapper-home {
-  margin-top: 116px; }
+.fastio-home-title {
+  text-align: center;
+  margin: -2rem 0 0;
+  padding-top: 50vh;
+  color: white;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
 
 /* ############################## HISTORIA FASTIO ############################## */
 body.page-template-historiafastio {

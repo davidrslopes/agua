@@ -348,8 +348,14 @@ nav.navbar.fixed-top{
     background-size: cover;
 }
 // Wrapper Home TODO: JS to get nav height.
-.wrapper-home{
-	margin-top:	116px;
+.fastio-home-title{
+	text-align:center;
+	margin: -2rem 0 0;
+	padding-top:50vh;
+	color:white;
+	font-size: 4rem;
+	line-height: 4.5rem;
+	text-shadow: $h2o-text-shadow;
 }
 
 /* ############################## HISTORIA FASTIO ############################## */

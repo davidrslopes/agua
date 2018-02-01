@@ -41,5 +41,17 @@ if ( ! function_exists( 'understrap_setup_theme_default_settings' ) ) :
 			set_theme_mod( 'home_video_fallback', get_template_directory_uri() . '/img/video-fallback.jpg' );
 		}
 		
+		// Homepage Vídeo Text.
+		$home_video_text = get_theme_mod( 'home_video_text' );
+		if ( '' == $home_video_text ) {
+			set_theme_mod( 'home_video_text', 'Sentir Gerês' );
+		}
+		
+		// Homepage Vídeo Text Color.
+		$home_video_text_color = get_theme_mod( 'home_video_text_color' );
+		if ( '' == $home_video_text_color ) {
+			set_theme_mod( 'home_video_text_color', '#FFFFFF' );
+		}
+		
 	}
 endif;
