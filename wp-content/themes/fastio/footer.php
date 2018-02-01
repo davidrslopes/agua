@@ -26,11 +26,14 @@ if ( is_front_page() ) : ?>
 <div class="wrapper home-footer-wrapper" id="wrapper-footer-home">
 	<footer class="home-footer <?php echo esc_attr( $container ); ?>" id="colophon">
 		<div class="row">
-			<div class="col-6" dir="rtl">
-				<?php do_action('icl_language_selector'); ?>
+			<div class="col-4">
+				<div class="fastio-footer-logos">
+					<a href="<?php echo $footer_logos_url;?>"><img src="<?php echo $footer_logos_src;?>" alt="<?php echo $footer_logos_alt;?>" title="<?php echo $footer_logos_title;?>"></a>
+				</div>
 			</div>
-			<div class="col-6 text-right">
-				<ul class="list-inline fastio-home-social">
+			<div class="col-3 offset-5 text-right">
+				<?php do_action('icl_language_selector'); ?>
+				<ul class="list-inline fastio-home-social pull-right">
 					<li class="list-inline-item"><a href="<?php echo $fb_link; ?>" target="_blank"><i class="fa fa-facebook-square social"></i></a></li>
 					<li class="list-inline-item"><a href="<?php echo $instagr_link; ?>" target="_blank"><i class="fa fa-instagram social"></i></a></li>
 				</ul>

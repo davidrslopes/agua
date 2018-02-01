@@ -152,9 +152,9 @@
 	position: absolute;
 	padding-top: 0;
 	padding-bottom: 0;
-	bottom: 0;
+	bottom: 2rem;
 	width: 100%;
-	height: 56px;
+	height: 33px;
 	line-height: 30px;
 	footer{
 		//WPML
@@ -162,6 +162,7 @@
 			padding:0;
 			direction: rtl;
 			display: inline-block;
+			padding-right: 50px;
 			ul{
 				direction: rtl;
 				display: inline-block;
