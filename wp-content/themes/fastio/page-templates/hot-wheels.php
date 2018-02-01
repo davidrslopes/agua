@@ -18,8 +18,6 @@ if(!empty($fundo_da_pagina)):
     }
 </style>
 <?php endif; ?>
-?>
-
 
 <?php 
 //Section 1 : Hero 1
