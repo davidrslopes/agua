@@ -56,11 +56,11 @@
 		text-shadow: $h2o-text-shadow;
 		&::after{
 			@include transition(all 250ms ease-in);
-			-webkit-transform: rotate(0deg);
-			-moz-transform: rotate(0deg);
-			-ms-transform: rotate(0deg);
-			-o-transform: rotate(0deg);
-			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+			-webkit-transform: rotate(-90deg);
+			-moz-transform: rotate(-90deg);
+			-ms-transform: rotate(-90deg);
+			-o-transform: rotate(-90deg);
+			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 			background: $primary;
 			border: 0;
 			vertical-align: -1px;
@@ -82,11 +82,11 @@
 		border-color: transparent;
 		box-shadow: none;
 		&::after{
-			-webkit-transform: rotate(-90deg);
-			-moz-transform: rotate(-90deg);
-			-ms-transform: rotate(-90deg);
-			-o-transform: rotate(-90deg);
-			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
 			box-shadow: $h2o-box-shadow-after;
 		}
 	}
