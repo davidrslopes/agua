@@ -188,6 +188,18 @@ jQuery( function($) {
 	if($('body').hasClass('page-template-historiafastio') || $('body').hasClass('page-template-hot-wheels-subpages') || $('body').hasClass('page-template-barbie-subpages')){
 		AOS.init();
 	}
+        
+        if($('body').hasClass('page-template-default')){
+		var hash = window.location.hash;
+                hash && $('#list-tab a[href="' + hash + '"]').tab('show');
+
+                $('#list-tab a').click(function (e) {
+                  $(this).tab('show');
+                  var scrollmem = $('body').scrollTop();
+                  window.location.hash = this.hash;
+                  $('html,body').scrollTop(scrollmem);
+                });
+	}
 	
 	//MENU
 	//On Dropdown
@@ -275,6 +287,8 @@ jQuery( function($) {
 	//PANORAMA
 	$('.pnlm-load-button > p').first().text('Clique aqui para carregar a foto 360');
 	$('.pnlm-load-box > p').first().text('A Carregar...');
+        
+        
 	
 	//SUBPAGES CAROUSEL
 	$('#subpagescarousel').carousel();
