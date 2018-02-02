@@ -206,23 +206,26 @@
 .main-footer-wrapper{
 	background-color: $h2o-light-blue;
 	color: white;
-	height: 62px;
+	height: 60px;
 	width: 100%;
-	padding-top: 0;
-	padding-bottom: 0;
-	line-height: 46px;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+	line-height: 0;
 	footer{
-		.fastio-footer-widget{
-			font-size:70%;
+		.fastio-footer-logos{
+			img{
+				height: 1.25rem;
+			}
 		}
 		.fastio-footer-social{
 			margin: 0;
 			padding: 0;
+			line-height: 0rem;
 			li > a{
-				font-size:200%;
+				font-size:1.25rem;
 				color:white;
 				@include transition(all 250ms ease-in);
-				padding:.5rem;
+				padding:.1rem;
 				&:hover,
 				&:focus{
 					color:$primary;
@@ -231,6 +234,7 @@
 		}
 		.fastio-footer-lang{
 			//WPML
+			padding-top:2px;
 			.wpml-ls{
 				padding:0;
 				display: inline-block;
@@ -259,6 +263,7 @@
 			}
 		}
 		.fastio-footer-nav{
+			padding-top:2px;
 			ul > li > a{
 				font-size:70%;
 				color:inherit;
@@ -639,7 +644,7 @@ body.page-template-fastio-go{
 		button.fastio-btn-scroll-down{
 			position: absolute;
 			bottom: 12px;
-			cursor: pointer;
+                        cursor: pointer;
 			font-size:90%;
 			text-decoration: none;
 			@include transition(all 250ms ease-in);
