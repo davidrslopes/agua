@@ -14,13 +14,13 @@
 		<div class="media-body">
 		<?php the_title( '<h1 class="entry-title media-heading">', '</h1>' ); ?>
 			<div class="entry-content">
-			<?php the_excerpt() ?>
-			<?php $post_id    = get_the_id(); ?>
-			<?php if ( !empty( get_the_content() ) ) : ?>
-			<a href="#" data-id="<?php the_ID(); ?>" data-toggle="modal" data-target="#post<?php echo $post_id; ?>" modal-click="<?php the_ID() ?>">
-			<?php  esc_html_e( 'ver', 'fastio' ); ?> <i class="fa fa-plus-circle" aria-hidden="true"></i>
-			</a>
-			<?php endif; ?>
+				<?php the_excerpt() ?>
+				<?php $post_id    = get_the_id(); ?>
+				<?php if ( !empty( get_the_content() ) ) : ?>
+				<a href="#" data-id="<?php the_ID(); ?>" data-toggle="modal" data-target="#post<?php echo $post_id; ?>" modal-click="<?php the_ID() ?>">
+					<?php  esc_html_e( 'ver', 'fastio' ); ?> <i class="fa fa-plus-circle" aria-hidden="true"></i>
+				</a>
+				<?php endif; ?>
 			</div><!-- .entry-content -->
 		</div>
 	</div>
@@ -35,7 +35,9 @@
 					<?php the_content()?>
 					</div>
 					<div class="col-md-4 rightcolumnmodal">
-						<button type="button" class="close modalfecharbtn" data-dismiss="modal" aria-hidden="true"><?php  esc_html_e( 'FECHAR', 'fastio' ); ?> <i class="fa fa-close"></i></button>
+						<button type="button" class="close modalfecharbtn" data-dismiss="modal" aria-hidden="true">
+							<?php  esc_html_e( 'FECHAR', 'fastio' ); ?> <i class="fa fa-times"></i>
+						</button>
 						<div class="conteudo">
 							<!-- Here showing the title of the post -->
 							<h4><span class="year"><?php the_field('ano'); ?></span> - <?php the_title();?></h4>
