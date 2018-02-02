@@ -294,7 +294,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "33",
                         "class": "",
                         "id": ""
                     },
@@ -305,6 +305,21 @@
                     "maxlength": 50
                 },
                 {
+                    "key": "field_5a73ca831e10f",
+                    "label": "Cor do Título",
+                    "name": "title-color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#FFF200"
+                },
+                {
                     "key": "field_5a54e4490ef24",
                     "label": "Imagem",
                     "name": "img",
@@ -313,7 +328,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "33",
                         "class": "",
                         "id": ""
                     },
@@ -724,5 +739,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1515704096
+    "modified": 1517537978
 }

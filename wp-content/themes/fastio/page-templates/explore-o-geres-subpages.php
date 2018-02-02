@@ -21,11 +21,12 @@ if(!empty($hero_1)):
 	<div class="container-fluid">
 		<div class="row">
 			<header class="fastio-hero-header col-12">
-				<h1 class="text-center"><?php echo $hero_1['title'];?></h1>
+				<h1 class="text-center"<?php if(!empty($hero_1['title-color'])){ echo ' style="color:'.$hero_1['title-color'].';"';} ?>><?php echo $hero_1['title'];?></h1>
 			</header>
 		</div>
 	</div>
 	<?php endif; ?>
+	<?php if(!empty($hero_1['arrow'])): ?><button class="btn btn-link btn-block fastio-btn-scroll-down"<?php if(!empty($hero_1['arrow-color'])){ echo ' style="color:'.$hero_1['arrow-color'].';"';} ?>><i class="fa fa-angle-down"></i></button><?php endif; ?>
 </section><!-- .fastio-hero -->
 <?php endif;
 

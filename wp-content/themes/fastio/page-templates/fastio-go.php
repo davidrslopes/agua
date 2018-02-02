@@ -85,7 +85,7 @@ if(!empty($hero_1)):
 		<div class="row">
 			<header class="fastio-hero-header col-3 text-center">
 				<?php if(!empty($hero_1['img'])): ?><img class="img-fluid" src="<?php echo $hero_1['img']['url']; ?>" title="<?php echo $hero_1['img']['title']; ?>" alt="<?php echo $hero_1['img']['title']; ?>"><?php endif; ?>
-				<?php if(!empty($hero_1['title'])): ?><h1 class="text-warning"><?php echo $hero_1['title'];?></h1><?php endif; ?> 
+				<?php if(!empty($hero_1['title'])): ?><h1<?php if(!empty($hero_1['title-color'])){ echo ' style="color:'.$hero_1['title-color'].';"';} ?>><?php echo $hero_1['title'];?></h1><?php endif; ?> 
 			</header>
 		</div>
 	</div>
