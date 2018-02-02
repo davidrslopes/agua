@@ -10807,7 +10807,7 @@ body.page-template-fastio-go .fastio-video-hero {
       border: 0; }
   body.page-template-fastio-go .fastio-video-hero button.fastio-btn-scroll-down {
     position: absolute;
-    bottom: 0;
+    bottom: 12px;
     cursor: pointer;
     font-size: 90%;
     text-decoration: none;
@@ -10821,6 +10821,10 @@ body.page-template-fastio-go .fastio-video-hero {
     body.page-template-fastio-go .fastio-video-hero button.fastio-btn-scroll-down:hover {
       text-decoration: none;
       color: white; }
+  body.page-template-fastio-go .fastio-video-hero h1.text-center {
+    font-size: 3rem !important;
+    line-height: 3.5rem !important;
+    text-shadow: 0 0.06em 0.06em rgba(83, 83, 83, 0.66); }
 
 body.page-template-fastio-go .fastio-go-bottle {
   display: block;

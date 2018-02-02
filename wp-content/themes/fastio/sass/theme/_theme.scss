@@ -647,8 +647,8 @@ body.page-template-fastio-go{
 		}
 		button.fastio-btn-scroll-down{
 			position: absolute;
-			bottom: 0;
-			cursor: pointer;
+			bottom: 12px;
+                        cursor: pointer;
 			font-size:90%;
 			text-decoration: none;
 			@include transition(all 250ms ease-in);
@@ -664,6 +664,11 @@ body.page-template-fastio-go{
 				color:white;
 			}
 		}
+                h1.text-center{
+                    font-size: 3rem !important;
+                    line-height: 3.5rem !important;
+                    text-shadow: 0 0.06em 0.06em rgba(83,83,83,.66);
+                }
 	}
 	.fastio-go-bottle{
 		display: block;
