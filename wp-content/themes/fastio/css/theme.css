@@ -10353,49 +10353,54 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .main-footer-wrapper {
   background-color: #b2eaff;
   color: white;
-  height: 62px;
+  height: 60px;
   width: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
-  line-height: 46px; }
-  .main-footer-wrapper footer .fastio-footer-widget {
-    font-size: 70%; }
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  line-height: 0; }
+  .main-footer-wrapper footer .fastio-footer-logos img {
+    height: 1.25rem; }
   .main-footer-wrapper footer .fastio-footer-social {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    line-height: 0rem; }
     .main-footer-wrapper footer .fastio-footer-social li > a {
-      font-size: 200%;
+      font-size: 1.25rem;
       color: white;
       transition: all 250ms ease-in;
-      padding: .5rem; }
+      padding: .1rem; }
       .main-footer-wrapper footer .fastio-footer-social li > a:hover, .main-footer-wrapper footer .fastio-footer-social li > a:focus {
         color: #00aeef; }
-  .main-footer-wrapper footer .fastio-footer-lang .wpml-ls {
-    padding: 0;
-    display: inline-block; }
-    .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul {
-      direction: rtl;
-      display: inline-block;
-      list-style: circle;
-      list-style-position: outside;
-      color: inherit; }
-      .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li {
-        list-style-type: circle;
-        display: list-item; }
-        .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a {
-          display: initial;
-          padding: 0;
-          font-size: 70%;
-          color: inherit;
-          transition: all 250ms ease-in; }
-          .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a:hover, .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a:focus {
-            color: #00aeef; }
-  .main-footer-wrapper footer .fastio-footer-nav ul > li > a {
-    font-size: 70%;
-    color: inherit;
-    transition: all 250ms ease-in; }
-    .main-footer-wrapper footer .fastio-footer-nav ul > li > a:hover, .main-footer-wrapper footer .fastio-footer-nav ul > li > a:focus {
-      color: #00aeef; }
+  .main-footer-wrapper footer .fastio-footer-lang {
+    padding-top: 2px; }
+    .main-footer-wrapper footer .fastio-footer-lang .wpml-ls {
+      padding: 0;
+      display: inline-block; }
+      .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul {
+        direction: rtl;
+        display: inline-block;
+        list-style: circle;
+        list-style-position: outside;
+        color: inherit; }
+        .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li {
+          list-style-type: circle;
+          display: list-item; }
+          .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a {
+            display: initial;
+            padding: 0;
+            font-size: 70%;
+            color: inherit;
+            transition: all 250ms ease-in; }
+            .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a:hover, .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a:focus {
+              color: #00aeef; }
+  .main-footer-wrapper footer .fastio-footer-nav {
+    padding-top: 2px; }
+    .main-footer-wrapper footer .fastio-footer-nav ul > li > a {
+      font-size: 70%;
+      color: inherit;
+      transition: all 250ms ease-in; }
+      .main-footer-wrapper footer .fastio-footer-nav ul > li > a:hover, .main-footer-wrapper footer .fastio-footer-nav ul > li > a:focus {
+        color: #00aeef; }
   .main-footer-wrapper footer .fastio-footer-copy {
     font-size: 60%;
     line-height: 46px; }

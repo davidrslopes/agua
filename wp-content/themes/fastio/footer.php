@@ -47,33 +47,20 @@ elseif ( is_page() ) : ?>
 <div class="wrapper main-footer-wrapper" id="wrapper-footer-main">
 	<footer class="main-footer <?php echo esc_attr( $container ); ?>" id="colophon">
 		<div class="row">
-			<div class="col-3">
+			<div class="col-4">
 				<!-- Footer Logos -->
 				<div class="fastio-footer-logos">
 					<a href="<?php echo $footer_logos_url;?>"><img src="<?php echo $footer_logos_src;?>" alt="<?php echo $footer_logos_alt;?>" title="<?php echo $footer_logos_title;?>"></a>
 				</div>
 			</div>
-			<div class="col-2">
-				<!-- Social -->
-				<ul class="fastio-footer-social nav">
-					<li class="nav-item"><a class="nav-link" href="<?php echo $fb_link; ?>" target="_blank"><i class="fa fa-facebook-square social"></i></a></li>
-					<li class="nav-item"><a class="nav-link" href="<?php echo $instagr_link; ?>" target="_blank"><i class="fa fa-instagram social"></i></a></li>
-				</ul>
-			</div>
-			<div class="col-1">
-				<!-- Language -->
-				<div class="fastio-footer-lang">
-					<?php do_action('icl_language_selector'); ?>
-				</div>
-			</div>
-			<div class="col-4">
+			<div class="col-4 offset-2">
 				<!-- Footer Menu -->
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'footer',
 						'container_class' => 'fastio-footer-nav',
 						'container_id'    => 'fastioFooterNav',
-						'menu_class'      => 'nav',
+						'menu_class'      => 'nav float-right',
 						//'items_wrap'	  => '%3$s',
 						'fallback_cb'     => '',
 						'menu_id'         => 'footer-menu',
@@ -81,17 +68,18 @@ elseif ( is_page() ) : ?>
 					)
 				); ?>
 			</div>
-			<div class="col-2">
-				<div class="fastio-footer-copy text-right">
-				<?php 
-					if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-						$lang_code = ICL_LANGUAGE_CODE;
-					}else{
-						$lang_code = 'pt-pt';
-					}
-					echo '<a href="http://savage-agency.pt" target="_blank"><img src="'.get_template_directory_uri().'/img/savage-'.$lang_code.'.png" alt="'.__('concebido por SAVAGE', 'understrap').'" title ="'.__('concebido por SAVAGE', 'understrap').'"></a>';
-					?>
+			<div class="col-1 text-right">
+				<!-- Language -->
+				<div class="fastio-footer-lang">
+					<?php do_action('icl_language_selector'); ?>
 				</div>
+			</div>
+			<div class="col-1 text-right">
+				<!-- Social -->
+				<ul class="list-inline fastio-footer-social">
+					<li class="list-inline-item"><a href="<?php echo $fb_link; ?>" target="_blank"><i class="fa fa-facebook-square social"></i></a></li>
+					<li class="list-inline-item"><a href="<?php echo $instagr_link; ?>" target="_blank"><i class="fa fa-instagram social"></i></a></li>
+				</ul>
 			</div><!--col end -->
 		</div><!-- row end -->
 	</footer><!-- footer container end -->
