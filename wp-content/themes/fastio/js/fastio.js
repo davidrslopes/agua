@@ -287,8 +287,12 @@ jQuery( function($) {
 	//PANORAMA
 	$('.pnlm-load-button > p').first().text('Clique aqui para carregar a foto 360');
 	$('.pnlm-load-box > p').first().text('A Carregar...');
-        
-        
+    
+	//HERO Scroll Arrow
+    $('.fastio-btn-scroll-down').click(function() {
+		var cls = $(this).closest("section").next().offset().top;
+		$("html, body").animate({scrollTop: cls}, 1000);
+	});
 	
 	//SUBPAGES CAROUSEL
 	$('#subpagescarousel').carousel();

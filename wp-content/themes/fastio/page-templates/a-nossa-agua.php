@@ -22,11 +22,12 @@ if(!empty($hero_1)):
 	<div class="container-fluid">
 		<div class="row">
 			<header class="fastio-hero-header col-12">
-				<h1 class="text-center"><?php echo $hero_1['title'];?></h1>
+				<h1 class="text-center"<?php if(!empty($hero_1['title-color'])){ echo ' style="color:'.$hero_1['title-color'].';"';} ?>><?php echo $hero_1['title'];?></h1>
 			</header>
 		</div>
 	</div>
 	<?php endif; ?>
+	<?php if(!empty($hero_1['arrow'])): ?><button class="btn btn-link btn-block fastio-btn-scroll-down"<?php if(!empty($hero_1['arrow-color'])){ echo ' style="color:'.$hero_1['arrow-color'].';"';} ?>><i class="fa fa-angle-down"></i></button><?php endif; ?>
 </section><!-- .fastio-hero -->
 <?php endif; ?>
 
@@ -50,14 +51,14 @@ if(!empty($hero_1)):
 <section class="fastio-products">
 	<div class="container">
 		<div class="row">
-			<div class="col-2">
+			<div class="col-2 offset-1">
 				<div class="list-group" id="list-tab" role="tablist">
 					<a class="list-group-item list-group-item-action active" id="nav-tab-plastic" data-toggle="list" href="#tab-plastic" role="tab" aria-controls="tab-plastic"><?php _e( 'Plástico', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-glass" data-toggle="list" href="#tab-glass" role="tab" aria-controls="tab-glass"><?php _e( 'Vidro', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-packs" data-toggle="list" href="#tab-packs" role="tab" aria-controls="tab-packs"><?php _e( 'Packs', 'understrap' ); ?></a>
 				</div>
 			</div>
-			<div class="col-10">
+			<div class="col-9">
 				<div class="tab-content">
 					<div class="tab-pane fade show active" id="tab-plastic" role="tabpanel" aria-labelledby="tab-plastic">
 						<?php echo do_shortcode( $plastic_gallery ); ?>
@@ -97,7 +98,7 @@ if(!empty($hero_2)):
 	<div class="container-fluid">
 		<div class="row">
 			<header class="fastio-hero-header offset-lg-7 col-lg-4 offset-md-8 col-md-4 offset-xs-6 col-xs-6">
-				<?php if(!empty($hero_2['title'])): ?><h3 class="text-primary"><?php echo $hero_2['title']; ?></h3><?php endif; ?>
+				<?php if(!empty($hero_2['title'])): ?><h3 class="text-primary"<?php if(!empty($hero_2['title-color'])){ echo ' style="color:'.$hero_2['title-color'].';"';} ?>><?php echo $hero_2['title']; ?></h3><?php endif; ?>
 				<?php if(!empty($hero_2['hashtag'])): ?><img class="img-fluid" src="<?php echo $hero_2['hashtag']['url']; ?>" title="<?php echo $hero_2['hashtag']['title']; ?>" alt="<?php echo $hero_2['hashtag']['title']; ?>"><?php endif; ?>
 			</header>
 		</div>

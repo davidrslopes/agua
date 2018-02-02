@@ -22,6 +22,25 @@
 			text-shadow: $h2o-text-shadow;
 		}
 	}
+	button.fastio-btn-scroll-down{
+		position: absolute;
+		bottom: 0;
+		cursor: pointer;
+		font-size:90%;
+		text-decoration: none;
+		@include transition(all 250ms ease-in);
+		i.fa{
+			display: block;
+			font-size: 250%;
+			line-height: 0px;
+			padding: 10px 0;
+			text-decoration: none;
+		}
+		&:hover{
+			text-decoration: none;
+			color:white;
+		}
+	}
 }
 //Fastio FEATURE
 @mixin fastio-feature(){
@@ -582,25 +601,6 @@ body.page-template-a-familia{
 				transform: translateX(-50%) translateY(-50%);
 				background-size: cover;
 				border: 0;
-			}
-		}
-		button.fastio-btn-scroll-down{
-			position: absolute;
-			bottom: 0;
-			cursor: pointer;
-			font-size:90%;
-			text-decoration: none;
-			@include transition(all 250ms ease-in);
-			i.fa{
-				display: block;
-				font-size: 250%;
-				line-height: 0px;
-				padding: 10px 0;
-				text-decoration: none;
-			}
-			&:hover{
-				text-decoration: none;
-				color:white;
 			}
 		}
 	}

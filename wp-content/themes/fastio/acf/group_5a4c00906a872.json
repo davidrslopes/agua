@@ -26,7 +26,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -35,6 +35,21 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_5a73c62f48e26",
+                    "label": "Cor do título",
+                    "name": "title-color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": ""
                 },
                 {
                     "key": "field_5a4c3eb6e946d",
@@ -59,6 +74,40 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_5a73c66748e27",
+                    "label": "Adicionar seta?",
+                    "name": "arrow",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_5a73c6a048e28",
+                    "label": "Cor da Seta",
+                    "name": "arrow-color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": ""
                 }
             ]
         },
@@ -178,7 +227,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -187,6 +236,21 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": 120
+                },
+                {
+                    "key": "field_5a73c6e848e29",
+                    "label": "Cor do Título",
+                    "name": "title-color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": ""
                 },
                 {
                     "key": "field_5a4c028ace67f",
@@ -394,5 +458,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1515001231
+    "modified": 1517537069
 }
