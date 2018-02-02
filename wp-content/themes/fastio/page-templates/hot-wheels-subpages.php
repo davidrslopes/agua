@@ -135,6 +135,8 @@ if(!empty($section_3)):
  		if($links_col<6) $links_col = 6;
 ?>
 <!-- ******************* The Fastio Links Section ******************* -->
+<?php
+$hero_4 = get_field('hotwheels-section-4');?>
 <section class="fastio-hotwheels-subpages-section4" style="background-image:url('<?php echo $hero_4['bg-img']; ?>');">
         <div class="container-fluid">
             <div class="row">
