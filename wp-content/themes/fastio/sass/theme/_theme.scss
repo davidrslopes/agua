@@ -639,7 +639,7 @@ body.page-template-fastio-go{
 		}
 		button.fastio-btn-scroll-down{
 			position: absolute;
-			bottom: 0;
+			bottom: 12px;
 			cursor: pointer;
 			font-size:90%;
 			text-decoration: none;
@@ -656,6 +656,11 @@ body.page-template-fastio-go{
 				color:white;
 			}
 		}
+                .header h1{
+                    font-size: 3rem;
+                    line-height: 3.5rem;
+                    text-shadow: 0 0.06em 0.06em rgba(83,83,83,.66);
+                }
 	}
 	.fastio-go-bottle{
 		display: block;
