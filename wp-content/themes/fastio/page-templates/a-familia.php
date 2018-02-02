@@ -31,13 +31,14 @@ if(!empty($hero_1)):
 	<?php if(!empty($hero_1['title'])): ?>
 	<div class="container-fluid">
 		<div class="row">
-			<header class="col-12">
-				<h1 class="text-center"><?php echo $hero_1['title'];?></h1>
+			<header class="col-6 offset-4">
+				<h1 class="text-left"<?php if(!empty($hero_1['title-color'])){ echo ' style="color:'.$hero_1['title-color'].';"';} ?>><?php echo $hero_1['title'];?></h1>
+				<?php if(!empty($hero_1['hashtag-img'])): ?><div class="text-left"><img src="<?php echo $hero_1['hashtag-img']['url'];?>" alt="<?php echo $hero_1['hashtag-img']['title'];?>"></div><?php endif; ?>
 			</header>
 		</div>
 	</div>
 	<?php endif; ?>
-	<button class="btn btn-link btn-block fastio-btn-scroll-down"><i class="fa fa-angle-down"></i></button>
+	<?php if(!empty($hero_1['arrow'])): ?><button class="btn btn-link btn-block fastio-btn-scroll-down"<?php if(!empty($hero_1['arrow-color'])){ echo ' style="color:'.$hero_1['arrow-color'].';"';} ?>><i class="fa fa-angle-down"></i></button><?php endif; ?>
 </section><!-- .fastio-video-hero -->
 <?php endif; ?>
 
