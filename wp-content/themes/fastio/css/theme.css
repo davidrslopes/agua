@@ -10801,9 +10801,9 @@ body.page-template-fastio-go .fastio-video-hero {
     body.page-template-fastio-go .fastio-video-hero button.fastio-btn-scroll-down:hover {
       text-decoration: none;
       color: white; }
-  body.page-template-fastio-go .fastio-video-hero .header h1 {
-    font-size: 3rem;
-    line-height: 3.5rem;
+  body.page-template-fastio-go .fastio-video-hero .header h1.text-center {
+    font-size: 3rem !important;
+    line-height: 3.5rem !important;
     text-shadow: 0 0.06em 0.06em rgba(83, 83, 83, 0.66); }
 
 body.page-template-fastio-go .fastio-go-bottle {
