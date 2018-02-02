@@ -10372,7 +10372,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         color: #00aeef; }
   .main-footer-wrapper footer .fastio-footer-lang .wpml-ls {
     padding: 0;
-    direction: rtl;
     display: inline-block; }
     .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul {
       direction: rtl;
@@ -10574,7 +10573,6 @@ body.page-template-a-nossa-agua .fastio-hero {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   display: block; }
   body.page-template-a-nossa-agua .fastio-hero header {
@@ -10625,7 +10623,6 @@ body.page-template-a-nossa-agua .fastio-hero-2 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   display: block; }
   body.page-template-a-nossa-agua .fastio-hero-2 header {
@@ -10658,7 +10655,6 @@ body.page-template-a-familia .fastio-video-hero {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   display: block; }
   body.page-template-a-familia .fastio-video-hero header {
@@ -10737,7 +10733,6 @@ body.page-template-a-familia .fastio-hero-3 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   display: block;
   position: relative; }
@@ -10761,7 +10756,6 @@ body.page-template-fastio-go .fastio-video-hero {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   display: block; }
   body.page-template-fastio-go .fastio-video-hero header {
@@ -10837,7 +10831,6 @@ body.page-template-fastio-go .fastio-hero {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   display: block; }
   body.page-template-fastio-go .fastio-hero header {
@@ -10873,7 +10866,6 @@ body.page-template-explore-o-geres .fastio-hero {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   display: block; }
   body.page-template-explore-o-geres .fastio-hero header {
@@ -10962,7 +10954,6 @@ body.page-template-explore-o-geres-subpages .fastio-hero {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   display: block; }
   body.page-template-explore-o-geres-subpages .fastio-hero header {
@@ -11039,7 +11030,6 @@ body.page-template-default .fastio-hero {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   display: block;
   max-height: 420px; }
