@@ -187,7 +187,7 @@ jQuery( function($) {
 	//AOS
 	if($('body').hasClass('page-template-historiafastio') ||
           $('body').hasClass('page-template-hot-wheels-subpages') || 
-          $('body').hasClass('page-template-barbie-subpages')) ||
+          $('body').hasClass('page-template-barbie-subpages') ||
           $('body').hasClass('page-template-fastio-go'))
         {
 		AOS.init();
