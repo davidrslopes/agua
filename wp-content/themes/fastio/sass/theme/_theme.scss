@@ -19,9 +19,11 @@
 			text-shadow: $h2o-text-shadow;
 		}
 		h1{
+			margin: 0;
+			padding: 0;
 			margin-top: -1.5rem;
 			font-size: 3rem;
-			line-height: 3.2rem;
+			line-height: 2.2rem;
 		}
 	}
 	button.fastio-btn-scroll-down{
@@ -385,9 +387,9 @@ nav.navbar.fixed-top{
 // Home Title
 .fastio-home-title{
 	text-align:center;
-	margin: -2rem 0 0;
-	padding-top:50vh;
-	color:white;
+	margin: -2rem 0 0 0;
+	padding: 50vh 0 0 0;
+	color: white;
 	font-size: 4rem;
 	line-height: 3.2rem;
 	text-shadow: $h2o-text-shadow;

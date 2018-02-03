@@ -10473,8 +10473,8 @@ nav.navbar.fixed-top {
 
 .fastio-home-title {
   text-align: center;
-  margin: -2rem 0 0;
-  padding-top: 50vh;
+  margin: -2rem 0 0 0;
+  padding: 50vh 0 0 0;
   color: white;
   font-size: 4rem;
   line-height: 3.2rem;
@@ -10592,9 +10592,11 @@ body.page-template-a-nossa-agua .fastio-hero {
       color: white;
       text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
     body.page-template-a-nossa-agua .fastio-hero header h1 {
+      margin: 0;
+      padding: 0;
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.2rem; }
+      line-height: 2.2rem; }
   body.page-template-a-nossa-agua .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10665,9 +10667,11 @@ body.page-template-a-nossa-agua .fastio-hero-2 {
       color: white;
       text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
     body.page-template-a-nossa-agua .fastio-hero-2 header h1 {
+      margin: 0;
+      padding: 0;
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.2rem; }
+      line-height: 2.2rem; }
   body.page-template-a-nossa-agua .fastio-hero-2 button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10720,9 +10724,11 @@ body.page-template-a-familia .fastio-video-hero {
       color: white;
       text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
     body.page-template-a-familia .fastio-video-hero header h1 {
+      margin: 0;
+      padding: 0;
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.2rem; }
+      line-height: 2.2rem; }
   body.page-template-a-familia .fastio-video-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10806,9 +10812,11 @@ body.page-template-a-familia .fastio-hero-3 {
       color: white;
       text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
     body.page-template-a-familia .fastio-hero-3 header h1 {
+      margin: 0;
+      padding: 0;
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.2rem; }
+      line-height: 2.2rem; }
   body.page-template-a-familia .fastio-hero-3 button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10851,9 +10859,11 @@ body.page-template-fastio-go .fastio-video-hero {
       color: white;
       text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
     body.page-template-fastio-go .fastio-video-hero header h1 {
+      margin: 0;
+      padding: 0;
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.2rem; }
+      line-height: 2.2rem; }
   body.page-template-fastio-go .fastio-video-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10949,9 +10959,11 @@ body.page-template-fastio-go .fastio-hero {
       color: white;
       text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
     body.page-template-fastio-go .fastio-hero header h1 {
+      margin: 0;
+      padding: 0;
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.2rem; }
+      line-height: 2.2rem; }
   body.page-template-fastio-go .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -11007,9 +11019,11 @@ body.page-template-explore-o-geres .fastio-hero {
       color: white;
       text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
     body.page-template-explore-o-geres .fastio-hero header h1 {
+      margin: 0;
+      padding: 0;
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.2rem; }
+      line-height: 2.2rem; }
   body.page-template-explore-o-geres .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -11118,9 +11132,11 @@ body.page-template-explore-o-geres-subpages .fastio-hero {
       color: white;
       text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
     body.page-template-explore-o-geres-subpages .fastio-hero header h1 {
+      margin: 0;
+      padding: 0;
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.2rem; }
+      line-height: 2.2rem; }
   body.page-template-explore-o-geres-subpages .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -11218,9 +11234,11 @@ body.page-template-default .fastio-hero {
       color: white;
       text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
     body.page-template-default .fastio-hero header h1 {
+      margin: 0;
+      padding: 0;
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.2rem; }
+      line-height: 2.2rem; }
   body.page-template-default .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
