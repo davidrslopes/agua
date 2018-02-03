@@ -10219,84 +10219,90 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 /* ############################## MIXINS ############################## */
 /* ############################## COMMON ############################## */
-.fastio-nav {
-  margin-bottom: 52px; }
-  .fastio-nav button.btn.dropdown-toggle {
-    cursor: pointer;
-    font-weight: 400;
-    font-size: 1.2rem;
-    color: #00aeef;
-    background-color: transparent;
-    text-decoration: none;
-    border-color: transparent;
-    box-shadow: none;
-    padding: 0 10px;
-    text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
-    .fastio-nav button.btn.dropdown-toggle::after {
-      transition: all 250ms ease-in;
-      -webkit-transform: rotate(-90deg);
-      -moz-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-      -o-transform: rotate(-90deg);
-      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-      background: #00aeef;
-      border: 0;
-      vertical-align: -1px;
-      content: " ";
-      transform-origin: left center;
-      text-align: left;
-      transform-style: preserve-3D;
-      height: 14px;
-      width: 2px;
-      display: inline-block;
-      padding: 0;
-      margin: 0;
-      margin-left: 7px;
-      box-shadow: -0.06em 0em 0.06em 0em rgba(83, 83, 83, 0.66); }
-  .fastio-nav.show > button.btn.dropdown-toggle {
-    text-decoration: none;
-    border-color: transparent;
-    box-shadow: none; }
-    .fastio-nav.show > button.btn.dropdown-toggle::after {
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-      box-shadow: 0em 0.06em 0.06em 0em rgba(83, 83, 83, 0.66); }
-  .fastio-nav .dropdown-menu {
-    background-color: transparent;
+.fastio-nav button.btn.dropdown-toggle {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #00aeef;
+  background-color: transparent;
+  text-decoration: none;
+  border-color: transparent;
+  box-shadow: none;
+  padding: 0 5px 0 0;
+  margin: 0;
+  border: 0;
+  line-height: 1rem;
+  text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
+  .fastio-nav button.btn.dropdown-toggle::after {
+    transition: all 250ms ease-in;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    background: #00aeef;
     border: 0;
+    vertical-align: -1px;
+    content: " ";
+    transform-origin: left center;
+    text-align: left;
+    transform-style: preserve-3D;
+    height: 14px;
+    width: 2px;
+    display: inline-block;
     padding: 0;
     margin: 0;
-    text-align: right;
-    left: inherit;
-    right: 24px; }
-    .fastio-nav .dropdown-menu a {
-      background-color: transparent;
-      color: #00aeef;
-      padding: 0;
-      margin: 0;
-      text-transform: uppercase;
-      text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
-      .fastio-nav .dropdown-menu a:hover, .fastio-nav .dropdown-menu a:focus, .fastio-nav .dropdown-menu a.hover, .fastio-nav .dropdown-menu a.focus {
-        color: #b2eaff; }
-  .fastio-nav.show > .dropdown-menu {
-    animation-name: slidenavAnimation;
-    animation-duration: 250ms;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-    -webkit-animation-name: slidenavAnimation;
-    -webkit-animation-duration: 250ms;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-name: slidenavAnimation;
-    -moz-animation-duration: 250ms;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-in;
-    -moz-animation-fill-mode: forwards; }
+    margin-left: 7px;
+    box-shadow: -0.06em 0em 0.06em 0em rgba(83, 83, 83, 0.66); }
+
+.fastio-nav.show > button.btn.dropdown-toggle {
+  text-decoration: none;
+  border-color: transparent;
+  box-shadow: none; }
+  .fastio-nav.show > button.btn.dropdown-toggle::after {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    box-shadow: 0em 0.06em 0.06em 0em rgba(83, 83, 83, 0.66); }
+
+.fastio-nav .dropdown-menu {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  text-align: right;
+  left: inherit;
+  right: 19px; }
+  .fastio-nav .dropdown-menu a {
+    background-color: transparent;
+    color: #00aeef;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
+    .fastio-nav .dropdown-menu a:hover, .fastio-nav .dropdown-menu a:focus, .fastio-nav .dropdown-menu a.hover, .fastio-nav .dropdown-menu a.focus {
+      color: #b2eaff; }
+
+.fastio-nav.show > .dropdown-menu {
+  animation-name: slidenavAnimation;
+  animation-duration: 250ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: slidenavAnimation;
+  -webkit-animation-duration: 250ms;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slidenavAnimation;
+  -moz-animation-duration: 250ms;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-fill-mode: forwards; }
 
 @keyframes slidenavAnimation {
   from {
@@ -10471,7 +10477,7 @@ nav.navbar.fixed-top {
   padding-top: 50vh;
   color: white;
   font-size: 4rem;
-  line-height: 4.5rem;
+  line-height: 3.2rem;
   text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
 
 /* ############################## HISTORIA FASTIO ############################## */
@@ -10588,7 +10594,7 @@ body.page-template-a-nossa-agua .fastio-hero {
     body.page-template-a-nossa-agua .fastio-hero header h1 {
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.5rem; }
+      line-height: 3.2rem; }
   body.page-template-a-nossa-agua .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10659,7 +10665,7 @@ body.page-template-a-nossa-agua .fastio-hero-2 {
     body.page-template-a-nossa-agua .fastio-hero-2 header h1 {
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.5rem; }
+      line-height: 3.2rem; }
   body.page-template-a-nossa-agua .fastio-hero-2 button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10712,7 +10718,7 @@ body.page-template-a-familia .fastio-video-hero {
     body.page-template-a-familia .fastio-video-hero header h1 {
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.5rem; }
+      line-height: 3.2rem; }
   body.page-template-a-familia .fastio-video-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10796,7 +10802,7 @@ body.page-template-a-familia .fastio-hero-3 {
     body.page-template-a-familia .fastio-hero-3 header h1 {
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.5rem; }
+      line-height: 3.2rem; }
   body.page-template-a-familia .fastio-hero-3 button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10839,7 +10845,7 @@ body.page-template-fastio-go .fastio-video-hero {
     body.page-template-fastio-go .fastio-video-hero header h1 {
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.5rem; }
+      line-height: 3.2rem; }
   body.page-template-fastio-go .fastio-video-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10935,7 +10941,7 @@ body.page-template-fastio-go .fastio-hero {
     body.page-template-fastio-go .fastio-hero header h1 {
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.5rem; }
+      line-height: 3.2rem; }
   body.page-template-fastio-go .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10991,7 +10997,7 @@ body.page-template-explore-o-geres .fastio-hero {
     body.page-template-explore-o-geres .fastio-hero header h1 {
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.5rem; }
+      line-height: 3.2rem; }
   body.page-template-explore-o-geres .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -11100,7 +11106,7 @@ body.page-template-explore-o-geres-subpages .fastio-hero {
     body.page-template-explore-o-geres-subpages .fastio-hero header h1 {
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.5rem; }
+      line-height: 3.2rem; }
   body.page-template-explore-o-geres-subpages .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -11198,7 +11204,7 @@ body.page-template-default .fastio-hero {
     body.page-template-default .fastio-hero header h1 {
       margin-top: -1.5rem;
       font-size: 3rem;
-      line-height: 3.5rem; }
+      line-height: 3.2rem; }
   body.page-template-default .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
