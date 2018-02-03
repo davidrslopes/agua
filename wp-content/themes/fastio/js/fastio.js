@@ -185,10 +185,14 @@ jQuery( function($) {
 	var debug = true; //Turn this of when in production.
 	
 	//AOS
-	if($('body').hasClass('page-template-historiafastio') || $('body').hasClass('page-template-hot-wheels-subpages') || $('body').hasClass('page-template-barbie-subpages')){
+	if($('body').hasClass('page-template-historiafastio') ||
+          $('body').hasClass('page-template-hot-wheels-subpages') || 
+          $('body').hasClass('page-template-barbie-subpages')) ||
+          $('body').hasClass('page-template-fastio-go'))
+        {
 		AOS.init();
 	}
-        
+        //Go to the correct Tab Link -Pages Contactos , Politicas , Avisos
         if($('body').hasClass('page-template-default')){
 		var hash = window.location.hash;
                 hash && $('#list-tab a[href="' + hash + '"]').tab('show');
