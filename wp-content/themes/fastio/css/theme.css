@@ -10599,14 +10599,16 @@ body.page-template-a-nossa-agua .fastio-hero {
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    font-size: 90%;
+    line-height: 0;
     text-decoration: none;
-    transition: all 250ms ease-in; }
+    transition: all 250ms ease-in;
+    border: 0;
+    padding: 0 0 2rem 0; }
     body.page-template-a-nossa-agua .fastio-hero button.fastio-btn-scroll-down i.fa {
       display: block;
-      font-size: 250%;
-      line-height: 0px;
-      padding: 10px 0;
+      font-size: 2.25rem;
+      line-height: 1rem;
+      padding: 0;
       text-decoration: none; }
     body.page-template-a-nossa-agua .fastio-hero button.fastio-btn-scroll-down:hover {
       text-decoration: none;
@@ -10670,14 +10672,16 @@ body.page-template-a-nossa-agua .fastio-hero-2 {
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    font-size: 90%;
+    line-height: 0;
     text-decoration: none;
-    transition: all 250ms ease-in; }
+    transition: all 250ms ease-in;
+    border: 0;
+    padding: 0 0 2rem 0; }
     body.page-template-a-nossa-agua .fastio-hero-2 button.fastio-btn-scroll-down i.fa {
       display: block;
-      font-size: 250%;
-      line-height: 0px;
-      padding: 10px 0;
+      font-size: 2.25rem;
+      line-height: 1rem;
+      padding: 0;
       text-decoration: none; }
     body.page-template-a-nossa-agua .fastio-hero-2 button.fastio-btn-scroll-down:hover {
       text-decoration: none;
@@ -10723,14 +10727,16 @@ body.page-template-a-familia .fastio-video-hero {
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    font-size: 90%;
+    line-height: 0;
     text-decoration: none;
-    transition: all 250ms ease-in; }
+    transition: all 250ms ease-in;
+    border: 0;
+    padding: 0 0 2rem 0; }
     body.page-template-a-familia .fastio-video-hero button.fastio-btn-scroll-down i.fa {
       display: block;
-      font-size: 250%;
-      line-height: 0px;
-      padding: 10px 0;
+      font-size: 2.25rem;
+      line-height: 1rem;
+      padding: 0;
       text-decoration: none; }
     body.page-template-a-familia .fastio-video-hero button.fastio-btn-scroll-down:hover {
       text-decoration: none;
@@ -10807,14 +10813,16 @@ body.page-template-a-familia .fastio-hero-3 {
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    font-size: 90%;
+    line-height: 0;
     text-decoration: none;
-    transition: all 250ms ease-in; }
+    transition: all 250ms ease-in;
+    border: 0;
+    padding: 0 0 2rem 0; }
     body.page-template-a-familia .fastio-hero-3 button.fastio-btn-scroll-down i.fa {
       display: block;
-      font-size: 250%;
-      line-height: 0px;
-      padding: 10px 0;
+      font-size: 2.25rem;
+      line-height: 1rem;
+      padding: 0;
       text-decoration: none; }
     body.page-template-a-familia .fastio-hero-3 button.fastio-btn-scroll-down:hover {
       text-decoration: none;
@@ -10850,14 +10858,16 @@ body.page-template-fastio-go .fastio-video-hero {
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    font-size: 90%;
+    line-height: 0;
     text-decoration: none;
-    transition: all 250ms ease-in; }
+    transition: all 250ms ease-in;
+    border: 0;
+    padding: 0 0 2rem 0; }
     body.page-template-fastio-go .fastio-video-hero button.fastio-btn-scroll-down i.fa {
       display: block;
-      font-size: 250%;
-      line-height: 0px;
-      padding: 10px 0;
+      font-size: 2.25rem;
+      line-height: 1rem;
+      padding: 0;
       text-decoration: none; }
     body.page-template-fastio-go .fastio-video-hero button.fastio-btn-scroll-down:hover {
       text-decoration: none;
@@ -10946,14 +10956,16 @@ body.page-template-fastio-go .fastio-hero {
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    font-size: 90%;
+    line-height: 0;
     text-decoration: none;
-    transition: all 250ms ease-in; }
+    transition: all 250ms ease-in;
+    border: 0;
+    padding: 0 0 2rem 0; }
     body.page-template-fastio-go .fastio-hero button.fastio-btn-scroll-down i.fa {
       display: block;
-      font-size: 250%;
-      line-height: 0px;
-      padding: 10px 0;
+      font-size: 2.25rem;
+      line-height: 1rem;
+      padding: 0;
       text-decoration: none; }
     body.page-template-fastio-go .fastio-hero button.fastio-btn-scroll-down:hover {
       text-decoration: none;
@@ -11002,14 +11014,16 @@ body.page-template-explore-o-geres .fastio-hero {
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    font-size: 90%;
+    line-height: 0;
     text-decoration: none;
-    transition: all 250ms ease-in; }
+    transition: all 250ms ease-in;
+    border: 0;
+    padding: 0 0 2rem 0; }
     body.page-template-explore-o-geres .fastio-hero button.fastio-btn-scroll-down i.fa {
       display: block;
-      font-size: 250%;
-      line-height: 0px;
-      padding: 10px 0;
+      font-size: 2.25rem;
+      line-height: 1rem;
+      padding: 0;
       text-decoration: none; }
     body.page-template-explore-o-geres .fastio-hero button.fastio-btn-scroll-down:hover {
       text-decoration: none;
@@ -11111,14 +11125,16 @@ body.page-template-explore-o-geres-subpages .fastio-hero {
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    font-size: 90%;
+    line-height: 0;
     text-decoration: none;
-    transition: all 250ms ease-in; }
+    transition: all 250ms ease-in;
+    border: 0;
+    padding: 0 0 2rem 0; }
     body.page-template-explore-o-geres-subpages .fastio-hero button.fastio-btn-scroll-down i.fa {
       display: block;
-      font-size: 250%;
-      line-height: 0px;
-      padding: 10px 0;
+      font-size: 2.25rem;
+      line-height: 1rem;
+      padding: 0;
       text-decoration: none; }
     body.page-template-explore-o-geres-subpages .fastio-hero button.fastio-btn-scroll-down:hover {
       text-decoration: none;
@@ -11209,14 +11225,16 @@ body.page-template-default .fastio-hero {
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    font-size: 90%;
+    line-height: 0;
     text-decoration: none;
-    transition: all 250ms ease-in; }
+    transition: all 250ms ease-in;
+    border: 0;
+    padding: 0 0 2rem 0; }
     body.page-template-default .fastio-hero button.fastio-btn-scroll-down i.fa {
       display: block;
-      font-size: 250%;
-      line-height: 0px;
-      padding: 10px 0;
+      font-size: 2.25rem;
+      line-height: 1rem;
+      padding: 0;
       text-decoration: none; }
     body.page-template-default .fastio-hero button.fastio-btn-scroll-down:hover {
       text-decoration: none;
