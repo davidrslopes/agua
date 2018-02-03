@@ -153,9 +153,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div></div>
         </div>
         <div class="row">
+            <div data-aos="fade-up-right" data-aos-duration="3000">
             <?php $image4 = wp_get_attachment_image_src(get_field('seccao_4_imagem_esquerda_1'), 'full'); ?>
             <img src="<?php echo $image4[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_esquerda_1')) ?>" class="img-responsive" style="margin-top: -285px;">
-            
+            </div>
             <div data-aos="fade-down-right" data-aos-duration="3000">
             <?php $imagesection4bottom = wp_get_attachment_image_src(get_field('seccao_4_imagem_3'), 'full'); ?>
             <img src="<?php echo $imagesection4bottom[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_3')) ?>" class="img-responsive">  
@@ -163,6 +164,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             
         </div>  
     </section>
+    <div data-aos="fade-up" data-aos-duration="3000">
     <section id="seccao5" style="margin-bottom:-60px;">
      <div class="<?php echo esc_attr( $container ); ?>" id="content">
                 <main class="site-main row" id="main" role="main">
@@ -188,7 +190,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                     </div>
                     <div class="col-md-5">
-                    <div data-aos="fade-down-left" data-aos-duration="3000">
+                    <div data-aos="fade-up" data-aos-duration="3000">
                         <?php $image7 = wp_get_attachment_image_src(get_field('seccao_5_imagem_2'), 'full'); ?>
                         <img src="<?php echo $image7[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_5_imagem_2')) ?>" class="img-responsive">  
                     </div>
@@ -200,7 +202,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                     </div>
                 </div><!-- .row end -->
-    </section>  
+    </section></div>
        <?php
 	if( have_rows('historia-section-6') ): 
 		$links_count = count(get_field('historia-section-6'));
