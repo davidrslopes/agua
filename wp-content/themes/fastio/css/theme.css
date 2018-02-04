@@ -10994,24 +10994,33 @@ body.page-template-fastio-go .fastio-hero {
       color: white; }
     body.page-template-fastio-go .fastio-hero button.fastio-btn-scroll-down p {
       font-size: 0.8rem; }
+  body.page-template-fastio-go .fastio-hero h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 2.5rem; }
 
 body.page-template-fastio-go .fastio-go-workout {
   display: block;
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-position: top center;
+  margin-top: 6rem; }
   body.page-template-fastio-go .fastio-go-workout .inner-hero {
     padding-top: 18rem;
     height: 34rem; }
-  body.page-template-fastio-go .fastio-go-workout .fastio-workout .img-thumbnail {
-    border-radius: 0;
-    border-color: #b2eaff; }
-  body.page-template-fastio-go .fastio-go-workout .fastio-workout a {
-    text-decoration: none; }
-  body.page-template-fastio-go .fastio-go-workout .fastio-workout h6, body.page-template-fastio-go .fastio-go-workout .fastio-workout i {
-    color: #006fba;
-    font-size: 0.8rem; }
-  body.page-template-fastio-go .fastio-go-workout .fastio-workout h6 {
-    margin: 1.5rem 0 0 0; }
+  body.page-template-fastio-go .fastio-go-workout .fastio-workout {
+    margin-bottom: 3rem; }
+    body.page-template-fastio-go .fastio-go-workout .fastio-workout .img-thumbnail {
+      border-radius: 0;
+      borde: 0; }
+    body.page-template-fastio-go .fastio-go-workout .fastio-workout a {
+      text-decoration: none; }
+    body.page-template-fastio-go .fastio-go-workout .fastio-workout h6, body.page-template-fastio-go .fastio-go-workout .fastio-workout i {
+      color: #006fba;
+      font-size: 0.8rem; }
+    body.page-template-fastio-go .fastio-go-workout .fastio-workout h6 {
+      margin: 1.5rem 0 0 0; }
+    body.page-template-fastio-go .fastio-go-workout .fastio-workout .fastio-download {
+      height: 16px; }
 
 /* ############################## EXPLORE O GERÊS ############################## */
 body.page-template-explore-o-geres .fastio-hero {

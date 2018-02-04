@@ -48,7 +48,7 @@ if(!empty($hero_1)):
 	$bottle = get_field('fastio-go-section-2');
 	if(!empty($bottle)):
 ?>
-<div data-aos="fade-up">
+<div data-aos="fade">
 <section class="fastio-go-bottle">
 	<div class="container">
 		<div class="row no-gutters">
@@ -95,12 +95,12 @@ if(!empty($hero_1)):
 	<?php if(!empty($hero_1['title'])): ?>
 	<div class="container">
 		<div class="row">
-			<header class="fastio-hero-header col-3 text-center">
-                            <div data-aos="fade-up">
-				<?php if(!empty($hero_1['img'])): ?><img class="img-fluid" src="<?php echo $hero_1['img']['url']; ?>" title="<?php echo $hero_1['img']['title']; ?>" alt="<?php echo $hero_1['img']['title']; ?>"><?php endif; ?>
-				<?php if(!empty($hero_1['title'])): ?><h1<?php if(!empty($hero_1['title-color'])){ echo ' style="color:'.$hero_1['title-color'].';"';} ?>><?php echo $hero_1['title'];?></h1><?php endif; ?> 
-                            </div>
-                        </header>
+			<header class="fastio-hero-header col-3 offset-1">
+				<div data-aos="fade-up">
+			<?php if(!empty($hero_1['img'])): ?><img class="img-fluid" src="<?php echo $hero_1['img']['url']; ?>" title="<?php echo $hero_1['img']['title']; ?>" alt="<?php echo $hero_1['img']['title']; ?>"><?php endif; ?>
+			<?php if(!empty($hero_1['title'])): ?><h2<?php if(!empty($hero_1['title-color'])){ echo ' style="color:'.$hero_1['title-color'].';"';} ?>><?php echo $hero_1['title'];?></h2><?php endif; ?> 
+				</div>
+			</header>
 		</div>
 	</div>
 	<?php endif; ?>
@@ -122,7 +122,7 @@ if(!empty($workout)):
 					<div class="row">
 						<?php if(!empty($workout['img'])): ?>
 						<div class="col-3">
-							<img class="img-fluid" src="<?php echo $workout['img']['url']; ?>" title="<?php echo $workout['img']['title']; ?>" alt="<?php echo $workout['img']['title']; ?>">
+							<img class="img-fluid" src="<?php echo $workout['img']['url']; ?>" title="<?php echo $workout['img']['title']; ?>" alt="<?php echo $workout['img']['title']; ?>" loop=infinite>
 						</div>
 						<?php endif; ?>
 						<div class="col-5">
@@ -151,7 +151,7 @@ if(!empty($workout)):
 							<a href="<?php echo $go_workout_file['url']; ?>" target="_blank">
 							<?php endif; ?>
 								<h6><?php the_sub_field('title'); ?></h6>
-								<i class="fa fa-download"></i>
+								<img class="fastio-download" src="<?php echo get_template_directory_uri()."/img/icone-download.png" ?>" alt="Download">
 							<?php if(!empty($go_workout_file)): ?></a><?php endif; ?>
 						</article>
 					</div>
@@ -170,40 +170,44 @@ if(!empty($fastio_go_social)):
 <div data-aos="fade-up">
 <section class="fastio-go-social">
 	<div class="row no-gutters">
-		<div class="col-5 bg-primary">
+		<div class="col-5">
 			<?php if(!empty($fastio_go_social['img-big'])): ?>
 			<img class="img-fluid" src="<?php echo $fastio_go_social['img-big']['url']; ?>" title="<?php echo $fastio_go_social['img-big']['title']; ?>" alt="<?php echo $fastio_go_social['img-big']['title']; ?>">
 			<?php endif; ?>
 		</div>
 		<div class="col-7">
 			<div class="row no-gutters">
-				<div class="col-4 bg-warning text-center vertical-center">
-					<?php if(!empty($fastio_go_social['tweet-1'])): ?><h5 class="text-primary"><?php echo $fastio_go_social['tweet-1'];?></h5><?php endif; ?>
-				</div>
-				<div class="col-4 bg-primary">
+				<div class="col-4">
 					<?php if(!empty($fastio_go_social['img-1'])): ?>
 					<img class="img-fluid" src="<?php echo $fastio_go_social['img-1']['url']; ?>" title="<?php echo $fastio_go_social['img-1']['title']; ?>" alt="<?php echo $fastio_go_social['img-1']['title']; ?>">
 					<?php endif; ?>
 				</div>
-				<div class="col-4 bg-primary">
+				<div class="col-4">
 					<?php if(!empty($fastio_go_social['img-2'])): ?>
 					<img class="img-fluid" src="<?php echo $fastio_go_social['img-2']['url']; ?>" title="<?php echo $fastio_go_social['img-2']['title']; ?>" alt="<?php echo $fastio_go_social['img-2']['title']; ?>">
 					<?php endif; ?>
 				</div>
-			</div>
-			<div class="row no-gutters">
-				<div class="col-4 bg-primary">
+				<div class="col-4">
 					<?php if(!empty($fastio_go_social['img-3'])): ?>
 					<img class="img-fluid" src="<?php echo $fastio_go_social['img-3']['url']; ?>" title="<?php echo $fastio_go_social['img-3']['title']; ?>" alt="<?php echo $fastio_go_social['img-3']['title']; ?>">
 					<?php endif; ?>
 				</div>
-				<div class="col-4 bg-primary">
+			</div>
+			<div class="row no-gutters">
+				<div class="col-4">
 					<?php if(!empty($fastio_go_social['img-4'])): ?>
 					<img class="img-fluid" src="<?php echo $fastio_go_social['img-4']['url']; ?>" title="<?php echo $fastio_go_social['img-4']['title']; ?>" alt="<?php echo $fastio_go_social['img-4']['title']; ?>">
 					<?php endif; ?>
 				</div>
-				<div class="col-4 bg-warning text-center vertical-center">
-					<?php if(!empty($fastio_go_social['tweet-2'])): ?><h5 class="text-primary"><?php echo $fastio_go_social['tweet-2'];?></h5><?php endif; ?>
+				<div class="col-4">
+					<?php if(!empty($fastio_go_social['img-5'])): ?>
+					<img class="img-fluid" src="<?php echo $fastio_go_social['img-5']['url']; ?>" title="<?php echo $fastio_go_social['img-5']['title']; ?>" alt="<?php echo $fastio_go_social['img-5']['title']; ?>">
+					<?php endif; ?>
+				</div>
+				<div class="col-4">
+					<?php if(!empty($fastio_go_social['img-6'])): ?>
+					<img class="img-fluid" src="<?php echo $fastio_go_social['img-6']['url']; ?>" title="<?php echo $fastio_go_social['img-6']['title']; ?>" alt="<?php echo $fastio_go_social['img-6']['title']; ?>">
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>

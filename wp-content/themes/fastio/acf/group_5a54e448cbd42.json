@@ -571,25 +571,6 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_5a57ce70d60af",
-                    "label": "Texto Topo",
-                    "name": "tweet-1",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
                     "key": "field_5a57ceb7d60b0",
                     "label": "Imagem 1",
                     "name": "img-1",
@@ -686,10 +667,10 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_5a57ceffd60b4",
-                    "label": "Texto Fundo",
-                    "name": "tweet-2",
-                    "type": "text",
+                    "key": "field_5a778148d007d",
+                    "label": "Imagem 5",
+                    "name": "img-5",
+                    "type": "image",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -698,11 +679,40 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5a778158d007e",
+                    "label": "Imagem 6",
+                    "name": "img-6",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
         }
@@ -739,5 +749,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1517537978
+    "modified": 1517781427
 }

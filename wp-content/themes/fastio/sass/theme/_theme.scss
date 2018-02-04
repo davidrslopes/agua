@@ -706,11 +706,19 @@ body.page-template-fastio-go{
 			padding-top: 33vh; //check if this is responsive and Xbrowser
 		}
 	}
-	.fastio-hero{ @include fastio-hero('../img/imagemGO_2.jpg'); }
+	.fastio-hero{
+		@include fastio-hero('../img/imagemGO_2.jpg');
+		h2{
+			padding: 0;
+			margin: 0;
+			font-size: 2.5rem;
+		}
+	}
 	.fastio-go-workout{
 		display: block;
 		background-repeat: no-repeat;
 		background-position: top center;
+		margin-top: 6rem;
 		.inner-hero{
 			padding-top:18rem;
 			height:34rem;
@@ -719,9 +727,10 @@ body.page-template-fastio-go{
 			//margin-top: -80px;
 		}
 		.fastio-workout{
+			margin-bottom: 3rem;
 			.img-thumbnail{
 				border-radius:0;
-				border-color:$h2o-light-blue;
+				borde:0;
 			}
 			a{
 				text-decoration: none;
@@ -734,10 +743,10 @@ body.page-template-fastio-go{
 			h6{
 				margin: 1.5rem 0 0 0;
 			}
+			.fastio-download{
+				height:16px;
+			}
 		}
-	}
-	.fastio-go-social{
-			
 	}
 }
 /* ############################## EXPLORE O GERÊS ############################## */
