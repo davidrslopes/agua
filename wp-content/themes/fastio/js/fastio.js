@@ -194,7 +194,7 @@ jQuery( function($) {
 		AOS.init({
 			offset: 0,
 			duration: 1000,
-			easing: 'ease-in-sine',
+			easing: 'ease-in-out-sine',
 			delay: 0,
 		});
 	}
