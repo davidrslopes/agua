@@ -9,7 +9,6 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	//background-attachment: fixed;
 	height:100vh; //check if this is responsive and Xbrowser
 	display: block;
 	header{
@@ -45,6 +44,9 @@
 		&:hover{
 			text-decoration: none;
 			color:white;
+		}
+		p{
+			font-size: 0.8rem;
 		}
 	}
 }

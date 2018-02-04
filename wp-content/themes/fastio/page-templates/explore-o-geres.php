@@ -24,7 +24,12 @@ if(!empty($hero_1)):
 		</div>
 	</div>
 	<?php endif; ?>
-	<?php if(!empty($hero_1['arrow'])): ?><button class="btn btn-link btn-block fastio-btn-scroll-down"<?php if(!empty($hero_1['arrow-color'])){ echo ' style="color:'.$hero_1['arrow-color'].';"';} ?>><i class="fa fa-angle-down"></i></button><?php endif; ?>
+	<?php if(!empty($hero_1['arrow'])): ?>
+	<button class="btn btn-link btn-block fastio-btn-scroll-down"<?php if(!empty($hero_1['arrow-color'])){ echo ' style="color:'.$hero_1['arrow-color'].';"';} ?>>
+		<?php if(!empty($hero_1['arrow-title'])): ?><p><?php echo $hero_1['arrow-title']; ?></p><?php endif; ?>
+		<i class="fa fa-angle-down"></i>
+	</button>
+	<?php endif; ?>
 </section><!-- .fastio-hero -->
 <?php endif; ?>
 
