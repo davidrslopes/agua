@@ -747,7 +747,12 @@ body.page-template-explore-o-geres{
 		display: block;
 		background: $h2o-light-blue;
 		width:100%;
-		height:300px;
+		.carousel, .carousel-item{
+			height:300px;
+		}
+		.carousel-item{
+			padding-top:25px;
+		}
 		.carousel-control-next, .carousel-control-prev{
 			width: 100px;
 		}
@@ -755,7 +760,10 @@ body.page-template-explore-o-geres{
 			color:white;
 			text-decoration: none;
 			font-size: 0.8rem;
+			line-height: 0.8rem;
 			font-weight: normal;
+			margin: 0;
+			
 		}
 	}
 	.fastio-map{

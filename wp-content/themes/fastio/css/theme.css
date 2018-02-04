@@ -11060,15 +11060,20 @@ body.page-template-explore-o-geres .fastio-hero {
 body.page-template-explore-o-geres .fastio-places {
   display: block;
   background: #b2eaff;
-  width: 100%;
-  height: 300px; }
+  width: 100%; }
+  body.page-template-explore-o-geres .fastio-places .carousel, body.page-template-explore-o-geres .fastio-places .carousel-item {
+    height: 300px; }
+  body.page-template-explore-o-geres .fastio-places .carousel-item {
+    padding-top: 25px; }
   body.page-template-explore-o-geres .fastio-places .carousel-control-next, body.page-template-explore-o-geres .fastio-places .carousel-control-prev {
     width: 100px; }
   body.page-template-explore-o-geres .fastio-places p, body.page-template-explore-o-geres .fastio-places a {
     color: white;
     text-decoration: none;
     font-size: 0.8rem;
-    font-weight: normal; }
+    line-height: 0.8rem;
+    font-weight: normal;
+    margin: 0; }
 
 body.page-template-explore-o-geres .fastio-map {
   display: block;

@@ -42,7 +42,7 @@ if( !empty( $subpages ) ): ?>
 <!-- ******************* The Places Display Section ******************* -->
 <section class="fastio-places">
 	<div id="fastio-places-slide" class="carousel slide" data-ride="carousel" data-interval="9000">
-		<div class="carousel-inner row w-80 mx-auto" role="listbox">
+		<div class="conteiner carousel-inner row mx-auto" role="listbox">
 <?php
 	$total = count($subpages);
 	$i = 0;
