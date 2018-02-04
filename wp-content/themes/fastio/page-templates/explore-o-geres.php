@@ -40,8 +40,8 @@ $args = array(
 $subpages = get_pages($args);
 if( !empty( $subpages ) ): ?>
 <!-- ******************* The Places Display Section ******************* -->
-<section class="fastio-places">
-	<div id="fastio-places-slide" class="carousel slide" data-ride="carousel" data-interval="9000">
+<section class="fastio-places" data-aos="fade">
+	<div id="fastio-places-slide" class="carousel slide" data-ride="carousel" data-interval="9000" data-aos="zoom-in">
 		<div class="conteiner carousel-inner row mx-auto" role="listbox">
 <?php
 	$total = count($subpages);
@@ -88,7 +88,7 @@ $args = array(
 $subpages = get_pages($args);
 if( !empty( $subpages ) ): ?>
 <!-- ******************* The Map Section ******************* -->
-<section class="fastio-map">
+<section class="fastio-map" data-aos="fade-up">
 	<div id="map"></div>
 </section>
 <script>

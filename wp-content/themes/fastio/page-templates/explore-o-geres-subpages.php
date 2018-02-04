@@ -39,7 +39,7 @@ if(!empty($location)):
 	<div class="row no-gutters">
 		<div class="fastio-location-feature  col-10">
 			<?php if(!empty($location['video'])): ?>
-			<div class="embed-responsive embed-responsive-16by9">
+			<div class="embed-responsive embed-responsive-16by9" data-aos="fade-up">
 				<video poster="<?php echo $location['fallback-img']['url'];?>" controls plays-inline style="background: url(<?php echo $location['fallback-img']['url'];?>) no-repeat;" >
 					<source src="<?php echo $location['video'];?>" type="video/mp4">
 					Your browser does not support the video tag.
@@ -50,7 +50,7 @@ if(!empty($location)):
 			<?php endif; ?>
 		</div>
 		<div class="fastio-location-content col-2">
-			<article>
+			<article data-aos="fade-left">
 				<h1><?php the_title();?></h1>
 				<p><?php echo $location['text'];?></p>
 				<div class="fastio-location-coordinates">
@@ -72,26 +72,26 @@ if(!empty($location)):
 $highlights = get_field('explore-o-geres-subpage-section-3');
 if(!empty($highlights)): ?>
 <!-- ******************* The Local Highlights Section ******************* -->
-<section class="fastio-highlights">
+<section class="fastio-highlights" data-aos="fade-up">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-2">
-				<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid">
+				<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" data-aos="fade-right">
 			</div>
 			<div class="col-3">
-				<article>
+				<article data-aos="fade-up-right">
 					<h3><?php echo $highlights['title']; ?></h3>
 					<p><?php echo $highlights['text-top']; ?></p>
 				</article>
 			</div>
 			<div class="col-6 offset-1">
-				<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid">
+				<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid" data-aos="fade-left">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-6">
-				<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid">
-				<article class="row">
+				<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" data-aos="fade-right">
+				<article class="row" data-aos="fade-up-right">
 					<div class="col-5">
 						<img src="<?php echo $highlights['svg-left-bottom']['url'];?>" alt="<?php echo $highlights['svg-left-bottom']['title'];?>" title="<?php echo $highlights['svg-left-bottom']['title'];?>" class="img-fluid">
 					</div>
@@ -101,8 +101,8 @@ if(!empty($highlights)): ?>
 				</article>
 			</div>
 			<div class="col-6">
-				<h2><?php echo $highlights['title-big']; ?></h2>
-				<img src="<?php echo $highlights['svg-right-bottom']['url'];?>" alt="<?php echo $highlights['svg-right-bottom']['title'];?>" title="<?php echo $highlights['svg-right-bottom']['title'];?>" class="img-fluid">
+				<h2 data-aos="fade-left"><?php echo $highlights['title-big']; ?></h2>
+				<img src="<?php echo $highlights['svg-right-bottom']['url'];?>" alt="<?php echo $highlights['svg-right-bottom']['title'];?>" title="<?php echo $highlights['svg-right-bottom']['title'];?>" class="img-fluid" data-aos="fade-up-left">
 			</div>
 		</div>
 	</div>
@@ -112,7 +112,7 @@ if(!empty($highlights)): ?>
 $fastio_360 = get_field('explore-o-geres-subpage-section-4');
 if(!empty($fastio_360)): ?>
 <!-- ******************* The 360 Foto Section ******************* -->
-<section class="fastio-360">
+<section class="fastio-360" data-aos="fade-up">
 	<div class="container-fluid">
 		<div class="row">
 			<?php if(!empty($fastio_360['fallback-img'])): ?>
@@ -128,6 +128,7 @@ if(!empty($fastio_360)): ?>
 			pannellum.viewer('panorama', {
 				"type": "equirectangular",
 				"compass": true,
+				"mouseZoom": false,
 				"panorama": "<?php echo $fastio_360['panorama']; ?>",
 				<?php if(!empty($fastio_360['panorama-preview'])){echo '"preview": "'.$fastio_360['panorama-preview'].'",';} ?>
 				<?php if(!empty($fastio_360['panorama-auto-rotate'])){echo '"autoRotate": -2,';} ?>
