@@ -185,30 +185,23 @@ jQuery( function($) {
 	var debug = false; //Turn this of when in production.
 	
 	//AOS
-	if($('body').hasClass('page-template-historiafastio') ||
-		$('body').hasClass('page-template-hot-wheels-subpages') || 
-		$('body').hasClass('page-template-barbie-subpages') ||
-		$('body').hasClass('page-template-fastio-go') ||
-		$('body').hasClass('page-template-a-nossa-agua')
-	){
-		AOS.init({
-			offset: 0,
-			duration: 1000,
-			easing: 'ease-in-out-sine',
-			delay: 0,
-		});
-	}
-        //Go to the correct Tab Link -Pages Contactos , Politicas , Avisos
-        if($('body').hasClass('page-template-default')){
+	AOS.init({
+		offset: 0,
+		duration: 1000,
+		easing: 'ease-in-out-sine',
+		delay: 0,
+	});
+	//Go to the correct Tab Link -Pages Contactos , Politicas , Avisos
+	if($('body').hasClass('page-template-default')){
 		var hash = window.location.hash;
-                hash && $('#list-tab a[href="' + hash + '"]').tab('show');
+		hash && $('#list-tab a[href="' + hash + '"]').tab('show');
 
-                $('#list-tab a').click(function (e) {
-                  $(this).tab('show');
-                  var scrollmem = $('body').scrollTop();
-                  window.location.hash = this.hash;
-                  $('html,body').scrollTop(scrollmem);
-                });
+		$('#list-tab a').click(function (e) {
+			$(this).tab('show');
+			var scrollmem = $('body').scrollTop();
+			window.location.hash = this.hash;
+			$('html,body').scrollTop(scrollmem);
+		});
 	}
 	
 	//MENU
