@@ -56,7 +56,7 @@ if(!empty($location)):
 				<div class="fastio-location-coordinates">
 					<img src="<?php echo get_template_directory_uri()."/img/icone-Coordenadas.png"; ?>" height="24" width="24" alt="">
 					<?php if(!empty($info['coordenadas-google'])): ?>
-					<a href="http://www.google.com/maps/place/<?php echo $info['coordenadas-google']; ?>">
+					<a href="http://www.google.com/maps/place/<?php echo $info['coordenadas-google']; ?>" target="_blank">
 						<?php echo $location['coordinates'];?>
 					</a>
 					<?php else: echo $location['coordinates']; endif; ?>
