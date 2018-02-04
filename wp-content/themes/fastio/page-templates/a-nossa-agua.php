@@ -113,7 +113,7 @@ if(!empty($hero_2)):
  		if($benefit_col<3) $benefit_col = 3;
 ?>
 <!-- ******************* The Fastio Benefits Section ******************* -->
-<section class="fastio-benefits">
+<section class="fastio-benefits" data-aos="fade-up">
 	<img class="ondas left" src="<?php echo get_template_directory_uri()."/img/onda_azul_a_nossa_agua-l.png" ?>" alt="onda azul l">
 	<div class="container">
 		<div class="row">

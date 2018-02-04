@@ -182,15 +182,21 @@
  */
 jQuery( function($) {
 	//OPTIONS
-	var debug = true; //Turn this of when in production.
+	var debug = false; //Turn this of when in production.
 	
 	//AOS
 	if($('body').hasClass('page-template-historiafastio') ||
-          $('body').hasClass('page-template-hot-wheels-subpages') || 
-          $('body').hasClass('page-template-barbie-subpages') ||
-          $('body').hasClass('page-template-fastio-go'))
-        {
-		AOS.init();
+		$('body').hasClass('page-template-hot-wheels-subpages') || 
+		$('body').hasClass('page-template-barbie-subpages') ||
+		$('body').hasClass('page-template-fastio-go') ||
+		$('body').hasClass('page-template-a-nossa-agua')
+	){
+		AOS.init({
+			offset: 0,
+			duration: 1000,
+			easing: 'ease-in-sine',
+			delay: 0,
+		});
 	}
         //Go to the correct Tab Link -Pages Contactos , Politicas , Avisos
         if($('body').hasClass('page-template-default')){
@@ -238,7 +244,7 @@ jQuery( function($) {
 	//GALLERY
 	if($('body').hasClass('page-template-a-nossa-agua')){
 		//LOAD FIRST IMAGE CAPTION
-		$('.gallery').each(function(){
+		/*$('.gallery').each(function(){
 			var first_caption_id = $(this).children('.gallery-item').first().find('img').attr('aria-describedby'),
 				gallery_caption = $(this).next('footer').children('p');
 			if(first_caption_id){
@@ -247,7 +253,7 @@ jQuery( function($) {
 			}else{
 				gallery_caption.hide();
 			}
-		});
+		});*/
 		
 		//GET IMAGE CLICKED AND SHOW CAPTION
 		$('.gallery-item').on( "click", function() {
