@@ -37,15 +37,11 @@ if(!empty($location)):
 <!-- ******************* The Location Section ******************* -->
 <section class="fastio-location">
 	<div class="row no-gutters">
-		<div class="fastio-location-feature  col-10">
-			<?php if(!empty($location['video'])): ?>
-			<div class="embed-responsive embed-responsive-16by9" data-aos="fade-up">
-				<video poster="<?php echo $location['fallback-img']['url'];?>" controls plays-inline style="background: url(<?php echo $location['fallback-img']['url'];?>) no-repeat;" >
-					<source src="<?php echo $location['video'];?>" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div>
-			<?php else: ?>
+		<div class="fastio-location-feature col-10">
+			<?php if(!empty($location['video'])):
+				$content_width = 1140;
+				echo do_shortcode(' [video src="'.$location['video'].'" poster="'. $location['fallback-img']['url'].'"] ');
+			else: ?>
 			<img src="<?php echo $location['fallback-img']['url'];?>" alt="<?php echo $location['fallback-img']['title'];?>" title="<?php echo $location['fallback-img']['title'];?>" class="fastio-location-image">
 			<?php endif; ?>
 		</div>

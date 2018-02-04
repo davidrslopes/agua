@@ -860,7 +860,19 @@ body.page-template-explore-o-geres-subpages{
 		.fastio-location-feature{
 			width: 80%;
 			img{}
-			video{}
+			video,
+			.wp-video{
+				width: 100%!important;
+				height: auto!important;
+			}
+			.mejs-overlay-button{
+				background: url(../img/icone-play.png) no-repeat;
+				height: 150px;
+				width: 150px;
+			}
+			.mejs-controls{
+				background: $h2o-light-blue;
+			}
 		}
 		.fastio-location-content{
 			position: relative;
@@ -872,6 +884,7 @@ body.page-template-explore-o-geres-subpages{
 				margin-top:5rem;
 				position: absolute;
 				left:-10rem;
+				z-index: 1;
 			}
 			h1{
 				font-size: 1.2rem;

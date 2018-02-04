@@ -11191,6 +11191,16 @@ body.page-template-explore-o-geres-subpages .fastio-location {
   padding-bottom: 5rem; }
   body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-feature {
     width: 80%; }
+    body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-feature video,
+    body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-feature .wp-video {
+      width: 100% !important;
+      height: auto !important; }
+    body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-feature .mejs-overlay-button {
+      background: url(../img/icone-play.png) no-repeat;
+      height: 150px;
+      width: 150px; }
+    body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-feature .mejs-controls {
+      background: #b2eaff; }
   body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content {
     position: relative; }
     body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content article {
@@ -11200,7 +11210,8 @@ body.page-template-explore-o-geres-subpages .fastio-location {
       padding: 3rem 2.5rem;
       margin-top: 5rem;
       position: absolute;
-      left: -10rem; }
+      left: -10rem;
+      z-index: 1; }
     body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content h1 {
       font-size: 1.2rem; }
     body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content p {
