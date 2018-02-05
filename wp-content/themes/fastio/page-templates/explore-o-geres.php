@@ -41,7 +41,7 @@ $subpages = get_pages($args);
 if( !empty( $subpages ) ): ?>
 <!-- ******************* The Places Display Section ******************* -->
 <section class="fastio-places" data-aos="fade">
-	<div id="fastio-places-slide" class="carousel slide" data-ride="carousel" data-interval="9000" data-aos="zoom-in">
+	<div id="fastio-places-slide" class="carousel slide" data-ride="carousel" data-interval="9000" data-aos="fade-in">
 		<div class="conteiner carousel-inner row mx-auto" role="listbox">
 <?php
 	$total = count($subpages);

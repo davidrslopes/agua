@@ -52,14 +52,14 @@ if(!empty($hero_1)):
 	<div class="container">
 		<div class="row">
 			<div class="col-2 offset-1">
-				<div class="list-group" id="list-tab" role="tablist" data-aos="fade-right">
+				<div class="list-group" id="list-tab" role="tablist" data-aos="fade-up">
 					<a class="list-group-item list-group-item-action active" id="nav-tab-plastic" data-toggle="list" href="#tab-plastic" role="tab" aria-controls="tab-plastic"><?php _e( 'Plástico', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-glass" data-toggle="list" href="#tab-glass" role="tab" aria-controls="tab-glass"><?php _e( 'Vidro', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-packs" data-toggle="list" href="#tab-packs" role="tab" aria-controls="tab-packs"><?php _e( 'Packs', 'understrap' ); ?></a>
 				</div>
 			</div>
 			<div class="col-9">
-				<div class="tab-content" data-aos="fade-left">
+				<div class="tab-content" data-aos="fade-up">
 					<div class="tab-pane fade show active" id="tab-plastic" role="tabpanel" aria-labelledby="tab-plastic">
 						<?php echo do_shortcode( $plastic_gallery ); ?>
 						<footer class="gallery-caption">
@@ -94,12 +94,12 @@ $hero_2 = get_field('a-nossa-agua-section-3');
 if(!empty($hero_2)):
 ?>
 <!-- ******************* The Hero II Section ******************* -->
-<section class="fastio-hero-2" style="background-image:url('<?php echo $hero_2['bg-img']; ?>');" data-aos="zoom-in-up">
+<section class="fastio-hero-2" style="background-image:url('<?php echo $hero_2['bg-img']; ?>');" data-aos="fade-up">
 	<div class="container-fluid">
 		<div class="row">
 			<header class="fastio-hero-header offset-lg-7 col-lg-4 offset-md-8 col-md-4 offset-xs-6 col-xs-6">
-				<?php if(!empty($hero_2['title'])): ?><h3 class="text-primary"<?php if(!empty($hero_2['title-color'])){ echo ' style="color:'.$hero_2['title-color'].';"';} ?> data-aos="fade-down-left"><?php echo $hero_2['title']; ?></h3><?php endif; ?>
-				<?php if(!empty($hero_2['hashtag'])): ?><img class="img-fluid" src="<?php echo $hero_2['hashtag']['url']; ?>" title="<?php echo $hero_2['hashtag']['title']; ?>" alt="<?php echo $hero_2['hashtag']['title']; ?>" data-aos="fade-up-left"><?php endif; ?>
+				<?php if(!empty($hero_2['title'])): ?><h3 class="text-primary"<?php if(!empty($hero_2['title-color'])){ echo ' style="color:'.$hero_2['title-color'].';"';} ?> data-aos="fade-up"><?php echo $hero_2['title']; ?></h3><?php endif; ?>
+				<?php if(!empty($hero_2['hashtag'])): ?><img class="img-fluid" src="<?php echo $hero_2['hashtag']['url']; ?>" title="<?php echo $hero_2['hashtag']['title']; ?>" alt="<?php echo $hero_2['hashtag']['title']; ?>" data-aos="fade-up"><?php endif; ?>
 			</header>
 		</div>
 	</div>
@@ -114,12 +114,12 @@ if(!empty($hero_2)):
 ?>
 <!-- ******************* The Fastio Benefits Section ******************* -->
 <section class="fastio-benefits" data-aos="fade-up">
-	<img class="ondas left" src="<?php echo get_template_directory_uri()."/img/onda_azul_a_nossa_agua-l.png" ?>" alt="onda azul l" data-aos="fade-right">
+	<img class="ondas left" src="<?php echo get_template_directory_uri()."/img/onda_azul_a_nossa_agua-l.png" ?>" alt="onda azul l" data-aos="fade-up">
 	<div class="container">
 		<div class="row">
 			<?php while( have_rows('a-nossa-agua-section-4') ): the_row(); ?>
 			<div class="col-<?php echo $benefit_col; ?>">
-				<article data-aos="zoom-in">
+				<article data-aos="fade-in">
 					<h5><?php the_sub_field('title'); ?></h5>
 					<p><?php the_sub_field('desc'); ?></p>
 				</article>
@@ -127,7 +127,7 @@ if(!empty($hero_2)):
 			<?php endwhile; ?>
 		</div>
 	</div>
-	<img class="ondas right top" src="<?php echo get_template_directory_uri()."/img/onda_azul_a_nossa_agua-r.png" ?>" alt="onda azul r" data-aos="fade-left">
+	<img class="ondas right top" src="<?php echo get_template_directory_uri()."/img/onda_azul_a_nossa_agua-r.png" ?>" alt="onda azul r" data-aos="fade-up">
 </section><!-- .fastio-benefits -->
 <?php endif; ?>
 
@@ -144,7 +144,7 @@ if(!empty($hero_2)):
 			$link_id = get_sub_field('link', false, false);
 		?>
 		<div class="col-<?php echo $links_col; ?>">
-			<article style="background-image:url('<?php the_sub_field('img'); ?>');" data-aos="zoom-in-up">
+			<article style="background-image:url('<?php the_sub_field('img'); ?>');" data-aos="fade-up">
 				<a href="<?php echo get_the_permalink($link_id); ?>">
 					<h5 class="align-middle"><?php echo get_the_title($link_id); ?></h5>
 				</a>
