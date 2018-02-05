@@ -37,7 +37,7 @@ if(!empty($location)):
 <!-- ******************* The Location Section ******************* -->
 <section class="fastio-location">
 	<div class="row no-gutters">
-		<div class="fastio-location-feature col-10">
+		<div class="fastio-location-feature col-9" data-aos="fade-right">
 			<?php if(!empty($location['video'])):
 				$content_width = 1140;
 				echo do_shortcode(' [video src="'.$location['video'].'" poster="'. $location['fallback-img']['url'].'"] ');
@@ -45,7 +45,7 @@ if(!empty($location)):
 			<img src="<?php echo $location['fallback-img']['url'];?>" alt="<?php echo $location['fallback-img']['title'];?>" title="<?php echo $location['fallback-img']['title'];?>" class="fastio-location-image">
 			<?php endif; ?>
 		</div>
-		<div class="fastio-location-content col-2">
+		<div class="fastio-location-content col-3">
 			<article data-aos="fade-left">
 				<h1><?php the_title();?></h1>
 				<p><?php echo $location['text'];?></p>
