@@ -9,6 +9,16 @@
 
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
+
+$fundo_da_pagina=get_field('imagem_fundo_da_pagina');
+if(!empty($fundo_da_pagina)): 
+?>
+<style>
+    body.page-template-historiafastio{
+       background-image:url('<?php echo $fundo_da_pagina; ?>'); 
+    }
+</style>
+<?php endif; ?>
 ?>
 
 <div class="wrapper historiafastio" id="full-width-page-wrapper">
@@ -26,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     margin-left: 270px;">  
                 </div>
             </div>
-            <div class="col-md-4 col-sm-4 content-area" id="primary">
+            <div class="col-md-5 col-sm-5 content-area" id="primary">
                 <div data-aos="fade-down" data-aos-duration="3000">
                     <?php $imagesection1top = wp_get_attachment_image_src(get_field('seccao_1_imagem_2'), 'full'); ?>
                     <img src="<?php echo $imagesection1top[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_2')) ?>" class="img-responsive">  
@@ -46,7 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <?php wp_reset_postdata(); ?>
 		</main><!-- #main -->
             </div>
-            <div class="col-md-3" style="padding-top:260px;">
+            <div class="col-md-2" style="padding-top:260px;">
                 <div data-aos="fade-left" data-aos-duration="3000">
                 <?php $imagesection1right = wp_get_attachment_image_src(get_field('seccao_1_imagem_3'), 'full'); ?>
                 <img src="<?php echo $imagesection1right[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_3')) ?>" class="img-responsive">  
@@ -164,8 +174,11 @@ $container = get_theme_mod( 'understrap_container_type' );
             
         </div>  
     </section>
+    <?php
+    $seccao5fundo = get_field('seccao_5_-_imagem_de_fundo');
+    ?>
+    <section id="seccao5" style="margin-bottom:-60px;" style="background-image:url('<?php if(!empty($seccao5fundo)){echo $seccao5fundo ;} ?>');">
     <div data-aos="fade-up" data-aos-duration="3000">
-    <section id="seccao5" style="margin-bottom:-60px;">
      <div class="<?php echo esc_attr( $container ); ?>" id="content">
                 <main class="site-main row" id="main" role="main">
                                
@@ -202,7 +215,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                     </div>
                 </div><!-- .row end -->
-    </section></div>
+    </div></section>
        <?php
 	if( have_rows('historia-section-6') ): 
 		$links_count = count(get_field('historia-section-6'));
