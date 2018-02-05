@@ -163,7 +163,7 @@ $hero_4 = get_field('hotwheels-section-4');?>
         $link_id = get_sub_field('link', false, false);
         $i++;
         ?>
-            <div class="carousel-item col-md-3 <?php echo $i==0 ? 'active' : '';?>">
+            <div class="carousel-item col-md-3 <?php echo $i===1 ? 'active' : '';?>">
                 <a href="<?php echo get_the_permalink($link_id); ?>">
 		<img src="<?php the_sub_field('img') ?>" alt="" />
                 </a>
