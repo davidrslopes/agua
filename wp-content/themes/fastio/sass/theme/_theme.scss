@@ -478,6 +478,14 @@ body.page-template-historiafastio{
             color: #00aeef;
             margin-top:20px;
         }
+        
+        /* Bootstrap 4 modal center, to correctly center the modal, cite "modal id" then .modal-dialog, like in CSS below */
+
+        .modal .modal-dialog {
+            transform: translate(0, -50%);
+            top: 50%;
+            margin: 0 auto;
+        }
 }
 
 .modalfecharbtn{
@@ -528,6 +536,7 @@ body.page-template-historiafastio{
 .modal-content{
 	border-radius: 0 !important;
 }
+
 /* ############################## A NOSSA AGUA ############################## */
 body.page-template-a-nossa-agua{
 	.fastio-hero{ @include fastio-hero('../img/ImagemAgua_1.jpg'); }
