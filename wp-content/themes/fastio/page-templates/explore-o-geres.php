@@ -88,7 +88,7 @@ $args = array(
 $subpages = get_pages($args);
 if( !empty( $subpages ) ): ?>
 <!-- ******************* The Map Section ******************* -->
-<section class="fastio-map" data-aos="fade-up">
+<section class="fastio-map" data-aos="fade">
 	<div id="map"></div>
 </section>
 <script>

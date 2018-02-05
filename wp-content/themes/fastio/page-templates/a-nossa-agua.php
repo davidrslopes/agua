@@ -48,7 +48,7 @@ if(!empty($hero_1)):
 	endwhile;
 	if(!empty($products)):
 ?>
-<section class="fastio-products" data-aos="fade-up">
+<section class="fastio-products" data-aos="fade">
 	<div class="container">
 		<div class="row">
 			<div class="col-2 offset-1">
@@ -94,7 +94,7 @@ $hero_2 = get_field('a-nossa-agua-section-3');
 if(!empty($hero_2)):
 ?>
 <!-- ******************* The Hero II Section ******************* -->
-<section class="fastio-hero-2" style="background-image:url('<?php echo $hero_2['bg-img']; ?>');" data-aos="fade-up">
+<section class="fastio-hero-2" style="background-image:url('<?php echo $hero_2['bg-img']; ?>');" data-aos="fade">
 	<div class="container-fluid">
 		<div class="row">
 			<header class="fastio-hero-header offset-lg-7 col-lg-4 offset-md-8 col-md-4 offset-xs-6 col-xs-6">
@@ -113,7 +113,7 @@ if(!empty($hero_2)):
  		if($benefit_col<3) $benefit_col = 3;
 ?>
 <!-- ******************* The Fastio Benefits Section ******************* -->
-<section class="fastio-benefits" data-aos="fade-up">
+<section class="fastio-benefits" data-aos="fade">
 	<img class="ondas left" src="<?php echo get_template_directory_uri()."/img/onda_azul_a_nossa_agua-l.png" ?>" alt="onda azul l" data-aos="fade-up">
 	<div class="container">
 		<div class="row">
@@ -144,7 +144,7 @@ if(!empty($hero_2)):
 			$link_id = get_sub_field('link', false, false);
 		?>
 		<div class="col-<?php echo $links_col; ?>">
-			<article style="background-image:url('<?php the_sub_field('img'); ?>');" data-aos="fade-up">
+			<article style="background-image:url('<?php the_sub_field('img'); ?>');">
 				<a href="<?php echo get_the_permalink($link_id); ?>">
 					<h5 class="align-middle"><?php echo get_the_title($link_id); ?></h5>
 				</a>
