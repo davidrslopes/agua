@@ -10489,7 +10489,8 @@ body.page-template-historiafastio {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover; }
+  -o-background-size: cover;
+  /* Bootstrap 4 modal center, to correctly center the modal, cite "modal id" then .modal-dialog, like in CSS below */ }
   body.page-template-historiafastio #seccao5 {
     background-image: url(../img/Fundo_Seccao_Azul.svg);
     background-size: 100% 100%;
@@ -10534,6 +10535,10 @@ body.page-template-historiafastio {
     font-size: 23px;
     color: #00aeef;
     margin-top: 20px; }
+  body.page-template-historiafastio .modal .modal-dialog {
+    transform: translate(0, -50%);
+    top: 50%;
+    margin: 0 auto; }
 
 .modalfecharbtn {
   padding-top: 18px !important;
