@@ -10219,6 +10219,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 /* ############################## MIXINS ############################## */
 /* ############################## COMMON ############################## */
+body {
+  overflow-x: hidden; }
+
 .fastio-nav button.btn.dropdown-toggle {
   cursor: pointer;
   font-weight: 400;
