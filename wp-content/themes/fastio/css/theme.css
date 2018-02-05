@@ -11542,6 +11542,8 @@ body.page-template-hot-wheels-subpages {
     margin-bottom: 2rem; }
   body.page-template-hot-wheels-subpages .carousel-item {
     display: block; }
+  body.page-template-hot-wheels-subpages #hotwheelssubpagescarousel {
+    height: 300px; }
   body.page-template-hot-wheels-subpages .carousel, body.page-template-hot-wheels-subpages .item, body.page-template-hot-wheels-subpages .active {
     height: 100%; }
   body.page-template-hot-wheels-subpages .carousel-inner {
@@ -11812,6 +11814,8 @@ body.page-template-barbie-subpages {
     margin-bottom: 2rem; }
   body.page-template-barbie-subpages .carousel-item {
     display: block; }
+  body.page-template-barbie-subpages #barbiesubpagescarousel {
+    height: 300px; }
   body.page-template-barbie-subpages .carousel, body.page-template-barbie-subpages .item, body.page-template-barbie-subpages .active {
     height: 100%; }
   body.page-template-barbie-subpages .carousel-inner {

@@ -1251,6 +1251,10 @@ body.page-template-hot-wheels-subpages{
             }
             .carousel-item{display: block;}
             
+            #hotwheelssubpagescarousel{
+                height:300px;
+            }
+            
             .carousel,.item,.active{height:100%;}
             .carousel-inner{height:100%;}
             
@@ -1602,6 +1606,10 @@ body.page-template-barbie-subpages{
               margin-bottom: 2rem;
             }
             .carousel-item{display: block;}
+            
+            #barbiesubpagescarousel{
+                height:300px;
+            }
             
             .carousel,.item,.active{height:100%;}
             .carousel-inner{height:100%;}
