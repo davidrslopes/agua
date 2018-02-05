@@ -11660,7 +11660,8 @@ body.page-template-barbie-subpages {
     padding-top: 135px; }
     body.page-template-barbie-subpages section.fastio-barbie-subpages-1 .title {
       display: inline-block;
-      float: right;
+      float: left;
+      padding-left: 8px;
       padding-top: 10px;
       font-size: 14px;
       color: #fff; }
@@ -11723,7 +11724,7 @@ body.page-template-barbie-subpages {
     body.page-template-barbie-subpages .fastio-barbie-subpages-section2 .title {
       display: block;
       width: 50%;
-      float: right;
+      padding-left: 8px;
       font-size: 14px;
       color: #fff; }
   body.page-template-barbie-subpages .fastio-barbie-subpages-section3 {
@@ -11737,10 +11738,11 @@ body.page-template-barbie-subpages {
       padding-top: 120px; }
     body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title {
       display: block;
-      width: 50%;
+      width: 66%;
       font-size: 14px;
       color: #fff;
-      float: right; }
+      float: right;
+      padding-top: 6px; }
     body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect {
       width: 100%;
       height: 100%;
@@ -11771,7 +11773,11 @@ body.page-template-barbie-subpages {
       text-align: center;
       position: relative;
       font-size: 14px;
-      padding: 10px; }
+      padding: 10px;
+      padding-bottom: 0px; }
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect h2.name {
+      padding-bottom: 0px;
+      padding-top: 60px; }
     body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect:hover .overlay {
       opacity: 1;
       filter: alpha(opacity=100);
@@ -11788,6 +11794,10 @@ body.page-template-barbie-subpages {
       transition-delay: 0.5s; }
     body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .imgcameracol {
       padding-right: 0px !important; }
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .imgtitulocriatividade {
+      padding-top: 95px; }
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .imgestrelas {
+      padding-top: 100px; }
   body.page-template-barbie-subpages .fastio-barbie-subpages-section4 {
     background-image: url(../img/barbieSeccao_Azul-2.svg);
     background-size: 100% 100%;
@@ -11795,7 +11805,8 @@ body.page-template-barbie-subpages {
     -webkit-background-size: 100% 100%;
     background-size: cover;
     overflow: hidden;
-    padding-top: 60px; }
+    padding-top: 60px;
+    margin-top: -20px; }
   body.page-template-barbie-subpages .carousel {
     padding-top: 40px;
     margin-bottom: 2rem; }

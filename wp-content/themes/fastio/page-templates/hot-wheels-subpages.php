@@ -156,7 +156,7 @@ $hero_4 = get_field('hotwheels-section-4');?>
             </div>
 	<div class="row">
             <!--Section 4-1 : Subpages Slider -->
-       <div id="subpagescarousel" class="carousel slide" data-ride="carousel" data-interval="9000">
+       <div id="hotwheelssubpagescarousel" class="carousel slide" data-ride="carousel" data-interval="9000">
         <div class="carousel-inner row w-80 mx-auto" role="listbox" >
         <?php $i = 0; ?>
         <?php while( have_rows('hotwheels-section-4-1') ) : the_row(); 
@@ -170,11 +170,11 @@ $hero_4 = get_field('hotwheels-section-4');?>
             </div>
         <?php endwhile; ?>
     </div>
-           <a class="carousel-control-prev" href="#subpagescarousel" role="button" data-slide="prev">
+           <a class="carousel-control-prev" href="#hotwheelssubpagescarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#subpagescarousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#hotwheelssubpagescarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>

@@ -1400,7 +1400,8 @@ body.page-template-barbie-subpages{
         
         .title{
             display: inline-block;
-            float:right;
+            float:left;
+            padding-left: 8px;
             padding-top: 10px;
             font-size: 14px;
             color: #fff;
@@ -1477,7 +1478,7 @@ body.page-template-barbie-subpages{
                 .title{
                    display: block;
                     width: 50%;
-                    float:right;
+                    padding-left: 8px;
                     font-size:14px;
                     color:#fff;
                 }
@@ -1497,10 +1498,11 @@ body.page-template-barbie-subpages{
                 
                 .title{
                     display: block;
-                    width: 50%;
+                    width: 66%;
                     font-size:14px;
                     color:#fff;
                     float:right;
+                    padding-top: 6px;
                 }
                 
                 
@@ -1541,6 +1543,12 @@ body.page-template-barbie-subpages{
                     position: relative;
                     font-size: 14px;
                     padding: 10px;
+                    padding-bottom: 0px;
+                  }
+                  
+                  .hovereffect h2.name{
+                      padding-bottom: 0px;
+                      padding-top: 60px;
                   }
 
                   .hovereffect:hover .overlay {
@@ -1564,6 +1572,15 @@ body.page-template-barbie-subpages{
                   .imgcameracol{
                       padding-right: 0px !important;
                   }
+                  
+                  .imgtitulocriatividade{
+                      padding-top: 95px;
+                  }
+                  
+                  .imgestrelas{
+                      padding-top: 100px;
+                  }
+                  
             }
     
     	.fastio-barbie-subpages-section4{
@@ -1574,6 +1591,7 @@ body.page-template-barbie-subpages{
 		background-size:cover;
                 overflow: hidden;
                 padding-top: 60px;
+                margin-top: -20px;
 	}
                 /* CUSTOMIZE THE CAROUSEL
             -------------------------------------------------- */
