@@ -1313,12 +1313,15 @@ body.page-template-hot-wheels-subpages{
             }
             
             #hotwheelssubpagescarousel i{
-                border: solid 2px #fff;
+            border: solid 2px #fff;
             border-radius: 20px;
             z-index: 3;
-            color:#ED1C23;
+            font-size: 25px;
+            line-height: 25px;
+            color:#006FB9;
+            width: 30px;
+            height: 30px;
             text-align: center;
-            font-size: 35px;
             background-color: #fff;
             }
             
@@ -1327,13 +1330,19 @@ body.page-template-hot-wheels-subpages{
             
             .carousel-control-next{
                 right: -60px;
+                opacity: 1;
             }
             
             
             .carousel-control-prev {
                 left: -60px;
+                opacity: 1;
             }
             
+            .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover{
+                opacity: 1;
+            }
+                        
             .main-footer-wrapper{
                 background: #006FB9 !important;
             }
@@ -1687,8 +1696,36 @@ body.page-template-barbie-subpages{
                 height:300px;
             }
             
+            #barbiesubpagescarousel i{
+            border: solid 2px #fff;
+            border-radius: 20px;
+            z-index: 3;
+            font-size: 25px;
+            line-height: 25px;
+            color:#006FB9;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            background-color: #fff;
+            }
+            
             .carousel,.item,.active{height:100%;}
             .carousel-inner{height:100%;}
+            
+            .carousel-control-next{
+                right: -60px;
+                opacity: 1;
+            }
+            
+            
+            .carousel-control-prev {
+                left: -60px;
+                opacity: 1;
+            }
+            
+            .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover{
+                opacity: 1;
+            }
             
 }
     
