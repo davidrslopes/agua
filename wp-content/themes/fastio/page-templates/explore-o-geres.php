@@ -184,6 +184,7 @@ if( !empty( $subpages ) ): ?>
 			origin: new google.maps.Point(0, 0),
 			anchor: new google.maps.Point(12.5, 25)
 		};
+		var infowindow = new google.maps.InfoWindow();
 		for (var i = 0; i < places.length; i++) {
 			var place = places[i];
 			var marker = new google.maps.Marker({
@@ -194,10 +195,8 @@ if( !empty( $subpages ) ): ?>
 				zIndex: place[3]
 			});
 			var content = '<div id="content">'+'<div id="siteNotice">'+'</div>'+'<a href="/'+place[4]+'">'+place[0]+'</a>'+'</div>';
-			var infowindow = new google.maps.InfoWindow();
 			google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
 				return function() {
-					//TODO: close all open infowindows
 					marker.setIcon(image_hover);
 					infowindow.setContent(content);
 					infowindow.open(map,marker);
