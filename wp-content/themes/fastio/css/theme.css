@@ -11390,6 +11390,28 @@ body.page-template-default .wpcf7-form span.label_form_contact_page {
   display: inline-block;
   font-size: 14px; }
 
+body.page-template-default .wpcf7-form .btnsubmeter {
+  width: 35%; }
+
+body.page-template-default .wpcf7-form .btnanexar {
+  width: 33%;
+  margin-right: 25px; }
+
+body.page-template-default .wpcf7-form .btnanexar label.btn {
+  height: 38px;
+  border-color: #00aeef;
+  border-radius: .89rem;
+  background-color: white;
+  color: #b2eaff; }
+
+body.page-template-default .wpcf7-form .btnsubmeter input {
+  background: #00aeef;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 6px;
+  padding-left: 6px; }
+
 /* ############################## HOTWHEELS ############################## */
 body.page-template-hot-wheels {
   background: url(../img/hotwheelsbackground.png) no-repeat;
