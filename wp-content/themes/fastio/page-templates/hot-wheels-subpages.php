@@ -42,9 +42,8 @@ if(!empty($hero_1)):
                 <div data-aos="fade-up" data-aos-duration="3000">
                  <img src="<?php echo $hero_1['img2']; ?>" class="img-fluid bottleimg"/>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="3000">
                 <img src="<?php echo $hero_1['img_hashtag']; ?>" class="img-fluid hashtagimg float-right"/>
-                </div>
+                
             </div>
            </div>
             <div class="row">
@@ -171,11 +170,11 @@ $hero_4 = get_field('hotwheels-section-4');?>
         <?php endwhile; ?>
     </div>
            <a class="carousel-control-prev" href="#hotwheelssubpagescarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <i class="fa fa-angle-left" aria-hidden="true"></i>
           <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#hotwheelssubpagescarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
           <span class="sr-only">Next</span>
         </a>
     </div>

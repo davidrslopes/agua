@@ -11440,8 +11440,7 @@ body.page-template-hot-wheels {
     background: transparent !important; }
   body.page-template-hot-wheels .icon {
     position: absolute;
-    bottom: 380px;
-    left: 60%;
+    left: 50%;
     margin-left: -20px;
     width: 40px;
     height: 40px;
@@ -11559,11 +11558,12 @@ body.page-template-hot-wheels-subpages {
       left: -100px;
       z-index: 2; }
     body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 .title {
-      display: block;
-      width: 50%;
+      display: inline-block;
+      width: 52%;
       float: right;
       font-size: 14px;
-      color: #fff; }
+      color: #fff;
+      padding-left: 25px; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .imgbancada {
     margin-left: -196px;
     margin-bottom: -82px;
@@ -11571,8 +11571,8 @@ body.page-template-hot-wheels-subpages {
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .titulo-subtitulo {
     padding-top: 120px; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .title {
-    display: block;
-    width: 50%;
+    display: inline-block;
+    width: 60%;
     font-size: 14px;
     color: #fff; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section4 {
@@ -11582,7 +11582,9 @@ body.page-template-hot-wheels-subpages {
     -webkit-background-size: 100% 100%;
     background-size: cover;
     overflow: hidden;
-    padding-top: 60px; }
+    padding-top: 60px;
+    z-index: 4;
+    position: relative; }
   body.page-template-hot-wheels-subpages .carousel {
     padding-top: 40px;
     margin-bottom: 2rem; }
@@ -11590,10 +11592,29 @@ body.page-template-hot-wheels-subpages {
     display: block; }
   body.page-template-hot-wheels-subpages #hotwheelssubpagescarousel {
     height: 300px; }
+  body.page-template-hot-wheels-subpages #hotwheelssubpagescarousel i {
+    border: solid 2px #fff;
+    border-radius: 20px;
+    z-index: 3;
+    font-size: 25px;
+    line-height: 25px;
+    color: #006FB9;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #fff; }
   body.page-template-hot-wheels-subpages .carousel, body.page-template-hot-wheels-subpages .item, body.page-template-hot-wheels-subpages .active {
     height: 100%; }
   body.page-template-hot-wheels-subpages .carousel-inner {
     height: 100%; }
+  body.page-template-hot-wheels-subpages .carousel-control-next {
+    right: -60px;
+    opacity: 1; }
+  body.page-template-hot-wheels-subpages .carousel-control-prev {
+    left: -60px;
+    opacity: 1; }
+  body.page-template-hot-wheels-subpages .carousel-control-next:focus, body.page-template-hot-wheels-subpages .carousel-control-next:hover, body.page-template-hot-wheels-subpages .carousel-control-prev:focus, body.page-template-hot-wheels-subpages .carousel-control-prev:hover {
+    opacity: 1; }
   body.page-template-hot-wheels-subpages .main-footer-wrapper {
     background: #006FB9 !important; }
 
@@ -11862,10 +11883,29 @@ body.page-template-barbie-subpages {
     display: block; }
   body.page-template-barbie-subpages #barbiesubpagescarousel {
     height: 300px; }
+  body.page-template-barbie-subpages #barbiesubpagescarousel i {
+    border: solid 2px #fff;
+    border-radius: 20px;
+    z-index: 3;
+    font-size: 25px;
+    line-height: 25px;
+    color: #006FB9;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #fff; }
   body.page-template-barbie-subpages .carousel, body.page-template-barbie-subpages .item, body.page-template-barbie-subpages .active {
     height: 100%; }
   body.page-template-barbie-subpages .carousel-inner {
     height: 100%; }
+  body.page-template-barbie-subpages .carousel-control-next {
+    right: -60px;
+    opacity: 1; }
+  body.page-template-barbie-subpages .carousel-control-prev {
+    left: -60px;
+    opacity: 1; }
+  body.page-template-barbie-subpages .carousel-control-next:focus, body.page-template-barbie-subpages .carousel-control-next:hover, body.page-template-barbie-subpages .carousel-control-prev:focus, body.page-template-barbie-subpages .carousel-control-prev:hover {
+    opacity: 1; }
 
 /*
 * Use existing Bootstrap 4 classes and
