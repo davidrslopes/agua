@@ -36,7 +36,9 @@ if(!empty($hero_1)):
            </div>
         </div>
 	<?php endif; ?>
-	<button class="btn btn-link btn-block fastio-btn-scroll-down"><i class="fa fa-angle-down"></i></button>
+	<div class="icon faa-float animated">
+                        <i class="fa fa-angle-down"></i>
+        </div>
 </section><!-- .fastio-images-hero -->
 <?php endif; ?>
 

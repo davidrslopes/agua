@@ -19,7 +19,6 @@ if(!empty($fundo_da_pagina)):
     }
 </style>
 <?php endif; ?>
-?>
 
 <div class="wrapper historiafastio" id="full-width-page-wrapper">
 

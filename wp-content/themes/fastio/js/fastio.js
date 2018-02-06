@@ -269,7 +269,7 @@ jQuery( function($) {
 		});
 	}
 	//SLIDER
-	$('#fastio-places-slide').on('slide.bs.carousel', function (e) {
+	$('#fastio-places-slide,#barbiesubpagescarousel,#hotwheelssubpagescarousel').on('slide.bs.carousel', function (e) {
 
 		var $e = $(e.relatedTarget);
 		var idx = $e.index();
@@ -301,9 +301,9 @@ jQuery( function($) {
 	});
 	
 	//SUBPAGES CAROUSEL
-	$('#subpagescarousel').carousel();
+	//$('#subpagescarousel').carousel();
         //SUBPAGES CAROUSEL
-	$('#barbiesubpagescarousel').carousel();
+	//$('#barbiesubpagescarousel').carousel();
 	
 	//Log Copy Check
 	console.log('%c©2018 SAVAGE Agency | DavidRSLopes & Hugo Carvalho', 'background: #39ee7c; background: -moz-linear-gradient(left, #39ee7c 0%, #252525 100%); background: -webkit-linear-gradient(left, #39ee7c 0%,#252525 100%); background: linear-gradient(to right, #39ee7c 0%,#252525 100%); color: #241f20; line-height:60px; font-family: Allerta,sans-serif; font-size:12px; padding: 10px 25px 10px 10px; height:107px; letter-spacing:2px;' );

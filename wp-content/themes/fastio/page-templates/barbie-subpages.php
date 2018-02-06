@@ -63,14 +63,14 @@ if(!empty($hero_1)):
                     </div>
 		</div>
             <div class="row">
-                <div class="col-3">
+                <div class="col-2">
                     <div data-aos="fade-up"data-aos-duration="3000">
                     <img src="<?php echo $section2['img2']; ?>" class="img-fluid imgestrelas"/>
                     </div>
                 </div>
-                <div class="col-9">
+                <div class="col-10">
                     <div data-aos="fade-up" data-aos-duration="3000">
-                        <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid float-left"/>
+                        <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid"/>
                         <div class="title">
                             <?php echo $section2['subtitulo']; ?>
                         </div>
@@ -196,7 +196,7 @@ if(!empty($section_3)):
         $link_id = get_sub_field('link', false, false);
         $i++;
         ?>
-            <div class="carousel-item col-md-3 <?php echo $i==0 ? 'active' : '';?>">
+            <div class="carousel-item col-md-3 <?php echo $i===1 ? 'active' : '';?>">
                 <a href="<?php echo get_the_permalink($link_id); ?>">
 		<img src="<?php the_sub_field('img') ?>" alt="" />
                 </a>
