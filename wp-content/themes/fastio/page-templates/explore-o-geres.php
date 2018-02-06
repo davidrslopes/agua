@@ -170,45 +170,54 @@ if( !empty( $subpages ) ): ?>
 			endforeach;
 		?>
 	];
-	console.log(places);
+	//console.log(places);
 	function setMarkers(map) {
-		var image = {
-			url: '<?php echo get_template_directory_uri()."/img/picker1_select.png"; ?>',
-			size: new google.maps.Size(25, 25),
-			origin: new google.maps.Point(0, 0),
-			anchor: new google.maps.Point(12.5, 25)
-		};
-		var image_hover = {
-			url: '<?php echo get_template_directory_uri()."/img/picker2_selected.png"; ?>',
-			size: new google.maps.Size(25, 25),
-			origin: new google.maps.Point(0, 0),
-			anchor: new google.maps.Point(12.5, 25)
-		};
-		var infowindow = new google.maps.InfoWindow();
-		for (var i = 0; i < places.length; i++) {
-			var place = places[i];
-			var marker = new google.maps.Marker({
-				position: {lat: place[1], lng: place[2]},
+		//Define Vars
+		var infowindow = new google.maps.InfoWindow(),
+			activeMarker,
+			i,
+			iconDefault = {
+				url: '<?php echo get_template_directory_uri()."/img/picker1_select.png"; ?>',
+				size: new google.maps.Size(25, 25),
+				origin: new google.maps.Point(0, 0),
+				anchor: new google.maps.Point(12.5, 25)
+			},
+			iconActive = {
+				url: '<?php echo get_template_directory_uri()."/img/picker2_selected.png"; ?>',
+				size: new google.maps.Size(25, 25),
+				origin: new google.maps.Point(0, 0),
+				anchor: new google.maps.Point(12.5, 25)
+			};
+		//Loop
+		for (i = 0; i < places.length; i++) {
+			marker = new google.maps.Marker({
+				position: {lat: places[i][1], lng: places[i][2]},
 				map: map,
-				icon: image,
-				title: place[0],
-				zIndex: place[3]
+				icon: iconDefault,
+				title: places[i][0],
+				zIndex: places[i][3]
 			});
-			var content = '<div id="content">'+'<div id="siteNotice">'+'</div>'+'<a href="/'+place[4]+'">'+place[0]+'</a>'+'</div>';
-			google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+			
+			//Add Events
+			google.maps.event.addListener(marker,'click', (function(marker, i){ 
 				return function() {
-					marker.setIcon(image_hover);
-					infowindow.setContent(content);
-					infowindow.open(map,marker);
+					
+					marker.setIcon(iconActive);
+					infowindow.setContent('<div id="content">'+'<div id="siteNotice">'+'</div>'+'<a href="/'+places[i][4]+'">'+places[i][0]+'</a>'+'</div>');
+					infowindow.open(map, marker);
+
+					activeMarker && activeMarker.setIcon(iconDefault);
+
 					google.maps.event.addListener(map,'click', function(){ 
-						marker.setIcon(image);
+						marker.setIcon(iconDefault);
 						infowindow.close();
 					});
 					google.maps.event.addListener(infowindow,'closeclick',function(){
-						marker.setIcon(image);
+						marker.setIcon(iconDefault);
 					});
+					activeMarker = marker;
 				};
-			})(marker,content,infowindow));
+			})(marker, i));
 		}
 	}
 </script>
