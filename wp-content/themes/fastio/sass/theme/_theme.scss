@@ -968,7 +968,7 @@ body.page-template-explore-o-geres-subpages{
 /* ############################## Default ############################## */
 body.page-template-default{
 
-    .fastio-hero{ @include fastio-hero('../img/hero-commonpages.png'); max-height:420px;}
+    .fastio-hero{ @include fastio-hero('../img/hero-commonpages.png'); max-height:440px;}
     .fastio-common-pages{
         .listnavigationitems{padding-top:50px;padding-bottom: 50px;padding-left: 130px;}
         .site-main{padding:50px;}
@@ -985,10 +985,12 @@ body.page-template-default{
         
         .entry-content p{
             font-size: 13px;
+            opacity: 0.5;
         }
     }
     h1.entry-title{
         color: #00aeef;
+            font-size: 2.2rem;
     }
     
   
@@ -1203,6 +1205,8 @@ body.page-template-hot-wheels-subpages{
             padding-top: 10px;
             font-size: 14px;
             color: #fff;
+            width: 100%;
+            text-align: right;
         }
         
         .bottleimg{
@@ -1305,9 +1309,10 @@ body.page-template-hot-wheels-subpages{
                 
                 .title{
                     display: inline-block;
-                    width: 60%;
+                    width: 80%;
                     font-size:14px;
                     color:#fff;
+                    text-align: left;
                 }
             }
     
@@ -1336,7 +1341,7 @@ body.page-template-hot-wheels-subpages{
             .carousel-item{display: block;}
             
             #hotwheelssubpagescarousel{
-                height:300px;
+                height:320px;
             }
             
             #hotwheelssubpagescarousel i{
@@ -1720,7 +1725,7 @@ body.page-template-barbie-subpages{
             .carousel-item{display: block;}
             
             #barbiesubpagescarousel{
-                height:300px;
+                height:420px;
             }
             
             #barbiesubpagescarousel i{

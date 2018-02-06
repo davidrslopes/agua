@@ -11282,7 +11282,7 @@ body.page-template-default .fastio-hero {
   background-size: cover;
   height: 100vh;
   display: block;
-  max-height: 420px; }
+  max-height: 440px; }
   body.page-template-default .fastio-hero header {
     padding: 50vh 0 0 0; }
     body.page-template-default .fastio-hero header h1, body.page-template-default .fastio-hero header h2, body.page-template-default .fastio-hero header h3, body.page-template-default .fastio-hero header h4, body.page-template-default .fastio-hero header h5, body.page-template-default .fastio-hero header h6 {
@@ -11346,10 +11346,12 @@ body.page-template-default .fastio-common-pages .entry-content h3, body.page-tem
   font-size: 18px; }
 
 body.page-template-default .fastio-common-pages .entry-content p {
-  font-size: 13px; }
+  font-size: 13px;
+  opacity: 0.5; }
 
 body.page-template-default h1.entry-title {
-  color: #00aeef; }
+  color: #00aeef;
+  font-size: 2.2rem; }
 
 body.page-template-default .list-group {
   border: 0;
@@ -11517,7 +11519,9 @@ body.page-template-hot-wheels-subpages {
       float: right;
       padding-top: 10px;
       font-size: 14px;
-      color: #fff; }
+      color: #fff;
+      width: 100%;
+      text-align: right; }
     body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .bottleimg {
       margin: 0 auto;
       display: block; }
@@ -11594,9 +11598,10 @@ body.page-template-hot-wheels-subpages {
     padding-top: 120px; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .title {
     display: inline-block;
-    width: 60%;
+    width: 80%;
     font-size: 14px;
-    color: #fff; }
+    color: #fff;
+    text-align: left; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section4 {
     background-image: url(../img/Seccao_Azul.svg);
     background-size: 100% 100%;
@@ -11613,7 +11618,7 @@ body.page-template-hot-wheels-subpages {
   body.page-template-hot-wheels-subpages .carousel-item {
     display: block; }
   body.page-template-hot-wheels-subpages #hotwheelssubpagescarousel {
-    height: 300px; }
+    height: 320px; }
   body.page-template-hot-wheels-subpages #hotwheelssubpagescarousel i {
     border: solid 2px #fff;
     border-radius: 20px;
@@ -11904,7 +11909,7 @@ body.page-template-barbie-subpages {
   body.page-template-barbie-subpages .carousel-item {
     display: block; }
   body.page-template-barbie-subpages #barbiesubpagescarousel {
-    height: 300px; }
+    height: 420px; }
   body.page-template-barbie-subpages #barbiesubpagescarousel i {
     border: solid 2px #fff;
     border-radius: 20px;
