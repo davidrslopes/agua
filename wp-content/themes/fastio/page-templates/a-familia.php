@@ -15,16 +15,13 @@ get_header();
 //Section 1 : Hero 1
 $hero_1 = get_field('a-familia-section-1');
 if(!empty($hero_1)):
-/* Nota IMPORTANTE: Temos de verificar como deve ser o comportamento mobile desta area, apenas permitir a visualização do vídeo em WIFI era o ideal, em 3G este video não deve ser incluído, e deverá comprimir-se em vários formatos para que seja possivel a responsividade também em relação ao peso em mb do site. */
 ?>
 <!-- ******************* The Video Hero Section ******************* -->
 <section class="fastio-video-hero" style="background-image:url('<?php echo $hero_1['fallback-img']; ?>');">
 	
 	<?php if(!empty($hero_1['video'])): ?>
 	<div class="fastio-video-container">
-		<video poster="<?php echo $hero_1['fallback-img']; ?>" autoplay loop muted plays-inline style="background: url(<?php echo $hero_1['fallback-img']; ?>) no-repeat;">
-			<source src="<?php echo $hero_1['video']; ?>" type="video/mp4">
-		</video>
+		<?php echo do_shortcode(' [video class="fastio-video" autoplay="on" loop="on" src="'.$hero_1['video'].'" poster="'. $hero_1['fallback-img'] .'"] '); ?>
 	</div>
 	<?php endif; ?>
 	

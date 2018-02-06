@@ -22,9 +22,7 @@ if(!empty($hero_1)):
 	
 	<?php if(!empty($hero_1['video'])): ?>
 	<div class="fastio-video-container">
-		<video poster="<?php echo $hero_1['fallback-img']; ?>" autoplay loop muted plays-inline style="background: url(<?php echo $hero_1['fallback-img']; ?>) no-repeat;">
-			<source src="<?php echo $hero_1['video']; ?>" type="video/mp4">
-		</video>
+		<?php echo do_shortcode(' [video class="fastio-video" autoplay="on" loop="on" src="'.$hero_1['video'].'" poster="'. $hero_1['fallback-img'] .'"] '); ?>
 	</div>
 	<?php endif; ?>
 	

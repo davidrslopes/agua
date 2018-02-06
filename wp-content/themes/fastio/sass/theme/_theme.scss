@@ -620,7 +620,7 @@ body.page-template-a-familia{
 			width: 100%;
 			height: 100%;
 			overflow: hidden;
-			video{
+			video.fastio-video{
 				position: absolute;
 				top: 50%;
 				left: 50%;
@@ -632,6 +632,7 @@ body.page-template-a-familia{
 				transform: translateX(-50%) translateY(-50%);
 				background-size: cover;
 				border: 0;
+				z-index: 0;
 			}
 		}
 	}
@@ -662,7 +663,7 @@ body.page-template-fastio-go{
 			width: 100%;
 			height: 100%;
 			overflow: hidden;
-			video{
+			video.fastio-video{
 				position: absolute;
 				top: 50%;
 				left: 50%;
@@ -674,6 +675,7 @@ body.page-template-fastio-go{
 				transform: translateX(-50%) translateY(-50%);
 				background-size: cover;
 				border: 0;
+				z-index: 0;
 			}
 		}
 		button.fastio-btn-scroll-down{
