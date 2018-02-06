@@ -12,10 +12,13 @@ $home_video_text = get_theme_mod( 'home_video_text' );
 $home_video_text_color = get_theme_mod( 'home_video_text_color' );
 ?>
 <!-- ******************* The Video Area ******************* -->
-<?php /* Nota IMPORTANTE: Temos de verificar como deve ser o comportamento mobile desta area, apenas permitir a visualização do vídeo em WIFI era o ideal, em 3G este video não deve ser incluído, e deverá comprimir-se em vários formatos para que seja possivel a responsividade também em relação ao peso em mb do site. */ ?>
-<video class="fastio-video" poster="<?php echo $home_video_fallback; ?>" autoplay loop muted plays-inline style="background: url(<?php echo $home_video_fallback; ?>) no-repeat;">
-	<source src="<?php echo $home_video; ?>" type="video/mp4">
-</video>
+<?php 
+if(!empty($home_video)):
+	echo do_shortcode(' [video class="fastio-video" autoplay="on" loop="on" src="'.$home_video.'" poster="'. $home_video_fallback .'"] ');
+else:
+	echo '<img class="fastio-video" src="'.$home_video_fallback.'" alt="'.$home_video_text.'">';
+endif;
+?>
 <!-- ******************* The Video Area End ******************* -->
 
 <!-- ******************* The Content ******************* -->

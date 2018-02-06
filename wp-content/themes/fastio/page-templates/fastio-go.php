@@ -22,9 +22,7 @@ if(!empty($hero_1)):
 	
 	<?php if(!empty($hero_1['video'])): ?>
 	<div class="fastio-video-container">
-		<video poster="<?php echo $hero_1['fallback-img']; ?>" autoplay loop muted plays-inline style="background: url(<?php echo $hero_1['fallback-img']; ?>) no-repeat;">
-			<source src="<?php echo $hero_1['video']; ?>" type="video/mp4">
-		</video>
+		<?php echo do_shortcode(' [video class="fastio-video" autoplay="on" loop="on" src="'.$hero_1['video'].'" poster="'. $hero_1['fallback-img'] .'"] '); ?>
 	</div>
 	<?php endif; ?>
 	
@@ -90,7 +88,7 @@ $hero_1 = get_field('fastio-go-section-3');
 if(!empty($hero_1)):
 ?>
 <!-- ******************* The Hero Section ******************* -->
-<div data-aos="fade-up">
+<div data-aos="fade">
 <section class="fastio-hero" style="background-image:url('<?php echo $hero_1['bg-img']; ?>');">
 	<?php if(!empty($hero_1['title'])): ?>
 	<div class="container">
@@ -112,7 +110,7 @@ $workout = get_field('fastio-go-section-4');
 if(!empty($workout)):
 ?>
 <!-- ******************* The Fastio GO Workout Section ******************* -->
-<div data-aos="fade-up">
+<div data-aos="fade">
 <section class="fastio-go-workout" style="background-image:url('<?php echo $workout['bg-img']; ?>');">
 	<div class="container">
 		<div class="row">
@@ -167,7 +165,7 @@ if(!empty($workout)):
 $fastio_go_social = get_field('fastio-go-section-5');
 if(!empty($fastio_go_social)):
 ?>
-<div data-aos="fade-up">
+<div data-aos="fade">
 <section class="fastio-go-social">
 	<div class="row no-gutters">
 		<div class="col-5">

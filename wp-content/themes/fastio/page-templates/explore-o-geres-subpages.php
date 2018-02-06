@@ -108,7 +108,7 @@ if(!empty($highlights)): ?>
 $fastio_360 = get_field('explore-o-geres-subpage-section-4');
 if(!empty($fastio_360)): ?>
 <!-- ******************* The 360 Foto Section ******************* -->
-<section class="fastio-360" data-aos="fade-up">
+<section class="fastio-360" data-aos="fade">
 	<div class="container-fluid">
 		<div class="row">
 			<?php if(!empty($fastio_360['fallback-img'])): ?>

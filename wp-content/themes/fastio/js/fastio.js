@@ -184,6 +184,9 @@ jQuery( function($) {
 	//OPTIONS
 	var debug = false; //Turn this of when in production.
 	
+	//VIDEO
+	$('.fastio-video').removeAttr('controls').prop('muted',true).attr('playsinline','');
+	
 	//AOS
 	AOS.init({
 		offset: 0,
