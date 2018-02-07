@@ -10323,12 +10323,9 @@ body {
   position: absolute;
   padding-top: 0;
   padding-bottom: 0;
-  bottom: 2rem;
   width: 100%;
   height: 33px;
   line-height: 30px; }
-  .home-footer-wrapper .home-footer, .home-footer-wrapper .main-footer {
-    padding: 0; }
   .home-footer-wrapper footer .wpml-ls {
     padding: 0;
     direction: rtl;
@@ -10480,11 +10477,8 @@ nav.navbar.fixed-top {
 
 .fastio-home-title {
   text-align: center;
-  margin: -2rem 0 0 0;
   padding: 50vh 0 0 0;
   color: white;
-  font-size: 4rem;
-  line-height: 3.2rem;
   text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
 
 /* ############################## HISTORIA FASTIO ############################## */
@@ -11933,6 +11927,42 @@ body.page-template-barbie-subpages {
     opacity: 1; }
   body.page-template-barbie-subpages .carousel-control-next:focus, body.page-template-barbie-subpages .carousel-control-next:hover, body.page-template-barbie-subpages .carousel-control-prev:focus, body.page-template-barbie-subpages .carousel-control-prev:hover {
     opacity: 1; }
+
+/* ############################## RESPONSIVE ############################## */
+@media (max-width: 767.99px) {
+  .fastio-nav,
+  .fastio-nav > button.btn.dropdown-toggle,
+  .fastio-nav .dropdown-menu {
+    font-size: 1rem;
+    line-height: 1.5rem; }
+  .fastio-nav > button.btn.dropdown-toggle {
+    padding: 0 4px 0 0; }
+    .fastio-nav > button.btn.dropdown-toggle:after {
+      height: 12px; }
+  .fastio-home-title {
+    margin-top: -1.25rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem; }
+  .home-footer-wrapper {
+    line-height: 1.5rem;
+    bottom: 0;
+    background-color: #00aeef; }
+    .home-footer-wrapper footer .wpml-ls > ul > li > a {
+      font-size: 0.66rem; }
+    .home-footer-wrapper i {
+      font-size: 1rem; } }
+
+@media (min-width: 768px) {
+  .fastio-nav {
+    font-size: 1.2rem; }
+  .home-footer-wrapper {
+    bottom: 2rem; }
+  .home-footer, .main-footer {
+    padding: 0; }
+  .fastio-home-title {
+    margin: -2rem 0 0 0;
+    font-size: 4rem;
+    line-height: 4rem; } }
 
 /*
 * Use existing Bootstrap 4 classes and
