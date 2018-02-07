@@ -12,7 +12,7 @@ $imagebackground = get_field('fundo_pagina');
 if( !empty($imagebackground) ): ?>
 <style>
     body.page-template-hot-wheels{
-       background-image:url(<?php echo $imagebackground['url']; ?>); 
+       background-image:url(<?php echo $imagebackground; ?>); 
     }
 </style>
 <?php endif; ?>

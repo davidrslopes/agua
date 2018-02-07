@@ -11373,6 +11373,9 @@ body.page-template-default .list-group {
 body.page-template-default .wpcf7-form {
   color: #00aeef; }
 
+body.page-template-default .wpcf7-form br {
+  display: none; }
+
 body.page-template-default .wpcf7-form input, body.page-template-default .wpcf7-form textarea {
   border-color: #00aeef;
   border-radius: .89rem; }
@@ -11606,11 +11609,11 @@ body.page-template-hot-wheels-subpages {
     padding-top: 60px;
     z-index: 4;
     position: relative; }
+    body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section4 .escolhecarroimg {
+      padding-right: 36px; }
   body.page-template-hot-wheels-subpages .carousel {
     padding-top: 40px;
     margin-bottom: 2rem; }
-  body.page-template-hot-wheels-subpages .carousel-item {
-    display: block; }
   body.page-template-hot-wheels-subpages #hotwheelssubpagescarousel {
     height: 320px; }
   body.page-template-hot-wheels-subpages #hotwheelssubpagescarousel i {
@@ -11897,11 +11900,11 @@ body.page-template-barbie-subpages {
     overflow: hidden;
     padding-top: 60px;
     margin-top: -20px; }
+    body.page-template-barbie-subpages .fastio-barbie-subpages-section4 .escolhebarbieimg {
+      padding-right: 30px; }
   body.page-template-barbie-subpages .carousel {
     padding-top: 40px;
     margin-bottom: 2rem; }
-  body.page-template-barbie-subpages .carousel-item {
-    display: block; }
   body.page-template-barbie-subpages #barbiesubpagescarousel {
     height: 420px; }
   body.page-template-barbie-subpages #barbiesubpagescarousel i {
