@@ -8,13 +8,11 @@
  */
 
 get_header();
-
-$fundo_da_pagina=get_field('fundo_pagina');
-if(!empty($fundo_da_pagina)): 
-?>
+$imagebackground = get_field('fundo_pagina');
+if( !empty($imagebackground) ): ?>
 <style>
     body.page-template-hot-wheels{
-       background-image:url('<?php echo $fundo_pagina; ?>'); 
+       background-image:url('<?php echo $imagebackground['url']; ?>'); 
     }
 </style>
 <?php endif; ?>
