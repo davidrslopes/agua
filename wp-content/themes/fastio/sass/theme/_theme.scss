@@ -969,7 +969,7 @@ body.page-template-default{
         .lateralimage img{height: 100%;}
         #tab-contatos h1.entry-title{display:none;}
         #tab-contatos .entry-content{padding-top:5px;}
-        #tab-contatos .contactos{padding-top:45px;color:#b2eaff;font-size: 14px;}
+        #tab-contatos .contactos{padding-top:45px;color:#b2eaff;font-size: 14px;opacity: 1 !important;}
         
         .entry-content h3,.entry-content h2{
             color: #00aeef;
@@ -1018,6 +1018,7 @@ body.page-template-default{
 		}
                 .wpcf7-form {
                     color:#00aeef;
+                    opacity: 1 !important;
                 }
                 
                 .wpcf7-form br{ display: none;}
