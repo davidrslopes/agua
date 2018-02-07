@@ -190,9 +190,9 @@ jQuery( function($) {
 	//AOS
 	AOS.init({
 		offset: 0,
-		duration: 2500,
+		duration: 1200,
 		easing: 'ease-in-out-sine',
-		delay: 0,
+		delay: 0
 	});
 	//Go to the correct Tab Link -Pages Contactos , Politicas , Avisos
 	if($('body').hasClass('page-template-default')){
@@ -255,8 +255,10 @@ jQuery( function($) {
 		$('.gallery-item').on( "click", function() {
 			var caption_id = $(this).find('img').attr('aria-describedby'),
 				gallery_caption = $(this).parent('.gallery').next('footer').children('p');
+                                $('#img-gallery-caption').show();
 			if(caption_id === undefined){
 				gallery_caption.fadeOut(250);
+                                $('#img-gallery-caption').hide();
 			}else{
 				//Reset gallery caption content
 				gallery_caption.fadeOut(250,function(){

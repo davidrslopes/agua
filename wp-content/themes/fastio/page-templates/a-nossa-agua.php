@@ -63,7 +63,7 @@ if(!empty($hero_1)):
 					<div class="tab-pane fade show active" id="tab-plastic" role="tabpanel" aria-labelledby="tab-plastic">
 						<?php echo do_shortcode( $plastic_gallery ); ?>
 						<footer class="gallery-caption">
-							<img src="<?php echo get_template_directory_uri()."/img/onda_branco.png" ?>" alt="onda">
+							<img id="img-gallery-caption" src="<?php echo get_template_directory_uri()."/img/onda_branco.png" ?>" alt="onda" style="display: none;">
 							<p></p>
 						</footer>
 					</div>

@@ -13,7 +13,7 @@ if(!empty($fundo_da_pagina)):
 ?>
 <style>
     body.page-template-hot-wheels-subpages{
-       background-image:url('<?php echo $fundo_da_pagina; ?>'); 
+       background-image:url(<?php echo $fundo_da_pagina; ?>); 
     }
 </style>
 <?php endif; ?>

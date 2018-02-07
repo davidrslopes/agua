@@ -108,15 +108,15 @@ if(!empty($hero_3)):
 	if(!empty($feature_3)):
 ?>
 <section class="fastio-feature-2">
-	<img class="ondas left bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-l-dark.png"; ?>" alt="onda azul l" data-aos="fade-up">
+	<img class="ondas left bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-l-dark.png"; ?>" alt="onda azul l" data-aos="fade">
 	<div class="row no-gutters">
 		<div class="col-5 text-right">
-			<article class="bg-warning left text-left" data-aos="fade-up">
-				<?php if(!empty($feature_3['text'])){ echo '<h4 data-aos="fade-up">'.$feature_3['text'].'</h4>';} ?>
+			<article class="bg-warning left text-left" data-aos="fade">
+				<?php if(!empty($feature_3['text'])){ echo '<h4 data-aos="fade">'.$feature_3['text'].'</h4>';} ?>
 			</article>
 		</div>
 		<div class="col-7 text-left">
-			<?php if(!empty($feature_3['img'])): ?><img class="img-fluid" src="<?php echo $feature_3['img']['url']; ?>" title="<?php echo $feature_3['img']['title']; ?>" alt="<?php echo $feature_3['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
+			<?php if(!empty($feature_3['img'])): ?><img class="img-fluid" src="<?php echo $feature_3['img']['url']; ?>" title="<?php echo $feature_3['img']['title']; ?>" alt="<?php echo $feature_3['img']['title']; ?>" data-aos="fade"><?php endif; ?>
 		</div>
 	</div>
 </section><!-- .fastio-feature-2 -->
