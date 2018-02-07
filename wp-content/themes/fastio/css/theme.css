@@ -11324,6 +11324,12 @@ body.page-template-default .fastio-common-pages .lateralimage {
 body.page-template-default .fastio-common-pages .lateralimage img {
   height: 100%; }
 
+body.page-template-default .fastio-common-pages #tab-contatos {
+  opacity: 1 !important; }
+
+body.page-template-default .fastio-common-pages #tab-contatos p {
+  opacity: 1 !important; }
+
 body.page-template-default .fastio-common-pages #tab-contatos h1.entry-title {
   display: none; }
 
