@@ -10219,8 +10219,42 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 /* ############################## MIXINS ############################## */
 /* ############################## COMMON ############################## */
-body {
-  overflow-x: hidden; }
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0; }
+
+.vertical-center, .fastio-home-title, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header, body.page-template-fastio-go .fastio-hero header.fastio-hero-header, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header, body.page-template-default .fastio-hero header.fastio-hero-header {
+  min-height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.img-fill {
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: block; }
 
 .fastio-nav button.btn.dropdown-toggle {
   cursor: pointer;
@@ -10443,18 +10477,6 @@ body.page-template-hotwheels-single .main-footer-wrapper {
       display: table-cell;
       text-align: center; }
 
-img.ondas {
-  position: absolute;
-  z-index: 9; }
-  img.ondas.top {
-    top: 0; }
-  img.ondas.bottom {
-    bottom: 0; }
-  img.ondas.left {
-    left: -20px; }
-  img.ondas.right {
-    right: 0px; }
-
 /* ############################## HOMEPAGE ############################## */
 nav.navbar.fixed-top {
   padding-top: 2.5rem;
@@ -10464,20 +10486,16 @@ nav.navbar.fixed-top {
 
 .fastio-video {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  right: 0;
+  bottom: 0;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover; }
+  z-index: -100; }
 
 .fastio-home-title {
   text-align: center;
-  padding: 50vh 0 0 0;
   color: white;
   text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
 
@@ -10583,26 +10601,24 @@ body.page-template-historiafastio {
 /* ############################## A NOSSA AGUA ############################## */
 body.page-template-a-nossa-agua .fastio-hero {
   background-image: url("../img/ImagemAgua_1.jpg");
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
   display: block; }
-  body.page-template-a-nossa-agua .fastio-hero header {
-    padding: 50vh 0 0 0; }
-    body.page-template-a-nossa-agua .fastio-hero header h1, body.page-template-a-nossa-agua .fastio-hero header h2, body.page-template-a-nossa-agua .fastio-hero header h3, body.page-template-a-nossa-agua .fastio-hero header h4, body.page-template-a-nossa-agua .fastio-hero header h5, body.page-template-a-nossa-agua .fastio-hero header h6 {
-      color: white; }
-    body.page-template-a-nossa-agua .fastio-hero header h1 {
-      text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
-      margin: 0;
-      padding: 0;
-      margin-top: -1.5rem;
-      font-size: 3rem;
-      line-height: 2.2rem; }
+  body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h1, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h2, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h3, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h4, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h5, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h6 {
+    color: white;
+    margin: 0;
+    padding: 0; }
+  body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h1 {
+    text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
+    font-size: 3rem;
+    line-height: 3rem; }
   body.page-template-a-nossa-agua .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10626,8 +10642,7 @@ body.page-template-a-nossa-agua .fastio-hero {
 
 body.page-template-a-nossa-agua .fastio-products {
   background-color: #b2eaff;
-  color: white;
-  padding: 6rem 4rem; }
+  color: white; }
   body.page-template-a-nossa-agua .fastio-products .list-group {
     border: 0;
     border-radius: 0;
@@ -10660,26 +10675,24 @@ body.page-template-a-nossa-agua .fastio-products {
 
 body.page-template-a-nossa-agua .fastio-hero-2 {
   background-image: url("../img/ImagemAgua_2.jpg");
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
   display: block; }
-  body.page-template-a-nossa-agua .fastio-hero-2 header {
-    padding: 50vh 0 0 0; }
-    body.page-template-a-nossa-agua .fastio-hero-2 header h1, body.page-template-a-nossa-agua .fastio-hero-2 header h2, body.page-template-a-nossa-agua .fastio-hero-2 header h3, body.page-template-a-nossa-agua .fastio-hero-2 header h4, body.page-template-a-nossa-agua .fastio-hero-2 header h5, body.page-template-a-nossa-agua .fastio-hero-2 header h6 {
-      color: white; }
-    body.page-template-a-nossa-agua .fastio-hero-2 header h1 {
-      text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
-      margin: 0;
-      padding: 0;
-      margin-top: -1.5rem;
-      font-size: 3rem;
-      line-height: 2.2rem; }
+  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h1, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h2, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h3, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h4, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h5, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h6 {
+    color: white;
+    margin: 0;
+    padding: 0; }
+  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h1 {
+    text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
+    font-size: 3rem;
+    line-height: 3rem; }
   body.page-template-a-nossa-agua .fastio-hero-2 button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10701,44 +10714,35 @@ body.page-template-a-nossa-agua .fastio-hero-2 {
     body.page-template-a-nossa-agua .fastio-hero-2 button.fastio-btn-scroll-down p {
       font-size: 0.8rem; }
 
-body.page-template-a-nossa-agua .fastio-benefits {
-  position: relative;
-  padding-bottom: 6rem; }
-  body.page-template-a-nossa-agua .fastio-benefits .container {
-    margin-top: -2rem;
-    background-color: #b2eaff;
-    color: white;
-    padding: 6rem 4rem; }
-    body.page-template-a-nossa-agua .fastio-benefits .container article {
-      padding: 0 1rem; }
-      body.page-template-a-nossa-agua .fastio-benefits .container article p {
-        font-size: 70%;
-        margin: 0; }
+body.page-template-a-nossa-agua .fastio-benefits .container {
+  background-color: #b2eaff;
+  color: white; }
+  body.page-template-a-nossa-agua .fastio-benefits .container article p {
+    font-size: 70%;
+    margin: 0; }
 
 /* ############################## A FAMÍLIA ############################## */
 body.page-template-a-familia .fastio-video-hero {
   position: relative;
   background-image: url("../img/imagem_Momentos_1.jpg");
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
   display: block; }
-  body.page-template-a-familia .fastio-video-hero header {
-    padding: 50vh 0 0 0; }
-    body.page-template-a-familia .fastio-video-hero header h1, body.page-template-a-familia .fastio-video-hero header h2, body.page-template-a-familia .fastio-video-hero header h3, body.page-template-a-familia .fastio-video-hero header h4, body.page-template-a-familia .fastio-video-hero header h5, body.page-template-a-familia .fastio-video-hero header h6 {
-      color: white; }
-    body.page-template-a-familia .fastio-video-hero header h1 {
-      text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
-      margin: 0;
-      padding: 0;
-      margin-top: -1.5rem;
-      font-size: 3rem;
-      line-height: 2.2rem; }
+  body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h2, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h3, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h4, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h5, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h6 {
+    color: white;
+    margin: 0;
+    padding: 0; }
+  body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1 {
+    text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
+    font-size: 3rem;
+    line-height: 3rem; }
   body.page-template-a-familia .fastio-video-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10809,27 +10813,25 @@ body.page-template-a-familia .fastio-feature-2 {
 
 body.page-template-a-familia .fastio-hero-3 {
   background-image: url("../img/ImagemAgua_2.jpg");
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
   display: block;
   position: relative; }
-  body.page-template-a-familia .fastio-hero-3 header {
-    padding: 50vh 0 0 0; }
-    body.page-template-a-familia .fastio-hero-3 header h1, body.page-template-a-familia .fastio-hero-3 header h2, body.page-template-a-familia .fastio-hero-3 header h3, body.page-template-a-familia .fastio-hero-3 header h4, body.page-template-a-familia .fastio-hero-3 header h5, body.page-template-a-familia .fastio-hero-3 header h6 {
-      color: white; }
-    body.page-template-a-familia .fastio-hero-3 header h1 {
-      text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
-      margin: 0;
-      padding: 0;
-      margin-top: -1.5rem;
-      font-size: 3rem;
-      line-height: 2.2rem; }
+  body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h1, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h2, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h3, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h4, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h5, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h6 {
+    color: white;
+    margin: 0;
+    padding: 0; }
+  body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h1 {
+    text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
+    font-size: 3rem;
+    line-height: 3rem; }
   body.page-template-a-familia .fastio-hero-3 button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10859,26 +10861,24 @@ body.page-template-a-familia .fastio-hero-3 {
 body.page-template-fastio-go .fastio-video-hero {
   position: relative;
   background-image: url("../img/imagem_Momentos_1.jpg");
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
   display: block; }
-  body.page-template-fastio-go .fastio-video-hero header {
-    padding: 50vh 0 0 0; }
-    body.page-template-fastio-go .fastio-video-hero header h1, body.page-template-fastio-go .fastio-video-hero header h2, body.page-template-fastio-go .fastio-video-hero header h3, body.page-template-fastio-go .fastio-video-hero header h4, body.page-template-fastio-go .fastio-video-hero header h5, body.page-template-fastio-go .fastio-video-hero header h6 {
-      color: white; }
-    body.page-template-fastio-go .fastio-video-hero header h1 {
-      text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
-      margin: 0;
-      padding: 0;
-      margin-top: -1.5rem;
-      font-size: 3rem;
-      line-height: 2.2rem; }
+  body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h1, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h2, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h3, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h4, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h5, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h6 {
+    color: white;
+    margin: 0;
+    padding: 0; }
+  body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h1 {
+    text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
+    font-size: 3rem;
+    line-height: 3rem; }
   body.page-template-fastio-go .fastio-video-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -10962,26 +10962,24 @@ body.page-template-fastio-go .fastio-go-bottle {
 
 body.page-template-fastio-go .fastio-hero {
   background-image: url("../img/imagemGO_2.jpg");
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
   display: block; }
-  body.page-template-fastio-go .fastio-hero header {
-    padding: 50vh 0 0 0; }
-    body.page-template-fastio-go .fastio-hero header h1, body.page-template-fastio-go .fastio-hero header h2, body.page-template-fastio-go .fastio-hero header h3, body.page-template-fastio-go .fastio-hero header h4, body.page-template-fastio-go .fastio-hero header h5, body.page-template-fastio-go .fastio-hero header h6 {
-      color: white; }
-    body.page-template-fastio-go .fastio-hero header h1 {
-      text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
-      margin: 0;
-      padding: 0;
-      margin-top: -1.5rem;
-      font-size: 3rem;
-      line-height: 2.2rem; }
+  body.page-template-fastio-go .fastio-hero header.fastio-hero-header h1, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h2, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h3, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h4, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h5, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h6 {
+    color: white;
+    margin: 0;
+    padding: 0; }
+  body.page-template-fastio-go .fastio-hero header.fastio-hero-header h1 {
+    text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
+    font-size: 3rem;
+    line-height: 3rem; }
   body.page-template-fastio-go .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -11033,26 +11031,24 @@ body.page-template-fastio-go .fastio-go-workout {
 /* ############################## EXPLORE O GERÊS ############################## */
 body.page-template-explore-o-geres .fastio-hero {
   background-image: url("../img/imagemGO_2.jpg");
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
   display: block; }
-  body.page-template-explore-o-geres .fastio-hero header {
-    padding: 50vh 0 0 0; }
-    body.page-template-explore-o-geres .fastio-hero header h1, body.page-template-explore-o-geres .fastio-hero header h2, body.page-template-explore-o-geres .fastio-hero header h3, body.page-template-explore-o-geres .fastio-hero header h4, body.page-template-explore-o-geres .fastio-hero header h5, body.page-template-explore-o-geres .fastio-hero header h6 {
-      color: white; }
-    body.page-template-explore-o-geres .fastio-hero header h1 {
-      text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
-      margin: 0;
-      padding: 0;
-      margin-top: -1.5rem;
-      font-size: 3rem;
-      line-height: 2.2rem; }
+  body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h1, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h2, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h3, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h4, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h5, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h6 {
+    color: white;
+    margin: 0;
+    padding: 0; }
+  body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h1 {
+    text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
+    font-size: 3rem;
+    line-height: 3rem; }
   body.page-template-explore-o-geres .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -11153,26 +11149,24 @@ body.page-template-explore-o-geres .fastio-map {
 
 body.page-template-explore-o-geres-subpages .fastio-hero {
   background-image: url("../img/ImagemSoajo_1.jpg");
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
   display: block; }
-  body.page-template-explore-o-geres-subpages .fastio-hero header {
-    padding: 50vh 0 0 0; }
-    body.page-template-explore-o-geres-subpages .fastio-hero header h1, body.page-template-explore-o-geres-subpages .fastio-hero header h2, body.page-template-explore-o-geres-subpages .fastio-hero header h3, body.page-template-explore-o-geres-subpages .fastio-hero header h4, body.page-template-explore-o-geres-subpages .fastio-hero header h5, body.page-template-explore-o-geres-subpages .fastio-hero header h6 {
-      color: white; }
-    body.page-template-explore-o-geres-subpages .fastio-hero header h1 {
-      text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
-      margin: 0;
-      padding: 0;
-      margin-top: -1.5rem;
-      font-size: 3rem;
-      line-height: 2.2rem; }
+  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h1, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h2, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h3, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h4, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h5, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h6 {
+    color: white;
+    margin: 0;
+    padding: 0; }
+  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h1 {
+    text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
+    font-size: 3rem;
+    line-height: 3rem; }
   body.page-template-explore-o-geres-subpages .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -11267,27 +11261,25 @@ body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama {
 /* ############################## Default ############################## */
 body.page-template-default .fastio-hero {
   background-image: url("../img/hero-commonpages.png");
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
   display: block;
   max-height: 440px; }
-  body.page-template-default .fastio-hero header {
-    padding: 50vh 0 0 0; }
-    body.page-template-default .fastio-hero header h1, body.page-template-default .fastio-hero header h2, body.page-template-default .fastio-hero header h3, body.page-template-default .fastio-hero header h4, body.page-template-default .fastio-hero header h5, body.page-template-default .fastio-hero header h6 {
-      color: white; }
-    body.page-template-default .fastio-hero header h1 {
-      text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
-      margin: 0;
-      padding: 0;
-      margin-top: -1.5rem;
-      font-size: 3rem;
-      line-height: 2.2rem; }
+  body.page-template-default .fastio-hero header.fastio-hero-header h1, body.page-template-default .fastio-hero header.fastio-hero-header h2, body.page-template-default .fastio-hero header.fastio-hero-header h3, body.page-template-default .fastio-hero header.fastio-hero-header h4, body.page-template-default .fastio-hero header.fastio-hero-header h5, body.page-template-default .fastio-hero header.fastio-hero-header h6 {
+    color: white;
+    margin: 0;
+    padding: 0; }
+  body.page-template-default .fastio-hero header.fastio-hero-header h1 {
+    text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
+    font-size: 3rem;
+    line-height: 3rem; }
   body.page-template-default .fastio-hero button.fastio-btn-scroll-down {
     position: absolute;
     bottom: 0;
@@ -11950,10 +11942,22 @@ body.page-template-barbie-subpages {
     padding: 0 4px 0 0; }
     .fastio-nav > button.btn.dropdown-toggle:after {
       height: 12px; }
-  .fastio-home-title {
-    margin-top: -1.25rem;
-    font-size: 2.5rem;
-    line-height: 2.5rem; }
+  img.ondas {
+    position: absolute;
+    z-index: 9; }
+    img.ondas.top {
+      top: 0; }
+    img.ondas.bottom {
+      bottom: 0; }
+    img.ondas.left {
+      left: -40px; }
+    img.ondas.right {
+      right: -20px; }
+  .fastio-home-title,
+  .fastio-hero header > h1 {
+    font-size: 2.5rem !important;
+    line-height: 2.5rem !important;
+    padding: 0 1rem !important; }
   .home-footer-wrapper {
     line-height: 1.5rem;
     bottom: 0;
@@ -11961,19 +11965,51 @@ body.page-template-barbie-subpages {
     .home-footer-wrapper footer .wpml-ls > ul > li > a {
       font-size: 0.66rem; }
     .home-footer-wrapper i {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+  body.page-template-a-nossa-agua .fastio-products {
+    padding-top: 10rem;
+    padding-bottom: 4rem; }
+    body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item {
+      font-size: 1rem; }
+  body.page-template-a-nossa-agua .fastio-benefits .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+    body.page-template-a-nossa-agua .fastio-benefits .container div.col-6:first-of-type, body.page-template-a-nossa-agua .fastio-benefits .container div.col-6:first-of-type + div.col-6 {
+      margin-bottom: 3rem; } }
 
 @media (min-width: 768px) {
   .fastio-nav {
     font-size: 1.2rem; }
+  img.ondas {
+    position: absolute;
+    z-index: 9; }
+    img.ondas.top {
+      top: 0; }
+    img.ondas.bottom {
+      bottom: 0; }
+    img.ondas.left {
+      left: -20px; }
+    img.ondas.right {
+      right: 0px; }
   .home-footer-wrapper {
     bottom: 2rem; }
   .home-footer, .main-footer {
     padding: 0; }
   .fastio-home-title {
-    margin: -2rem 0 0 0;
     font-size: 4rem;
-    line-height: 4rem; } }
+    line-height: 4rem; }
+  body.page-template-a-nossa-agua .fastio-products {
+    padding: 6rem 4rem; }
+  body.page-template-a-nossa-agua .fastio-hero-2 .fastio-hero-2-header {
+    padding-top: 33vh; }
+  body.page-template-a-nossa-agua .fastio-benefits {
+    position: relative;
+    padding-bottom: 6rem; }
+    body.page-template-a-nossa-agua .fastio-benefits .container {
+      margin-top: -2rem;
+      padding: 6rem 4rem; }
+      body.page-template-a-nossa-agua .fastio-benefits .container article {
+        padding: 0 1rem; } }
 
 /*
 * Use existing Bootstrap 4 classes and
