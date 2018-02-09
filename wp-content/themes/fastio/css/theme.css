@@ -10413,28 +10413,6 @@ html, body {
       padding: .1rem; }
       .main-footer-wrapper footer .fastio-footer-social li > a:hover, .main-footer-wrapper footer .fastio-footer-social li > a:focus {
         color: #00aeef; }
-  .main-footer-wrapper footer .fastio-footer-lang {
-    padding-top: 2px; }
-    .main-footer-wrapper footer .fastio-footer-lang .wpml-ls {
-      padding: 0;
-      display: inline-block; }
-      .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul {
-        direction: rtl;
-        display: inline-block;
-        list-style: circle;
-        list-style-position: outside;
-        color: inherit; }
-        .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li {
-          list-style-type: circle;
-          display: list-item; }
-          .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a {
-            display: initial;
-            padding: 0;
-            font-size: 70%;
-            color: inherit;
-            transition: all 250ms ease-in; }
-            .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a:hover, .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a:focus {
-              color: #00aeef; }
   .main-footer-wrapper footer .fastio-footer-nav {
     padding-top: 2px; }
     .main-footer-wrapper footer .fastio-footer-nav ul > li > a {
@@ -11950,9 +11928,41 @@ body.page-template-barbie-subpages {
     img.ondas.bottom {
       bottom: 0; }
     img.ondas.left {
-      left: -40px; }
+      left: -20px; }
     img.ondas.right {
-      right: -20px; }
+      right: 0px; }
+  .main-footer-wrapper {
+    height: auto; }
+    .main-footer-wrapper div.row:last-of-type {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #FFFFFF; }
+    .main-footer-wrapper footer .fastio-footer-nav ul > li:first-of-type > a {
+      padding-left: 0; }
+    .main-footer-wrapper footer .fastio-footer-nav ul > li > a {
+      font-size: 70%;
+      padding: 0.25rem 0.5rem 0.25rem; }
+    .main-footer-wrapper footer .fastio-footer-nav ul > li:last-of-type > a {
+      padding-right: 0; }
+    .main-footer-wrapper footer .fastio-footer-lang .wpml-ls {
+      padding: 0; }
+      .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul {
+        list-style: circle;
+        list-style-position: outside;
+        color: inherit;
+        padding-left: 15px; }
+        .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li {
+          list-style-type: circle;
+          display: list-item; }
+          .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a {
+            display: initial;
+            padding: 0;
+            font-size: 70%;
+            color: inherit;
+            line-height: 50%;
+            transition: all 250ms ease-in; }
+            .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a:hover, .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a:focus {
+              color: #00aeef; }
   .fastio-home-title,
   .fastio-hero header > h1 {
     font-size: 2.5rem !important;
@@ -11991,6 +12001,28 @@ body.page-template-barbie-subpages {
       left: -20px; }
     img.ondas.right {
       right: 0px; }
+  .fastio-footer-lang {
+    padding-top: 2px; }
+    .fastio-footer-lang .wpml-ls {
+      padding: 0;
+      display: inline-block; }
+      .fastio-footer-lang .wpml-ls ul {
+        direction: rtl;
+        display: inline-block;
+        list-style: circle;
+        list-style-position: outside;
+        color: inherit; }
+        .fastio-footer-lang .wpml-ls ul li {
+          list-style-type: circle;
+          display: list-item; }
+          .fastio-footer-lang .wpml-ls ul li a {
+            display: initial;
+            padding: 0;
+            font-size: 70%;
+            color: inherit;
+            transition: all 250ms ease-in; }
+            .fastio-footer-lang .wpml-ls ul li a:hover, .fastio-footer-lang .wpml-ls ul li a:focus {
+              color: #00aeef; }
   .home-footer-wrapper {
     bottom: 2rem; }
   .home-footer, .main-footer {
