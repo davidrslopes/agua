@@ -63,21 +63,21 @@ if(!empty($hero_1)):
 					<div class="tab-pane fade show active" id="tab-plastic" role="tabpanel" aria-labelledby="tab-plastic">
 						<?php echo do_shortcode( $plastic_gallery ); ?>
 						<footer class="gallery-caption">
-							<img id="img-gallery-caption" src="<?php echo get_template_directory_uri()."/img/onda_branco.png" ?>" alt="onda" style="display: none;">
+							<img id="img-gallery-caption" src="<?php echo get_template_directory_uri()."/img/Linha-gotas-brancas.png" ?>" alt="onda" style="display: none;">
 							<p></p>
 						</footer>
 					</div>
 					<div class="tab-pane fade" id="tab-glass" role="tabpanel" aria-labelledby="tab-glass">
 						<?php echo do_shortcode( $glass_gallery ); ?>
 						<footer class="gallery-caption">
-							<img id="img-gallery-caption" src="<?php echo get_template_directory_uri()."/img/onda_branco.png" ?>" alt="onda" style="display: none;">
+							<img id="img-gallery-caption" src="<?php echo get_template_directory_uri()."/img/Linha-gotas-brancas.png" ?>" alt="onda" style="display: none;">
 							<p></p>
 						</footer>
 					</div>
 					<div class="tab-pane fade" id="tab-packs" role="tabpanel" aria-labelledby="tab-packs">
 						<?php echo do_shortcode( $packs_gallery ); ?>
 						<footer class="gallery-caption">
-							<img id="img-gallery-caption" src="<?php echo get_template_directory_uri()."/img/onda_branco.png" ?>" alt="onda" style="display: none;">
+							<img id="img-gallery-caption" src="<?php echo get_template_directory_uri()."/img/Linha-gotas-brancas.png" ?>" alt="onda" style="display: none;">
 							<p></p>
 						</footer>
 					</div>
@@ -124,8 +124,12 @@ if(!empty($hero_2)):
 ?>
 <!-- ******************* The Fastio Benefits Section ******************* -->
 <section class="fastio-benefits" data-aos="fade">
-	<img class="ondas left top" src="<?php echo get_template_directory_uri()."/img/onda_azul_a_nossa_agua-l.png" ?>" alt="onda azul l" data-aos="fade-up">
-	<div class="container">
+	<img class="ondas left top" src="<?php echo get_template_directory_uri()."/img/gotas-esq-1.png" ?>" alt="onda azul l" data-aos="fade-up">
+	<img class="ondas left top" src="<?php echo get_template_directory_uri()."/img/gotas-esq-2.png" ?>" alt="onda azul 2" data-aos="fade-up">
+        <img class="ondas left top" src="<?php echo get_template_directory_uri()."/img/gotas-esq-3.png" ?>" alt="onda azul 3" data-aos="fade-up">
+        <img class="ondas left top" src="<?php echo get_template_directory_uri()."/img/gotas-esq-4.png" ?>" alt="onda azul 4" data-aos="fade-up">
+        <img class="ondas left top" src="<?php echo get_template_directory_uri()."/img/gotas-esq-5.png" ?>" alt="onda azul 5" data-aos="fade-up">
+        <div class="container">
 		<div class="row">
 			<?php while( have_rows('a-nossa-agua-section-4') ): the_row(); ?>
 			<div class="col-<?php echo $benefit_col*2; ?> col-md-<?php echo $benefit_col; ?>">
