@@ -37,16 +37,25 @@ if(!empty($location)):
 <!-- ******************* The Location Section ******************* -->
 <section class="fastio-location">
 	<div class="row no-gutters">
-		<div class="fastio-location-feature col-9" data-aos="fade-up">
+		<div class="fastio-location-feature col-12 col-md-9" data-aos="fade-up">
+			<?php if(!empty($location['milho-1'])): ?>
+			<img data-aos="fade-up" class="fastio-milho-1" src="<?php echo $location['milho-1']['url']; ?>" alt="<?php echo $location['milho-1']['title']; ?>" class="img-fluid">
+			<?php endif; ?>
 			<?php if(!empty($location['video'])):
 				$content_width = 1140;
 				echo do_shortcode(' [video src="'.$location['video'].'" poster="'. $location['fallback-img']['url'].'"] ');
 			else: ?>
 			<img src="<?php echo $location['fallback-img']['url'];?>" alt="<?php echo $location['fallback-img']['title'];?>" title="<?php echo $location['fallback-img']['title'];?>" class="fastio-location-image">
 			<?php endif; ?>
+			<?php if(!empty($location['milho-4'])): ?>
+			<img data-aos="fade-up" class="fastio-milho-4 d-none d-md-block" src="<?php echo $location['milho-4']['url']; ?>" alt="<?php echo $location['milho-4']['title']; ?>" class="img-fluid">
+			<?php endif; ?>
 		</div>
-		<div class="fastio-location-content col-3">
-			<article data-aos="fade-up">
+		<div class="fastio-location-content col-12 col-md-3">
+			<?php if(!empty($location['milho-2'])): ?>
+			<img data-aos="fade-up" class="fastio-milho-2" src="<?php echo $location['milho-2']['url']; ?>" alt="<?php echo $location['milho-2']['title']; ?>" class="img-fluid">
+			<?php endif; ?>
+			<article>
 				<h1><?php the_title();?></h1>
 				<p><?php echo $location['text'];?></p>
 				<div class="fastio-location-coordinates">
@@ -58,45 +67,48 @@ if(!empty($location)):
 					<?php else: echo $location['coordinates']; endif; ?>
 				</div>
 			</article>
+			<?php if(!empty($location['milho-3'])): ?>
+			<img data-aos="fade-up" class="fastio-milho-3" src="<?php echo $location['milho-3']['url']; ?>" alt="<?php echo $location['milho-3']['title']; ?>" class="img-fluid">
+			<?php endif; ?>
 		</div>
 	</div>
 </section>
 <?php endif; ?>
 
 <?php
-//Section 3 : lights
+//Section 3 : Local Highlights
 $highlights = get_field('explore-o-geres-subpage-section-3');
 if(!empty($highlights)): ?>
 <!-- ******************* The Local Highlights Section ******************* -->
-<section class="fastio-highlights" data-aos="fade-up">
+<section class="fastio-highlights">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-2">
+			<div class="col-md-2">
 				<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" data-aos="fade-up">
 			</div>
-			<div class="col-3">
+			<div class="col-md-3">
 				<article data-aos="fade-up">
 					<h3><?php echo $highlights['title']; ?></h3>
 					<p><?php echo $highlights['text-top']; ?></p>
 				</article>
 			</div>
-			<div class="col-6 offset-1">
+			<div class="col-md-6 offset-md-1">
 				<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid" data-aos="fade-up">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-6">
+			<div class="col-md-6">
 				<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" data-aos="fade-up">
 				<article class="row" data-aos="fade-up">
-					<div class="col-5">
+					<div class="col-md-5">
 						<img src="<?php echo $highlights['svg-left-bottom']['url'];?>" alt="<?php echo $highlights['svg-left-bottom']['title'];?>" title="<?php echo $highlights['svg-left-bottom']['title'];?>" class="img-fluid">
 					</div>
-					<div class="col-6">
+					<div class="col-md-6">
 						<p><?php echo $highlights['text-bottom']; ?></p>
 					</div>
 				</article>
 			</div>
-			<div class="col-6">
+			<div class="col-md-6">
 				<h2 data-aos="fade-up"><?php echo $highlights['title-big']; ?></h2>
 				<img src="<?php echo $highlights['svg-right-bottom']['url'];?>" alt="<?php echo $highlights['svg-right-bottom']['title'];?>" title="<?php echo $highlights['svg-right-bottom']['title'];?>" class="img-fluid" data-aos="fade-up">
 			</div>
