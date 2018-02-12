@@ -11226,8 +11226,20 @@ body.page-template-explore-o-geres-subpages .fastio-highlights {
     margin-bottom: 5rem;
     margin-top: 3rem; }
 
-body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama {
+body.page-template-explore-o-geres-subpages .fastio-360 {
+  position: relative;
   height: 70vh; }
+  body.page-template-explore-o-geres-subpages .fastio-360 .fastio-img-milho {
+    position: absolute;
+    z-index: 1; }
+    body.page-template-explore-o-geres-subpages .fastio-360 .fastio-img-milho.bottom {
+      bottom: 0;
+      right: 0; }
+    body.page-template-explore-o-geres-subpages .fastio-360 .fastio-img-milho.top {
+      top: 0;
+      left: 0; }
+  body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama {
+    height: 70vh; }
 
 /* ############################## Default ############################## */
 body.page-template-default .fastio-hero {

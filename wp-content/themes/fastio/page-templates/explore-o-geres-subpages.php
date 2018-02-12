@@ -122,6 +122,7 @@ if(!empty($fastio_360)): ?>
 <!-- ******************* The 360 Foto Section ******************* -->
 <section class="fastio-360" data-aos="fade">
 	<div class="container-fluid">
+		<?php if(!empty($fastio_360['milho-1']['url'])){ echo '<img src="'.$fastio_360['milho-1']['url'].'" class="fastio-img-milho top" alt="'.$fastio_360['milho-1']['url'].'">'; } ?>
 		<div class="row">
 			<?php if(!empty($fastio_360['fallback-img'])): ?>
 			<img src="<?php echo $fastio_360['fallback-img']['url']; ?>" alt="<?php echo $fastio_360['fallback-img']['title']; ?>" class="img-fluid">
@@ -145,8 +146,8 @@ if(!empty($fastio_360)): ?>
 			</script>
 			<?php endif; ?>
 		</div>
+		<?php if(!empty($fastio_360['milho-2']['url'])){ echo '<img src="'.$fastio_360['milho-2']['url'].'" class="fastio-img-milho bottom" alt="'.$fastio_360['milho-2']['url'].'">'; } ?>
 	</div>
-	<!--<img src=<?php echo get_template_directory_uri()."/img/milho_4.png"; ?>"" alt="">-->
 </section>
 <?php endif; ?>
 </section>
