@@ -241,7 +241,7 @@ if(!empty($fundo_da_pagina)):
     <?php
     $seccao5fundo = get_field('seccao_5_-_imagem_de_fundo');
     ?>
-    <section id="seccao5" style="background-image:url('<?php if(!empty($seccao5fundo)){echo $seccao5fundo ;} ?>');">
+    <section id="seccao5" style="background-image:url(<?php if(!empty($seccao5fundo)){echo $seccao5fundo ;} ?>);">
     <div data-aos="fade-up" data-aos-duration="2000">
      <div class="<?php echo esc_attr( $container ); ?>" id="content">
                 <main class="site-main row" id="main" role="main">

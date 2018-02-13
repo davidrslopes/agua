@@ -88,7 +88,7 @@ $section_3 = get_field('barbiesubpages-section-3');
 if(!empty($section_3)):
 ?>
 <!-- ******************* Section 3 ******************* -->
-<section class="fastio-barbie-subpages-section3" style="background-image:url('<?php echo $section_3['bg-img']; ?>');">
+<section class="fastio-barbie-subpages-section3" style="background-image:url(<?php echo $section_3['bg-img']; ?>);">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col col-md-5 imgtitulocriatividade">
@@ -170,7 +170,7 @@ if(!empty($section_3)):
                 $hero_4 = get_field('barbiesubpages-section-4');
 ?>
 <!-- ******************* The Fastio Links Section ******************* -->
-<section class="fastio-barbie-subpages-section4" style="background-image:url('<?php echo $hero_4['background_image']; ?>');">
+<section class="fastio-barbie-subpages-section4" style="background-image:url(<?php echo $hero_4['background_image']; ?>);">
         <div class="container-fluid">
             <div class="row">
                 <!-- //Section 4 : Subpages -->
