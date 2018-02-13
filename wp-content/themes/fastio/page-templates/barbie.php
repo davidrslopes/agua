@@ -29,13 +29,13 @@ if(!empty($hero_1)):
 	<?php if(!empty($hero_1['bg-img']) && !empty($hero_1['logo-img'])): ?>
         <div class="container">
            <div class="row">
-            <div class="col col-md-6 logoimgdiv">
+            <div class="col-12 col-md-6 logoimgdiv">
                 <img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/>
                  <div class="icon faa-float animated">
                         <i class="fa fa-angle-down"></i>
                  </div>
             </div>
-            <div class="col col-md-6 bgimgdiv">
+            <div class="col-12 col-md-6 bgimgdiv">
                 <img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid "/>
             </div>
            </div>
@@ -55,7 +55,7 @@ if(!empty($hero_1)):
 <section class="fastio-barbie-titles">
 	<div class="container">
 		<div class="row">
-			<header class="fastio-hero-header col col-md-12">
+			<header class="fastio-hero-header col-12 col-md-12">
                         <?php if(!empty($titles['titulo_1'])): ?><h1 class="title"><?php echo $titles['titulo_1'];?></h1><?php endif; ?> 
 			<?php if(!empty($titles['subtitulo'])): ?><h3 class="subtitle"><?php echo $titles['subtitulo'];?></h3><?php endif; ?> 
                         </header>
@@ -80,11 +80,10 @@ if(!empty($hero_1)):
 		<?php while( have_rows('barbie-section-3') ): the_row(); 
 			$link_id = get_sub_field('link', false, false);
 		?>
-		<div class="col col-md-<?php echo $links_col; ?>">
-                        <a href="<?php echo get_the_permalink($link_id); ?>">
-			<article style="background-image:url('<?php the_sub_field('img'); ?>');">
-			</article>
-                        </a>
+		<div class="col-<?php echo $links_col*2; ?> col-md-<?php echo $links_col; ?>">
+			<a href="<?php echo get_the_permalink($link_id); ?>">
+				<article style="background-image:url('<?php the_sub_field('img'); ?>');"></article>
+			</a>
 		</div>
 		<?php endwhile; ?>
 	</div>
