@@ -27,7 +27,7 @@ if(!empty($hero_1)):
 	<?php if(!empty($hero_1['title'])): ?>
 	<div class="container-fluid">
 		<div class="row">
-			<header class="fastio-hero-header col-12">
+			<header class="fastio-hero-header col col-12">
 				<h1 class="text-center"><?php echo $hero_1['title'];?></h1>
 			</header>
 		</div>
@@ -42,14 +42,14 @@ $side_image = get_field('seccao_2:_imagem_lateral');
 <section class="fastio-common-pages">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-3 listnavigationitems">
+			<div class="col col-md-3 listnavigationitems">
 				<div class="list-group" id="list-tab" role="tablist">
 					<a class="list-group-item list-group-item-action active" id="nav-tab-politica" data-toggle="list" href="#tab-politica" role="tab" aria-controls="tab-politica"><?php _e( 'Política Cookies', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-avisolegal" data-toggle="list" href="#tab-avisolegal" role="tab" aria-controls="tab-avisolegal"><?php _e( 'Aviso Legal', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-contato" data-toggle="list" href="#tab-contatos" role="tab" aria-controls="tab-contatos"><?php _e( 'Contato', 'understrap' ); ?></a>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col col-md-6">
 				<div class="tab-content">
 					<div class="tab-pane fade show active" id="tab-politica" role="tabpanel" aria-labelledby="tab-politica">
                                         <main class="site-main" id="main">          
@@ -103,7 +103,7 @@ $side_image = get_field('seccao_2:_imagem_lateral');
 					</div>
 				</div>
 			</div>
-                    <div class="col-3 lateralimage">
+                    <div class="col col-3 d-none d-sm-block lateralimage">
                         <img src="<?php echo $side_image['bg-img']; ?>" class="img-responsive float-right img-fluid"/>
                     </div>
 		</div>

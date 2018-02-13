@@ -29,13 +29,13 @@ if(!empty($hero_1)):
 	<?php if(!empty($hero_1['bg-img']) && !empty($hero_1['logo-img'])): ?>
         <div class="container">
            <div class="row">
-            <div class="col col-md-6" style="padding-right: 0px;">
+            <div class="col col-md-6 logoimgdiv">
                 <img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/>
                  <div class="icon faa-float animated">
                         <i class="fa fa-angle-down"></i>
                  </div>
             </div>
-            <div class="col col-md-6" style="padding-right: 0px;">
+            <div class="col col-md-6 bgimgdiv">
                 <img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid "/>
             </div>
            </div>

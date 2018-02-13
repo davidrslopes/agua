@@ -412,6 +412,69 @@ body.page-template-historiafastio{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    
+        #seccao1 .img-seccao1-imagem4{
+            margin-top: -120px;
+            margin-left: 270px;
+        }
+        
+        #seccao1 .seccao1imagem3div{
+            padding-top:260px;
+        }
+        
+        #seccao2 .seccao2imagemesquerdadiv{
+            margin-top: 80px;
+        }
+        
+        #seccao2 .content-area{
+            margin-top: 50px;
+        }
+        
+        #seccao2 .seccao2imagem3div{
+            text-align:right;
+        }
+        
+        #seccao2 .seccao2imagem3{
+            margin-top: -205px;
+        }
+        
+        #seccao2 .seccao2imagem2div{
+            text-align:right
+        }
+        
+        #seccao2 .seccao2imagem2{
+            margin-top: -190px;
+        }
+        
+        #seccao3 .content-area{
+            margin-top: 180px;
+        }
+        
+        #seccao3 .seccao3imagem2div{
+            margin-top: 225px;
+        }
+        
+        #seccao4{
+            margin-bottom: -185px;
+        }
+        
+        #seccao4 .seccao4imagemesquerda2div{
+            margin-top: 210px;
+        }
+        
+        #seccao4 .content-area{
+            margin-top: 180px;
+        }
+        
+        #seccao4 .seccao3imagem3{
+            margin-top: -13px;
+        }
+        
+        #seccao4 .seccao4imagemesquerda1{
+            margin-top: -285px;
+        }
+    
+    
 	#seccao5{
 		background-image: url(../img/Fundo_Seccao_Azul.svg);
 		background-size:100% 100%;
@@ -419,8 +482,14 @@ body.page-template-historiafastio{
 		-webkit-background-size: 100% 100%;
 		background-size:cover;
                 overflow: hidden;
+                margin-bottom:-60px;
                 
 	}
+        
+        #seccao5 .seccao5imagem3{
+            margin-top: -290px;
+        }
+        
         #seccao5 .media span.year ,
         #seccao5 .media .entry-content,
         #seccao5 .media .entry-content a,
@@ -1109,6 +1178,14 @@ body.page-template-hot-wheels{
     section.fastio-images-hero{
         padding-top: 170px;
         
+        .logoimgdiv{
+            padding-right: 0px;
+        }
+        
+        .bgimgdiv{
+            padding-right: 0px;
+        }
+        
         .btn-link{
             color:red;
             margin-top: -70px;
@@ -1424,6 +1501,15 @@ body.page-template-barbie{
     
     section.fastio-images-hero{
         padding-top: 170px;
+        
+        
+        .logoimgdiv{
+            padding-right: 0px;
+        }
+        
+        .bgimgdiv{
+            padding-right: 0px;
+        }
         
         .btn-link{
             color:red;

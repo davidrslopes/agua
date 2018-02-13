@@ -10502,13 +10502,47 @@ body.page-template-historiafastio {
   background-size: cover;
   -o-background-size: cover;
   /* Bootstrap 4 modal center, to correctly center the modal, cite "modal id" then .modal-dialog, like in CSS below */ }
+  body.page-template-historiafastio #seccao1 .img-seccao1-imagem4 {
+    margin-top: -120px;
+    margin-left: 270px; }
+  body.page-template-historiafastio #seccao1 .seccao1imagem3div {
+    padding-top: 260px; }
+  body.page-template-historiafastio #seccao2 .seccao2imagemesquerdadiv {
+    margin-top: 80px; }
+  body.page-template-historiafastio #seccao2 .content-area {
+    margin-top: 50px; }
+  body.page-template-historiafastio #seccao2 .seccao2imagem3div {
+    text-align: right; }
+  body.page-template-historiafastio #seccao2 .seccao2imagem3 {
+    margin-top: -205px; }
+  body.page-template-historiafastio #seccao2 .seccao2imagem2div {
+    text-align: right; }
+  body.page-template-historiafastio #seccao2 .seccao2imagem2 {
+    margin-top: -190px; }
+  body.page-template-historiafastio #seccao3 .content-area {
+    margin-top: 180px; }
+  body.page-template-historiafastio #seccao3 .seccao3imagem2div {
+    margin-top: 225px; }
+  body.page-template-historiafastio #seccao4 {
+    margin-bottom: -185px; }
+  body.page-template-historiafastio #seccao4 .seccao4imagemesquerda2div {
+    margin-top: 210px; }
+  body.page-template-historiafastio #seccao4 .content-area {
+    margin-top: 180px; }
+  body.page-template-historiafastio #seccao4 .seccao3imagem3 {
+    margin-top: -13px; }
+  body.page-template-historiafastio #seccao4 .seccao4imagemesquerda1 {
+    margin-top: -285px; }
   body.page-template-historiafastio #seccao5 {
     background-image: url(../img/Fundo_Seccao_Azul.svg);
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     background-size: cover;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: -60px; }
+  body.page-template-historiafastio #seccao5 .seccao5imagem3 {
+    margin-top: -290px; }
   body.page-template-historiafastio #seccao5 .media span.year,
   body.page-template-historiafastio #seccao5 .media .entry-content,
   body.page-template-historiafastio #seccao5 .media .entry-content a,
@@ -11508,6 +11542,10 @@ body.page-template-hot-wheels {
   -o-background-size: cover; }
   body.page-template-hot-wheels section.fastio-images-hero {
     padding-top: 170px; }
+    body.page-template-hot-wheels section.fastio-images-hero .logoimgdiv {
+      padding-right: 0px; }
+    body.page-template-hot-wheels section.fastio-images-hero .bgimgdiv {
+      padding-right: 0px; }
     body.page-template-hot-wheels section.fastio-images-hero .btn-link {
       color: red;
       margin-top: -70px; }
@@ -11739,6 +11777,10 @@ body.page-template-barbie {
   -o-background-size: cover; }
   body.page-template-barbie section.fastio-images-hero {
     padding-top: 170px; }
+    body.page-template-barbie section.fastio-images-hero .logoimgdiv {
+      padding-right: 0px; }
+    body.page-template-barbie section.fastio-images-hero .bgimgdiv {
+      padding-right: 0px; }
     body.page-template-barbie section.fastio-images-hero .btn-link {
       color: red;
       margin-top: -70px; }

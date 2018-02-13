@@ -29,8 +29,8 @@ if(!empty($hero_1)):
 	<?php if(!empty($hero_1['bg-img']) && !empty($hero_1['logo-img'])): ?>
         <div class="container-fluid">
            <div class="row">
-            <div class="col-6" style="padding-right: 0px;"><img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/></div>
-            <div class="col-6" style="padding-right: 0px;"><img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid float-right"/></div>
+            <div class="col-6 logoimgdiv"><img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/></div>
+            <div class="col-6 bgimgdiv"><img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid float-right"/></div>
            </div>
         </div>
 	<?php endif; ?>
