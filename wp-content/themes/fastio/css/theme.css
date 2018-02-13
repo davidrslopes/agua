@@ -10224,7 +10224,16 @@ html, body {
   margin: 0;
   padding: 0; }
 
-.vertical-center, .fastio-home-title, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header, body.page-template-fastio-go .fastio-hero header.fastio-hero-header, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header, body.page-template-default .fastio-hero header.fastio-hero-header {
+.vertical-center, .fastio-home-title, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header,
+body.page-template-a-nossa-agua .fastio-hero header.fastio-video-header, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header,
+body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-video-header, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header,
+body.page-template-a-familia .fastio-video-hero header.fastio-video-header, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header,
+body.page-template-a-familia .fastio-hero-3 header.fastio-video-header, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header,
+body.page-template-fastio-go .fastio-video-hero header.fastio-video-header, body.page-template-fastio-go .fastio-hero header.fastio-hero-header,
+body.page-template-fastio-go .fastio-hero header.fastio-video-header, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header,
+body.page-template-explore-o-geres .fastio-hero header.fastio-video-header, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header,
+body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-video-header, body.page-template-default .fastio-hero header.fastio-hero-header,
+body.page-template-default .fastio-hero header.fastio-video-header {
   min-height: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -10597,11 +10606,19 @@ body.page-template-a-nossa-agua .fastio-hero {
   min-height: 100vh;
   width: 100%;
   display: block; }
-  body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h1, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h2, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h3, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h4, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h5, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h6 {
+  body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h1, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h2, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h3, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h4, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h5, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h6,
+  body.page-template-a-nossa-agua .fastio-hero header.fastio-video-header h1,
+  body.page-template-a-nossa-agua .fastio-hero header.fastio-video-header h2,
+  body.page-template-a-nossa-agua .fastio-hero header.fastio-video-header h3,
+  body.page-template-a-nossa-agua .fastio-hero header.fastio-video-header h4,
+  body.page-template-a-nossa-agua .fastio-hero header.fastio-video-header h5,
+  body.page-template-a-nossa-agua .fastio-hero header.fastio-video-header h6 {
     color: white;
     margin: 0;
-    padding: 0; }
-  body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h1 {
+    padding: 0;
+    z-index: 1; }
+  body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header h1,
+  body.page-template-a-nossa-agua .fastio-hero header.fastio-video-header h1 {
     text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
     font-size: 3rem;
     line-height: 3rem; }
@@ -10671,11 +10688,19 @@ body.page-template-a-nossa-agua .fastio-hero-2 {
   min-height: 100vh;
   width: 100%;
   display: block; }
-  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h1, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h2, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h3, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h4, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h5, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h6 {
+  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h1, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h2, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h3, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h4, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h5, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h6,
+  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-video-header h1,
+  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-video-header h2,
+  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-video-header h3,
+  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-video-header h4,
+  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-video-header h5,
+  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-video-header h6 {
     color: white;
     margin: 0;
-    padding: 0; }
-  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h1 {
+    padding: 0;
+    z-index: 1; }
+  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header h1,
+  body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-video-header h1 {
     text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
     font-size: 3rem;
     line-height: 3rem; }
@@ -10733,11 +10758,19 @@ body.page-template-a-familia .fastio-video-hero {
   min-height: 100vh;
   width: 100%;
   display: block; }
-  body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h2, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h3, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h4, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h5, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h6 {
+  body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h2, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h3, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h4, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h5, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h6,
+  body.page-template-a-familia .fastio-video-hero header.fastio-video-header h1,
+  body.page-template-a-familia .fastio-video-hero header.fastio-video-header h2,
+  body.page-template-a-familia .fastio-video-hero header.fastio-video-header h3,
+  body.page-template-a-familia .fastio-video-hero header.fastio-video-header h4,
+  body.page-template-a-familia .fastio-video-hero header.fastio-video-header h5,
+  body.page-template-a-familia .fastio-video-hero header.fastio-video-header h6 {
     color: white;
     margin: 0;
-    padding: 0; }
-  body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1 {
+    padding: 0;
+    z-index: 1; }
+  body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1,
+  body.page-template-a-familia .fastio-video-hero header.fastio-video-header h1 {
     text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
     font-size: 3rem;
     line-height: 3rem; }
@@ -10764,8 +10797,8 @@ body.page-template-a-familia .fastio-video-hero {
   body.page-template-a-familia .fastio-video-hero div.fastio-video-container {
     position: absolute;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden; }
     body.page-template-a-familia .fastio-video-hero div.fastio-video-container video.fastio-video {
       position: absolute;
@@ -10780,11 +10813,15 @@ body.page-template-a-familia .fastio-video-hero {
       background-size: cover;
       border: 0;
       z-index: 0; }
+    body.page-template-a-familia .fastio-video-hero div.fastio-video-container .fastio-video-header {
+      position: relative; }
+      body.page-template-a-familia .fastio-video-hero div.fastio-video-container .fastio-video-header .fastio-video-title {
+        z-index: 1; }
 
 body.page-template-a-familia .fastio-feature {
   position: relative; }
   body.page-template-a-familia .fastio-feature.mt {
-    margin-top: 6rem; }
+    padding-top: 6rem; }
   body.page-template-a-familia .fastio-feature article {
     padding: 8rem 6rem 8rem 4rem;
     color: white;
@@ -10798,7 +10835,7 @@ body.page-template-a-familia .fastio-feature {
 body.page-template-a-familia .fastio-feature-2 {
   position: relative; }
   body.page-template-a-familia .fastio-feature-2.mt {
-    margin-top: 6rem; }
+    padding-top: 6rem; }
   body.page-template-a-familia .fastio-feature-2 article {
     padding: 8rem 6rem 8rem 4rem;
     color: white;
@@ -10822,11 +10859,19 @@ body.page-template-a-familia .fastio-hero-3 {
   width: 100%;
   display: block;
   position: relative; }
-  body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h1, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h2, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h3, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h4, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h5, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h6 {
+  body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h1, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h2, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h3, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h4, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h5, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h6,
+  body.page-template-a-familia .fastio-hero-3 header.fastio-video-header h1,
+  body.page-template-a-familia .fastio-hero-3 header.fastio-video-header h2,
+  body.page-template-a-familia .fastio-hero-3 header.fastio-video-header h3,
+  body.page-template-a-familia .fastio-hero-3 header.fastio-video-header h4,
+  body.page-template-a-familia .fastio-hero-3 header.fastio-video-header h5,
+  body.page-template-a-familia .fastio-hero-3 header.fastio-video-header h6 {
     color: white;
     margin: 0;
-    padding: 0; }
-  body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h1 {
+    padding: 0;
+    z-index: 1; }
+  body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header h1,
+  body.page-template-a-familia .fastio-hero-3 header.fastio-video-header h1 {
     text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
     font-size: 3rem;
     line-height: 3rem; }
@@ -10869,11 +10914,19 @@ body.page-template-fastio-go .fastio-video-hero {
   min-height: 100vh;
   width: 100%;
   display: block; }
-  body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h1, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h2, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h3, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h4, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h5, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h6 {
+  body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h1, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h2, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h3, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h4, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h5, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h6,
+  body.page-template-fastio-go .fastio-video-hero header.fastio-video-header h1,
+  body.page-template-fastio-go .fastio-video-hero header.fastio-video-header h2,
+  body.page-template-fastio-go .fastio-video-hero header.fastio-video-header h3,
+  body.page-template-fastio-go .fastio-video-hero header.fastio-video-header h4,
+  body.page-template-fastio-go .fastio-video-hero header.fastio-video-header h5,
+  body.page-template-fastio-go .fastio-video-hero header.fastio-video-header h6 {
     color: white;
     margin: 0;
-    padding: 0; }
-  body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h1 {
+    padding: 0;
+    z-index: 1; }
+  body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header h1,
+  body.page-template-fastio-go .fastio-video-hero header.fastio-video-header h1 {
     text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
     font-size: 3rem;
     line-height: 3rem; }
@@ -10955,7 +11008,7 @@ body.page-template-fastio-go .fastio-go-bottle {
     font-weight: bold; }
   body.page-template-fastio-go .fastio-go-bottle p {
     font-size: 1.33rem; }
-  body.page-template-fastio-go .fastio-go-bottle .vertical-align {
+  body.page-template-fastio-go .fastio-go-bottle .vertical-align, body.page-template-fastio-go .fastio-go-bottle body.page-template-a-familia .fastio-video-hero div.fastio-video-container .fastio-video-header .fastio-video-title, body.page-template-a-familia .fastio-video-hero div.fastio-video-container .fastio-video-header body.page-template-fastio-go .fastio-go-bottle .fastio-video-title {
     padding-top: 33vh; }
 
 body.page-template-fastio-go .fastio-hero {
@@ -10970,11 +11023,19 @@ body.page-template-fastio-go .fastio-hero {
   min-height: 100vh;
   width: 100%;
   display: block; }
-  body.page-template-fastio-go .fastio-hero header.fastio-hero-header h1, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h2, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h3, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h4, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h5, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h6 {
+  body.page-template-fastio-go .fastio-hero header.fastio-hero-header h1, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h2, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h3, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h4, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h5, body.page-template-fastio-go .fastio-hero header.fastio-hero-header h6,
+  body.page-template-fastio-go .fastio-hero header.fastio-video-header h1,
+  body.page-template-fastio-go .fastio-hero header.fastio-video-header h2,
+  body.page-template-fastio-go .fastio-hero header.fastio-video-header h3,
+  body.page-template-fastio-go .fastio-hero header.fastio-video-header h4,
+  body.page-template-fastio-go .fastio-hero header.fastio-video-header h5,
+  body.page-template-fastio-go .fastio-hero header.fastio-video-header h6 {
     color: white;
     margin: 0;
-    padding: 0; }
-  body.page-template-fastio-go .fastio-hero header.fastio-hero-header h1 {
+    padding: 0;
+    z-index: 1; }
+  body.page-template-fastio-go .fastio-hero header.fastio-hero-header h1,
+  body.page-template-fastio-go .fastio-hero header.fastio-video-header h1 {
     text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
     font-size: 3rem;
     line-height: 3rem; }
@@ -11039,11 +11100,19 @@ body.page-template-explore-o-geres .fastio-hero {
   min-height: 100vh;
   width: 100%;
   display: block; }
-  body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h1, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h2, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h3, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h4, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h5, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h6 {
+  body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h1, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h2, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h3, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h4, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h5, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h6,
+  body.page-template-explore-o-geres .fastio-hero header.fastio-video-header h1,
+  body.page-template-explore-o-geres .fastio-hero header.fastio-video-header h2,
+  body.page-template-explore-o-geres .fastio-hero header.fastio-video-header h3,
+  body.page-template-explore-o-geres .fastio-hero header.fastio-video-header h4,
+  body.page-template-explore-o-geres .fastio-hero header.fastio-video-header h5,
+  body.page-template-explore-o-geres .fastio-hero header.fastio-video-header h6 {
     color: white;
     margin: 0;
-    padding: 0; }
-  body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h1 {
+    padding: 0;
+    z-index: 1; }
+  body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header h1,
+  body.page-template-explore-o-geres .fastio-hero header.fastio-video-header h1 {
     text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
     font-size: 3rem;
     line-height: 3rem; }
@@ -11157,11 +11226,19 @@ body.page-template-explore-o-geres-subpages .fastio-hero {
   min-height: 100vh;
   width: 100%;
   display: block; }
-  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h1, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h2, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h3, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h4, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h5, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h6 {
+  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h1, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h2, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h3, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h4, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h5, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h6,
+  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-video-header h1,
+  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-video-header h2,
+  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-video-header h3,
+  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-video-header h4,
+  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-video-header h5,
+  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-video-header h6 {
     color: white;
     margin: 0;
-    padding: 0; }
-  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h1 {
+    padding: 0;
+    z-index: 1; }
+  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h1,
+  body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-video-header h1 {
     text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
     font-size: 3rem;
     line-height: 3rem; }
@@ -11275,11 +11352,19 @@ body.page-template-default .fastio-hero {
   width: 100%;
   display: block;
   max-height: 440px; }
-  body.page-template-default .fastio-hero header.fastio-hero-header h1, body.page-template-default .fastio-hero header.fastio-hero-header h2, body.page-template-default .fastio-hero header.fastio-hero-header h3, body.page-template-default .fastio-hero header.fastio-hero-header h4, body.page-template-default .fastio-hero header.fastio-hero-header h5, body.page-template-default .fastio-hero header.fastio-hero-header h6 {
+  body.page-template-default .fastio-hero header.fastio-hero-header h1, body.page-template-default .fastio-hero header.fastio-hero-header h2, body.page-template-default .fastio-hero header.fastio-hero-header h3, body.page-template-default .fastio-hero header.fastio-hero-header h4, body.page-template-default .fastio-hero header.fastio-hero-header h5, body.page-template-default .fastio-hero header.fastio-hero-header h6,
+  body.page-template-default .fastio-hero header.fastio-video-header h1,
+  body.page-template-default .fastio-hero header.fastio-video-header h2,
+  body.page-template-default .fastio-hero header.fastio-video-header h3,
+  body.page-template-default .fastio-hero header.fastio-video-header h4,
+  body.page-template-default .fastio-hero header.fastio-video-header h5,
+  body.page-template-default .fastio-hero header.fastio-video-header h6 {
     color: white;
     margin: 0;
-    padding: 0; }
-  body.page-template-default .fastio-hero header.fastio-hero-header h1 {
+    padding: 0;
+    z-index: 1; }
+  body.page-template-default .fastio-hero header.fastio-hero-header h1,
+  body.page-template-default .fastio-hero header.fastio-video-header h1 {
     text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
     font-size: 3rem;
     line-height: 3rem; }
@@ -12052,7 +12137,16 @@ body.page-template-barbie-subpages {
       margin-bottom: 3rem; }
   body.page-template-explore-o-geres-subpages .fastio-360 .fastio-img-milho {
     width: 50%;
-    height: auto; } }
+    height: auto; }
+  body.page-template-a-familia .fastio-feature.mt,
+  body.page-template-a-familia .fastio-feature-2.mt {
+    padding-top: 0; }
+  body.page-template-a-familia .fastio-feature article,
+  body.page-template-a-familia .fastio-feature-2 article {
+    position: relative;
+    bottom: inherit; }
+  body.page-template-a-familia .fastio-feature-2 {
+    padding-top: 3rem; } }
 
 @media (min-width: 768px) {
   .fastio-nav {
