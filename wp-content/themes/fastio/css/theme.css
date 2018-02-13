@@ -10227,7 +10227,7 @@ html, body {
 .vertical-center, .fastio-home-title, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header,
 body.page-template-a-nossa-agua .fastio-hero header.fastio-video-header, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header,
 body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-video-header, body.page-template-a-familia .fastio-video-hero header.fastio-hero-header,
-body.page-template-a-familia .fastio-video-hero header.fastio-video-header, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header,
+body.page-template-a-familia .fastio-video-hero header.fastio-video-header, body.page-template-a-familia .fastio-video-hero div.fastio-video-container .fastio-video-header .fastio-video-title, body.page-template-a-familia .fastio-hero-3 header.fastio-hero-header,
 body.page-template-a-familia .fastio-hero-3 header.fastio-video-header, body.page-template-fastio-go .fastio-video-hero header.fastio-hero-header,
 body.page-template-fastio-go .fastio-video-hero header.fastio-video-header, body.page-template-fastio-go .fastio-hero header.fastio-hero-header,
 body.page-template-fastio-go .fastio-hero header.fastio-video-header, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header,
@@ -10993,7 +10993,6 @@ body.page-template-fastio-go .fastio-video-hero {
 body.page-template-fastio-go .fastio-go-bottle {
   display: block;
   width: 100%;
-  height: 100vh;
   background-color: #fff200;
   background-image: url("../img/fundo_amarelo.svg");
   background-repeat: no-repeat;
@@ -11008,8 +11007,6 @@ body.page-template-fastio-go .fastio-go-bottle {
     font-weight: bold; }
   body.page-template-fastio-go .fastio-go-bottle p {
     font-size: 1.33rem; }
-  body.page-template-fastio-go .fastio-go-bottle .vertical-align, body.page-template-fastio-go .fastio-go-bottle body.page-template-a-familia .fastio-video-hero div.fastio-video-container .fastio-video-header .fastio-video-title, body.page-template-a-familia .fastio-video-hero div.fastio-video-container .fastio-video-header body.page-template-fastio-go .fastio-go-bottle .fastio-video-title {
-    padding-top: 33vh; }
 
 body.page-template-fastio-go .fastio-hero {
   background-image: url("../img/imagemGO_2.jpg");
@@ -12146,7 +12143,10 @@ body.page-template-barbie-subpages {
     position: relative;
     bottom: inherit; }
   body.page-template-a-familia .fastio-feature-2 {
-    padding-top: 3rem; } }
+    padding-top: 3rem; }
+  body.page-template-fastio-go .fastio-go-bottle {
+    padding-top: 3rem;
+    padding-bottom: 3rem; } }
 
 @media (min-width: 768px) {
   .fastio-nav {
@@ -12210,7 +12210,11 @@ body.page-template-barbie-subpages {
     z-index: 1; }
   body.page-template-explore-o-geres-subpages .fastio-milho-3 {
     position: absolute;
-    bottom: 0; } }
+    bottom: 0; }
+  body.page-template-fastio-go .fastio-go-bottle {
+    height: 100vh; }
+    body.page-template-fastio-go .fastio-go-bottle .vertical-align {
+      padding-top: 33vh; } }
 
 /*
 * Use existing Bootstrap 4 classes and
