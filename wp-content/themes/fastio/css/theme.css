@@ -10456,6 +10456,12 @@ body.page-template-hotwheels-single .main-footer-wrapper {
       text-align: center; }
 
 /* ############################## HOMEPAGE ############################## */
+body.home {
+  height: 100vh;
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
 nav.navbar.fixed-top {
   padding-top: 2.5rem;
   padding-bottom: 0; }
@@ -10475,7 +10481,9 @@ nav.navbar.fixed-top {
 .fastio-home-title {
   text-align: center;
   color: white;
-  text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66); }
+  text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
+  margin: 0;
+  padding: 0; }
 
 /* ############################## HISTORIA FASTIO ############################## */
 body.page-template-historiafastio {
@@ -11972,7 +11980,8 @@ body.page-template-barbie-subpages {
   .fastio-hero header > h1 {
     font-size: 2.5rem !important;
     line-height: 2.5rem !important;
-    padding: 0 1rem !important; }
+    padding: 0 1rem !important;
+    margin: 0 !important; }
   .home-footer-wrapper {
     line-height: 1.5rem;
     bottom: 0;

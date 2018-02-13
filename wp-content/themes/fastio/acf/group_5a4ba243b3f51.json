@@ -1,6 +1,36 @@
 {
     "key": "group_5a4ba243b3f51",
     "title": "História - Imagens",
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/historiafastio.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
     "fields": [
         {
             "key": "field_5a4ba22b3a382",
@@ -387,6 +417,30 @@
             "mime_types": ""
         },
         {
+            "key": "field_5a78dc42caa0b",
+            "label": "Secção 5 - Imagem de Fundo",
+            "name": "seccao_5_-_imagem_de_fundo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5a4ec59a3932a",
             "label": "Secção 6: Links",
             "name": "historia-section-6",
@@ -451,37 +505,31 @@
                     "mime_types": ""
                 }
             ]
+        },
+        {
+            "key": "field_5a78dc61caa0c",
+            "label": "Imagem Fundo da Pagina",
+            "name": "imagem_fundo_da_pagina",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
-    "location": [
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-templates\/historiafastio.php"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "acf_after_title",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content",
-        "excerpt",
-        "custom_fields",
-        "discussion",
-        "comments",
-        "author",
-        "format",
-        "page_attributes",
-        "featured_image",
-        "categories",
-        "tags",
-        "send-trackbacks"
-    ],
-    "active": 1,
-    "description": "",
-    "modified": 1515112128
+    "modified": 1518534862
 }

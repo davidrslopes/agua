@@ -367,6 +367,12 @@ body.page-template-hotwheels-single .main-footer-wrapper{ // Hotwheels Car Pages
 	}
 }
 /* ############################## HOMEPAGE ############################## */
+body.home{
+	height: 100vh;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
 //Navbar
 nav.navbar.fixed-top{
 	padding-top: 2.5rem;
@@ -393,6 +399,8 @@ nav.navbar.fixed-top{
 	text-align:center;
 	color: white;
 	text-shadow: $h2o-text-shadow;
+	margin: 0;
+	padding: 0;
 }
 
 /* ############################## HISTORIA FASTIO ############################## */
@@ -1840,6 +1848,7 @@ body.page-template-barbie-subpages{
 		font-size: 2.5rem!important;
 		line-height: 2.5rem!important;
 		padding: 0 1rem!important;
+		margin: 0!important;
 	}
 	.home-footer-wrapper{
 		line-height: 1.5rem;
