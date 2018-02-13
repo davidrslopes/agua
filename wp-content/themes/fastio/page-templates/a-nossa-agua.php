@@ -21,7 +21,7 @@ if(!empty($hero_1)):
 	<?php if(!empty($hero_1['title'])): ?>
 	<div class="container-fluid">
 		<div class="row">
-			<header class="fastio-hero-header col-12">
+			<header class="fastio-hero-header col col-md-12">
 				<h1 class="text-center"<?php if(!empty($hero_1['title-color'])){ echo ' style="color:'.$hero_1['title-color'].';"';} ?>><?php echo $hero_1['title'];?></h1>
 			</header>
 		</div>
@@ -51,14 +51,14 @@ if(!empty($hero_1)):
 <section class="fastio-products" data-aos="fade">
 	<div class="container">
 		<div class="row">
-			<div class="col-4 col-md-2 offset-md-1">
+			<div class="col col-4 col-md-2 offset-md-1">
 				<div class="list-group" id="list-tab" role="tablist" data-aos="fade-up">
 					<a class="list-group-item list-group-item-action active" id="nav-tab-plastic" data-toggle="list" href="#tab-plastic" role="tab" aria-controls="tab-plastic"><?php _e( 'Plástico', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-glass" data-toggle="list" href="#tab-glass" role="tab" aria-controls="tab-glass"><?php _e( 'Vidro', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-packs" data-toggle="list" href="#tab-packs" role="tab" aria-controls="tab-packs"><?php _e( 'Packs', 'understrap' ); ?></a>
 				</div>
 			</div>
-			<div class="col-8 col-md-9">
+			<div class="col col col-8 col-md-9">
 				<div class="tab-content" data-aos="fade-up">
 					<div class="tab-pane fade show active" id="tab-plastic" role="tabpanel" aria-labelledby="tab-plastic">
 						<?php echo do_shortcode( $plastic_gallery ); ?>
@@ -97,7 +97,7 @@ if(!empty($hero_2)):
 <section class="fastio-hero-2" style="background-image:url('<?php echo $hero_2['bg-img']; ?>');" data-aos="fade">
 	<div class="container-fluid">
 		<header class="fastio-hero-2-header">
-			<div class="offset-md-7 col-md-4">
+			<div class="col offset-md-7 col-md-4">
 			<?php if(!empty($hero_2['title'])): ?>
 			<div class="row">
 				<h3 <?php if(!empty($hero_2['title-color'])){ echo ' style="color:'.$hero_2['title-color'].';"';} ?> data-aos="fade-up">
@@ -132,7 +132,7 @@ if(!empty($hero_2)):
         <div class="container">
 		<div class="row">
 			<?php while( have_rows('a-nossa-agua-section-4') ): the_row(); ?>
-			<div class="col-<?php echo $benefit_col*2; ?> col-md-<?php echo $benefit_col; ?>">
+			<div class="col col-<?php echo $benefit_col*2; ?> col-md-<?php echo $benefit_col; ?>">
 				<article data-aos="fade-in">
 					<h5><?php the_sub_field('title'); ?></h5>
 					<p><?php the_sub_field('desc'); ?></p>
@@ -161,7 +161,7 @@ if(!empty($hero_2)):
 		<?php while( have_rows('a-nossa-agua-section-5') ): the_row(); 
 			$link_id = get_sub_field('link', false, false);
 		?>
-		<div class="col-<?php echo $links_col*2; ?> col-md-<?php echo $links_col; ?>">
+		<div class="col col-<?php echo $links_col*2; ?> col-md-<?php echo $links_col; ?>">
 			<article style="background-image:url('<?php the_sub_field('img'); ?>');">
 				<a href="<?php echo get_the_permalink($link_id); ?>">
 					<h5 class="align-middle"><?php echo get_the_title($link_id); ?></h5>

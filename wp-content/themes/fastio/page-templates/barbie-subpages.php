@@ -28,7 +28,7 @@ if(!empty($hero_1)):
 	
         <div class="container">
            <div class="row">    
-            <div class="col-6">
+            <div class="col col-md-6">
                 <div data-aos="fade-up" data-aos-duration="3000">
                     <img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid"/>
                 </div>
@@ -39,7 +39,7 @@ if(!empty($hero_1)):
                 <div class="icon faa-float animated">
                         <i class="fa fa-angle-down"></i></div>
             </div>
-            <div class="col-6">           
+            <div class="col col-md-6">           
                 <div data-aos="fade-up" data-aos-duration="3000">
                  <img src="<?php echo $hero_1['img1']; ?>" class="img-fluid bottleimg"/>
                 </div>
@@ -56,19 +56,19 @@ if(!empty($hero_1)):
 <section class="fastio-barbie-subpages-section2">
 	<div class="container">
 		<div class="row">
-                    <div class="col-12">
+                    <div class="col col-md-12">
                         <div data-aos="fade-up" data-aos-duration="3000">
                             <img src="<?php echo $section2['img1']; ?>" class="img-fluid imgpolaroid"/>
                         </div>
                     </div>
 		</div>
             <div class="row">
-                <div class="col-2">
+                <div class="col col-md-2">
                     <div data-aos="fade-up"data-aos-duration="3000">
                     <img src="<?php echo $section2['img2']; ?>" class="img-fluid imgestrelas"/>
                     </div>
                 </div>
-                <div class="col-10">
+                <div class="col col-md-10">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid"/>
                         <div class="title">
@@ -91,7 +91,7 @@ if(!empty($section_3)):
 <section class="fastio-barbie-subpages-section3" style="background-image:url('<?php echo $section_3['bg-img']; ?>');">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-5 imgtitulocriatividade">
+			<div class="col col-md-5 imgtitulocriatividade">
                             <div data-aos="fade-up"data-aos-duration="3000">
 				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/> 
 				<div class="title">
@@ -99,12 +99,12 @@ if(!empty($section_3)):
 				</div>
                             </div>
 			</div>
-			<div class="col-1 imgestrelas">
+			<div class="col col-md-1 imgestrelas">
                             <div data-aos="fade-up"data-aos-duration="3000">
 				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-right"/>
                             </div>
                         </div>
-			<div class="col-6 imgcameracol">
+			<div class="col col-md-6 imgcameracol">
 				<div data-aos="fade-up"data-aos-duration="3000">
 					<img src="<?php echo $section_3['imgcamera']; ?>" class="img-fluid float-right imgcamera"/>
 				</div>
@@ -112,17 +112,17 @@ if(!empty($section_3)):
 		</div>
 	</div>
 	<div class="row no-gutters">
-		<div class="col-3">
+		<div class="col col-md-3">
 			<div data-aos="fade-up" data-aos-duration="3000">
 				<img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-right imgestrelasbarbiefotografa"/>
 			</div>
 		</div>
-		<div class="col-3">
+		<div class="col col-md-3">
                     <div data-aos="fade-up"data-aos-duration="3000">
 			 <img src="<?php echo $section_3['img3']; ?>" class="img-fluid float-left imgbarbiefotografa"/>
                     </div>
                 </div>
-		<div class="col-6">
+		<div class="col col-md-6">
 			<div class="barbie-galeria">
                             <?php
 //Section 3 : Galeria Fotos
@@ -178,8 +178,8 @@ if(!empty($section_3)):
                 $hero_4 = get_field('barbiesubpages-section-4');
                 if(!empty($hero_4)):
                 ?>
-                <div class="col-3"></div>
-                <div class="col-9">
+                <div class="col col-md-3"></div>
+                <div class="col col-md-9">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $hero_4['img_titulo']; ?>" class="img-fluid float-right escolhebarbieimg"/>
                     </div>
@@ -196,7 +196,7 @@ if(!empty($section_3)):
         $link_id = get_sub_field('link', false, false);
         $i++;
         ?>
-            <div class="carousel-item col-md-3 <?php echo $i===1 ? 'active' : '';?>">
+            <div class="carousel-item col col-md-3 <?php echo $i===1 ? 'active' : '';?>">
                 <a href="<?php echo get_the_permalink($link_id); ?>">
 		<img src="<?php the_sub_field('img') ?>" alt="" />
                 </a>
