@@ -97,19 +97,19 @@ if(!empty($hero_2)):
 <section class="fastio-hero-2" style="background-image:url('<?php echo $hero_2['bg-img']; ?>');" data-aos="fade">
 	<div class="container-fluid">
 		<header class="fastio-hero-2-header">
-			<div class="offset-md-7 col-md-4">
-			<?php if(!empty($hero_2['title'])): ?>
-			<div class="row">
-				<h3 <?php if(!empty($hero_2['title-color'])){ echo ' style="color:'.$hero_2['title-color'].';"';} ?> data-aos="fade-up">
-					<?php echo $hero_2['title']; ?>
-				</h3>
-			</div>
-			<?php endif; ?>
-			<?php if(!empty($hero_2['hashtag'])): ?>
-			<div class="row">
-				<img class="img-fluid" src="<?php echo $hero_2['hashtag']['url']; ?>" title="<?php echo $hero_2['hashtag']['title']; ?>" alt="<?php echo $hero_2['hashtag']['title']; ?>" data-aos="fade-up">
-			</div>
-			<?php endif; ?>
+			<div class="col-12 offset-md-7 col-md-4">
+				<?php if(!empty($hero_2['title'])): ?>
+				<div class="row">
+					<h3 <?php if(!empty($hero_2['title-color'])){ echo ' style="color:'.$hero_2['title-color'].';"';} ?> data-aos="fade-up">
+						<?php echo $hero_2['title']; ?>
+					</h3>
+				</div>
+				<?php endif; ?>
+				<?php if(!empty($hero_2['hashtag'])): ?>
+				<div class="row">
+					<img class="img-fluid" src="<?php echo $hero_2['hashtag']['url']; ?>" title="<?php echo $hero_2['hashtag']['title']; ?>" alt="<?php echo $hero_2['hashtag']['title']; ?>" data-aos="fade-up">
+				</div>
+				<?php endif; ?>
 			</div>
 		</header>
 	</div>

@@ -11995,6 +11995,25 @@ body.page-template-barbie-subpages {
     padding-bottom: 4rem; }
     body.page-template-a-nossa-agua .fastio-products .list-group .list-group-item {
       font-size: 1rem; }
+  body.page-template-a-nossa-agua .fastio-hero-2 .fastio-hero-2-header {
+    min-height: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
   body.page-template-a-nossa-agua .fastio-benefits .container {
     padding-top: 2rem;
     padding-bottom: 2rem; }
