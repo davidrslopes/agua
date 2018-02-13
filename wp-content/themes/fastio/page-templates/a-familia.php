@@ -25,17 +25,23 @@ if(!empty($hero_1)):
 	</div>
 	<?php endif; ?>
 	
+	<header class="fastio-video-header">
 	<?php if(!empty($hero_1['title'])): ?>
+<<<<<<< HEAD
+		<h1 <?php if(!empty($hero_1['cor_do_titulo'])){ echo 'style="color:'.$hero_1['cor_do_titulo'].';"';} ?>><?php echo $hero_1['title'];?></h1>
+=======
 	<div class="container-fluid">
 		<div class="row">
-			<header class="col-4 offset-4">
+			<header class="col col-md-4 offset-4">
 				<h1 class="text-center"<?php if(!empty($hero_1['title-color'])){ echo ' style="color:'.$hero_1['title-color'].';"';} ?>><?php echo $hero_1['title'];?></h1>
 				<?php if(!empty($hero_1['hashtag-img'])): ?><div class="text-left"><img src="<?php echo $hero_1['hashtag-img']['url'];?>" alt="<?php echo $hero_1['hashtag-img']['title'];?>"></div><?php endif; ?>
 			</header>
 		</div>
 	</div>
+>>>>>>> 84e70ef6bd65315a4e612da12f54eb8cafd49b0e
 	<?php endif; ?>
-	<?php if(!empty($hero_1['arrow'])): ?><button class="btn btn-link btn-block fastio-btn-scroll-down"<?php if(!empty($hero_1['arrow-color'])){ echo ' style="color:'.$hero_1['arrow-color'].';"';} ?>><i class="fa fa-angle-down"></i></button><?php endif; ?>
+		<button class="btn btn-link btn-block fastio-btn-scroll-down" <?php if(!empty($hero_1['cor_da_seta'])){ echo 'style="color:'.$hero_1['cor_da_seta'].';"';} ?>><i class="fa fa-angle-down"></i></button>
+	</header>
 </section><!-- .fastio-video-hero -->
 <?php endif; ?>
 
@@ -47,11 +53,19 @@ if(!empty($hero_1)):
 <section class="fastio-feature mt">
 	<div class="container">
 		<div class="row no-gutters">
-			<div class="col-7 text-right">
+<<<<<<< HEAD
+			<div class="col-12 col-md-7 text-right">
 				<?php if(!empty($feature['img'])): ?><img class="img-fluid" src="<?php echo $feature['img']['url']; ?>" title="<?php echo $feature['img']['title']; ?>" alt="<?php echo $feature['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
 			</div>
-			<div class="col-5 text-left pull-bottom">
+			<div class="col-12 col-md-5 text-left">
+				<article class="bg-primary pull-bottom" data-aos="fade-up">
+=======
+			<div class="col col-md-7 text-right">
+				<?php if(!empty($feature['img'])): ?><img class="img-fluid" src="<?php echo $feature['img']['url']; ?>" title="<?php echo $feature['img']['title']; ?>" alt="<?php echo $feature['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
+			</div>
+			<div class="col col-md-5 text-left pull-bottom">
 				<article class="bg-primary" data-aos="fade-up">
+>>>>>>> 84e70ef6bd65315a4e612da12f54eb8cafd49b0e
 					<?php if(!empty($feature['text'])){ echo '<h4 data-aos="fade-up">'.$feature['text'].'</h4>'; } ?>
 				</article>
 			</div>
@@ -71,7 +85,11 @@ if(!empty($hero_3)):
 	<div class="container-fluid">
 		<img class="ondas left bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-l.png"; ?>" alt="onda azul l" data-aos="fade-up">
 		<div class="row">
-			<header class="fastio-hero-header offset-2 col-10" data-aos="fade-up">
+<<<<<<< HEAD
+			<header class="fastio-hero-header offset-md-2 col-md-10" data-aos="fade-up">
+=======
+			<header class="fastio-hero-header offset-2 col col-md-10" data-aos="fade-up">
+>>>>>>> 84e70ef6bd65315a4e612da12f54eb8cafd49b0e
 				<?php if(!empty($hero_3['title'])): ?><h3 class="text-primary"><?php echo $hero_3['title']; ?></h3><?php endif; ?>
 				<?php if(!empty($hero_3['hashtag'])): ?><img class="img-fluid" src="<?php echo $hero_3['hashtag']['url']; ?>" title="<?php echo $hero_3['hashtag']['title']; ?>" alt="<?php echo $hero_3['hashtag']['title']; ?>"><?php endif; ?>
 			</header>
@@ -88,11 +106,19 @@ if(!empty($hero_3)):
 <section class="fastio-feature">
 	<div class="container">
 		<div class="row no-gutters">
-			<div class="col-7 text-right">
+<<<<<<< HEAD
+			<div class="col-12 col-md-7 text-right">
 				<?php if(!empty($feature_2['img'])): ?><img class="img-fluid" src="<?php echo $feature_2['img']['url']; ?>" title="<?php echo $feature_2['img']['title']; ?>" alt="<?php echo $feature_2['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
 			</div>
-			<div class="col-5 text-left pull-bottom">
+			<div class="col-12 col-md-5 text-left">
+				<article class="bg-warning pull-bottom" data-aos="fade-up">
+=======
+			<div class="col col-md-7 text-right">
+				<?php if(!empty($feature_2['img'])): ?><img class="img-fluid" src="<?php echo $feature_2['img']['url']; ?>" title="<?php echo $feature_2['img']['title']; ?>" alt="<?php echo $feature_2['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
+			</div>
+			<div class="col col-md-5 text-left pull-bottom">
 				<article class="bg-warning" data-aos="fade-up">
+>>>>>>> 84e70ef6bd65315a4e612da12f54eb8cafd49b0e
 					<?php if(!empty($feature_2['text'])){ echo '<h4 data-aos="fade-up">'.$feature_2['text'].'</h4>'; } ?>
 				</article>
 			</div>
@@ -108,14 +134,22 @@ if(!empty($hero_3)):
 	if(!empty($feature_3)):
 ?>
 <section class="fastio-feature-2">
-	<img class="ondas left bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-l-dark.png"; ?>" alt="onda azul l" data-aos="fade-up">
+	<img class="ondas left bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-l-dark.png"; ?>" alt="onda azul l" data-aos="fade">
 	<div class="row no-gutters">
-		<div class="col-5 text-right">
+<<<<<<< HEAD
+		<div class="col-12 col-md-5 text-right">
+=======
+		<div class="col col-md-5 text-right">
+>>>>>>> 84e70ef6bd65315a4e612da12f54eb8cafd49b0e
 			<article class="bg-warning left text-left" data-aos="fade">
 				<?php if(!empty($feature_3['text'])){ echo '<h4 data-aos="fade-up">'.$feature_3['text'].'</h4>';} ?>
 			</article>
 		</div>
-		<div class="col-7 text-left">
+<<<<<<< HEAD
+		<div class="col-12 col-md-7 text-left">
+=======
+		<div class="col col-md-7 text-left">
+>>>>>>> 84e70ef6bd65315a4e612da12f54eb8cafd49b0e
 			<?php if(!empty($feature_3['img'])): ?><img class="img-fluid" src="<?php echo $feature_3['img']['url']; ?>" title="<?php echo $feature_3['img']['title']; ?>" alt="<?php echo $feature_3['img']['title']; ?>" data-aos="fade"><?php endif; ?>
 		</div>
 	</div>
