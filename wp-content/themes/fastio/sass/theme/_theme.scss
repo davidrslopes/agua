@@ -587,6 +587,21 @@ body.page-template-a-nossa-agua{
 	}
 	.fastio-hero-2{ @include fastio-hero('../img/ImagemAgua_2.jpg'); }
 	.fastio-benefits{
+		.decor{
+			position: absolute;
+			bottom: 0;
+			z-index: 10;
+			&.left{
+				left: 0;
+			}
+			&.right{
+				right: 0;
+			}
+			img.gotas{
+				display: block;
+				z-index: 11;
+			}
+		}
 		.container{
 			background-color: $h2o-light-blue;
 			color:white;
@@ -1795,6 +1810,16 @@ body.page-template-barbie-subpages{
 		&.left{left:-20px;}
 		&.right{right:0px;}
 	}
+	img.gotas{
+		position: absolute;
+		z-index: 9;
+		&.top{top: 0;}
+		&.middle{top: 33%;margin-top: -2rem;}
+		&.bottom{bottom: 0;}
+		&.left{left:0px;}
+		&.center{left: 50%;margin-left: -2rem;}
+		&.right{right:0px;}
+	}
 	.main-footer-wrapper{
 		height: auto;
 		div.row:last-of-type{
@@ -1893,12 +1918,24 @@ body.page-template-barbie-subpages{
 			}
 		}
 		.fastio-benefits{
+			.decor{
+				text-align: center;
+			}
 			.container{
 				padding-top: 2rem;
 				padding-bottom: 2rem;
 				div.col-6:first-of-type,div.col-6:first-of-type+div.col-6{
 					margin-bottom: 3rem;
 				}
+			}
+		}
+	}
+	//EXPLORR O GERES SUB
+	body.page-template-explore-o-geres-subpages{
+		.fastio-360{
+			.fastio-img-milho{
+				width: 50%;
+				height: auto;
 			}
 		}
 	}
@@ -1970,7 +2007,7 @@ body.page-template-barbie-subpages{
 		}
 		.fastio-benefits{
 			position: relative;
-			padding-bottom: 6rem;
+			margin-bottom: 6rem;
 			.container{
 				margin-top: -2rem;
 				padding: 6rem 4rem;
