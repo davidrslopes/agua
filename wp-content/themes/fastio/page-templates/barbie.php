@@ -32,7 +32,7 @@ if(!empty($hero_1)):
             <div class="col-12 col-md-6 logoimgdiv">
                 <img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/>
                  <div class="icon faa-float animated">
-                        <i class="fa fa-angle-down"></i>
+					<i class="fa fa-angle-down"></i>
                  </div>
             </div>
             <div class="col-12 col-md-6 bgimgdiv">

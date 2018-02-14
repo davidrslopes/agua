@@ -1577,10 +1577,6 @@ body.page-template-barbie{
     }
     
             .icon {
-            position: absolute;
-            bottom: 75px;
-            left: 60%;
-            margin-left: -20px;
             width: 40px;
             height: 40px;
             line-height: 35px;
@@ -2050,6 +2046,24 @@ body.page-template-barbie-subpages{
 			padding-bottom: 3rem;
 		}
 	}
+	body.page-template-hot-wheels,
+	body.page-template-barbie{
+		.fastio-images-hero{
+			text-align: center;
+			img.float-right{
+				float: none!important;
+			}
+			.bgimgdiv{
+				padding-top: 60px;
+			}
+		}
+		.icon{
+			position: absolute;
+			left:50%;
+			margin-left: -20px;
+			margin-top: 10px;
+		}
+	}
 }
 //MD AND UP ONLY
 @include media-breakpoint-up(md) {
@@ -2146,6 +2160,14 @@ body.page-template-barbie-subpages{
 			.vertical-align{
 				padding-top: 33vh;
 			}
+		}
+	}
+	body.page-template-barbie{
+		.icon{
+			position: absolute;
+            bottom: 75px;
+            left: 60%;
+            margin-left: -20px;
 		}
 	}
 }

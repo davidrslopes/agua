@@ -35,8 +35,8 @@ if(!empty($hero_1)):
         </div>
 	<?php endif; ?>
 	<div class="icon faa-float animated">
-                        <i class="fa fa-angle-down"></i>
-        </div>
+		<i class="fa fa-angle-down"></i>
+	</div>
 </section><!-- .fastio-images-hero -->
 <?php endif; ?>
 

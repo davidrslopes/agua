@@ -11826,10 +11826,6 @@ body.page-template-barbie {
   body.page-template-barbie .main-footer-wrapper {
     background: transparent !important; }
   body.page-template-barbie .icon {
-    position: absolute;
-    bottom: 75px;
-    left: 60%;
-    margin-left: -20px;
     width: 40px;
     height: 40px;
     line-height: 35px;
@@ -12188,7 +12184,22 @@ body.page-template-barbie-subpages {
     padding-top: 3rem; }
   body.page-template-fastio-go .fastio-go-bottle {
     padding-top: 3rem;
-    padding-bottom: 3rem; } }
+    padding-bottom: 3rem; }
+  body.page-template-hot-wheels .fastio-images-hero,
+  body.page-template-barbie .fastio-images-hero {
+    text-align: center; }
+    body.page-template-hot-wheels .fastio-images-hero img.float-right,
+    body.page-template-barbie .fastio-images-hero img.float-right {
+      float: none !important; }
+    body.page-template-hot-wheels .fastio-images-hero .bgimgdiv,
+    body.page-template-barbie .fastio-images-hero .bgimgdiv {
+      padding-top: 60px; }
+  body.page-template-hot-wheels .icon,
+  body.page-template-barbie .icon {
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: 10px; } }
 
 @media (min-width: 768px) {
   .fastio-nav {
@@ -12256,7 +12267,12 @@ body.page-template-barbie-subpages {
   body.page-template-fastio-go .fastio-go-bottle {
     height: 100vh; }
     body.page-template-fastio-go .fastio-go-bottle .vertical-align {
-      padding-top: 33vh; } }
+      padding-top: 33vh; }
+  body.page-template-barbie .icon {
+    position: absolute;
+    bottom: 75px;
+    left: 60%;
+    margin-left: -20px; } }
 
 /*
 * Use existing Bootstrap 4 classes and
