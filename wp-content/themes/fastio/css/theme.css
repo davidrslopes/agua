@@ -12279,7 +12279,17 @@ body.page-template-barbie-subpages {
   body.page-template-hot-wheels .logoimgdiv {
     padding-right: 0px; }
   body.page-template-hot-wheels .bgimgdiv {
-    padding-right: 0px; } }
+    padding-right: 0px; }
+  body.page-template-default .fastio-hero {
+    max-height: 380px; }
+  body.page-template-default .fastio-common-pages .listnavigationitems {
+    padding-top: 65px;
+    padding-bottom: 50px;
+    padding-left: 65px; }
+  body.page-template-default .wpcf7-form .btnanexar {
+    width: 50%; }
+  body.page-template-default .wpcf7-form .btnanexar span {
+    font-size: 12px; } }
 
 /*
 * Use existing Bootstrap 4 classes and
