@@ -2072,6 +2072,24 @@ body.page-template-barbie-subpages{
 			margin-top: -260px;
 		}
 	}
+        
+        body.page-template-default .fastio-hero{
+            max-height: 380px;
+        }
+        
+        body.page-template-default .fastio-common-pages .listnavigationitems{
+            padding-top: 65px;
+            padding-bottom: 50px;
+            padding-left: 65px;
+        }
+        
+        body.page-template-default .wpcf7-form .btnanexar{
+            width: 50%;
+        }
+        
+        body.page-template-default .wpcf7-form .btnanexar span{
+            font-size: 12px;
+        }
 }
 //MD AND UP ONLY
 @include media-breakpoint-up(md) {
@@ -2188,21 +2206,4 @@ body.page-template-barbie-subpages{
 		}
 	}
         
-        body.page-template-default .fastio-hero{
-            max-height: 380px;
-        }
-        
-        body.page-template-default .fastio-common-pages .listnavigationitems{
-            padding-top: 65px;
-            padding-bottom: 50px;
-            padding-left: 65px;
-        }
-        
-        body.page-template-default .wpcf7-form .btnanexar{
-            width: 50%;
-        }
-        
-        body.page-template-default .wpcf7-form .btnanexar span{
-            font-size: 12px;
-        }
 }
