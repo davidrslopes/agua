@@ -1174,14 +1174,6 @@ body.page-template-hot-wheels{
     section.fastio-images-hero{
         padding-top: 170px;
         
-        .logoimgdiv{
-            padding-right: 0px;
-        }
-        
-        .bgimgdiv{
-            padding-right: 0px;
-        }
-        
         .btn-link{
             color:red;
             margin-top: -70px;
@@ -2046,7 +2038,6 @@ body.page-template-barbie-subpages{
 			padding-bottom: 3rem;
 		}
 	}
-	body.page-template-hot-wheels,
 	body.page-template-barbie{
 		.fastio-images-hero{
 			text-align: center;
@@ -2062,6 +2053,23 @@ body.page-template-barbie-subpages{
 			left:50%;
 			margin-left: -20px;
 			margin-top: 10px;
+		}
+	}
+	body.page-template-hot-wheels{
+		.fastio-images-hero{
+			text-align: center;
+			img.float-right{
+				float: none!important;
+			}
+			.bgimgdiv{
+				padding-top: 60px;
+			}
+		}
+		.icon{
+			position: absolute;
+			left:50%;
+			margin-left: -20px;
+			margin-top: -260px;
 		}
 	}
 }
@@ -2168,6 +2176,15 @@ body.page-template-barbie-subpages{
             bottom: 75px;
             left: 60%;
             margin-left: -20px;
+		}
+	}
+	body.page-template-hot-wheels{
+		.logoimgdiv{
+			padding-right: 0px;
+		}
+
+		.bgimgdiv{
+			padding-right: 0px;
 		}
 	}
 }
