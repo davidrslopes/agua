@@ -12199,7 +12199,17 @@ body.page-template-barbie-subpages {
     position: absolute;
     left: 50%;
     margin-left: -20px;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  body.page-template-default .fastio-hero {
+    max-height: 380px; }
+  body.page-template-default .fastio-common-pages .listnavigationitems {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    padding-left: 65px; }
+  body.page-template-default .wpcf7-form .btnanexar {
+    width: 50%; }
+  body.page-template-default .wpcf7-form .btnanexar span {
+    font-size: 13px; } }
 
 @media (min-width: 768px) {
   .fastio-nav {
