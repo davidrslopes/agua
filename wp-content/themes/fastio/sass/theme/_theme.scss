@@ -660,13 +660,17 @@ body.page-template-a-nossa-agua{
 	.fastio-benefits{
 		.decor{
 			position: absolute;
-			bottom: 0;
+			
 			z-index: 10;
 			&.left{
+				margin-left: -5rem;
 				left: 0;
+				bottom: 0rem;
 			}
 			&.right{
+				margin-right: -5rem;
 				right: 0;
+				bottom: 5rem;
 			}
 			img.gotas{
 				display: block;
@@ -674,6 +678,7 @@ body.page-template-a-nossa-agua{
 			}
 		}
 		.container{
+			position: relative;
 			background-color: $h2o-light-blue;
 			color:white;
 			article{
@@ -864,7 +869,7 @@ body.page-template-explore-o-geres{
 			padding-top:25px;
 		}
 		.carousel-control-next, .carousel-control-prev{
-			width: 100px;
+			width: 50px;
 		}
 		p,a{
 			color:white;
@@ -954,8 +959,17 @@ body.page-template-explore-o-geres{
 
 }
 body.page-template-explore-o-geres-subpages{
-	.fastio-hero{ @include fastio-hero('../img/ImagemSoajo_1.jpg');}
+	.fastio-hero{
+		@include fastio-hero('../img/ImagemSoajo_1.jpg');
+		z-index: 1;
+		position: relative;
+	}
 	.fastio-location{
+		.fastio-milho-1,
+		.fastio-milho-4{
+			z-index: 0;
+			position: relative;
+		}
 		.fastio-location-feature{
 			width: 80%;
 			img{}
@@ -1002,6 +1016,8 @@ body.page-template-explore-o-geres-subpages{
 		}
 	}
 	.fastio-highlights{
+		z-index: 1;
+		position: relative;
 		background-color: $h2o-blue;
 		background-image: url('../img/fundo_azul.svg');
 		width:100%;

@@ -37,9 +37,9 @@ if(!empty($location)):
 <!-- ******************* The Location Section ******************* -->
 <section class="fastio-location">
 	<div class="row no-gutters">
-		<div class="fastio-location-feature col-12 col-md-9" data-aos="fade-up">
+		<div class="fastio-location-feature col-12 col-md-9">
 			<?php if(!empty($location['milho-1'])): ?>
-			<img data-aos="fade-up" class="fastio-milho-1" src="<?php echo $location['milho-1']['url']; ?>" alt="<?php echo $location['milho-1']['title']; ?>" class="img-fluid">
+			<img data-aos="fade-down" data-aos-duration="3000" class="fastio-milho-1" src="<?php echo $location['milho-1']['url']; ?>" alt="<?php echo $location['milho-1']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 			<?php if(!empty($location['video'])):
 				$content_width = 1140;
@@ -53,9 +53,9 @@ if(!empty($location)):
 		</div>
 		<div class="fastio-location-content col-12 col-md-3">
 			<?php if(!empty($location['milho-2'])): ?>
-			<img data-aos="fade-up" class="fastio-milho-2" src="<?php echo $location['milho-2']['url']; ?>" alt="<?php echo $location['milho-2']['title']; ?>" class="img-fluid">
+			<img data-aos="fade-up" data-aos-duration="3000" class="fastio-milho-2" src="<?php echo $location['milho-2']['url']; ?>" alt="<?php echo $location['milho-2']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
-			<article>
+			<article data-aos="fade-up">
 				<h1><?php the_title();?></h1>
 				<p><?php echo $location['text'];?></p>
 				<div class="fastio-location-coordinates">
@@ -68,6 +68,7 @@ if(!empty($location)):
 				</div>
 			</article>
 			<?php if(!empty($location['milho-3'])): ?>
+			<br>
 			<img data-aos="fade-up" class="fastio-milho-3" src="<?php echo $location['milho-3']['url']; ?>" alt="<?php echo $location['milho-3']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 		</div>

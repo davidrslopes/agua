@@ -124,14 +124,15 @@ if(!empty($hero_2)):
 ?>
 <!-- ******************* The Fastio Benefits Section ******************* -->
 <section class="fastio-benefits" data-aos="fade">
-	<div class="decor left">
-		<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-1.png" ?>" alt="onda azul l" data-aos="fade-up">
-		<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-2.png" ?>" alt="onda azul 2" data-aos="fade-up">
-		<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-3.png" ?>" alt="onda azul 3" data-aos="fade-up">
-		<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-4.png" ?>" alt="onda azul 4" data-aos="fade-up">
-		<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-5.png" ?>" alt="onda azul 5" data-aos="fade-up">
-	</div>
+
     <div class="container">
+    	<div class="decor left">
+			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-1.png" ?>" alt="onda azul l" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-2.png" ?>" alt="onda azul 2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-3.png" ?>" alt="onda azul 3" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-4.png" ?>" alt="onda azul 4" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-5.png" ?>" alt="onda azul 5" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+		</div>
 		<div class="row">
 			<?php while( have_rows('a-nossa-agua-section-4') ): the_row(); ?>
 			<div class="col-<?php echo $benefit_col*2; ?> col-md-<?php echo $benefit_col; ?>">
@@ -142,12 +143,12 @@ if(!empty($hero_2)):
 			</div>
 			<?php endwhile; ?>
 		</div>
-	</div>
-	<div class="decor right">
-		<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-dir-1.png" ?>" alt="onda azul r1" data-aos="fade-up">
-		<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-dir-2.png" ?>" alt="onda azul r2" data-aos="fade-up">
-		<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-dir-3.png" ?>" alt="onda azul r3" data-aos="fade-up">
-		<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-dir-4.png" ?>" alt="onda azul r4" data-aos="fade-up">
+		<div class="decor right">
+			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-dir-1.png" ?>" alt="onda azul r1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-dir-2.png" ?>" alt="onda azul r2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-dir-3.png" ?>" alt="onda azul r3" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-dir-4.png" ?>" alt="onda azul r4" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+		</div>
 	</div>
 </section><!-- .fastio-benefits -->
 <?php endif; ?>

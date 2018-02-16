@@ -10761,17 +10761,21 @@ body.page-template-a-nossa-agua .fastio-hero-2 {
 
 body.page-template-a-nossa-agua .fastio-benefits .decor {
   position: absolute;
-  bottom: 0;
   z-index: 10; }
   body.page-template-a-nossa-agua .fastio-benefits .decor.left {
-    left: 0; }
+    margin-left: -5rem;
+    left: 0;
+    bottom: 0rem; }
   body.page-template-a-nossa-agua .fastio-benefits .decor.right {
-    right: 0; }
+    margin-right: -5rem;
+    right: 0;
+    bottom: 5rem; }
   body.page-template-a-nossa-agua .fastio-benefits .decor img.gotas {
     display: block;
     z-index: 11; }
 
 body.page-template-a-nossa-agua .fastio-benefits .container {
+  position: relative;
   background-color: #b2eaff;
   color: white; }
   body.page-template-a-nossa-agua .fastio-benefits .container article p {
@@ -11177,7 +11181,7 @@ body.page-template-explore-o-geres .fastio-places {
   body.page-template-explore-o-geres .fastio-places .carousel-item {
     padding-top: 25px; }
   body.page-template-explore-o-geres .fastio-places .carousel-control-next, body.page-template-explore-o-geres .fastio-places .carousel-control-prev {
-    width: 100px; }
+    width: 50px; }
   body.page-template-explore-o-geres .fastio-places p, body.page-template-explore-o-geres .fastio-places a {
     color: white;
     text-decoration: none;
@@ -11256,7 +11260,9 @@ body.page-template-explore-o-geres-subpages .fastio-hero {
   min-height: 100%;
   min-height: 100vh;
   width: 100%;
-  display: block; }
+  display: block;
+  z-index: 1;
+  position: relative; }
   body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h1, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h2, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h3, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h4, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h5, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header h6,
   body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-video-header h1,
   body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-video-header h2,
@@ -11294,6 +11300,11 @@ body.page-template-explore-o-geres-subpages .fastio-hero {
     body.page-template-explore-o-geres-subpages .fastio-hero button.fastio-btn-scroll-down p {
       font-size: 0.8rem; }
 
+body.page-template-explore-o-geres-subpages .fastio-location .fastio-milho-1,
+body.page-template-explore-o-geres-subpages .fastio-location .fastio-milho-4 {
+  z-index: 0;
+  position: relative; }
+
 body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-feature {
   width: 80%; }
   body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-feature video,
@@ -11329,6 +11340,8 @@ body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-co
       text-decoration: none; }
 
 body.page-template-explore-o-geres-subpages .fastio-highlights {
+  z-index: 1;
+  position: relative;
   background-color: #00aeef;
   background-image: url("../img/fundo_azul.svg");
   width: 100%;
