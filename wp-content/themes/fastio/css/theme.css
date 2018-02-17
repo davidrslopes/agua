@@ -12099,6 +12099,9 @@ body.page-template-barbie-subpages {
 
 /* ############################## RESPONSIVE ############################## */
 @media (max-width: 767.99px) {
+  .navbar .navbar-brand.custom-logo-link > img {
+    width: auto;
+    height: 3rem; }
   .fastio-nav,
   .fastio-nav > button.btn.dropdown-toggle,
   .fastio-nav .dropdown-menu {
@@ -12176,8 +12179,7 @@ body.page-template-barbie-subpages {
     margin: 0 !important; }
   .home-footer-wrapper {
     line-height: 1.5rem;
-    bottom: 0;
-    background-color: #00aeef; }
+    bottom: 0; }
     .home-footer-wrapper footer .wpml-ls > ul > li > a {
       font-size: 0.66rem; }
     .home-footer-wrapper i {

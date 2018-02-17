@@ -1931,6 +1931,10 @@ body.page-template-barbie-subpages{
 //SM AND DOWN ONLY
 @include media-breakpoint-down(sm) {
 	//COMMON
+	.navbar .navbar-brand.custom-logo-link > img{
+		width: auto;
+		height: 3rem;
+	}
 	.fastio-nav,
 	.fastio-nav > button.btn.dropdown-toggle,
 	.fastio-nav .dropdown-menu{
@@ -2017,7 +2021,6 @@ body.page-template-barbie-subpages{
 	.home-footer-wrapper{
 		line-height: 1.5rem;
 		bottom: 0;
-		background-color: $primary;
 		footer .wpml-ls > ul > li > a{
 			font-size:0.66rem;
 		}
