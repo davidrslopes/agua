@@ -10770,7 +10770,7 @@ body.page-template-a-nossa-agua .fastio-benefits .decor {
     margin-right: -5rem;
     right: 0;
     bottom: 5rem; }
-  body.page-template-a-nossa-agua .fastio-benefits .decor img.gotas {
+  body.page-template-a-nossa-agua .fastio-benefits .decor img.decor-item {
     display: block;
     z-index: 11; }
 
@@ -12108,33 +12108,33 @@ body.page-template-barbie-subpages {
     padding: 0 4px 0 0; }
     .fastio-nav > button.btn.dropdown-toggle:after {
       height: 12px; }
-  img.ondas {
+  img.decor {
     position: absolute;
     z-index: 9; }
-    img.ondas.top {
+    img.decor.top {
       top: 0; }
-    img.ondas.bottom {
+    img.decor.bottom {
       bottom: 0; }
-    img.ondas.left {
+    img.decor.left {
       left: -20px; }
-    img.ondas.right {
+    img.decor.right {
       right: 0px; }
-  img.gotas {
+  img.decor-item {
     position: absolute;
     z-index: 9; }
-    img.gotas.top {
+    img.decor-item.top {
       top: 0; }
-    img.gotas.middle {
+    img.decor-item.middle {
       top: 33%;
       margin-top: -2rem; }
-    img.gotas.bottom {
+    img.decor-item.bottom {
       bottom: 0; }
-    img.gotas.left {
+    img.decor-item.left {
       left: 0px; }
-    img.gotas.center {
+    img.decor-item.center {
       left: 50%;
       margin-left: -2rem; }
-    img.gotas.right {
+    img.decor-item.right {
       right: 0px; }
   .main-footer-wrapper {
     height: auto; }
@@ -12268,16 +12268,16 @@ body.page-template-barbie-subpages {
 @media (min-width: 768px) {
   .fastio-nav {
     font-size: 1.2rem; }
-  img.ondas {
+  img.decor {
     position: absolute;
     z-index: 9; }
-    img.ondas.top {
+    img.decor.top {
       top: 0; }
-    img.ondas.bottom {
+    img.decor.bottom {
       bottom: 0; }
-    img.ondas.left {
+    img.decor.left {
       left: -20px; }
-    img.ondas.right {
+    img.decor.right {
       right: 0px; }
   .fastio-footer-lang {
     padding-top: 2px; }

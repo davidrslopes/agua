@@ -121,18 +121,31 @@ if(!empty($hero_2)):
 		$benefit_count = count(get_field('a-nossa-agua-section-4'));
 		$benefit_col = ceil(12 / $benefit_count);
  		if($benefit_col<3) $benefit_col = 3;
+		$decor = get_field('a-nossa-agua-section-4-decor');
 ?>
 <!-- ******************* The Fastio Benefits Section ******************* -->
 <section class="fastio-benefits" data-aos="fade">
 
     <div class="container">
+    	<?php if(!empty($decor)): ?>
     	<div class="decor left">
-			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-1.png" ?>" alt="onda azul l" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
-			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-2.png" ?>" alt="onda azul 2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
-			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-3.png" ?>" alt="onda azul 3" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
-			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-4.png" ?>" alt="onda azul 4" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
-			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-esq-5.png" ?>" alt="onda azul 5" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+    		<?php if(!empty($decor['left-1'])): ?>
+			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['left-1']['url']; ?>" alt="<?php echo $decor['left-1']['title']; ?>">
+			<?php endif; ?>
+			<?php if(!empty($decor['left-2'])): ?>
+			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['left-2']['url']; ?>" alt="<?php echo $decor['left-2']['title']; ?>">
+			<?php endif; ?>
+			<?php if(!empty($decor['left-3'])): ?>
+			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['left-3']['url']; ?>" alt="<?php echo $decor['left-3']['title']; ?>">
+			<?php endif; ?>
+			<?php if(!empty($decor['left-4'])): ?>
+			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['left-4']['url']; ?>" alt="<?php echo $decor['left-4']['title']; ?>">
+			<?php endif; ?>
+			<?php if(!empty($decor['left-5'])): ?>
+			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['left-5']['url']; ?>" alt="<?php echo $decor['left-5']['title']; ?>">
+			<?php endif; ?>
 		</div>
+		<?php endif;?>
 		<div class="row">
 			<?php while( have_rows('a-nossa-agua-section-4') ): the_row(); ?>
 			<div class="col-<?php echo $benefit_col*2; ?> col-md-<?php echo $benefit_col; ?>">
@@ -143,12 +156,22 @@ if(!empty($hero_2)):
 			</div>
 			<?php endwhile; ?>
 		</div>
-		<div class="decor right">
-			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-dir-1.png" ?>" alt="onda azul r1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
-			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-dir-2.png" ?>" alt="onda azul r2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
-			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-dir-3.png" ?>" alt="onda azul r3" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
-			<img class="gotas" src="<?php echo get_template_directory_uri()."/img/gotas-dir-4.png" ?>" alt="onda azul r4" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+   		<?php if(!empty($decor)): ?>
+    	<div class="decor right">
+    		<?php if(!empty($decor['right-1'])): ?>
+			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['right-1']['url']; ?>" alt="<?php echo $decor['right-1']['title']; ?>">
+			<?php endif; ?>
+			<?php if(!empty($decor['right-2'])): ?>
+			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['right-2']['url']; ?>" alt="<?php echo $decor['right-2']['title']; ?>">
+			<?php endif; ?>
+			<?php if(!empty($decor['right-3'])): ?>
+			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['right-3']['url']; ?>" alt="<?php echo $decor['right-3']['title']; ?>">
+			<?php endif; ?>
+			<?php if(!empty($decor['right-4'])): ?>
+			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['right-4']['url']; ?>" alt="<?php echo $decor['right-4']['title']; ?>">
+			<?php endif; ?>
 		</div>
+		<?php endif; ?>
 	</div>
 </section><!-- .fastio-benefits -->
 <?php endif; ?>

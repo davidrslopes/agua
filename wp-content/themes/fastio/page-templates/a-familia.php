@@ -52,7 +52,7 @@ if(!empty($hero_1)):
 			</div>
 		</div>
 		<?php if(!empty($feature['decor-right'])): ?>
-		<img data-aos="fade-up" data-aos-duration="3000" class="fastio-decor right bottom" src="<?php echo $feature['decor-right']['url']; ?>" alt="<?php echo $feature['decor-right']['title']; ?>" class="img-fluid">
+		<img data-aos="fade-up" data-aos-duration="3000" class="decor right bottom" src="<?php echo $feature['decor-right']['url']; ?>" alt="<?php echo $feature['decor-right']['title']; ?>" class="img-fluid">
 		<?php endif; ?>
 	</div>
 </section><!-- .fastio-feature -->
@@ -67,7 +67,7 @@ if(!empty($hero_3)):
 <section class="fastio-hero-3" style="background-image:url('<?php echo $hero_3['bg-img']; ?>');" data-aos="fade-up">
 	<div class="container-fluid">
 		<?php if(!empty($hero_3['decor-left'])): ?>
-		<img data-aos="fade-up" data-aos-duration="3000" class="fastio-decor left bottom" src="<?php echo $hero_3['decor-left']['url']; ?>" alt="<?php echo $hero_3['decor-left']['title']; ?>" class="img-fluid">
+		<img data-aos="fade-up" data-aos-duration="3000" class="decor left bottom" src="<?php echo $hero_3['decor-left']['url']; ?>" alt="<?php echo $hero_3['decor-left']['title']; ?>" class="img-fluid">
 		<?php endif; ?>
 		<div class="row">
 			<header class="fastio-hero-header offset-md-2 col-md-10" data-aos="fade-up">
@@ -97,7 +97,7 @@ if(!empty($hero_3)):
 			</div>
 		</div>
 		<?php if(!empty($feature_2['decor-right'])): ?>
-		<img data-aos="fade-up" data-aos-duration="3000" class="fastio-decor right bottom" src="<?php echo $feature_2['decor-right']['url']; ?>" alt="<?php echo $feature_2['decor-right']['title']; ?>" class="img-fluid">
+		<img data-aos="fade-up" data-aos-duration="3000" class="decor right bottom" src="<?php echo $feature_2['decor-right']['url']; ?>" alt="<?php echo $feature_2['decor-right']['title']; ?>" class="img-fluid">
 		<?php endif; ?>
 	</div>
 </section><!-- .fastio-feature -->
@@ -110,7 +110,7 @@ if(!empty($hero_3)):
 ?>
 <section class="fastio-feature-2">
 	<?php if(!empty($feature_3['decor-left'])): ?>
-		<img data-aos="fade" data-aos-duration="3000" class="fastio-decor left bottom" src="<?php echo $feature_3['decor-left']['url']; ?>" alt="<?php echo $feature_3['decor-left']['title']; ?>" class="img-fluid">
+		<img data-aos="fade" data-aos-duration="3000" class="decor left bottom" src="<?php echo $feature_3['decor-left']['url']; ?>" alt="<?php echo $feature_3['decor-left']['title']; ?>" class="img-fluid">
 	<?php endif; ?>
 	<div class="row no-gutters">
 		<div class="col-12 col-md-5 text-right">
