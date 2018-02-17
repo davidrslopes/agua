@@ -1041,6 +1041,14 @@ body.page-template-explore-o-geres-subpages{
 		}
 		p{
 			font-size: 0.75rem;
+			&.fastio-highlights-bottom-left{
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: auto;
+				background-attachment: scroll;
+				padding: 5rem 0 5rem 3rem;
+				margin: 0;
+			}
 		}
 		h2{
 			font-style: italic;
@@ -1065,6 +1073,40 @@ body.page-template-explore-o-geres-subpages{
 		}
 		.fastio-panorama{
 			height:70vh;
+		}
+		.fastio-panorama-video{
+			display: block;
+			width:100%;
+			height:70vh;
+			background-color:#FFFFFF;
+			.vjs-control-bar{
+				background: $h2o-light-blue;
+				z-index: 2;
+				.vjs-volume-menu-button{
+					border-color:white;
+				}
+				.vjs-button{
+					color:$primary;
+				}
+			}
+			.vjs-poster{
+				background-repeat: no-repeat;
+				background-position: center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			.vjs-big-play-button{
+				border: 0;
+				background: url(../img/icone-play.png) no-repeat center center;
+				margin: -75px 0 0 -75px;
+				height: 150px;
+				width: 150px;
+				&:before{
+					content: "";
+				}
+			}
 		}
 	}
 }
@@ -2024,8 +2066,17 @@ body.page-template-barbie-subpages{
 			}
 		}
 	}
-	//EXPLORR O GERES SUB
+	//EXPLORE O GERES SUB
 	body.page-template-explore-o-geres-subpages{
+		.fastio-location{
+			.fastio-location-feature{
+				.mejs-overlay-button{
+					background-size: 75px;
+					height: 75px;
+					width: 75px;
+				}
+			}
+		}
 		.fastio-360{
 			.fastio-img-milho{
 				width: 50%;

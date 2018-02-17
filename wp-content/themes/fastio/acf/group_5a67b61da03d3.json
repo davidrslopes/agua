@@ -580,7 +580,7 @@
         },
         {
             "key": "field_5a6c9550006d0",
-            "label": "Secção 4: Foto 360",
+            "label": "Secção 4: 360",
             "name": "explore-o-geres-subpage-section-4",
             "type": "group",
             "instructions": "",
@@ -618,9 +618,28 @@
                     "mime_types": ""
                 },
                 {
+                    "key": "field_5a885f182a448",
+                    "label": "Panorama Vídeo",
+                    "name": "panorama-video",
+                    "type": "file",
+                    "instructions": "O panorama deve ser um vídeo equirectangular em formato mp4, se o vídeo não for esférico deverá incluír o Google Photo Sphere XMP metadata.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
                     "key": "field_5a6c9572006d1",
-                    "label": "Panorama",
-                    "name": "panorama",
+                    "label": "Panorama Imagem",
+                    "name": "panorama-img",
                     "type": "image",
                     "instructions": "O panorama deve ser uma imagem equirectangular normalmente em formato jpg, se esta não for esférica deverá incluír o Google Photo Sphere XMP metadata.",
                     "required": 0,
@@ -646,7 +665,7 @@
                     "label": "Panorama (Pré Visualização)",
                     "name": "panorama-preview",
                     "type": "image",
-                    "instructions": "Esta imagem aparece antes do carregamento do panorama para benefício dos users mobile e rapidez de carregamento de página",
+                    "instructions": "Esta imagem aparece antes do carregamento do panorama para benefício dos users mobile e rapidez de carregamento de página, funciona com o vídeo como poster do mesmo.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -786,5 +805,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1518291542
+    "modified": 1518886837
 }

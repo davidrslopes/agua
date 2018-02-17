@@ -101,11 +101,9 @@ if(!empty($highlights)): ?>
 			<div class="col-md-6">
 				<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" data-aos="fade-up">
 				<article class="row" data-aos="fade-up">
-					<div class="col-md-5">
-						<img src="<?php echo $highlights['svg-left-bottom']['url'];?>" alt="<?php echo $highlights['svg-left-bottom']['title'];?>" title="<?php echo $highlights['svg-left-bottom']['title'];?>" class="img-fluid">
-					</div>
-					<div class="col-md-6">
-						<p><?php echo $highlights['text-bottom']; ?></p>
+					<div class="offset-md-3 col-md-7">
+						<!--<img src="<?php echo $highlights['svg-left-bottom']['url'];?>" alt="<?php echo $highlights['svg-left-bottom']['title'];?>" title="<?php echo $highlights['svg-left-bottom']['title'];?>" class="img-fluid">-->
+						<p class="fastio-highlights-bottom-left" style="background-image:url('<?php echo $highlights['svg-left-bottom']['url'];?>');"><?php echo $highlights['text-bottom']; ?></p>
 					</div>
 				</article>
 			</div>
@@ -120,14 +118,40 @@ if(!empty($highlights)): ?>
 <?php
 $fastio_360 = get_field('explore-o-geres-subpage-section-4');
 if(!empty($fastio_360)): ?>
-<!-- ******************* The 360 Foto Section ******************* -->
+<!-- ******************* The 360 Foto / Video Section ******************* -->
 <section class="fastio-360" data-aos="fade">
 	<div class="container-fluid">
 		<?php if(!empty($fastio_360['milho-1']['url'])){ echo '<img src="'.$fastio_360['milho-1']['url'].'" class="fastio-img-milho top" alt="'.$fastio_360['milho-1']['url'].'">'; } ?>
 		<div class="row">
-			<?php if(!empty($fastio_360['fallback-img'])): ?>
-			<img src="<?php echo $fastio_360['fallback-img']['url']; ?>" alt="<?php echo $fastio_360['fallback-img']['title']; ?>" class="img-fluid">
-			<?php else: ?>
+			<?php if(!empty($fastio_360['panorama-video'])): ?>
+			<!-- Pannellum & Video JS Includes -->
+			<link rel="stylesheet" href="https://cdn.pannellum.org/2.3/pannellum.css"/>
+			<script type="text/javascript" src="https://cdn.pannellum.org/2.3/pannellum.js"></script>
+			<link href="https://vjs.zencdn.net/5.4.6/video-js.css" rel="stylesheet" type="text/css">
+			<script src="https://vjs.zencdn.net/5.4.6/video.js"></script>
+			<script src="<?php echo get_template_directory_uri()."/js/videojs-pannellum-plugin.js"; ?>"></script>
+			<video id="panorama" class="video-js vjs-default-skin vjs-big-play-centered fastio-panorama-video" controls preload="none" poster="<?php echo $fastio_360['panorama-preview']; ?>" crossorigin="anonymous">
+				<source src="<?php echo $fastio_360['panorama-video']; ?>" type="video/mp4"/>
+				<p class="vjs-no-js">
+					To view this video please enable JavaScript, and consider upgrading to
+					a web browser that <a href="http://videojs.com/html5-video-support/"
+					target="_blank">supports HTML5 video</a>
+				</p>
+			</video>
+
+			<script>
+			videojs('panorama', {
+				<?php if(!empty($fastio_360['panorama-autoload']) && wp_is_mobile() === 0){echo '"autoplay": true,';} ?>
+				plugins: {
+					pannellum: {
+						"mouseZoom": false,
+						<?php if(!empty($fastio_360['panorama-auto-rotate'])){echo '"autoRotate": -4,';} ?>
+						<?php if(!empty($fastio_360['panorama-autoload'])){echo '"autoLoad": true';} ?>
+					}
+				}
+			});
+			</script>
+			<?php elseif(!empty($fastio_360['panorama-img'])): ?>
 			<!-- Pannellum -->
 			<!-- Latest compiled and minified JavaScript -->
 			<script src="https://cdn.pannellum.org/2.3/pannellum.js"></script>
@@ -135,16 +159,19 @@ if(!empty($fastio_360)): ?>
 			<link rel="stylesheet" href="https://cdn.pannellum.org/2.3/pannellum.css">
 			<div id="panorama" class="fastio-panorama"></div>
 			<script>
-			pannellum.viewer('panorama', {
-				"type": "equirectangular",
-				"compass": true,
-				"mouseZoom": false,
-				"panorama": "<?php echo $fastio_360['panorama']; ?>",
-				<?php if(!empty($fastio_360['panorama-preview'])){echo '"preview": "'.$fastio_360['panorama-preview'].'",';} ?>
-				<?php if(!empty($fastio_360['panorama-auto-rotate'])){echo '"autoRotate": -2,';} ?>
-				<?php if(!empty($fastio_360['panorama-autoload'])){echo '"autoLoad": true';} ?>
-			});
+				pannellum.viewer('panorama', {
+					"type": "equirectangular",
+					"compass": true,
+					"mouseZoom": false,
+					"panorama": "<?php echo $fastio_360['panorama-img']; ?>",
+					<?php if(!empty($fastio_360['panorama-preview'])){echo '"preview": "'.$fastio_360['panorama-preview'].'",';} ?>
+					<?php if(!empty($fastio_360['panorama-auto-rotate'])){echo '"autoRotate": -2,';} ?>
+					<?php if(!empty($fastio_360['panorama-autoload'])){echo '"autoLoad": true';} ?>
+				});
 			</script>
+			<?php else: ?>
+			<!-- Panorama Fallback -->
+			<img src="<?php echo $fastio_360['fallback-img']['url']; ?>" alt="<?php echo $fastio_360['fallback-img']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 		</div>
 		<?php if(!empty($fastio_360['milho-2']['url'])){ echo '<img src="'.$fastio_360['milho-2']['url'].'" class="fastio-img-milho bottom" alt="'.$fastio_360['milho-2']['url'].'">'; } ?>

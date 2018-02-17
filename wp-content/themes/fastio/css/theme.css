@@ -11362,6 +11362,13 @@ body.page-template-explore-o-geres-subpages .fastio-highlights {
     font-size: 1.1rem; }
   body.page-template-explore-o-geres-subpages .fastio-highlights p {
     font-size: 0.75rem; }
+    body.page-template-explore-o-geres-subpages .fastio-highlights p.fastio-highlights-bottom-left {
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: auto;
+      background-attachment: scroll;
+      padding: 5rem 0 5rem 3rem;
+      margin: 0; }
   body.page-template-explore-o-geres-subpages .fastio-highlights h2 {
     font-style: italic;
     margin-bottom: 5rem;
@@ -11381,6 +11388,33 @@ body.page-template-explore-o-geres-subpages .fastio-360 {
       left: 0; }
   body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama {
     height: 70vh; }
+  body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama-video {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    background-color: #FFFFFF; }
+    body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama-video .vjs-control-bar {
+      background: #b2eaff;
+      z-index: 2; }
+      body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama-video .vjs-control-bar .vjs-volume-menu-button {
+        border-color: white; }
+      body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama-video .vjs-control-bar .vjs-button {
+        color: #00aeef; }
+    body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama-video .vjs-poster {
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama-video .vjs-big-play-button {
+      border: 0;
+      background: url(../img/icone-play.png) no-repeat center center;
+      margin: -75px 0 0 -75px;
+      height: 150px;
+      width: 150px; }
+      body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama-video .vjs-big-play-button:before {
+        content: ""; }
 
 /* ############################## Default ############################## */
 body.page-template-default .fastio-hero {
@@ -12179,6 +12213,10 @@ body.page-template-barbie-subpages {
     padding-bottom: 2rem; }
     body.page-template-a-nossa-agua .fastio-benefits .container div.col-6:first-of-type, body.page-template-a-nossa-agua .fastio-benefits .container div.col-6:first-of-type + div.col-6 {
       margin-bottom: 3rem; }
+  body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-feature .mejs-overlay-button {
+    background-size: 75px;
+    height: 75px;
+    width: 75px; }
   body.page-template-explore-o-geres-subpages .fastio-360 .fastio-img-milho {
     width: 50%;
     height: auto; }
