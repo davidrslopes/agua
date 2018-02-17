@@ -73,7 +73,18 @@ elseif(is_page() && wp_is_mobile()): ?>
 			<div class="col-8">
 				<!-- Footer Logos -->
 				<div class="fastio-footer-logos">
-					<a href="<?php echo $footer_logos_url;?>"><img src="<?php echo $footer_logos_src;?>" alt="<?php echo $footer_logos_alt;?>" title="<?php echo $footer_logos_title;?>"></a>
+					<?php 
+					if(!is_page_template()):
+						if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+							$lang_code = ICL_LANGUAGE_CODE;
+						}else{
+							$lang_code = 'pt-pt';
+						}
+						echo '<a href="http://savage-agency.pt" target="_blank"><img class="logo-savage" src="'.get_template_directory_uri().'/img/savage-'.$lang_code.'.png" alt="'.__('concebido por SAVAGE', 'understrap').'" title ="'.__('concebido por SAVAGE', 'understrap').'"></a>';
+					else:
+					?>
+					<a href="<?php echo $footer_logos_url;?>"><img class="logo-2020" src="<?php echo $footer_logos_src;?>" alt="<?php echo $footer_logos_alt;?>" title="<?php echo $footer_logos_title;?>"></a>
+					<?php endif; ?>
 				</div>
 			</div>
 			<div class="col-4 text-right">
@@ -96,7 +107,18 @@ else:
 			<div class="col-12 col-md-4">
 				<!-- Footer Logos -->
 				<div class="fastio-footer-logos">
-					<a href="<?php echo $footer_logos_url;?>"><img src="<?php echo $footer_logos_src;?>" alt="<?php echo $footer_logos_alt;?>" title="<?php echo $footer_logos_title;?>"></a>
+					<?php 
+					if(!is_page_template()):
+						if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+							$lang_code = ICL_LANGUAGE_CODE;
+						}else{
+							$lang_code = 'pt-pt';
+						}
+						echo '<a href="http://savage-agency.pt" target="_blank"><img class="logo-savage" src="'.get_template_directory_uri().'/img/savage-'.$lang_code.'.png" alt="'.__('concebido por SAVAGE', 'understrap').'" title ="'.__('concebido por SAVAGE', 'understrap').'"></a>';
+					else:
+					?>
+					<a href="<?php echo $footer_logos_url;?>"><img class="logo-2020" src="<?php echo $footer_logos_src;?>" alt="<?php echo $footer_logos_alt;?>" title="<?php echo $footer_logos_title;?>"></a>
+					<?php endif; ?>
 				</div>
 			</div>
 			<div class="col-12 col-md-4 offset-md-2">
