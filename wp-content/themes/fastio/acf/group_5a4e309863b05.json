@@ -211,6 +211,30 @@
                     "maxlength": "",
                     "rows": 6,
                     "new_lines": ""
+                },
+                {
+                    "key": "field_5a8881a35d2db",
+                    "label": "Decoração Direita",
+                    "name": "decor-right",
+                    "type": "image",
+                    "instructions": "Importante: Preencher o campo título da imagem.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
         },
@@ -295,6 +319,30 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_5a8881ef5d2dc",
+                    "label": "Decoração Esquerda",
+                    "name": "decor-left",
+                    "type": "image",
+                    "instructions": "Importante: Preencher o campo título da imagem.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
         },
@@ -355,6 +403,30 @@
                     "maxlength": "",
                     "rows": 6,
                     "new_lines": ""
+                },
+                {
+                    "key": "field_5a8883785d2dd",
+                    "label": "Decoração Direita",
+                    "name": "decor-right",
+                    "type": "image",
+                    "instructions": "Importante: Preencher o campo título da imagem.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
         },
@@ -415,6 +487,30 @@
                     "maxlength": "",
                     "rows": 6,
                     "new_lines": ""
+                },
+                {
+                    "key": "field_5a8883a05d2de",
+                    "label": "Decoração Esquerda",
+                    "name": "decor-left",
+                    "type": "image",
+                    "instructions": "Importante: Preencher o campo título da imagem.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
         }
@@ -451,5 +547,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1517535433
+    "modified": 1518896072
 }

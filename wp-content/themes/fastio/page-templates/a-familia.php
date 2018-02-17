@@ -51,7 +51,9 @@ if(!empty($hero_1)):
 				</article>
 			</div>
 		</div>
-		<img class="ondas right bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-r-dark.png"; ?>" alt="onda azul r" data-aos="fade-up">
+		<?php if(!empty($feature['decor-right'])): ?>
+		<img data-aos="fade-up" data-aos-duration="3000" class="fastio-decor right bottom" src="<?php echo $feature['decor-right']['url']; ?>" alt="<?php echo $feature['decor-right']['title']; ?>" class="img-fluid">
+		<?php endif; ?>
 	</div>
 </section><!-- .fastio-feature -->
 <?php endif; ?>
@@ -64,7 +66,9 @@ if(!empty($hero_3)):
 <!-- ******************* The Hero III Section ******************* -->
 <section class="fastio-hero-3" style="background-image:url('<?php echo $hero_3['bg-img']; ?>');" data-aos="fade-up">
 	<div class="container-fluid">
-		<img class="ondas left bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-l.png"; ?>" alt="onda azul l" data-aos="fade-up">
+		<?php if(!empty($hero_3['decor-left'])): ?>
+		<img data-aos="fade-up" data-aos-duration="3000" class="fastio-decor left bottom" src="<?php echo $hero_3['decor-left']['url']; ?>" alt="<?php echo $hero_3['decor-left']['title']; ?>" class="img-fluid">
+		<?php endif; ?>
 		<div class="row">
 			<header class="fastio-hero-header offset-md-2 col-md-10" data-aos="fade-up">
 				<?php if(!empty($hero_3['title'])): ?><h3 class="text-primary"><?php echo $hero_3['title']; ?></h3><?php endif; ?>
@@ -92,7 +96,9 @@ if(!empty($hero_3)):
 				</article>
 			</div>
 		</div>
-		<img class="ondas right bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-r-dark.png"; ?>" alt="onda azul r"  data-aos="fade-up">
+		<?php if(!empty($feature_2['decor-right'])): ?>
+		<img data-aos="fade-up" data-aos-duration="3000" class="fastio-decor right bottom" src="<?php echo $feature_2['decor-right']['url']; ?>" alt="<?php echo $feature_2['decor-right']['title']; ?>" class="img-fluid">
+		<?php endif; ?>
 	</div>
 </section><!-- .fastio-feature -->
 <?php endif; ?>
@@ -103,7 +109,9 @@ if(!empty($hero_3)):
 	if(!empty($feature_3)):
 ?>
 <section class="fastio-feature-2">
-	<img class="ondas left bottom" src="<?php echo get_template_directory_uri()."/img/onda_azul_familia-l-dark.png"; ?>" alt="onda azul l" data-aos="fade">
+	<?php if(!empty($feature_3['decor-left'])): ?>
+		<img data-aos="fade" data-aos-duration="3000" class="fastio-decor left bottom" src="<?php echo $feature_3['decor-left']['url']; ?>" alt="<?php echo $feature_3['decor-left']['title']; ?>" class="img-fluid">
+	<?php endif; ?>
 	<div class="row no-gutters">
 		<div class="col-12 col-md-5 text-right">
 			<article class="bg-warning left text-left" data-aos="fade">
