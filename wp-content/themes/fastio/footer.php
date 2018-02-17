@@ -47,26 +47,26 @@ elseif(is_page() && wp_is_mobile()): ?>
 <div class="wrapper main-footer-wrapper" id="wrapper-footer-main">
 	<footer class="main-footer <?php echo esc_attr( $container ); ?>" id="colophon">
 		<div class="row">
-			<div class="col-2">
-				<!-- Language -->
-				<div class="fastio-footer-lang">
-					<?php do_action('icl_language_selector'); ?>
-				</div>
-			</div>
-			<div class="col-10">
+			<div class="col-9">
 				<!-- Footer Menu -->
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'footer',
 						'container_class' => 'fastio-footer-nav',
 						'container_id'    => 'fastioFooterNav',
-						'menu_class'      => 'nav pull-right',
+						'menu_class'      => 'nav pull-left',
 						//'items_wrap'	  => '%3$s',
 						'fallback_cb'     => '',
 						'menu_id'         => 'footer-menu',
 						'walker'          => new understrap_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
+			</div>
+			<div class="col-3">
+				<!-- Language -->
+				<div class="fastio-footer-lang">
+					<?php do_action('icl_language_selector'); ?>
+				</div>
 			</div>
 		</div><!-- row end -->
 		<div class="row">
