@@ -832,7 +832,7 @@ body.page-template-fastio-go{
 	.fastio-go-workout{
 		display: block;
 		background-repeat: no-repeat;
-		background-position: top center;
+		background-position: top right;
 		margin-top: 6rem;
 		.inner-hero{
 			padding-top:18rem;
@@ -841,11 +841,12 @@ body.page-template-fastio-go{
 		.mt{
 			//margin-top: -80px;
 		}
+		
 		.fastio-workout{
 			margin-bottom: 3rem;
 			.img-thumbnail{
 				border-radius:0;
-				borde:0;
+				border:0;
 			}
 			a{
 				text-decoration: none;
@@ -2182,9 +2183,24 @@ body.page-template-barbie-subpages{
 		}
 	}
 	body.page-template-fastio-go{
+		.fastio-video-hero > .fastio-video-header > h1{
+			font-size: 2rem!important;
+			line-height: 2rem!important;
+			padding: 0 1rem!important;
+			margin: 0!important;
+		}
 		.fastio-go-bottle{
 			padding-top: 3rem;
 			padding-bottom: 3rem;
+			h2{
+				font-size:1.5rem;
+			}
+			p{
+				font-size:1rem;
+			}
+			.fastio-go-icon{
+				max-width: 60px;
+			}
 		}
 	}
 	body.page-template-barbie{
