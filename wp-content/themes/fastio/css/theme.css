@@ -12216,7 +12216,15 @@ body.page-template-barbie-subpages {
   body.page-template-a-nossa-agua .fastio-benefits .container {
     padding-top: 2rem;
     padding-bottom: 2rem; }
-    body.page-template-a-nossa-agua .fastio-benefits .container div.col-6:first-of-type, body.page-template-a-nossa-agua .fastio-benefits .container div.col-6:first-of-type + div.col-6 {
+    body.page-template-a-nossa-agua .fastio-benefits .container div.col-12 {
+      text-align: center;
+      margin-bottom: 2rem; }
+      body.page-template-a-nossa-agua .fastio-benefits .container div.col-12:last-of-type {
+        margin-bottom: 0; }
+      body.page-template-a-nossa-agua .fastio-benefits .container div.col-12 p {
+        font-size: 0.85rem; }
+    body.page-template-a-nossa-agua .fastio-benefits .container div.col-6:first-of-type,
+    body.page-template-a-nossa-agua .fastio-benefits .container div.col-6:first-of-type + div.col-6 {
       margin-bottom: 3rem; }
   body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-feature .mejs-overlay-button {
     background-size: 75px;

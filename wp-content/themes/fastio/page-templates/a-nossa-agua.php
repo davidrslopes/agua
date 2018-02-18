@@ -145,7 +145,7 @@ if(!empty($hero_2)):
 		<?php endif;?>
 		<div class="row">
 			<?php while( have_rows('a-nossa-agua-section-4') ): the_row(); ?>
-			<div class="col-<?php echo $benefit_col*2; ?> col-md-<?php echo $benefit_col; ?>">
+			<div class="col-12 col-md-<?php echo $benefit_col; ?>">
 				<article data-aos="fade-in">
 					<h5><?php the_sub_field('title'); ?></h5>
 					<p><?php the_sub_field('desc'); ?></p>

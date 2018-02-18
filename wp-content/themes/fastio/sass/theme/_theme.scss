@@ -670,7 +670,6 @@ body.page-template-a-nossa-agua{
 	.fastio-benefits{
 		.decor{
 			position: absolute;
-			
 			z-index: 10;
 			&.left{
 				margin-left: -5rem;
@@ -2073,7 +2072,18 @@ body.page-template-barbie-subpages{
 			.container{
 				padding-top: 2rem;
 				padding-bottom: 2rem;
-				div.col-6:first-of-type,div.col-6:first-of-type+div.col-6{
+				div.col-12{
+					text-align: center;
+					margin-bottom: 2rem;
+					&:last-of-type{
+						margin-bottom: 0;
+					}
+					p{
+						font-size: 0.85rem;
+					}
+				}
+				div.col-6:first-of-type,
+				div.col-6:first-of-type+div.col-6{
 					margin-bottom: 3rem;
 				}
 			}
