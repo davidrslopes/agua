@@ -12079,7 +12079,7 @@ body.page-template-barbie-subpages {
   body.page-template-barbie-subpages .carousel {
     padding-top: 40px; }
   body.page-template-barbie-subpages #barbiesubpagescarousel {
-    height: 340px; }
+    height: 100%; }
   body.page-template-barbie-subpages #barbiesubpagescarousel i {
     border: solid 2px #fff;
     border-radius: 20px;

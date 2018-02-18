@@ -30,7 +30,7 @@ if(!empty($hero_1)):
            <div class="row">    
             <div class="col-12 col-md-6">
                 <div data-aos="fade-up" data-aos-duration="3000">
-                    <img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid"/>
+                    <img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid float-right"/>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="3000">                
                 <div class="title">
@@ -112,12 +112,12 @@ if(!empty($section_3)):
 		</div>
 	</div>
 	<div class="row no-gutters">
-		<div class="col col-md-3">
+		<div class="col col-md-2">
 			<div data-aos="fade-up" data-aos-duration="3000">
 				<img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-right imgestrelasbarbiefotografa"/>
 			</div>
 		</div>
-		<div class="col col-md-3 align-self-end">
+		<div class="col col-md-4 align-self-end">
                     <div data-aos="fade-up"data-aos-duration="3000">
 			 <img src="<?php echo $section_3['img3']; ?>" class="img-fluid float-left imgbarbiefotografa"/>
                     </div>
