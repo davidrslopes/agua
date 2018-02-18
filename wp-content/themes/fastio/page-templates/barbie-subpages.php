@@ -28,7 +28,7 @@ if(!empty($hero_1)):
 	
         <div class="container">
            <div class="row">    
-            <div class="col col-md-6">
+            <div class="col-12 col-md-6">
                 <div data-aos="fade-up" data-aos-duration="3000">
                     <img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid"/>
                 </div>
@@ -39,7 +39,7 @@ if(!empty($hero_1)):
                 <div class="icon faa-float animated">
                         <i class="fa fa-angle-down"></i></div>
             </div>
-            <div class="col col-md-6">           
+            <div class="col-12 col-md-6">           
                 <div data-aos="fade-up" data-aos-duration="3000">
                  <img src="<?php echo $hero_1['img1']; ?>" class="img-fluid bottleimg"/>
                 </div>
@@ -63,12 +63,12 @@ if(!empty($hero_1)):
                     </div>
 		</div>
             <div class="row">
-                <div class="col col-md-2">
+                <div class="col col-md-1">
                     <div data-aos="fade-up"data-aos-duration="3000">
                     <img src="<?php echo $section2['img2']; ?>" class="img-fluid imgestrelas"/>
                     </div>
                 </div>
-                <div class="col col-md-10">
+                <div class="col col-md-11">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid"/>
                         <div class="title">
@@ -117,7 +117,7 @@ if(!empty($section_3)):
 				<img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-right imgestrelasbarbiefotografa"/>
 			</div>
 		</div>
-		<div class="col col-md-3">
+		<div class="col col-md-3 align-self-end">
                     <div data-aos="fade-up"data-aos-duration="3000">
 			 <img src="<?php echo $section_3['img3']; ?>" class="img-fluid float-left imgbarbiefotografa"/>
                     </div>
@@ -133,7 +133,7 @@ if(!empty($section_3)):
 ?>
 				<div class="row no-gutters">
                                     <?php while( have_rows('barbiesubpages-section-3-galeria') ): the_row(); ?>
-					<div class="col-<?php echo $links_col; ?> col-md-4 col-sm-4 col-xs-6">
+					<div class="col-<?php echo $links_col; ?> col-md-4 col-sm-4">
                                             <div class="hovereffect">
 						<img src="<?php the_sub_field('fotografia'); ?>" class="img-fluid"/>
 						<div class="overlay">

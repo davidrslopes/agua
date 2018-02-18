@@ -1688,15 +1688,16 @@ body.page-template-barbie-subpages{
     -o-background-size: cover; 
         
     section.fastio-barbie-subpages-1{
-        padding-top: 135px;
+        padding-top: 170px;
         
         .title{
             display: inline-block;
-            float:left;
+            float:right;
             padding-left: 8px;
             padding-top: 10px;
             font-size: 14px;
             color: #fff;
+            width: 70%;
         }
         
         .bottleimg{
@@ -1863,6 +1864,9 @@ body.page-template-barbie-subpages{
                   
                   .imgcameracol{
                       padding-right: 0px !important;
+                      position: relative;
+                      top: 75px;
+                      z-index: 2;
                   }
                   
                   .imgtitulocriatividade{
@@ -1884,6 +1888,7 @@ body.page-template-barbie-subpages{
 			overflow: hidden;
 			padding-top: 60px;
 			margin-top: -20px;
+                        position: relative;
 			.escolhebarbieimg{
 				padding-right: 30px;
 			}
@@ -1894,12 +1899,11 @@ body.page-template-barbie-subpages{
             /* Carousel base class */
             .carousel {
                 padding-top: 40px;
-              margin-bottom: 2rem;
             }
             
             
             #barbiesubpagescarousel{
-                height:420px;
+                height: 340px;
             }
             
             #barbiesubpagescarousel i{
