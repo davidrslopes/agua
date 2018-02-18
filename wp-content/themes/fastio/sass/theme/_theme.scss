@@ -1977,30 +1977,38 @@ body.page-template-barbie-subpages{
 			border-top: 1px solid #FFFFFF;
 		}
 		footer .fastio-footer-nav{
+			padding-top: 0;
 			ul > li:first-of-type > a{
 				padding-left: 0;
 			}
 			ul > li > a{
 				font-size:70%;
-				padding: 0.25rem 0.5rem 0.25rem;
+				padding: 0.20rem 0.40rem 0.20rem;
 			}
 			ul > li:last-of-type > a{
 				padding-right: 0;
 			}
 		}
 		footer .fastio-footer-lang{
+			float:right;
+			margin: 0;
+			padding: 0;
 			.wpml-ls{
 				padding:0;
+				margin: 0;
 				ul{
 					list-style: circle;
 					list-style-position: outside;
 					color:inherit;
-					padding-left: 15px;
+					padding:0;
+					margin: 0;
 					li{
 						list-style-type: circle;
 						display: list-item;
+						padding: 0;
+						margin: 0;
 						a{
-							display: initial;
+							margin: 0;
 							padding: 0;
 							font-size:70%;
 							color:inherit;
@@ -2009,6 +2017,9 @@ body.page-template-barbie-subpages{
 							&:hover,
 							&:focus{
 								color:$primary;
+							}
+							span{
+								vertical-align: inherit;
 							}
 						}
 					} 
@@ -2091,6 +2102,20 @@ body.page-template-barbie-subpages{
 	}
 	//EXPLORE O GERES SUB
 	body.page-template-explore-o-geres-subpages{
+		.fastio-highlights{
+			article{
+				margin: 3rem 0;
+				font-size: 0.85rem;
+			}
+			.fastio-highlights-bottom-left{
+				padding: 3rem 0 3rem 3rem!important;
+				font-size: 0.85rem;
+			}
+			h2{
+				margin: 3rem 0;
+				font-size: 1.5rem;
+			}
+		}
 		.fastio-location{
 			.fastio-location-feature{
 				.mejs-overlay-button{

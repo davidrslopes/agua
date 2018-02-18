@@ -37,6 +37,7 @@ if(!empty($location)):
 <!-- ******************* The Location Section ******************* -->
 <section class="fastio-location">
 	<div class="row no-gutters">
+		<?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 		<div class="fastio-location-feature col-12 col-md-9">
 			<?php if(!empty($location['milho-1'])): ?>
 			<img data-aos="fade-down" data-aos-duration="3000" class="fastio-milho-1" src="<?php echo $location['milho-1']['url']; ?>" alt="<?php echo $location['milho-1']['title']; ?>" class="img-fluid">
@@ -72,6 +73,42 @@ if(!empty($location)):
 			<img data-aos="fade-up" class="fastio-milho-3" src="<?php echo $location['milho-3']['url']; ?>" alt="<?php echo $location['milho-3']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 		</div>
+		<?php else: // MODILE ORDER VERSION ?>
+		<div class="fastio-location-content col-12 col-md-3">
+			<?php if(!empty($location['milho-1'])): ?>
+			<img data-aos="fade-down" data-aos-duration="3000" class="fastio-milho-1" src="<?php echo $location['milho-1']['url']; ?>" alt="<?php echo $location['milho-1']['title']; ?>" class="img-fluid">
+			<?php endif; ?>
+			<?php if(!empty($location['milho-2'])): ?>
+			<img data-aos="fade-up" data-aos-duration="3000" class="fastio-milho-2" src="<?php echo $location['milho-2']['url']; ?>" alt="<?php echo $location['milho-2']['title']; ?>" class="img-fluid">
+			<?php endif; ?>
+			<article data-aos="fade-up">
+				<h1><?php the_title();?></h1>
+				<p><?php echo $location['text'];?></p>
+				<div class="fastio-location-coordinates">
+					<img src="<?php echo get_template_directory_uri()."/img/icone-Coordenadas.png"; ?>" height="24" width="24" alt="">
+					<?php if(!empty($info['coordenadas-google'])): ?>
+					<a href="http://www.google.com/maps/place/<?php echo $info['coordenadas-google']; ?>" target="_blank">
+						<?php echo $location['coordinates'];?>
+					</a>
+					<?php else: echo $location['coordinates']; endif; ?>
+				</div>
+			</article>
+		</div>
+		<div class="fastio-location-feature col-12">
+			<?php if(!empty($location['video'])):
+				$content_width = 1140;
+				echo do_shortcode(' [video src="'.$location['video'].'" poster="'. $location['fallback-img']['url'].'"] ');
+			else: ?>
+			<img src="<?php echo $location['fallback-img']['url'];?>" alt="<?php echo $location['fallback-img']['title'];?>" title="<?php echo $location['fallback-img']['title'];?>" class="fastio-location-image">
+			<?php endif; ?>
+			<?php if(!empty($location['milho-3'])): ?>
+			<img data-aos="fade-up" class="fastio-milho-3" src="<?php echo $location['milho-3']['url']; ?>" alt="<?php echo $location['milho-3']['title']; ?>" class="img-fluid">
+			<?php endif; ?>
+			<?php if(!empty($location['milho-4'])): ?>
+			<img data-aos="fade-up" class="fastio-milho-4" src="<?php echo $location['milho-4']['url']; ?>" alt="<?php echo $location['milho-4']['title']; ?>" class="img-fluid">
+			<?php endif; ?>
+		</div>
+		<?php endif; ?>
 	</div>
 </section>
 <?php endif; ?>
@@ -83,6 +120,7 @@ if(!empty($highlights)): ?>
 <!-- ******************* The Local Highlights Section ******************* -->
 <section class="fastio-highlights">
 	<div class="container-fluid">
+	<?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 		<div class="row">
 			<div class="col-md-2">
 				<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" data-aos="fade-up">
@@ -112,6 +150,27 @@ if(!empty($highlights)): ?>
 				<img src="<?php echo $highlights['svg-right-bottom']['url'];?>" alt="<?php echo $highlights['svg-right-bottom']['title'];?>" title="<?php echo $highlights['svg-right-bottom']['title'];?>" class="img-fluid" data-aos="fade-up">
 			</div>
 		</div>
+		<?php else: // MODILE ORDER VERSION ?>
+		<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" data-aos="fade-up">
+		
+		<article data-aos="fade-up">
+			<h3><?php echo $highlights['title']; ?></h3>
+			<p><?php echo $highlights['text-top']; ?></p>
+		</article>
+		
+		<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid" data-aos="fade-up">
+		<?php endif; ?>
+		
+		<h2 data-aos="fade-up"><?php echo $highlights['title-big']; ?></h2>
+		
+		<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" data-aos="fade-up">
+		
+		<article data-aos="fade-up">
+			<!--<img src="<?php echo $highlights['svg-left-bottom']['url'];?>" alt="<?php echo $highlights['svg-left-bottom']['title'];?>" title="<?php echo $highlights['svg-left-bottom']['title'];?>" class="img-fluid">-->
+			<p class="fastio-highlights-bottom-left" style="background-image:url('<?php echo $highlights['svg-left-bottom']['url'];?>');"><?php echo $highlights['text-bottom']; ?></p>
+		</article>
+		
+		<img src="<?php echo $highlights['svg-right-bottom']['url'];?>" alt="<?php echo $highlights['svg-right-bottom']['title'];?>" title="<?php echo $highlights['svg-right-bottom']['title'];?>" class="img-fluid" data-aos="fade-up">
 	</div>
 </section>
 <?php endif; ?>
