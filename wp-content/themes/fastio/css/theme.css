@@ -12223,11 +12223,20 @@ body.page-template-barbie-subpages {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center; }
-  body.page-template-a-nossa-agua .fastio-benefits .decor {
-    text-align: center; }
   body.page-template-a-nossa-agua .fastio-benefits .container {
-    padding-top: 2rem;
+    padding-top: 0rem;
     padding-bottom: 2rem; }
+    body.page-template-a-nossa-agua .fastio-benefits .container .decor {
+      margin: 0 -15px !important;
+      padding: 0 !important;
+      text-align: center;
+      position: relative;
+      display: block;
+      bottom: 0;
+      margin-bottom: 2rem; }
+      body.page-template-a-nossa-agua .fastio-benefits .container .decor img.decor-item {
+        display: inline-block;
+        position: relative; }
     body.page-template-a-nossa-agua .fastio-benefits .container div.col-12 {
       text-align: center;
       margin-bottom: 2rem; }
