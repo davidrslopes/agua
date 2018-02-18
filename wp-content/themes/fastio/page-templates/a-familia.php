@@ -41,7 +41,7 @@ if(!empty($hero_1)):
 ?>
 <section class="fastio-feature mt">
 	<?php if(!wp_is_mobile()): ?><div class="container"><?php endif; ?>
-		<div class="row">
+		<div class="row no-gutters">
 			<?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 			<div class="col-12 col-md-7 text-right">
 				<?php if(!empty($feature['img'])): ?><img class="img-fluid" src="<?php echo $feature['img']['url']; ?>" title="<?php echo $feature['img']['title']; ?>" alt="<?php echo $feature['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
@@ -52,20 +52,22 @@ if(!empty($hero_1)):
 				</article>
 			</div>
 			<?php else: // MODILE ORDER VERSION ?>
-			<div class="col-12 col-md-5 text-left">
+			<div class="col-12 text-left">
 				<article class="bg-primary pull-bottom" data-aos="fade-up">
 					<?php if(!empty($feature['text'])){ echo '<h4 data-aos="fade-up">'.$feature['text'].'</h4>'; } ?>
 				</article>
 			</div>
-			<div class="col-12 col-md-7 text-right">
+			<div class="col-12 text-right">
+				<img data-aos="fade-up" data-aos-duration="3000" class="decor right top" src="<?php echo $feature['decor-right']['url']; ?>" alt="<?php echo $feature['decor-right']['title']; ?>" class="img-fluid">
 				<?php if(!empty($feature['img'])): ?><img class="img-fluid" src="<?php echo $feature['img']['url']; ?>" title="<?php echo $feature['img']['title']; ?>" alt="<?php echo $feature['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
 			</div>
 			<?php endif; ?>
 		</div>
+		<?php if(!wp_is_mobile()): ?>
 		<?php if(!empty($feature['decor-right'])): ?>
 		<img data-aos="fade-up" data-aos-duration="3000" class="decor right bottom" src="<?php echo $feature['decor-right']['url']; ?>" alt="<?php echo $feature['decor-right']['title']; ?>" class="img-fluid">
 		<?php endif; ?>
-	<?php if(!wp_is_mobile()): ?></div><?php endif; ?>
+	</div><?php endif; ?>
 </section><!-- .fastio-feature -->
 <?php endif; ?>
 
@@ -97,7 +99,7 @@ if(!empty($hero_3)):
 ?>
 <section class="fastio-feature">
 	<?php if(!wp_is_mobile()): ?><div class="container"><?php endif; ?>
-		<div class="row">
+		<div class="row no-gutters">
 			<?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 			<div class="col-12 col-md-7 text-right">
 				<?php if(!empty($feature_2['img'])): ?><img class="img-fluid" src="<?php echo $feature_2['img']['url']; ?>" title="<?php echo $feature_2['img']['title']; ?>" alt="<?php echo $feature_2['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
@@ -108,20 +110,22 @@ if(!empty($hero_3)):
 				</article>
 			</div>
 			<?php else: // MODILE ORDER VERSION ?>
-			<div class="col-12 col-md-5 text-left">
+			<div class="col-12 text-left">
 				<article class="bg-warning pull-bottom" data-aos="fade-up">
+					<img data-aos="fade-up" data-aos-duration="3000" class="decor right bottom" src="<?php echo $feature_2['decor-right']['url']; ?>" alt="<?php echo $feature_2['decor-right']['title']; ?>" class="img-fluid">
 					<?php if(!empty($feature_2['text'])){ echo '<h4 data-aos="fade-up">'.$feature_2['text'].'</h4>'; } ?>
 				</article>
 			</div>
-			<div class="col-12 col-md-7 text-right">
+			<div class="col-12 text-right">
 				<?php if(!empty($feature_2['img'])): ?><img class="img-fluid" src="<?php echo $feature_2['img']['url']; ?>" title="<?php echo $feature_2['img']['title']; ?>" alt="<?php echo $feature_2['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
-			</div
+			</div>
 			<?php endif; ?>
 		</div>
+		<?php if(!wp_is_mobile()): ?>
 		<?php if(!empty($feature_2['decor-right'])): ?>
 		<img data-aos="fade-up" data-aos-duration="3000" class="decor right bottom" src="<?php echo $feature_2['decor-right']['url']; ?>" alt="<?php echo $feature_2['decor-right']['title']; ?>" class="img-fluid">
 		<?php endif; ?>
-	<?php if(!wp_is_mobile()): ?></div><?php endif; ?>
+	</div><?php endif; ?>
 </section><!-- .fastio-feature -->
 <?php endif; ?>
 

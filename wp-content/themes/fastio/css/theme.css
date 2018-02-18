@@ -12269,15 +12269,25 @@ body.page-template-barbie-subpages {
   body.page-template-explore-o-geres-subpages .fastio-360 .fastio-img-milho {
     width: 50%;
     height: auto; }
+  body.page-template-a-familia .fastio-feature h4,
+  body.page-template-a-familia .fastio-feature-2 h4 {
+    font-size: 1.4rem; }
   body.page-template-a-familia .fastio-feature.mt,
   body.page-template-a-familia .fastio-feature-2.mt {
     padding-top: 0; }
   body.page-template-a-familia .fastio-feature article,
   body.page-template-a-familia .fastio-feature-2 article {
     position: relative;
-    bottom: inherit; }
-  body.page-template-a-familia .fastio-feature-2 {
-    padding-top: 3rem; }
+    bottom: inherit;
+    padding: 6rem 4rem; }
+  body.page-template-a-familia .fastio-feature .decor.right.top {
+    margin-top: 8rem; }
+  body.page-template-a-familia .fastio-feature .decor.right.bottom {
+    margin-bottom: 4rem; }
+  body.page-template-a-familia .fastio-hero-3 .decor {
+    margin-bottom: 8rem; }
+  body.page-template-a-familia .fastio-feature-2 article.left {
+    padding: 4rem; }
   body.page-template-fastio-go .fastio-go-bottle {
     padding-top: 3rem;
     padding-bottom: 3rem; }
@@ -12377,6 +12387,10 @@ body.page-template-barbie-subpages {
   body.page-template-explore-o-geres-subpages .fastio-milho-3 {
     position: absolute;
     bottom: 0; }
+  body.page-template-a-familia .fastio-feature .decor,
+  body.page-template-a-familia .fastio-feature-2 .decor,
+  body.page-template-a-familia .fastio-hero-3 .decor {
+    margin-bottom: 5rem; }
   body.page-template-fastio-go .fastio-go-bottle {
     height: 100vh; }
     body.page-template-fastio-go .fastio-go-bottle .vertical-align {

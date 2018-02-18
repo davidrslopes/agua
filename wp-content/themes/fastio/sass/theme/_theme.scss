@@ -2153,16 +2153,32 @@ body.page-template-barbie-subpages{
 	body.page-template-a-familia{
 		.fastio-feature,
 		.fastio-feature-2{
+			h4{font-size: 1.4rem;}
 			&.mt{
 				padding-top: 0;
 			}
 			article{
 				position: relative;
 				bottom:inherit;
+				padding: 6rem 4rem;
+			}
+			.decor{
+				
 			}
 		}
+		.fastio-feature .decor.right.top{
+			margin-top: 8rem;
+		}
+		.fastio-feature .decor.right.bottom{
+			margin-bottom: 4rem;
+		}
+		.fastio-hero-3 .decor{
+			margin-bottom: 8rem;
+		}
 		.fastio-feature-2{
-			padding-top: 3rem;
+			article.left{
+				padding: 4rem;
+			}
 		}
 	}
 	body.page-template-fastio-go{
@@ -2311,6 +2327,15 @@ body.page-template-barbie-subpages{
 		.fastio-milho-3{
 			position: absolute;
 			bottom:0;
+		}
+	}
+	body.page-template-a-familia{		
+		.fastio-feature,
+		.fastio-feature-2,
+		.fastio-hero-3{
+			.decor{
+				margin-bottom: 5rem;
+			}
 		}
 	}
 	body.page-template-fastio-go{
