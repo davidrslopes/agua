@@ -12186,10 +12186,16 @@ body.page-template-barbie-subpages {
                 color: #00aeef; }
               .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a span {
                 vertical-align: inherit; }
+  body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1,
+  body.page-template-a-familia .fastio-video-hero header.fastio-video-header h1 {
+    font-size: 2rem !important;
+    line-height: 2rem !important;
+    padding: 0 1rem !important;
+    margin: 0 !important; }
   .fastio-home-title,
   .fastio-hero header > h1 {
-    font-size: 2.5rem !important;
-    line-height: 2.5rem !important;
+    font-size: 2rem !important;
+    line-height: 2rem !important;
     padding: 0 1rem !important;
     margin: 0 !important; }
   .home-footer-wrapper {

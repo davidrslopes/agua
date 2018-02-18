@@ -2027,11 +2027,19 @@ body.page-template-barbie-subpages{
 			}
 		}
 	}
+	
+	body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1,
+	body.page-template-a-familia .fastio-video-hero header.fastio-video-header h1{
+		font-size: 2rem!important;
+		line-height: 2rem!important;
+		padding: 0 1rem!important;
+		margin: 0!important;
+	}
 	//HOME
 	.fastio-home-title,
 	.fastio-hero header > h1{
-		font-size: 2.5rem!important;
-		line-height: 2.5rem!important;
+		font-size: 2rem!important;
+		line-height: 2rem!important;
 		padding: 0 1rem!important;
 		margin: 0!important;
 	}
