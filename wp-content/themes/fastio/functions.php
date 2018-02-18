@@ -74,3 +74,9 @@ require get_template_directory() . '/inc/acf.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+
+/**
+ * Custom gallery format (using Bootstrap v4 grid)
+ */
+require get_template_directory() . '/inc/custom-gallery-format.php';
+add_filter('post_gallery', 'custom_gallery_grid', 10, 3);

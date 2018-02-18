@@ -648,10 +648,17 @@ body.page-template-a-nossa-agua{
 				}
 			}
 		}
-		.gallery > .gallery-item{
-			cursor:pointer;
-			.wp-caption-text.gallery-caption{
-				display: none;
+		.gallery{
+			figure{
+				cursor: pointer;
+			}
+			.gallery-caption-stage{
+				.gallery-caption p{
+					font-size: 70%;
+					font-weight: normal;
+					margin-top: 0.5rem;
+					margin-bottom: 1rem;
+				}
 			}
 		}
 		footer > p{

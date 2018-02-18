@@ -34,7 +34,7 @@ if(!empty($hero_1)):
 <!-- ******************* The Products Section ******************* -->
 <?php 
 	$products = get_field('a-nossa-agua-section-2');
-	$gallery_options = 'size="full" columns="5" link="none"';
+	$gallery_options = 'size="full" columns="6" link="none"';
 	while( have_rows('a-nossa-agua-section-2') ): the_row(); 
 		if( get_sub_field('plastic',false) ):
 			$plastic_gallery = '[gallery ids="' . implode(',', get_sub_field('plastic',false)) . '" '.$gallery_options.' ]';
@@ -62,10 +62,7 @@ if(!empty($hero_1)):
 				<div class="tab-content" data-aos="fade-up">
 					<div class="tab-pane fade show active" id="tab-plastic" role="tabpanel" aria-labelledby="tab-plastic">
 						<?php echo do_shortcode( $plastic_gallery ); ?>
-						<footer class="gallery-caption">
-							<img id="img-gallery-caption" src="<?php echo get_template_directory_uri()."/img/Linha-gotas-brancas.png" ?>" alt="onda" style="display: none;">
-							<p></p>
-						</footer>
+						
 					</div>
 					<div class="tab-pane fade" id="tab-glass" role="tabpanel" aria-labelledby="tab-glass">
 						<?php echo do_shortcode( $glass_gallery ); ?>

@@ -182,7 +182,7 @@
  */
 jQuery( function($) {
 	//OPTIONS
-	var debug = false; //Turn this of when in production.
+	var debug = true; //Turn this of when in production.
 	
 	//VIDEO
 	$('.fastio-video').removeAttr('controls').prop('muted',true).attr('playsinline','');
@@ -252,22 +252,31 @@ jQuery( function($) {
 		});*/
 		
 		//GET IMAGE CLICKED AND SHOW CAPTION
-		$('.gallery-item').on( "click", function() {
-			var caption_id = $(this).find('img').attr('aria-describedby'),
-				gallery_caption = $(this).parent('.gallery').next('footer').children('p');
-                                $('#img-gallery-caption').show();
-			if(caption_id === undefined){
-				gallery_caption.fadeOut(250);
-                                $('#img-gallery-caption').hide();
-			}else{
-				//Reset gallery caption content
-				gallery_caption.fadeOut(250,function(){
-					$(this).html('');
-					$('#'+caption_id).clone(true,true).appendTo($(this));
-					$(this).fadeIn(250);
-				});
-			}
+		var last_caption,
+			last_caption_stage;
+		
+		$('.gallery-item').on( "click touch", function(e) {
+			e.preventDefault();
+			//vars
+			var caption_id = $(this).attr('id')+'-caption',
+				caption = $("#" + caption_id),
+				stage = caption.closest('.gallery-caption-stage'),
+				gallery = $(this).closest('section.gallery'),
+				stages = gallery.find('.gallery-caption-stage'),
+				captions = gallery.find('.gallery-caption');
+			
+			// hide all captions and stages and show the ones you need
+			stages.not(stage).fadeOut(500,function(){
+				stage.fadeIn(500);
+			});
+			captions.not(caption).fadeOut(0, function(){
+				caption.fadeIn(500);
+			});
+
 			if(debug){console.log('This image caption id is: '+caption_id);}
+			if(debug){console.log(gallery);}
+			if(debug){console.log(stages);}
+
 		});
 	}
 	//SLIDER

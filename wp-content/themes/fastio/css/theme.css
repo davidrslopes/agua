@@ -10702,10 +10702,13 @@ body.page-template-a-nossa-agua .fastio-products {
         border-left-color: #00aeef;
         border-left-width: 3px;
         padding-left: 28px; }
-  body.page-template-a-nossa-agua .fastio-products .gallery > .gallery-item {
+  body.page-template-a-nossa-agua .fastio-products .gallery figure {
     cursor: pointer; }
-    body.page-template-a-nossa-agua .fastio-products .gallery > .gallery-item .wp-caption-text.gallery-caption {
-      display: none; }
+  body.page-template-a-nossa-agua .fastio-products .gallery .gallery-caption-stage .gallery-caption p {
+    font-size: 70%;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem; }
   body.page-template-a-nossa-agua .fastio-products footer > p {
     margin: 0;
     font-size: 70%; }
