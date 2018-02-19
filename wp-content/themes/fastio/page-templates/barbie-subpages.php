@@ -113,9 +113,6 @@ if(!empty($section_3)):
 	</div>
 	<div class="row no-gutters">
 		<div class="col col-md-2">
-			<div data-aos="fade-up" data-aos-duration="3000">
-				<img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-right imgestrelasbarbiefotografa"/>
-			</div>
 		</div>
 		<div class="col col-md-4 align-self-end">
                     <div data-aos="fade-up"data-aos-duration="3000">
