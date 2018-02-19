@@ -182,7 +182,7 @@
  */
 jQuery( function($) {
 	//OPTIONS
-	var debug = true; //Turn this of when in production.
+	var debug = false; //Turn this of when in production.
 	
 	//VIDEO
 	$('.fastio-video').removeAttr('controls').prop('muted',true).attr('playsinline','');
@@ -266,11 +266,15 @@ jQuery( function($) {
 				captions = gallery.find('.gallery-caption');
 			
 			// hide all captions and stages and show the ones you need
-			stages.not(stage).fadeOut(500,function(){
-				stage.fadeIn(500);
+			stage.clearQueue();
+			stage.stop();
+			stages.not(stage).slideUp(1000,function(){
+				stage.slideDown(1000);
 			});
-			captions.not(caption).fadeOut(0, function(){
-				caption.fadeIn(500);
+			captions.stop();
+			captions.clearQueue();
+			captions.not(caption).slideUp(1000, function(){
+				caption.slideDown(1000);
 			});
 
 			if(debug){console.log('This image caption id is: '+caption_id);}
