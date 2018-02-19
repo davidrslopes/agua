@@ -159,7 +159,7 @@ if(!empty($highlights)): ?>
 		</article>
 		
 		<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid" data-aos="fade-up">
-		<?php endif; ?>
+		
 		
 		<h2 data-aos="fade-up"><?php echo $highlights['title-big']; ?></h2>
 		
@@ -171,6 +171,7 @@ if(!empty($highlights)): ?>
 		</article>
 		
 		<img src="<?php echo $highlights['svg-right-bottom']['url'];?>" alt="<?php echo $highlights['svg-right-bottom']['title'];?>" title="<?php echo $highlights['svg-right-bottom']['title'];?>" class="img-fluid" data-aos="fade-up">
+		<?php endif; ?>
 	</div>
 </section>
 <?php endif; ?>
