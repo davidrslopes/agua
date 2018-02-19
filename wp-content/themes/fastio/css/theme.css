@@ -11432,7 +11432,9 @@ body.page-template-default .fastio-hero {
   min-height: 100vh;
   width: 100%;
   display: block;
-  max-height: 440px; }
+  max-height: 440px;
+  height: 430px;
+  min-height: 100%; }
   body.page-template-default .fastio-hero header.fastio-hero-header h1, body.page-template-default .fastio-hero header.fastio-hero-header h2, body.page-template-default .fastio-hero header.fastio-hero-header h3, body.page-template-default .fastio-hero header.fastio-hero-header h4, body.page-template-default .fastio-hero header.fastio-hero-header h5, body.page-template-default .fastio-hero header.fastio-hero-header h6,
   body.page-template-default .fastio-hero header.fastio-video-header h1,
   body.page-template-default .fastio-hero header.fastio-video-header h2,
@@ -11498,7 +11500,7 @@ body.page-template-default .fastio-common-pages #tab-contatos .entry-content {
   padding-top: 5px; }
 
 body.page-template-default .fastio-common-pages #tab-contatos .contactos {
-  padding-top: 45px;
+  padding-top: 115px;
   color: #b2eaff;
   font-size: 14px;
   opacity: 1 !important; }
@@ -11566,11 +11568,11 @@ body.page-template-default .wpcf7-form .btnanexar {
   margin-right: 25px; }
 
 body.page-template-default .wpcf7-form .btnanexar label.btn {
-  height: 38px;
+  height: 35px;
   border-color: #00aeef;
   border-radius: .89rem;
   background-color: white;
-  color: #b2eaff; }
+  color: #00aeef; }
 
 body.page-template-default .wpcf7-form .btnsubmeter input {
   background: #00aeef;
