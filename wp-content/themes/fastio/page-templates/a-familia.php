@@ -51,7 +51,7 @@ if(!empty($hero_1)):
 					<?php if(!empty($feature['text'])){ echo '<h4 data-aos="fade-up">'.$feature['text'].'</h4>'; } ?>
 				</article>
 			</div>
-			<?php else: // MODILE ORDER VERSION ?>
+			<?php else: // MOBILE ORDER VERSION ?>
 			<div class="col-12 text-left">
 				<article class="bg-primary pull-bottom" data-aos="fade-up">
 					<?php if(!empty($feature['text'])){ echo '<h4 data-aos="fade-up">'.$feature['text'].'</h4>'; } ?>
@@ -109,7 +109,7 @@ if(!empty($hero_3)):
 					<?php if(!empty($feature_2['text'])){ echo '<h4 data-aos="fade-up">'.$feature_2['text'].'</h4>'; } ?>
 				</article>
 			</div>
-			<?php else: // MODILE ORDER VERSION ?>
+			<?php else: // MOBILE ORDER VERSION ?>
 			<div class="col-12 text-left">
 				<article class="bg-warning pull-bottom" data-aos="fade-up">
 					<img data-aos="fade-up" data-aos-duration="3000" class="decor right bottom" src="<?php echo $feature_2['decor-right']['url']; ?>" alt="<?php echo $feature_2['decor-right']['title']; ?>" class="img-fluid">
