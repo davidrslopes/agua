@@ -29,6 +29,7 @@ if(!empty($hero_1)):
 	<?php if(!empty($hero_1['bg-img']) && !empty($hero_1['logo-img'])): ?>
         <div class="container">
            <div class="row">
+               <?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
             <div class="col-12 col-md-6 logoimgdiv">
                 <img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/>
                  <div class="icon faa-float animated">
@@ -38,6 +39,18 @@ if(!empty($hero_1)):
             <div class="col-12 col-md-6 bgimgdiv">
                 <img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid "/>
             </div>
+               <?php else: ?>
+               <div class="col-12 col-md-6 bgimgdiv">
+                <img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid "/>
+               </div>
+               <div class="col-12 col-md-6 logoimgdiv">
+               <img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/>
+                    <div class="icon faa-float animated">
+					<i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
+               
+              <?php endif; ?>
            </div>
         </div>
 	<?php endif; ?>
@@ -80,7 +93,7 @@ if(!empty($hero_1)):
 		<?php while( have_rows('barbie-section-3') ): the_row(); 
 			$link_id = get_sub_field('link', false, false);
 		?>
-		<div class="col-<?php echo $links_col*2; ?> col-md-<?php echo $links_col; ?>">
+		<div class="col-6 col-md-<?php echo $links_col; ?>">
 			<a href="<?php echo get_the_permalink($link_id); ?>">
 				<article style="background-image:url('<?php the_sub_field('img'); ?>');"></article>
 			</a>
