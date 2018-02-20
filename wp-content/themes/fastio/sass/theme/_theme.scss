@@ -2192,6 +2192,40 @@ body.page-template-barbie-subpages{
         body.page-template-barbie-subpages .carousel-control-next{
             right:-10px;
         }
+        
+        body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .title{
+            width:100%;
+            font-size: 15px;
+        }
+        
+        body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .bottleimg{
+            max-width: 50%;
+        }
+        
+        body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section2 .title{
+            width:100%;
+        }
+        
+        body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .imgbancada{
+            margin-left:0px;
+        }
+        
+        body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .title{
+            width:100%;
+        }
+        
+        body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section4 .escolhecarroimg{
+            padding-right: 0;
+            float:none !important;
+        }
+        
+        body.page-template-hot-wheels-subpages #hotwheelssubpagescarousel{
+            height: auto;
+        }
+        
+        body.page-template-hot-wheels-subpages .carousel{
+            margin-bottom: 0;
+        }
 }
 //MD AND UP ONLY
 @include media-breakpoint-up(md) {
@@ -2395,11 +2429,6 @@ body.page-template-barbie-subpages{
         
         body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title{
             width: 356px;
-        }
-        
-        body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .title{
-            width:100%;
-            font-size: 15px;
         }
         
 }

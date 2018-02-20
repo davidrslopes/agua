@@ -38,7 +38,7 @@ if(!empty($hero_1)):
                     <?php echo $hero_1['texto']; ?>
                 </div></div>
             </div>
-            <div class="col-12 offset-2 col-md-3" style="position: relative;z-index:10;">           
+            <div class="col-12 <?php if(!wp_is_mobile()){echo "offset-2";}?> col-md-3" style="position: relative;z-index:10;">           
                 <div data-aos="fade-up" data-aos-duration="3000">
                  <img src="<?php echo $hero_1['img2']; ?>" class="img-fluid bottleimg"/>
                 </div>
