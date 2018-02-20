@@ -29,8 +29,14 @@ if(!empty($hero_1)):
 	<?php if(!empty($hero_1['bg-img']) && !empty($hero_1['logo-img'])): ?>
         <div class="container-fluid">
            <div class="row">
+               <?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
             <div class="col-12 col-md-6 logoimgdiv"><img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/></div>
             <div class="col-12 col-md-6 bgimgdiv"><img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid float-right"/></div>
+                <?php else:?>
+                 <div class="col-12 col-md-6 bgimgdiv"><img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid float-right"/></div>
+                 <div class="col-12 col-md-6 logoimgdiv"><img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/></div>
+           
+                <?php endif;?>
            </div>
         </div>
 	<?php endif; ?>
@@ -73,6 +79,7 @@ if(!empty($hero_1)):
 <!-- ******************* The Fastio Links Section ******************* -->
 <section class="fastio-hotwheels-subpages">
         <div class="container">
+        <?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 	<div class="row">
 		<?php while( have_rows('hotwheels-section-3') ): the_row(); 
 			$link_id = get_sub_field('link', false, false);
@@ -85,6 +92,20 @@ if(!empty($hero_1)):
 		</div>
 		<?php endwhile; ?>
 	</div>
+        <?php else:?>
+        <div class="row no-gutters">
+		<?php while( have_rows('hotwheels-section-3') ): the_row(); 
+			$link_id = get_sub_field('link', false, false);
+		?>
+		<div class="col-6 col-md-<?php echo $links_col; ?>">
+                        <a href="<?php echo get_the_permalink($link_id); ?>">
+			<article style="background-image:url('<?php the_sub_field('img'); ?>');">
+			</article>
+                        </a>
+		</div>
+		<?php endwhile; ?>
+	</div>
+        <?php endif;?>
         </div>
 </section><!-- .fastio-img-links -->
 <?php endif; ?>

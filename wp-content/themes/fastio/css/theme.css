@@ -12293,7 +12293,23 @@ body.page-template-barbie-subpages {
   body.page-template-default .wpcf7-form .btnanexar {
     width: 50%; }
   body.page-template-default .wpcf7-form .btnanexar span {
-    font-size: 12px; } }
+    font-size: 12px; }
+  body.page-template-barbie-subpages section.fastio-barbie-subpages-1 .title {
+    width: 100%;
+    font-size: 15px; }
+  body.page-template-barbie-subpages section.fastio-barbie-subpages-1 .bottleimg {
+    max-width: 50%;
+    margin-top: 40px; }
+  body.page-template-barbie-subpages .fastio-barbie-subpages-section2 .title {
+    width: 100%;
+    font-size: 15px; }
+  body.page-template-barbie-subpages section.fastio-barbie-subpages-1 .icon {
+    bottom: -30px;
+    left: 50%; }
+  body.page-template-barbie-subpages .carousel-control-prev {
+    left: -10px; }
+  body.page-template-barbie-subpages .carousel-control-next {
+    right: -10px; } }
 
 @media (min-width: 768px) {
   .fastio-nav {
@@ -12420,7 +12436,9 @@ body.page-template-barbie-subpages {
   body.page-template-hot-wheels .logoimgdiv {
     padding-right: 0px; }
   body.page-template-hot-wheels .bgimgdiv {
-    padding-right: 0px; } }
+    padding-right: 0px; }
+  body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title {
+    width: 356px; } }
 
 /*
 * Use existing Bootstrap 4 classes and
