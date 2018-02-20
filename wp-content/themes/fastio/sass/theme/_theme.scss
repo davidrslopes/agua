@@ -2277,6 +2277,13 @@ body.page-template-barbie-subpages{
             bottom:-30px;
             left: 50%;
         }
+        
+        body.page-template-barbie-subpages .carousel-control-prev{
+            left:-10px;
+        }
+        body.page-template-barbie-subpages .carousel-control-next{
+            right:-10px;
+        }
 }
 //MD AND UP ONLY
 @include media-breakpoint-up(md) {

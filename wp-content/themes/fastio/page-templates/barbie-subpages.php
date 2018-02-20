@@ -231,7 +231,7 @@ if(!empty($section_3)):
                 if(!empty($hero_4)):
                 ?>
                 <div class="col col-md-3"></div>
-                <div class="col col-md-9">
+                <div class="col-12 col-md-9">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $hero_4['img_titulo']; ?>" class="img-fluid float-right escolhebarbieimg"/>
                     </div>
@@ -248,7 +248,7 @@ if(!empty($section_3)):
         $link_id = get_sub_field('link', false, false);
         $i++;
         ?>
-            <div class="carousel-item col col-md-3 <?php echo $i===1 ? 'active' : '';?>">
+            <div class="carousel-item col-8 col-md-3 <?php echo $i===1 ? 'active' : '';?>">
                 <a href="<?php echo get_the_permalink($link_id); ?>">
 		<img src="<?php the_sub_field('img') ?>" alt="" />
                 </a>

@@ -12350,7 +12350,11 @@ body.page-template-barbie-subpages {
     font-size: 15px; }
   body.page-template-barbie-subpages section.fastio-barbie-subpages-1 .icon {
     bottom: -30px;
-    left: 50%; } }
+    left: 50%; }
+  body.page-template-barbie-subpages .carousel-control-prev {
+    left: -10px; }
+  body.page-template-barbie-subpages .carousel-control-next {
+    right: -10px; } }
 
 @media (min-width: 768px) {
   .fastio-nav {
