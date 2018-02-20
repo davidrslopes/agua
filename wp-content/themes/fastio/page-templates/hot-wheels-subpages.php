@@ -31,7 +31,7 @@ if(!empty($hero_1)):
            <div class="row">    
             <div class="col-12 col-md-6">
                 <div data-aos="fade-up" data-aos-duration="3000">
-                    <img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid float-right"/>
+                    <img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid <?php if(!wp_is_mobile()){echo "float-right";} ?>"/>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="3000">                
                 <div class="title">
@@ -51,7 +51,7 @@ if(!empty($hero_1)):
                     <div class="icon faa-float animated">
                         <i class="fa fa-angle-down"></i></div>
                 </div>
-                <div class="col-12 col-md-6" style="margin-top:-9rem;position: relative;z-index:0;padding-right: 0px;">
+                <div class="col-12 col-md-6 manchagarrafa" style="margin-top:-9rem;position: relative;z-index:0;padding-right: 0px;">
                     <div data-aos="fade-up" data-aos-duration="3000">
                     	<img src="<?php echo $hero_1['img1']; ?>" class="img-fluid float-right passadeiraimg" />
                     </div>
@@ -79,7 +79,7 @@ if(!empty($hero_1)):
                 <div class="col col-md-6"></div>
                 <div class="col-12 col-md-6">
                     <div data-aos="fade-up" data-aos-duration="3000">
-                        <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid float-right"/>
+                        <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid <?php if(!wp_is_mobile()){echo "float-right";} ?>"/>
                         <div class="title">
                             <?php echo $section2['subtitulo']; ?>
                         </div>
