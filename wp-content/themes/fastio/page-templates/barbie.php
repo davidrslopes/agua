@@ -89,7 +89,11 @@ if(!empty($hero_1)):
 <!-- ******************* The Fastio Links Section ******************* -->
 <section class="fastio-barbie-subpages">
         <div class="container">
+        <?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 	<div class="row">
+        <?php else: ?>
+        <div class="row no-gutters">
+        <?php endif;?>
 		<?php while( have_rows('barbie-section-3') ): the_row(); 
 			$link_id = get_sub_field('link', false, false);
 		?>

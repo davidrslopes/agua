@@ -56,19 +56,19 @@ if(!empty($hero_1)):
 <section class="fastio-barbie-subpages-section2">
 	<div class="container">
 		<div class="row">
-                    <div class="col col-md-12">
+                    <div class="col-12 col-md-12">
                         <div data-aos="fade-up" data-aos-duration="3000">
                             <img src="<?php echo $section2['img1']; ?>" class="img-fluid imgpolaroid"/>
                         </div>
                     </div>
 		</div>
             <div class="row">
-                <div class="col col-md-1">
+                <div class="col-12 col-md-1">
                     <div data-aos="fade-up"data-aos-duration="3000">
                     <img src="<?php echo $section2['img2']; ?>" class="img-fluid imgestrelas"/>
                     </div>
                 </div>
-                <div class="col col-md-11">
+                <div class="col-12 col-md-11">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid"/>
                         <div class="title">
@@ -91,6 +91,7 @@ if(!empty($section_3)):
 <section class="fastio-barbie-subpages-section3" style="background-image:url(<?php echo $section_3['bg-img']; ?>);">
 	<div class="container-fluid">
 		<div class="row">
+                    <?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 			<div class="col col-md-5 imgtitulocriatividade">
                             <div data-aos="fade-up"data-aos-duration="3000">
 				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/> 
@@ -109,9 +110,30 @@ if(!empty($section_3)):
 					<img src="<?php echo $section_3['imgcamera']; ?>" class="img-fluid float-right imgcamera"/>
 				</div>
 			</div>
+                    <?php else:?>
+                    <div class="col-12 col-md-6 imgcameracol">
+				<div data-aos="fade-up"data-aos-duration="3000">
+					<img src="<?php echo $section_3['imgcamera']; ?>" class="img-fluid float-right imgcamera"/>
+				</div>
+			</div>
+                    <div class="col-12 col-md-1 imgestrelas">
+                            <div data-aos="fade-up"data-aos-duration="3000">
+				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-right"/>
+                            </div>
+                        </div>
+                    <div class="col-12 col-md-5 imgtitulocriatividade">
+                            <div data-aos="fade-up"data-aos-duration="3000">
+				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/> 
+                                <div class="title" style="width:356px;">
+				<?php echo $section_3['subtitulo']; ?>
+				</div>
+                            </div>
+			</div>
+                    <?php endif;?>
 		</div>
 	</div>
 	<div class="row no-gutters">
+            <?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 		<div class="col col-md-2">
 		</div>
 		<div class="col col-md-4 align-self-end">
@@ -153,6 +175,39 @@ if(!empty($section_3)):
 				</div>
 			</div>
 		</div>-->
+        <?php else: ?>
+             		<div class="col-12 col-md-6">
+			<div class="barbie-galeria">
+                            <?php
+//Section 3 : Galeria Fotos
+	if( have_rows('barbiesubpages-section-3-galeria') ): 
+		$links_count = count(get_field('barbiesubpages-section-3-galeria'));
+		$links_col = ceil(12 / $links_count);
+ 		if($links_col<6) $links_col = 4;
+?>
+				<div class="row no-gutters">
+                                    <?php while( have_rows('barbiesubpages-section-3-galeria') ): the_row(); ?>
+					<div class="col-<?php echo $links_col; ?> col-md-4 col-sm-4">
+                                            <div class="hovereffect">
+						<img src="<?php the_sub_field('fotografia'); ?>" class="img-fluid"/>
+						<div class="overlay">
+                                                    <h2 class="name"><?php the_sub_field('nome'); ?></h2>
+                                                    <h2 class="years"><?php the_sub_field('idade'); ?></h2>
+                                                    <h2 class="location"><?php the_sub_field('localidade_-_pais'); ?></h2>
+                                                </div>
+                                            </div>
+					</div>
+                                    <?php endwhile; ?>
+				</div>
+                            <?php endif; ?>
+			</div>
+		</div>
+                <div class="col-12 col-md-4 align-self-end">
+                    <div data-aos="fade-up"data-aos-duration="3000">
+			 <img src="<?php echo $section_3['img3']; ?>" class="img-fluid float-left imgbarbiefotografa"/>
+                    </div>
+                </div>
+        <?php endif;?>
 	</div>
 </section><!-- .fastio-images-section3 -->
 <?php endif; ?>

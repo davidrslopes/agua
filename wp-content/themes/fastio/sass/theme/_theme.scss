@@ -2259,6 +2259,24 @@ body.page-template-barbie-subpages{
         body.page-template-default .wpcf7-form .btnanexar span{
             font-size: 12px;
         }
+        
+        body.page-template-barbie-subpages section.fastio-barbie-subpages-1 .title{
+            width: 100%;
+            font-size: 15px;
+        }
+        body.page-template-barbie-subpages section.fastio-barbie-subpages-1 .bottleimg{
+            max-width:50%;
+            margin-top: 40px;
+        }
+        
+        body.page-template-barbie-subpages .fastio-barbie-subpages-section2 .title{
+            width:100%;
+            font-size:15px;
+        }
+        body.page-template-barbie-subpages section.fastio-barbie-subpages-1 .icon{
+            bottom:-30px;
+            left: 50%;
+        }
 }
 //MD AND UP ONLY
 @include media-breakpoint-up(md) {
