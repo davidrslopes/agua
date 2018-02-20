@@ -72,7 +72,7 @@ if(!empty($hero_1)):
 				<?php if(!empty($bottle['capsula-img'])): ?><img class="img-fluid" src="<?php echo $bottle['capsula-img']['url']; ?>" title="<?php echo $bottle['capsula-img']['title']; ?>" alt="<?php echo $bottle['capsula-img']['title']; ?>"><?php endif; ?>
 				</div>
 			</div>
-			<?php else: // MODILE ORDER VERSION ?>
+			<?php else: // MOBILE ORDER VERSION ?>
 			<div class="col-12 text-center">
 				<div data-aos="fade-up">
 				<?php if(!empty($bottle['img'])): ?><img class="img-fluid" src="<?php echo $bottle['img']['url']; ?>" title="<?php echo $bottle['img']['title']; ?>" alt="<?php echo $bottle['img']['title']; ?>"><?php endif; ?>

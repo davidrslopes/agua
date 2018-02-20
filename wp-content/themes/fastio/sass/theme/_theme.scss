@@ -415,153 +415,57 @@ body.page-template-historiafastio{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    
-        #seccao1 .img-seccao1-imagem4{
-            margin-top: -120px;
-            margin-left: 270px;
-        }
-        
-        #seccao1 .seccao1imagem3div{
-            padding-top:260px;
-        }
-        
-        #seccao2 .seccao2imagemesquerdadiv{
-            margin-top: 80px;
-        }
-        
-        #seccao2 .content-area{
-            margin-top: 50px;
-        }
-        
-        #seccao2 .seccao2imagem3div{
-            text-align:right;
-        }
-        
-        #seccao2 .seccao2imagem3{
-            margin-top: -205px;
-        }
-        
-        #seccao2 .seccao2imagem2div{
-            text-align:right
-        }
-        
-        #seccao2 .seccao2imagem2{
-            margin-top: -190px;
-        }
-        
-        #seccao3 .content-area{
-            margin-top: 180px;
-        }
-        
-        #seccao3 .seccao3imagem2div{
-            margin-top: 225px;
-        }
-        
-        #seccao4{
-            margin-bottom: -185px;
-        }
-        
-        #seccao4 .seccao4imagemesquerda2div{
-            margin-top: 210px;
-        }
-        
-        #seccao4 .content-area{
-            margin-top: 180px;
-        }
-        
-        #seccao4 .seccao3imagem3{
-            margin-top: -13px;
-        }
-        
-        #seccao4 .seccao4imagemesquerda1{
-            margin-top: -285px;
-        }
-    
-    
 	#seccao5{
 		background-image: url(../img/Fundo_Seccao_Azul.svg);
 		background-size:100% 100%;
 		-o-background-size: 100% 100%;
 		-webkit-background-size: 100% 100%;
 		background-size:cover;
-                overflow: hidden;
-                margin-bottom:-60px;
-                
+		overflow: hidden;
+		.media{
+			display:block;
+			span.year,
+			.entry-content,
+			.entry-content a,
+			.entry-title{
+				color:#9ee0f8;
+			}
+			.entry-content p{
+				font-size: 13px;
+				font-weight: normal;
+			}
+		}
 	}
-        
-        #seccao5 .seccao5imagem3{
-            margin-top: -290px;
-        }
-        
-        #seccao5 .media span.year ,
-        #seccao5 .media .entry-content,
-        #seccao5 .media .entry-content a,
-        #seccao5 .media .entry-title
-        {
-            color:#9ee0f8;
-        }
-        #seccao5 .container{
-            max-width:960px;
-            margin-top: 130px;
-        }
-        
-        #seccao5 .media{
-            display:block;
-        }
-        
-        #seccao5 .media .entry-content p{
-            font-size: 13px;
-             font-weight: normal;
-        }
-        
 	.wrapper.historiafastio{
 		padding: 0;
 	}
-        #seccao1,#seccao2,#seccao3,#seccao4{
-            overflow: hidden;
-        }
-        
-        #seccao1{
-            padding-top:100px;
-        }
-        
-        #seccao2{
-            padding-top:80px;
-        }
-        
-        span.year{
-         font-size: 45px;
-         color: #00aeef;
-        }
-        
-        .media-left{
-            margin-right: 40px;
-        }
-        .media-body {
-        flex: 0.75;
-        }        
-        .entry-content{
-            color: #00aeef;
-        }
-        
-        .entry-content p{
-            font-size: 13px;
-             font-weight: normal;
-        }
-        
-        .entry-title{
-            font-size:23px;
-            color: #00aeef;
-            margin-top:20px;
-        }
-        
-        /* Bootstrap 4 modal center, to correctly center the modal, cite "modal id" then .modal-dialog, like in CSS below */
+	#seccao1,#seccao2,#seccao3,#seccao4{
+		overflow: hidden;
+	}
+	span.year{
+	 font-size: 45px;
+	 color: #00aeef;
+	}      
+	.entry-content{
+		color: #00aeef;
+	}
+	.entry-content p{
+		font-size: 13px;
+		 font-weight: normal;
+	}
+	.entry-title{
+		font-size:23px;
+		color: #00aeef;
+		margin-top:20px;
+	}
 
-        .modal .modal-dialog {
-            transform: translate(0, -50%);
-            top: 50%;
-            margin: 0 auto;
-        }
+	/* Bootstrap 4 modal center, to correctly center the modal, cite "modal id" then .modal-dialog, like in CSS below */
+
+	.modal .modal-dialog {
+		transform: translate(0, -50%);
+		top: 50%;
+		margin: 0 auto;
+	}
 }
 
 .modalfecharbtn{
@@ -2058,6 +1962,10 @@ body.page-template-barbie-subpages{
 			font-size: 1rem;
 		}
 	}
+	// DESDE 1979
+	body.page-template-historiafastio{
+		
+	}
 	// A NOSSA AGUA
 	body.page-template-a-nossa-agua {
 		.fastio-products{
@@ -2340,6 +2248,82 @@ body.page-template-barbie-subpages{
 		font-size: 4rem;
 		line-height: 4rem;
 	}
+	//DESDE 1979
+	body.page-template-historiafastio{ 
+		#seccao1{
+			padding-top:100px;
+			.img-seccao1-imagem4{
+				margin-top: -120px;
+				margin-left: 270px;
+			}
+			.seccao1imagem3div{
+				padding-top:260px;
+			}
+		}
+
+		#seccao2{
+			padding-top:80px;
+			.content-area{
+				margin-top: 50px;
+			}
+			.seccao2imagemesquerdadiv{
+				margin-top: 80px;
+			}
+			.seccao2imagem3div{
+				text-align:right;
+			}
+			.seccao2imagem3{
+				margin-top: -205px;
+			}
+			.seccao2imagem2div{
+				text-align:right
+			}
+			.seccao2imagem2{
+				margin-top: -190px;
+			}
+		}
+		#seccao3{ 
+			.content-area{
+				margin-top: 180px;
+			}
+			 .seccao3imagem2div{
+				margin-top: 225px;
+			}
+		}
+
+		#seccao4{
+			margin-bottom: -185px;
+			.content-area{
+				margin-top: 180px;
+			}
+			.seccao4imagemesquerda2div{
+				margin-top: 210px;
+			}
+			.seccao3imagem3{
+				margin-top: -13px;
+			}
+			.seccao4imagemesquerda1{
+				margin-top: -285px;
+			}
+		}
+		
+		#seccao5{
+			margin-bottom:-60px;
+			.seccao5imagem3{
+				margin-top: -290px;
+			}
+			.container{
+				max-width:960px;
+				margin-top: 130px;
+			}
+		}
+		.media-left{
+			margin-right: 40px;
+		}
+		.media-body{
+			flex: 0.75;
+		}
+	}
 	// A NOSSA AGUA
 	body.page-template-a-nossa-agua{
 		.fastio-products{
@@ -2411,6 +2395,11 @@ body.page-template-barbie-subpages{
         
         body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title{
             width: 356px;
+        }
+        
+        body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .title{
+            width:100%;
+            font-size: 15px;
         }
         
 }
