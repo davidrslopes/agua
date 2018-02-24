@@ -246,7 +246,7 @@ if(!empty($fundo_da_pagina)):
 				<?php $loop = new WP_Query($args); ?>
 				<?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<div class="col-12 col-md-3">
-						<?php get_template_part( 'loop-templates/content', 'historia' ); ?>
+						<?php get_template_part( 'loop-templates/content', 'historia2' ); ?>
 					</div>
 					<?php endwhile; // end of the loop. ?>
 				<?php else: ?>
@@ -261,7 +261,6 @@ if(!empty($fundo_da_pagina)):
 									<h1 class="entry-title media-heading">Entrada em falta!</h1>
 									<div class="entry-content">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-										<a href="#"><?php  esc_html_e( 'ver', 'fastio' ); ?> <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
 									</div><!-- .entry-content -->
 								</div>
 							</div>
@@ -480,7 +479,7 @@ if(!empty($fundo_da_pagina)):
 				<?php $loop = new WP_Query($args); ?>
 				<?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<div class="col-12 col-md-3 text-center">
-						<?php get_template_part( 'loop-templates/content', 'historia' ); ?>
+						<?php get_template_part( 'loop-templates/content', 'historia2' ); ?>
 					</div>
 					<?php endwhile; // end of the loop. ?>
 				<?php else: ?>
@@ -495,7 +494,6 @@ if(!empty($fundo_da_pagina)):
 									<h1 class="entry-title media-heading">Entrada em falta!</h1>
 									<div class="entry-content">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-										<a href="#"><?php  esc_html_e( 'ver', 'fastio' ); ?> <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
 									</div><!-- .entry-content -->
 								</div>
 							</div>
