@@ -736,7 +736,7 @@ body.page-template-fastio-go{
 	.fastio-go-workout{
 		display: block;
 		background-repeat: no-repeat;
-		background-position: top right;
+		background-position: top center;
 		margin-top: 6rem;
 		.inner-hero{
 			padding-top:18rem;
@@ -2068,6 +2068,9 @@ body.page-template-barbie-subpages{
 			.fastio-go-icon{
 				max-width: 60px;
 			}
+		}
+		.fastio-go-workout{
+			background-position: top right;
 		}
 	}
 	body.page-template-barbie{

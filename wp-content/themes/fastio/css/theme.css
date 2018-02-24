@@ -11060,7 +11060,7 @@ body.page-template-fastio-go .fastio-hero {
 body.page-template-fastio-go .fastio-go-workout {
   display: block;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top center;
   margin-top: 6rem; }
   body.page-template-fastio-go .fastio-go-workout .inner-hero {
     padding-top: 18rem;
@@ -12225,6 +12225,8 @@ body.page-template-barbie-subpages {
       font-size: 1rem; }
     body.page-template-fastio-go .fastio-go-bottle .fastio-go-icon {
       max-width: 60px; }
+  body.page-template-fastio-go .fastio-go-workout {
+    background-position: top right; }
   body.page-template-barbie .fastio-images-hero {
     text-align: center; }
     body.page-template-barbie .fastio-images-hero img.float-right {
