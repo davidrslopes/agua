@@ -41,8 +41,8 @@ $subpages = get_pages($args);
 if( !empty( $subpages ) ): ?>
 <!-- ******************* The Places Display Section ******************* -->
 <section class="fastio-places" data-aos="fade">
-	<div id="fastio-places-slide" class="carousel slide" data-ride="carousel" data-interval="9000" data-aos="fade-in">
-		<div class="conteiner carousel-inner row mx-auto" role="listbox">
+	<div id="fastio-places-slide" class="carousel slide w-100" data-ride="carousel" data-interval="9000" data-aos="fade-in">
+		<div class="carousel-inner w-100" role="listbox">
 <?php
 	$total = count($subpages);
 	$i = 0;
@@ -51,13 +51,15 @@ if( !empty( $subpages ) ): ?>
 		if(!empty($local_info)):
 			$i++;
 ?>
-			<article class="carousel-item col-md-3<?php if($i===1){ echo' active'; }?>">
-				<a href="<?php echo get_page_link( $page->ID ); ?>">
-					<img class="img-fluid mx-auto d-block" src="<?php echo $local_info['ilustracao']; ?>" alt="<?php echo $page->post_title; ?>">
-				</a>
-				<p class="text-center">
-					<a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a>
-				</p>
+			<article class="carousel-item <?php if($i===1){ echo' active'; }?>">
+				<div class="col-md-3">
+					<a href="<?php echo get_page_link( $page->ID ); ?>">
+						<img class="img-fluid mx-auto d-block" src="<?php echo $local_info['ilustracao']; ?>" alt="<?php echo $page->post_title; ?>">
+					</a>
+					<p class="text-center">
+						<a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a>
+					</p>
+				</div>
 			</article>
 
 <?php

@@ -284,7 +284,7 @@ jQuery( function($) {
 		});
 	}
 	//SLIDER
-	$('#fastio-places-slide,#barbiesubpagescarousel,#hotwheelssubpagescarousel').on('slide.bs.carousel', function (e) {
+	/*$('#fastio-places-slide,#barbiesubpagescarousel,#hotwheelssubpagescarousel').on('slide.bs.carousel', function (e) {
 
 		var $e = $(e.relatedTarget);
 		var idx = $e.index();
@@ -303,8 +303,26 @@ jQuery( function($) {
 				}
 			}
 		}
-	});
-	
+	});*/
+	$('#fastio-places-slide,#barbiesubpagescarousel,#hotwheelssubpagescarousel').carousel();
+	var winWidth =  $(window).width();
+	if(winWidth > 768 ){
+		$('.slide.carousel .carousel-item').each(function(){
+			var next = $(this).next();
+			if (!next.length) {
+				next = $(this).siblings(':first');
+			}
+			next.children(':first-child').clone().appendTo($(this));
+
+			for (var i=0;i<2;i++) {
+				next=next.next();
+				if (!next.length) {
+					next = $(this).siblings(':first');
+				}
+				next.children(':first-child').clone().appendTo($(this));
+			}
+		});
+	}
 	//PANORAMA
 	$('.pnlm-load-button > p').first().text('Clique aqui para carregar a foto 360');
 	$('.pnlm-load-box > p').first().text('A Carregar...');
