@@ -56,7 +56,7 @@ if(!empty($location)):
 			<?php if(!empty($location['milho-2'])): ?>
 			<img data-aos="fade-up" data-aos-duration="3000" class="fastio-milho-2" src="<?php echo $location['milho-2']['url']; ?>" alt="<?php echo $location['milho-2']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
-			<article data-aos="fade-up">
+			<article>
 				<h1><?php the_title();?></h1>
 				<p><?php echo $location['text'];?></p>
 				<div class="fastio-location-coordinates">
@@ -126,7 +126,7 @@ if(!empty($highlights)): ?>
 				<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" data-aos="fade-up">
 			</div>
 			<div class="col-md-3">
-				<article data-aos="fade-up">
+				<article>
 					<h3><?php echo $highlights['title']; ?></h3>
 					<p><?php echo $highlights['text-top']; ?></p>
 				</article>
@@ -138,22 +138,21 @@ if(!empty($highlights)): ?>
 		<div class="row">
 			<div class="col-md-6">
 				<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" data-aos="fade-up">
-				<article class="row" data-aos="fade-up">
+				<article class="row">
 					<div class="offset-md-3 col-md-7">
-						<!--<img src="<?php echo $highlights['svg-left-bottom']['url'];?>" alt="<?php echo $highlights['svg-left-bottom']['title'];?>" title="<?php echo $highlights['svg-left-bottom']['title'];?>" class="img-fluid">-->
-						<p class="fastio-highlights-bottom-left" style="background-image:url('<?php echo $highlights['svg-left-bottom']['url'];?>');"><?php echo $highlights['text-bottom']; ?></p>
+						<p class="fastio-highlights-bottom-left" style="background-image:url('<?php echo $highlights['svg-left-bottom']['url'];?>');"  data-aos="fade-up"><?php echo $highlights['text-bottom']; ?></p>
 					</div>
 				</article>
 			</div>
 			<div class="col-md-6">
-				<h2 data-aos="fade-up"><?php echo $highlights['title-big']; ?></h2>
+				<h2><?php echo $highlights['title-big']; ?></h2>
 				<img src="<?php echo $highlights['svg-right-bottom']['url'];?>" alt="<?php echo $highlights['svg-right-bottom']['title'];?>" title="<?php echo $highlights['svg-right-bottom']['title'];?>" class="img-fluid" data-aos="fade-up">
 			</div>
 		</div>
 		<?php else: // MOBILE ORDER VERSION ?>
 		<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" data-aos="fade-up">
 		
-		<article data-aos="fade-up">
+		<article>
 			<h3><?php echo $highlights['title']; ?></h3>
 			<p><?php echo $highlights['text-top']; ?></p>
 		</article>
@@ -161,12 +160,11 @@ if(!empty($highlights)): ?>
 		<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid" data-aos="fade-up">
 		
 		
-		<h2 data-aos="fade-up"><?php echo $highlights['title-big']; ?></h2>
+		<h2><?php echo $highlights['title-big']; ?></h2>
 		
 		<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" data-aos="fade-up">
 		
-		<article data-aos="fade-up">
-			<!--<img src="<?php echo $highlights['svg-left-bottom']['url'];?>" alt="<?php echo $highlights['svg-left-bottom']['title'];?>" title="<?php echo $highlights['svg-left-bottom']['title'];?>" class="img-fluid">-->
+		<article>
 			<p class="fastio-highlights-bottom-left" style="background-image:url('<?php echo $highlights['svg-left-bottom']['url'];?>');"><?php echo $highlights['text-bottom']; ?></p>
 		</article>
 		
@@ -179,9 +177,9 @@ if(!empty($highlights)): ?>
 $fastio_360 = get_field('explore-o-geres-subpage-section-4');
 if(!empty($fastio_360)): ?>
 <!-- ******************* The 360 Foto / Video Section ******************* -->
-<section class="fastio-360" data-aos="fade">
+<section class="fastio-360">
 	<div class="container-fluid">
-		<?php if(!empty($fastio_360['milho-1']['url'])){ echo '<img src="'.$fastio_360['milho-1']['url'].'" class="fastio-img-milho top" alt="'.$fastio_360['milho-1']['url'].'">'; } ?>
+		<?php if(!empty($fastio_360['milho-1']['url'])){ echo '<img src="'.$fastio_360['milho-1']['url'].'" class="fastio-img-milho top" alt="'.$fastio_360['milho-1']['url'].'" data-aos="fade-down">'; } ?>
 		<div class="row">
 			<?php if(!empty($fastio_360['panorama-video'])): ?>
 			<!-- Pannellum & Video JS Includes -->
@@ -234,7 +232,7 @@ if(!empty($fastio_360)): ?>
 			<img src="<?php echo $fastio_360['fallback-img']['url']; ?>" alt="<?php echo $fastio_360['fallback-img']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 		</div>
-		<?php if(!empty($fastio_360['milho-2']['url'])){ echo '<img src="'.$fastio_360['milho-2']['url'].'" class="fastio-img-milho bottom" alt="'.$fastio_360['milho-2']['url'].'">'; } ?>
+		<?php if(!empty($fastio_360['milho-2']['url'])){ echo '<img src="'.$fastio_360['milho-2']['url'].'" class="fastio-img-milho bottom" alt="'.$fastio_360['milho-2']['url'].'" data-aos="fade-up">'; } ?>
 	</div>
 </section>
 <?php endif; ?>
