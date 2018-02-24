@@ -79,15 +79,27 @@ if(!empty($hero_3)):
 <!-- ******************* The Hero III Section ******************* -->
 <section class="fastio-hero-3" style="background-image:url('<?php echo $hero_3['bg-img']; ?>');" data-aos="fade-up">
 	<div class="container-fluid">
-		<?php if(!empty($hero_3['decor-left'])): ?>
-		<img data-aos="fade-up" data-aos-duration="3000" class="decor left bottom" src="<?php echo $hero_3['decor-left']['url']; ?>" alt="<?php echo $hero_3['decor-left']['title']; ?>" class="img-fluid">
-		<?php endif; ?>
+	<?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 		<div class="row">
-			<header class="fastio-hero-header offset-md-2 col-md-10" data-aos="fade-up">
+			<div class="col-md-2">
+				<?php if(!empty($hero_3['decor-left'])): ?>
+				<img data-aos="fade-up" data-aos-duration="3000" class="decor left bottom" src="<?php echo $hero_3['decor-left']['url']; ?>" alt="<?php echo $hero_3['decor-left']['title']; ?>" class="img-fluid">
+				<?php endif; ?>
+			</div>
+			<header class="fastio-hero-header col-md-10" data-aos="fade-up">
 				<?php if(!empty($hero_3['title'])): ?><h3 class="text-primary"><?php echo $hero_3['title']; ?></h3><?php endif; ?>
 				<?php if(!empty($hero_3['hashtag'])): ?><img class="img-fluid" src="<?php echo $hero_3['hashtag']['url']; ?>" title="<?php echo $hero_3['hashtag']['title']; ?>" alt="<?php echo $hero_3['hashtag']['title']; ?>"><?php endif; ?>
 			</header>
 		</div>
+	<?php else: // MOBILE ORDER VERSION ?>
+		<?php if(!empty($hero_3['decor-left'])): ?>
+			<header class="fastio-hero-header col-md-10" data-aos="fade-up">
+				<?php if(!empty($hero_3['title'])): ?><h3 class="text-primary"><?php echo $hero_3['title']; ?></h3><?php endif; ?>
+				<?php if(!empty($hero_3['hashtag'])): ?><img class="img-fluid" src="<?php echo $hero_3['hashtag']['url']; ?>" title="<?php echo $hero_3['hashtag']['title']; ?>" alt="<?php echo $hero_3['hashtag']['title']; ?>"><?php endif; ?>
+			</header>
+			<img data-aos="fade-up" data-aos-duration="3000" class="decor left bottom" src="<?php echo $hero_3['decor-left']['url']; ?>" alt="<?php echo $hero_3['decor-left']['title']; ?>" class="img-fluid">
+		<?php endif; ?>
+	<?php endif; ?>
 	</div>
 </section><!-- .fastio-hero-3 -->
 <?php endif; ?>
