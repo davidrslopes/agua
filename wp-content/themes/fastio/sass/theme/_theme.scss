@@ -1211,7 +1211,7 @@ body.page-template-hot-wheels-subpages{
     -o-background-size: cover; 
         
     section.fastio-hotwheels-subpages-1{
-        padding-top: 135px;
+        padding-top: 260px;
         
         .title{
             display: inline-block;
@@ -1219,7 +1219,10 @@ body.page-template-hot-wheels-subpages{
             padding-top: 10px;
             font-size: 14px;
             color: #fff;
-            width: 50%;
+            width: 340px;
+            position: relative;
+    		top: 205px;
+    		left: 349px;
             
         }
         
@@ -1323,7 +1326,7 @@ body.page-template-hot-wheels-subpages{
                 
                 .title{
                     display: inline-block;
-                    width: 80%;
+                    width: 65%;
                     font-size:14px;
                     color:#fff;
                     text-align: left;
@@ -1542,7 +1545,7 @@ body.page-template-barbie-subpages{
     -o-background-size: cover; 
         
     section.fastio-barbie-subpages-1{
-        padding-top: 170px;
+        padding-top: 260px;
         
         .title{
             display: inline-block;
@@ -1650,6 +1653,8 @@ body.page-template-barbie-subpages{
                     color:#fff;
                     float:right;
                     padding-top: 6px;
+                    position:relative
+                    left:7px;
                 }
                 
                 
@@ -1725,6 +1730,11 @@ body.page-template-barbie-subpages{
                   
                   .imgtitulocriatividade{
                       padding-top: 95px;
+                  }
+                  
+                  .imgtitulocriatividade img{
+                  	position: relative;
+                  	left: 7px;
                   }
                   
                   .imgestrelas{

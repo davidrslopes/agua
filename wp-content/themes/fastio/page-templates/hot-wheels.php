@@ -84,7 +84,7 @@ if(!empty($hero_1)):
 		<?php while( have_rows('hotwheels-section-3') ): the_row(); 
 			$link_id = get_sub_field('link', false, false);
 		?>
-		<div class="col-<?php echo $links_col*2; ?> col-md-<?php echo $links_col; ?>">
+		<div class="col-<?php echo $links_col*2; ?> col-md-<?php echo $links_col; ?>" <?php if(!wp_is_mobile()):?> style="margin-bottom: 15px;" <?php endif;?>>
                         <a href="<?php echo get_the_permalink($link_id); ?>">
 			<article style="background-image:url('<?php the_sub_field('img'); ?>');">
 			</article>
