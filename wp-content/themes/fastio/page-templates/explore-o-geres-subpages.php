@@ -49,7 +49,7 @@ if(!empty($location)):
 			<img src="<?php echo $location['fallback-img']['url'];?>" alt="<?php echo $location['fallback-img']['title'];?>" title="<?php echo $location['fallback-img']['title'];?>" class="fastio-location-image">
 			<?php endif; ?>
 			<?php if(!empty($location['milho-4'])): ?>
-			<img data-aos="fade-up" class="fastio-milho-4 d-none d-md-block" src="<?php echo $location['milho-4']['url']; ?>" alt="<?php echo $location['milho-4']['title']; ?>" class="img-fluid">
+			<img data-aos="fade-up" class="fastio-milho-4 d-none d-md-block" <?php if(!wp_is_mobile()){ echo 'style="margin-top: -110px;"' ;}?> src="<?php echo $location['milho-4']['url']; ?>" alt="<?php echo $location['milho-4']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 		</div>
 		<div class="fastio-location-content col-12 col-md-3">
@@ -105,7 +105,7 @@ if(!empty($location)):
 			<img data-aos="fade-up" class="fastio-milho-3" src="<?php echo $location['milho-3']['url']; ?>" alt="<?php echo $location['milho-3']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 			<?php if(!empty($location['milho-4'])): ?>
-			<img data-aos="fade-up" class="fastio-milho-4" <?php if(!wp_is_mobile()):?> style="margin-top: -110px;"<?php endif;?> src="<?php echo $location['milho-4']['url']; ?>" alt="<?php echo $location['milho-4']['title']; ?>" class="img-fluid">
+                        <img data-aos="fade-up" class="fastio-milho-4" src="<?php echo $location['milho-4']['url']; ?>" alt="<?php echo $location['milho-4']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 		</div>
 		<?php endif; ?>

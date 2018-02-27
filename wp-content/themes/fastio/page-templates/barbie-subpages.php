@@ -36,7 +36,7 @@ if(!empty($hero_1)):
                 <div class="title">
                     <?php echo $hero_1['texto']; ?>
                 </div></div>
-                <div class="icon faa-float animated">
+                <div class="icon faa-float animated" <?php if(!empty($hero_1['cor_da_seta'])){ echo ' style="color:'.$hero_1['cor_da_seta'].';"';} ?>>
                         <i class="fa fa-angle-down"></i></div>
             </div>
             <div class="col-12 col-md-6">           
