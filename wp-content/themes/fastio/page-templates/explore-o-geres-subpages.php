@@ -105,7 +105,7 @@ if(!empty($location)):
 			<img data-aos="fade-up" class="fastio-milho-3" src="<?php echo $location['milho-3']['url']; ?>" alt="<?php echo $location['milho-3']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 			<?php if(!empty($location['milho-4'])): ?>
-			<img data-aos="fade-up" class="fastio-milho-4" src="<?php echo $location['milho-4']['url']; ?>" alt="<?php echo $location['milho-4']['title']; ?>" class="img-fluid">
+			<img data-aos="fade-up" class="fastio-milho-4" <?php if(!wp_is_mobile()):?> style="margin-top: -110px;"<?php endif;?> src="<?php echo $location['milho-4']['url']; ?>" alt="<?php echo $location['milho-4']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 		</div>
 		<?php endif; ?>
@@ -140,7 +140,7 @@ if(!empty($highlights)): ?>
 				<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" data-aos="fade-up">
 				<article class="row">
 					<div class="offset-md-3 col-md-7">
-						<p class="fastio-highlights-bottom-left" style="background-image:url('<?php echo $highlights['svg-left-bottom']['url'];?>');"  data-aos="fade-up"><?php echo $highlights['text-bottom']; ?></p>
+						<p class="fastio-highlights-bottom-left" style="background-image:url('<?php echo $highlights['svg-left-bottom']['url'];?>');"><?php echo $highlights['text-bottom']; ?></p>
 					</div>
 				</article>
 			</div>
@@ -179,7 +179,7 @@ if(!empty($fastio_360)): ?>
 <!-- ******************* The 360 Foto / Video Section ******************* -->
 <section class="fastio-360">
 	<div class="container-fluid">
-		<?php if(!empty($fastio_360['milho-1']['url'])){ echo '<img src="'.$fastio_360['milho-1']['url'].'" class="fastio-img-milho top" alt="'.$fastio_360['milho-1']['url'].'" data-aos="fade-down">'; } ?>
+		<?php if(!empty($fastio_360['milho-1']['url'])){ echo '<img src="'.$fastio_360['milho-1']['url'].'" class="fastio-img-milho top" alt="'.$fastio_360['milho-1']['url'].'" data-aos="fade-in">'; } ?>
 		<div class="row">
 			<?php if(!empty($fastio_360['panorama-video'])): ?>
 			<!-- Pannellum & Video JS Includes -->
@@ -232,7 +232,7 @@ if(!empty($fastio_360)): ?>
 			<img src="<?php echo $fastio_360['fallback-img']['url']; ?>" alt="<?php echo $fastio_360['fallback-img']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 		</div>
-		<?php if(!empty($fastio_360['milho-2']['url'])){ echo '<img src="'.$fastio_360['milho-2']['url'].'" class="fastio-img-milho bottom" alt="'.$fastio_360['milho-2']['url'].'" data-aos="fade-up">'; } ?>
+		<?php if(!empty($fastio_360['milho-2']['url'])){ echo '<img src="'.$fastio_360['milho-2']['url'].'" class="fastio-img-milho bottom" alt="'.$fastio_360['milho-2']['url'].'" data-aos="fade-in">'; } ?>
 	</div>
 </section>
 <?php endif; ?>
