@@ -2363,6 +2363,18 @@ body.page-template-barbie-subpages{
 			}
 		}
 	}
+	
+	body.page-template-a-familia{
+		.fastio-feature .decor.top.center,
+		.fastio-feature-2 .decor.top.center{
+			right:50%;
+			position: absolute;
+			margin-right: -30px;
+		}
+		.fastio-feature-2 .decor.top.center{
+			margin-top: -50px;
+		}
+	}
 	body.page-template-explore-o-geres-subpages{
 		.fastio-location .fastio-location-content article{
 			width: 23rem;
