@@ -268,13 +268,13 @@ jQuery( function($) {
 			// hide all captions and stages and show the ones you need
 			stage.clearQueue();
 			stage.stop();
-			stages.not(stage).slideUp(1000,function(){
-				stage.slideDown(1000);
+			stages.not(stage).slideUp(900,function(){
+				stage.slideDown(900);
 			});
 			captions.stop();
 			captions.clearQueue();
-			captions.not(caption).slideUp(1000, function(){
-				caption.slideDown(1000);
+			captions.not(caption).slideUp(900, function(){
+				caption.slideDown(900);
 			});
 
 			if(debug){console.log('This image caption id is: '+caption_id);}

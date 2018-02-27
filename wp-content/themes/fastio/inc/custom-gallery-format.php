@@ -114,11 +114,11 @@ function custom_gallery_grid($output = '', $attrs, $instance) {
 	  $x = ($x > $count_col) ? 1 : $x;
 	  $caption_offset = ($x * $col - $col);
 	  $caption_col = (12 - $caption_offset);
-	  $all_align = "text-left";
+	  $all_align = "text-center";
 	  if($caption_offset > 6){ $caption_offset = 0; $all_align = "text-right"; }
 	  if($caption_col < 6){ $caption_col = 12 - $caption_col + $col; }
 	  
-	$captions .= '<article style="display: none;" class="wp-caption-text gallery-caption" id="' . $caption_id . '"><div class="row"><div class="col-'.$col.' offset-'. ( $x * $col - $col ) .' '.$all_align.'"><img src="'.get_template_directory_uri().'/img/Linha-gotas-brancas.png" alt="Gotas" ></div></div><div class="row"><div class="col-12 col-md-'.$caption_col.' offset-md-'. $caption_offset .' '.$all_align.'"><p>' . $galleryThumbCap . '</p></div></div></article>';
+	$captions .= '<article style="display: none;" class="wp-caption-text gallery-caption" id="' . $caption_id . '"><div class="row"><div class="col-'.$col.' offset-'. ( $x * $col - $col ) .' '.$all_align.'"><img src="'.get_template_directory_uri().'/img/Linha-gotas-brancas.png" alt="Gotas" ></div></div><div class="row"><div class="col-12 col-md-'.$caption_col.' '.$all_align.'"><p>' . $galleryThumbCap . '</p></div></div></article>';
 	$x++;
   }
 
