@@ -132,7 +132,7 @@ if(!empty($highlights)): ?>
 				</article>
 			</div>
 			<div class="col-md-6 offset-md-1">
-				<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid" data-aos="fade-up">
+				<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid" <?php if(!wp_is_mobile()){ echo 'style="float:right;margin-right:-15px;"' ;}?> data-aos="fade-up">
 			</div>
 		</div>
 		<div class="row">
