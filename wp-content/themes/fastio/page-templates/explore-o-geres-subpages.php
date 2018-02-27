@@ -137,7 +137,7 @@ if(!empty($highlights)): ?>
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" data-aos="fade-up">
+				<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" <?php if(!wp_is_mobile()){ echo 'style="padding-top: 220px;"';}?> data-aos="fade-up">
 				<article class="row">
 					<div class="offset-md-3 col-md-7">
 						<p class="fastio-highlights-bottom-left" style="background-image:url('<?php echo $highlights['svg-left-bottom']['url'];?>');"><?php echo $highlights['text-bottom']; ?></p>
