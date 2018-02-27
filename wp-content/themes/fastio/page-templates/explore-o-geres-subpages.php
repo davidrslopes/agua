@@ -49,7 +49,7 @@ if(!empty($location)):
 			<img src="<?php echo $location['fallback-img']['url'];?>" alt="<?php echo $location['fallback-img']['title'];?>" title="<?php echo $location['fallback-img']['title'];?>" class="fastio-location-image">
 			<?php endif; ?>
 			<?php if(!empty($location['milho-4'])): ?>
-			<img data-aos="fade-up" class="fastio-milho-4 d-none d-md-block" <?php if(!wp_is_mobile()){ echo 'style="margin-top: -110px;"' ;}?> src="<?php echo $location['milho-4']['url']; ?>" alt="<?php echo $location['milho-4']['title']; ?>" class="img-fluid">
+			<img data-aos="fade-up" class="fastio-milho-4 d-none d-md-block" <?php if(!wp_is_mobile()){ echo 'style="margin-top: -110px;z-index:-1;"' ;}?> src="<?php echo $location['milho-4']['url']; ?>" alt="<?php echo $location['milho-4']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 		</div>
 		<div class="fastio-location-content col-12 col-md-3">
@@ -123,7 +123,7 @@ if(!empty($highlights)): ?>
 	<?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 		<div class="row">
 			<div class="col-md-2">
-				<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" data-aos="fade-up">
+				<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" <?php if(!wp_is_mobile()){ echo 'style="margin-left:-15px;"' ;}?> data-aos="fade-up">
 			</div>
 			<div class="col-md-3">
 				<article>
@@ -137,7 +137,7 @@ if(!empty($highlights)): ?>
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" <?php if(!wp_is_mobile()){ echo 'style="padding-top: 220px;"';}?> data-aos="fade-up">
+				<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" data-aos="fade-up">
 				<article class="row">
 					<div class="offset-md-3 col-md-7">
 						<p class="fastio-highlights-bottom-left" style="background-image:url('<?php echo $highlights['svg-left-bottom']['url'];?>');"><?php echo $highlights['text-bottom']; ?></p>
@@ -146,7 +146,7 @@ if(!empty($highlights)): ?>
 			</div>
 			<div class="col-md-6">
 				<h2><?php echo $highlights['title-big']; ?></h2>
-				<img src="<?php echo $highlights['svg-right-bottom']['url'];?>" alt="<?php echo $highlights['svg-right-bottom']['title'];?>" title="<?php echo $highlights['svg-right-bottom']['title'];?>" class="img-fluid" data-aos="fade-up">
+				<img src="<?php echo $highlights['svg-right-bottom']['url'];?>" alt="<?php echo $highlights['svg-right-bottom']['title'];?>" title="<?php echo $highlights['svg-right-bottom']['title'];?>" class="img-fluid" <?php if(!wp_is_mobile()){ echo 'style="padding-top: 220px;"';}?> data-aos="fade-up">
 			</div>
 		</div>
 		<?php else: // MOBILE ORDER VERSION ?>
