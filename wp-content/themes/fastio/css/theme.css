@@ -11603,9 +11603,9 @@ body.page-template-hot-wheels-subpages {
       font-size: 14px;
       color: #fff;
       width: 340px;
-      position: relative;
-      top: 205px;
-      left: 349px; }
+      position: absolute;
+      top: 200px;
+      left: 55%; }
     body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .bottleimg {
       margin: 0 auto;
       display: block; }
