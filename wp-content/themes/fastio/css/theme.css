@@ -11595,14 +11595,17 @@ body.page-template-hot-wheels-subpages {
             -------------------------------------------------- */
   /* Carousel base class */ }
   body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 {
-    padding-top: 135px; }
+    padding-top: 260px; }
     body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .title {
       display: inline-block;
       float: right;
       padding-top: 10px;
       font-size: 14px;
       color: #fff;
-      width: 50%; }
+      width: 340px;
+      position: relative;
+      top: 205px;
+      left: 349px; }
     body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .bottleimg {
       margin: 0 auto;
       display: block; }
@@ -11614,8 +11617,8 @@ body.page-template-hot-wheels-subpages {
     body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .icon {
       position: absolute;
       bottom: 380px;
-      left: 60%;
-      margin-left: -20px;
+      left: 70%;
+      /*margin-left: -20px;*/
       width: 40px;
       height: 40px;
       line-height: 35px;
@@ -11679,7 +11682,7 @@ body.page-template-hot-wheels-subpages {
     padding-top: 120px; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .title {
     display: inline-block;
-    width: 80%;
+    width: 65%;
     font-size: 14px;
     color: #fff;
     text-align: left; }
@@ -11711,7 +11714,7 @@ body.page-template-hot-wheels-subpages {
     height: 30px;
     text-align: center;
     background-color: #fff; }
-  body.page-template-hot-wheels-subpages .carousel, body.page-template-hot-wheels-subpages .item, body.page-template-hot-wheels-subpages .active {
+  body.page-template-hot-wheels-subpages .carousel, body.page-template-hot-wheels-subpages .item {
     height: 100%; }
   body.page-template-hot-wheels-subpages .carousel-inner {
     height: 100%; }
@@ -11920,7 +11923,9 @@ body.page-template-barbie-subpages {
       font-size: 14px;
       color: #fff;
       float: right;
-      padding-top: 6px; }
+      padding-top: 6px;
+      position: relative;
+      left: 7px; }
     body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect {
       width: 100%;
       height: 100%;
@@ -12009,7 +12014,7 @@ body.page-template-barbie-subpages {
     height: 30px;
     text-align: center;
     background-color: #fff; }
-  body.page-template-barbie-subpages .carousel, body.page-template-barbie-subpages .item, body.page-template-barbie-subpages .active {
+  body.page-template-barbie-subpages .carousel, body.page-template-barbie-subpages .item {
     height: 100%; }
   body.page-template-barbie-subpages .carousel-inner {
     height: 100%; }
