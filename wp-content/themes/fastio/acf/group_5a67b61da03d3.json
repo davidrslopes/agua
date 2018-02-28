@@ -641,7 +641,7 @@
                     "label": "Panorama Imagem",
                     "name": "panorama-img",
                     "type": "image",
-                    "instructions": "O panorama deve ser uma imagem equirectangular normalmente em formato jpg, se esta não for esférica deverá incluír o Google Photo Sphere XMP metadata.",
+                    "instructions": "O panorama deve ser uma imagem equirectangular normalmente em formato jpg, se esta não for esférica deverá incluír o Google Photo Sphere XMP metadata.\r\nPode também ser usada apenas como fallback mobile em vez de imagem fallback estática.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -724,11 +724,11 @@
                 },
                 {
                     "key": "field_5a6c958b006d2",
-                    "label": "Panorama Fallback",
+                    "label": "Imagem Fallback Estática",
                     "name": "panorama-fallback",
                     "type": "image",
-                    "instructions": "Imagem normal a ser apresentada em vez do panorama.",
-                    "required": 0,
+                    "instructions": "Imagem normal a ser apresentada em vez do panorama, este campo é obrigatório pois é o que vai aparecer em mobile por falta de suporte vídeo 360.",
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -805,5 +805,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1518886837
+    "modified": 1519860101
 }
