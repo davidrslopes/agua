@@ -108,6 +108,7 @@ if(!empty($section_3)):
             </div>
            </div>
             <div class="row">
+            <?php if(!wp_is_mobile()):?>
                 <div class="col-12 col-md-6">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-left imgbancada"/>
@@ -121,6 +122,21 @@ if(!empty($section_3)):
                         </div>
                     </div>
                 </div>
+             <?php else:?>
+           		<div class="col-12 col-md-6 titulo-subtitulo">
+                    <div data-aos="fade-up" data-aos-duration="3000">
+                        <img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-left"/>
+                        <div class="title">
+                            <?php echo $section_3['subtitulo']; ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div data-aos="fade-up" data-aos-duration="3000">
+                        <img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-left imgbancada"/>
+                    </div>
+                </div>
+                <?php endif;?>
             </div>
         </div>
 </section><!-- .fastio-images-section3 -->
