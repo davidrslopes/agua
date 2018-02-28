@@ -12245,6 +12245,7 @@ body.page-template-barbie-subpages {
     body.page-template-barbie .fastio-images-hero .bgimgdiv {
       padding-top: 60px; }
   body.page-template-barbie .icon {
+    display: none;
     position: absolute;
     left: 50%;
     margin-left: -20px;
@@ -12256,6 +12257,7 @@ body.page-template-barbie-subpages {
     body.page-template-hot-wheels .fastio-images-hero .bgimgdiv {
       padding-top: 60px; }
   body.page-template-hot-wheels .icon {
+    display: none;
     position: absolute;
     left: 50%;
     margin-left: -20px;
@@ -12281,7 +12283,8 @@ body.page-template-barbie-subpages {
     font-size: 15px; }
   body.page-template-barbie-subpages section.fastio-barbie-subpages-1 .icon {
     bottom: -30px;
-    left: 50%; }
+    left: 50%;
+    display: none; }
   body.page-template-barbie-subpages .carousel-control-prev,
   body.page-template-hot-wheels-subpages .carousel-control-prev {
     left: -10px; }
@@ -12290,8 +12293,10 @@ body.page-template-barbie-subpages {
     right: -10px; }
   body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .title {
     width: 100%;
-    font-size: 15px; }
+    font-size: 15px;
+    position: inherit; }
   body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .icon {
+    display: none;
     bottom: -10px;
     left: 50%; }
   body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .manchagarrafa {
