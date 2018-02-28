@@ -2026,6 +2026,28 @@ body.page-template-barbie-subpages{
 		}
 	}
 	body.page-template-a-familia{
+		.decor-line{
+			&.overlay{
+				margin-top: -3rem;
+				margin-bottom: -3rem;
+			}
+			&.top{
+				margin-top:-3rem;
+			}
+			&.bottom{
+				margin-top:3rem;
+			}
+			&.center{
+				margin-left: auto;
+				margin-right: auto;
+			}
+			width: 60px;
+			z-index: 10;
+			position: relative;
+			img{
+				//display: block;
+			}
+		}
 		.fastio-feature,
 		.fastio-feature-2{
 			h4{font-size: 1.4rem;}
