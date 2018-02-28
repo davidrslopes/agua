@@ -2157,10 +2157,14 @@ body.page-template-barbie-subpages{
             left: 50%;
         }
         
-        body.page-template-barbie-subpages .carousel-control-prev{
+        body.page-template-barbie-subpages .carousel-control-prev,
+        body.page-template-hot-wheels-subpages .carousel-control-prev
+        {
             left:-10px;
         }
-        body.page-template-barbie-subpages .carousel-control-next{
+        body.page-template-barbie-subpages .carousel-control-next,
+        body.page-template-hot-wheels-subpages .carousel-control-next
+        {
             right:-10px;
         }
         

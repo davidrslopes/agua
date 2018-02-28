@@ -12282,9 +12282,11 @@ body.page-template-barbie-subpages {
   body.page-template-barbie-subpages section.fastio-barbie-subpages-1 .icon {
     bottom: -30px;
     left: 50%; }
-  body.page-template-barbie-subpages .carousel-control-prev {
+  body.page-template-barbie-subpages .carousel-control-prev,
+  body.page-template-hot-wheels-subpages .carousel-control-prev {
     left: -10px; }
-  body.page-template-barbie-subpages .carousel-control-next {
+  body.page-template-barbie-subpages .carousel-control-next,
+  body.page-template-hot-wheels-subpages .carousel-control-next {
     right: -10px; }
   body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .title {
     width: 100%;
