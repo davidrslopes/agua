@@ -253,6 +253,7 @@ if(!empty($fundo_da_pagina)):
 								)
 						),
 						'orderby'=> 'meta_value_num',
+						'order' => 'ASC'
 						); 
 				?>
 				<?php $loop = new WP_Query($args); ?>
@@ -498,6 +499,7 @@ if(!empty($fundo_da_pagina)):
 								)
 						),
 						'orderby'=> 'meta_value_num',
+						'order' => 'ASC'
 						); 
 				?>
 				<?php $loop = new WP_Query($args); ?>
