@@ -64,7 +64,7 @@ if(!empty($fundo_da_pagina)):
 						</div>
 					</article><!-- Dummy Content end -->
 				<?php endif; ?>
-				<?php wp_reset_postdata(); ?>
+				<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 				</main><!-- #main -->
             </div>
             <div class="col-md-2 seccao1imagem3div d-none d-sm-block">
@@ -112,7 +112,7 @@ if(!empty($fundo_da_pagina)):
 								</div>
 							</article><!-- Dummy Content end -->
                         <?php endif; ?>
-                        <?php wp_reset_postdata(); ?>
+                        <?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 				</main><!-- #main -->
             </div>
             <div class="offset-6 col-6 offset-md-0 col-md-6 seccao2imagem3div">
@@ -166,7 +166,7 @@ if(!empty($fundo_da_pagina)):
 								</div>
 							</article><!-- Dummy Content end -->
                         <?php endif; ?>
-                        <?php wp_reset_postdata(); ?>
+                        <?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 		</main><!-- #main -->
             </div>
          <div class="col-md-2 seccao3imagem2div">
@@ -213,7 +213,7 @@ if(!empty($fundo_da_pagina)):
 								</div>
 							</article><!-- Dummy Content end -->
                         <?php endif; ?>
-                        <?php wp_reset_postdata(); ?>
+                        <?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 		</main><!-- #main -->
             </div>
             <div class="offset-6 col-6 offset-md-0 col-md-5">
@@ -242,7 +242,7 @@ if(!empty($fundo_da_pagina)):
 		<div data-aos="fade-up" data-aos-duration="2000">
 			<div class="<?php echo esc_attr( $container ); ?>" id="content">
 				<main class="site-main row" id="main" role="main">
-				<?php $args = array('post_type' => 'historia','posts_per_page' => 4,'meta_key'=> 'ano','orderby'=> 'meta_value', 'order'=> 'ASC' ); ?>
+				<?php $args = array('post_type' => 'historia','posts_per_page' => 4,'meta_key'=> 'ano','orderby'=> 'meta_value_num', 'order'=> 'DESC' ); ?>
 				<?php $loop = new WP_Query($args); ?>
 				<?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<div class="col-12 col-md-3">
@@ -267,7 +267,7 @@ if(!empty($fundo_da_pagina)):
 						</article><!-- Dummy Content end -->
 					</div>
 				<?php endif; ?>
-				<?php wp_reset_postdata(); ?>
+				<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 				</main><!-- #main -->
 			</div><!-- Container end -->
 			<div class="row" id="primary">
@@ -475,7 +475,7 @@ if(!empty($fundo_da_pagina)):
 		<div data-aos="fade-up" data-aos-duration="2000">
 			<div class="<?php echo esc_attr( $container ); ?>" id="content">
 				<main class="site-main row" id="main" role="main">
-				<?php $args = array('post_type' => 'historia','posts_per_page' => 4,'meta_key'=> 'ano','orderby'=> 'meta_value', 'order'=> 'ASC' ); ?>
+				<?php $args = array('post_type' => 'historia','posts_per_page' => 4,'meta_key'=> 'ano','orderby'=> 'meta_value_num', 'order'=> 'DESC' ); ?>
 				<?php $loop = new WP_Query($args); ?>
 				<?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<div class="col-12 col-md-3 text-center">
@@ -500,7 +500,7 @@ if(!empty($fundo_da_pagina)):
 						</article><!-- Dummy Content end -->
 					</div>
 				<?php endif; ?>
-				<?php wp_reset_postdata(); ?>
+				<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 				</main><!-- #main -->
 			</div><!-- Container end -->
 		</div>
