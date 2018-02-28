@@ -12209,13 +12209,6 @@ body.page-template-barbie-subpages {
     position: relative;
     bottom: inherit;
     padding: 6rem 4rem; }
-  body.page-template-a-familia .fastio-feature .decor.right.top {
-    margin-top: 8rem; }
-  body.page-template-a-familia .fastio-feature .decor.right.bottom {
-    margin-bottom: 4rem; }
-  body.page-template-a-familia .fastio-hero-3 .decor {
-    position: absolute;
-    bottom: 12rem; }
   body.page-template-a-familia .fastio-hero-3 header > img {
     position: absolute;
     bottom: 2rem; }
@@ -12423,13 +12416,6 @@ body.page-template-barbie-subpages {
       padding: 6rem 4rem; }
       body.page-template-a-nossa-agua .fastio-benefits .container article {
         padding: 0 1rem; }
-  body.page-template-a-familia .fastio-feature .decor.top.center,
-  body.page-template-a-familia .fastio-feature-2 .decor.top.center {
-    right: 50%;
-    position: absolute;
-    margin-right: -30px; }
-  body.page-template-a-familia .fastio-feature-2 .decor.top.center {
-    margin-top: -50px; }
   body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content article {
     width: 23rem;
     position: absolute;
@@ -12438,9 +12424,17 @@ body.page-template-barbie-subpages {
   body.page-template-explore-o-geres-subpages .fastio-milho-3 {
     position: absolute;
     bottom: 0; }
-  body.page-template-a-familia .fastio-feature .decor,
-  body.page-template-a-familia .fastio-feature-2 .decor {
-    margin-bottom: 5rem; }
+  body.page-template-a-familia .decor-line {
+    width: 60px;
+    z-index: 10;
+    position: relative; }
+    body.page-template-a-familia .decor-line.top {
+      margin-top: -3rem; }
+    body.page-template-a-familia .decor-line.bottom {
+      margin-top: 3rem; }
+    body.page-template-a-familia .decor-line.center {
+      margin-left: auto;
+      margin-right: auto; }
   body.page-template-a-familia .fastio-hero-3 div.row > div img, body.page-template-a-familia .fastio-hero-3 header img {
     position: absolute;
     left: 0;
@@ -12456,12 +12450,12 @@ body.page-template-barbie-subpages {
     bottom: 75px;
     left: 60%;
     margin-left: -20px; }
+  body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title {
+    width: 356px; }
   body.page-template-hot-wheels .logoimgdiv {
     padding-right: 0px; }
   body.page-template-hot-wheels .bgimgdiv {
-    padding-right: 0px; }
-  body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title {
-    width: 356px; } }
+    padding-right: 0px; } }
 
 /*
 * Use existing Bootstrap 4 classes and

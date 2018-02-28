@@ -2037,19 +2037,6 @@ body.page-template-barbie-subpages{
 				bottom:inherit;
 				padding: 6rem 4rem;
 			}
-			.decor{
-				
-			}
-		}
-		.fastio-feature .decor.right.top{
-			margin-top: 8rem;
-		}
-		.fastio-feature .decor.right.bottom{
-			margin-bottom: 4rem;
-		}
-		.fastio-hero-3 .decor{
-			position: absolute;
-			bottom: 12rem;
 		}
 		.fastio-hero-3 header > img{
 			position: absolute;
@@ -2376,17 +2363,9 @@ body.page-template-barbie-subpages{
 			}
 		}
 	}
-	
+	// A FAMILIA
 	body.page-template-a-familia{
-		.fastio-feature .decor.top.center,
-		.fastio-feature-2 .decor.top.center{
-			right:50%;
-			position: absolute;
-			margin-right: -30px;
-		}
-		.fastio-feature-2 .decor.top.center{
-			margin-top: -50px;
-		}
+		
 	}
 	body.page-template-explore-o-geres-subpages{
 		.fastio-location .fastio-location-content article{
@@ -2400,11 +2379,24 @@ body.page-template-barbie-subpages{
 			bottom:0;
 		}
 	}
-	body.page-template-a-familia{		
-		.fastio-feature,
-		.fastio-feature-2{
-			.decor{
-				margin-bottom: 5rem;
+	//A FAMILIA
+	body.page-template-a-familia{
+		.decor-line{
+			&.top{
+				margin-top:-3rem;
+			}
+			&.bottom{
+				margin-top:3rem;
+			}
+			&.center{
+				margin-left: auto;
+				margin-right: auto;
+			}
+			width: 60px;
+			z-index: 10;
+			position: relative;
+			img{
+				//display: block;
 			}
 		}
 		.fastio-hero-3{
@@ -2420,6 +2412,7 @@ body.page-template-barbie-subpages{
 			}
 		}
 	}
+	//FASTIO GO
 	body.page-template-fastio-go{
 		.fastio-go-bottle{
 			height:100vh;
@@ -2428,6 +2421,7 @@ body.page-template-barbie-subpages{
 			}
 		}
 	}
+	//BARBIE
 	body.page-template-barbie{
 		.icon{
 			position: absolute;
@@ -2436,6 +2430,11 @@ body.page-template-barbie-subpages{
             margin-left: -20px;
 		}
 	}
+	//SUB
+	body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title{
+		width: 356px;
+	}
+	//HOT WHEELS
 	body.page-template-hot-wheels{
 		.logoimgdiv{
 			padding-right: 0px;
@@ -2445,9 +2444,4 @@ body.page-template-barbie-subpages{
 			padding-right: 0px;
 		}
 	}
-        
-        body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title{
-            width: 356px;
-        }
-        
 }
