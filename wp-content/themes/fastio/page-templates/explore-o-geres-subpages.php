@@ -75,12 +75,6 @@ if(!empty($location)):
 		</div>
 		<?php else: // MOBILE ORDER VERSION ?>
 		<div class="fastio-location-content col-12 col-md-3">
-			<?php if(!empty($location['milho-1'])): ?>
-			<img data-aos="fade-down" data-aos-duration="3000" class="fastio-milho-1" src="<?php echo $location['milho-1']['url']; ?>" alt="<?php echo $location['milho-1']['title']; ?>" class="img-fluid">
-			<?php endif; ?>
-			<?php if(!empty($location['milho-2'])): ?>
-			<img data-aos="fade-up" data-aos-duration="3000" class="fastio-milho-2" src="<?php echo $location['milho-2']['url']; ?>" alt="<?php echo $location['milho-2']['title']; ?>" class="img-fluid">
-			<?php endif; ?>
 			<article data-aos="fade-up">
 				<h1><?php the_title();?></h1>
 				<p><?php echo $location['text'];?></p>
@@ -100,12 +94,6 @@ if(!empty($location)):
 				echo do_shortcode(' [video src="'.$location['video'].'" poster="'. $location['fallback-img']['url'].'"] ');
 			else: ?>
 			<img src="<?php echo $location['fallback-img']['url'];?>" alt="<?php echo $location['fallback-img']['title'];?>" title="<?php echo $location['fallback-img']['title'];?>" class="fastio-location-image">
-			<?php endif; ?>
-			<?php if(!empty($location['milho-3'])): ?>
-			<img data-aos="fade-up" class="fastio-milho-3" src="<?php echo $location['milho-3']['url']; ?>" alt="<?php echo $location['milho-3']['title']; ?>" class="img-fluid">
-			<?php endif; ?>
-			<?php if(!empty($location['milho-4'])): ?>
-                        <img data-aos="fade-up" class="fastio-milho-4" src="<?php echo $location['milho-4']['url']; ?>" alt="<?php echo $location['milho-4']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 		</div>
 		<?php endif; ?>
