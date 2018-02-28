@@ -484,6 +484,9 @@ if(!empty($fundo_da_pagina)):
 			</div>
 		</div>
 	</section>
+	<?php
+	$seccao5fundo = get_field('seccao_5_-_imagem_de_fundo');
+	?>
 	<section id="seccao5" style="background-image:url(<?php if(!empty($seccao5fundo)){echo $seccao5fundo ;} ?>);">
 		<div data-aos="fade-up" data-aos-duration="2000">
 			<div class="<?php echo esc_attr( $container ); ?>" id="content">
@@ -504,7 +507,7 @@ if(!empty($fundo_da_pagina)):
 				?>
 				<?php $loop = new WP_Query($args); ?>
 				<?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<div class="col-12 col-md-3 text-center">
+					<div class="col-12 col-md-3 text-center" style="margin-bottom: 15px;">
 						<?php get_template_part( 'loop-templates/content', 'historia2' ); ?>
 					</div>
 					<?php endwhile; // end of the loop. ?>
