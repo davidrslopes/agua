@@ -12236,7 +12236,8 @@ body.page-template-barbie-subpages {
     body.page-template-fastio-go .fastio-go-bottle .fastio-go-icon {
       max-width: 60px; }
   body.page-template-fastio-go .fastio-go-workout {
-    background-position: top right; }
+    background-position: top right;
+    margin-top: 0px; }
   body.page-template-barbie .fastio-images-hero {
     text-align: center; }
     body.page-template-barbie .fastio-images-hero img.float-right {
