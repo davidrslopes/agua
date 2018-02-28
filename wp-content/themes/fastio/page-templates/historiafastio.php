@@ -242,7 +242,19 @@ if(!empty($fundo_da_pagina)):
 		<div data-aos="fade-up" data-aos-duration="2000">
 			<div class="<?php echo esc_attr( $container ); ?>" id="content">
 				<main class="site-main row" id="main" role="main">
-				<?php $args = array('post_type' => 'historia','posts_per_page' => 4,'meta_key'=> 'ano','orderby'=> 'meta_value_num', 'order'=> 'DESC' ); ?>
+				<?php $args = array(
+						'post_type' => 'historia',
+						'posts_per_page' => 4,
+						'meta_query' => array(
+								array(
+										'key'		=> 'ano',
+										'compare'	=> '>',
+										'value'		=> '1979',
+								)
+						),
+						'orderby'=> 'meta_value_num',
+						); 
+				?>
 				<?php $loop = new WP_Query($args); ?>
 				<?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<div class="col-12 col-md-3">
@@ -475,7 +487,19 @@ if(!empty($fundo_da_pagina)):
 		<div data-aos="fade-up" data-aos-duration="2000">
 			<div class="<?php echo esc_attr( $container ); ?>" id="content">
 				<main class="site-main row" id="main" role="main">
-				<?php $args = array('post_type' => 'historia','posts_per_page' => 4,'meta_key'=> 'ano','orderby'=> 'meta_value_num', 'order'=> 'DESC' ); ?>
+				<?php $args = array(
+						'post_type' => 'historia',
+						'posts_per_page' => 4,
+						'meta_query' => array(
+								array(
+										'key'		=> 'ano',
+										'compare'	=> '>',
+										'value'		=> '1979',
+								)
+						),
+						'orderby'=> 'meta_value_num',
+						); 
+				?>
 				<?php $loop = new WP_Query($args); ?>
 				<?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<div class="col-12 col-md-3 text-center">
