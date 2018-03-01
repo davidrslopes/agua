@@ -31,7 +31,7 @@
         <div class="row-fluid contactos">
             <?php
             $fabrica = get_field('nome_fabrica');
-            $morada = get_field('nome_fabrica');
+            $morada = get_field('morada');
             $codigo_postal = get_field('codigo_postal');
             $localidade = get_field('localidade');
             $texto_coordenadas_gps = get_field('texto_coordenadas_gps');
@@ -63,7 +63,7 @@
                 <?php echo $coordenadas_gps;?>
                 <?php endif;?>
             </div>
-            <div class="col col-md-6 float-right">
+            <div class="col col-md-6 float-right" <?php if(wp_is_mobile()){echo "style='margin-bottom:15px;'";}?>>
                 <?php if(!empty($texto_telefone)):?> 
                 <b><?php echo $texto_telefone;?></b>
                <?php endif;?>
