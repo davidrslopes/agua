@@ -93,7 +93,7 @@ $side_image = get_field('seccao_2:_imagem_lateral');
                                 $do_not_duplicate3 = $post->ID;?>
                                 <?php //if(is_page(icl_object_id(191, 'page'))) : ?>
 
-					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+					<?php get_template_part( 'loop-templates/content', 'page_contactos' ); ?>
 
                                 <?php //endif;?>
 				<?php endwhile; // end of the loop. ?>
