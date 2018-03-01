@@ -42,7 +42,6 @@
             $numero_fax = get_field('numero_fax');
             $texto_apoio_comercial = get_field('texto_apoio_comercial');
             $email = get_field('email');
-            if(!empty($hero_1)):
             ?>
             <div class="col col-md-6 float-left">
                <?php if(!empty($fabrica)):?> 
@@ -89,4 +88,4 @@
                 <?php endif;?>
             </div>
         </div>
-</article><!-- #post-## -->
+</article>
