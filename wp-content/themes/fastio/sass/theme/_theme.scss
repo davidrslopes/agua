@@ -1927,6 +1927,18 @@ body.page-template-barbie-subpages{
 		.entry-title{
 		margin-top:3px;
 		}
+                
+                section.container article.historia .media{
+                    display: inline-block;
+                }
+                
+                section.container article.historia .media-left,
+                section.container article.historia .media-body
+                {
+                    text-align: center;
+                }
+                    
+            
 	}
 	// A NOSSA AGUA
 	body.page-template-a-nossa-agua {

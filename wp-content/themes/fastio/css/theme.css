@@ -12134,6 +12134,11 @@ body.page-template-barbie-subpages {
       font-size: 1rem; }
   body.page-template-historiafastio .entry-title {
     margin-top: 3px; }
+  body.page-template-historiafastio section.container article.historia .media {
+    display: inline-block; }
+  body.page-template-historiafastio section.container article.historia .media-left,
+  body.page-template-historiafastio section.container article.historia .media-body {
+    text-align: center; }
   body.page-template-a-nossa-agua .fastio-products {
     padding-top: 10rem;
     padding-bottom: 4rem; }
