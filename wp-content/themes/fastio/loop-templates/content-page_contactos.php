@@ -55,6 +55,7 @@
                 <?php if(!empty($codigo_postal)):?>
                 <?php echo $codigo_postal;?><?php if(!empty($localidade)):?> <?php echo $localidade;?><?php endif;?>
                 <?php endif;?>
+                </br>
                 <?php if(!empty($texto_coordenadas_gps)):?>
                 <b><?php echo $texto_coordenadas_gps;?></b>
                 <?php endif;?>
