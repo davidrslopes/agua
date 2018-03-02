@@ -217,7 +217,7 @@ if(!empty($fastio_360)): ?>
 			</script>
 			<?php else: ?>
 			<!-- Panorama Fallback -->
-			<img src="<?php echo $fastio_360['fallback-img']['url']; ?>" alt="<?php echo $fastio_360['fallback-img']['title']; ?>" class="img-fluid">
+			<img src="<?php echo $fastio_360['panorama-fallback']['url']; ?>" alt="<?php echo $fastio_360['panorama-fallback']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 		</div>
 		<?php if(!empty($fastio_360['milho-2']['url'])){ echo '<img src="'.$fastio_360['milho-2']['url'].'" class="fastio-img-milho bottom" alt="'.$fastio_360['milho-2']['url'].'" data-aos="fade-in">'; } ?>
