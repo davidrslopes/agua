@@ -11546,7 +11546,8 @@ body.page-template-hot-wheels {
     background: transparent !important; }
   body.page-template-hot-wheels .icon {
     position: absolute;
-    left: 50%;
+    /*left: 50%;*/
+    left: 36%;
     margin-left: -20px;
     width: 40px;
     height: 40px;
