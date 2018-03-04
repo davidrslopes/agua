@@ -119,27 +119,33 @@ if(!empty($hero_2)):
 		$benefit_col = ceil(12 / $benefit_count);
  		if($benefit_col<3) $benefit_col = 3;
 		$decor = get_field('a-nossa-agua-section-4-decor');
+		if(wp_is_mobile()){
+			$decor_aos = 'data-aos="fade-up" data-aos-duration="1500" ';
+		}else{
+			$decor_aos = 'data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" ';
+		}
+		
 ?>
 <!-- ******************* The Fastio Benefits Section ******************* -->
 <section class="fastio-benefits">
-
+   
     <div class="container">
     	<?php if(!empty($decor)): ?>
     	<div class="decor left">
     		<?php if(!empty($decor['left-1'])): ?>
-			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['left-1']['url']; ?>" alt="<?php echo $decor['left-1']['title']; ?>">
+			<img <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['left-1']['url']; ?>" alt="<?php echo $decor['left-1']['title']; ?>">
 			<?php endif; ?>
 			<?php if(!empty($decor['left-2'])): ?>
-			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['left-2']['url']; ?>" alt="<?php echo $decor['left-2']['title']; ?>">
+			<img <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['left-2']['url']; ?>" alt="<?php echo $decor['left-2']['title']; ?>">
 			<?php endif; ?>
 			<?php if(!empty($decor['left-3'])): ?>
-			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['left-3']['url']; ?>" alt="<?php echo $decor['left-3']['title']; ?>">
+			<img <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['left-3']['url']; ?>" alt="<?php echo $decor['left-3']['title']; ?>">
 			<?php endif; ?>
 			<?php if(!empty($decor['left-4'])): ?>
-			<img class="d-none d-sm-block" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['left-4']['url']; ?>" alt="<?php echo $decor['left-4']['title']; ?>">
+			<img class="d-none d-sm-block" <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['left-4']['url']; ?>" alt="<?php echo $decor['left-4']['title']; ?>">
 			<?php endif; ?>
 			<?php if(!empty($decor['left-5'])): ?>
-			<img class="d-none d-sm-block" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['left-5']['url']; ?>" alt="<?php echo $decor['left-5']['title']; ?>">
+			<img class="d-none d-sm-block" <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['left-5']['url']; ?>" alt="<?php echo $decor['left-5']['title']; ?>">
 			<?php endif; ?>
 		</div>
 		<?php endif;?>
@@ -156,16 +162,16 @@ if(!empty($hero_2)):
    		<?php if(!empty($decor)): ?>
     	<div class="decor right">
     		<?php if(!empty($decor['right-1'])): ?>
-			<img class="d-none d-sm-block" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['right-1']['url']; ?>" alt="<?php echo $decor['right-1']['title']; ?>">
+			<img class="d-none d-sm-block" <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['right-1']['url']; ?>" alt="<?php echo $decor['right-1']['title']; ?>">
 			<?php endif; ?>
 			<?php if(!empty($decor['right-2'])): ?>
-			<img class="d-none d-sm-block" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['right-2']['url']; ?>" alt="<?php echo $decor['right-2']['title']; ?>">
+			<img class="d-none d-sm-block" <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['right-2']['url']; ?>" alt="<?php echo $decor['right-2']['title']; ?>">
 			<?php endif; ?>
 			<?php if(!empty($decor['right-3'])): ?>
-			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['right-3']['url']; ?>" alt="<?php echo $decor['right-3']['title']; ?>">
+			<img <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['right-3']['url']; ?>" alt="<?php echo $decor['right-3']['title']; ?>">
 			<?php endif; ?>
 			<?php if(!empty($decor['right-4'])): ?>
-			<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="decor-item" src="<?php echo $decor['right-4']['url']; ?>" alt="<?php echo $decor['right-4']['title']; ?>">
+			<img <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['right-4']['url']; ?>" alt="<?php echo $decor['right-4']['title']; ?>">
 			<?php endif; ?>
 		</div>
 		<?php endif; ?>
