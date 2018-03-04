@@ -31,10 +31,10 @@
 		<div class="modal-content">
 			<div class="modal-body">
 				<div class="row">
-					<div class="col-md-8 leftcolumnmodal">
+					<div class="col-8 col-md-8 leftcolumnmodal">
 					<?php the_content()?>
 					</div>
-					<div class="col-md-4 rightcolumnmodal">
+					<div class="col-4 col-md-4 rightcolumnmodal">
 						<button type="button" class="close modalfecharbtn" data-dismiss="modal" aria-hidden="true">
 							<?php  esc_html_e( 'FECHAR', 'fastio' ); ?> <i class="fa fa-times"></i>
 						</button>

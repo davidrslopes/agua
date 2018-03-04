@@ -80,6 +80,7 @@
                 <?php if(!empty($numero_fax)):?>
                 <?php echo $numero_fax;?>
                 <?php endif;?>
+                </br>
                 <?php if(!empty($texto_apoio_comercial)):?>
                 <b><?php echo $texto_apoio_comercial;?></b>
                 <?php endif;?>

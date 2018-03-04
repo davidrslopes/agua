@@ -63,7 +63,7 @@ if(!empty($hero_1)):
                     </div>
 		</div>
             <div class="row">
-                <div class="col-12 col-md-1">
+                <div class="col-12 col-md-1 d-none d-sm-block">
                     <div data-aos="fade-up"data-aos-duration="3000">
                     <img src="<?php echo $section2['img2']; ?>" class="img-fluid imgestrelas"/>
                     </div>
@@ -111,16 +111,7 @@ if(!empty($section_3)):
 				</div>
 			</div>
                     <?php else:?>
-                    <div class="col-12 col-md-6 imgcameracol">
-				<div data-aos="fade-up"data-aos-duration="3000">
-					<img src="<?php echo $section_3['imgcamera']; ?>" class="img-fluid float-right imgcamera"/>
-				</div>
-			</div>
-                    <div class="col-12 col-md-1 imgestrelas">
-                            <div data-aos="fade-up"data-aos-duration="3000">
-				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-right"/>
-                            </div>
-                        </div>
+
                     <div class="col-12 col-md-5 imgtitulocriatividade">
                             <div data-aos="fade-up"data-aos-duration="3000">
 				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/> 
@@ -128,7 +119,12 @@ if(!empty($section_3)):
 				<?php echo $section_3['subtitulo']; ?>
 				</div>
                             </div>
-			</div>
+                    </div>
+                    <div class="col-12 col-md-6 imgcameracol">
+				<div data-aos="fade-up"data-aos-duration="3000">
+					<img src="<?php echo $section_3['imgcamera']; ?>" class="img-fluid float-right imgcamera"/>
+				</div>
+                    </div>
                     <?php endif;?>
 		</div>
 	</div>

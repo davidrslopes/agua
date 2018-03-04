@@ -12361,6 +12361,9 @@ body.page-template-barbie-subpages {
     bottom: -30px;
     left: 50%;
     display: none; }
+  body.page-template-barbie-subpages .fastio-barbie-subpages-section2 .imgpolaroid {
+    padding-top: 60px;
+    padding-bottom: 30px; }
   body.page-template-barbie-subpages .carousel-control-prev,
   body.page-template-hot-wheels-subpages .carousel-control-prev {
     left: -10px; }
