@@ -164,7 +164,7 @@ if(!empty($highlights)): ?>
 <?php
 $fastio_360 = get_field('explore-o-geres-subpage-section-4');
 if(!empty($fastio_360)):
-if(empty($fastio_360['panorama-video']) || empty($fastio_360['panorama-img'])): ?>
+if(!empty($fastio_360['panorama-video']) || !empty($fastio_360['panorama-img'])): ?>
 <!-- ******************* The 360 Foto / Video Section ******************* -->
 <section class="fastio-360">
 	<div class="container-fluid">
