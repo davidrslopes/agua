@@ -10232,7 +10232,8 @@ body.page-template-a-familia .fastio-hero-3 header.fastio-video-header, body.pag
 body.page-template-fastio-go .fastio-video-hero header.fastio-video-header, body.page-template-fastio-go .fastio-hero header.fastio-hero-header,
 body.page-template-fastio-go .fastio-hero header.fastio-video-header, body.page-template-explore-o-geres .fastio-hero header.fastio-hero-header,
 body.page-template-explore-o-geres .fastio-hero header.fastio-video-header, body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-hero-header,
-body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-video-header, body.page-template-default .fastio-hero header.fastio-hero-header,
+body.page-template-explore-o-geres-subpages .fastio-hero header.fastio-video-header, body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-hero-header,
+body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-video-header, body.page-template-default .fastio-hero header.fastio-hero-header,
 body.page-template-default .fastio-hero header.fastio-video-header {
   min-height: 100%;
   min-height: 100vh;
@@ -11332,6 +11333,66 @@ body.page-template-explore-o-geres-subpages .fastio-360 {
       width: 150px; }
       body.page-template-explore-o-geres-subpages .fastio-360 .fastio-panorama-video .vjs-big-play-button:before {
         content: ""; }
+
+body.page-template-explore-o-geres-subpages .fastio-hero-fallback {
+  background-image: url("../img/ImagemSoajo_1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: block;
+  z-index: 1;
+  position: relative; }
+  body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-hero-header h1, body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-hero-header h2, body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-hero-header h3, body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-hero-header h4, body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-hero-header h5, body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-hero-header h6,
+  body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-video-header h1,
+  body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-video-header h2,
+  body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-video-header h3,
+  body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-video-header h4,
+  body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-video-header h5,
+  body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-video-header h6 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    z-index: 1; }
+  body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-hero-header h1,
+  body.page-template-explore-o-geres-subpages .fastio-hero-fallback header.fastio-video-header h1 {
+    text-shadow: 0em 0.06em 0.06em rgba(83, 83, 83, 0.66);
+    font-size: 3rem;
+    line-height: 3rem; }
+  body.page-template-explore-o-geres-subpages .fastio-hero-fallback button.fastio-btn-scroll-down {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    line-height: 0;
+    text-decoration: none;
+    transition: all 250ms ease-in;
+    border: 0;
+    padding: 0 0 2rem 0; }
+    body.page-template-explore-o-geres-subpages .fastio-hero-fallback button.fastio-btn-scroll-down i.fa {
+      display: block;
+      font-size: 2.25rem;
+      line-height: 1rem;
+      padding: 0;
+      text-decoration: none; }
+    body.page-template-explore-o-geres-subpages .fastio-hero-fallback button.fastio-btn-scroll-down:hover {
+      text-decoration: none;
+      color: white; }
+    body.page-template-explore-o-geres-subpages .fastio-hero-fallback button.fastio-btn-scroll-down p {
+      font-size: 0.8rem; }
+  body.page-template-explore-o-geres-subpages .fastio-hero-fallback .fastio-img-milho {
+    position: absolute;
+    z-index: 1; }
+    body.page-template-explore-o-geres-subpages .fastio-hero-fallback .fastio-img-milho.bottom {
+      bottom: 0;
+      right: 0; }
+    body.page-template-explore-o-geres-subpages .fastio-hero-fallback .fastio-img-milho.top {
+      top: 0;
+      left: 0; }
 
 /* ############################## Default ############################## */
 body.page-template-default .fastio-hero {

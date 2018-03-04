@@ -973,6 +973,23 @@ body.page-template-explore-o-geres-subpages{
 			}
 		}
 	}
+	.fastio-hero-fallback{
+		@include fastio-hero('../img/ImagemSoajo_1.jpg');
+		z-index: 1;
+		position: relative;
+		.fastio-img-milho{
+			position: absolute;
+			z-index: 1;
+			&.bottom{
+				bottom: 0;
+				right: 0;
+			}
+			&.top{
+				top:0;
+				left:0;
+			}
+		}
+	}
 }
 /* ############################## Default ############################## */
 body.page-template-default{

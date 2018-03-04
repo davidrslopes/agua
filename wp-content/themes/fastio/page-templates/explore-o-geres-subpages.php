@@ -163,7 +163,8 @@ if(!empty($highlights)): ?>
 <?php endif; ?>
 <?php
 $fastio_360 = get_field('explore-o-geres-subpage-section-4');
-if(!empty($fastio_360)): ?>
+if(!empty($fastio_360)):
+if(empty($fastio_360['panorama-video']) || empty($fastio_360['panorama-img'])): ?>
 <!-- ******************* The 360 Foto / Video Section ******************* -->
 <section class="fastio-360">
 	<div class="container-fluid">
@@ -215,14 +216,17 @@ if(!empty($fastio_360)): ?>
 					<?php if(!empty($fastio_360['panorama-autoload'])){echo '"autoLoad": true';} ?>
 				});
 			</script>
-			<?php else: ?>
-			<!-- Panorama Fallback -->
-			<img src="<?php echo $fastio_360['panorama-fallback']['url']; ?>" alt="<?php echo $fastio_360['panorama-fallback']['title']; ?>" class="img-fluid">
 			<?php endif; ?>
 		</div>
 		<?php if(!empty($fastio_360['milho-2']['url'])){ echo '<img src="'.$fastio_360['milho-2']['url'].'" class="fastio-img-milho bottom" alt="'.$fastio_360['milho-2']['url'].'" data-aos="fade-in">'; } ?>
 	</div>
 </section>
-<?php endif; ?>
+<?php else: ?>
+<!-- ******************* The Fastio 360 Fallback ******************* -->
+<section class="fastio-hero-fallback" style="background-image: url(<?php echo $fastio_360['panorama-fallback']['url']; ?>);">
+	<?php if(!empty($fastio_360['milho-1']['url'])){ echo '<img src="'.$fastio_360['milho-1']['url'].'" class="fastio-img-milho top" alt="'.$fastio_360['milho-1']['url'].'" data-aos="fade-in">'; } ?>
+	<?php if(!empty($fastio_360['milho-2']['url'])){ echo '<img src="'.$fastio_360['milho-2']['url'].'" class="fastio-img-milho bottom" alt="'.$fastio_360['milho-2']['url'].'" data-aos="fade-in">'; } ?>
 </section>
+<?php endif; ?>
+<?php endif; ?>
 <?php get_footer(); ?>
