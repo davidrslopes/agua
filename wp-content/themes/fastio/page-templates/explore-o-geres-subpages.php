@@ -138,14 +138,14 @@ if(!empty($highlights)): ?>
 			</div>
 		</div>
 		<?php else: // MOBILE ORDER VERSION ?>
-		<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" data-aos="fade-up">
+		<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" style="margin-left:-15px;" data-aos="fade-up">
 		
 		<article>
 			<h3><?php echo $highlights['title']; ?></h3>
 			<p><?php echo $highlights['text-top']; ?></p>
 		</article>
 		
-		<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid" data-aos="fade-up">
+		<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid" style="float: right;margin-right: -15px;padding-bottom: 10px;" data-aos="fade-up">
 		
 		
 		<h2><?php echo $highlights['title-big']; ?></h2>
