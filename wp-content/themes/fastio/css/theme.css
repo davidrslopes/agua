@@ -12271,7 +12271,7 @@ body.page-template-barbie-subpages {
     position: relative; }
     body.page-template-a-familia .decor-line.overlay {
       margin-top: -3rem;
-      margin-bottom: -3rem; }
+      margin-bottom: -13rem; }
     body.page-template-a-familia .decor-line.top {
       margin-top: -3rem; }
     body.page-template-a-familia .decor-line.bottom {
@@ -12290,6 +12290,10 @@ body.page-template-barbie-subpages {
     position: relative;
     bottom: inherit;
     padding: 6rem 4rem; }
+  body.page-template-a-familia .fastio-feature .decor-line.overlay,
+  body.page-template-a-familia .fastio-feature-2 .decor-line.overlay {
+    margin-top: -6rem;
+    margin-bottom: -14rem; }
   body.page-template-a-familia .fastio-hero-3 header > img {
     position: absolute;
     bottom: 2rem; }
