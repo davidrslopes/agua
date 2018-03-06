@@ -12555,16 +12555,15 @@ body.page-template-barbie-subpages {
     padding-right: 0px; }
   body.page-template-hot-wheels .bgimgdiv {
     padding-right: 0px; }
-  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .titulo-subtitulo {
-    max-width: 40%; }
+  body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .container-fluid {
+    max-width: 1240px; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .titulo-subtitulo img.float-left {
     float: right !important;
     margin-right: 25px; }
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .title {
+    width: 51%;
     float: right;
-    width: 266px;
-    margin-left: 28px;
-    margin-right: 20px; } }
+    padding-left: 13px; } }
 
 /*
 * Use existing Bootstrap 4 classes and
