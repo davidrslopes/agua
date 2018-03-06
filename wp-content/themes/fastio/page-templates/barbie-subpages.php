@@ -114,8 +114,8 @@ if(!empty($section_3)):
 
                     <div class="col-12 col-md-5 imgtitulocriatividade">
                             <div data-aos="fade-up"data-aos-duration="3000">
-				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/> 
-                                <div class="title" style="width:356px;">
+				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid"/> 
+                                <div class="title">
 				<?php echo $section_3['subtitulo']; ?>
 				</div>
                             </div>
