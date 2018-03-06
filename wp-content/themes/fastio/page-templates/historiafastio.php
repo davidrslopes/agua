@@ -249,7 +249,7 @@ if(!empty($fundo_da_pagina)):
 								array(
 										'key'		=> 'ano',
 										'compare'	=> '>',
-										'value'		=> '1979',
+										'value'		=> '2008',
 								)
 						),
 						'orderby'=> 'meta_value_num',
@@ -498,7 +498,7 @@ if(!empty($fundo_da_pagina)):
 								array(
 										'key'		=> 'ano',
 										'compare'	=> '>',
-										'value'		=> '1979',
+										'value'		=> '2008',
 								)
 						),
 						'orderby'=> 'meta_value_num',

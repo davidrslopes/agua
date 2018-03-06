@@ -2216,13 +2216,16 @@ body.page-template-barbie-subpages{
         }
         
         body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .imgtitulocriatividade img{
-        	position: inherit;
+        	position: initial;
+        	margin-left: 3px;
                 
         }
         
         body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title{
          	width:100%;
-                position: inherit;
+            position: initial;
+    		margin-left: 3px;
+    		float: none !important;
          }
         
         body.page-template-barbie-subpages .carousel-control-prev,

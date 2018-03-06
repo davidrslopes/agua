@@ -12370,10 +12370,13 @@ body.page-template-barbie-subpages {
     padding-top: 60px;
     padding-bottom: 30px; }
   body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .imgtitulocriatividade img {
-    position: inherit; }
+    position: initial;
+    margin-left: 3px; }
   body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title {
     width: 100%;
-    position: inherit; }
+    position: initial;
+    margin-left: 3px;
+    float: none !important; }
   body.page-template-barbie-subpages .carousel-control-prev,
   body.page-template-hot-wheels-subpages .carousel-control-prev {
     left: -10px; }
