@@ -2059,7 +2059,7 @@ body.page-template-barbie-subpages{
 		.decor-line{
 			&.overlay{
 				margin-top: -3rem;
-				margin-bottom: -3rem;
+				margin-bottom: -13rem;
 			}
 			&.top{
 				margin-top:-3rem;
@@ -2089,6 +2089,13 @@ body.page-template-barbie-subpages{
 				bottom:inherit;
 				padding: 6rem 4rem;
 			}
+                        .decor-line{
+			&.overlay{
+				margin-top: -6rem;
+				margin-bottom: -14rem;
+			}
+                        
+                        
 		}
 		.fastio-hero-3 header > img{
 			position: absolute;
@@ -2213,6 +2220,7 @@ body.page-template-barbie-subpages{
         
         body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title{
          	width:100%;
+                position: inherit;
          }
         
         body.page-template-barbie-subpages .carousel-control-prev,
