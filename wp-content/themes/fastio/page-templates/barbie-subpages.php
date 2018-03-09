@@ -96,8 +96,12 @@ if(!empty($section_3)):
                             <div data-aos="fade-up"data-aos-duration="3000">
 				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/>
 				<script>
-				var img = jQuery(".imgtitulocriatividade > img");
-				jQuery(".imgtitulocriatividade .title").css({width:img.width()});
+				jQuery(document).ready(function( $ ) {
+					
+					var img = $(".imgtitulocriatividade > img");
+					$(".imgtitulocriatividade .title").css({width:img.width()});
+					console.log(img);
+				});
 				</script>
                 <div class="title">
 				<?php echo $section_3['subtitulo']; ?>
