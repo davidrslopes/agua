@@ -96,10 +96,11 @@ if(!empty($section_3)):
                             <div data-aos="fade-up"data-aos-duration="3000">
 				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/> 
 				<?php 
-				$svgfile = simplexml_load_file($section_3['img_titulo']);
-    			$width = substr($svgfile[width],0,-2);
+    			$xml = simplexml_load_file($section_3['img_titulo']);
+    			$attr = $xml->attributes();
+    			printf("%s x %s", $attr->width, $attr->height);
 				?>
-                <div class="title" style="width:<?php echo $width;?>">
+                <div class="title" style="width:<?php echo $attr->width;?>">
 				<?php echo $section_3['subtitulo']; ?>
 				</div>
                             </div>
