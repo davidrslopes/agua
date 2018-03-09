@@ -6,7 +6,7 @@
  *
  * @package understrap
  */
-
+ini_set('allow_url_fopen',1);
 get_header();
 $fundo_da_pagina=get_field('fundo_da_pagina');
 if(!empty($fundo_da_pagina)): 
