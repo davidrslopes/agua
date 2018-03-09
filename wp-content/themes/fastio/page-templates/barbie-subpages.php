@@ -94,12 +94,12 @@ if(!empty($section_3)):
                     <?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 			<div class="col col-md-5 imgtitulocriatividade">
                             <div data-aos="fade-up"data-aos-duration="3000">
-				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/> 
-				<?php 
-    			$xml = simplexml_load_file($section_3['img_titulo']);
-    			$attr = $xml->attributes();
-				?>
-                <div class="title" style="width:<?php echo $attr->width;?>">
+				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/>
+				<script>
+				var img = jQuery(".imgtitulocriatividade > img");
+				jQuery(".imgtitulocriatividade .title").css({width:img.width()});
+				</script>
+                <div class="title">
 				<?php echo $section_3['subtitulo']; ?>
 				</div>
                             </div>
