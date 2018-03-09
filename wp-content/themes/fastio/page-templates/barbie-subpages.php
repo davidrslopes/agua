@@ -100,6 +100,9 @@ if(!empty($section_3)):
 					
 					var img = $(".fastio-barbie-subpages-section3 .imgtitulocriatividade .float-right");
 					$(".fastio-barbie-subpages-section3 .imgtitulocriatividade .title").css({width:img.width()});
+					if (img.width()>450){
+						$(".fastio-barbie-subpages-section3 .imgtitulocriatividade .title").css({padding-left:15px});
+					}
 					console.log(img.width());
 				});
 				</script>
