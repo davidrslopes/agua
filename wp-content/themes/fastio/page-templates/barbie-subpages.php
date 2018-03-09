@@ -98,9 +98,9 @@ if(!empty($section_3)):
 				<script>
 				jQuery(document).ready(function( $ ) {
 					
-					var img = $(".imgtitulocriatividade > img");
-					$(".imgtitulocriatividade .title").css({width:img.width()});
-					console.log(img);
+					var img = $(".fastio-barbie-subpages-section3 .imgtitulocriatividade .float-right");
+					$(".fastio-barbie-subpages-section3 .imgtitulocriatividade .title").css({width:img.width()});
+					console.log(img.width());
 				});
 				</script>
                 <div class="title">
