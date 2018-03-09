@@ -98,7 +98,6 @@ if(!empty($section_3)):
 				<?php 
     			$xml = simplexml_load_file($section_3['img_titulo']);
     			$attr = $xml->attributes();
-    			printf("%s x %s", $attr->width, $attr->height);
 				?>
                 <div class="title" style="width:<?php echo $attr->width;?>">
 				<?php echo $section_3['subtitulo']; ?>
