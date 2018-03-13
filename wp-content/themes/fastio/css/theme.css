@@ -12550,7 +12550,8 @@ body.page-template-barbie-subpages {
     left: 60%;
     margin-left: -20px; }
   body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title {
-    width: 432px; }
+    width: 432px;
+    padding-left: 7px; }
   body.page-template-hot-wheels .logoimgdiv {
     padding-right: 0px; }
   body.page-template-hot-wheels .bgimgdiv {
@@ -12563,7 +12564,19 @@ body.page-template-barbie-subpages {
   body.page-template-hot-wheels-subpages .fastio-hotwheels-subpages-section3 .title {
     width: 51%;
     float: right;
-    padding-left: 13px; } }
+    padding-left: 13px; }
+  body.page-forte-como-um-touro .fastio-hotwheels-subpages-section3 .title {
+    margin-right: 21px; }
+  body.page-rapido-como-uma-flecha .fastio-hotwheels-subpages-section3 .title {
+    padding-left: 0px !important;
+    margin-right: 33px; }
+  body.page-super-maquina .fastio-hotwheels-subpages-section3 .title {
+    margin-right: 30px; }
+  body.page-atitude-diabolica .fastio-hotwheels-subpages-section3 .title {
+    padding-left: 32px !important;
+    margin-right: 10px; }
+  body.page-biggest-da-pista .fastio-hotwheels-subpages-section3 .title {
+    margin-right: 16px; } }
 
 /*
 * Use existing Bootstrap 4 classes and
