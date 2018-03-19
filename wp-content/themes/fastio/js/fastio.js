@@ -271,6 +271,7 @@ jQuery( function($) {
 			stages.not(stage).slideUp(1000,function(){
 				stage.slideDown(1000);
 			});
+			
 			captions.stop();
 			captions.clearQueue();
 			captions.not(caption).slideUp(1000, function(){
