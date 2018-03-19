@@ -92,14 +92,14 @@ if(!empty($section_3)):
 	<div class="container-fluid">
 		<div class="row">
                     <?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
-			<div class="col-md-5 imgtitulocriatividade">
-                            <div class="row" data-aos="fade-up"data-aos-duration="3000">
-				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-left"/>
+			<div class="col col-md-5 imgtitulocriatividade">
+                            <div data-aos="fade-up"data-aos-duration="3000">
+				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/>
 				<script>
 				jQuery(document).ready(function( $ ) {
 					var img = $(".fastio-barbie-subpages-section3 .imgtitulocriatividade .float-right");
 					if (img.width() >= '450'){
-						$(".fastio-barbie-subpages-section3 .imgtitulocriatividade .title").css({width:img.width(),padding-left:15px,float:left,});
+						$(".fastio-barbie-subpages-section3 .imgtitulocriatividade .title").css({width:img.width(),padding-left:15px});
 					}else{
 						$(".fastio-barbie-subpages-section3 .imgtitulocriatividade .title").css({width:img.width()});
 					}
@@ -110,12 +110,12 @@ if(!empty($section_3)):
 				</div>
                             </div>
 			</div>
-			<div class="col-md-1 imgestrelas">
+			<div class="col col-md-1 imgestrelas">
                             <div data-aos="fade-up"data-aos-duration="3000">
-				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-left"/>
+				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-right"/>
                             </div>
                         </div>
-			<div class="col-md-6 imgcameracol">
+			<div class="col col-md-6 imgcameracol">
 				<div data-aos="fade-up"data-aos-duration="3000">
 					<img src="<?php echo $section_3['imgcamera']; ?>" class="img-fluid float-right imgcamera"/>
 				</div>
