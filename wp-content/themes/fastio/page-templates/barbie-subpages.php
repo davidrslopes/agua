@@ -99,7 +99,7 @@ if(!empty($section_3)):
 				jQuery(document).ready(function( $ ) {
 					var img = $(".fastio-barbie-subpages-section3 .imgtitulocriatividade .float-right");
 					if (img.width() >= '450'){
-						$(".fastio-barbie-subpages-section3 .imgtitulocriatividade .title").css({width:img.width(),padding-left:15px,float:left,});
+						$(".fastio-barbie-subpages-section3 .imgtitulocriatividade .title").css({width:img.width(),padding-left:15px});
 					}else{
 						$(".fastio-barbie-subpages-section3 .imgtitulocriatividade .title").css({width:img.width()});
 					}
