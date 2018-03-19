@@ -64,12 +64,12 @@ if(!empty($hero_1)):
 		</div>
             <div class="row">
                 <div class="col-12 col-md-1 d-none d-sm-block">
-                    <div data-aos="fade-up"data-aos-duration="3000">
+                    <div class="row" data-aos="fade-up"data-aos-duration="3000">
                     <img src="<?php echo $section2['img2']; ?>" class="img-fluid imgestrelas"/>
                     </div>
                 </div>
                 <div class="col-12 col-md-11">
-                    <div data-aos="fade-up" data-aos-duration="3000">
+                    <div class="row" data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid"/>
                         <div class="title">
                             <?php echo $section2['subtitulo']; ?>
