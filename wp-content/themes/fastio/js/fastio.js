@@ -268,9 +268,15 @@ jQuery( function($) {
 			// hide all captions and stages and show the ones you need
 			stage.clearQueue();
 			stage.stop();
-			stages.not(stage).slideUp(1000,function(){
-				stage.slideDown(1000);
-			});
+			if (stages.length > 1){
+				console.log('bad');
+				stages.not(stage).slideUp(1000,function(){
+					stage.slideDown(1000);
+				});
+			}else{
+				console.log('good');
+				$('.gallery-caption-stage').slideDown(1000);
+			}
 			
 			captions.stop();
 			captions.clearQueue();
