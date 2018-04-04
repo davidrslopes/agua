@@ -11984,10 +11984,10 @@ body.page-template-barbie-subpages {
       width: 66%;
       font-size: 14px;
       color: #fff;
-      float: right;
+      /*float:right;*/
       padding-top: 6px;
       position: relative;
-      left: 7px; }
+      left: 10px; }
     body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .hovereffect {
       width: 100%;
       height: 100%;
@@ -12041,7 +12041,8 @@ body.page-template-barbie-subpages {
       padding-right: 0px !important;
       position: relative;
       top: 75px;
-      z-index: 2; }
+      z-index: 2;
+      left: 130px; }
     body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .imgtitulocriatividade {
       padding-top: 95px; }
     body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .imgtitulocriatividade img {
@@ -12551,8 +12552,6 @@ body.page-template-barbie-subpages {
     margin-left: -20px; }
   body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title {
     width: 432px; }
-  body.page-tu-podes-ser-criativa .fastio-barbie-subpages-section3 .title {
-    padding-left: 78px; }
   body.page-template-hot-wheels .logoimgdiv {
     padding-right: 0px; }
   body.page-template-hot-wheels .bgimgdiv {

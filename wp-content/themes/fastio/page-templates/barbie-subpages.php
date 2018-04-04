@@ -63,17 +63,18 @@ if(!empty($hero_1)):
                     </div>
 		</div>
             <div class="row">
-                <div class="col-12 col-md-1 d-none d-sm-block">
-                    <div data-aos="fade-up"data-aos-duration="3000">
-                    <img src="<?php echo $section2['img2']; ?>" class="img-fluid imgestrelas"/>
-                    </div>
-                </div>
-                <div class="col-12 col-md-11">
+                
+                <div class="col-12 col-md-5">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid"/>
                         <div class="title">
                             <?php echo $section2['subtitulo']; ?>
                         </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-1 d-none d-sm-block">
+                    <div data-aos="fade-up"data-aos-duration="3000">
+                    <img src="<?php echo $section2['img2']; ?>" class="img-fluid imgestrelas"/>
                     </div>
                 </div>
             </div>
@@ -89,12 +90,12 @@ if(!empty($section_3)):
 ?>
 <!-- ******************* Section 3 ******************* -->
 <section class="fastio-barbie-subpages-section3" style="background-image:url(<?php echo $section_3['bg-img']; ?>);">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
                     <?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 			<div class="col col-md-5 imgtitulocriatividade">
                             <div data-aos="fade-up"data-aos-duration="3000">
-				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-right"/>
+				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid"/>
 				<script>
 				jQuery(document).ready(function( $ ) {
 					var img = $(".fastio-barbie-subpages-section3 .imgtitulocriatividade .float-right");
@@ -111,9 +112,9 @@ if(!empty($section_3)):
                             </div>
 			</div>
 			<div class="col col-md-1 imgestrelas">
-                            <div data-aos="fade-up"data-aos-duration="3000">
+                            <!--<div data-aos="fade-up"data-aos-duration="3000">
 				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-right"/>
-                            </div>
+                            </div>-->
                         </div>
 			<div class="col col-md-6 imgcameracol">
 				<div data-aos="fade-up"data-aos-duration="3000">

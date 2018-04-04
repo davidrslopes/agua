@@ -1669,10 +1669,10 @@ body.page-template-barbie-subpages{
                     width: 66%;
                     font-size:14px;
                     color:#fff;
-                    float:right;
+                    /*float:right;*/
                     padding-top: 6px;
                     position:relative;
-                    left:7px;
+                    left:10px;
                 }
                 
                 
@@ -1744,6 +1744,7 @@ body.page-template-barbie-subpages{
                       position: relative;
                       top: 75px;
                       z-index: 2;
+                      left: 130px;
                   }
                   
                   .imgtitulocriatividade{
@@ -2516,7 +2517,7 @@ body.page-template-barbie-subpages{
 		width: 432px;
 	}
         body.page-tu-podes-ser-criativa .fastio-barbie-subpages-section3 .title{
-                padding-left: 78px;
+                //padding-left: 78px;
         }
 	//HOT WHEELS
 	body.page-template-hot-wheels{
