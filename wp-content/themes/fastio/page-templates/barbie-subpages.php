@@ -111,6 +111,10 @@ if(!empty($section_3)):
 				</div>
                             </div>
 			</div>
+                </div>
+            </div><!-- container -->
+            <div class="container-fluid">
+                <div class="row">
 			<div class="col col-md-1 imgestrelas">
                             <!--<div data-aos="fade-up"data-aos-duration="3000">
 				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-right"/>
