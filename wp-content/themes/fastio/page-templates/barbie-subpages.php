@@ -120,7 +120,7 @@ if(!empty($section_3)):
 				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-right"/>
                             </div>-->
                         </div>
-			<div class="col col-md-6 imgcameracol">
+			<div class="col col-md-11 imgcameracol">
 				<div data-aos="fade-up"data-aos-duration="3000">
 					<img src="<?php echo $section_3['imgcamera']; ?>" class="img-fluid float-right imgcamera"/>
 				</div>
