@@ -63,7 +63,11 @@ if(!empty($hero_1)):
                     </div>
 		</div>
             <div class="row">
-                
+                <div class="col-12 col-md-1 d-none d-sm-block">
+                    <div data-aos="fade-up"data-aos-duration="3000">
+                    <img src="<?php echo $section2['img2']; ?>" class="img-fluid imgestrelas"/>
+                    </div>
+                </div>
                 <div class="col-12 col-md-5">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid"/>
@@ -72,11 +76,7 @@ if(!empty($hero_1)):
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-1 d-none d-sm-block">
-                    <div data-aos="fade-up"data-aos-duration="3000">
-                    <img src="<?php echo $section2['img2']; ?>" class="img-fluid imgestrelas"/>
-                    </div>
-                </div>
+                
             </div>
 	</div>
 </section><!-- .fastio-barbie-subpages-section2 -->
@@ -90,10 +90,15 @@ if(!empty($section_3)):
 ?>
 <!-- ******************* Section 3 ******************* -->
 <section class="fastio-barbie-subpages-section3" style="background-image:url(<?php echo $section_3['bg-img']; ?>);">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
                     <?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
-			<div class="col col-md-5 imgtitulocriatividade">
+                    	<div class="col col-md-1 imgestrelas">
+                            <div data-aos="fade-up"data-aos-duration="3000">
+				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-right"/>
+                            </div>
+                        </div>
+                    <div class="col col-md-5 imgtitulocriatividade">
                             <div data-aos="fade-up"data-aos-duration="3000">
 				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid"/>
 				<script>
@@ -106,21 +111,12 @@ if(!empty($section_3)):
 					}
 				});
 				</script>
-                <div class="title">
+                            <div class="title">
 				<?php echo $section_3['subtitulo']; ?>
 				</div>
                             </div>
 			</div>
-                </div>
-            </div><!-- container -->
-            <div class="container-fluid">
-                <div class="row">
-			<div class="col col-md-1 imgestrelas">
-                            <!--<div data-aos="fade-up"data-aos-duration="3000">
-				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-right"/>
-                            </div>-->
-                        </div>
-			<div class="col col-md-11 imgcameracol">
+			<div class="col col-md-6 imgcameracol">
 				<div data-aos="fade-up"data-aos-duration="3000">
 					<img src="<?php echo $section_3['imgcamera']; ?>" class="img-fluid float-right imgcamera"/>
 				</div>
