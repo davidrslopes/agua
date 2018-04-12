@@ -62,7 +62,10 @@ if(!empty($hero_1)):
                         </div>
                     </div>
 		</div>
+        </div>
+    <div class="container-fluid">
             <div class="row">
+                <div class="col col-md-1 d-none d-sm-block"></div>
                 <div class="col-12 col-md-1 d-none d-sm-block">
                     <div data-aos="fade-up"data-aos-duration="3000">
                     <img src="<?php echo $section2['img2']; ?>" class="img-fluid imgestrelas"/>
