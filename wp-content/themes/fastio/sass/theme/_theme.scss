@@ -2309,19 +2309,29 @@ body.page-template-barbie-subpages{
 	.fastio-footer-lang{
 		//WPML
 		padding-top:2px;
+		background: transparent!important;
+		border: 0!important;
 		.wpml-ls{
 			padding:0;
 			display: inline-block;
+			background: transparent!important;
+			border: 0!important;
 			ul{
+				background: transparent!important;
+				border: 0!important;
 				direction: rtl;
 				display: inline-block;
 				list-style: circle;
 				list-style-position: outside;
 				color:inherit;
 				li{
+					background: transparent!important;
+					border: 0!important;
 					list-style-type: circle;
 					display: list-item;
 					a{
+						background: transparent!important;
+						border: 0!important;
 						display: initial;
 						padding: 0;
 						font-size:70%;
@@ -2329,7 +2339,20 @@ body.page-template-barbie-subpages{
 						@include transition(all 250ms ease-in);
 						&:hover,
 						&:focus{
+							background: transparent!important;
 							color:$primary;
+						}
+						&:after{
+							content: none!important;
+						}
+					}
+					ul.wpml-ls-sub-menu{
+						bottom: 100%;
+						top: unset;
+						padding-bottom: 0.150rem;
+						li > a{
+							padding: 0.150rem 0;
+							display: block;
 						}
 					}
 				} 
