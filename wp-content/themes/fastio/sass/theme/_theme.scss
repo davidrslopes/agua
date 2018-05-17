@@ -268,17 +268,17 @@ html,body{
 							background: transparent!important;
 						}
 						&:after{
-+							content: none!important;
-+						}
+							content: none!important;
+						}
 					}
 					ul.wpml-ls-sub-menu{
-+						bottom: 100%;
-+						top: unset;
-+						padding-bottom: 0.150rem;
-+						li > a{
-+							padding: 0.150rem 0;
-+							display: block;
-+						}
+						bottom: 100%;
+						top: unset;
+						padding-bottom: 0.150rem;
+						li > a{
+							padding: 0.150rem 0;
+							display: block;
+						}
  					}
 				} 
 			}
@@ -1939,20 +1939,20 @@ body.page-template-barbie-subpages{
 								background: transparent!important;
 							}
 							&:after{
-+							content: none!important;
-+							}
+							content: none!important;
+							}
 							span{
 								vertical-align: inherit;
 							}
 						}
 						ul.wpml-ls-sub-menu{
-+						bottom: 100%;
-+						top: unset;
-+						padding-bottom: 0.150rem;
-+						li > a{
-+							padding: 0.150rem 0;
-+							display: block;
-+						}
+						bottom: 100%;
+						top: unset;
+						padding-bottom: 0.150rem;
+						li > a{
+							padding: 0.150rem 0;
+							display: block;
+						}
  					}
 					} 
 				}
