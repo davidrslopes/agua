@@ -239,26 +239,47 @@ html,body{
 			direction: rtl;
 			display: inline-block;
 			padding-right: 50px;
+			background: transparent!important;
+			border: 0!important;
 			ul{
 				direction: rtl;
 				display: inline-block;
 				list-style: circle;
 				list-style-position: outside;
 				color: white;
+				background: transparent!important;
+				border: 0!important;
 				li{
 					list-style-type: circle;
 					display: list-item;
+					background: transparent!important;
+					border: 0!important;
 					a{
 						display: initial;
 						padding: 0;
 						font-size:90%;
 						color:white;
+						background: transparent!important;
+						border: 0!important;
 						@include transition(all 250ms ease-in);
 						&:hover,
 						&:focus{
 							color:$primary;
+							background: transparent!important;
 						}
+						&:after{
++							content: none!important;
++						}
 					}
+					ul.wpml-ls-sub-menu{
++						bottom: 100%;
++						top: unset;
++						padding-bottom: 0.150rem;
++						li > a{
++							padding: 0.150rem 0;
++							display: block;
++						}
+ 					}
 				} 
 			}
 		}
@@ -1881,35 +1902,58 @@ body.page-template-barbie-subpages{
 			float:right;
 			margin: 0;
 			padding: 0;
+			background: transparent!important;
+			border: 0!important;
 			.wpml-ls{
 				padding:0;
 				margin: 0;
+				background: transparent!important;
+				border: 0!important;
 				ul{
 					list-style: circle;
 					list-style-position: outside;
 					color:inherit;
 					padding:0;
 					margin: 0;
+					background: transparent!important;
+					border: 0!important;
 					li{
 						list-style-type: circle;
 						display: list-item;
 						padding: 0;
 						margin: 0;
+						background: transparent!important;
+						border: 0!important;
 						a{
 							margin: 0;
 							padding: 0;
 							font-size:70%;
 							color:inherit;
 							line-height: 50%;
+							background: transparent!important;
+							border: 0!important;
 							@include transition(all 250ms ease-in);
 							&:hover,
 							&:focus{
 								color:$primary;
+								background: transparent!important;
 							}
+							&:after{
++							content: none!important;
++							}
 							span{
 								vertical-align: inherit;
 							}
 						}
+						ul.wpml-ls-sub-menu{
++						bottom: 100%;
++						top: unset;
++						padding-bottom: 0.150rem;
++						li > a{
++							padding: 0.150rem 0;
++							display: block;
++						}
+ 					}
 					} 
 				}
 			}
@@ -2401,7 +2445,7 @@ body.page-template-barbie-subpages{
 				text-align:right
 			}
 			.seccao2imagem2{
-				margin-top: -190px;
+				margin-top: -120px;
 			}
 		}
 		#seccao3{ 

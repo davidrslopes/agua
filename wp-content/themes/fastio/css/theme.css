@@ -12150,30 +12150,41 @@ body.page-template-barbie-subpages {
     .main-footer-wrapper footer .fastio-footer-lang {
       float: right;
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      background: transparent !important;
+      border: 0 !important; }
       .main-footer-wrapper footer .fastio-footer-lang .wpml-ls {
         padding: 0;
-        margin: 0; }
+        margin: 0;
+        background: transparent !important;
+        border: 0 !important; }
         .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul {
           list-style: circle;
           list-style-position: outside;
           color: inherit;
           padding: 0;
-          margin: 0; }
+          margin: 0;
+          background: transparent !important;
+          border: 0 !important; }
           .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li {
             list-style-type: circle;
             display: list-item;
             padding: 0;
-            margin: 0; }
+            margin: 0;
+            background: transparent !important;
+            border: 0 !important; }
             .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a {
               margin: 0;
               padding: 0;
               font-size: 70%;
               color: inherit;
               line-height: 50%;
+              background: transparent !important;
+              border: 0 !important;
               transition: all 250ms ease-in; }
               .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a:hover, .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a:focus {
-                color: #00aeef; }
+                color: #00aeef;
+                background: transparent !important; }
               .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a span {
                 vertical-align: inherit; }
   body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1,
