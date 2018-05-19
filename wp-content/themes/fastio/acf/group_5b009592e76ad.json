@@ -1,0 +1,117 @@
+{
+    "key": "group_5b009592e76ad",
+    "title": "Home",
+    "fields": [
+        {
+            "key": "field_5b0095fb0ff62",
+            "label": "Vídeo da Homepage",
+            "name": "home-video",
+            "type": "file",
+            "instructions": "Permite alterar o vídeo em formato MP4 que está incluído na Homepage",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5b0096480ff63",
+            "label": "Poster \/ Imagem Fallback",
+            "name": "home-video-fallback",
+            "type": "image",
+            "instructions": "A imagem que aparece em fallback do vídeo ou enquanto este carrega.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5b0097d95d55b",
+            "label": "Texto",
+            "name": "home-video-text",
+            "type": "text",
+            "instructions": "Texto que sobrepõe o vídeo da Homepage",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "66",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b0098095d55c",
+            "label": "Cor do Texto",
+            "name": "home-video-text-color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1526766691
+}

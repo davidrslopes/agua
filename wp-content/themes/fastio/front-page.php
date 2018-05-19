@@ -6,10 +6,10 @@
 
 get_header();
 
-$home_video = get_theme_mod( 'home_video' );
-$home_video_fallback = get_theme_mod( 'home_video_fallback' );
-$home_video_text = get_theme_mod( 'home_video_text' );
-$home_video_text_color = get_theme_mod( 'home_video_text_color' );
+$home_video = get_field( 'home-video' );
+$home_video_fallback = get_field( 'home-video-fallback' );
+$home_video_text = get_field( 'home-video-text' );
+$home_video_text_color = get_field( 'home-video-text-color' );
 ?>
 <!-- ******************* The Video Area ******************* -->
 <?php 

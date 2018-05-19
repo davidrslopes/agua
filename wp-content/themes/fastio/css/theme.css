@@ -10376,7 +10376,9 @@ body.page-template-default .fastio-hero header.fastio-video-header {
     display: inline-block;
     padding-right: 50px;
     background: transparent !important;
-    border: 0 !important; }
+    border: 0 !important;
+    position: absolute;
+    left: 0; }
     .home-footer-wrapper footer .wpml-ls ul {
       direction: rtl;
       display: inline-block;

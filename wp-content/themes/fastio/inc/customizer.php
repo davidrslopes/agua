@@ -152,7 +152,7 @@ function fastio_customizer($wp_customize){
 	//OPÇÕES DA PÁGINA INICIAL
 	//Não é necessário adicionar secção, usa existente : static_front_page
 	//Vídeo da Homepage
-	$wp_customize->add_setting('home_video', array(
+	/*$wp_customize->add_setting('home_video', array(
 		'default'           => get_template_directory_uri() . '/video/fastio.mp4',
 	));
 	$wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'home_video', 
@@ -196,19 +196,19 @@ function fastio_customizer($wp_customize){
 			'section'    => 'static_front_page',
 			'settings'   => 'home_video_text_color'
 		)
-	));
+	));*/
 	
 	//OPÇÕES DE RODAPÉ
 	//Adicionar secção  
 	$wp_customize->add_section('footer_settings_section', array(
-		'title'          => __( 'Opções de rodapé', 'understrap' ),
+		'title'          => __( 'Redes Sociais', 'understrap' ),
 		'capability'  => 'edit_theme_options',
-		'description' => __( 'Opções do rodapé presente em todo o site.', 'understrap' ),
+		'description' => __( 'Defina os links de redes sociais presentes em todo o site.', 'understrap' ),
 		'priority'    => 150,
 	));
 	
 	//Texto de rodapé
-	$wp_customize->add_setting('footer_text', array(
+	/*$wp_customize->add_setting('footer_text', array(
 		'default'        => 'Viaje pela natureza',
 	));
 	$wp_customize->add_control('footer_text', array(
@@ -217,7 +217,7 @@ function fastio_customizer($wp_customize){
 		'section' => 'footer_settings_section',
 		'settings'    => 'footer_text',
 		'type'    => 'textarea',
-	));
+	));*/
 
 	//Facebook Url
 	$wp_customize->add_setting('footer_fb', array(
