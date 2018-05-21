@@ -94,7 +94,15 @@ if( !empty( $subpages ) ): ?>
 	<div id="map"></div>
 </section>
 <script>
-	var map, places;
+	var map, places, lang;
+	//Get Url Parameter Function
+	function getUrlParameter(name) {
+		name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+		var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+		var results = regex.exec(location.search);
+		return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+	};
+	lang = getUrlParameter('lang');
 	function initMap() {
 		map = new google.maps.Map(document.getElementById('map'), {
 			zoom: 10,
@@ -203,9 +211,13 @@ if( !empty( $subpages ) ): ?>
 			//Add Events
 			google.maps.event.addListener(marker,'click', (function(marker, i){ 
 				return function() {
-					
 					marker.setIcon(iconActive);
-					infowindow.setContent('<div id="content">'+'<div id="siteNotice">'+'</div>'+'<a href="/'+places[i][4]+'">'+places[i][0]+'</a>'+'</div>');
+					if(lang){
+						var placeLink = places[i][4]+'?lang='+lang;
+					}else{
+						var placeLink = places[i][4];
+					}
+					infowindow.setContent('<div id="content">'+'<div id="siteNotice">'+'</div>'+'<a href="/'+placeLink+'">'+places[i][0]+'</a>'+'</div>');
 					infowindow.open(map, marker);
 
 					activeMarker && activeMarker.setIcon(iconDefault);
