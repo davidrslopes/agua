@@ -599,7 +599,7 @@ body.page-template-a-nossa-agua{
 			}
 			.gallery-caption-stage{
 				.gallery-caption p{
-					font-size: 70%;
+					font-size: 0.85rem;
 					font-weight: normal;
 					margin-top: 0.5rem;
 					margin-bottom: 1rem;
@@ -637,7 +637,7 @@ body.page-template-a-nossa-agua{
 			color:white;
 			article{
 				p{
-					font-size: 70%;
+					font-size: 0.85rem;
 					margin: 0;
 				}
 			}
@@ -2133,7 +2133,10 @@ body.page-template-barbie-subpages{
 			}
 			width: 60px;
 			z-index: 10;
-			position: relative;
+			position: absolute;
+			top: 33%;
+			left: 50%;
+			margin-left:-30px;
 			img{
 				//display: block;
 			}
@@ -2141,9 +2144,6 @@ body.page-template-barbie-subpages{
 		.fastio-feature,
 		.fastio-feature-2{
 			h4{font-size: 1.4rem;}
-			&.mt{
-				padding-top: 0;
-			}
 			article{
 				position: relative;
 				bottom:inherit;
@@ -2344,6 +2344,12 @@ body.page-template-barbie-subpages{
         body.page-template-hot-wheels-subpages .carousel{
             margin-bottom: 0;
         }
+}
+//SM - TABLET ONLY!
+media-breakpoint-only(sm){
+	body.page-template-a-familia .decor-line{
+		top: 16%;
+	}
 }
 //LG AND UP ONLY - DESKTOP
 @include media-breakpoint-up(lg) {

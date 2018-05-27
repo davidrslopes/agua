@@ -10701,7 +10701,7 @@ body.page-template-a-nossa-agua .fastio-products {
   body.page-template-a-nossa-agua .fastio-products .gallery figure {
     cursor: pointer; }
   body.page-template-a-nossa-agua .fastio-products .gallery .gallery-caption-stage .gallery-caption p {
-    font-size: 70%;
+    font-size: 0.85rem;
     font-weight: normal;
     margin-top: 0.5rem;
     margin-bottom: 1rem; }
@@ -10778,7 +10778,7 @@ body.page-template-a-nossa-agua .fastio-benefits .container {
   background-color: #b2eaff;
   color: white; }
   body.page-template-a-nossa-agua .fastio-benefits .container article p {
-    font-size: 70%;
+    font-size: 0.85rem;
     margin: 0; }
 
 /* ############################## A FAMÍLIA ############################## */
@@ -12332,7 +12332,10 @@ body.page-template-barbie-subpages {
   body.page-template-a-familia .decor-line {
     width: 60px;
     z-index: 10;
-    position: relative; }
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    margin-left: -30px; }
     body.page-template-a-familia .decor-line.overlay {
       margin-top: -3rem;
       margin-bottom: -13rem; }
@@ -12346,9 +12349,6 @@ body.page-template-barbie-subpages {
   body.page-template-a-familia .fastio-feature h4,
   body.page-template-a-familia .fastio-feature-2 h4 {
     font-size: 1.4rem; }
-  body.page-template-a-familia .fastio-feature.mt,
-  body.page-template-a-familia .fastio-feature-2.mt {
-    padding-top: 0; }
   body.page-template-a-familia .fastio-feature article,
   body.page-template-a-familia .fastio-feature-2 article {
     position: relative;
@@ -12474,6 +12474,9 @@ body.page-template-barbie-subpages {
     height: auto; }
   body.page-template-hot-wheels-subpages .carousel {
     margin-bottom: 0; } }
+
+media-breakpoint-only(sm) body.page-template-a-familia .decor-line {
+  top: 16%; }
 
 @media (min-width: 1200px) {
   .fastio-nav {

@@ -139,25 +139,25 @@ if(!empty($highlights)): ?>
 			</div>
 		</div>
 		<?php else: // MOBILE ORDER VERSION ?>
-		<div class="row">
+		<div class="row text-left">
 			<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" data-aos="fade-up">
 		</div>
 		<article>
 			<h3><?php echo $highlights['title']; ?></h3>
 			<p><?php echo $highlights['text-top']; ?></p>
 		</article>
-		<div class="row">
+		<div class="row text-right">
 			<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid" style="margin-right: -15px;padding-bottom: 10px;" data-aos="fade-up">
 		</div>
 		
 		<h2><?php echo $highlights['title-big']; ?></h2>
-		<div class="row">
+		<div class="row text-center">
 			<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" data-aos="fade-up">
 		</div>
 		<article>
 			<p class="fastio-highlights-bottom-left" style="background-image:url('<?php echo $highlights['svg-left-bottom']['url'];?>');"><?php echo $highlights['text-bottom']; ?></p>
 		</article>
-		<div class="row">
+		<div class="row text-center">
 			<img src="<?php echo $highlights['svg-right-bottom']['url'];?>" alt="<?php echo $highlights['svg-right-bottom']['title'];?>" title="<?php echo $highlights['svg-right-bottom']['title'];?>" class="img-fluid" data-aos="fade-up">
 		</div>
 		<?php endif; ?>
