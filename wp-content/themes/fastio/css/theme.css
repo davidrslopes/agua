@@ -12478,7 +12478,7 @@ body.page-template-barbie-subpages {
 media-breakpoint-only(sm) body.page-template-a-familia .decor-line {
   top: 16%; }
 
-media-breakpoint-only(sm) #barbiesubpagescarousel .carousel-item > img {
+media-breakpoint-only(sm) #barbiesubpagescarousel .carousel-item img {
   width: 100%;
   display: block; }
 
