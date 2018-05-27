@@ -29,7 +29,7 @@ if(!empty($hero_1)):
 	
         <div class="container-fluid">
            <div class="row">    
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <div data-aos="fade-up" data-aos-duration="3000">
                     <img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid <?php if(!wp_is_mobile()){echo "float-right";} ?>"/>
                 </div>
@@ -38,7 +38,7 @@ if(!empty($hero_1)):
                     <?php echo $hero_1['texto']; ?>
                 </div></div>
             </div>
-            <div class="col-12 <?php if(!wp_is_mobile()){echo "offset-2";}?> col-md-3" style="position: relative;z-index:10;">           
+            <div class="col-12 <?php if(!wp_is_mobile()){echo "offset-2";}?> col-lg-3" style="position: relative;z-index:10;">           
                 <div data-aos="fade-up" data-aos-duration="3000">
                  <img src="<?php echo $hero_1['img2']; ?>" class="img-fluid bottleimg"/>
                 </div>
@@ -47,11 +47,11 @@ if(!empty($hero_1)):
             </div>
            </div>
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="icon faa-float animated" <?php if(!empty($hero_1['cor_da_seta'])){ echo ' style="color:'.$hero_1['cor_da_seta'].';"';} ?>>
                         <i class="fa fa-angle-down"></i></div>
                 </div>
-                <div class="col-12 col-md-6 manchagarrafa" style="margin-top:-9rem;position: relative;z-index:0;padding-right: 0px;">
+                <div class="col-12 col-lg-6 manchagarrafa" style="margin-top:-9rem;position: relative;z-index:0;padding-right: 0px;">
                     <div data-aos="fade-up" data-aos-duration="3000">
                     	<img src="<?php echo $hero_1['img1']; ?>" class="img-fluid float-right passadeiraimg" />
                     </div>
@@ -68,7 +68,7 @@ if(!empty($hero_1)):
 <section class="fastio-hotwheels-subpages-section2">
 	<div class="container">
 		<div class="row">
-                    <div class="col-12 col-md-12">
+                    <div class="col-12 col-lg-12">
                         <div data-aos="fade-up" data-aos-duration="3000">
                             <img src="<?php echo $section2['img1']; ?>" class="img-fluid imgcarrohotwheels"/>
                             <img src="<?php echo $section2['img2']; ?>" class="img-fluid metaimg"/>
@@ -76,8 +76,8 @@ if(!empty($hero_1)):
                     </div>
 		</div>
             <div class="row">
-                <div class="col col-md-6"></div>
-                <div class="col-12 col-md-6">
+                <div class="col col-lg-6"></div>
+                <div class="col-12 col-lg-6">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid <?php if(!wp_is_mobile()){echo "float-right";} ?>"/>
                         <div class="title">
@@ -100,8 +100,8 @@ if(!empty($section_3)):
 <section class="fastio-hotwheels-subpages-section3">
         <div class="container-fluid">
            <div class="row">
-            <div class="col col-md-3"></div>
-            <div class="col-12 col-md-9">
+            <div class="col col-lg-3"></div>
+            <div class="col-12 col-lg-9">
                 <div data-aos="fade-up"data-aos-duration="3000">
                     <img src="<?php echo $section_3['img1']; ?>" class="img-fluid float-left"/>
                 </div>
@@ -109,12 +109,12 @@ if(!empty($section_3)):
            </div>
             <div class="row">
             <?php if(!wp_is_mobile()):?>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-left imgbancada"/>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 titulo-subtitulo">
+                <div class="col-12 col-lg-6 titulo-subtitulo">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-left"/>
                         <div class="title">
@@ -123,7 +123,7 @@ if(!empty($section_3)):
                     </div>
                 </div>
              <?php else:?>
-           		<div class="col-12 col-md-6 titulo-subtitulo">
+           		<div class="col-12 col-lg-6 titulo-subtitulo">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-left"/>
                         <div class="title">
@@ -131,7 +131,7 @@ if(!empty($section_3)):
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-left imgbancada"/>
                     </div>
@@ -160,8 +160,8 @@ $hero_4 = get_field('hotwheels-section-4');?>
                 $hero_4 = get_field('hotwheels-section-4');
                 if(!empty($hero_4)):
                 ?>
-                <div class="col col-md-3"></div>
-                <div class="col-12 col-md-9">
+                <div class="col col-lg-3"></div>
+                <div class="col-12 col-lg-9">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $hero_4['img_titulo']; ?>" class="img-fluid float-right escolhecarroimg"/>
                     </div>
@@ -170,16 +170,16 @@ $hero_4 = get_field('hotwheels-section-4');?>
                 <?php endif; ?>
             </div>
 	<div class="row">
-            <!--Section 4-1 : Subpages Slider -->
+    	<!--Section 4-1 : Subpages Slider -->
        <div id="hotwheelssubpagescarousel" class="carousel slide" data-ride="carousel" data-interval="9000">
-        <div class="carousel-inner w-80 mx-auto" role="listbox" >
+        <div class="carousel-inner mx-auto" role="listbox" >
         <?php $i = 0; ?>
         <?php while( have_rows('hotwheels-section-4-1') ) : the_row(); 
         $link_id = get_sub_field('link', false, false);
         $i++;
         ?>
             <div class="carousel-item <?php echo $i===1 ? 'active' : '';?>">
-                <div class="col-md-3">
+                <div class="col-12 col-lg-3">
 					<a href="<?php echo get_the_permalink($link_id); ?>">
 						<img src="<?php the_sub_field('img') ?>" alt="" />
 					</a>
