@@ -25,7 +25,6 @@ if(!empty($hero_1)):
 ?>
 <!-- ******************* The Logo and Images Hero Section ******************* -->
 <section class="fastio-images-hero fastio-barbie-subpages-1">
-	
         <div class="container">
            <div class="row">    
             <div class="col-12 col-md-6">
@@ -48,7 +47,7 @@ if(!empty($hero_1)):
         </div>
 </section><!-- .fastio-images-hero -->
 <?php endif; ?>
-<!-- ******************* The Section2 ******************* -->
+<!-- ******************* The Section 2 ******************* -->
 <?php 
 	$section2 = get_field('barbiesubpages-section-2');
 	if(!empty($section2)):
@@ -56,13 +55,13 @@ if(!empty($hero_1)):
 <section class="fastio-barbie-subpages-section2">
 	<div class="container">
 		<div class="row">
-                    <div class="col-12 col-md-12">
-                        <div data-aos="fade-up" data-aos-duration="3000">
-                            <img src="<?php echo $section2['img1']; ?>" class="img-fluid imgpolaroid"/>
-                        </div>
-                    </div>
+			<div class="col-12">
+				<div data-aos="fade-up" data-aos-duration="3000">
+					<img src="<?php echo $section2['img1']; ?>" class="img-fluid imgpolaroid"/>
+				</div>
+			</div>
 		</div>
-        </div>
+    </div>
     <div class="container-fluid">
             <div class="row">
                 <div class="col col-md-1 d-none d-sm-block"></div>
@@ -127,7 +126,7 @@ if(!empty($section_3)):
 			</div>
                     <?php else:?>
 
-                    <div class="col-12 col-md-5 imgtitulocriatividade">
+                    <div class="col-12 col-lg-5 imgtitulocriatividade">
                             <div data-aos="fade-up"data-aos-duration="3000">
 				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid"/> 
                                 <div class="title">
@@ -135,7 +134,7 @@ if(!empty($section_3)):
 				</div>
                             </div>
                     </div>
-                    <div class="col-12 col-md-6 imgcameracol">
+                    <div class="col-12 col-lg-6 imgcameracol">
 				<div data-aos="fade-up"data-aos-duration="3000">
 					<img src="<?php echo $section_3['imgcamera']; ?>" class="img-fluid float-right imgcamera"/>
 				</div>
@@ -251,23 +250,23 @@ if(!empty($section_3)):
                 <?php endif; ?>
             </div>
 	<div class="row">
-            <!--Section 4-1 : Subpages Slider -->
+       <!--Section 4-1 : Subpages Slider -->
        <div id="barbiesubpagescarousel" class="carousel slide" data-ride="carousel" data-interval="9000">
-        <div class="carousel-inner w-80 mx-auto" role="listbox" >
-        <?php $i = 0; ?>
-        <?php while( have_rows('barbiesubpages-section-4-1') ) : the_row(); 
-        $link_id = get_sub_field('link', false, false);
-        $i++;
-        ?>
-            <div class="carousel-item <?php echo $i===1 ? 'active' : '';?>">
-                <div class="col-md-3">
+		<div class="carousel-inner mx-auto" role="listbox" >
+		<?php $i = 0; ?>
+		<?php while( have_rows('barbiesubpages-section-4-1') ) : the_row(); 
+		$link_id = get_sub_field('link', false, false);
+		$i++;
+		?>
+			<div class="carousel-item <?php echo $i===1 ? 'active' : '';?>">
+				<div class="col-12 col-lg-3">
 					<a href="<?php echo get_the_permalink($link_id); ?>">
 						<img src="<?php the_sub_field('img') ?>" alt="" />
 					</a>
-                </div>
-            </div>
-        <?php endwhile; ?>
-    </div>
+				</div>
+			</div>
+		<?php endwhile; ?>
+		</div>
            <a class="carousel-control-prev" href="#barbiesubpagescarousel" role="button" data-slide="prev">
           <i class="fa fa-angle-left" aria-hidden="true"></i>
           <span class="sr-only">Previous</span>
