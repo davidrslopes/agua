@@ -13,7 +13,7 @@ $home_video_text_color = get_field( 'home-video-text-color' );
 ?>
 <!-- ******************* The Video Area ******************* -->
 <?php 
-if(empty($home_video) || wp_is_mobile()):
+if(empty($home_video)):
 	echo '<div class="img-fill" style="background-image:url('.$home_video_fallback.');">';
 else:
 	echo do_shortcode(' [video class="fastio-video" autoplay="on" loop="on" src="'.$home_video.'" poster="'. $home_video_fallback .'"] ');
