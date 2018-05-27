@@ -33,7 +33,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
-				<!-- Your site title as branding in the menu -->
 				<?php if ( ! has_custom_logo() ) { ?>
 					<?php if ( is_front_page() && is_home() ) : ?>
 						<h1 class="navbar-brand mb-0">
@@ -44,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php endif; ?>	
 				<?php } else {
 					the_custom_logo();
-				} ?><!-- end custom logo -->
+				} ?>
 				<div class="fastio-nav dropdown">
 					<button class="btn dropdown-toggle" type="button" id="fastioMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU </button>
 				<?php wp_nav_menu(
