@@ -416,6 +416,17 @@ nav.navbar.fixed-top{
 		padding: 0;
 	}
 }
+nav.navbar.absolute-top{
+	position: absolute;
+	top: 4.5rem;
+	padding-bottom: 0;
+	width: 100%;
+    z-index: 1020;
+	.container{
+		height: 0;
+		padding: 0;
+	}
+}
 
 // Home FullScreen Vídeo 
 .fastio-video {

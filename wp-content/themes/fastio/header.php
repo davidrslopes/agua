@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content','understrap' ); ?></a>
-		<nav class="navbar fixed-top">
+		<nav class="navbar absolute-top">
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
