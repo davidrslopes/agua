@@ -170,7 +170,7 @@ if(!empty($fastio_360['panorama-video']) || !empty($fastio_360['panorama-img']))
 	<div class="container-fluid">
 		<?php if(!empty($fastio_360['milho-1']['url'])){ echo '<img src="'.$fastio_360['milho-1']['url'].'" class="fastio-img-milho top" alt="'.$fastio_360['milho-1']['url'].'" data-aos="fade-in">'; } ?>
 		<div class="row">
-			<?php if(!empty($fastio_360['panorama-video']) && !wp_is_mobile()): ?>
+			<?php if(!empty($fastio_360['panorama-video'])): ?>
 			<!-- Pannellum & Video JS Includes -->
 			<link rel="stylesheet" href="https://cdn.pannellum.org/2.3/pannellum.css"/>
 			<script type="text/javascript" src="https://cdn.pannellum.org/2.3/pannellum.js"></script>
@@ -188,7 +188,7 @@ if(!empty($fastio_360['panorama-video']) || !empty($fastio_360['panorama-img']))
 
 			<script>
 			videojs('panorama', {
-				<?php if(!empty($fastio_360['panorama-autoload']) && wp_is_mobile() === 0){echo '"autoplay": true,';} ?>
+				<?php if(!empty($fastio_360['panorama-autoload'])){echo '"autoplay": true,';} ?>
 				plugins: {
 					pannellum: {
 						"mouseZoom": false,
