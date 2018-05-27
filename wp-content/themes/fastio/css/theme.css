@@ -10385,6 +10385,7 @@ body.page-template-default .fastio-hero header.fastio-video-header {
       list-style: circle;
       list-style-position: outside;
       color: white;
+      color: white;
       background: transparent !important;
       border: 0 !important; }
       .home-footer-wrapper footer .wpml-ls ul li {
@@ -10460,6 +10461,13 @@ body.page-template-fastio-go .main-footer-wrapper,
 body.page-template-hotwheels-single .main-footer-wrapper {
   background-color: #00aeef;
   color: white; }
+  body.page-template-historiafastio .main-footer-wrapper footer a:hover,
+  body.page-template-historiafastio .main-footer-wrapper footer a:focus,
+  body.page-template-fastio-go .main-footer-wrapper footer a:hover,
+  body.page-template-fastio-go .main-footer-wrapper footer a:focus,
+  body.page-template-hotwheels-single .main-footer-wrapper footer a:hover,
+  body.page-template-hotwheels-single .main-footer-wrapper footer a:focus {
+    color: #b2eaff !important; }
 
 .fastio-img-links article {
   display: block;
@@ -12174,6 +12182,8 @@ body.page-template-barbie-subpages {
       background: transparent !important;
       border: 0 !important; }
       .main-footer-wrapper footer .fastio-footer-lang .wpml-ls {
+        position: absolute;
+        left: 0;
         padding: 0;
         margin: 0;
         background: transparent !important;
