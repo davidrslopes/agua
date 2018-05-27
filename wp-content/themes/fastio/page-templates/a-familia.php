@@ -66,27 +66,33 @@ if(!empty($hero_1)):
 				</article>
 			</div>
 			<?php else: // MOBILE ORDER VERSION ?>
-			<div class="col-12 text-left">
-				<article class="bg-primary pull-bottom" data-aos="fade-up">
-					<?php if(!empty($feature['text'])){ echo '<h4 data-aos="fade-up">'.$feature['text'].'</h4>'; } ?>
-				</article>
-			</div>
-			<div class="col-12 text-right">
-				<div class="decor-line center overlay text-center">
-				<?php if(!empty($feature['decor-right'])): ?>
-					<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="" src="<?php echo $feature['decor-right']['url']; ?>" alt="<?php echo $feature['decor-right']['title']; ?>">
-				<?php endif; ?>
-				<?php if(!empty($feature['decor-right-2'])): ?>
-					<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="" src="<?php echo $feature['decor-right-2']['url']; ?>" alt="<?php echo $feature['decor-right-2']['title']; ?>">
-				<?php endif; ?>
-				<?php if(!empty($feature['decor-right-3'])): ?>
-					<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="" src="<?php echo $feature['decor-right-3']['url']; ?>" alt="<?php echo $feature['decor-right-3']['title']; ?>">
-				<?php endif; ?>
-				<?php if(!empty($feature['decor-right-4'])): ?>
-					<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="" src="<?php echo $feature['decor-right-4']['url']; ?>" alt="<?php echo $feature['decor-right-4']['title']; ?>">
-				<?php endif; ?>
+			<div class="row">
+				<div class="col-12 text-left">
+					<article class="bg-primary pull-bottom" data-aos="fade-up">
+						<?php if(!empty($feature['text'])){ echo '<h4 data-aos="fade-up">'.$feature['text'].'</h4>'; } ?>
+					</article>
 				</div>
-				<?php if(!empty($feature['img'])): ?><img class="img-fluid" src="<?php echo $feature['img']['url']; ?>" title="<?php echo $feature['img']['title']; ?>" alt="<?php echo $feature['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<div class="decor-line center overlay text-center">
+					<?php if(!empty($feature['decor-right'])): ?>
+						<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="" src="<?php echo $feature['decor-right']['url']; ?>" alt="<?php echo $feature['decor-right']['title']; ?>">
+					<?php endif; ?>
+					<?php if(!empty($feature['decor-right-2'])): ?>
+						<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="" src="<?php echo $feature['decor-right-2']['url']; ?>" alt="<?php echo $feature['decor-right-2']['title']; ?>">
+					<?php endif; ?>
+					<?php if(!empty($feature['decor-right-3'])): ?>
+						<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="" src="<?php echo $feature['decor-right-3']['url']; ?>" alt="<?php echo $feature['decor-right-3']['title']; ?>">
+					<?php endif; ?>
+					<?php if(!empty($feature['decor-right-4'])): ?>
+						<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="" src="<?php echo $feature['decor-right-4']['url']; ?>" alt="<?php echo $feature['decor-right-4']['title']; ?>">
+					<?php endif; ?>
+					</div>
+				</div>
+				<div class="col-10 text-right">
+					<?php if(!empty($feature['img'])): ?><img class="img-fluid" src="<?php echo $feature['img']['url']; ?>" title="<?php echo $feature['img']['title']; ?>" alt="<?php echo $feature['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
+				</div>
 			</div>
 			<?php endif; ?>
 		</div>
@@ -154,21 +160,27 @@ if(!empty($hero_3)):
 				</article>
 			</div>
 			<?php else: // MOBILE ORDER VERSION ?>
-			<div class="col-12 text-left">
-				<article class="bg-warning pull-bottom" data-aos="fade-up">
-					<?php if(!empty($feature_2['text'])){ echo '<h4 data-aos="fade-up">'.$feature_2['text'].'</h4>'; } ?>
-				</article>
-				<div class="decor-line center overlay text-center">
-					<?php if(!empty($feature_2['decor-right'])): ?>
-					<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="" src="<?php echo $feature_2['decor-right']['url']; ?>" alt="<?php echo $feature_2['decor-right']['title']; ?>">
-					<?php endif; ?>
-					<?php if(!empty($feature_2['decor-right-2'])): ?>
-					<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="" src="<?php echo $feature_2['decor-right-2']['url']; ?>" alt="<?php echo $feature_2['decor-right-2']['title']; ?>">
-					<?php endif; ?>
+			<div class="row">
+				<div class="col-12 text-left">
+					<article class="bg-warning pull-bottom" data-aos="fade-up">
+						<?php if(!empty($feature_2['text'])){ echo '<h4 data-aos="fade-up">'.$feature_2['text'].'</h4>'; } ?>
+					</article>
 				</div>
 			</div>
-			<div class="col-12 text-right">
-				<?php if(!empty($feature_2['img'])): ?><img class="img-fluid" src="<?php echo $feature_2['img']['url']; ?>" title="<?php echo $feature_2['img']['title']; ?>" alt="<?php echo $feature_2['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
+			<div class="row">
+				<div class="col-2">
+					<div class="decor-line center overlay text-center">
+						<?php if(!empty($feature_2['decor-right'])): ?>
+						<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="" src="<?php echo $feature_2['decor-right']['url']; ?>" alt="<?php echo $feature_2['decor-right']['title']; ?>">
+						<?php endif; ?>
+						<?php if(!empty($feature_2['decor-right-2'])): ?>
+						<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="" src="<?php echo $feature_2['decor-right-2']['url']; ?>" alt="<?php echo $feature_2['decor-right-2']['title']; ?>">
+						<?php endif; ?>
+					</div>
+				</div>
+				<div class="col-10 text-right">
+					<?php if(!empty($feature_2['img'])): ?><img class="img-fluid" src="<?php echo $feature_2['img']['url']; ?>" title="<?php echo $feature_2['img']['title']; ?>" alt="<?php echo $feature_2['img']['title']; ?>" data-aos="fade-up"><?php endif; ?>
+				</div>
 			</div>
 			<?php endif; ?>
 		</div>
