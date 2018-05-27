@@ -408,9 +408,11 @@ body.home{
 }
 //Navbar
 nav.navbar.fixed-top{
-	padding-top: 2.5rem;
+	top: 4.5rem;
 	padding-bottom: 0;
+	height: 0;
 	.container{
+		height: 0;
 		padding: 0;
 	}
 }

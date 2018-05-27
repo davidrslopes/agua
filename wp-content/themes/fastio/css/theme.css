@@ -10501,9 +10501,11 @@ body.home {
   margin: 0; }
 
 nav.navbar.fixed-top {
-  padding-top: 2.5rem;
-  padding-bottom: 0; }
+  top: 4.5rem;
+  padding-bottom: 0;
+  height: 0; }
   nav.navbar.fixed-top .container {
+    height: 0;
     padding: 0; }
 
 .fastio-video {
