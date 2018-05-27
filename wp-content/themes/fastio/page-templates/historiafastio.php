@@ -306,7 +306,7 @@ if(!empty($fundo_da_pagina)):
 		</div>
 	</section>
 <?php else: // MOBILE ORDER VERSION ?>
-    <section class="container">
+    <section class="container-fluid">
     	<!-- IMG 1 -->
     	<div class="row">
 			<div  data-aos="fade-right" data-aos-duration="2000">
@@ -315,7 +315,7 @@ if(!empty($fundo_da_pagina)):
 			</div>
 		</div>
 		<!-- ENTRADA 1 -->
-		<div class="row d-none d-sm-block">
+		<div class="row d-none d-lg-block">
 			<div data-aos="fade-left" data-aos-duration="2000">
 				<?php $imagesection1right = wp_get_attachment_image_src(get_field('seccao_1_imagem_3'), 'full'); ?>
 				<img src="<?php echo $imagesection1right[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_3')) ?>" class="img-responsive">  
@@ -353,7 +353,7 @@ if(!empty($fundo_da_pagina)):
 			<img src="<?php echo $imagesection3bottomright[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_3_imagem_3')) ?>" class="img-responsive seccao3imagem3"> 
 		</div>
 		<!-- ENTRADA 2 -->
-		<div class="row d-none d-sm-block">
+		<div class="row d-none d-lg-block">
 			<div data-aos="fade-right" data-aos-duration="2000">
 			   <?php $image2 = wp_get_attachment_image_src(get_field('seccao_2_imagem_esquerda'), 'full'); ?>
 				<img src="<?php echo $image2[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_2_imagem_esquerda')) ?>" class="img-responsive">  
@@ -393,7 +393,7 @@ if(!empty($fundo_da_pagina)):
 			</div>
 		</div>
 		<!-- ENTRADA 3 -->
-		<div class="row d-none d-sm-block">
+		<div class="row d-none d-lg-block">
 			<div data-aos="fade-left" data-aos-duration="2000">
 				<?php $imagesection3right = wp_get_attachment_image_src(get_field('seccao_3_imagem_2'), 'full'); ?>
 				<img src="<?php echo $imagesection3right[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_3_imagem_2')) ?>" class="img-responsive">  
@@ -433,7 +433,7 @@ if(!empty($fundo_da_pagina)):
 			</div>
 		</div>
 		<!-- ENTRADA 4 -->
-		<div class="row d-none d-sm-block">
+		<div class="row d-none d-lg-block">
 			<div class="col-12 col-md-2 col-sm-4 seccao4imagemesquerda2div">  
 				<?php $image5 = wp_get_attachment_image_src(get_field('seccao_4_imagem_esquerda_2'), 'full'); ?>
 				<img src="<?php echo $image5[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_esquerda_2')) ?>" class="img-responsive">  
@@ -548,7 +548,7 @@ if(!empty($fundo_da_pagina)):
 				</div>
 			</div>
 		</div>
-		<div data-aos="fade-down-right" data-aos-duration="2000" class="d-none d-sm-block">
+		<div data-aos="fade-down-right" data-aos-duration="2000" class="d-none d-lg-block">
 			<?php $imagesection4bottom = wp_get_attachment_image_src(get_field('seccao_4_imagem_3'), 'full'); ?>
 			<img src="<?php echo $imagesection4bottom[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_3')) ?>" class="img-responsive">  
 		</div>
