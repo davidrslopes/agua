@@ -1852,8 +1852,8 @@ body.page-template-barbie-subpages{
             
 }
 /* ############################## RESPONSIVE ############################## */
-//SM AND DOWN ONLY
-@include media-breakpoint-down(sm) {
+//MD AND DOWN ONLY - MOBILE AND TABLET
+@include media-breakpoint-down(md) {
 	//COMMON
 	.navbar .navbar-brand.custom-logo-link > img{
 		width: auto;
@@ -2347,8 +2347,8 @@ body.page-template-barbie-subpages{
             margin-bottom: 0;
         }
 }
-//MD AND UP ONLY
-@include media-breakpoint-up(md) {
+//LG AND UP ONLY - DESKTOP
+@include media-breakpoint-up(lg) {
 	//COMMON
 	.fastio-nav{
 		font-size:1.2rem;
@@ -2644,6 +2644,4 @@ body.page-template-barbie-subpages{
         body.page-biggest-da-pista .fastio-hotwheels-subpages-section3 .title{
                 margin-right: 16px;
         }
-	
-	
 }

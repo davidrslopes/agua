@@ -12121,7 +12121,7 @@ body.page-template-barbie-subpages {
     opacity: 1; }
 
 /* ############################## RESPONSIVE ############################## */
-@media (max-width: 767.99px) {
+@media (max-width: 1199.99px) {
   .navbar .navbar-brand.custom-logo-link > img {
     width: auto;
     height: 3rem; }
@@ -12467,7 +12467,7 @@ body.page-template-barbie-subpages {
   body.page-template-hot-wheels-subpages .carousel {
     margin-bottom: 0; } }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .fastio-nav {
     font-size: 1.2rem; }
   img.decor {

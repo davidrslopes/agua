@@ -74,7 +74,8 @@ if(!empty($location)):
 			<?php endif; ?>
 		</div>
 		<?php else: // MOBILE ORDER VERSION ?>
-		<div class="fastio-location-content col-12 col-md-3">
+		
+		<div class="fastio-location-content col-12">
 			<article data-aos="fade-up">
 				<h1><?php the_title();?></h1>
 				<p><?php echo $location['text'];?></p>
