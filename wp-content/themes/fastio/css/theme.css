@@ -12478,6 +12478,10 @@ body.page-template-barbie-subpages {
 media-breakpoint-only(sm) body.page-template-a-familia .decor-line {
   top: 16%; }
 
+media-breakpoint-only(sm) #barbiesubpagescarousel .carousel-item > img {
+  width: 100%;
+  display: block; }
+
 @media (min-width: 1200px) {
   .fastio-nav {
     font-size: 1.2rem; }
