@@ -42,14 +42,14 @@ $side_image = get_field('seccao_2:_imagem_lateral');
 <section class="fastio-common-pages">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col col-md-3 listnavigationitems">
-				<div class="list-group" id="list-tab" role="tablist">
+			<div class="d-none d-sm-block col-lg-3 listnavigationitems">
+				<div class="list-group" id="list-tab" role="tablist" style="display:none;">
 					<a class="list-group-item list-group-item-action active" id="nav-tab-politica" data-toggle="list" href="#tab-politica" role="tab" aria-controls="tab-politica"><?php _e( 'Política Cookies', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-avisolegal" data-toggle="list" href="#tab-avisolegal" role="tab" aria-controls="tab-avisolegal"><?php _e( 'Aviso Legal', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-contato" data-toggle="list" href="#tab-contatos" role="tab" aria-controls="tab-contatos"><?php _e( 'Contato', 'understrap' ); ?></a>
 				</div>
 			</div>
-			<div class="col col-md-6">
+			<div class="col-lg-6">
 				<div class="tab-content">
 					<div class="tab-pane fade show active" id="tab-politica" role="tabpanel" aria-labelledby="tab-politica">
                                         <main class="site-main" id="main">          
@@ -103,9 +103,9 @@ $side_image = get_field('seccao_2:_imagem_lateral');
 					</div>
 				</div>
 			</div>
-                    <div class="col col-3 d-none d-sm-block lateralimage">
-                        <img src="<?php echo $side_image['bg-img']; ?>" class="img-responsive float-right img-fluid"/>
-                    </div>
+			<div class="col col-3 d-none d-sm-block lateralimage">
+				<img src="<?php echo $side_image['bg-img']; ?>" class="img-responsive float-right img-fluid"/>
+			</div>
 		</div>
 	</div>
 </section><!-- .fastio-commonpages -->

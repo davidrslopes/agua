@@ -11597,6 +11597,9 @@ body.page-template-default .wpcf7-form .btnsubmeter input {
   padding-right: 6px;
   padding-left: 6px; }
 
+body.page-template-default .wpcf7-form .wpcf7-validation-errors {
+  color: #00aeef; }
+
 /* ############################## HOTWHEELS ############################## */
 body.page-template-hot-wheels {
   background: url(../img/hotwheelsbackground.png) no-repeat;

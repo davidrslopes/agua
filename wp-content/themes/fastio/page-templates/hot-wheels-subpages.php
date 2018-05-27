@@ -102,7 +102,7 @@ if(!empty($section_3)):
            <div class="row">
             <div class="col col-lg-3"></div>
             <div class="col-12 col-lg-9">
-                <div data-aos="fade-up"data-aos-duration="3000">
+                <div data-aos="fade-up" data-aos-duration="3000">
                     <img src="<?php echo $section_3['img1']; ?>" class="img-fluid float-left"/>
                 </div>
             </div>
@@ -114,9 +114,9 @@ if(!empty($section_3)):
                         <img src="<?php echo $section_3['img2']; ?>" class="img-fluid float-left imgbancada"/>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 titulo-subtitulo">
+                <div class="col-12 col-sm-6 offset-sm-3 col-lg-6 titulo-subtitulo">
                     <div data-aos="fade-up" data-aos-duration="3000">
-                        <img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid float-left"/>
+                        <img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid<?php if(!wp_is_mobile()){echo " float-left";} ?>"/>
                         <div class="title">
                             <?php echo $section_3['subtitulo']; ?>
                         </div>
