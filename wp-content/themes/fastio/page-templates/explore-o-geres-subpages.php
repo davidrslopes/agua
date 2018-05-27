@@ -139,25 +139,27 @@ if(!empty($highlights)): ?>
 			</div>
 		</div>
 		<?php else: // MOBILE ORDER VERSION ?>
-		<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" style="margin-left:-15px;" data-aos="fade-up">
-		
+		<div class="row">
+			<img src="<?php echo $highlights['svg-left-top']['url'];?>" alt="<?php echo $highlights['svg-left-top']['title'];?>" title="<?php echo $highlights['svg-left-top']['title'];?>" class="img-fluid" data-aos="fade-up">
+		</div>
 		<article>
 			<h3><?php echo $highlights['title']; ?></h3>
 			<p><?php echo $highlights['text-top']; ?></p>
 		</article>
-		
-		<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid" style="float: right;margin-right: -15px;padding-bottom: 10px;" data-aos="fade-up">
-		
+		<div class="row">
+			<img src="<?php echo $highlights['svg-right-top']['url'];?>" alt="<?php echo $highlights['svg-right-top']['title'];?>" title="<?php echo $highlights['svg-right-top']['title'];?>" class="img-fluid" style="margin-right: -15px;padding-bottom: 10px;" data-aos="fade-up">
+		</div>
 		
 		<h2><?php echo $highlights['title-big']; ?></h2>
-		
-		<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" data-aos="fade-up">
-		
+		<div class="row">
+			<img src="<?php echo $highlights['svg-left']['url'];?>" alt="<?php echo $highlights['svg-left']['title'];?>" title="<?php echo $highlights['svg-left']['title'];?>" class="img-fluid" data-aos="fade-up">
+		</div>
 		<article>
 			<p class="fastio-highlights-bottom-left" style="background-image:url('<?php echo $highlights['svg-left-bottom']['url'];?>');"><?php echo $highlights['text-bottom']; ?></p>
 		</article>
-		
-		<img src="<?php echo $highlights['svg-right-bottom']['url'];?>" alt="<?php echo $highlights['svg-right-bottom']['title'];?>" title="<?php echo $highlights['svg-right-bottom']['title'];?>" class="img-fluid" data-aos="fade-up">
+		<div class="row">
+			<img src="<?php echo $highlights['svg-right-bottom']['url'];?>" alt="<?php echo $highlights['svg-right-bottom']['title'];?>" title="<?php echo $highlights['svg-right-bottom']['title'];?>" class="img-fluid" data-aos="fade-up">
+		</div>
 		<?php endif; ?>
 	</div>
 </section>
