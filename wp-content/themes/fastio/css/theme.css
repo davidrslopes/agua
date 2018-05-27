@@ -11689,7 +11689,7 @@ body.page-template-hot-wheels {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); } }
 
-/* ############################## HOTWHEELS SUBPAGES############################## */
+/* ############################## HOTWHEELS SUBPAGES ############################## */
 body.page-template-hot-wheels-subpages {
   background: url(../img/Fundo-Hotwheels-subpage.png) no-repeat;
   -webkit-background-size: cover;
@@ -12478,16 +12478,15 @@ body.page-template-barbie-subpages {
   body.page-template-hot-wheels-subpages .carousel {
     margin-bottom: 0; } }
 
-media-breakpoint-only(sm) body.page-template-a-familia .decor-line {
-  top: 16%; }
-
-media-breakpoint-only(sm) #barbiesubpagescarousel .carousel-item img,
-media-breakpoint-only(sm) #hotwheelssubpagescarousel .carousel-item img {
-  width: 100%;
-  display: block; }
-
-media-breakpoint-only(sm) body.page-template-hot-wheels-subpages .fastio-images-hero {
-  text-align: center; }
+@media (min-width: 576px) and (max-width: 767.99px) {
+  body.page-template-a-familia .decor-line {
+    top: 16%; }
+  #barbiesubpagescarousel .carousel-item img,
+  #hotwheelssubpagescarousel .carousel-item img {
+    width: 100%;
+    display: block; }
+  body.page-template-hot-wheels-subpages .fastio-images-hero {
+    text-align: center; } }
 
 @media (min-width: 1200px) {
   .fastio-nav {

@@ -1262,7 +1262,7 @@ body.page-template-hot-wheels{
 }
 
 
-/* ############################## HOTWHEELS SUBPAGES############################## */
+/* ############################## HOTWHEELS SUBPAGES ############################## */
 body.page-template-hot-wheels-subpages{
     background: url(../img/Fundo-Hotwheels-subpage.png) no-repeat;
     -webkit-background-size: cover;
@@ -2349,7 +2349,7 @@ body.page-template-barbie-subpages{
         }
 }
 //SM - TABLET ONLY!
-media-breakpoint-only(sm){
+@include media-breakpoint-only(sm){
 	body.page-template-a-familia .decor-line{
 		top: 16%;
 	}
