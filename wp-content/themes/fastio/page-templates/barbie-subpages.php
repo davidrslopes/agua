@@ -27,9 +27,9 @@ if(!empty($hero_1)):
 <section class="fastio-images-hero fastio-barbie-subpages-1">
         <div class="container">
            <div class="row">    
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <div data-aos="fade-up" data-aos-duration="3000">
-                    <img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid float-right"/>
+                    <img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid<?php if(!wp_is_mobile()){echo" float-right";} ?>"/>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="3000">                
                 <div class="title">
@@ -38,7 +38,7 @@ if(!empty($hero_1)):
                 <div class="icon faa-float animated" <?php if(!empty($hero_1['cor_da_seta'])){ echo ' style="color:'.$hero_1['cor_da_seta'].';"';} ?>>
                         <i class="fa fa-angle-down"></i></div>
             </div>
-            <div class="col-12 col-md-6">           
+            <div class="col-12 col-lg-6">           
                 <div data-aos="fade-up" data-aos-duration="3000">
                  <img src="<?php echo $hero_1['img1']; ?>" class="img-fluid bottleimg"/>
                 </div>
@@ -64,13 +64,13 @@ if(!empty($hero_1)):
     </div>
     <div class="container-fluid">
             <div class="row">
-                <div class="col col-md-1 d-none d-sm-block"></div>
-                <div class="col-12 col-md-1 d-none d-sm-block">
+                <div class="col col-lg-1 d-none d-sm-block"></div>
+                <div class="col-12 col-lg-1 d-none d-sm-block">
                     <div data-aos="fade-up"data-aos-duration="3000">
                     <img src="<?php echo $section2['img2']; ?>" class="img-fluid imgestrelas"/>
                     </div>
                 </div>
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-lg-5">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $section2['img_titulo']; ?>" class="img-fluid"/>
                         <div class="title">
@@ -95,13 +95,13 @@ if(!empty($section_3)):
 	<div class="container-fluid">
 		<div class="row">
                     <?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
-                        <div class="col col-md-1"></div>
-                    	<div class="col col-md-1 imgestrelas">
+                        <div class="col col-lg-1"></div>
+                    	<div class="col col-lg-1 imgestrelas">
                             <div data-aos="fade-up"data-aos-duration="3000">
 				<img src="<?php echo $section_3['img_estrelas']; ?>" class="img-fluid float-right"/>
                             </div>
                         </div>
-                    <div class="col col-md-5 imgtitulocriatividade">
+                    <div class="col col-lg-5 imgtitulocriatividade">
                             <div data-aos="fade-up"data-aos-duration="3000">
 				<img src="<?php echo $section_3['img_titulo']; ?>" class="img-fluid"/>
 				<script>
@@ -119,7 +119,7 @@ if(!empty($section_3)):
 				</div>
                             </div>
 			</div>
-			<div class="col col-md-5 imgcameracol">
+			<div class="col col-lg-5 imgcameracol">
 				<div data-aos="fade-up"data-aos-duration="3000">
 					<img src="<?php echo $section_3['imgcamera']; ?>" class="img-fluid float-right imgcamera"/>
 				</div>
@@ -144,14 +144,14 @@ if(!empty($section_3)):
 	</div>
 	<div class="row no-gutters">
             <?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
-		<div class="col col-md-2">
+		<div class="col col-lg-2">
 		</div>
-		<div class="col col-md-4 align-self-end">
+		<div class="col col-lg-4 align-self-end">
                     <div data-aos="fade-up"data-aos-duration="3000">
 			 <img src="<?php echo $section_3['img3']; ?>" class="img-fluid float-left imgbarbiefotografa"/>
                     </div>
                 </div>
-		<div class="col col-md-6">
+		<div class="col col-lg-6">
 			<div class="barbie-galeria">
                             <?php
 //Section 3 : Galeria Fotos
@@ -162,7 +162,7 @@ if(!empty($section_3)):
 ?>
 				<div class="row no-gutters">
                                     <?php while( have_rows('barbiesubpages-section-3-galeria') ): the_row(); ?>
-					<div class="col-<?php echo $links_col; ?> col-md-4 col-sm-4">
+					<div class="col-<?php echo $links_col; ?> col-lg-4 col-sm-4">
                                             <div class="hovereffect">
 						<img src="<?php the_sub_field('fotografia'); ?>" class="img-fluid"/>
 						<div class="overlay">
@@ -186,7 +186,7 @@ if(!empty($section_3)):
 			</div>
 		</div>-->
         <?php else: ?>
-             		<div class="col-12 col-md-6">
+             		<div class="col-12 col-lg-6">
 			<div class="barbie-galeria">
                             <?php
 //Section 3 : Galeria Fotos
@@ -197,7 +197,7 @@ if(!empty($section_3)):
 ?>
 				<div class="row no-gutters">
                                     <?php while( have_rows('barbiesubpages-section-3-galeria') ): the_row(); ?>
-					<div class="col-<?php echo $links_col; ?> col-md-4 col-sm-4">
+					<div class="col-<?php echo $links_col; ?> col-lg-4 col-sm-4">
                                             <div class="hovereffect">
 						<img src="<?php the_sub_field('fotografia'); ?>" class="img-fluid"/>
 						<div class="overlay">
@@ -212,7 +212,7 @@ if(!empty($section_3)):
                             <?php endif; ?>
 			</div>
 		</div>
-                <div class="col-12 col-md-4 align-self-end">
+                <div class="col-12 col-lg-4 align-self-end">
                     <div data-aos="fade-up"data-aos-duration="3000">
 			 <img src="<?php echo $section_3['img3']; ?>" class="img-fluid float-left imgbarbiefotografa"/>
                     </div>
@@ -240,8 +240,8 @@ if(!empty($section_3)):
                 $hero_4 = get_field('barbiesubpages-section-4');
                 if(!empty($hero_4)):
                 ?>
-                <div class="col col-md-3"></div>
-                <div class="col-12 col-md-9">
+                <div class="col col-lg-3"></div>
+                <div class="col-12 col-lg-9">
                     <div data-aos="fade-up" data-aos-duration="3000">
                         <img src="<?php echo $hero_4['img_titulo']; ?>" class="img-fluid float-right escolhebarbieimg"/>
                     </div>

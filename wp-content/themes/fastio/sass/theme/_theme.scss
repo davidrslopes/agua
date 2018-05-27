@@ -1275,11 +1275,10 @@ body.page-template-hot-wheels-subpages{
             padding-top: 10px;
             font-size: 14px;
             color: #fff;
-            width: 340px;
+            width: 360px;
             position: absolute;
     	    top: 200px;
-    	    left:55%;
-            
+    	    left: 55%;
         }
         
         .bottleimg{
@@ -1288,7 +1287,7 @@ body.page-template-hot-wheels-subpages{
         }
         
         .hashtagimg{
-            margin-top: -315px;
+            margin-top: -410px;
             margin-right: 190px;
         }
         
@@ -2350,11 +2349,15 @@ media-breakpoint-only(sm){
 	body.page-template-a-familia .decor-line{
 		top: 16%;
 	}
-	#barbiesubpagescarousel{
+	#barbiesubpagescarousel,
+	#hotwheelssubpagescarousel{
 		.carousel-item img{
 			width: 100%;
 			display: block;
 		}
+	}
+	body.page-template-hot-wheels-subpages .fastio-images-hero{
+		text-align: center;
 	}
 }
 //LG AND UP ONLY - DESKTOP

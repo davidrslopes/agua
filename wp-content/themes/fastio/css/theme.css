@@ -11704,7 +11704,7 @@ body.page-template-hot-wheels-subpages {
       padding-top: 10px;
       font-size: 14px;
       color: #fff;
-      width: 340px;
+      width: 360px;
       position: absolute;
       top: 200px;
       left: 55%; }
@@ -11712,7 +11712,7 @@ body.page-template-hot-wheels-subpages {
       margin: 0 auto;
       display: block; }
     body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .hashtagimg {
-      margin-top: -315px;
+      margin-top: -410px;
       margin-right: 190px; }
     body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .passadeiraimg {
       margin-top: -175px; }
@@ -12478,9 +12478,13 @@ body.page-template-barbie-subpages {
 media-breakpoint-only(sm) body.page-template-a-familia .decor-line {
   top: 16%; }
 
-media-breakpoint-only(sm) #barbiesubpagescarousel .carousel-item img {
+media-breakpoint-only(sm) #barbiesubpagescarousel .carousel-item img,
+media-breakpoint-only(sm) #hotwheelssubpagescarousel .carousel-item img {
   width: 100%;
   display: block; }
+
+media-breakpoint-only(sm) body.page-template-hot-wheels-subpages .fastio-images-hero {
+  text-align: center; }
 
 @media (min-width: 1200px) {
   .fastio-nav {
