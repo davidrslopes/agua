@@ -12259,11 +12259,11 @@ body.page-template-barbie-subpages {
       font-size: 1rem; }
   body.page-template-historiafastio .entry-title {
     margin-top: 3px; }
-  body.page-template-historiafastio section.container article.historia .media {
+  body.page-template-historiafastio section.container-fluid article.historia .media {
     display: inline-block;
     width: 100%; }
-  body.page-template-historiafastio section.container article.historia .media-left,
-  body.page-template-historiafastio section.container article.historia .media-body {
+  body.page-template-historiafastio section.container-fluid article.historia .media-left,
+  body.page-template-historiafastio section.container-fluid article.historia .media-body {
     text-align: center; }
   body.page-template-a-nossa-agua .fastio-products {
     padding-top: 10rem;

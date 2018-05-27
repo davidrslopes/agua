@@ -2007,21 +2007,16 @@ body.page-template-barbie-subpages{
 	// DESDE 1979
 	body.page-template-historiafastio{
 		.entry-title{
-		margin-top:3px;
+			margin-top:3px;
+		}       
+		section.container-fluid article.historia .media{
+			display: inline-block;
+			width: 100%;
 		}
-                
-                section.container article.historia .media{
-                    display: inline-block;
-                    width: 100%;
-                }
-                
-                section.container article.historia .media-left,
-                section.container article.historia .media-body
-                {
-                    text-align: center;
-                }
-                    
-            
+		section.container-fluid article.historia .media-left,
+		section.container-fluid article.historia .media-body{
+			text-align: center;
+		}
 	}
 	// A NOSSA AGUA
 	body.page-template-a-nossa-agua {
