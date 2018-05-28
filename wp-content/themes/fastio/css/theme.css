@@ -12241,6 +12241,8 @@ body.page-template-barbie-subpages {
               .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li ul.wpml-ls-sub-menu li > a {
                 padding: 0.150rem 0;
                 display: block; }
+  .home-footer-wrapper footer .wpml-ls {
+    padding-right: 80px; }
   body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1,
   body.page-template-a-familia .fastio-video-hero header.fastio-video-header h1 {
     font-size: 2rem !important;
