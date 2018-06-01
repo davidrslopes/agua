@@ -10412,7 +10412,8 @@ body.page-template-default .fastio-hero header.fastio-video-header {
           padding-bottom: 0.150rem; }
           .home-footer-wrapper footer .wpml-ls ul li ul.wpml-ls-sub-menu li > a {
             padding: 0.150rem 0;
-            display: block; }
+            display: block;
+            color: #00aeef; }
   .home-footer-wrapper footer .fastio-home-social {
     margin: 0;
     padding: 0; }
@@ -12270,6 +12271,10 @@ body.page-template-barbie-subpages {
   body.page-template-historiafastio section.container-fluid article.historia .media-left,
   body.page-template-historiafastio section.container-fluid article.historia .media-body {
     text-align: center; }
+  body.page-template-historiafastio .divimagem5 {
+    width: 100%; }
+  body.page-template-historiafastio .divimagem5 img.seccao2imagem3 {
+    float: right; }
   body.page-template-a-nossa-agua .fastio-products {
     padding-top: 10rem;
     padding-bottom: 4rem; }
@@ -12545,7 +12550,8 @@ body.page-template-barbie-subpages {
             padding-bottom: 0.150rem; }
             .fastio-footer-lang .wpml-ls ul li ul.wpml-ls-sub-menu li > a {
               padding: 0.150rem 0;
-              display: block; }
+              display: block;
+              color: #00aeef; }
   .home-footer-wrapper {
     bottom: 2rem; }
   .home-footer, .main-footer {

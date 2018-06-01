@@ -67,7 +67,7 @@ if(!empty($fundo_da_pagina)):
 				<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 				</main><!-- #main -->
             </div>
-            <div class="col-md-2 seccao1imagem3div d-none d-sm-block">
+            <div class="col-md-2 seccao1imagem3div d-none d-lg-block">
                 <div data-aos="fade-left" data-aos-duration="2000">
                 <?php $imagesection1right = wp_get_attachment_image_src(get_field('seccao_1_imagem_3'), 'full'); ?>
                 <img src="<?php echo $imagesection1right[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_3')) ?>" class="img-responsive">  
@@ -427,7 +427,7 @@ if(!empty($fundo_da_pagina)):
 		</main><!-- #main -->
 		<!-- IMG 5 -->
 		<div class="row">
-			<div data-aos="fade-left" data-aos-duration="2000">
+			<div data-aos="fade-left" data-aos-duration="2000" class="divimagem5">
 				<?php $imagesection2right = wp_get_attachment_image_src(get_field('seccao_2_imagem_3'), 'full'); ?>
 				<img src="<?php echo $imagesection2right[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_2_imagem_3')) ?>" class="img-responsive seccao2imagem3">  
 			</div>
@@ -469,7 +469,7 @@ if(!empty($fundo_da_pagina)):
 		<!-- IMG 6 -->
 		<div class="row">
 			<div class="row no-gutters">
-				<div class="col-6 d-none d-sm-block">
+				<div class="col-6 d-none d-lg-block">
 					<div data-aos="fade-up-right" data-aos-duration="2000">
 						<?php $image4 = wp_get_attachment_image_src(get_field('seccao_4_imagem_esquerda_1'), 'full'); ?>
 						<img src="<?php echo $image4[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_4_imagem_esquerda_1')) ?>" class="img-responsive seccao4imagemesquerda1">
@@ -507,13 +507,13 @@ if(!empty($fundo_da_pagina)):
 				?>
 				<?php $loop = new WP_Query($args); ?>
 				<?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<div class="col-12 col-md-3 text-center" style="margin-bottom: 15px;">
+					<div class="col-12 col-lg-3 text-center" style="margin-bottom: 15px;">
 						<?php get_template_part( 'loop-templates/content', 'historia2' ); ?>
 					</div>
 					<?php endwhile; // end of the loop. ?>
 				<?php else: ?>
 					<!-- Dummy Content added for dev -->
-					<div class="col-12 col-md-3">
+					<div class="col-12 col-lg-3">
 						<article>
 							<div class="media">
 								<div class="media-left media-middle">
