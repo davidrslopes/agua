@@ -356,7 +356,7 @@ html,body{
 }
 
 //Individual page footer styling
-body.page-template-historiafastio .main-footer-wrapper, // Desde 1979
+
 body.page-template-fastio-go .main-footer-wrapper, // Fastio GO
 body.page-template-hotwheels-single .main-footer-wrapper{ // Hotwheels Car Pages 
 	background-color: $h2o-blue;
@@ -364,6 +364,16 @@ body.page-template-hotwheels-single .main-footer-wrapper{ // Hotwheels Car Pages
 	footer a:hover,
 	footer a:focus{
 		color:$h2o-light-blue!important;
+	}
+}
+
+// Desde 1979
+body.page-template-historiafastio .main-footer-wrapper{
+	background-color:$h2o-light-blue;
+	color: white;
+	footer a:hover,
+	footer a:focus{
+		color:$h2o-blue!important;
 	}
 }
 
@@ -2014,9 +2024,17 @@ body.page-template-barbie-subpages{
 	}
 	// DESDE 1979
 	body.page-template-historiafastio{
+		
+		font-size:1.05rem;
+			
 		.entry-title{
 			margin-top:3px;
-		}       
+		}
+		
+		.entry-content p{
+			font-size:14px;
+		}
+		  
 		section.container-fluid article.historia .media{
 			display: inline-block;
 			width: 100%;
@@ -2032,6 +2050,14 @@ body.page-template-barbie-subpages{
 		
 		.divimagem5 img.seccao2imagem3{
 			float:right;
+		}
+		
+		#seccao5 .site-main{
+			padding-top:50px;
+		}
+		
+		#seccao5 .media .entry-content p{
+			font-size:14px;
 		}
 	}
 	// A NOSSA AGUA

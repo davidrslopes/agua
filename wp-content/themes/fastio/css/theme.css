@@ -10457,18 +10457,22 @@ body.page-template-default .fastio-hero header.fastio-video-header {
     font-size: 60%;
     line-height: 46px; }
 
-body.page-template-historiafastio .main-footer-wrapper,
 body.page-template-fastio-go .main-footer-wrapper,
 body.page-template-hotwheels-single .main-footer-wrapper {
   background-color: #00aeef;
   color: white; }
-  body.page-template-historiafastio .main-footer-wrapper footer a:hover,
-  body.page-template-historiafastio .main-footer-wrapper footer a:focus,
   body.page-template-fastio-go .main-footer-wrapper footer a:hover,
   body.page-template-fastio-go .main-footer-wrapper footer a:focus,
   body.page-template-hotwheels-single .main-footer-wrapper footer a:hover,
   body.page-template-hotwheels-single .main-footer-wrapper footer a:focus {
     color: #b2eaff !important; }
+
+body.page-template-historiafastio .main-footer-wrapper {
+  background-color: #b2eaff;
+  color: white; }
+  body.page-template-historiafastio .main-footer-wrapper footer a:hover,
+  body.page-template-historiafastio .main-footer-wrapper footer a:focus {
+    color: #00aeef !important; }
 
 .fastio-img-links article {
   display: block;
@@ -12263,18 +12267,26 @@ body.page-template-barbie-subpages {
       font-size: 0.66rem; }
     .home-footer-wrapper i {
       font-size: 1rem; }
-  body.page-template-historiafastio .entry-title {
-    margin-top: 3px; }
-  body.page-template-historiafastio section.container-fluid article.historia .media {
-    display: inline-block;
-    width: 100%; }
-  body.page-template-historiafastio section.container-fluid article.historia .media-left,
-  body.page-template-historiafastio section.container-fluid article.historia .media-body {
-    text-align: center; }
-  body.page-template-historiafastio .divimagem5 {
-    width: 100%; }
-  body.page-template-historiafastio .divimagem5 img.seccao2imagem3 {
-    float: right; }
+  body.page-template-historiafastio {
+    font-size: 1.05rem; }
+    body.page-template-historiafastio .entry-title {
+      margin-top: 3px; }
+    body.page-template-historiafastio .entry-content p {
+      font-size: 14px; }
+    body.page-template-historiafastio section.container-fluid article.historia .media {
+      display: inline-block;
+      width: 100%; }
+    body.page-template-historiafastio section.container-fluid article.historia .media-left,
+    body.page-template-historiafastio section.container-fluid article.historia .media-body {
+      text-align: center; }
+    body.page-template-historiafastio .divimagem5 {
+      width: 100%; }
+    body.page-template-historiafastio .divimagem5 img.seccao2imagem3 {
+      float: right; }
+    body.page-template-historiafastio #seccao5 .site-main {
+      padding-top: 50px; }
+    body.page-template-historiafastio #seccao5 .media .entry-content p {
+      font-size: 14px; }
   body.page-template-a-nossa-agua .fastio-products {
     padding-top: 10rem;
     padding-bottom: 4rem; }

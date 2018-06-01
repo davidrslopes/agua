@@ -45,7 +45,7 @@ if ( is_front_page() ) : ?>
 // ******************* The Mobile Only Main Pages Footer ******************* //
 elseif(is_page() && wp_is_mobile()): ?>
 <div class="wrapper main-footer-wrapper" id="wrapper-footer-main">
-	<footer class="main-footer <?php echo esc_attr( $container ); ?>" id="colophon">
+	<footer class="main-footer <?php if(!wp_is_mobile()){echo esc_attr( $container );}else{echo "container-fluid";}?>" id="colophon">
 		<div class="row">
 			<div class="col-9">
 				<!-- Footer Menu -->
