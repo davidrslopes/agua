@@ -11521,7 +11521,7 @@ body.page-template-default .fastio-common-pages #tab-contatos .entry-content {
 
 body.page-template-default .fastio-common-pages #tab-contatos .contactos {
   padding-top: 115px;
-  color: #b2eaff;
+  color: #00aeef;
   font-size: 14px;
   opacity: 1 !important; }
 
@@ -11569,7 +11569,11 @@ body.page-template-default .wpcf7-form br {
 
 body.page-template-default .wpcf7-form input, body.page-template-default .wpcf7-form textarea {
   border-color: #00aeef;
-  border-radius: .89rem; }
+  border-radius: .66rem;
+  padding: .20rem .30rem; }
+
+body.page-template-default .wpcf7-form textarea {
+  max-height: 300px; }
 
 body.page-template-default .wpcf7-form .col-6 {
   padding-left: 0px;
