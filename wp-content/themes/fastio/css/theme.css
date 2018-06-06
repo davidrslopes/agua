@@ -10767,11 +10767,9 @@ body.page-template-a-nossa-agua .fastio-benefits .decor {
   position: absolute;
   z-index: 10; }
   body.page-template-a-nossa-agua .fastio-benefits .decor.left {
-    margin-left: -5rem;
     left: 0;
     bottom: 0rem; }
   body.page-template-a-nossa-agua .fastio-benefits .decor.right {
-    margin-right: -5rem;
     right: 0;
     bottom: 5rem; }
   body.page-template-a-nossa-agua .fastio-benefits .decor img.decor-item {
@@ -10783,7 +10781,7 @@ body.page-template-a-nossa-agua .fastio-benefits .container {
   background-color: #b2eaff;
   color: white; }
   body.page-template-a-nossa-agua .fastio-benefits .container article p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     margin: 0; }
 
 /* ############################## A FAMÍLIA ############################## */
@@ -11504,9 +11502,6 @@ body.page-template-default .fastio-common-pages .lateralimage {
   padding-top: 40px;
   padding-right: 0px; }
 
-body.page-template-default .fastio-common-pages .lateralimage img {
-  height: 100%; }
-
 body.page-template-default .fastio-common-pages #tab-contatos {
   opacity: 1 !important; }
 
@@ -11567,13 +11562,14 @@ body.page-template-default .wpcf7-form {
 body.page-template-default .wpcf7-form br {
   display: none; }
 
-body.page-template-default .wpcf7-form input, body.page-template-default .wpcf7-form textarea {
-  border-color: #00aeef;
+body.page-template-default .wpcf7-form input,
+body.page-template-default .wpcf7-form textarea {
+  border-color: #b2eaff;
   border-radius: .66rem;
   padding: .20rem .30rem; }
 
 body.page-template-default .wpcf7-form textarea {
-  max-height: 300px; }
+  height: 8rem; }
 
 body.page-template-default .wpcf7-form .col-6 {
   padding-left: 0px;
@@ -11584,27 +11580,17 @@ body.page-template-default .wpcf7-form span.label_form_contact_page {
   display: inline-block;
   font-size: 14px; }
 
-body.page-template-default .wpcf7-form .btnsubmeter {
-  width: 35%; }
-
-body.page-template-default .wpcf7-form .btnanexar {
-  width: 33%;
-  margin-right: 25px; }
-
 body.page-template-default .wpcf7-form .btnanexar label.btn {
-  height: 35px;
-  border-color: #00aeef;
-  border-radius: .89rem;
+  border-color: #b2eaff;
+  border-radius: .66rem;
+  padding: .20rem .30rem;
   background-color: white;
-  color: #00aeef; }
+  color: #b2eaff; }
 
 body.page-template-default .wpcf7-form .btnsubmeter input {
   background: #00aeef;
   color: white;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-right: 6px;
-  padding-left: 6px; }
+  padding: .20rem .30rem; }
 
 body.page-template-default .wpcf7-form .wpcf7-validation-errors {
   color: #00aeef; }
@@ -11705,8 +11691,7 @@ body.page-template-hot-wheels-subpages {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  /* CUSTOMIZE THE CAROUSEL
-            -------------------------------------------------- */
+  /* CUSTOMIZE THE CAROUSEL -------------------------------------------------- */
   /* Carousel base class */ }
   body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 {
     padding-top: 260px; }
@@ -11914,7 +11899,8 @@ body.page-template-barbie {
     text-align: center;
     font-size: 35px;
     background-color: #fff; }
-  body.page-template-barbie .faa-float.animated, body.page-template-barbie .faa-float.animated-hover:hover, body.page-template-barbie .faa-parent.animated-hover:hover > .faa-float {
+  body.page-template-barbie .faa-float.animated, body.page-template-barbie .faa-float.animated-hover:hover,
+  body.page-template-barbie .faa-parent.animated-hover:hover > .faa-float {
     -webkit-animation: pulse 2s infinite;
     animation: pulse 2s infinite; }
 
@@ -11940,15 +11926,14 @@ body.page-template-barbie {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); } }
 
-/* ############################## BARBIE SUBPAGES############################## */
+/* ############################## BARBIE SUBPAGES ############################## */
 body.page-template-barbie-subpages {
   background: url(../img/Fundo_Barbie_Criativa1.png) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  /* CUSTOMIZE THE CAROUSEL
-            -------------------------------------------------- */
+  /* CUSTOMIZE THE CAROUSEL -------------------------------------------------- */
   /* Carousel base class */ }
   body.page-template-barbie-subpages section.fastio-barbie-subpages-1 {
     padding-top: 260px; }
@@ -12139,7 +12124,10 @@ body.page-template-barbie-subpages {
   body.page-template-barbie-subpages .carousel-control-prev {
     left: -60px;
     opacity: 1; }
-  body.page-template-barbie-subpages .carousel-control-next:focus, body.page-template-barbie-subpages .carousel-control-next:hover, body.page-template-barbie-subpages .carousel-control-prev:focus, body.page-template-barbie-subpages .carousel-control-prev:hover {
+  body.page-template-barbie-subpages .carousel-control-next:focus,
+  body.page-template-barbie-subpages .carousel-control-next:hover,
+  body.page-template-barbie-subpages .carousel-control-prev:focus,
+  body.page-template-barbie-subpages .carousel-control-prev:hover {
     opacity: 1; }
 
 /* ############################## RESPONSIVE ############################## */
@@ -12434,8 +12422,6 @@ body.page-template-barbie-subpages {
     padding-top: 65px;
     padding-bottom: 50px;
     padding-left: 65px; }
-  body.page-template-default .wpcf7-form .btnanexar {
-    width: 50%; }
   body.page-template-default .wpcf7-form .btnanexar span {
     font-size: 14px;
     display: block;
@@ -12499,7 +12485,9 @@ body.page-template-barbie-subpages {
   body.page-template-hot-wheels-subpages #hotwheelssubpagescarousel {
     height: auto; }
   body.page-template-hot-wheels-subpages .carousel {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .wpcf7-form textarea {
+    height: 4rem; } }
 
 @media (min-width: 576px) and (max-width: 767.99px) {
   body.page-template-a-familia .decor-line {
@@ -12509,7 +12497,12 @@ body.page-template-barbie-subpages {
     width: 100%;
     display: block; }
   body.page-template-hot-wheels-subpages .fastio-images-hero {
-    text-align: center; } }
+    text-align: center; }
+  footer.main-footer {
+    font-size: 1.05rem !important; }
+    footer.main-footer .fastio-footer-lang .wpml-ls {
+      left: auto;
+      right: 15px; } }
 
 @media (min-width: 1200px) {
   .fastio-nav {

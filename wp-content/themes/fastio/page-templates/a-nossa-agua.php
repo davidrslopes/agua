@@ -34,7 +34,7 @@ if(!empty($hero_1)):
 <!-- ******************* The Products Section ******************* -->
 <?php 
 	$products = get_field('a-nossa-agua-section-2');
-	$gallery_options = 'size="full" columns="6" link="none"';
+	$gallery_options = 'size="full" columns="4" link="none"';
 	while( have_rows('a-nossa-agua-section-2') ): the_row(); 
 		if( get_sub_field('plastic',false) ):
 			$plastic_gallery = '[gallery ids="' . implode(',', get_sub_field('plastic',false)) . '" '.$gallery_options.' ]';
@@ -51,14 +51,14 @@ if(!empty($hero_1)):
 <section class="fastio-products" data-aos="fade">
 	<div class="container">
 		<div class="row">
-			<div class="col-4 col-md-2 offset-md-1">
+			<div class="col-4 col-sm-2 offset-sm-2 col-lg-2 offset-lg-1">
 				<div class="list-group" id="list-tab" role="tablist" data-aos="fade-up">
-					<a class="list-group-item list-group-item-action active" id="nav-tab-plastic" data-toggle="list" href="#tab-plastic" role="tab" aria-controls="tab-plastic"><?php _e( 'Plástico', 'understrap' ); ?></a>
+					<a class="list-group-item list-group-item-action active" id="nav-tab-plastic" data-toggle="list" href="#tab-plastic" role="tab" aria-controls="tab-plastic"><?php _e( 'PET', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-glass" data-toggle="list" href="#tab-glass" role="tab" aria-controls="tab-glass"><?php _e( 'Vidro', 'understrap' ); ?></a>
 					<a class="list-group-item list-group-item-action" id="nav-tab-packs" data-toggle="list" href="#tab-packs" role="tab" aria-controls="tab-packs"><?php _e( 'Packs', 'understrap' ); ?></a>
 				</div>
 			</div>
-			<div class="col-8 col-md-9">
+			<div class="col-8 col-md-8">
 				<div class="tab-content" data-aos="fade-up">
 					<div class="tab-pane fade show active" id="tab-plastic" role="tabpanel" aria-labelledby="tab-plastic">
 						<?php echo do_shortcode( $plastic_gallery ); ?>
