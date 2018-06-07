@@ -440,15 +440,18 @@ nav.navbar.absolute-top{
 }
 
 // Home FullScreen Vídeo 
-.fastio-video {
+.fastio-video{
 	position: fixed;
-	right: 0;
-	bottom: 0;
+	top: 50%; 
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
 	height: auto;
 	z-index: -100;
+	overflow: hidden;
 }
 // Home Title
 .fastio-home-title{
