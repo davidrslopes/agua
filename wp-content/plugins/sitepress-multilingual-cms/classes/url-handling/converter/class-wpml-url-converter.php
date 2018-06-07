@@ -145,7 +145,7 @@ class WPML_URL_Converter {
 			}
 		}
 
-		return $this->slash_helper->match_trailing_slash_to_reference( $new_url, $url );
+		return $new_url;
 	}
 
 	/**
@@ -155,6 +155,10 @@ class WPML_URL_Converter {
 	 * @return string
 	 */
 	public function get_language_from_url( $url ) {
+		$http_referer_factory = new WPML_URL_HTTP_Referer_Factory();
+		$http_referer = $http_referer_factory->create();
+		$url = $http_referer->get_url( $url );
+
 		if ( ! ( $language = $this->lang_param->lang_by_param( $url ) ) ) {
 			$language = $this->get_strategy()->get_lang_from_url_string( $url );
 		}
@@ -164,7 +168,7 @@ class WPML_URL_Converter {
 
 	/**
 	 * @param string $url
-	 * @param string $langauge
+	 * @param string $language
 	 *
 	 * @return string
 	 */

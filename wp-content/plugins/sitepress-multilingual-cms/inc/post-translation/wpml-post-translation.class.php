@@ -1,7 +1,4 @@
 <?php
-require dirname( __FILE__ ) . '/wpml-post-duplication.class.php';
-require dirname( __FILE__ ) . '/wpml-post-synchronization.class.php';
-require_once dirname( __FILE__ ) . '/wpml-wordpress-actions.class.php';
 
 /**
  * Class WPML_Post_Translation
@@ -52,9 +49,13 @@ abstract class WPML_Post_Translation extends WPML_Element_Translation {
 	 * @used-by \SitePress::option_sticky_posts which uses this function to filter the sticky posts array after
 	 *                                          having removed WPML per-language filtering on the sticky posts option.
 	 *
-	 * @return int[]
+	 * @return int[]|false
 	 */
-	public function pre_option_sticky_posts_filter( $posts, &$sitepress ) {
+	public function pre_option_sticky_posts_filter( $posts, SitePress $sitepress ) {
+		if ( 'all' === $sitepress->get_current_language() ) {
+			return false;
+		}
+
 		/** @var array $posts */
 		$posts                       = $posts ? $posts : get_option( 'sticky_posts' );
 		$this->filtered_sticky_posts = array();
@@ -315,6 +316,7 @@ abstract class WPML_Post_Translation extends WPML_Element_Translation {
 		$skip_sitepress_actions     = array_key_exists( 'skip_sitepress_actions', $_POST );
 		$is_post_a_revision         = 'revision' === $post->post_type;
 		$is_scheduled_to_be_trashed = get_post_meta( $post->ID, '_wp_trash_meta_status', true );
+		$is_add_meta_action         = isset( $_POST['action'] ) && 'add-meta' === $_POST['action'];
 
 		return $this->is_translated_type( $post->post_type )
 		       && ! ( $is_auto_draft
@@ -324,6 +326,7 @@ abstract class WPML_Post_Translation extends WPML_Element_Translation {
 		              || $is_saving_a_revision
 		              || $is_post_a_revision
 		              || $is_scheduled_to_be_trashed
+		              || $is_add_meta_action
 		              || $is_untrashing );
 	}
 

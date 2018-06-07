@@ -6,7 +6,10 @@ class WPML_Register_String_Filter extends WPML_Displayed_String_Filter {
 	 */
 	private $excluded_contexts = array();
 
-	private $registered_string_cache = array();
+	/**
+	 * @var WPML_WP_Cache
+	 */
+	private $registered_string_cache;
 	
 	/** @var  WPML_ST_String_Factory $string_factory */
 	private $string_factory;
@@ -46,6 +49,7 @@ class WPML_Register_String_Filter extends WPML_Displayed_String_Filter {
 		$this->string_factory    = &$string_factory;
 		$this->excluded_contexts = $excluded_contexts;
 		$this->save_strings      = $save_strings;
+		$this->registered_string_cache = new WPML_WP_Cache( 'WPML_Register_String_Filter' );
 	}
 
 	public function translate_by_name_and_context( $untranslated_text, $name, $context = '', &$has_translation = null ) {
@@ -58,7 +62,7 @@ class WPML_Register_String_Filter extends WPML_Displayed_String_Filter {
 			$has_translation = false;
 		}
 
-		if ( ! $translation && $untranslated_text ) {
+		if ( ! $translation && $this->can_register_string( $untranslated_text, $name, $context ) ) {
 			list ($name, $domain, $gettext_content) = $this->transform_parameters( $name, $context );
 			list( $name, $domain ) = array_map( array( $this, 'truncate_long_string' ), array( $name, $domain ) );
 
@@ -69,6 +73,10 @@ class WPML_Register_String_Filter extends WPML_Displayed_String_Filter {
 		}
 
 		return $res;
+	}
+
+	private function can_register_string( $original_value, $name, $context ) {
+		return $original_value || ( $name && md5( '' ) !== $name && $context );
 	}
 
 	public function force_saving_of_autoregistered_strings() {
@@ -134,54 +142,40 @@ class WPML_Register_String_Filter extends WPML_Displayed_String_Filter {
 			$string_id = $this->save_string( $value, $allow_empty_value, $source_lang, $domain, $context, $name );
 		}
 
-		if ( ! isset( $this->name_cache[ $key ] ) ) {
-			$this->name_cache[ $key ] = $value;
-		}
-		
-		$this->found_cache[ $domain. $source_lang ][ $name ] = array( $value, true );
-		$this->cache_needs_saving = true;
-
-
 		return $string_id;
 	}
-	
+
+	/**
+	 * @param string $domain
+	 * @param string $context
+	 * @param string $name
+	 *
+	 * @return array|false
+	 */
 	private function get_registered_string( $domain, $context, $name ) {
-		
-		if ( ! isset( $this->registered_string_cache[ $domain ] ) ) {
-			// preload all the strings for this domain.
-
-			$query = $this->wpdb->prepare( "SELECT id, value, gettext_context, name FROM {$this->wpdb->prefix}icl_strings WHERE context=%s",
-										   $domain );
-			$res   = $this->wpdb->get_results( $query );
-			$this->registered_string_cache[ $domain ] = array();
-			
-			foreach( $res as $string ) {
-				$this->registered_string_cache[ $domain ][ md5( $domain . $string->name . $string->gettext_context ) ] = array( 'id'    => $string->id,
-																															    'value' => $string->value
-																															  );
-			}
-		}
-
-		$key = md5( $domain . $name . $context );
-		if ( ! isset( $this->registered_string_cache[ $domain ][ $key ] ) ) {
-			$this->registered_string_cache[ $domain ][ $key ] = null;
-		}
-		return $this->registered_string_cache[ $domain ][ $key ];
+		$key   = md5( $domain . $name . $context );
+		$found = false;
+		return $this->get_domain_cache( $domain )->get( $key, $found );
 	}
-	
-	
 
 	private function save_string( $value, $allow_empty_value, $language, $domain, $context, $name ) {
 		if ( $allow_empty_value || 0 !== strlen( $value ) ) {
-			$this->wpdb->insert( $this->wpdb->prefix . 'icl_strings', array(
+
+			$args = array(
 				'language'                => $language,
 				'context'                 => $domain,
 				'gettext_context'         => $context,
 				'domain_name_context_md5' => md5( $domain . $name . $context ),
 				'name'                    => $name,
 				'value'                   => $value,
-				'status'                  => ICL_TM_NOT_TRANSLATED,
-			) );
+				'status'                  => ICL_TM_NOT_TRANSLATED
+			);
+
+			if( class_exists( 'WPML_TM_Translation_Priorities' ) ){
+				$args['translation_priority'] = WPML_TM_Translation_Priorities::DEFAULT_TRANSLATION_PRIORITY_VALUE_SLUG;
+			}
+
+			$this->wpdb->insert( $this->wpdb->prefix . 'icl_strings', $args );
 			$string_id = $this->wpdb->insert_id;
 			if ( $string_id === 0 ) {
 				throw new Exception( 'Could not add String with arguments: value: ' . $value . ' allow_empty_value:' . $allow_empty_value . ' language: ' . $language );
@@ -190,9 +184,12 @@ class WPML_Register_String_Filter extends WPML_Displayed_String_Filter {
 			icl_update_string_status( $string_id );
 			
 			$key = md5( $domain . $name . $context );
-			$this->registered_string_cache[ $domain ][ $key ] = array( 'id'    => $string_id,
-																	   'value' => $value
-																	 );
+			$cached_value = array(
+				'id'    => $string_id,
+				'value' => $value
+			);
+
+			$this->get_domain_cache( $domain )->set( $key, $cached_value );
 		} else {
 			$string_id = 0;
 		}
@@ -258,5 +255,38 @@ class WPML_Register_String_Filter extends WPML_Displayed_String_Filter {
 		}
 
 		return $this->save_strings;
+	}
+
+	/**
+	 * @param string $domain
+	 *
+	 * @return WPML_WP_Cache
+	 */
+	private function get_domain_cache( $domain ) {
+		$found = false;
+		$this->registered_string_cache->get( $domain, $found );
+
+		if ( ! $found ) {
+			// preload all the strings for this domain.
+			$query = $this->wpdb->prepare( "SELECT id, value, gettext_context, name FROM {$this->wpdb->prefix}icl_strings WHERE context=%s",
+			                               $domain );
+			$res   = $this->wpdb->get_results( $query );
+
+			$domain_cache = new WPML_WP_Cache( 'WPML_Register_String_Filter::' . $domain );
+
+			foreach( $res as $string ) {
+				$key          = md5( $domain . $string->name . $string->gettext_context );
+				$cached_value = array(
+					'id'    => $string->id,
+					'value' => $string->value
+				);
+
+				$domain_cache->set( $key, $cached_value );
+			}
+
+			$this->registered_string_cache->set( $domain, $domain_cache );
+		}
+
+		return $this->registered_string_cache->get( $domain, $found );
 	}
 }

@@ -1,7 +1,16 @@
 <?php
 
 class WPML_Admin_Language_Switcher {
-    
+
+	private $flag_kses_tags = array(
+		'img' => array(
+			'src'    => array(),
+			'class'  => array(),
+			'height' => array(),
+			'width'  => array(),
+		)
+	);
+
     function render() {
         /** @var $wp_admin_bar WP_Admin_Bar */
         global $wpdb, $wp_admin_bar, $pagenow, $mode, $sitepress;
@@ -121,8 +130,8 @@ class WPML_Admin_Language_Switcher {
                     unset( $query_vars[ 'post' ], $query_vars[ 'action' ] );
                 }
             } elseif ( $is_tax ) {
-                if ( isset( $translations[ $lang[ 'code' ] ] ) && isset( $translations[ $lang[ 'code' ] ]->element_id ) ) {
-                    $query_vars[ 'tag_ID' ] = $translations[ $lang[ 'code' ] ]->element_id;
+                if ( isset( $translations[ $lang[ 'code' ] ] ) && isset( $translations[ $lang[ 'code' ] ]->term_id ) ) {
+                    $query_vars[ 'tag_ID' ] = $translations[ $lang[ 'code' ] ]->term_id;
                 } else {
                     $query_vars[ 'trid' ]        = $trid;
                     $query_vars[ 'source_lang' ] = $current_language;
@@ -163,7 +172,7 @@ class WPML_Admin_Language_Switcher {
                 'url'     => $link_url . '&admin_bar=1',
                 'current' => $lang[ 'code' ] == $current_language,
                 'anchor'  => $lang[ 'display_name' ],
-                'flag'    => '<img class="icl_als_iclflag" src="' . $flag_url . '" alt="' . $lang[ 'code' ] . '" width="18" height="12" />'
+                'flag'    => '<img class="icl_als_iclflag" src="' . esc_url( $flag_url ) . '" alt="' . esc_attr( $lang[ 'code' ] ) . '" width="18" height="12" />'
             );
     
         }
@@ -199,7 +208,7 @@ class WPML_Admin_Language_Switcher {
         // Current language
         $wp_admin_bar->add_menu( array(
                                       'parent' => false, 'id' => $parent,
-                                      'title'  => $lang[ 'flag' ] . '&nbsp;' . $lang[ 'anchor' ] . '&nbsp;&nbsp;<img title="' . __( 'help', 'sitepress' ) . '" id="wpml_als_help_link" src="' . ICL_PLUGIN_URL . '/res/img/question1.png" alt="' . __( 'help', 'sitepress' ) . '" width="16" height="16"/>',
+                                      'title'  => wp_kses( $lang[ 'flag' ], $this->flag_kses_tags ) . '&nbsp;' . esc_html( $lang[ 'anchor' ] ) . '&nbsp;&nbsp;<i title="' . esc_attr__( 'help', 'sitepress' ) . '" id="wpml_als_help_link" class="otgs-ico-help"></i>',
                                       'href'   => false, 'meta' => array(
                 'title' => __( 'Showing content in:', 'sitepress' ) . ' ' . $lang[ 'anchor' ],
             )
@@ -210,7 +219,7 @@ class WPML_Admin_Language_Switcher {
                 if ( $code == $current_language )
                     continue;
                 $wp_admin_bar->add_menu( array(
-                                              'parent' => $parent, 'id' => $parent . '_' . $code, 'title' => $lang[ 'flag' ] . '&nbsp;' . $lang[ 'anchor' ], 'href' => $lang[ 'url' ], 'meta' => array(
+                                              'parent' => $parent, 'id' => $parent . '_' . $code, 'title' => wp_kses( $lang[ 'flag' ], $this->flag_kses_tags ) . '&nbsp;' . esc_html( $lang[ 'anchor' ] ), 'href' => $lang[ 'url' ], 'meta' => array(
                         'title' => __( 'Show content in:', 'sitepress' ) . ' ' . $lang[ 'anchor' ],
                     )
                                          ) );
@@ -224,7 +233,7 @@ class WPML_Admin_Language_Switcher {
     {
         ?>
             <div id="icl_als_help_popup" class="icl_cyan_box icl_pop_info">
-                <img class="icl_pop_info_but_close" align="right" src="<?php echo ICL_PLUGIN_URL . '/res/img/ico-close.png'?>" width="12" height="12" alt="x" />
+	              <span class="icl_pop_info_but_close otgs-ico-close"></span>
                 <?php echo sprintf( __( 'This language selector determines which content to display. You can choose items in a specific language or in all languages. To change the language of the WordPress Admin interface, go to <a%s>your profile</a>.', 'sitepress' ), ' href="' . admin_url( 'profile.php' ) . '"' );?>
             </div>
         <?php
