@@ -154,7 +154,7 @@ else:
 </div><!-- wrapper end -->
 <?php endif; ?>
 
-</div><!-- #page we need this extra closing tag here -->
+</div>
 
 <?php wp_footer(); ?>
 
