@@ -10384,36 +10384,53 @@ body.page-template-default .fastio-hero header.fastio-video-header {
       display: inline-block;
       list-style: circle;
       list-style-position: outside;
-      color: white;
-      color: white;
+      color: #FFFFFF;
       background: transparent !important;
       border: 0 !important; }
       .home-footer-wrapper footer .wpml-ls ul li {
         list-style-type: circle;
         display: list-item;
         background: transparent !important;
-        border: 0 !important; }
+        border: 0 !important;
+        color: #FFFFFF; }
+        .home-footer-wrapper footer .wpml-ls ul li:hover, .home-footer-wrapper footer .wpml-ls ul li:focus {
+          color: #00aeef; }
         .home-footer-wrapper footer .wpml-ls ul li a {
           display: initial;
+          position: relative;
           padding: 0;
           font-size: 90%;
-          color: white;
           background: transparent !important;
           border: 0 !important;
-          transition: all 250ms ease-in; }
+          transition: all 250ms ease-in;
+          color: white; }
           .home-footer-wrapper footer .wpml-ls ul li a:hover, .home-footer-wrapper footer .wpml-ls ul li a:focus {
             color: #00aeef;
             background: transparent !important; }
           .home-footer-wrapper footer .wpml-ls ul li a:after {
             content: none !important; }
+          .home-footer-wrapper footer .wpml-ls ul li a span {
+            position: absolute;
+            bottom: 3px;
+            display: block; }
         .home-footer-wrapper footer .wpml-ls ul li ul.wpml-ls-sub-menu {
           bottom: 100%;
           top: unset;
-          padding-bottom: 0.150rem; }
-          .home-footer-wrapper footer .wpml-ls ul li ul.wpml-ls-sub-menu li > a {
-            padding: 0.150rem 0;
-            display: block;
+          padding-bottom: 0.150rem;
+          color: #00aeef; }
+          .home-footer-wrapper footer .wpml-ls ul li ul.wpml-ls-sub-menu li {
             color: #00aeef; }
+            .home-footer-wrapper footer .wpml-ls ul li ul.wpml-ls-sub-menu li:hover, .home-footer-wrapper footer .wpml-ls ul li ul.wpml-ls-sub-menu li:focus {
+              color: #FFFFFF; }
+            .home-footer-wrapper footer .wpml-ls ul li ul.wpml-ls-sub-menu li a {
+              padding: 0.150rem 0;
+              display: block;
+              color: #00aeef;
+              position: relative; }
+              .home-footer-wrapper footer .wpml-ls ul li ul.wpml-ls-sub-menu li a:hover, .home-footer-wrapper footer .wpml-ls ul li ul.wpml-ls-sub-menu li a:focus {
+                color: #00aeef; }
+              .home-footer-wrapper footer .wpml-ls ul li ul.wpml-ls-sub-menu li a span {
+                bottom: 12px; }
   .home-footer-wrapper footer .fastio-home-social {
     margin: 0;
     padding: 0; }
@@ -12206,7 +12223,7 @@ body.page-template-barbie-subpages {
         .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul {
           list-style: circle;
           list-style-position: outside;
-          color: inherit;
+          color: #00aeef;
           padding: 0;
           margin: 0;
           background: transparent !important;
@@ -12217,7 +12234,10 @@ body.page-template-barbie-subpages {
             padding: 0;
             margin: 0;
             background: transparent !important;
-            border: 0 !important; }
+            border: 0 !important;
+            color: #00aeef; }
+            .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li:hover, .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li:focus {
+              color: #00aeef; }
             .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li a {
               margin: 0;
               padding: 0;
@@ -12237,12 +12257,18 @@ body.page-template-barbie-subpages {
             .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li ul.wpml-ls-sub-menu {
               bottom: 100%;
               top: unset;
-              padding-bottom: 0.150rem; }
+              padding-bottom: 0.150rem;
+              color: #00aeef; }
+              .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li ul.wpml-ls-sub-menu li {
+                color: #00aeef; }
               .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li ul.wpml-ls-sub-menu li > a {
                 padding: 0.150rem 0;
-                display: block; }
+                display: block;
+                color: #00aeef; }
+                .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li ul.wpml-ls-sub-menu li > a:hover, .main-footer-wrapper footer .fastio-footer-lang .wpml-ls ul li ul.wpml-ls-sub-menu li > a:focus {
+                  color: #00aeef; }
   .home-footer-wrapper footer .wpml-ls {
-    padding-right: 80px; }
+    padding-right: 90px; }
   body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1,
   body.page-template-a-familia .fastio-video-hero header.fastio-video-header h1 {
     font-size: 2rem !important;
@@ -12258,10 +12284,16 @@ body.page-template-barbie-subpages {
   .home-footer-wrapper {
     line-height: 1.5rem;
     bottom: 0; }
-    .home-footer-wrapper footer .wpml-ls > ul > li > a {
+    .home-footer-wrapper footer .wpml-ls > ul > li a {
       font-size: 0.66rem; }
+      .home-footer-wrapper footer .wpml-ls > ul > li a:hover, .home-footer-wrapper footer .wpml-ls > ul > li a:focus {
+        color: #00aeef; }
+    .home-footer-wrapper footer .wpml-ls > ul > li ul.wpml-ls-sub-menu {
+      color: #00aeef; }
     .home-footer-wrapper i {
       font-size: 1rem; }
+    .home-footer-wrapper .fastio-home-social > li > a {
+      line-height: 8px; }
   body.page-template-historiafastio {
     font-size: 1.05rem; }
     body.page-template-historiafastio .entry-title {
@@ -12493,6 +12525,28 @@ body.page-template-barbie-subpages {
     height: 4rem; } }
 
 @media (min-width: 576px) and (max-width: 767.99px) {
+  footer.main-footer {
+    font-size: 1.05rem !important; }
+    footer.main-footer .fastio-footer-lang .wpml-ls {
+      left: auto;
+      right: 15px; }
+  .fastio-home-title,
+  .fastio-hero header > h1 {
+    font-size: 3rem !important;
+    line-height: 3rem !important; }
+  .home-footer-wrapper {
+    line-height: 1.5rem;
+    bottom: 0; }
+    .home-footer-wrapper footer .wpml-ls {
+      padding-right: 110px; }
+      .home-footer-wrapper footer .wpml-ls ul > li a {
+        font-size: 0.8rem; }
+      .home-footer-wrapper footer .wpml-ls ul > li ul.wpml-ls-sub-menu {
+        color: #00aeef; }
+    .home-footer-wrapper i {
+      font-size: 1.35rem; }
+    .home-footer-wrapper .fastio-home-social > li > a {
+      line-height: 20px; }
   body.page-template-a-familia .decor-line {
     top: 16%; }
   #barbiesubpagescarousel .carousel-item img,
@@ -12500,12 +12554,7 @@ body.page-template-barbie-subpages {
     width: 100%;
     display: block; }
   body.page-template-hot-wheels-subpages .fastio-images-hero {
-    text-align: center; }
-  footer.main-footer {
-    font-size: 1.05rem !important; }
-    footer.main-footer .fastio-footer-lang .wpml-ls {
-      left: auto;
-      right: 15px; } }
+    text-align: center; } }
 
 @media (min-width: 1200px) {
   .fastio-nav {

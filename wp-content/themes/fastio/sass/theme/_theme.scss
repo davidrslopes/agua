@@ -248,8 +248,7 @@ html,body{
 				display: inline-block;
 				list-style: circle;
 				list-style-position: outside;
-				color: white;
-				color: white;
+				color: #FFFFFF;
 				background: transparent!important;
 				border: 0!important;
 				li{
@@ -257,14 +256,20 @@ html,body{
 					display: list-item;
 					background: transparent!important;
 					border: 0!important;
+					color: #FFFFFF;
+					&:hover,
+					&:focus{
+						color: $primary;
+					}
 					a{
 						display: initial;
+						position: relative;
 						padding: 0;
 						font-size:90%;
-						color:white;
 						background: transparent!important;
 						border: 0!important;
 						@include transition(all 250ms ease-in);
+						color:white;
 						&:hover,
 						&:focus{
 							color:$primary;
@@ -273,16 +278,38 @@ html,body{
 						&:after{
 							content: none!important;
 						}
+						span{
+							position: absolute;
+							bottom: 3px;
+							display: block;
+						}
 					}
 					ul.wpml-ls-sub-menu{
 						bottom: 100%;
 						top: unset;
 						padding-bottom: 0.150rem;
-						li > a{
-							padding: 0.150rem 0;
-							display: block;
-							color:#00aeef;
+						color:$primary;
+						li{
+							color:$primary;
+							&:hover,
+							&:focus{
+								color: #FFFFFF;
+							}
+							a{
+								padding: 0.150rem 0;
+								display: block;
+								color:$primary;
+								position: relative;
+								&:hover,
+								&:focus{
+									color: $primary;
+								}
+								span{
+									bottom: 12px;
+								}
+							}
 						}
+						
  					}
 				} 
 			}
@@ -1975,7 +2002,7 @@ body.page-template-barbie-subpages{
 				ul{
 					list-style: circle;
 					list-style-position: outside;
-					color:inherit;
+					color:$primary;
 					padding:0;
 					margin: 0;
 					background: transparent!important;
@@ -1987,6 +2014,11 @@ body.page-template-barbie-subpages{
 						margin: 0;
 						background: transparent!important;
 						border: 0!important;
+						color:$primary;
+						&:hover,
+						&:focus{
+							color:$primary;
+						}
 						a{
 							margin: 0;
 							padding: 0;
@@ -2012,9 +2044,18 @@ body.page-template-barbie-subpages{
 							bottom: 100%;
 							top: unset;
 							padding-bottom: 0.150rem;
+							color: $primary;
+							li{
+								color: $primary;
+							}
 							li > a{
 								padding: 0.150rem 0;
 								display: block;
+								color:$primary;
+								&:hover,
+								&:focus{
+									color:$primary;
+								}
 							}
  						}
 					} 
@@ -2024,7 +2065,7 @@ body.page-template-barbie-subpages{
 	}
         
 	.home-footer-wrapper footer .wpml-ls{
-		padding-right: 80px;
+		padding-right: 90px;
 	}
 	
 	body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1,
@@ -2045,11 +2086,23 @@ body.page-template-barbie-subpages{
 	.home-footer-wrapper{
 		line-height: 1.5rem;
 		bottom: 0;
-		footer .wpml-ls > ul > li > a{
-			font-size:0.66rem;
-		}
+		footer .wpml-ls > ul > li{
+			a{
+				font-size:0.66rem;
+				&:hover,
+				&:focus{
+					color: $primary;
+				}
+			}
+			ul.wpml-ls-sub-menu{
+				color:$primary;
+			}
+		} 
 		i{
 			font-size: 1rem;
+		}
+		.fastio-home-social > li > a{
+				line-height: 8px;
 		}
 	}
 	// DESDE 1979
@@ -2418,9 +2471,46 @@ body.page-template-barbie-subpages{
 }
 //SM - TABLET ONLY!
 @include media-breakpoint-only(sm){
+	//COMMON
+	footer.main-footer{
+		font-size:1.05rem!important;
+		.fastio-footer-lang .wpml-ls{
+			left:auto;
+			right: 15px;
+		}
+	}
+	//HOME
+	.fastio-home-title,
+	.fastio-hero header > h1{
+		font-size: 3rem!important;
+		line-height: 3rem!important;
+	}
+	.home-footer-wrapper{
+		line-height: 1.5rem;
+		bottom: 0;
+		footer .wpml-ls{
+			padding-right: 110px;
+			ul > li{
+				a{
+					font-size:0.8rem;
+				}
+				ul.wpml-ls-sub-menu{
+					color:$primary;
+				}
+			}
+		}
+		i{
+			font-size: 1.35rem;
+		}
+		.fastio-home-social > li > a{
+			line-height: 20px;
+		}
+	}
+	//A FAMILIA
 	body.page-template-a-familia .decor-line{
 		top: 16%;
 	}
+	//BARBIE & HOTWHEELS
 	#barbiesubpagescarousel,
 	#hotwheelssubpagescarousel{
 		.carousel-item img{
@@ -2430,13 +2520,6 @@ body.page-template-barbie-subpages{
 	}
 	body.page-template-hot-wheels-subpages .fastio-images-hero{
 		text-align: center;
-	}
-	footer.main-footer{
-		font-size:1.05rem!important;
-		.fastio-footer-lang .wpml-ls{
-			left:auto;
-			right: 15px;
-		}
 	}
 }
 //LG AND UP ONLY - DESKTOP
