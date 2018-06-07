@@ -142,10 +142,10 @@ if(!empty($hero_2)):
 			<img <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['left-3']['url']; ?>" alt="<?php echo $decor['left-3']['title']; ?>">
 			<?php endif; ?>
 			<?php if(!empty($decor['left-4'])): ?>
-			<img class="d-none d-sm-block" <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['left-4']['url']; ?>" alt="<?php echo $decor['left-4']['title']; ?>">
+			<img class="d-none d-lg-block" <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['left-4']['url']; ?>" alt="<?php echo $decor['left-4']['title']; ?>">
 			<?php endif; ?>
 			<?php if(!empty($decor['left-5'])): ?>
-			<img class="d-none d-sm-block" <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['left-5']['url']; ?>" alt="<?php echo $decor['left-5']['title']; ?>">
+			<img class="d-none d-lg-block" <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['left-5']['url']; ?>" alt="<?php echo $decor['left-5']['title']; ?>">
 			<?php endif; ?>
 		</div>
 		<?php endif;?>
@@ -162,10 +162,10 @@ if(!empty($hero_2)):
    		<?php if(!empty($decor)): ?>
     	<div class="decor right">
     		<?php if(!empty($decor['right-1'])): ?>
-			<img class="d-none d-sm-block" <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['right-1']['url']; ?>" alt="<?php echo $decor['right-1']['title']; ?>">
+			<img class="d-none d-lg-block" <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['right-1']['url']; ?>" alt="<?php echo $decor['right-1']['title']; ?>">
 			<?php endif; ?>
 			<?php if(!empty($decor['right-2'])): ?>
-			<img class="d-none d-sm-block" <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['right-2']['url']; ?>" alt="<?php echo $decor['right-2']['title']; ?>">
+			<img class="d-none d-lg-block" <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['right-2']['url']; ?>" alt="<?php echo $decor['right-2']['title']; ?>">
 			<?php endif; ?>
 			<?php if(!empty($decor['right-3'])): ?>
 			<img <?php echo $decor_aos; ?>class="decor-item" src="<?php echo $decor['right-3']['url']; ?>" alt="<?php echo $decor['right-3']['title']; ?>">

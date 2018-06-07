@@ -55,7 +55,7 @@ function custom_gallery_grid($output = '', $attrs, $instance) {
 	if(wp_is_mobile()){
 	  $count_col = 3;
 	}else{
-	  $count_col = 6;
+	  $count_col = 4;
 	}
   $i = 0; // Counter for the loop.
   
@@ -112,14 +112,17 @@ function custom_gallery_grid($output = '', $attrs, $instance) {
 	  //Complex Bootstrap row and col calculations
 	  $col = 12/$count_col;
 	  $x = ($x > $count_col) ? 1 : $x;
-	  $caption_offset = ($x * $col - $col);
-	  $caption_col = (12 - $caption_offset);
-	  $all_align = "text-center";
-          $all_align2 = "text-left";
-	  if($caption_offset > 6){ $caption_offset = 0; $all_align = "text-center"; }
-	  if($caption_col < 6){ $caption_col = 12 - $caption_col + $col; }
+	  //$caption_offset = ($x * $col - $col);
+	  //$caption_col = (12 - $caption_offset);
+	  $all_align = " text-center";
+      $all_align2 = " text-left";
+	  //if($caption_offset > 6){ $caption_offset = 0; $all_align = "text-center"; }
+	  /*if( ($x * $col - $col) > 5 ){
+		  //$caption_col = 12 - $caption_col + $col;
+		  $caption_class = "offset-md-6 col-md-" . $caption_col;
+	  }*/
 	  
-	$captions .= '<article style="display: none;" class="wp-caption-text gallery-caption" id="' . $caption_id . '"><div class="row"><div class="col-'.$col.' offset-'. ( $x * $col - $col ) .' '.$all_align.'"><img src="'.get_template_directory_uri().'/img/Linha-gotas-brancas.png" alt="Gotas" ></div></div><div class="row"><div class="col-12 col-md-'.$caption_col.' '.$all_align2.'"><p>' . $galleryThumbCap . '</p></div></div></article>';
+	$captions .= '<article style="display: none;" class="wp-caption-text gallery-caption" id="' . $caption_id . '"><div class="row"><div class="col-'.$col.' offset-'. ( $x * $col - $col ) .$all_align.'"><img src="'.get_template_directory_uri().'/img/Linha-gotas-brancas.png" alt="Gotas" ></div></div><div class="row"><div class="col-12'.$all_align2.'"><p>' . $galleryThumbCap . '</p></div></div></article>';
 	$x++;
   }
 
