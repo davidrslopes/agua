@@ -11344,7 +11344,7 @@ body.page-template-explore-o-geres-subpages .fastio-highlights {
   body.page-template-explore-o-geres-subpages .fastio-highlights h3 {
     font-size: 1.1rem; }
   body.page-template-explore-o-geres-subpages .fastio-highlights p {
-    font-size: 0.75rem; }
+    font-size: 0.85rem; }
     body.page-template-explore-o-geres-subpages .fastio-highlights p.fastio-highlights-bottom-left {
       background-repeat: no-repeat;
       background-position: left center;
@@ -12429,30 +12429,33 @@ body.page-template-barbie-subpages {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center; }
-  body.page-template-a-nossa-agua .fastio-benefits .container {
-    padding-top: 0rem;
-    padding-bottom: 2rem; }
-    body.page-template-a-nossa-agua .fastio-benefits .container .decor {
-      margin: 0 -15px !important;
-      padding: 0 !important;
-      text-align: center;
-      position: relative;
-      display: block;
-      bottom: 0;
-      margin-bottom: 2rem; }
-      body.page-template-a-nossa-agua .fastio-benefits .container .decor img.decor-item {
-        display: inline-block;
-        position: relative; }
-    body.page-template-a-nossa-agua .fastio-benefits .container div.col-12 {
-      text-align: center;
-      margin-bottom: 2rem; }
-      body.page-template-a-nossa-agua .fastio-benefits .container div.col-12:last-of-type {
-        margin-bottom: 0; }
-      body.page-template-a-nossa-agua .fastio-benefits .container div.col-12 p {
-        font-size: 0.85rem; }
-    body.page-template-a-nossa-agua .fastio-benefits .container div.col-6:first-of-type,
-    body.page-template-a-nossa-agua .fastio-benefits .container div.col-6:first-of-type + div.col-6 {
-      margin-bottom: 3rem; }
+  body.page-template-a-nossa-agua .fastio-benefits {
+    background-color: #b2eaff; }
+    body.page-template-a-nossa-agua .fastio-benefits .container {
+      padding-top: 0rem;
+      padding-bottom: 2rem; }
+      body.page-template-a-nossa-agua .fastio-benefits .container .decor {
+        margin: 0 -15px !important;
+        padding: 0 !important;
+        text-align: center;
+        position: relative;
+        display: block;
+        bottom: 0;
+        margin-bottom: 2rem; }
+        body.page-template-a-nossa-agua .fastio-benefits .container .decor img.decor-item {
+          display: inline-block;
+          position: relative; }
+      body.page-template-a-nossa-agua .fastio-benefits .container div.col-12 {
+        text-align: center;
+        margin-bottom: 2rem; }
+        body.page-template-a-nossa-agua .fastio-benefits .container div.col-12:last-of-type {
+          margin-bottom: 0; }
+        body.page-template-a-nossa-agua .fastio-benefits .container div.col-12 p {
+          font-size: 1rem;
+          font-weight: 400; }
+      body.page-template-a-nossa-agua .fastio-benefits .container div.col-6:first-of-type,
+      body.page-template-a-nossa-agua .fastio-benefits .container div.col-6:first-of-type + div.col-6 {
+        margin-bottom: 3rem; }
   body.page-template-explore-o-geres-subpages .fastio-highlights article {
     margin: 3rem 0;
     font-size: 0.85rem; }

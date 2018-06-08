@@ -985,7 +985,7 @@ body.page-template-explore-o-geres-subpages{
 			font-size: 1.1rem;
 		}
 		p{
-			font-size: 0.75rem;
+			font-size: 0.85rem;
 			&.fastio-highlights-bottom-left{
 				background-repeat: no-repeat;
 				background-position: left center;
@@ -2272,6 +2272,7 @@ body.page-template-barbie-subpages{
 			}
 		}
 		.fastio-benefits{
+			background-color: $h2o-light-blue;
 			.container{
 				padding-top: 0rem;
 				padding-bottom: 2rem;
@@ -2295,7 +2296,8 @@ body.page-template-barbie-subpages{
 						margin-bottom: 0;
 					}
 					p{
-						font-size: 0.85rem;
+						font-size: 1rem;
+						font-weight: 400;
 					}
 				}
 				div.col-6:first-of-type,
