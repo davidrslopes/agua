@@ -1968,6 +1968,9 @@ body.page-template-barbie-subpages{
 		&.center{left: 50%;margin-left: -2rem;}
 		&.right{right:0px;}
 	}
+	.fastio-img-links article > a > h5{
+		font-size: 1rem;
+	}
 	.main-footer-wrapper{
 		height: auto;
 		div.row:last-of-type{
@@ -2582,7 +2585,9 @@ body.page-template-barbie-subpages{
 		font-size: 3rem!important;
 		line-height: 3rem!important;
 	}
-	
+	.fastio-img-links article > a > h5{
+		font-size: 1rem;
+	}
 	.home-footer-wrapper{
 		line-height: 1.5rem;
 		bottom: 0;

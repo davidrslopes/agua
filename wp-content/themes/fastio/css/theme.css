@@ -12194,6 +12194,8 @@ body.page-template-barbie-subpages {
       margin-left: -2rem; }
     img.decor-item.right {
       right: 0px; }
+  .fastio-img-links article > a > h5 {
+    font-size: 1rem; }
   .main-footer-wrapper {
     height: auto;
     /*footer .fastio-footer-lang{
@@ -12624,6 +12626,8 @@ body.page-template-barbie-subpages {
   .fastio-hero header > h1 {
     font-size: 3rem !important;
     line-height: 3rem !important; }
+  .fastio-img-links article > a > h5 {
+    font-size: 1rem; }
   .home-footer-wrapper {
     line-height: 1.5rem;
     bottom: 0; }
