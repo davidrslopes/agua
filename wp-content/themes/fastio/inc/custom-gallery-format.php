@@ -31,7 +31,7 @@ function custom_gallery_grid($output = '', $attrs, $instance) {
     //   $col_class = 'col-sm-4';
     //   break;
     case 4:
-      $col_class = 'col-4 col-sm-3';
+      $col_class = 'col-4 col-lg-3';
       break;
     case 6:
       $col_class = 'col-4 col-sm-2';
