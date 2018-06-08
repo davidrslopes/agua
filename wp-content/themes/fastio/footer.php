@@ -47,7 +47,7 @@ elseif(is_page() && wp_is_mobile()): ?>
 <div class="wrapper main-footer-wrapper" id="wrapper-footer-main">
 	<footer class="main-footer <?php if(!wp_is_mobile()){echo esc_attr( $container );}else{echo "container-fluid";}?>" id="colophon">
 		<div class="row">
-			<div class="col-9">
+			<div class="col-11">
 				<!-- Footer Menu -->
 				<?php wp_nav_menu(
 					array(
@@ -62,7 +62,7 @@ elseif(is_page() && wp_is_mobile()): ?>
 					)
 				); ?>
 			</div>
-			<div class="col-3">
+			<div class="col-1">
 				<!-- Language -->
 				<div class="fastio-footer-lang">
 					<?php do_action('icl_language_selector'); ?>

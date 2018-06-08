@@ -232,7 +232,7 @@ html,body{
 	width: 100%;
 	height: 33px;
 	line-height: 30px;
-	footer{
+	footer.home-footer{
 		//WPML
 		.wpml-ls{
 			padding:0;
@@ -290,6 +290,9 @@ html,body{
 						padding-bottom: 0.150rem;
 						color:$primary;
 						li{
+							margin: 0;
+							padding: 0;
+							position: relative;
 							color:$primary;
 							&:hover,
 							&:focus{
@@ -305,7 +308,7 @@ html,body{
 									color: $primary;
 								}
 								span{
-									bottom: 12px;
+									bottom: 13px;
 								}
 							}
 						}
@@ -1986,7 +1989,7 @@ body.page-template-barbie-subpages{
 				padding-right: 0;
 			}
 		}
-		footer .fastio-footer-lang{
+		/*footer .fastio-footer-lang{
 			float:right;
 			margin: 0;
 			padding: 0;
@@ -2058,6 +2061,99 @@ body.page-template-barbie-subpages{
 								}
 							}
  						}
+					} 
+				}
+			}
+		}
+		*/
+		footer.main-footer{
+			position: relative;
+			.fastio-footer-lang{
+				position: absolute;
+				left: -5px;
+				top: 0;
+				margin-top: -2px;
+			}
+			.wpml-ls{
+				margin: 0;
+				padding: 0;
+				background: transparent!important;
+				border: 0!important;
+				ul{
+					background: transparent!important;
+					border: 0!important;
+					direction: rtl;
+					display: inline-block;
+					list-style: circle;
+					list-style-position: outside;
+					color:#FFFFFF;
+					&:hover,
+					&:focus{
+						background: transparent!important;
+						color:$primary;
+					}
+					li{
+						
+						background: transparent!important;
+						border: 0!important;
+						list-style-type: circle;
+						display: list-item;
+						&:hover,
+						&:focus{
+							background: transparent!important;
+							color:#FFFFFF;
+						}
+						a{
+							background: transparent!important;
+							border: 0!important;
+							display: initial;
+							padding: 0;
+							font-size:70%;
+							color:#FFFFFF;
+							position: relative;
+							@include transition(all 250ms ease-in);
+							&:hover,
+							&:focus{
+								background: transparent!important;
+								color:$primary;
+							}
+							&:after{
+								content: none!important;
+							}
+							span{
+								position: absolute;
+								bottom:3px;
+							}
+						}
+						ul.wpml-ls-sub-menu{
+							line-height: 18px;
+							bottom: 100%;
+							top: unset;
+							padding-bottom: 0.150rem;
+							li{
+								color:$primary;
+								&:hover,
+								&:focus{
+									background: transparent!important;
+									color:#FFFFFF;
+								}
+								a{
+									padding: 0.150rem 0;
+									display: block;
+									color:$primary;
+									position: relative;
+									&:hover,
+									&:focus{
+										background: transparent!important;
+										color:$primary;
+									}
+									span{
+										position: absolute;
+										bottom:9px;
+									}
+								}
+							}
+						}
 					} 
 				}
 			}
@@ -2472,11 +2568,12 @@ body.page-template-barbie-subpages{
 //SM - TABLET ONLY!
 @include media-breakpoint-only(sm){
 	//COMMON
-	footer.main-footer{
+	.main-footer-wrapper > footer.main-footer{
 		font-size:1.05rem!important;
-		.fastio-footer-lang .wpml-ls{
-			left:auto;
-			right: 15px;
+		position: relative;
+		.fastio-footer-lang{
+			left: 30px;
+			position: absolute;
 		}
 	}
 	//HOME
@@ -2506,6 +2603,7 @@ body.page-template-barbie-subpages{
 			line-height: 20px;
 		}
 	}
+	
 	//A FAMILIA
 	body.page-template-a-familia .decor-line{
 		top: 16%;
@@ -2536,16 +2634,13 @@ body.page-template-barbie-subpages{
 		&.left{left:-20px;}
 		&.right{right:0px;}
 	}
-	.fastio-footer-lang{
-		//WPML
-		padding-top:2px;
-		background: transparent!important;
-		border: 0!important;
+	.main-footer-wrapper > footer.main-footer{
 		.wpml-ls{
 			padding:0;
 			display: inline-block;
 			background: transparent!important;
 			border: 0!important;
+			line-height: 18px;
 			ul{
 				background: transparent!important;
 				border: 0!important;
@@ -2553,19 +2648,30 @@ body.page-template-barbie-subpages{
 				display: inline-block;
 				list-style: circle;
 				list-style-position: outside;
-				color:inherit;
+				color:#FFFFFF;
+				&:hover,
+				&:focus{
+					background: transparent!important;
+					color:$primary;
+				}
 				li{
 					background: transparent!important;
 					border: 0!important;
 					list-style-type: circle;
 					display: list-item;
+					&:hover,
+					&:focus{
+						background: transparent!important;
+						color:#FFFFFF;
+					}
 					a{
 						background: transparent!important;
 						border: 0!important;
 						display: initial;
 						padding: 0;
 						font-size:70%;
-						color:inherit;
+						color:#FFFFFF;
+						position: relative;
 						@include transition(all 250ms ease-in);
 						&:hover,
 						&:focus{
@@ -2575,15 +2681,37 @@ body.page-template-barbie-subpages{
 						&:after{
 							content: none!important;
 						}
+						span{
+							position: absolute;
+							bottom:3px;
+						}
 					}
 					ul.wpml-ls-sub-menu{
 						bottom: 100%;
 						top: unset;
 						padding-bottom: 0.150rem;
-						li > a{
-							padding: 0.150rem 0;
-							display: block;
-							color:#00aeef;
+						li{
+							color:$primary;
+							&:hover,
+							&:focus{
+								background: transparent!important;
+								color:#FFFFFF;
+							}
+							a{
+								padding: 0.150rem 0;
+								display: block;
+								color:$primary;
+								position: relative;
+								&:hover,
+								&:focus{
+									background: transparent!important;
+									color:$primary;
+								}
+								span{
+									position: absolute;
+									bottom:9px;
+								}
+							}
 						}
 					}
 				} 
