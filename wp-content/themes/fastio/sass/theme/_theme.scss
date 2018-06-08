@@ -238,7 +238,6 @@ html,body{
 			padding:0;
 			direction: rtl;
 			display: inline-block;
-			padding-right: 50px;
 			background: transparent!important;
 			border: 0!important;
 			position: absolute;
@@ -2160,8 +2159,9 @@ body.page-template-barbie-subpages{
 		}
 	}
         
-	.home-footer-wrapper footer .wpml-ls{
+	.home-footer-wrapper > footer.home-footer .wpml-ls{
 		padding-right: 90px;
+		font-size: 75%;
 	}
 	
 	body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1,
@@ -2582,11 +2582,13 @@ body.page-template-barbie-subpages{
 		font-size: 3rem!important;
 		line-height: 3rem!important;
 	}
+	
 	.home-footer-wrapper{
 		line-height: 1.5rem;
 		bottom: 0;
-		footer .wpml-ls{
-			padding-right: 110px;
+		footer.home-footer .wpml-ls{
+			padding-right: 60px;
+			font-size:0.8rem;
 			ul > li{
 				a{
 					font-size:0.8rem;
@@ -2722,8 +2724,12 @@ body.page-template-barbie-subpages{
 	.home-footer-wrapper{
 		bottom: 2rem;
 	}
-	.home-footer,.main-footer{
+	.home-footer,
+	.main-footer{
 		padding: 0;
+	}
+	.home-footer-wrapper > footer.home-footer .wpml-ls{
+		padding-right: 40px;
 	}
 	.fastio-home-title{
 		font-size: 4rem;
