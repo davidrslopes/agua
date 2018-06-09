@@ -12524,7 +12524,9 @@ body.page-template-barbie-subpages {
     background-position: top right;
     margin-top: 0px; }
     body.page-template-fastio-go .fastio-go-workout .inner-hero {
-      height: 38rem; }
+      padding-top: 15rem;
+      min-height: 38rem;
+      height: initial; }
   body.page-template-barbie .fastio-images-hero {
     text-align: center; }
     body.page-template-barbie .fastio-images-hero img.float-right {

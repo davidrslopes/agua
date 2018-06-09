@@ -2413,7 +2413,9 @@ body.page-template-barbie-subpages{
 			background-position: top right;
 			margin-top:0px;
 			.inner-hero{
-				height:38rem;
+				padding-top: 15rem;
+				min-height:38rem;
+				height: initial;
 			}
 		}
 	}
