@@ -47,7 +47,7 @@ if(!empty($hero_1)):
 			<?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
 			<div class="col-4 col-md-1 vertical-align">
 				<div data-aos="fade-up">
-				<?php if(!empty($bottle['embalagem-img'])): ?><img class="img-fluid" src="<?php echo $bottle['embalagem-img']['url']; ?>" title="<?php echo $bottle['embalagem-img']['title']; ?>" style="height: 100vh;" alt="<?php echo $bottle['embalagem-img']['title']; ?>"><?php endif; ?>
+				<?php if(!empty($bottle['embalagem-img'])): ?><img class="img-fluid" src="<?php echo $bottle['embalagem-img']['url']; ?>" title="<?php echo $bottle['embalagem-img']['title']; ?>" alt="<?php echo $bottle['embalagem-img']['title']; ?>"><?php endif; ?>
 				</div>
 			</div>
 			<div class="col-8 col-md-3 vertical-align">
@@ -58,7 +58,7 @@ if(!empty($hero_1)):
 			</div>
 			<div class="col-12 col-md-4 text-center">
 				<div data-aos="fade-up">
-				<?php if(!empty($bottle['img'])): ?><img class="img-fluid" src="<?php echo $bottle['img']['url']; ?>" title="<?php echo $bottle['img']['title']; ?>" alt="<?php echo $bottle['img']['title']; ?>"><?php endif; ?>
+				<?php if(!empty($bottle['img'])): ?><img class="img-fluid" style="height: 100vh;" src="<?php echo $bottle['img']['url']; ?>" title="<?php echo $bottle['img']['title']; ?>" alt="<?php echo $bottle['img']['title']; ?>"><?php endif; ?>
 				</div>
 			</div>
 			<div class="col-6 col-md-3 vertical-align">
