@@ -1679,12 +1679,12 @@ body.page-template-barbie-subpages{
         padding-top: 260px;
         .title{
             display: inline-block;
-            float:right;
+            //float:right;
             //padding-left: 8px;
             padding-top: 10px;
             font-size: 14px;
             color: #fff;
-            width: 70%;
+            //width: 70%;
         }
         
         .bottleimg{
@@ -1693,10 +1693,10 @@ body.page-template-barbie-subpages{
         }
                 
         .icon {
-            position: absolute;
-            bottom: 380px;
-            left: 60%;
-            margin-left: -20px;
+            //position: absolute;
+            //bottom: 380px;
+            //left: 60%;
+            //margin-left: -20px;
             width: 40px;
             height: 40px;
             line-height: 35px;
@@ -1707,6 +1707,7 @@ body.page-template-barbie-subpages{
             text-align: center;
             font-size: 35px;
             background-color: #fff;
+			margin: 2rem auto 0;
 		}
         
 		.faa-float.animated, .faa-float.animated-hover:hover, .faa-parent.animated-hover:hover>.faa-float{
@@ -2495,8 +2496,8 @@ body.page-template-barbie-subpages{
 		font-size:15px;
 	}
 	body.page-template-barbie-subpages section.fastio-barbie-subpages-1 .icon{
-		bottom:-30px;
-		left: 50%;
+		//bottom:-30px;
+		//left: 50%;
 		display:none;
 	}
 
@@ -2534,9 +2535,9 @@ body.page-template-barbie-subpages{
 	}
 
 	body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .icon{
-		display:none ;
-		bottom: -10px;
-		left: 50%;
+		display:none;
+		//bottom: -10px;
+		//left: 50%;
 	}
 
 	body.page-template-hot-wheels-subpages section.fastio-hotwheels-subpages-1 .manchagarrafa{
@@ -2631,6 +2632,9 @@ body.page-template-barbie-subpages{
 		top: 16%;
 	}
 	//BARBIE & HOTWHEELS
+	body.page-template-barbie-subpages section.fastio-barbie-subpages-1 .title{
+    	font-size:1.2rem;
+    }
 	#barbiesubpagescarousel,
 	#hotwheelssubpagescarousel{
 		.carousel-item img{
@@ -2914,10 +2918,10 @@ body.page-template-barbie-subpages{
 	//BARBIE
 	body.page-template-barbie{
 		.icon{
-			position: absolute;
-            bottom: 75px;
-            left: 60%;
-            margin-left: -20px;
+			//position: absolute;
+            //bottom: 75px;
+            //left: 60%;
+            //margin-left: -20px;
 		}
 	}
 	//SUB
