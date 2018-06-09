@@ -12166,6 +12166,8 @@ body.page-template-barbie-subpages {
     padding: 0 4px 0 0; }
     .fastio-nav > button.btn.dropdown-toggle:after {
       height: 12px; }
+  .fastio-feature.mt {
+    padding-top: 0 !important; }
   img.decor {
     position: absolute;
     z-index: 9; }
