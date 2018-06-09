@@ -390,6 +390,12 @@ body.page-template-fastio-go .main-footer-wrapper, // Fastio GO
 body.page-template-hotwheels-single .main-footer-wrapper{ // Hotwheels Car Pages 
 	background-color: $h2o-blue;
 	color: white;
+	footer .wpml-ls-sub-menu a{
+		color: $h2o-dark-blue!important;
+		&:hover{
+			color: $h2o-dark-blue!important;
+		}
+	}
 	footer a:hover,
 	footer a:focus{
 		color:$h2o-light-blue!important;

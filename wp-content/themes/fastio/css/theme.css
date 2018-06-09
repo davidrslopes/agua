@@ -10480,6 +10480,12 @@ body.page-template-fastio-go .main-footer-wrapper,
 body.page-template-hotwheels-single .main-footer-wrapper {
   background-color: #00aeef;
   color: white; }
+  body.page-template-fastio-go .main-footer-wrapper footer .wpml-ls-sub-menu a,
+  body.page-template-hotwheels-single .main-footer-wrapper footer .wpml-ls-sub-menu a {
+    color: #006fba !important; }
+    body.page-template-fastio-go .main-footer-wrapper footer .wpml-ls-sub-menu a:hover,
+    body.page-template-hotwheels-single .main-footer-wrapper footer .wpml-ls-sub-menu a:hover {
+      color: #006fba !important; }
   body.page-template-fastio-go .main-footer-wrapper footer a:hover,
   body.page-template-fastio-go .main-footer-wrapper footer a:focus,
   body.page-template-hotwheels-single .main-footer-wrapper footer a:hover,
