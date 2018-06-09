@@ -25,26 +25,32 @@ if(!empty($hero_1)):
 ?>
 <!-- ******************* The Logo and Images Hero Section ******************* -->
 <section class="fastio-images-hero fastio-barbie-subpages-1">
-        <div class="container">
-           <div class="row">    
-            <div class="col-12 col-lg-6">
-                <div data-aos="fade-up" data-aos-duration="3000">
-                    <img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid<?php if(!wp_is_mobile()){echo" float-right";} ?>"/>
-                </div>
-                <div data-aos="fade-up" data-aos-duration="3000">                
-                <div class="title">
-                    <?php echo $hero_1['texto']; ?>
-                </div></div>
-                <div class="icon faa-float animated" <?php if(!empty($hero_1['cor_da_seta'])){ echo ' style="color:'.$hero_1['cor_da_seta'].';"';} ?>>
-                        <i class="fa fa-angle-down"></i></div>
-            </div>
-            <div class="col-12 col-lg-6">           
-                <div data-aos="fade-up" data-aos-duration="3000">
-                 <img src="<?php echo $hero_1['img1']; ?>" class="img-fluid bottleimg"/>
-                </div>
-            </div>
-           </div>
-        </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-lg-6">
+				<div class="row">
+					<div data-aos="fade-up" data-aos-duration="3000">
+						<img src="<?php echo $hero_1['img_titulo']; ?>" class="img-fluid<?php if(!wp_is_mobile()){echo" float-right";} ?>"/>
+					</div>
+					<div data-aos="fade-up" data-aos-duration="3000">                
+						<div class="title">
+							<?php echo $hero_1['texto']; ?>
+						</div>
+					</div>
+					<div class="icon faa-float animated" <?php if(!empty($hero_1['cor_da_seta'])){ echo ' style="color:'.$hero_1['cor_da_seta'].';"';} ?>>
+						<i class="fa fa-angle-down"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-lg-6">           
+				<div data-aos="fade-up" data-aos-duration="3000">
+					<img src="<?php echo $hero_1['img1']; ?>" class="img-fluid bottleimg"/>
+				</div>
+			</div>
+		</div>
+	</div>
 </section><!-- .fastio-images-hero -->
 <?php endif; ?>
 <!-- ******************* The Section 2 ******************* -->
