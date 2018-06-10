@@ -236,12 +236,12 @@ html,body{
 		//WPML
 		.wpml-ls{
 			padding:0;
-			direction: rtl;
-			display: inline-block;
+			//direction: rtl;
+			//display: inline-block;
 			background: transparent!important;
 			border: 0!important;
-			position: absolute;
-			left: 0;
+			//position: absolute;
+			//left: 0;
 			ul{
 				direction: rtl;
 				display: inline-block;
@@ -2175,7 +2175,7 @@ body.page-template-barbie-subpages{
 	}
         
 	.home-footer-wrapper > footer.home-footer .wpml-ls{
-		padding-right: 90px;
+		//padding-right: 90px;
 		font-size: 75%;
 	}
 	
@@ -2608,7 +2608,7 @@ body.page-template-barbie-subpages{
 		line-height: 1.5rem;
 		bottom: 0;
 		footer.home-footer .wpml-ls{
-			padding-right: 60px;
+			//padding-right: 60px;
 			font-size:0.8rem;
 			ul > li{
 				a{
@@ -2753,7 +2753,7 @@ body.page-template-barbie-subpages{
 		padding: 0;
 	}
 	.home-footer-wrapper > footer.home-footer .wpml-ls{
-		padding-right: 40px;
+		//padding-right: 40px;
 	}
 	.fastio-home-title{
 		font-size: 4rem;

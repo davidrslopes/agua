@@ -10372,12 +10372,8 @@ body.page-template-default .fastio-hero header.fastio-video-header {
   line-height: 30px; }
   .home-footer-wrapper footer.home-footer .wpml-ls {
     padding: 0;
-    direction: rtl;
-    display: inline-block;
     background: transparent !important;
-    border: 0 !important;
-    position: absolute;
-    left: 0; }
+    border: 0 !important; }
     .home-footer-wrapper footer.home-footer .wpml-ls ul {
       direction: rtl;
       display: inline-block;
@@ -12362,7 +12358,6 @@ body.page-template-barbie-subpages {
                     position: absolute;
                     bottom: 9px; }
   .home-footer-wrapper > footer.home-footer .wpml-ls {
-    padding-right: 90px;
     font-size: 75%; }
   body.page-template-a-familia .fastio-video-hero header.fastio-hero-header h1,
   body.page-template-a-familia .fastio-video-hero header.fastio-video-header h1 {
@@ -12637,7 +12632,6 @@ body.page-template-barbie-subpages {
     line-height: 1.5rem;
     bottom: 0; }
     .home-footer-wrapper footer.home-footer .wpml-ls {
-      padding-right: 60px;
       font-size: 0.8rem; }
       .home-footer-wrapper footer.home-footer .wpml-ls ul > li a {
         font-size: 0.8rem; }
@@ -12739,8 +12733,6 @@ body.page-template-barbie-subpages {
   .home-footer,
   .main-footer {
     padding: 0; }
-  .home-footer-wrapper > footer.home-footer .wpml-ls {
-    padding-right: 40px; }
   .fastio-home-title {
     font-size: 4rem;
     line-height: 4rem; }
