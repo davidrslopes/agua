@@ -12197,104 +12197,29 @@ body.page-template-barbie-subpages {
   .fastio-img-links article > a > h5 {
     font-size: 1rem; }
   .main-footer-wrapper {
-    height: auto;
-    /*footer .fastio-footer-lang{
-			float:right;
-			margin: 0;
-			padding: 0;
-			background: transparent!important;
-			border: 0!important;
-			.wpml-ls{
-				position: absolute;
-				left: 0;
-				padding:0;
-				margin: 0;
-				background: transparent!important;
-				border: 0!important;
-				ul{
-					list-style: circle;
-					list-style-position: outside;
-					color:$primary;
-					padding:0;
-					margin: 0;
-					background: transparent!important;
-					border: 0!important;
-					li{
-						list-style-type: circle;
-						display: list-item;
-						padding: 0;
-						margin: 0;
-						background: transparent!important;
-						border: 0!important;
-						color:$primary;
-						&:hover,
-						&:focus{
-							color:$primary;
-						}
-						a{
-							margin: 0;
-							padding: 0;
-							font-size:70%;
-							color:inherit;
-							line-height: 50%;
-							background: transparent!important;
-							border: 0!important;
-							@include transition(all 250ms ease-in);
-							&:hover,
-							&:focus{
-								color:$primary;
-								background: transparent!important;
-							}
-							&:after{
-								content: none!important;
-							}
-							span{
-								vertical-align: inherit;
-							}
-						}
-						ul.wpml-ls-sub-menu{
-							bottom: 100%;
-							top: unset;
-							padding-bottom: 0.150rem;
-							color: $primary;
-							li{
-								color: $primary;
-							}
-							li > a{
-								padding: 0.150rem 0;
-								display: block;
-								color:$primary;
-								&:hover,
-								&:focus{
-									color:$primary;
-								}
-							}
- 						}
-					} 
-				}
-			}
-		}
-		*/ }
+    height: auto; }
     .main-footer-wrapper div.row:last-of-type {
       margin-top: 1rem;
       padding-top: 1rem;
       border-top: 1px solid #FFFFFF; }
     .main-footer-wrapper footer .fastio-footer-nav {
+      line-height: .75rem;
       padding-top: 0; }
       .main-footer-wrapper footer .fastio-footer-nav ul > li:first-of-type > a {
         padding-left: 0; }
       .main-footer-wrapper footer .fastio-footer-nav ul > li > a {
         font-size: 70%;
-        padding: 0.20rem 0.40rem 0.20rem; }
+        padding: 0.20rem 0.80rem 0.20rem 0rem; }
       .main-footer-wrapper footer .fastio-footer-nav ul > li:last-of-type > a {
         padding-right: 0; }
     .main-footer-wrapper footer.main-footer {
       position: relative; }
       .main-footer-wrapper footer.main-footer .fastio-footer-lang {
-        position: absolute;
-        left: -5px;
-        top: 0;
-        margin-top: -2px; }
+        position: relative;
+        text-align: right;
+        margin-top: .3rem; }
+        .main-footer-wrapper footer.main-footer .fastio-footer-lang ul {
+          padding-right: 20px; }
       .main-footer-wrapper footer.main-footer .wpml-ls {
         margin: 0;
         padding: 0;
@@ -12619,9 +12544,8 @@ body.page-template-barbie-subpages {
   .main-footer-wrapper > footer.main-footer {
     font-size: 1.05rem !important;
     position: relative; }
-    .main-footer-wrapper > footer.main-footer .fastio-footer-lang {
-      left: 30px;
-      position: absolute; }
+    .main-footer-wrapper > footer.main-footer .fastio-footer-lang ul {
+      padding-right: 20px; }
   .fastio-home-title,
   .fastio-hero header > h1 {
     font-size: 3rem !important;

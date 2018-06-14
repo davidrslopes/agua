@@ -1991,102 +1991,26 @@ body.page-template-barbie-subpages{
 			border-top: 1px solid #FFFFFF;
 		}
 		footer .fastio-footer-nav{
+			line-height: .75rem;
 			padding-top: 0;
 			ul > li:first-of-type > a{
 				padding-left: 0;
 			}
 			ul > li > a{
 				font-size:70%;
-				padding: 0.20rem 0.40rem 0.20rem;
+				padding: 0.20rem 0.80rem 0.20rem 0rem;
 			}
 			ul > li:last-of-type > a{
 				padding-right: 0;
 			}
 		}
-		/*footer .fastio-footer-lang{
-			float:right;
-			margin: 0;
-			padding: 0;
-			background: transparent!important;
-			border: 0!important;
-			.wpml-ls{
-				position: absolute;
-				left: 0;
-				padding:0;
-				margin: 0;
-				background: transparent!important;
-				border: 0!important;
-				ul{
-					list-style: circle;
-					list-style-position: outside;
-					color:$primary;
-					padding:0;
-					margin: 0;
-					background: transparent!important;
-					border: 0!important;
-					li{
-						list-style-type: circle;
-						display: list-item;
-						padding: 0;
-						margin: 0;
-						background: transparent!important;
-						border: 0!important;
-						color:$primary;
-						&:hover,
-						&:focus{
-							color:$primary;
-						}
-						a{
-							margin: 0;
-							padding: 0;
-							font-size:70%;
-							color:inherit;
-							line-height: 50%;
-							background: transparent!important;
-							border: 0!important;
-							@include transition(all 250ms ease-in);
-							&:hover,
-							&:focus{
-								color:$primary;
-								background: transparent!important;
-							}
-							&:after{
-								content: none!important;
-							}
-							span{
-								vertical-align: inherit;
-							}
-						}
-						ul.wpml-ls-sub-menu{
-							bottom: 100%;
-							top: unset;
-							padding-bottom: 0.150rem;
-							color: $primary;
-							li{
-								color: $primary;
-							}
-							li > a{
-								padding: 0.150rem 0;
-								display: block;
-								color:$primary;
-								&:hover,
-								&:focus{
-									color:$primary;
-								}
-							}
- 						}
-					} 
-				}
-			}
-		}
-		*/
 		footer.main-footer{
 			position: relative;
 			.fastio-footer-lang{
-				position: absolute;
-				left: -5px;
-				top: 0;
-				margin-top: -2px;
+				position: relative;
+				text-align: right;
+				margin-top: .3rem;
+				ul{padding-right: 20px;}
 			}
 			.wpml-ls{
 				margin: 0;
@@ -2107,7 +2031,6 @@ body.page-template-barbie-subpages{
 						color:$primary;
 					}
 					li{
-						
 						background: transparent!important;
 						border: 0!important;
 						list-style-type: circle;
@@ -2123,6 +2046,7 @@ body.page-template-barbie-subpages{
 							display: initial;
 							padding: 0;
 							font-size:70%;
+							//line-height: .75rem;
 							color:#FFFFFF;
 							position: relative;
 							@include transition(all 250ms ease-in);
@@ -2591,8 +2515,7 @@ body.page-template-barbie-subpages{
 		font-size:1.05rem!important;
 		position: relative;
 		.fastio-footer-lang{
-			left: 30px;
-			position: absolute;
+			ul{padding-right: 20px;}
 		}
 	}
 	//HOME
