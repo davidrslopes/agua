@@ -10596,7 +10596,8 @@ body.page-template-historiafastio {
     overflow: hidden; }
   body.page-template-historiafastio span.year {
     font-size: 45px;
-    color: #00aeef; }
+    color: #00aeef;
+    padding-right: 15px; }
   body.page-template-historiafastio .entry-content {
     color: #00aeef; }
   body.page-template-historiafastio .entry-content p {
@@ -12330,6 +12331,8 @@ body.page-template-barbie-subpages {
       padding-top: 50px; }
     body.page-template-historiafastio #seccao5 .media .entry-content p {
       font-size: 14px; }
+    body.page-template-historiafastio .seccao1imagem3div {
+      padding-top: 250px; }
   body.page-template-a-nossa-agua .fastio-products {
     padding-top: 10rem;
     padding-bottom: 4rem; }

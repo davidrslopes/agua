@@ -67,7 +67,7 @@ if(!empty($fundo_da_pagina)):
 				<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 				</main><!-- #main -->
             </div>
-            <div class="col-md-2 seccao1imagem3div d-none d-lg-block">
+            <div class="col-md-2 seccao1imagem3div d-none d-md-block">
                 <div data-aos="fade-left" data-aos-duration="2000">
                 <?php $imagesection1right = wp_get_attachment_image_src(get_field('seccao_1_imagem_3'), 'full'); ?>
                 <img src="<?php echo $imagesection1right[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_3')) ?>" class="img-responsive">  

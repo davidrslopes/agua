@@ -534,8 +534,9 @@ body.page-template-historiafastio{
 		overflow: hidden;
 	}
 	span.year{
-	 font-size: 45px;
-	 color: #00aeef;
+		font-size: 45px;
+		color: #00aeef;
+		padding-right: 15px;
 	}      
 	.entry-content{
 		color: #00aeef;
@@ -2176,6 +2177,9 @@ body.page-template-barbie-subpages{
 		#seccao5 .media .entry-content p{
 			font-size:14px;
 		}
+		.seccao1imagem3div{
+			padding-top:250px;
+		}
 	}
 	// A NOSSA AGUA
 	body.page-template-a-nossa-agua {
@@ -2550,7 +2554,6 @@ body.page-template-barbie-subpages{
 			line-height: 20px;
 		}
 	}
-	
 	//A FAMILIA
 	body.page-template-a-familia .decor-line{
 		top: 16%;
