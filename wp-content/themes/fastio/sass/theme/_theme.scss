@@ -811,6 +811,12 @@ body.page-template-fastio-go{
 		p{
 			font-size: 1.33rem;
 		}
+		.fastio-go-bottle-text-right{
+			padding-right:15px;
+		}
+		.fastio-go-bottle-text-left{
+			padding-left:15px;
+		}
 	}
 	.fastio-hero{
 		@include fastio-hero('../img/imagemGO_2.jpg');
@@ -2839,6 +2845,9 @@ body.page-template-barbie-subpages{
 			height:100vh;
 			.vertical-align{
 				padding-top: 33vh;
+			}
+			.fastio-go-bottle-img{
+				height: 100vh;
 			}
 		}
 	}

@@ -45,30 +45,30 @@ if(!empty($hero_1)):
 	<div class="container">
 		<div class="row no-gutters">
 			<?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
-			<div class="col-4 col-md-1 vertical-align">
-				<div data-aos="fade-up">
+			<div class="col-4 col-lg-1 vertical-align">
+				<div data-aos="fade-up" class="fastio-go-bottle-img-left">
 				<?php if(!empty($bottle['embalagem-img'])): ?><img class="img-fluid" src="<?php echo $bottle['embalagem-img']['url']; ?>" title="<?php echo $bottle['embalagem-img']['title']; ?>" alt="<?php echo $bottle['embalagem-img']['title']; ?>"><?php endif; ?>
 				</div>
 			</div>
-			<div class="col-8 col-md-3 vertical-align">
-				<div data-aos="fade-up">
+			<div class="col-8 col-lg-3 vertical-align">
+				<div data-aos="fade-up" class="fastio-go-bottle-text-left">
 				<?php if(!empty($bottle['embalagem-title'])){ echo '<h2>'.$bottle['embalagem-title'].'</h2>'; } ?>
 				<?php if(!empty($bottle['embalagem-text'])){ echo '<p>'.$bottle['embalagem-text'].'</p>'; } ?>
 				</div>
 			</div>
-			<div class="col-12 col-md-4 text-center">
+			<div class="col-12 col-lg-4 text-center">
 				<div data-aos="fade-up">
-				<?php if(!empty($bottle['img'])): ?><img class="img-fluid" style="height: 100vh;" src="<?php echo $bottle['img']['url']; ?>" title="<?php echo $bottle['img']['title']; ?>" alt="<?php echo $bottle['img']['title']; ?>"><?php endif; ?>
+				<?php if(!empty($bottle['img'])): ?><img class="img-fluid" class="fastio-go-bottle-img" src="<?php echo $bottle['img']['url']; ?>" title="<?php echo $bottle['img']['title']; ?>" alt="<?php echo $bottle['img']['title']; ?>"><?php endif; ?>
 				</div>
 			</div>
-			<div class="col-6 col-md-3 vertical-align">
-				<div data-aos="fade-up">
+			<div class="col-6 col-lg-3 vertical-align">
+				<div data-aos="fade-up" class="fastio-go-bottle-text-right">
 				<?php if(!empty($bottle['capsula-title'])){ echo '<h2>'.$bottle['capsula-title'].'</h2>'; } ?>
 				<?php if(!empty($bottle['capsula-text'])){ echo '<p>'.$bottle['capsula-text'].'</p>'; } ?>
 				</div>
 			</div>
-			<div class="col-6 col-md-1 vertical-align text-right">
-				<div data-aos="fade-up">
+			<div class="col-6 col-lg-1 vertical-align text-right">
+				<div data-aos="fade-up" class="fastio-go-bottle-img-right">
 				<?php if(!empty($bottle['capsula-img'])): ?><img class="img-fluid" src="<?php echo $bottle['capsula-img']['url']; ?>" title="<?php echo $bottle['capsula-img']['title']; ?>" alt="<?php echo $bottle['capsula-img']['title']; ?>"><?php endif; ?>
 				</div>
 			</div>

@@ -11069,6 +11069,10 @@ body.page-template-fastio-go .fastio-go-bottle {
     font-weight: bold; }
   body.page-template-fastio-go .fastio-go-bottle p {
     font-size: 1.33rem; }
+  body.page-template-fastio-go .fastio-go-bottle .fastio-go-bottle-text-right {
+    padding-right: 15px; }
+  body.page-template-fastio-go .fastio-go-bottle .fastio-go-bottle-text-left {
+    padding-left: 15px; }
 
 body.page-template-fastio-go .fastio-hero {
   background-image: url("../img/imagemGO_2.jpg");
@@ -12751,6 +12755,8 @@ body.page-template-barbie-subpages {
     height: 100vh; }
     body.page-template-fastio-go .fastio-go-bottle .vertical-align {
       padding-top: 33vh; }
+    body.page-template-fastio-go .fastio-go-bottle .fastio-go-bottle-img {
+      height: 100vh; }
   body.page-template-barbie-subpages .fastio-barbie-subpages-section3 .title {
     width: 432px; }
   body.page-template-hot-wheels .logoimgdiv {
