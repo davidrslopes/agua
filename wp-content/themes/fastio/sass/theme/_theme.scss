@@ -535,6 +535,8 @@ body.page-template-historiafastio{
 		font-size: 45px;
 		color: #00aeef;
 		padding-right: 15px;
+		display:block;
+   		margin-top:-9px;
 	}      
 	.entry-content{
 		color: #00aeef;
@@ -2769,6 +2771,10 @@ body.page-template-barbie-subpages{
 		}
 		.media-body{
 			flex: 0.75;
+		}
+		span.year{
+		    display:block;
+			margin-top:7px;
 		}
 	}
 	// A NOSSA AGUA
