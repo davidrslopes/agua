@@ -10222,7 +10222,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 html, body {
   overflow-x: hidden;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 1.03rem; }
 
 .vertical-center, .fastio-home-title, body.page-template-a-nossa-agua .fastio-hero header.fastio-hero-header,
 body.page-template-a-nossa-agua .fastio-hero header.fastio-video-header, body.page-template-a-nossa-agua .fastio-hero-2 header.fastio-hero-header,
@@ -12208,6 +12209,10 @@ body.page-template-barbie-subpages {
       margin-top: 1rem;
       padding-top: 1rem;
       border-top: 1px solid #FFFFFF; }
+    .main-footer-wrapper div.row:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0px; }
     .main-footer-wrapper footer .fastio-footer-nav {
       line-height: .75rem;
       padding-top: 0; }

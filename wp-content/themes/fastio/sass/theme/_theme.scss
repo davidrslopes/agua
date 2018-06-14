@@ -78,6 +78,7 @@ html,body{
 	overflow-x:hidden;
 	margin: 0;
 	padding: 0;
+	font-size: 1.03rem;
 }
 // Vertical Centering
 .vertical-center{
@@ -345,9 +346,6 @@ html,body{
 		.fastio-footer-logos{
 			img.logo-2020{
 				height: 1.25rem;
-			}
-			img.logo-savage{
-				
 			}
 		}
 		.fastio-footer-social{
@@ -1997,6 +1995,11 @@ body.page-template-barbie-subpages{
 			margin-top: 1rem;
 			padding-top: 1rem;
 			border-top: 1px solid #FFFFFF;
+		}
+		div.row:first-of-type{
+			margin-top: 0;
+			padding-top: 0;
+			border-top: 0px;
 		}
 		footer .fastio-footer-nav{
 			line-height: .75rem;

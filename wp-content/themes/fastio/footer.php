@@ -97,13 +97,13 @@ else:
 <div class="wrapper main-footer-wrapper" id="wrapper-footer-main">
 	<footer class="main-footer container" id="colophon">
 		<div class="row">
-			<div class="col-12 col-md-4">
+			<div class="col-4">
 				<!-- Footer Logos -->
 				<div class="fastio-footer-logos">
 					<a href="<?php echo $footer_logos_url;?>"><img class="logo-2020" src="<?php echo $footer_logos_src;?>" alt="<?php echo $footer_logos_alt;?>" title="<?php echo $footer_logos_title;?>"></a>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 text-right">
+			<div class="col-6 text-right">
 				<!-- Footer Menu -->
 				<?php wp_nav_menu(
 					array(
@@ -118,13 +118,13 @@ else:
 					)
 				); ?>
 			</div>
-			<div class="col-6 col-md-1 text-right">
+			<div class="col-1 text-right">
 				<!-- Language -->
 				<div class="fastio-footer-lang">
 					<?php do_action('icl_language_selector'); ?>
 				</div>
 			</div>
-			<div class="col-6 col-md-1 text-right">
+			<div class="col-1 text-right">
 				<!-- Social -->
 				<ul class="list-inline fastio-footer-social">
 					<li class="list-inline-item"><a href="<?php echo $fb_link; ?>" target="_blank"><i class="fa fa-facebook-square social"></i></a></li>
