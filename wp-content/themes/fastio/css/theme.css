@@ -10514,6 +10514,7 @@ body.page-template-historiafastio .main-footer-wrapper {
     .fastio-img-links article a:hover, .fastio-img-links article a.hover, .fastio-img-links article a:focus, .fastio-img-links article a.focus {
       color: white; }
     .fastio-img-links article a h5 {
+      font-size: 1.25rem;
       margin: 0;
       padding: 0;
       display: table-cell;
@@ -12195,7 +12196,7 @@ body.page-template-barbie-subpages {
   .mt {
     padding-top: 0 !important; }
   .fastio-img-links article > a > h5 {
-    font-size: 1rem; }
+    font-size: .9rem; }
   .main-footer-wrapper {
     height: auto; }
     .main-footer-wrapper div.row:last-of-type {
@@ -12551,7 +12552,7 @@ body.page-template-barbie-subpages {
     font-size: 3rem !important;
     line-height: 3rem !important; }
   .fastio-img-links article > a > h5 {
-    font-size: 1rem; }
+    font-size: 1.25rem; }
   .home-footer-wrapper {
     line-height: 1.5rem;
     bottom: 0; }
