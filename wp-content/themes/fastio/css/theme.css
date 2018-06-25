@@ -12591,6 +12591,18 @@ body.page-template-barbie-subpages {
     text-align: center; } }
 
 @media (min-width: 1200px) {
+  body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content article {
+    width: 100%;
+    position: initial; } }
+
+@media (min-width: 1279px) {
+  body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content article {
+    width: 23rem;
+    position: absolute;
+    left: -5rem;
+    z-index: 1; } }
+
+@media (min-width: 1200px) {
   .fastio-nav {
     font-size: 1.2rem; }
   img.decor {
@@ -12735,11 +12747,6 @@ body.page-template-barbie-subpages {
       padding: 6rem 4rem; }
       body.page-template-a-nossa-agua .fastio-benefits .container article {
         padding: 0 1rem; }
-  body.page-template-explore-o-geres-subpages .fastio-location .fastio-location-content article {
-    width: 23rem;
-    position: absolute;
-    left: -5rem;
-    z-index: 1; }
   body.page-template-explore-o-geres-subpages .fastio-milho-3 {
     position: absolute;
     bottom: 0; }

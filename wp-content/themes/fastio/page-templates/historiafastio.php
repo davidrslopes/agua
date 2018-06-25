@@ -321,7 +321,7 @@ if(!empty($fundo_da_pagina)):
 				<img src="<?php echo $imagesection1right[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_1_imagem_3')) ?>" class="img-responsive">  
 			</div>
 		</div>
-		<main class="site-main" id="main" role="main">
+		<main class="site-main container" id="main" role="main">
 		<?php 
 			$args = array('post_type' => 'historia','p' => '115');
 			$loop = new WP_Query($args);
@@ -359,7 +359,7 @@ if(!empty($fundo_da_pagina)):
 				<img src="<?php echo $image2[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_2_imagem_esquerda')) ?>" class="img-responsive">  
 			</div>
 		</div>
-		<main class="site-main" id="main" role="main">
+		<main class="site-main container" id="main" role="main">
 		<?php 
 			$args = array('post_type' => 'historia','p' => '117');
 			$loop = new WP_Query($args);
@@ -399,7 +399,7 @@ if(!empty($fundo_da_pagina)):
 				<img src="<?php echo $imagesection3right[0]; ?>" alt="<?php echo get_the_title(get_field('seccao_3_imagem_2')) ?>" class="img-responsive">  
 			</div>
 		</div>
-		<main class="site-main" id="main" role="main">
+		<main class="site-main container" id="main" role="main">
 		<?php 
 			$args = array('post_type' => 'historia','p' => '122');
 			$loop = new WP_Query($args);
@@ -440,7 +440,7 @@ if(!empty($fundo_da_pagina)):
 			</div>
 		</div>
 		
-		<main class="site-main" id="main" role="main">
+		<main class="site-main container" id="main" role="main">
 		<?php 
 			$args = array('post_type' => 'historia','p' => '123');
 			$loop = new WP_Query($args);
