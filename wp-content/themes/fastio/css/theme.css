@@ -12437,7 +12437,8 @@ body.page-template-barbie-subpages {
     padding: 6rem 4rem; }
   body.page-template-a-familia .fastio-hero-3 header > img {
     position: absolute;
-    bottom: 2rem; }
+    bottom: 2rem;
+    left: 40px; }
   body.page-template-a-familia .fastio-feature-2 article.left {
     padding: 4rem; }
   body.page-template-fastio-go .fastio-video-hero > .fastio-video-header > h1 {
