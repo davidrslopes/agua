@@ -12553,7 +12553,12 @@ body.page-template-barbie-subpages {
   body.page-template-hot-wheels-subpages .carousel {
     margin-bottom: 0; }
   .wpcf7-form textarea {
-    height: 4rem; } }
+    height: 4rem; }
+  body.page-template-default .fastio-common-pages #tab-contatos .contactos {
+    padding-top: 35px; }
+  body.page-template-default .fastio-common-pages #tab-contatos .contactos .float-left,
+  body.page-template-default .fastio-common-pages #tab-contatos .contactos .float-right {
+    margin-bottom: 28px !important; } }
 
 @media (min-width: 576px) and (max-width: 767.99px) {
   .main-footer-wrapper > footer.main-footer {
