@@ -33,8 +33,8 @@ if(!empty($hero_1)):
             <div class="col-12 col-md-6 logoimgdiv"><img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/></div>
             <div class="col-12 col-md-6 bgimgdiv"><img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid float-right"/></div>
                 <?php else:?>
-                 <div class="col-12 col-md-6 bgimgdiv"><img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid float-right"/></div>
-                 <div class="col-12 col-md-6 logoimgdiv"><img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/></div>
+                 <div class="col-12  bgimgdiv"><img src="<?php echo $hero_1['bg-img']; ?>" class="img-fluid float-right"/></div>
+                 <div class="col-12  logoimgdiv"><img src="<?php echo $hero_1['logo-img']; ?>" class="img-fluid float-right"/></div>
            
                 <?php endif;?>
            </div>
