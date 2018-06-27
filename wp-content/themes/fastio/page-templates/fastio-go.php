@@ -9,16 +9,6 @@
 
 get_header();
 ?>
-<script src="//preciousforever.github.com/SVG-Stacker/fixsvgstack.jquery.js"></script>
-<script>
-(function($) {
-  $(document).ready(function() {
-    $('div').fixSVGStackBackground();
-    $('section').fixSVGStackBackground();
-  });
-})(jQuery);
-</script>
-
 <?php 
 //Detect special conditions devices
 $iPod    = stripos($_SERVER['HTTP_USER_AGENT'],"iPod");
