@@ -12,6 +12,17 @@ get_header();
 
 
 <?php 
+//Detect special conditions devices
+$iPod    = stripos($_SERVER['HTTP_USER_AGENT'],"iPod");
+$iPhone  = stripos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+$iPad    = stripos($_SERVER['HTTP_USER_AGENT'],"iPad");
+$Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
+$webOS   = stripos($_SERVER['HTTP_USER_AGENT'],"webOS");
+
+//do something with this information
+if( $iPod || $iPhone ){
+    echo "IOS DETECTED";
+}
 //Section 1 : Hero 1
 $hero_1 = get_field('fastio-go-section-1');
 if(!empty($hero_1)):
@@ -74,28 +85,44 @@ if(!empty($hero_1)):
 			</div>
 			<?php else: // MOBILE ORDER VERSION ?>
 			<div class="col-12 text-center">
+                                <?php if (!( $iPod || $iPhone )): ?> 
 				<div data-aos="fade-up">
+                                <?php else : ?>
+                                <div>
+                                <?php endif;?> 
 				<?php if(!empty($bottle['img'])): ?><img class="img-fluid" src="<?php echo $bottle['img']['url']; ?>" title="<?php echo $bottle['img']['title']; ?>" alt="<?php echo $bottle['img']['title']; ?>"><?php endif; ?>
 				</div>
 			</div>
 			<div class="col-12 text-center">
 				<br>
+                                <?php if (!( $iPod || $iPhone )): ?> 
 				<div data-aos="fade-up">
+                                <?php else: ?>
+                                    <div>
+                                <?php endif;?>
 				<?php if(!empty($bottle['embalagem-img'])): ?><img class="img-fluid fastio-go-icon" src="<?php echo $bottle['embalagem-img']['url']; ?>" title="<?php echo $bottle['embalagem-img']['title']; ?>" alt="<?php echo $bottle['embalagem-img']['title']; ?>"><?php endif; ?>
 				</div>
 				<br>
+                                <?php if (!( $iPod || $iPhone )): ?>
 				<div data-aos="fade-up">
+                                <?php else: ?>
+                                    <div>
+                                <?php endif; ?>
 				<?php if(!empty($bottle['embalagem-title'])){ echo '<h2>'.$bottle['embalagem-title'].'</h2>'; } ?>
 				<?php if(!empty($bottle['embalagem-text'])){ echo '<p>'.$bottle['embalagem-text'].'</p>'; } ?>
 				</div>
 				<br>
 			</div>
 			<div class="col-12 text-center">
+                                <?php if (!( $iPod || $iPhone )): ?> 
 				<div data-aos="fade-up">
+                                <?php else: ?>
+                                    <div>
+                                <?php endif;?>
 				<?php if(!empty($bottle['capsula-img'])): ?><img class="img-fluid fastio-go-icon" src="<?php echo $bottle['capsula-img']['url']; ?>" title="<?php echo $bottle['capsula-img']['title']; ?>" alt="<?php echo $bottle['capsula-img']['title']; ?>"><?php endif; ?>
 				</div>
 				<br>
-				<div data-aos="fade-up">
+				<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
 				<?php if(!empty($bottle['capsula-title'])){ echo '<h2>'.$bottle['capsula-title'].'</h2>'; } ?>
 				<?php if(!empty($bottle['capsula-text'])){ echo '<p>'.$bottle['capsula-text'].'</p>'; } ?>
 				</div>
@@ -112,13 +139,13 @@ $hero_1 = get_field('fastio-go-section-3');
 if(!empty($hero_1)):
 ?>
 <!-- ******************* The Hero Section ******************* -->
-<div data-aos="fade">
+<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade" <?php endif;?>>
 <section class="fastio-hero" style="background-image:url('<?php echo $hero_1['bg-img']; ?>');">
 	<?php if(!empty($hero_1['title'])): ?>
 	<div class="container">
 		<div class="row">
 			<header class="fastio-hero-header col-md-3 offset-md-1">
-				<div data-aos="fade-up">
+				<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
 			<?php if(!empty($hero_1['img'])): ?><img class="img-fluid" src="<?php echo $hero_1['img']['url']; ?>" title="<?php echo $hero_1['img']['title']; ?>" alt="<?php echo $hero_1['img']['title']; ?>"><?php endif; ?>
 			<?php if(!empty($hero_1['title'])): ?><h2<?php if(!empty($hero_1['title-color'])){ echo ' style="color:'.$hero_1['title-color'].';"';} ?>><?php echo $hero_1['title'];?></h2><?php endif; ?> 
 				</div>
@@ -134,7 +161,7 @@ $workout = get_field('fastio-go-section-4');
 if(!empty($workout)):
 ?>
 <!-- ******************* The Fastio GO Workout Section ******************* -->
-<div data-aos="fade">
+<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade" <?php endif;?>>
 <section class="fastio-go-workout" style="background-image:url('<?php echo $workout['bg-img']; ?>');">
 	<div class="container">
 		<div class="row">
@@ -189,7 +216,7 @@ if(!empty($workout)):
 $fastio_go_social = get_field('fastio-go-section-5');
 if(!empty($fastio_go_social)):
 ?>
-<div data-aos="fade">
+<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade" <?php endif;?>>
 <section class="fastio-go-social">
 	<div class="row no-gutters">
 		<div class="col-12 col-md-5">
