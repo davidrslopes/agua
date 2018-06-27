@@ -11054,6 +11054,20 @@ body.page-template-fastio-go .fastio-video-hero {
     line-height: 3.5rem !important;
     text-shadow: 0 0.06em 0.06em rgba(83, 83, 83, 0.66); }
 
+body.page-template-fastio-go .fastio-go-bottle-ios {
+  display: block;
+  width: 100%;
+  background-color: #fff200;
+  color: #006fba; }
+  body.page-template-fastio-go .fastio-go-bottle-ios h2 {
+    font-weight: bold; }
+  body.page-template-fastio-go .fastio-go-bottle-ios p {
+    font-size: 1.33rem; }
+  body.page-template-fastio-go .fastio-go-bottle-ios .fastio-go-bottle-text-right {
+    padding-right: 15px; }
+  body.page-template-fastio-go .fastio-go-bottle-ios .fastio-go-bottle-text-left {
+    padding-left: 15px; }
+
 body.page-template-fastio-go .fastio-go-bottle {
   display: block;
   width: 100%;

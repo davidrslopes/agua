@@ -792,6 +792,24 @@ body.page-template-fastio-go{
                     text-shadow: 0 0.06em 0.06em rgba(83,83,83,.66);
                 }
 	}
+        .fastio-go-bottle-ios{
+                display: block;
+		width:100%;
+		background-color: $warning;
+                color: $h2o-dark-blue;
+                h2{
+			font-weight: bold;
+		}
+		p{
+			font-size: 1.33rem;
+		}
+		.fastio-go-bottle-text-right{
+			padding-right:15px;
+		}
+		.fastio-go-bottle-text-left{
+			padding-left:15px;
+		}
+        }
 	.fastio-go-bottle{
 		display: block;
 		width:100%;

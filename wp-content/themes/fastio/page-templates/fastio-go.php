@@ -58,7 +58,7 @@ if(!empty($hero_1)):
 	$bottle = get_field('fastio-go-section-2');
 	if(!empty($bottle)):
 ?>
-<section class="fastio-go-bottle" <?php if (!( $iPod || $iPhone )): ?> data-aos="fade" <?php endif;?>>
+<section <?php if (!( $iPod || $iPhone )): ?> class="fastio-go-bottle"  data-aos="fade" <?php else :?>class="fastio-go-bottle-ios" <?php endif;?>>
 	<div class="container">
 		<div class="row no-gutters">
 			<?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
@@ -137,7 +137,7 @@ if(!empty($hero_1)):
 	<div class="container">
 		<div class="row">
 			<header class="fastio-hero-header col-md-3 offset-md-1">
-				<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
+				<div <?php if(wp_is_mobile()): ?>class="text-center"<?php endif;?> <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
 			<?php if(!empty($hero_1['img'])): ?><img class="img-fluid" src="<?php echo $hero_1['img']['url']; ?>" title="<?php echo $hero_1['img']['title']; ?>" alt="<?php echo $hero_1['img']['title']; ?>"><?php endif; ?>
 			<?php if(!empty($hero_1['title'])): ?><h2<?php if(!empty($hero_1['title-color'])){ echo ' style="color:'.$hero_1['title-color'].';"';} ?>><?php echo $hero_1['title'];?></h2><?php endif; ?> 
 				</div>
