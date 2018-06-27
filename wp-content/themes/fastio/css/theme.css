@@ -11060,11 +11060,11 @@ body.page-template-fastio-go .fastio-go-bottle {
   background-color: #fff200;
   background-image: url("../img/fundo_amarelo.svg");
   background-repeat: no-repeat;
-  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   color: #006fba; }
   body.page-template-fastio-go .fastio-go-bottle h2 {

@@ -9,7 +9,15 @@
 
 get_header();
 ?>
-
+<script src="//preciousforever.github.com/SVG-Stacker/fixsvgstack.jquery.js"></script>
+<script>
+(function($) {
+  $(document).ready(function() {
+    $('div').fixSVGStackBackground();
+    $('section').fixSVGStackBackground();
+  });
+})(jQuery);
+</script>
 
 <?php 
 //Detect special conditions devices
@@ -82,36 +90,36 @@ if(!empty($hero_1)):
 				</div>
 			</div>
 			<?php else: // MOBILE ORDER VERSION ?>
-                    <?php if (!( $iPod || $iPhone )): ?> 
+                    
 			<div class="col-12 text-center">
-				<div data-aos="fade-up">
+				<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
 				<?php if(!empty($bottle['img'])): ?><img class="img-fluid" src="<?php echo $bottle['img']['url']; ?>" title="<?php echo $bottle['img']['title']; ?>" alt="<?php echo $bottle['img']['title']; ?>"><?php endif; ?>
 				</div>
 			</div>
 			<div class="col-12 text-center">
 				<br>
-				<div data-aos="fade-up">
+				<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
 				<?php if(!empty($bottle['embalagem-img'])): ?><img class="img-fluid fastio-go-icon" src="<?php echo $bottle['embalagem-img']['url']; ?>" title="<?php echo $bottle['embalagem-img']['title']; ?>" alt="<?php echo $bottle['embalagem-img']['title']; ?>"><?php endif; ?>
 				</div>
 				<br>
-				<div data-aos="fade-up">
+				<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
 				<?php if(!empty($bottle['embalagem-title'])){ echo '<h2>'.$bottle['embalagem-title'].'</h2>'; } ?>
 				<?php if(!empty($bottle['embalagem-text'])){ echo '<p>'.$bottle['embalagem-text'].'</p>'; } ?>
 				</div>
 				<br>
 			</div>
 			<div class="col-12 text-center">
-				<div data-aos="fade-up">
+				<div <?php if (!( $iPod || $iPhone )): ?>  data-aos="fade-up" <?php endif;?>>
 				<?php if(!empty($bottle['capsula-img'])): ?><img class="img-fluid fastio-go-icon" src="<?php echo $bottle['capsula-img']['url']; ?>" title="<?php echo $bottle['capsula-img']['title']; ?>" alt="<?php echo $bottle['capsula-img']['title']; ?>"><?php endif; ?>
 				</div>
 				<br>
-				<div data-aos="fade-up">
+				<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
 				<?php if(!empty($bottle['capsula-title'])){ echo '<h2>'.$bottle['capsula-title'].'</h2>'; } ?>
 				<?php if(!empty($bottle['capsula-text'])){ echo '<p>'.$bottle['capsula-text'].'</p>'; } ?>
 				</div>
 			</div>
                     <?php endif;?>
-			<?php endif; ?>
+			
 		</div>
 	</div>
 </section><!-- .fastio-go-bottle -->

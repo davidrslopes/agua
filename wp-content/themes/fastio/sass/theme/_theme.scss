@@ -798,11 +798,11 @@ body.page-template-fastio-go{
 		background-color: $warning;
 		background-image: url('../img/fundo_amarelo.svg');
 		background-repeat: no-repeat;
-		background-position: center;
-		-webkit-background-size: cover;
+                -webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+		background-position: center;
 		background-attachment: fixed;
 		color: $h2o-dark-blue;
 		h2{
