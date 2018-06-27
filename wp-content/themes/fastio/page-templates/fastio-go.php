@@ -52,7 +52,7 @@ if(!empty($hero_1)):
 	$bottle = get_field('fastio-go-section-2');
 	if(!empty($bottle)):
 ?>
-<section class="fastio-go-bottle" data-aos="fade">
+<section class="fastio-go-bottle" <?php if (!( $iPod || $iPhone )): ?> data-aos="fade" <?php endif;?>>
 	<div class="container">
 		<div class="row no-gutters">
 			<?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
