@@ -93,13 +93,16 @@ if(!empty($hero_1)):
                     
 			<div class="col-12 text-center">
 				<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
-				<?php if(!empty($bottle['img'])): ?><?php echo $bottle['img']['url']; ?><?php endif; ?>
+				<?php if(!empty($bottle['img'])): ?>
+                                    <img class="img-fluid" src="<?php echo $bottle['img']['url']; ?>" title="<?php echo $bottle['img']['title']; ?>" alt="<?php echo $bottle['img']['title']; ?>"><?php endif; ?>
 				</div>
 			</div>
 			<div class="col-12 text-center">
 				<br>
 				<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
-				<?php if(!empty($bottle['embalagem-img'])): ?><?php echo $bottle['embalagem-img']['url']; ?><?php endif; ?>
+				<?php if(!empty($bottle['embalagem-img'])): ?>
+                                    <img class="img-fluid" src="<?php echo $bottle['embalagem-img']['url']; ?>" title="<?php echo $bottle['embalagem-img']['title']; ?>" alt="<?php echo $bottle['embalagem-img']['title']; ?>">
+                                <?php endif; ?>
 				</div>
 				<br>
 				<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
@@ -110,7 +113,9 @@ if(!empty($hero_1)):
 			</div>
 			<div class="col-12 text-center">
 				<div <?php if (!( $iPod || $iPhone )): ?>  data-aos="fade-up" <?php endif;?>>
-				<?php if(!empty($bottle['capsula-img'])): ?><?php echo $bottle['capsula-img']['url']; ?><?php endif; ?>
+				<?php if(!empty($bottle['capsula-img'])): ?>
+                                <img class="img-fluid" src="<?php echo $bottle['capsula-img']['url']; ?>" title="<?php echo $bottle['capsula-img']['title']; ?>" alt="<?php echo $bottle['capsula-img']['title']; ?>">
+                                <?php endif; ?>
 				</div>
 				<br>
 				<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
