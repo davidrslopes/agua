@@ -31,9 +31,11 @@ if(!empty($hero_1)):
 <section class="fastio-video-hero" style="background-image:url('<?php echo $hero_1['fallback-img']; ?>');">
 	
 	<?php if(!empty($hero_1['video'])): ?>
+        <?php if (!( $iPod || $iPhone )): ?> 
 	<div class="fastio-video-container">
 		<?php echo do_shortcode(' [video class="fastio-video" autoplay="on" loop="on" src="'.$hero_1['video'].'" poster="'. $hero_1['fallback-img'] .'"] '); ?>
 	</div>
+        <?php endif;?>
 	<?php endif; ?>
 	
 	<header class="fastio-video-header">
