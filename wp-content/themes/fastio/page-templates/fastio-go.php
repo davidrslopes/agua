@@ -31,11 +31,10 @@ if(!empty($hero_1)):
 <section class="fastio-video-hero" style="background-image:url('<?php echo $hero_1['fallback-img']; ?>');">
 	
 	<?php if(!empty($hero_1['video'])): ?>
-        <?php if (!( $iPod || $iPhone )): ?> 
+    
 	<div class="fastio-video-container">
 		<?php echo do_shortcode(' [video class="fastio-video" autoplay="on" loop="on" src="'.$hero_1['video'].'" poster="'. $hero_1['fallback-img'] .'"] '); ?>
 	</div>
-        <?php endif;?>
 	<?php endif; ?>
 	
 	<header class="fastio-video-header">
@@ -54,85 +53,7 @@ if(!empty($hero_1)):
 	$bottle = get_field('fastio-go-section-2');
 	if(!empty($bottle)):
 ?>
-<section class="fastio-go-bottle" <?php if (!( $iPod || $iPhone )): ?> data-aos="fade" <?php endif;?>>
-	<div class="container">
-		<div class="row no-gutters">
-			<?php if(!wp_is_mobile()): // DESKTOP ORDER VERSION ?>
-			<div class="col-4 col-lg-1 vertical-align">
-				<div data-aos="fade-up" class="fastio-go-bottle-img-left">
-				<?php if(!empty($bottle['embalagem-img'])): ?><img class="img-fluid" src="<?php echo $bottle['embalagem-img']['url']; ?>" title="<?php echo $bottle['embalagem-img']['title']; ?>" alt="<?php echo $bottle['embalagem-img']['title']; ?>"><?php endif; ?>
-				</div>
-			</div>
-			<div class="col-8 col-lg-3 vertical-align">
-				<div data-aos="fade-up" class="fastio-go-bottle-text-left">
-				<?php if(!empty($bottle['embalagem-title'])){ echo '<h2>'.$bottle['embalagem-title'].'</h2>'; } ?>
-				<?php if(!empty($bottle['embalagem-text'])){ echo '<p>'.$bottle['embalagem-text'].'</p>'; } ?>
-				</div>
-			</div>
-			<div class="col-12 col-lg-4 text-center">
-				<div data-aos="fade-up">
-				<?php if(!empty($bottle['img'])): ?><img class="img-fluid" class="fastio-go-bottle-img" src="<?php echo $bottle['img']['url']; ?>" title="<?php echo $bottle['img']['title']; ?>" alt="<?php echo $bottle['img']['title']; ?>"><?php endif; ?>
-				</div>
-			</div>
-			<div class="col-6 col-lg-3 vertical-align">
-				<div data-aos="fade-up" class="fastio-go-bottle-text-right">
-				<?php if(!empty($bottle['capsula-title'])){ echo '<h2>'.$bottle['capsula-title'].'</h2>'; } ?>
-				<?php if(!empty($bottle['capsula-text'])){ echo '<p>'.$bottle['capsula-text'].'</p>'; } ?>
-				</div>
-			</div>
-			<div class="col-6 col-lg-1 vertical-align text-right">
-				<div data-aos="fade-up" class="fastio-go-bottle-img-right">
-				<?php if(!empty($bottle['capsula-img'])): ?><img class="img-fluid" src="<?php echo $bottle['capsula-img']['url']; ?>" title="<?php echo $bottle['capsula-img']['title']; ?>" alt="<?php echo $bottle['capsula-img']['title']; ?>"><?php endif; ?>
-				</div>
-			</div>
-			<?php else: // MOBILE ORDER VERSION ?>
-			<div class="col-12 text-center">
-                                <?php if (!( $iPod || $iPhone )): ?> 
-				<div data-aos="fade-up">
-                                <?php else : ?>
-                                <div>
-                                <?php endif;?> 
-				<?php if(!empty($bottle['img'])): ?><img class="img-fluid" src="<?php echo $bottle['img']['url']; ?>" title="<?php echo $bottle['img']['title']; ?>" alt="<?php echo $bottle['img']['title']; ?>"><?php endif; ?>
-				</div>
-			</div>
-			<div class="col-12 text-center">
-				<br>
-                                <?php if (!( $iPod || $iPhone )): ?> 
-				<div data-aos="fade-up">
-                                <?php else: ?>
-                                    <div>
-                                <?php endif;?>
-				<?php if(!empty($bottle['embalagem-img'])): ?><img class="img-fluid fastio-go-icon" src="<?php echo $bottle['embalagem-img']['url']; ?>" title="<?php echo $bottle['embalagem-img']['title']; ?>" alt="<?php echo $bottle['embalagem-img']['title']; ?>"><?php endif; ?>
-				</div>
-				<br>
-                                <?php if (!( $iPod || $iPhone )): ?>
-				<div data-aos="fade-up">
-                                <?php else: ?>
-                                    <div>
-                                <?php endif; ?>
-				<?php if(!empty($bottle['embalagem-title'])){ echo '<h2>'.$bottle['embalagem-title'].'</h2>'; } ?>
-				<?php if(!empty($bottle['embalagem-text'])){ echo '<p>'.$bottle['embalagem-text'].'</p>'; } ?>
-				</div>
-				<br>
-			</div>
-			<div class="col-12 text-center">
-                                <?php if (!( $iPod || $iPhone )): ?> 
-				<div data-aos="fade-up">
-                                <?php else: ?>
-                                    <div>
-                                <?php endif;?>
-				<?php if(!empty($bottle['capsula-img'])): ?><img class="img-fluid fastio-go-icon" src="<?php echo $bottle['capsula-img']['url']; ?>" title="<?php echo $bottle['capsula-img']['title']; ?>" alt="<?php echo $bottle['capsula-img']['title']; ?>"><?php endif; ?>
-				</div>
-				<br>
-				<div <?php if (!( $iPod || $iPhone )): ?> data-aos="fade-up" <?php endif;?>>
-				<?php if(!empty($bottle['capsula-title'])){ echo '<h2>'.$bottle['capsula-title'].'</h2>'; } ?>
-				<?php if(!empty($bottle['capsula-text'])){ echo '<p>'.$bottle['capsula-text'].'</p>'; } ?>
-				</div>
-			</div>
-			<?php endif; ?>
-		</div>
-	</div>
-</section><!-- .fastio-go-bottle -->
+
 
 <?php endif;
 
