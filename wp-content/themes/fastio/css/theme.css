@@ -10565,6 +10565,30 @@ nav.navbar.absolute-top {
   margin: 0;
   padding: 0; }
 
+#barbiesubpagescarousel .carousel-inner .carousel-item-right.active,
+#barbiesubpagescarousel .carousel-inner .carousel-item-next {
+  transform: translateX(25%); }
+
+#barbiesubpagescarousel .carousel-inner .carousel-item-left.active,
+#barbiesubpagescarousel .carousel-inner .carousel-item-prev {
+  transform: translateX(-25%); }
+
+#barbiesubpagescarousel .carousel-inner .carousel-item-right,
+#barbiesubpagescarousel .carousel-inner .carousel-item-left {
+  transform: translateX(0); }
+
+#hotwheelssubpagescarousel .carousel-inner .carousel-item-right.active,
+#hotwheelssubpagescarousel .carousel-inner .carousel-item-next {
+  transform: translateX(25%); }
+
+#hotwheelssubpagescarousel .carousel-inner .carousel-item-left.active,
+#hotwheelssubpagescarousel .carousel-inner .carousel-item-prev {
+  transform: translateX(-25%); }
+
+#hotwheelssubpagescarousel .carousel-inner .carousel-item-right,
+#hotwheelssubpagescarousel .carousel-inner .carousel-item-left {
+  transform: translateX(0); }
+
 /* ############################## HISTORIA FASTIO ############################## */
 body.page-template-historiafastio {
   background: url(../img/Fundo-aguarela.jpg) no-repeat;
