@@ -312,9 +312,25 @@ jQuery( function($) {
 		}
 	});*/
 	$('#fastio-places-slide,#barbiesubpagescarousel,#hotwheelssubpagescarousel').carousel();
+        $('#barbiesubpagescarousel .carousel .carousel-item').each(function(){
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<2;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+        next.children(':first-child').clone().appendTo($(this));
+      }
+});
 	var winWidth =  $(window).width();
 	if(winWidth > 768 ){
-		$('.slide.carousel .carousel-item').each(function(){
+		$('#fastio-places-slide .slide.carousel .carousel-item').each(function(){
 			var next = $(this).next();
 			if (!next.length) {
 				next = $(this).siblings(':first');
