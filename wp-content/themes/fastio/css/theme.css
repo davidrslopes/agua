@@ -10567,27 +10567,27 @@ nav.navbar.absolute-top {
 
 #barbiesubpagescarousel .carousel-inner .carousel-item-right.active,
 #barbiesubpagescarousel .carousel-inner .carousel-item-next {
-  transform: translateX(25%); }
+  transform: translateX(25%) !important; }
 
 #barbiesubpagescarousel .carousel-inner .carousel-item-left.active,
 #barbiesubpagescarousel .carousel-inner .carousel-item-prev {
-  transform: translateX(-25%); }
+  transform: translateX(-25%) !important; }
 
 #barbiesubpagescarousel .carousel-inner .carousel-item-right,
 #barbiesubpagescarousel .carousel-inner .carousel-item-left {
-  transform: translateX(0); }
+  transform: translateX(0) !important; }
 
 #hotwheelssubpagescarousel .carousel-inner .carousel-item-right.active,
 #hotwheelssubpagescarousel .carousel-inner .carousel-item-next {
-  transform: translateX(25%); }
+  transform: translateX(25%) !important; }
 
 #hotwheelssubpagescarousel .carousel-inner .carousel-item-left.active,
 #hotwheelssubpagescarousel .carousel-inner .carousel-item-prev {
-  transform: translateX(-25%); }
+  transform: translateX(-25%) !important; }
 
 #hotwheelssubpagescarousel .carousel-inner .carousel-item-right,
 #hotwheelssubpagescarousel .carousel-inner .carousel-item-left {
-  transform: translateX(0); }
+  transform: translateX(0) !important; }
 
 /* ############################## HISTORIA FASTIO ############################## */
 body.page-template-historiafastio {

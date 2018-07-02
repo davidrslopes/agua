@@ -256,17 +256,17 @@ if(!empty($section_3)):
             </div>
 	<div class="row">
        <!--Section 4-1 : Subpages Slider -->
-       <div id="barbiesubpagescarousel" class="carousel slide" data-ride="carousel" data-interval="9000">
-		<div class="carousel-inner mx-auto" role="listbox" >
+       <div id="barbiesubpagescarousel" class="carousel slide w-100" data-ride="carousel" data-interval="9000">
+		<div class="carousel-inner" role="listbox" >
 		<?php $i = 0; ?>
 		<?php while( have_rows('barbiesubpages-section-4-1') ) : the_row(); 
 		$link_id = get_sub_field('link', false, false);
 		$i++;
 		?>
 			<div class="carousel-item <?php echo $i===1 ? 'active' : '';?>">
-				<div class="col-12 col-lg-3">
+				<div class="col-12 col-lg-3 d-block">
 					<a href="<?php echo get_the_permalink($link_id); ?>">
-						<img src="<?php the_sub_field('img') ?>" alt="" />
+						<img class = "img-fluid d-block" src="<?php the_sub_field('img') ?>" alt="" />
 					</a>
 				</div>
 			</div>
