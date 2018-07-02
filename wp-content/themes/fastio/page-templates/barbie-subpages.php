@@ -264,7 +264,7 @@ if(!empty($section_3)):
 		$i++;
 		?>
 			<div class="carousel-item <?php echo $i===1 ? 'active' : '';?>">
-				<div class="col-12 col-lg-3 d-block">
+				<div class="col-5 col-lg-3 d-block">
 					<a href="<?php echo get_the_permalink($link_id); ?>">
 						<img class = "img-fluid d-block" src="<?php the_sub_field('img') ?>" alt="" />
 					</a>
